@@ -31,7 +31,7 @@ function Navbar({ items, searchbar, logo }: {
             style={{ minHeight: navbarHeight }}
             aria-label="Store logo"
           >
-            <Image src={logo.src} alt={logo.alt} width={126} height={16} />
+            <Image src={logo.src} alt={logo.alt} width={200} height={44} />
           </a>
         )}
 
@@ -43,15 +43,15 @@ function Navbar({ items, searchbar, logo }: {
       </div>
 
       {/* Desktop Version */}
-      <div class="hidden md:flex flex-row justify-between items-center border-b border-base-200 w-full pl-2 pr-6">
-        <div class="flex-none w-44">
+      <div class="hidden md:flex flex-row justify-between items-center border-b border-base-200 w-full pl-2 pr-6 h-[92px]">
+        <div class="flex-none w-50">
           {logo && (
             <a
               href="/"
               aria-label="Store logo"
-              class="block px-4 py-3 w-[160px]"
+              class="block pl-5"
             >
-              <Image src={logo.src} alt={logo.alt} width={126} height={16} />
+              <Image src={logo.src} alt={logo.alt} width={200} height={44} />
             </a>
           )}
         </div>
@@ -62,14 +62,14 @@ function Navbar({ items, searchbar, logo }: {
           <SearchButton />
           <Searchbar searchbar={searchbar} />
           <a
-            class="btn btn-circle btn-sm btn-ghost"
+            class="btn btn-circle btn-sm btn-ghost text-white"
             href="/login"
             aria-label="Log in"
           >
             <Icon id="User" size={24} strokeWidth={0.4} />
           </a>
           <a
-            class="btn btn-circle btn-sm btn-ghost"
+            class="btn btn-circle btn-sm btn-ghost text-white"
             href="/wishlist"
             aria-label="Wishlist"
           >
