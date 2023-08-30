@@ -9,7 +9,6 @@ function Contact({
   telefone = "(45) 3020-1345",
   whatsApp = "(45) 99911-0056",
 }: Props) {
-
   const id = useId();
 
   return (
