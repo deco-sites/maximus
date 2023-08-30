@@ -3,6 +3,7 @@ import Drawers from "$store/islands/Header/Drawers.tsx";
 import type { Product, Suggestion } from "deco-sites/std/commerce/types.ts";
 import type { Image } from "deco-sites/std/components/types.ts";
 import Alert from "./Alert.tsx";
+import Contact from "./Contact.tsx";
 import Navbar from "./Navbar.tsx";
 import { headerHeight } from "./constants.ts";
 
@@ -64,8 +65,9 @@ function Header({
           menu={{ items: navItems }}
           searchbar={searchbar}
         >
-          <div class="bg-zinc-900 fixed w-full z-50">
-            <Alert alerts={alerts} />
+          <Alert alerts={alerts} />
+          <div class="bg-[#171413] fixed w-full z-50">
+            <Contact />
             <Navbar items={navItems} searchbar={searchbar} logo={logo} />
           </div>
         </Drawers>

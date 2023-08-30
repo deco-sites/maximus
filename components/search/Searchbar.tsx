@@ -13,7 +13,6 @@ import ProductCard from "$store/components/product/ProductCard.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import Slider from "$store/components/ui/Slider.tsx";
-import Spinner from "$store/components/ui/Spinner.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useId } from "$store/sdk/useId.ts";
 import { useUI } from "$store/sdk/useUI.ts";
@@ -47,7 +46,7 @@ export interface Props {
 }
 
 function Searchbar({
-  placeholder = "What are you looking for?",
+  placeholder = "Busque por tipo de tecido, cor, etc.",
   action = "/s",
   name = "q",
   query,
@@ -71,25 +70,14 @@ function Searchbar({
 
   return (
     <div
-      class="w-screen grid gap-8 container px-4 py-6 overflow-y-hidden"
+      class="overflow-y-hidden"
       style={{ gridTemplateRows: "min-content auto" }}
     >
       <form id={id} action={action} class="join">
-        <Button
-          type="submit"
-          class="join-item btn-square"
-          aria-label="Search"
-          for={id}
-          tabIndex={-1}
-        >
-          {loading.value
-            ? <span class="loading loading-spinner loading-xs" />
-            : <Icon id="MagnifyingGlass" size={24} strokeWidth={0.01} />}
-        </Button>
         <input
           ref={searchInputRef}
           id="search-input"
-          class="input input-bordered join-item flex-grow"
+          class="input input-bordered join-item flex-grow bg-zinc-900 border-white"
           name={name}
           defaultValue={query}
           onInput={(e) => {
@@ -110,17 +98,27 @@ function Searchbar({
           autocomplete="off"
         />
         <Button
-          type="button join-item"
-          class="btn-ghost btn-square hidden sm:inline-flex"
-          onClick={() => displaySearchPopup.value = false}
+          type="submit"
+          class="join-item btn-square"
+          aria-label="Search"
+          for={id}
+          tabIndex={-1}
         >
-          <Icon id="XMark" size={24} strokeWidth={2} />
+          {loading.value
+            ? <span class="loading loading-spinner loading-xs" />
+            : <Icon id="MagnifyingGlass" size={24} strokeWidth={0.01} />}
         </Button>
       </form>
 
-      {notFound
+      {notFound && searchInputRef.current
         ? (
-          <div class="flex flex-col gap-4 w-full">
+          <div class="bg-white flex flex-col gap-4 w-[500px] absolute left-0">
+            <Button
+              type="button join-item"
+              class="btn-ghost btn-square hidden sm:inline-flex"
+            >
+              <Icon id="XMark" size={24} strokeWidth={2} />
+            </Button>
             <span
               class="font-medium text-xl text-center"
               role="heading"

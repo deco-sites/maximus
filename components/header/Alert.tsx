@@ -19,12 +19,11 @@ function Alert({ alerts = [], interval = 5 }: Props) {
       <Slider class="carousel carousel-center w-screen bg-black gap-6">
         {alerts.map((alert, index) => (
           <Slider.Item index={index} class="carousel-item">
-            <span class="text-sm text-secondary-content flex justify-center items-center w-screen h-[30px]">
+            <span class="text-xs text-secondary-content flex justify-center items-center w-screen h-[30px]">
               {alert}
             </span>
-          </Slider.Item>          
+          </Slider.Item>
         ))}
-        
       </Slider>
 
       <SliderJS rootId={id} interval={interval && interval * 1e3} />

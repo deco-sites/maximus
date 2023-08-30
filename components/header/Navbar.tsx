@@ -36,15 +36,17 @@ function Navbar({ items, searchbar, logo }: {
         )}
 
         <div class="flex gap-1">
-          <SearchButton />
           {PLATFORM === "vtex" && <CartButtonVTEX />}
           {PLATFORM === "vnda" && <CartButtonVDNA />}
         </div>
       </div>
 
       {/* Desktop Version */}
-      <div class="hidden md:flex flex-row justify-between items-center border-b border-base-200 w-full pl-2 pr-6 h-[92px]">
-        <div class="flex-none w-50">
+      <div class="hidden md:flex flex-row justify-between items-center w-full pl-6 pr-6 h-[92px]">
+        <div class="flex-none min-w-[25%] relative">
+          <Searchbar searchbar={searchbar} />
+        </div>
+        <div class="flex-auto flex justify-center">
           {logo && (
             <a
               href="/"
@@ -55,12 +57,7 @@ function Navbar({ items, searchbar, logo }: {
             </a>
           )}
         </div>
-        <div class="flex-auto flex justify-center">
-          {items.map((item) => <NavItem item={item} />)}
-        </div>
-        <div class="flex-none w-44 flex items-center justify-end gap-2">
-          <SearchButton />
-          <Searchbar searchbar={searchbar} />
+        <div class="flex-none min-w-[25%] flex items-center justify-end gap-2">
           <a
             class="btn btn-circle btn-sm btn-ghost text-white"
             href="/login"
@@ -83,6 +80,9 @@ function Navbar({ items, searchbar, logo }: {
           {PLATFORM === "vtex" && <CartButtonVTEX />}
           {PLATFORM === "vnda" && <CartButtonVDNA />}
         </div>
+      </div>
+      <div class="hidden md:flex flex-row justify-center h-[35px]">
+        {items.map((item) => <NavItem item={item} />)}
       </div>
     </>
   );
