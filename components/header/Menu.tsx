@@ -8,18 +8,36 @@ export interface Props {
 function MenuItem({ item }: { item: INavItem }) {
   return (
     <div class="collapse collapse-plus">
-      <input type="checkbox" />
-      <div class="collapse-title">{item.label}</div>
+      {item.children?.length
+        ? (
+          <>
+            <input type="checkbox" />
+            <div class="collapse-title text-xs uppercase after:text-lg">
+              {item.label}
+            </div>
+          </>
+        )
+        : (
+          <a class="collapse-title after:opacity-0" href={item.href}>
+            <div class="text-xs uppercase">{item.label}</div>
+          </a>
+        )}
+
       <div class="collapse-content">
         <ul>
-          <li>
-            <a class="underline text-sm" href={item.href}>Ver todos</a>
-          </li>
           {item.children?.map((node) => (
             <li>
               <MenuItem item={node} />
             </li>
           ))}
+          <li>
+            <a
+              class="block px-4 underline text-sm uppercase font-bold"
+              href={item.href}
+            >
+              Ver tudo
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -28,8 +46,8 @@ function MenuItem({ item }: { item: INavItem }) {
 
 function Menu({ items }: Props) {
   return (
-    <div class="flex flex-col h-full">
-      <ul class="px-4 flex-grow flex flex-col divide-y divide-base-200">
+    <div class="flex flex-col h-full bg-white">
+      <ul class="px-2 flex-grow flex flex-col">
         {items.map((item) => (
           <li>
             <MenuItem item={item} />
@@ -37,41 +55,40 @@ function Menu({ items }: Props) {
         ))}
       </ul>
 
-      <ul class="flex flex-col py-2 bg-base-200">
+      <ul class="flex flex-col py-2">
         <li>
           <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="/wishlist"
-          >
-            <Icon id="Heart" size={24} strokeWidth={2} />
-            <span class="text-sm">Lista de desejos</span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
-            <Icon id="MapPin" size={24} strokeWidth={2} />
-            <span class="text-sm">Nossas lojas</span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
-            <Icon id="Phone" size={24} strokeWidth={2} />
-            <span class="text-sm">Fale conosco</span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
+            class="flex items-center gap-4 px-4 py-4 border"
             href="https://www.deco.cx"
           >
             <Icon id="User" size={24} strokeWidth={2} />
-            <span class="text-sm">Minha conta</span>
+            <span class="text-sm uppercase font-medium">Entrar/Cadastrar</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="flex items-center gap-4 px-4 py-4"
+            href="/Institucional/contato"
+          >
+            <span class="text-sm font-medium">
+              <strong>Dúvidas?</strong> Entre em contato
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="flex items-center gap-4 px-4 py-4"
+            href="/account#/orders"
+          >
+            <span class="text-sm font-medium">Meus pedidos</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="flex items-center gap-4 px-4 py-4"
+            href="/Institucional/faq"
+          >
+            <span class="text-sm font-medium">Perguntas Frequentes</span>
           </a>
         </li>
       </ul>

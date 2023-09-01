@@ -14,7 +14,7 @@ function Contact({
   return (
     <div
       id={id}
-      class="bg-[#171413] w-full h=[29px] flex justify-evenly text-white pt-2 pb-2 text-xs"
+      class="hidden md:flex bg-[#171413] w-full h=[29px] flex justify-evenly text-white pt-2 pb-2 text-xs"
     >
       <p>Atendimento - {telefone}</p>
       <p>WhatsApp - {whatsApp}</p>
