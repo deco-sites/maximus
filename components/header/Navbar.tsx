@@ -1,6 +1,6 @@
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
-import { MenuButton, SearchButton } from "$store/islands/Header/Buttons.tsx";
+import { MenuButton } from "$store/islands/Header/Buttons.tsx";
 import CartButtonVDNA from "$store/islands/Header/Cart/vnda.tsx";
 import CartButtonVTEX from "$store/islands/Header/Cart/vtex.tsx";
 import Searchbar from "$store/islands/Header/Searchbar.tsx";
@@ -20,7 +20,7 @@ function Navbar({ items, searchbar, logo }: {
       {/* Mobile Version */}
       <div
         style={{ height: navbarHeight }}
-        class="md:hidden flex flex-row justify-between items-center border-b border-base-200 w-full pl-2 pr-6 gap-2"
+        class="md:hidden pt-1 flex flex-row justify-between items-center w-full pl-2 pr-2 gap-2"
       >
         <MenuButton />
 
@@ -31,14 +31,41 @@ function Navbar({ items, searchbar, logo }: {
             style={{ minHeight: navbarHeight }}
             aria-label="Store logo"
           >
-            <Image src={logo.src} alt={logo.alt} width={200} height={44} />
+            <Image src={logo.src} alt={logo.alt} width={150} height={33} />
           </a>
         )}
 
-        <div class="flex gap-1">
+        <div class="flex items-center gap-2">
+          <a
+            class="btn btn-circle btn-sm btn-ghost text-white"
+            href="/login"
+            aria-label="Log in"
+          >
+            <Icon id="User" size={24} strokeWidth={0.4} />
+          </a>
+          <a
+            class="btn btn-circle btn-sm btn-ghost text-white"
+            href="/wishlist"
+            aria-label="Wishlist"
+          >
+            <Icon
+              id="Heart"
+              size={24}
+              strokeWidth={2}
+              fill="none"
+            />
+          </a>
           {PLATFORM === "vtex" && <CartButtonVTEX />}
           {PLATFORM === "vnda" && <CartButtonVDNA />}
         </div>
+      </div>
+
+      <div class="flex justify-center md:hidden w-full p-3 pt-0">
+        <input
+          class="bg-[#171413] pl-4 text-xs border border-white w-full h-[38px] hover:bg-white outline-0 rounded"
+          type="text"
+          placeholder="Busque por tipo de tecido, cor, etc."
+        />
       </div>
 
       {/* Desktop Version */}

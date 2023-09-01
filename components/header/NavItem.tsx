@@ -13,8 +13,8 @@ function NavItem({ item }: { item: INavItem }) {
 
   return (
     <li class="group flex items-center text-white">
-      <a href={href} class="px-4 py-3">
-        <span class="group-hover:underline">
+      <a href={href} class="px-6 py-3">
+        <span class="text-sm uppercase">
           {label}
         </span>
       </a>
@@ -22,7 +22,7 @@ function NavItem({ item }: { item: INavItem }) {
       {children && children.length > 0 &&
         (
           <div
-            class="fixed hidden hover:flex group-hover:flex bg-base-100 z-50 items-start justify-center gap-6 border-t border-b-2 border-base-200 w-screen"
+            class="fixed hidden hover:flex group-hover:flex flex-col bg-base-100 z-50 items-center justify-center gap-6 border-t border-b-2 border-base-200 w-screen"
             style={{ top: "0px", left: "0px", marginTop: headerHeight }}
           >
             {image?.src && (
@@ -35,11 +35,20 @@ function NavItem({ item }: { item: INavItem }) {
                 loading="lazy"
               />
             )}
-            <ul class="flex items-start justify-center gap-6">
+
+            {/*<only desk>*/}
+            <div class="w-full max-w-[1260px] pt-[40px] pb-[20px] border-b-[1px] border-[#ebebeb]">
+              <span class="text-[#171413] text-sm">
+                {label}
+              </span>
+            </div>
+            {/*</only desk>*/}
+
+            <ul class="w-full max-w-[1260px] max-h-[250px] flex flex-col flex-wrap content-start">
               {children.map((node) => (
-                <li class="p-6">
-                  <a class="hover:underline" href={node.href}>
-                    <span>{node.label}</span>
+                <li class="py-1 pr-[90px]">
+                  <a class=" hover:underline text-[#171413]" href={node.href}>
+                    <span class="text-sm">{node.label}</span>
                   </a>
 
                   <ul class="flex flex-col gap-1 mt-4">
@@ -54,6 +63,16 @@ function NavItem({ item }: { item: INavItem }) {
                 </li>
               ))}
             </ul>
+
+            {/*<only desk>*/}
+            <div class="w-full max-w-[1260px] pb-[20px]">
+              <a href={href}>
+                <span class="flex items-center uppercase text-[#171413] after:content-['\0279E'] after:text-3xl after:ml-5">
+                  Ver todos os produtos
+                </span>
+              </a>
+            </div>
+            {/*</only desk>*/}
           </div>
         )}
     </li>

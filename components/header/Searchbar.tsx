@@ -15,8 +15,6 @@ function Searchbar({ searchbar }: Props) {
   const { displaySearchPopup } = useUI();
   const open = displaySearchPopup.value;
 
-  console.log("openn", open);
-
   return (
     <div>
       {open && (
