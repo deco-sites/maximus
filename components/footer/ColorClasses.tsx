@@ -16,7 +16,6 @@ export interface Layout {
     newsletter?: boolean;
     sectionLinks?: boolean;
     socialLinks?: boolean;
-    paymentMethods?: boolean;
     mobileApps?: boolean;
     regionOptions?: boolean;
     extraLinks?: boolean;

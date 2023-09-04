@@ -1,0 +1,75 @@
+import Image from "deco-sites/std/components/Image.tsx";
+import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+
+export interface sociaisItem {
+  image: LiveImage;
+  link: string;
+  size: number;
+}
+
+export default function Sociais({ content }: {
+  content?: { items?: sociaisItem[] };
+}) {
+  return (
+    <div class="w-full max-w-[1236px] m-auto flex justify-between items-center bg-white pt-9 pb-6">
+      <div class="w-70 flex items-center">
+        <a href="/" class="block mr-7">
+          <Image
+            src="https://tfcszo.vteximg.com.br/arquivos/icon-maximus-social.svg?v=637966974692800000"
+            alt="logo"
+            width={54}
+            height={39}
+            loading="lazy"
+          />
+        </a>
+        {content && content.items && content.items.length > 0 && (
+          <ul class="flex justify-center items-center">
+            {content.items.map((item) => {
+              return (
+                <li>
+                  {item?.image &&
+                    (
+                      <a href={item?.link} class="block mx-5">
+                        <Image
+                          src={item?.image}
+                          alt="social"
+                          width={item?.size}
+                          loading="lazy"
+                        />
+                      </a>
+                    )}
+                </li>
+              );
+            })}
+          </ul>
+        )}
+      </div>
+      <div class="w-30 flex items-center">
+        <div class="flex items-center mr-9">
+          <p class="text-xs text-[#999] mr-3">Desenvolvido por</p>
+          <a href="https://vtex.com/br-pt/" target="_blank">
+            <Image
+              src="https://tfcszo.vteximg.com.br/arquivos/icon-2b-benefits.svg"
+              alt="vtex"
+              width={70}
+              height={20}
+              loading="lazy"
+            />
+          </a>
+        </div>
+        <div class="flex items-center">
+          <p class="text-xs text-[#999] mr-4">Plataforma</p>
+          <a href="https://agencia2bdigital.com.br/" target="_blank">
+            <Image
+              src="https://tfcszo.vteximg.com.br/arquivos/icon-vtex-benefits.svg"
+              alt="2b"
+              width={54}
+              height={24}
+              loading="lazy"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
