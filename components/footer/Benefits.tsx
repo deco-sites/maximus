@@ -2,6 +2,7 @@ import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface benefitsItem {
   image: LiveImage;
+  /** @format html */
   texto: string;
 }
 
@@ -9,12 +10,12 @@ export default function Benefits({ content }: {
   content?: { items?: benefitsItem[] };
 }) {
   return (
-    <div class="w-full flex justify-center bg-white border-t border-[#ebebeb]">
+    <div class="w-full flex justify-center bg-white border-t border-b border-[#ebebeb]">
       {content && content.items && content.items.length > 0 && (
         <ul class="flex justify-center items-center">
           {content.items.map((item) => {
             return (
-              <li class="px-5 pt-9 pb-6 flex justify-center items-center flex-col border-r border-[#ebebeb]">
+              <li class="px-5 pt-9 pb-6 flex justify-center items-center flex-col border-r border-[#ebebeb] max-md:hidden">
                 {item?.image &&
                   (
                     <div class="mb-7 w-[74px] h-[74px] bg-[#f5f5f5] rounded-full flex items-center justify-center">
@@ -37,7 +38,7 @@ export default function Benefits({ content }: {
               </li>
             );
           })}
-          <li class="flex flex-col max-w-[280px] pl-3">
+          <li class="flex flex-col md:max-w-[280px] md:pl-3 max-md:p-6">
             <div class="flex items-center">
               <div class="mr-5 min-w-[74px] h-[74px] bg-[#f5f5f5] rounded-full flex items-center justify-center">
                 <img
@@ -48,13 +49,17 @@ export default function Benefits({ content }: {
                 />
               </div>
               <div>
-                <p class="text-sm"><strong>Ainda em dúvida?</strong></p>
-                <p class="text-sm">Envie sua pergunta pelo nosso formulário de contato</p>
+                <p class="text-sm">
+                  <strong>Ainda em dúvida?</strong>
+                </p>
+                <p class="text-sm">
+                  Envie sua pergunta pelo nosso formulário de contato
+                </p>
               </div>
             </div>
             <a
               href="/Institucional/contato"
-              class="block mt-7 border rounded-md px-7 py-2 text-xs hover:bg-[#f5f5f5] hover:text-[#23527c] hover:underline"
+              class="block mt-7 border rounded-md text-center px-7 py-2 text-xs hover:bg-[#f5f5f5] hover:text-[#23527c] hover:underline"
             >
               Clique aqui para enviar sua dúvida
             </a>

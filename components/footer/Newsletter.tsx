@@ -20,15 +20,11 @@ export interface Props {
     description?: string;
     form?: Form;
   };
-  layout?: {
-    tiled?: boolean;
-  };
 }
 
 function Newsletter(
-  { content, layout = {} }: Props,
+  { content }: Props,
 ) {
-  const { tiled = false } = layout;
   const loading = useSignal(false);
 
   const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
@@ -48,34 +44,41 @@ function Newsletter(
 
   return (
     <div
-      class={`flex ${
-        tiled
-          ? "flex-col gap-4 lg:flex-row lg:w-full lg:justify-between"
-          : "flex-col gap-4"
-      }`}
+      class={"w-full max-w-[1236px] m-auto py-8 flex justify-between max-md:flex-col"}
     >
-      <div class="flex flex-col gap-4">
+      <div class="max-w-[380px] flex flex-col gap-4">
         {content?.title && (
-          <h3 class={tiled ? "text-2xl lg:text-3xl" : "text-lg"}>
+          <h5 class={"text-2xl font-medium max-md:text-center"}>
             {content?.title}
-          </h3>
+          </h5>
         )}
         {content?.description && <div>{content?.description}</div>}
       </div>
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4 max-md:p-6">
         <form
           class="form-control"
           onSubmit={handleSubmit}
         >
-          <div class="flex flex-wrap gap-3">
-            <input
-              name="email"
-              class="flex-auto md:flex-none input input-bordered md:w-80 text-base-content"
-              placeholder={content?.form?.placeholder || "Digite seu email"}
-            />
+          <div class="flex items-end max-md:flex-col">
+            <div class="flex flex-col max-md:w-full">
+              <label class="text-sm font-medium mb-2">Qual o seu nome?</label>
+              <input
+                name="name"
+                class="input input-bordered border-[#ebebeb] md:w-[180px] text-base-content text-sm md:mr-4 max-md:mb-5 focus:outline-none"
+                placeholder={"Ex:Maria"}
+              />
+            </div>
+            <div class="flex flex-col max-md:w-full">
+              <label class="text-sm font-medium mb-2">Nos conte qual o seu melhor e-mail</label>
+              <input
+                name="email"
+                class="input input-bordered border-[#ebebeb] md:w-[270px] text-base-content text-sm md:mr-5 max-md:mb-5 focus:outline-none"
+                placeholder={content?.form?.placeholder || "Ex.: exemplo@email.com.br"}
+              />
+            </div>
             <button
               type="submit"
-              class="btn disabled:loading"
+              class="btn disabled:loading w-full md:max-w-[193px] bg-[#171413] text-white border border-[#171413] hover:bg-white hover:text-[#171413]"
               disabled={loading}
             >
               {content?.form?.buttonText || "Inscrever"}
@@ -84,7 +87,7 @@ function Newsletter(
         </form>
         {content?.form?.helpText && (
           <div
-            class="text-sm"
+            class="text-sm hidden"
             dangerouslySetInnerHTML={{ __html: content?.form?.helpText }}
           />
         )}

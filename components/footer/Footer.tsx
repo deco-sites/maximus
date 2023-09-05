@@ -1,5 +1,6 @@
 import Logo from "$store/components/footer/Logo.tsx";
 import Benefits from "./Benefits.tsx";
+import Newsletter from "$store/islands/Newsletter.tsx";
 import Description from "./Description.tsx";
 import Departaments from "./Departaments.tsx";
 import Links from "./LinksFooter.tsx";
@@ -11,6 +12,7 @@ import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface benefitsItem {
   image: LiveImage;
+  /** @format html */
   texto: string;
 }
 
@@ -28,7 +30,25 @@ export interface PaymentsItem {
 export interface SecurityItem {
   image: LiveImage;
   link: string;
-  size: number;
+  width: number;
+  height: number;
+}
+
+export interface link {
+  link: string;
+  text: string;
+}
+
+export interface linkItem {
+  title: string;
+  items: link[];
+}
+
+export interface NewsletterForm {
+  placeholder?: string;
+  buttonText?: string;
+  /** @format html */
+  helpText?: string;
 }
 
 export interface Props {
@@ -39,10 +59,17 @@ export interface Props {
   beneficios?: {
     items: benefitsItem[];
   };
+  newsletter?: {
+    title?: string;
+    /** @format textarea */
+    description?: string;
+    form?: NewsletterForm;
+  };
   description: string;
   sociais?: {
     items: sociaisItem[];
   };
+  links?: linkItem[];
   payments?: {
     items: PaymentsItem[];
   };
@@ -79,8 +106,107 @@ function Footer({
       },
     ],
   },
+  newsletter = {
+    title: "Newsletter",
+    description: "",
+    form: { placeholder: "", buttonText: "", helpText: "" },
+  },
   description =
     "A Maximus Tecidos é uma empresa apaixonada por <a class='text-[#2980b9] underline' href='https://www.maximustecidos.com.br/tecidos'>tecidos</a> de alta qualidade e pela arte da costura. Além de oferecermos uma ampla variedade de tecidos, , também fornecemos recursos educacionais, como ,  e , para inspirar e ensinar nossos clientes a criarem peças únicas. Além disso, a Maximus Tecidos oferece  ministrados por profissionais experientes. Com essa missão, nós buscamos manter viva a tradição da costura e incentivar as pessoas a explorar sua criatividade no mundo da moda e da costura.",
+
+  links = [
+    {
+      title: "Sobre nós",
+      items: [
+        {
+          link: "/sobre-nos",
+          text: "Conheça a Maximus",
+        },
+        {
+          link: "/Institucional/onde-estamos",
+          text: "Onde Estamos",
+        },
+        {
+          link: "/Institucional/faq",
+          text: "FAQ",
+        },
+        {
+          link: "/Institucional/condicoes-de-uso",
+          text: "Condições de Uso",
+        },
+        {
+          link: "/Institucional/politicas-de-privacidade",
+          text: "Políticas de Privacidade",
+        },
+        {
+          link: "/Institucional/frete-gratis",
+          text: "Políticas de Frete Grátis",
+        },
+      ],
+    },
+    {
+      title: "Atenção ao cliente",
+      items: [
+        {
+          link: "/Institucional/contato",
+          text: "Fale Conosco",
+        },
+        {
+          link: "/desenho-gratuito",
+          text: "Desenho Gratuito",
+        },
+        {
+          link: "/Institucional/tabela-de-medidas",
+          text: "Tabela de medidas",
+        },
+        {
+          link: "/dicionario-de-tecidos",
+          text: "Dicionário de Tecidos",
+        },
+        {
+          link: "/Institucional/como-comprar",
+          text: "Como Comprar",
+        },
+        {
+          link: "/cuidados-com-tecidos",
+          text: "Cuidados com Tecidos",
+        },
+        {
+          link: "/cuidados-com-tecidos",
+          text: "Cuidados com Tecidos",
+        },
+        {
+          link: "/Institucional/trocas-e-devolucoes",
+          text: "Troca e Devolução",
+        },
+        {
+          link: "/clube-da-costureira",
+          text: "Clube da Costureira",
+        },
+        {
+          link: "/desconto-estudante",
+          text: "Desconto do Estudante",
+        },
+      ],
+    },
+    {
+      title: "Minha Conta",
+      items: [
+        {
+          link: "/_secure/account#/orders",
+          text: "Meus pedidos",
+        },
+        {
+          link: "/_secure/account",
+          text: "Meus dados",
+        },
+        {
+          link: "/_secure/account",
+          text: "Meu Perfil",
+        },
+      ],
+    },
+  ],
   sociais = {
     items: [
       {
@@ -136,7 +262,7 @@ function Footer({
       {
         image:
           "https://tfcszo.vteximg.com.br/arquivos/logo-google.svg?v=637966973680800000",
-          size: 158,
+        size: 158,
       },
       {
         image:
@@ -155,32 +281,37 @@ function Footer({
         image:
           "https://tfcszo.vteximg.com.br/arquivos/logo-encrypt.svg?v=637966973679400000",
         link: "#",
-        size: 64,
+        width: 64,
+        height: 50,
       },
       {
         image:
           "https://service.yourviews.com.br/Image/ae97f62a-00ed-4eb7-8fbf-024f90f5ff8a/Footer.jpg",
         link: "https://www.lojaconfiavel.com/maximustecidos",
-        size: 88,
+        width: 88,
+        height: 90,
       },
       {
         image:
           "https://tfcszo.vteximg.com.br/arquivos/logo-google.svg?v=637966973680800000",
         link:
           "https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fwww.maximustecidos.com.br%2Fhl=pt_BR",
-        size: 158,
+        width: 158,
+        height: 45,
       },
       {
         image:
           "https://tfcszo.vteximg.com.br/arquivos/logo-pci.png?v=637979317453500000",
         link: "https://secure.vtex.com/?an=tfcszo",
-        size: 100,
+        width: 100,
+        height: 62,
       },
       {
         image: "https://tfcszo.vteximg.com.br/arquivos/selo-google.png",
         link:
           "https://www.google.com/shopping/ratings/account/metrics?q=maximustecidos.com.br&c=BR&v=19&hl=pt_BR",
-        size: 168,
+        width: 168,
+        height: 55,
       },
     ],
   },
@@ -194,15 +325,16 @@ function Footer({
 }: Props) {
   return (
     <footer
-      class={`w-full flex flex-col pt-10 pb-2 md:pb-10`}
+      class={`w-full flex flex-col pt-10`}
     >
       <div>
         <Logo logo={logo} />
       </div>
       <Benefits content={beneficios} />
+      <Newsletter content={newsletter} />
       <Description description={description} />
       <Departaments />
-      <Links />
+      <Links content={links} />
       <Sociais content={sociais} />
       <Payments payments={payments} security={security} />
       <Copyrigth copyrigth={copyrigth} />

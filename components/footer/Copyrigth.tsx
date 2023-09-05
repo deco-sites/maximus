@@ -8,7 +8,7 @@ export interface Props {
 
 export default function Copyrigth({ copyrigth }: Props) {
   return (
-    <div class="w-full py-6 bg-[#f5f5f5] border border-t border-[#ebebeb]">
+    <div class="w-full py-6 bg-[#f5f5f5] border border-t border-[#ebebeb] max-md:px-6">
       {copyrigth?.texto1 &&
         (
           <p class="max-w-[1206px] m-auto text-center text-[#999] text-[10px] mb-5">

@@ -11,9 +11,9 @@ export default function Sociais({ content }: {
   content?: { items?: sociaisItem[] };
 }) {
   return (
-    <div class="w-full max-w-[1236px] m-auto flex justify-between items-center bg-white pt-9 pb-6">
-      <div class="w-70 flex items-center">
-        <a href="/" class="block mr-7">
+    <div class="w-full max-w-[1236px] m-auto flex justify-between items-center bg-white max-md:pt-9 md:pt-7 pb-7 max-md:flex-col">
+      <div class="w-70 flex items-center max-md:flex-col">
+        <a href="/" class="block md:mr-7">
           <Image
             src="https://tfcszo.vteximg.com.br/arquivos/icon-maximus-social.svg?v=637966974692800000"
             alt="logo"
@@ -23,7 +23,7 @@ export default function Sociais({ content }: {
           />
         </a>
         {content && content.items && content.items.length > 0 && (
-          <ul class="flex justify-center items-center">
+          <ul class="flex justify-center items-center max-md:my-9">
             {content.items.map((item) => {
               return (
                 <li>

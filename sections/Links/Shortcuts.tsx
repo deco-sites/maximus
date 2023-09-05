@@ -14,7 +14,7 @@ export interface Props {
 
 export default function Shortcuts({ shortcuts, onHover }: Props) {
   return (
-    <div class="group fixed flex flex-col top-1/2 right-0 z-20">
+    <div class="group fixed hidden flex-col top-1/2 right-0 z-20">
       {shortcuts?.map((shortcut) => {
         return (
           <a
