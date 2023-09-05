@@ -69,11 +69,14 @@ function Newsletter(
               />
             </div>
             <div class="flex flex-col max-md:w-full">
-              <label class="text-sm font-medium mb-2">Nos conte qual o seu melhor e-mail</label>
+              <label class="text-sm font-medium mb-2">
+                Nos conte qual o seu melhor e-mail
+              </label>
               <input
                 name="email"
                 class="input input-bordered border-[#ebebeb] md:w-[270px] text-base-content text-sm md:mr-5 max-md:mb-5 focus:outline-none"
-                placeholder={content?.form?.placeholder || "Ex.: exemplo@email.com.br"}
+                placeholder={content?.form?.placeholder ||
+                  "Ex.: exemplo@email.com.br"}
               />
             </div>
             <button
