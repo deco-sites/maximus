@@ -78,7 +78,7 @@ export interface Props {
   };
 }
 
-function Footer({ 
+function Footer({
   beneficios = {
     items: [
       {
@@ -320,7 +320,7 @@ function Footer({
   return (
     <footer
       class={`w-full flex flex-col`}
-    >     
+    >
       <Benefits content={beneficios} />
       <Newsletter content={newsletter} />
       <Description description={description} />

@@ -8,7 +8,7 @@ export default function TitleShelf(props: Props) {
   const {
     title = "Novidades em Tecidos para Confecção de Roupas",
     text = "Só Tecidos de Qualidade",
-    link = "#", 
+    link = "#",
   } = props;
   return (
     <div class="w-full max-w-[1246px] mr-auto ml-auto my-6 flex justify-between items-center max-md:flex-col max-md:px-3">

@@ -25,10 +25,12 @@ export default function Benefits(
       description: "Loja <b>100% Segura!</b> <br> Somos a maior do Brasil",
     }, {
       image: "/arquivos/benefits-2.png",
-      description: "Pague em até <b>3x sem juros</b> <br> no cartão ou <b>5% desconto</b> <br> no pix",
+      description:
+        "Pague em até <b>3x sem juros</b> <br> no cartão ou <b>5% desconto</b> <br> no pix",
     }, {
       image: "/arquivos/benefits-3.png",
-      description: "<b>Frete grátis</b> para todo o <br> Brasil. <b>*consulte condições</b>",
+      description:
+        "<b>Frete grátis</b> para todo o <br> Brasil. <b>*consulte condições</b>",
     }, {
       image: "/arquivos/benefits-4.png",
       description: "Conheça os cursos da Escola <br> de Moda On-line",
@@ -63,9 +65,9 @@ export default function Benefits(
           >
           </div>
           <p
-            class={`text-sm ${
-              reverse ? "text-base-100" : "text-[#262626]"
-            } ${benefitLayout == "piledup" ? "hidden lg:block" : ""}`}
+            class={`text-sm ${reverse ? "text-base-100" : "text-[#262626]"} ${
+              benefitLayout == "piledup" ? "hidden lg:block" : ""
+            }`}
             dangerouslySetInnerHTML={{
               __html: benefit.description,
             }}
