@@ -1,4 +1,3 @@
-import Logo from "$store/components/footer/Logo.tsx";
 import Benefits from "./Benefits.tsx";
 import Newsletter from "$store/islands/Newsletter.tsx";
 import Description from "./Description.tsx";
@@ -52,10 +51,6 @@ export interface NewsletterForm {
 }
 
 export interface Props {
-  logo?: {
-    image: LiveImage;
-    description?: string;
-  };
   beneficios?: {
     items: benefitsItem[];
   };
@@ -83,8 +78,7 @@ export interface Props {
   };
 }
 
-function Footer({
-  logo,
+function Footer({ 
   beneficios = {
     items: [
       {
@@ -325,11 +319,8 @@ function Footer({
 }: Props) {
   return (
     <footer
-      class={`w-full flex flex-col pt-10`}
-    >
-      <div>
-        <Logo logo={logo} />
-      </div>
+      class={`w-full flex flex-col`}
+    >     
       <Benefits content={beneficios} />
       <Newsletter content={newsletter} />
       <Description description={description} />

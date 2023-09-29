@@ -51,8 +51,8 @@ const relative = (url: string) => {
   return `${link.pathname}${link.search}`;
 };
 
-const WIDTH = 200;
-const HEIGHT = 279;
+const WIDTH = 234;
+const HEIGHT = 234;
 
 function ProductCard({ product, preload, itemListName, layout }: Props) {
   const {
@@ -151,7 +151,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
         {/* Product Images */}
         <a
           href={url && relative(url)}
-          aria-label="view product"
+          aria-label="hidden view product"
           class="grid grid-cols-1 grid-rows-1 w-full"
         >
           <Image
@@ -208,7 +208,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
           <>
             {l?.hide?.skuSelector ? "" : (
               <ul
-                class={`flex items-center gap-2 w-full overflow-auto p-3 ${
+                class={`hidden items-center gap-2 w-full overflow-auto p-3 ${
                   align === "center" ? "justify-center" : "justify-start"
                 } ${l?.onMouseOver?.showSkuSelector ? "lg:hidden" : ""}`}
               >
@@ -232,7 +232,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
               {l?.hide?.productDescription
                 ? ""
                 : (
-                  <p class="truncate text-sm lg:text-sm text-neutral">
+                  <p class="truncate text-sm lg:text-sm text-neutral hidden">
                     {product.description}
                   </p>
                 )}
@@ -261,7 +261,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
             {l?.hide?.installments
               ? ""
               : (
-                <div class="text-base-300 text-sm lg:text-base">
+                <div class="hidden text-base-300 text-sm lg:text-base">
                   ou {installments}
                 </div>
               )}
@@ -273,7 +273,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
           <>
             {l?.hide?.skuSelector ? "" : (
               <ul
-                class={`flex items-center gap-2 w-full ${
+                class={`hidden items-center gap-2 w-full ${
                   align === "center" ? "justify-center" : "justify-start"
                 } ${l?.onMouseOver?.showSkuSelector ? "lg:hidden" : ""}`}
               >
@@ -286,7 +286,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
         {!l?.hide?.cta
           ? (
             <div
-              class={`flex-auto flex items-end ${
+              class={`flex-auto hidden items-end ${
                 l?.onMouseOver?.showCta ? "lg:hidden" : ""
               }`}
             >
