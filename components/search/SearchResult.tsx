@@ -10,6 +10,8 @@ import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
 
 import Pagination from "$store/components/search/Pagination.tsx";
 
+import InfoPagination from "$store/components/search/InfoPagination.tsx"
+
 import Sort from "$store/components/search/Sort.tsx";
 
 export interface Layout {
@@ -81,6 +83,7 @@ function Result({
             <ProductGallery products={products} layout={cardLayout} />
 
             <Pagination pageInfo={pageInfo} />
+            <InfoPagination pageInfo={pageInfo}/>
           </div>
         </div>
       </div>
