@@ -8,6 +8,10 @@ import type { ProductListingPage } from "deco-sites/std/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "deco-sites/std/commerce/utils/productToAnalyticsItem.ts";
 import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
 
+import Pagination from "$store/components/search/Pagination.tsx";
+
+import Sort from "$store/components/search/Sort.tsx";
+
 export interface Layout {
   /**
    * @description Use drawer for mobile like behavior on desktop. Aside for rendering the filters alongside the products
@@ -42,7 +46,11 @@ function Result({
 
   return (
     <>
-      <div class="container px-4 sm:py-10">
+      <div class="max-w-[1206px] mx-auto container px-4 sm:py-10 mt-6 border-t-[#EBEBEB] border-t">
+        <h3>{breadcrumb.itemListElement[0].name}</h3>
+        <h1 class="hidden max-md:block text-2xl font-semibold leading-[29px] text-center text-[#333333] mb-4 mt-8">
+          TECIDOS
+        </h1>
         <SearchControls
           sortOptions={sortOptions}
           filters={filters}
@@ -53,35 +61,26 @@ function Result({
         <div class="flex flex-row">
           {layout?.variant === "aside" && filters.length > 0 && (
             <aside class="hidden sm:block w-min min-w-[250px]">
+              <h3 class="text-[22px] font-medium leading-[19px] text-neutral-800 mb-[35px]">
+                Filtros
+              </h3>
               <Filters filters={filters} />
             </aside>
           )}
           <div class="flex-grow">
-            <ProductGallery products={products} layout={cardLayout} />
-          </div>
-        </div>
+            <div class="ml-0 md:ml-10 py-3">
+              <h1 class="hidden md:block text-2xl font-semibold leading-[29px] text-center text-[#333333] mb-4">
+                TECIDOS
+              </h1>
+              <div class="hidden md:flex items-center justify-between">
+                {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}
 
-        <div class="flex justify-center my-4">
-          <div class="join">
-            <a
-              aria-label="previous page link"
-              rel="prev"
-              href={pageInfo.previousPage ?? "#"}
-              class="btn btn-ghost join-item"
-            >
-              <Icon id="ChevronLeft" size={24} strokeWidth={2} />
-            </a>
-            <span class="btn btn-ghost join-item">
-              Page {pageInfo.currentPage + 1}
-            </span>
-            <a
-              aria-label="next page link"
-              rel="next"
-              href={pageInfo.nextPage ?? "#"}
-              class="btn btn-ghost join-item"
-            >
-              <Icon id="ChevronRight" size={24} strokeWidth={2} />
-            </a>
+                <Pagination pageInfo={pageInfo} />
+              </div>
+            </div>
+            <ProductGallery products={products} layout={cardLayout} />
+
+            <Pagination pageInfo={pageInfo} />
           </div>
         </div>
       </div>

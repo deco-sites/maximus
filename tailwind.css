@@ -21,6 +21,19 @@
     /* Firefox */
   }
 
+  .btn-slider-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000002e;
+    color: #fff;
+  }
+
+  /*cores*/
+  .bg-color-azul {
+    background-color: #0055ff;
+  }
+
   /** Remove default styles from input[type=number] */
   input[type=number]::-webkit-inner-spin-button,
   input[type=number]::-webkit-outer-spin-button {

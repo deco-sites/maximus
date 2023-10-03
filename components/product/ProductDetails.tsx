@@ -74,6 +74,9 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
   const productGroupID = isVariantOf?.productGroupID ?? "";
   const discount = price && listPrice ? listPrice - price : 0;
 
+  console.log(">>>>>>additionalProperty", additionalProperty);
+  
+
   return (
     <>
       {/* Breadcrumb */}

@@ -52,8 +52,6 @@ export default function BannerSchool(
 
   const id = useId();
 
-  const dots = banners.length / 3;
-
   function Dots({ banners }: Props) {
     return (
       <>
@@ -133,12 +131,12 @@ export default function BannerSchool(
         </Slider>
         <div class="hidden md:block">
           <div class="z-10 absolute -left-2 lg:-left-8 top-1/2">
-            <Slider.PrevButton class="btn btn-circle btn-outline">
+            <Slider.PrevButton class="btn-slider-custom btn btn-circle btn-outline">
               <Icon size={24} id="ChevronLeft" strokeWidth={3} />
             </Slider.PrevButton>
           </div>
           <div class="z-10 absolute -right-2 lg:-right-8 top-1/2">
-            <Slider.NextButton class="btn btn-circle btn-outline">
+            <Slider.NextButton class="btn-slider-custom btn btn-circle btn-outline">
               <Icon size={24} id="ChevronRight" strokeWidth={3} />
             </Slider.NextButton>
           </div>

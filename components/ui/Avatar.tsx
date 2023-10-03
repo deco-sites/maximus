@@ -24,6 +24,7 @@ const colors: Record<string, string> = {
 interface Props {
   variant?: "active" | "disabled" | "default";
   content: string;
+  type: string;
 }
 
 const variants = {
@@ -33,18 +34,41 @@ const variants = {
   default: "border border-base-200 hover:border-primary",
 };
 
-function Avatar({ content, variant = "default" }: Props) {
+function urlFormatada(str: string) {
+  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ /g, "-")
+    .toLowerCase().replace(/%20/g, "-");
+}
+
+function Avatar({ content, variant = "default", type }: Props) {
   return (
     <div class="avatar placeholder text-xs">
-      <div
-        class={`rounded-full w-8 h-8 ${colors[content] ?? colors[variant]} ${
-          variants[variant]
-        }`}
-      >
-        <span class="uppercase">
-          {colors[content] ? "" : content.substring(0, 2)}
-        </span>
-      </div>
+      {type === "color"
+        ? (
+          <div
+            class={`rounded-full w-8 h-8 ${
+              colors[content] ?? colors[variant]
+            } ${variants[variant]}`}
+          >
+            <span
+              style={{
+                backgroundImage: `url(/arquivos/${urlFormatada(content)}.png)`,
+              }}
+              class="w-[25px] h-[25px] border border-neutral-100 bg-contain bg-no-repeat rounded-[50%] border-solid"
+            >
+            </span>
+          </div>
+        )
+        : (
+          <div
+            class={`rounded-full w-8 h-8 ${
+              colors[content] ?? colors[variant]
+            } ${variants[variant]}`}
+          >
+            <span class="uppercase">
+              {colors[content] ? "" : content.substring(0, 2)}
+            </span>
+          </div>
+        )}
     </div>
   );
 }

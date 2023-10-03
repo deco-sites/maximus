@@ -81,6 +81,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
         <Avatar
           variant={link === url ? "active" : "default"}
           content={value}
+          type={"default"}
         />
       </a>
     </li>
@@ -159,7 +160,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
             alt={front.alternateName}
             width={WIDTH}
             height={HEIGHT}
-            class={`bg-base-100 col-span-full row-span-full rounded w-full ${
+            class={`bg-base-100 col-span-full row-span-full w-full ${
               l?.onMouseOver?.image == "Zoom image"
                 ? "duration-100 transition-scale scale-100 lg:group-hover:scale-125"
                 : ""
@@ -176,7 +177,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
               alt={back?.alternateName ?? front.alternateName}
               width={WIDTH}
               height={HEIGHT}
-              class="bg-base-100 col-span-full row-span-full transition-opacity rounded w-full opacity-0 lg:group-hover:opacity-100"
+              class="bg-base-100 col-span-full row-span-full transition-opacity w-full opacity-0 lg:group-hover:opacity-100"
               sizes="(max-width: 640px) 50vw, 20vw"
               loading="lazy"
               decoding="async"
@@ -225,7 +226,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
               {l?.hide?.productName
                 ? ""
                 : (
-                  <h2 class="truncate text-base lg:text-lg text-base-content">
+                  <h2 class="truncate text-xs md:text-base text-base-content">
                     {name}
                   </h2>
                 )}
