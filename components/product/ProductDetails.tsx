@@ -75,7 +75,6 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
   const discount = price && listPrice ? listPrice - price : 0;
 
   console.log(">>>>>>additionalProperty", additionalProperty);
-  
 
   return (
     <>
