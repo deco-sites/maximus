@@ -1,8 +1,0 @@
-{
-  "siteId": 2244,
-  "namespace": "deco-sites/maximus",
-  "imports": [
-    "$live/live.gen.ts",
-    "deco-sites/std/live.gen.ts"
-  ]
-}
