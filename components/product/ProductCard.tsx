@@ -63,6 +63,10 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
     offers,
     isVariantOf,
   } = product;
+
+console.log("product::", product.additionalProperty);
+
+
   const id = `product-card-${productID}`;
   const productGroupID = isVariantOf?.productGroupID;
   const [front, back] = images ?? [];
@@ -255,7 +259,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
               >
                 {formatPrice(listPrice, offers!.priceCurrency!)}
               </div>
-              <div class="text-accent text-base lg:text-xl">
+              <div class="text-sm font-bold leading-[34px] text-[#171413]">
                 {formatPrice(price, offers!.priceCurrency!)}
               </div>
             </div>

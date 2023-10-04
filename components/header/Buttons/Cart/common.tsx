@@ -32,7 +32,7 @@ function CartButton({ loading, currency, total, items }: Props) {
         loading={loading}
         onClick={onClick}
       >
-        <Icon id="ShoppingCart" size={24} strokeWidth={2} />
+        <img src="/arquivos/icon-cart-2.svg" />
         <div class="w-[25px] h-[25px] ml-[-6px] flex items-center justify-center border rounded border-[#e4a886] text-white font-light">
           {totalItems > 9 ? "9+" : totalItems}
         </div>

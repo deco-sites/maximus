@@ -17,11 +17,11 @@ function Searchbar({ searchbar }: Props) {
 
   return (
     <div>
-      {open && (
+    
         <Suspense fallback={<span class="loading loading-ring" />}>
           <LazySearchbar {...searchbar} />
         </Suspense>
-      )}
+   
     </div>
   );
 }

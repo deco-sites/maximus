@@ -41,19 +41,14 @@ function Navbar({ items, searchbar, logo }: {
             href="/login"
             aria-label="Log in"
           >
-            <Icon id="User" size={24} strokeWidth={0.4} />
+            <img src="/arquivos/icone-profile.svg" />
           </a>
           <a
             class="btn btn-circle btn-sm btn-ghost text-white"
             href="/wishlist"
             aria-label="Wishlist"
           >
-            <Icon
-              id="Heart"
-              size={24}
-              strokeWidth={2}
-              fill="none"
-            />
+           <img src="/arquivos/icone-wishlist.svg" />
           </a>
           {PLATFORM === "vtex" && <CartButtonVTEX />}
           {PLATFORM === "vnda" && <CartButtonVDNA />}
@@ -69,7 +64,7 @@ function Navbar({ items, searchbar, logo }: {
       </div>
 
       {/* Desktop Version */}
-      <div class="hidden md:flex flex-row justify-between items-center w-full pl-6 pr-6 h-[92px]">
+      <div class="w-full max-w-[1246px] mr-auto ml-auto hidden md:flex flex-row justify-between items-center pl-6 pr-6 h-[92px]">
         <div class="flex-none min-w-[25%] relative">
           <Searchbar searchbar={searchbar} />
         </div>
@@ -84,25 +79,20 @@ function Navbar({ items, searchbar, logo }: {
             </a>
           )}
         </div>
-        <div class="flex-none min-w-[25%] flex items-center justify-end gap-2">
+        <div class="flex-none min-w-[25%] flex items-center justify-end gap-4">
           <a
             class="btn btn-circle btn-sm btn-ghost text-white"
             href="/login"
             aria-label="Log in"
           >
-            <Icon id="User" size={24} strokeWidth={0.4} />
+            <img src="/arquivos/icone-profile.svg" />
           </a>
           <a
             class="btn btn-circle btn-sm btn-ghost text-white"
             href="/wishlist"
             aria-label="Wishlist"
           >
-            <Icon
-              id="Heart"
-              size={24}
-              strokeWidth={2}
-              fill="none"
-            />
+            <img src="/arquivos/icone-wishlist.svg" />
           </a>
           {PLATFORM === "vtex" && <CartButtonVTEX />}
           {PLATFORM === "vnda" && <CartButtonVDNA />}

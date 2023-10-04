@@ -26,7 +26,7 @@ export default function Benefits(
     }, {
       image: "/arquivos/benefits-2.png",
       description:
-        "Pague em até <b>3x sem juros</b> <br> no cartão ou <b>5% desconto</b> <br> no pix",
+        "<b>3x sem juros</b> no cartão <br> ou <b>5% desconto</b> no pix",
     }, {
       image: "/arquivos/benefits-3.png",
       description:

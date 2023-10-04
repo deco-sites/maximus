@@ -73,11 +73,11 @@ function Searchbar({
       class="overflow-y-hidden"
       style={{ gridTemplateRows: "min-content auto" }}
     >
-      <form id={id} action={action} class="join">
+      <form id={id} action={action} class="join w-[280px] hover:bg-white relative text-white hover:text-[#171413]">
         <input
           ref={searchInputRef}
           id="search-input"
-          class="input input-bordered join-item flex-grow bg-zinc-900 border-white"
+          class="input input-bordered join-item flex-grow w-full bg-transparent border-white border-r-0 rounded-r-none h-[38px] text-xs font-medium"
           name={name}
           defaultValue={query}
           onInput={(e) => {
@@ -99,7 +99,7 @@ function Searchbar({
         />
         <Button
           type="submit"
-          class="join-item btn-square"
+          class="bg-transparent hover:bg-transparent hover:border-white border-white border-l-0 rounded-l-none max-h-[38px] min-h-[38px] text-current absolute right-0"
           aria-label="Search"
           for={id}
           tabIndex={-1}

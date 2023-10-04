@@ -60,6 +60,7 @@ export interface Props {
     description?: string;
     form?: NewsletterForm;
   };
+   /** @format html */
   description: string;
   sociais?: {
     items: sociaisItem[];
