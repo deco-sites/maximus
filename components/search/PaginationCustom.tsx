@@ -15,7 +15,7 @@ export default function PaginationCustom(
 ) {
   if (!pageInfo.records || !pageInfo.recordPerPage) return;
 
-  console.log("nextPage", pageInfo.nextPage);
+ // console.log("nextPage", pageInfo.nextPage);
 
   const pageFormated = pageInfo.nextPage
     ? pageInfo.nextPage.split("page=")[0]

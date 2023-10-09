@@ -33,6 +33,10 @@
     white-space: break-spaces;
   }
 
+  .itemDots:nth-child(3n+2) {
+    display: block;
+  }
+
   /*cores*/
   .bg-color-azul {
     background-color: #0055ff;

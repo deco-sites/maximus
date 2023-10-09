@@ -64,7 +64,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
     isVariantOf,
   } = product;
 
-console.log("product::", product.additionalProperty);
+//console.log("product::", product.additionalProperty);
 
 
   const id = `product-card-${productID}`;
@@ -246,14 +246,14 @@ console.log("product::", product.additionalProperty);
         {l?.hide?.allPrices ? "" : (
           <div class="flex flex-col gap-2">
             <div
-              class={`flex flex-col gap-0 ${
+              class={`flex gap-0 ${
                 l?.basics?.oldPriceSize === "Normal"
                   ? "lg:flex-row lg:gap-2"
                   : ""
               } ${align === "center" ? "justify-center" : "justify-start"}`}
             >
               <div
-                class={`line-through text-base-300 text-xs ${
+                class={`flex items-center flex-wrap mr-2 line-through text-base-300 text-xs ${
                   l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
                 }`}
               >

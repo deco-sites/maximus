@@ -13,15 +13,15 @@ export interface Props {
 
 function Searchbar({ searchbar }: Props) {
   const { displaySearchPopup } = useUI();
-  const open = displaySearchPopup.value;
+  const open = displaySearchPopup.value ? displaySearchPopup.value : true;
 
   return (
     <div>
-    
+    {open && (
         <Suspense fallback={<span class="loading loading-ring" />}>
           <LazySearchbar {...searchbar} />
         </Suspense>
-   
+        )}
     </div>
   );
 }

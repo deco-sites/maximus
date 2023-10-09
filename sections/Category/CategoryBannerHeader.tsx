@@ -16,7 +16,7 @@ export default function CategoryBannerHeader(props: Props) {
     <div class="w-full max-w-[1236px] mx-auto mb-6 mt-9 max-md:px-3 relative flex items-center justify-center max-md:mt-[128px]">
       <img src={image} alt="banner de categoria" />
       <div class="absolute text-white">
-        <p>TECIDOS</p>
+        <p class="text-[28px] font-medium leading-[19px] text-white text-center mb-4">TECIDOS</p>
         <Breadcrumb
           itemListElement={[]}
         />

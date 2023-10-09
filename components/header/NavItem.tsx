@@ -38,7 +38,7 @@ function NavItem({ item }: { item: INavItem }) {
 
             {/*<only desk>*/}
             <div class="w-full max-w-[1260px] pt-[40px] pb-[20px] border-b-[1px] border-[#ebebeb]">
-              <span class="text-[#171413] text-sm">
+              <span class="text-[#262626] text-[15px] font-semibold">
                 {label}
               </span>
             </div>
@@ -67,7 +67,7 @@ function NavItem({ item }: { item: INavItem }) {
             {/*<only desk>*/}
             <div class="w-full max-w-[1260px] pb-[20px]">
               <a href={href}>
-                <span class="flex items-center uppercase text-[#171413] after:content-['\0279E'] after:text-3xl after:ml-5">
+                <span class="flex items-center uppercase text-[#171413] after:text-base after:scale-x-[2] after:content-['\0279E'] after:ml-5 hover:underline after:no-underline">
                   Ver todos os produtos
                 </span>
               </a>

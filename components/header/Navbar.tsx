@@ -1,14 +1,16 @@
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
+//import Icon from "$store/components/ui/Icon.tsx";
 import { MenuButton } from "$store/islands/Header/Buttons.tsx";
 import CartButtonVDNA from "$store/islands/Header/Cart/vnda.tsx";
 import CartButtonVTEX from "$store/islands/Header/Cart/vtex.tsx";
-import Searchbar from "$store/islands/Header/Searchbar.tsx";
+//import Searchbar from "$store/islands/Header/Searchbar.tsx";
 import { PLATFORM } from "$store/platform.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 import type { INavItem } from "./NavItem.tsx";
 import NavItem from "./NavItem.tsx";
 import { navbarHeight } from "./constants.ts";
+
+import Searchh from "$store/components/search/Searchbar.tsx"
 
 function Navbar({ items, searchbar, logo }: {
   items: INavItem[];
@@ -37,14 +39,14 @@ function Navbar({ items, searchbar, logo }: {
 
         <div class="flex items-center gap-2">
           <a
-            class="btn btn-circle btn-sm btn-ghost text-white"
+            class="btn btn-circle btn-sm btn-ghost hover:bg-[#171413] text-white"
             href="/login"
             aria-label="Log in"
           >
             <img src="/arquivos/icone-profile.svg" />
           </a>
           <a
-            class="btn btn-circle btn-sm btn-ghost text-white"
+            class="btn btn-circle btn-sm btn-ghost hover:bg-[#171413] text-white"
             href="/wishlist"
             aria-label="Wishlist"
           >
@@ -66,7 +68,8 @@ function Navbar({ items, searchbar, logo }: {
       {/* Desktop Version */}
       <div class="w-full max-w-[1246px] mr-auto ml-auto hidden md:flex flex-row justify-between items-center pl-6 pr-6 h-[92px]">
         <div class="flex-none min-w-[25%] relative">
-          <Searchbar searchbar={searchbar} />
+           {/*<Searchbar searchbar={searchbar} />*/}
+          <Searchh/>
         </div>
         <div class="flex-auto flex justify-center">
           {logo && (
@@ -81,14 +84,14 @@ function Navbar({ items, searchbar, logo }: {
         </div>
         <div class="flex-none min-w-[25%] flex items-center justify-end gap-4">
           <a
-            class="btn btn-circle btn-sm btn-ghost text-white"
+            class="btn btn-circle btn-sm btn-ghost hover:bg-[#171413] text-white"
             href="/login"
             aria-label="Log in"
           >
             <img src="/arquivos/icone-profile.svg" />
           </a>
           <a
-            class="btn btn-circle btn-sm btn-ghost text-white"
+            class="btn btn-circle btn-sm btn-ghost hover:bg-[#171413] text-white"
             href="/wishlist"
             aria-label="Wishlist"
           >

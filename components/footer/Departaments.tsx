@@ -10,7 +10,7 @@ export default function Departaments() {
         <h4 class="uppercase text-md font-bold text-center mb-5">
           departamentos
         </h4>
-        <ul class="flex justify-center md:gap-5 max-md:flex-col">
+        <ul class="flex justify-center md:justify-between max-md:flex-col">
           <li class="max-md:collapse collapse-plus max-md:border-t border-[#ebebeb] max-md:rounded-none">
             <input class="md:hidden" type="checkbox" />
             <a
@@ -19,7 +19,7 @@ export default function Departaments() {
             >
               TECIDOS
             </a>
-            <ul class="max-h-[540px] flex flex-wrap flex-col content-start collapse-content md:visible md:px-0">
+            <ul class="max-h-[initial] md:max-h-[540px] flex md:flex-wrap flex-col content-start collapse-content md:visible md:px-0">
               <li id="0">
                 <a
                   href="https://www.maximustecidos.com.br/tecidos/flanela"
@@ -280,7 +280,7 @@ export default function Departaments() {
               LIVROS, MOLDES E RÉGUAS
             </a>
 
-            <ul class="max-h-[540px] flex flex-wrap flex-col content-start collapse-content md:visible md:px-0">
+            <ul class="max-h-[initial] md:max-h-[540px] flex md:flex-wrap flex-col content-start collapse-content md:visible md:px-0">
               <li id="0">
                 <a
                   href="https://www.maximustecidos.com.br/livros-moldes-e-reguas/desenho-de-moda"
@@ -341,7 +341,7 @@ export default function Departaments() {
               OFERTAS
             </a>
 
-            <ul class="max-h-[540px] flex flex-wrap flex-col content-start collapse-content md:visible md:px-0">
+            <ul class="max-h-[initial] md:max-h-[540px] flex md:flex-wrap flex-col content-start collapse-content md:visible md:px-0">
               <li id="0">
                 <a
                   href="https://www.maximustecidos.com.br/ofertas/tecidos-promocionais"
@@ -386,7 +386,7 @@ export default function Departaments() {
               AVIAMENTOS E BORDADO
             </a>
 
-            <ul class="max-h-[540px] flex flex-wrap flex-col content-start collapse-content md:visible md:px-0">
+            <ul class="max-h-[initial] md:max-h-[540px] flex md:flex-wrap flex-col content-start collapse-content md:visible md:px-0">
               <li id="0">
                 <a
                   href="https://www.maximustecidos.com.br/aviamentos-e-bordado/bordado-e-pedrarias"
@@ -415,7 +415,7 @@ export default function Departaments() {
               MÁQUINAS
             </a>
 
-            <ul class="max-h-[540px] flex flex-wrap flex-col content-start collapse-content md:visible md:px-0">
+            <ul class="max-h-[initial] md:max-h-[540px] flex md:flex-wrap flex-col content-start collapse-content md:visible md:px-0">
               <li id="0">
                 <a
                   href="https://www.maximustecidos.com.br/maquinas/maquinas-de-costura-domestica"
@@ -436,7 +436,7 @@ export default function Departaments() {
               CURSOS
             </a>
 
-            <ul class="max-h-[540px] flex flex-wrap flex-col content-start collapse-content md:visible md:px-0">
+            <ul class="max-h-[initial] md:max-h-[540px] flex md:flex-wrap flex-col content-start collapse-content md:visible md:px-0">
               <li>
                 <a class="text-xs text-[#525252] mb-3 max-w-[150px] block">
                   Modelagem

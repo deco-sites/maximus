@@ -73,7 +73,7 @@ function CookieConsent(props: Props) {
       <div
         id={id}
         class={`
-          transform-gpu translate-y-[200%] transition fixed bottom-0 lg:bottom-2 w-screen z-50 lg:flex
+          transform-gpu translate-y-[200%] transition fixed bottom-0 w-screen z-50 lg:flex
           ${layout?.position === "Left" ? "lg:justify-start" : ""}
           ${layout?.position === "Center" ? "lg:justify-center" : ""}
           ${layout?.position === "Right" ? "lg:justify-end" : ""}
@@ -81,10 +81,10 @@ function CookieConsent(props: Props) {
       >
         <div
           class={`
-          p-4 mx-4 my-2 flex flex-col gap-4 shadow bg-base-100 rounded border border-base-200 
+          px-4 py-8 flex flex-col gap-4 bg-base-100 shadow-[rgba(0,0,0,0.1)_1px_2px_4px] border-2 border-solid border-[rgba(0,0,0,0.2)] 
           ${
             !layout?.position || layout?.position === "Expanded"
-              ? "lg:container lg:mx-auto"
+              ? "lg:w-full"
               : `
             ${layout?.content === "Piled up" ? "lg:w-[480px]" : ""}
             ${
@@ -107,10 +107,10 @@ function CookieConsent(props: Props) {
               !layout?.content || layout?.content === "Tiled" ? "lg:gap-2" : ""
             }`}
           >
-            <h3 class="text-xl">{title}</h3>
+            <h3 class="hidden text-xl">{title}</h3>
             {text && (
               <div
-                class="text-base"
+                class="text-base leading-[1.5em] text-black text-center"
                 dangerouslySetInnerHTML={{ __html: text }}
               />
             )}
@@ -121,16 +121,19 @@ function CookieConsent(props: Props) {
           </div>
 
           <div
-            class={`flex flex-col gap-2 ${
+            class={`flex justify-center flex-col gap-2 ${
               !layout?.position || layout?.position === "Expanded"
                 ? "lg:flex-row"
                 : ""
             }`}
           >
-            <button class="btn" data-button-cc-accept>
+            <button
+              class="btn bg-black text-white hover:bg-[rgb(34,34,34)]"
+              data-button-cc-accept
+            >
               {buttons.allowText}
             </button>
-            <button class="btn btn-outline" data-button-cc-close>
+            <button class="hidden btn btn-outline" data-button-cc-close>
               {buttons.cancelText}
             </button>
           </div>

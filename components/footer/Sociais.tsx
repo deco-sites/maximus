@@ -49,7 +49,7 @@ export default function Sociais({ content }: {
           <p class="text-xs text-[#999] mr-3">Desenvolvido por</p>
           <a href="https://vtex.com/br-pt/" target="_blank">
             <Image
-              src="https://tfcszo.vteximg.com.br/arquivos/icon-2b-benefits.svg"
+              src="https://tfcszo.vteximg.com.br/arquivos/2bdigital_black.svg"
               alt="vtex"
               width={70}
               height={20}

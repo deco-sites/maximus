@@ -14,10 +14,10 @@ function Contact({
   return (
     <div
       id={id}
-      class="hidden md:flex bg-[#171413] w-full h=[29px] flex justify-evenly text-white pt-2 pb-2 text-xs"
+      class="hidden md:flex bg-[#171413] w-full h=[29px] justify-evenly text-white pt-2 pb-2 text-xs"
     >
       <p>Atendimento - {telefone}</p>
-      <p>WhatsApp - {whatsApp}</p>
+      <a class="hover:text-[#23527c] hover:underline transition-[0.2s]" href={`https://api.whatsapp.com/send?phone=55${whatsApp.replace(/\D/g, '')}`} target="_blank" >WhatsApp - {whatsApp}</a>
     </div>
   );
 }
