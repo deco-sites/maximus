@@ -49,7 +49,7 @@ function Result({
   return (
     <>
       <div class="max-w-[1206px] mx-auto container px-4 sm:py-10 mt-6 border-t-[#EBEBEB] border-t">
-        <h3>{breadcrumb.itemListElement[0]?.name}</h3>
+        <h3 class="hidden">{breadcrumb.itemListElement[0]?.name}</h3>
         <h1 class="hidden max-md:block text-2xl font-semibold leading-[29px] text-center text-[#333333] mb-4 mt-8">
           TECIDOS
         </h1>
