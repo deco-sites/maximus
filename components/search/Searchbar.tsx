@@ -70,10 +70,10 @@ function Searchbar({
 
   return (
     <div
-      class="overflow-y-hidden"
+      class="w-full md:overflow-y-hidden"
       style={{ gridTemplateRows: "min-content auto" }}
     >
-      <form id={id} action={action} class="join w-[280px] hover:bg-white relative text-white hover:text-[#171413]">
+      <form id={id} action={action} class="join w-[100%] md:w-[280px] hover:bg-white relative text-white hover:text-[#171413]">
         <input
           ref={searchInputRef}
           id="search-input"

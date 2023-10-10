@@ -4,7 +4,7 @@ import type { Product, Suggestion } from "apps/commerce/types.ts";
 import type { Image } from "deco-sites/std/components/types.ts";
 import Alert from "$store/islands/Header/Alert.tsx";
 import Contact from "./Contact.tsx";
-import Navbar from "./Navbar.tsx";
+import Navbar from "$store/islands/Navbar.tsx";
 
 export interface NavItem {
   label: string;
@@ -47,6 +47,9 @@ export interface Props {
 
   /** @title Logo */
   logo?: { src: Image; alt: string };
+
+  /** @title Logo Curto*/
+  logoCurt?: { src: Image; alt: string };
 }
 
 function Header({
@@ -56,8 +59,10 @@ function Header({
   navItems = [],
   suggestions,
   logo,
+  logoCurt,
 }: Props) {
   const searchbar = { ..._searchbar, products, suggestions };
+
   return (
     <>
       <header class="sm:h-[106px] md:h-[189px]">
@@ -69,7 +74,7 @@ function Header({
           <div class="bg-[#171413] fixed w-full z-50">
             <Alert alerts={alerts} />
             <Contact />
-            <Navbar items={navItems} searchbar={searchbar} logo={logo} />
+            <Navbar items={navItems} searchbar={searchbar} logo={logo} logoCurt={logoCurt} />
           </div>
         </Drawers>
       </header>

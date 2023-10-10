@@ -35,14 +35,14 @@ export default function PaginationCustom(
 
   return (
     <div class="flex justify-center my-4">
-      <div class="join">
+      <div class="flex items-center">
         <a
           aria-label="previous page link"
           rel="prev"
           href={pageInfo.previousPage ?? "#"}
-          class="btn btn-ghost join-item"
+          class={`mr-1 ${pageInfo.currentPage === 1 ? 'hidden' : 'flex'} items-center justify-center text-neutral-800 w-8 h-8 hover:bg-white rounded-[5px] border border-solid border-[#EAEAEA] hover:border-black`}
         >
-          <Icon id="ChevronLeft" size={24} strokeWidth={2} />
+          <Icon id="ChevronLeft" size={20} strokeWidth={1} />
         </a>
         <div class="flex items-center">
           {links?.map((item) => (
@@ -64,9 +64,9 @@ export default function PaginationCustom(
           aria-label="next page link"
           rel="next"
           href={pageInfo.nextPage ?? "#"}
-          class="btn btn-ghost join-item"
+          class="ml-1 flex items-center justify-center text-neutral-800 w-8 h-8 hover:bg-white rounded-[5px] border border-solid border-[#EAEAEA] hover:border-black"
         >
-          <Icon id="ChevronRight" size={24} strokeWidth={2} />
+          <Icon id="ChevronRight" size={20} strokeWidth={1} />
         </a>
       </div>
     </div>

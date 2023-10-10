@@ -1,3 +1,5 @@
+import { useState } from 'preact/hooks'
+
 import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "$store/sdk/useId.ts";
@@ -13,13 +15,28 @@ export interface Props {
 
 function Alert({ alerts = [], interval = 5 }: Props) {
   const id = useId();
+  const [showLogo, setShowLogo] = useState(false)
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText("PRIMEIRACOMPRA");
   };
 
+  const window_ = window
+
+  window_.addEventListener('scroll', function() {
+    const scrollTop = window.scrollY;
+    
+    if(scrollTop > 50){
+      setShowLogo(true)
+      
+    }
+    else {
+      setShowLogo(false)
+    }
+  });
+
   return (
-    <div class="hidden md:flex" id={id}>
+    <div class={`hidden ${showLogo ? 'hidden' : 'md:flex'}`} id={id}>
       <Slider class="carousel carousel-center w-screen bg-black gap-6">
         {alerts.map((alert, index) => (
           <Slider.Item index={index} class="carousel-item">

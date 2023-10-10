@@ -44,7 +44,7 @@ export default function Sociais({ content }: {
           </ul>
         )}
       </div>
-      <div class="w-30 flex items-center">
+      <div class="w-30 flex flex-wrap max-md:flex-col items-center">
         <div class="flex items-center mr-9">
           <p class="text-xs text-[#999] mr-3">Desenvolvido por</p>
           <a href="https://vtex.com/br-pt/" target="_blank">

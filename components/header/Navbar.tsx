@@ -1,3 +1,5 @@
+import { useState } from 'preact/hooks'
+
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 //import Icon from "$store/components/ui/Icon.tsx";
 import { MenuButton } from "$store/islands/Header/Buttons.tsx";
@@ -12,11 +14,28 @@ import { navbarHeight } from "./constants.ts";
 
 import Searchh from "$store/components/search/Searchbar.tsx"
 
-function Navbar({ items, searchbar, logo }: {
+function Navbar({ items, searchbar, logo, logoCurt }: {
   items: INavItem[];
   searchbar: SearchbarProps;
   logo?: { src: string; alt: string };
+  logoCurt?: { src: string; alt: string };
 }) {
+  const [showLogo, setShowLogo] = useState(false)
+
+  const window_ = window
+
+  window_.addEventListener('scroll', function() {
+    const scrollTop = window.scrollY;
+    
+    if(scrollTop > 50){
+      setShowLogo(true)
+      
+    }
+    else {
+      setShowLogo(false)
+    }
+  });
+
   return (
     <>
       {/* Mobile Version */}
@@ -57,12 +76,8 @@ function Navbar({ items, searchbar, logo }: {
         </div>
       </div>
 
-      <div class="flex justify-center md:hidden w-full p-3 pt-0">
-        <input
-          class="bg-[#171413] pl-4 text-xs border border-white w-full h-[38px] hover:bg-white outline-0 rounded"
-          type="text"
-          placeholder="Busque por tipo de tecido, cor, etc."
-        />
+      <div class="flex justify-center md:hidden w-full p-3 pt-0"> 
+        <Searchh/>
       </div>
 
       {/* Desktop Version */}
@@ -78,7 +93,7 @@ function Navbar({ items, searchbar, logo }: {
               aria-label="Store logo"
               class="block pl-5"
             >
-              <Image src={logo.src} alt={logo.alt} width={200} height={44} />
+              <Image src={showLogo && logoCurt ? logoCurt.src : logo.src} alt={logo.alt} width={showLogo ? 46 : 200} height={44} />
             </a>
           )}
         </div>

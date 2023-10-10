@@ -109,13 +109,13 @@ export default function CategoryBannersSlider(
           {listBanners}
         </Slider>
         <div class="block">
-          <div class="z-10 absolute -left-2 lg:-left-8 top-1/2">
-            <Slider.PrevButton class="btn-slider-custom btn-circle">
+          <div class="z-10 absolute -left-2 lg:-left-20 top-1/2">
+            <Slider.PrevButton class="btn-slider-custom btn-circle max-md:w-[35px] max-md:h-[35px]">
               <Icon size={18} id="ChevronLeft" strokeWidth={3} />
             </Slider.PrevButton>
           </div>
-          <div class="z-10 absolute -right-2 lg:-right-8 top-1/2">
-            <Slider.NextButton class="btn-slider-custom btn-circle">
+          <div class="z-10 absolute -right-2 lg:-right-20 top-1/2">
+            <Slider.NextButton class="btn-slider-custom btn-circle max-md:w-[35px] max-md:h-[35px]">
               <Icon size={24} id="ChevronRight" strokeWidth={3} />
             </Slider.NextButton>
           </div>

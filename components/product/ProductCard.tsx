@@ -64,8 +64,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
     isVariantOf,
   } = product;
 
-//console.log("product::", product.additionalProperty);
-
+  //console.log("product::", product.additionalProperty);
 
   const id = `product-card-${productID}`;
   const productGroupID = isVariantOf?.productGroupID;
@@ -141,11 +140,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
               ? "left-2"
               : "right-2"
           }
-          ${
-            l?.onMouseOver?.showFavoriteIcon
-              ? "lg:hidden lg:group-hover:block"
-              : "lg:hidden"
-          }
+          ${l?.onMouseOver?.showFavoriteIcon ? "block" : "lg:hidden"}
         `}
         >
           <WishlistIcon
@@ -153,6 +148,12 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
             productID={productID}
           />
         </div>
+
+        {/* ver mais detalhes */}
+        <a href={url && relative(url)} class="bg-white items-center justify-center w-[143px] h-[29px] tracking-[0px] text-neutral-800 text-xs font-semibold absolute bottom-4 hidden group-hover:flex z-10">
+          Ver detalhes
+        </a>
+
         {/* Product Images */}
         <a
           href={url && relative(url)}
