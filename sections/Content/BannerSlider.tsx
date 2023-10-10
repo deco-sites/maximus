@@ -42,6 +42,8 @@ export default function BannerSlider(
         class="block min-w-[120px] md:min-w-[234px] text-[#585858] hover:text-[#000] hover:font-medium"
       >
         <img
+          width={234}
+          height={240}
           loading="lazy"
           src={banner.image}
           alt="banner"

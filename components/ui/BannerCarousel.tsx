@@ -68,6 +68,8 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
           loading={lcp ? "eager" : "lazy"}
           src={desktop}
           alt={alt}
+          width={360}
+          height={258}
         />
       </Picture>
     </a>
