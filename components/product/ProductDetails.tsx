@@ -19,6 +19,10 @@ import { mapProductToAnalyticsItem } from "deco-sites/std/commerce/utils/product
 import Image from "deco-sites/std/components/Image.tsx";
 import ProductSelector from "./ProductVariantSelector.tsx";
 
+import Conservation from "$store/islands/Conservation.tsx";
+import Payments from "$store/islands/Payments.tsx";
+import ColorsSimilars from "$store/islands/ColorsSimilars.tsx";
+
 export type Variant = "front-back" | "slider" | "auto";
 
 export interface Props {
@@ -30,8 +34,8 @@ export interface Props {
   variant?: Variant;
 }
 
-const WIDTH = 360;
-const HEIGHT = 360;
+const WIDTH = 408;
+const HEIGHT = 408;
 const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
 
 /**
@@ -51,16 +55,12 @@ function NotFound() {
 }
 
 function ProductInfo({ page }: { page: ProductDetailsPage }) {
+  const { product } = page;
+
   const {
-    breadcrumbList,
-    product,
-  } = page;
-  const {
-    description,
     productID,
     offers,
     name = "",
-    gtin,
     isVariantOf,
     additionalProperty = [],
   } = product;
@@ -70,49 +70,156 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
     seller = "1",
     installments,
     availability,
+    stock,
   } = useOffer(offers);
+
   const productGroupID = isVariantOf?.productGroupID ?? "";
   const discount = price && listPrice ? listPrice - price : 0;
 
-  console.log(">>>>>>additionalProperty", additionalProperty);
+  const isMeter =
+    product?.additionalProperty?.find((item: any) => item.name === "category")
+        ?.value === "TECIDOS"
+      ? true
+      : false;
+
+  const stockAvailable = stock?.value;
+
+  const novidades = product?.additionalProperty?.find((item: any) =>
+    item.value === "Novidade"
+  );
+
+  const largura = product?.additionalProperty?.find((item: any) =>
+    item.name === "Largura do Tecido ou Tamanho"
+  )
+    ?.value;
+
+  const RefId = product?.additionalProperty?.find((item: any) =>
+    item.name === "RefId"
+  )
+    ?.value;
+
+  const pantone = product?.additionalProperty?.find((item: any) =>
+    item.name === "Cor Pantone"
+  )
+    ?.value;
+
+  const discountt = listPrice &&
+    Math.round(((listPrice - price) / listPrice) * 100);
 
   return (
-    <>
-      {/* Breadcrumb */}
-      <Breadcrumb
-        itemListElement={breadcrumbList?.itemListElement.slice(0, -1)}
-      />
-      {/* Code and name */}
-      <div class="mt-4 sm:mt-8">
-        <div>
-          <span class="text-sm text-base-300">
-            Cod. {gtin}
+    <div class="px-[27px] py-4 bg-[#fbfbfb]">
+      {/* infos rigth */}
+      <div class="">
+        <div class="flex items-center justify-between mb-3">
+          <span class="w-[50%] text-[10px] font-bold leading-[34px] tracking-[0] text-neutral-800 italic whitespace-nowrap">
+            {stockAvailable && isMeter
+              ? (stockAvailable * .1).toFixed(1) > 80000
+                ? +"Estoque disponível"
+                : (stockAvailable * .1).toFixed(1) + " metros em estoque"
+              : stockAvailable && stockAvailable > 80000
+              ? "Estoque disponível"
+              : stockAvailable + " Unidades disponíveis"}
           </span>
+          <div class="w-[50%]">
+            {pantone &&
+              (
+                <p class="text-[13px] font-normal tracking-[0] text-[#171413] leading-4">
+                  <strong>Cor Pantone</strong> <br /> {pantone}
+                </p>
+              )}
+          </div>
         </div>
-        <h1>
-          <span class="font-medium text-xl">{name}</span>
-        </h1>
+        {/* flags */}
+        <div class="mb-5">
+          {novidades &&
+            (
+              <span class="bg-black text-white text-sm font-bold px-3.5 py-1 rounded-[0_5px_5px_0] mr-3">
+                Novidade
+              </span>
+            )}
+
+          {discountt && discountt > 0
+            ? (
+              <span class="bg-[#ff6f61] text-white text-sm font-bold ml-1.5 px-3.5 py-1 rounded-[0_5px_5px_0]">
+                -{discountt} % Off
+              </span>
+            )
+            : ""}
+        </div>
+        {/* referencia */}
+        <div class="flex flex-wrap text-[13px] font-normal tracking-[0] text-[#171413] leading-4 my-5">
+          <div class="w-[60%] mb-5">
+            <p>
+              <strong>Número de referência</strong> <br />
+              {RefId}
+            </p>
+          </div>
+          {isMeter && (
+            <>
+              <div class="w-[40%]">
+                <p>
+                  <strong>Preço por metro</strong> <br />{" "}
+                  {formatPrice(price, offers!.priceCurrency!)}
+                </p>
+              </div>
+              <div class="w-[60%] mb-5">
+                <p>
+                  <strong>Largura do tecido</strong> <br /> {largura}
+                </p>
+              </div>
+              <div class="w-[40%]">
+                <p>
+                  <strong>Pedido mínimo</strong> <br /> 40 cm
+                </p>
+              </div>
+            </>
+          )}
+        </div>
       </div>
       {/* Prices */}
       <div class="mt-4">
-        <div class="flex flex-row gap-2 items-center">
-          <span class="line-through text-base-300 text-xs">
-            {formatPrice(listPrice, offers!.priceCurrency!)}
-          </span>
-          <span class="font-medium text-xl text-secondary">
+        {listPrice !== price && (
+          <div class="flex flex-row gap-2 items-center">
+            <span class="text-[13px] font-normal tracking-[0] text-[#bababa] leading-4 line-through mb-2">
+              De: {formatPrice(listPrice, offers!.priceCurrency!)}
+            </span>
+            <span class="text-[13px] font-normal tracking-[0] text-[#161413] leading-4 ml-5 mb-2">
+              Economize {listPrice &&
+                formatPrice(listPrice - price, offers!.priceCurrency!)}
+            </span>
+          </div>
+        )}
+        <div>
+          <span class="font-extrabold text-2xl tracking-[0] text-[#171413] leading-[26px] mb-2">
+            {listPrice !== price && "Por:"}{" "}
             {formatPrice(price, offers!.priceCurrency!)}
+            {isMeter && (
+              <small class="text-sm font-normal leading-6">/metro</small>
+            )}
           </span>
         </div>
-        <span class="text-sm text-base-300">
-          {installments}
-        </span>
+        <div>
+          <span class="text-sm font-normal tracking-[0] text-[#171413] leading-4 flex flex-col mb-2.5">
+            {"(" + installments + ")"}
+          </span>
+          <p class="block text-xs font-semibold leading-[29px] mb-[15px]">
+            5% de desconto para pagamentos à vista
+          </p>
+        </div>
       </div>
+      {/*modal payments*/}
+      <Payments
+        price={price}
+        offers={offers!.priceCurrency!}
+        numberInstallments={3}
+      />
+
       {/* Sku Selector */}
-      <div class="mt-4 sm:mt-6">
+      <div class="mt-4 sm:mt-6 hidden">
         <ProductSelector product={product} />
       </div>
       {/* Add to Cart and Favorites button */}
-      <div class="mt-4 sm:mt-10 flex flex-col gap-2">
+      <div class="mt-6 flex flex-col gap-2 px-0 pt-5 border-t-[#eaeaea] border-t border-solid">
         {availability === "https://schema.org/InStock"
           ? (
             <>
@@ -124,6 +231,8 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
                   price={price}
                   discount={discount}
                   seller={seller}
+                  isMeter={isMeter}
+                  stock={stockAvailable}
                 />
               )}
               {PLATFORM === "vnda" && (
@@ -136,15 +245,14 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
                   additionalProperty={additionalProperty}
                 />
               )}
-
-              <WishlistButton
-                variant="full"
-                productID={productID}
-                productGroupID={productGroupID}
-              />
             </>
           )
           : <OutOfStock productID={productID} />}
+      </div>
+      <div>
+        <p class="text-[13px] font-normal tracking-[0] text-[#171413] leading-4 flex items-center justify-center mt-2">
+          Compra 100% segura.
+        </p>
       </div>
       {/* Shipping Simulation */}
       <div class="mt-8">
@@ -156,17 +264,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
           }]}
         />
       </div>
-      {/* Description card */}
-      <div class="mt-4 sm:mt-6">
-        <span class="text-sm">
-          {description && (
-            <details>
-              <summary class="cursor-pointer">Descrição</summary>
-              <div class="ml-2 mt-2">{description}</div>
-            </details>
-          )}
-        </span>
-      </div>
+
       {/* Analytics Event */}
       <SendEventOnLoad
         event={{
@@ -175,7 +273,6 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
             items: [
               mapProductToAnalyticsItem({
                 product,
-                breadcrumbList,
                 price,
                 listPrice,
               }),
@@ -183,50 +280,10 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
           },
         }}
       />
-    </>
+    </div>
   );
 }
 
-/**
- * Here be dragons
- *
- * bravtexfashionstore (VTEX default fashion account) has the same images for different skus. However,
- * VTEX api does not return the same link for the same image. This causes the image to blink when
- * the user changes the selected SKU. To prevent this blink from happening, I created this function
- * bellow to use the same link for all skus. Example:
- *
- * {
-    skus: [
-      {
-        id: 1
-        image: [
-          "https://bravtexfashionstore.vtexassets.com/arquivos/ids/123/a.jpg",
-          "https://bravtexfashionstore.vtexassets.com/arquivos/ids/124/b.jpg",
-          "https://bravtexfashionstore.vtexassets.com/arquivos/ids/125/c.jpg"
-        ]
-      },
-      {
-        id: 2
-        image: [
-          "https://bravtexfashionstore.vtexassets.com/arquivos/ids/321/a.jpg",
-          "https://bravtexfashionstore.vtexassets.com/arquivos/ids/322/b.jpg",
-          "https://bravtexfashionstore.vtexassets.com/arquivos/ids/323/c.jpg"
-        ]
-      }
-    ]
-  }
-
-  for both skus 1 and 2, we have the same images a.jpg, b.jpg and c.jpg, but
-  they have different urls. This function returns, for both skus:
-
-  [
-    "https://bravtexfashionstore.vtexassets.com/arquivos/ids/321/a.jpg",
-    "https://bravtexfashionstore.vtexassets.com/arquivos/ids/322/b.jpg",
-    "https://bravtexfashionstore.vtexassets.com/arquivos/ids/323/c.jpg"
-  ]
-
-  This is a very catalog dependent function. Feel free to change this as you wish
- */
 const useStableImages = (product: ProductDetailsPage["product"]) => {
   const imageNameFromURL = (url = "") => {
     const segments = new URL(url).pathname.split("/");
@@ -253,96 +310,196 @@ function Details({
   page,
   variant,
 }: { page: ProductDetailsPage; variant: Variant }) {
-  const { product } = page;
+  const { product, breadcrumbList } = page;
+  const {
+    name = "",
+    productID,
+    isVariantOf,
+  } = product;
   const id = useId();
   const images = useStableImages(product);
+  const productGroupID = isVariantOf?.productGroupID ?? "";
 
-  /**
-   * Product slider variant
-   *
-   * Creates a three columned grid on destkop, one for the dots preview, one for the image slider and the other for product info
-   * On mobile, there's one single column with 3 rows. Note that the orders are different from desktop to mobile, that's why
-   * we rearrange each cell with col-start- directives
-   */
+  const isMeter =
+    product?.additionalProperty?.find((item: any) => item.name === "category")
+        ?.value === "TECIDOS"
+      ? true
+      : false;
+
+  const descriptionCurt = product.isVariantOf &&
+    product.isVariantOf.additionalProperty?.find((item: any) =>
+      item.name === "Descrição Curta"
+    )
+      ?.value;
+
+  const composition = product?.additionalProperty?.find((item: any) =>
+    item.name === "Composicao"
+  )
+    ?.value;
+
+  const gramatura = product.isVariantOf &&
+    product.isVariantOf.additionalProperty.find((item: any) =>
+      item.name === "Gramatura aproximada (Tecidos em M ou UN)"
+    )?.value;
+
   if (variant === "slider") {
     return (
-      <>
+      <div class="max-md:mt-32">
+        {/* Breadcrumb */}
+        <div class="max-w-[1236px] mx-auto max-md:px-5 flex justify-start mb-3">
+          <Breadcrumb
+            itemListElement={breadcrumbList?.itemListElement.slice(0, -1)}
+          />
+        </div>
+        <div class="flex md:hidden my-5 px-5">
+          <div class="w-[90%]">
+            <h1 class="text-2xl font-normal leading-6 tracking-[0] text-[#171413]">
+              {name}
+            </h1>
+          </div>
+          <div class="w-[10%]">
+            <WishlistButton
+              productID={productID}
+              productGroupID={productGroupID}
+            />
+          </div>
+        </div>
         <div
           id={id}
-          class="grid grid-cols-1 gap-4 sm:grid-cols-[max-content_40vw_40vw] sm:grid-rows-1 sm:justify-center"
+          class="max-w-[1236px] mx-auto flex items-start justify-between max-md:flex-col"
         >
-          {/* Image Slider */}
-          <div class="relative sm:col-start-2 sm:col-span-1 sm:row-start-1">
-            <Slider class="carousel carousel-center gap-6 w-screen sm:w-[40vw]">
-              {images.map((img, index) => (
-                <Slider.Item
-                  index={index}
-                  class="carousel-item w-full"
+          <div class="flex flex-col max-md:order-3 w-full md:w-[32%] pr-4 max-md:px-4">
+            <div class="max-md:order-2 max-md:border-b border-[#ebebeb] max-md:pb-5 flex">
+              <div class="w-[42%] text-[13px] font-medium leading-[19px] tracking-[0px] text-[#171413]">
+                Vendido e entregue por
+              </div>
+              <div class="w-[58%]">
+                <a
+                  href="#"
+                  class="text-[13px] font-medium leading-[19px] tracking-[0px] text-[#171413] underline"
                 >
-                  <Image
-                    class="w-full"
-                    sizes="(max-width: 640px) 100vw, 40vw"
-                    style={{ aspectRatio: ASPECT_RATIO }}
-                    src={img.url!}
-                    alt={img.alternateName}
-                    width={WIDTH}
-                    height={HEIGHT}
-                    // Preload LCP image for better web vitals
-                    preload={index === 0}
-                    loading={index === 0 ? "eager" : "lazy"}
-                  />
-                </Slider.Item>
-              ))}
-            </Slider>
+                  MAXIMUS TECIDOS TOLEDO - PR
+                </a>
+              </div>
+            </div>
+            <div class="flex mt-5 max-md:hidden">
+              <div class="w-[80%]">
+                <h1 class="text-2xl font-normal leading-6 tracking-[0] text-[#171413]">
+                  {name}
+                </h1>
+              </div>
+              <div class="w-[20%]">
+                <WishlistButton
+                  productID={productID}
+                  productGroupID={productGroupID}
+                />
+              </div>
+            </div>
+            <div class="max-md:order-1 flex md:mt-5 md:border-t md:border-b border-[#ebebeb] py-7">
+              <p class="text-sm tracking-[0] text-[#171413] leading-[21px]">
+                {descriptionCurt}
+              </p>
+            </div>
+            <div class="max-md:order-3 py-7">
+              {composition &&
+                (
+                  <p class="text-[13px] leading-4 tracking-[0] text-[#171413] mb-3">
+                    <strong>Composição</strong>
+                    <br />
+                    {composition}
+                  </p>
+                )}
 
-            <Slider.PrevButton
-              class="no-animation absolute left-2 top-1/2 btn btn-circle btn-outline"
-              disabled
-            >
-              <Icon size={24} id="ChevronLeft" strokeWidth={3} />
-            </Slider.PrevButton>
+              {gramatura &&
+                (
+                  <p class="text-[13px] leading-4 tracking-[0] text-[#171413] mb-3">
+                    <strong>Gramatura</strong>
+                    <br />
+                    {gramatura} gramas/m
+                  </p>
+                )}
 
-            <Slider.NextButton
-              class="no-animation absolute right-2 top-1/2 btn btn-circle btn-outline"
-              disabled={images.length < 2}
-            >
-              <Icon size={24} id="ChevronRight" strokeWidth={3} />
-            </Slider.NextButton>
+              {isMeter && <Conservation />}
+            </div>
 
-            <div class="absolute top-2 right-2 bg-base-100 rounded-full">
-              <ProductImageZoom
-                images={images}
-                width={700}
-                height={Math.trunc(700 * HEIGHT / WIDTH)}
-              />
+            <div class="max-md:order-4">
+              {isMeter && <ColorsSimilars />}
             </div>
           </div>
+          {/* images */}
+          <div class="max-md:order-1 max-md:px-5 w-full md:w-[32%]">
+            {/* Image Slider */}
+            <div class="relative sm:col-start-2 sm:col-span-1 sm:row-start-1">
+              <Slider class="carousel carousel-center gap-6 w-full">
+                {images.map((img, index) => (
+                  <Slider.Item
+                    index={index}
+                    class="carousel-item w-full"
+                  >
+                    <Image
+                      class="w-full"
+                      sizes="(max-width: 408px) 100vw, 40vw"
+                      style={{ aspectRatio: ASPECT_RATIO }}
+                      src={img.url!}
+                      alt={img.alternateName}
+                      width={WIDTH}
+                      height={HEIGHT}
+                      // Preload LCP image for better web vitals
+                      preload={index === 0}
+                      loading={index === 0 ? "eager" : "lazy"}
+                    />
+                  </Slider.Item>
+                ))}
+              </Slider>
 
-          {/* Dots */}
-          <ul class="flex gap-2 sm:justify-start overflow-auto px-4 sm:px-0 sm:flex-col sm:col-start-1 sm:col-span-1 sm:row-start-1">
-            {images.map((img, index) => (
-              <li class="min-w-[63px] sm:min-w-[100px]">
-                <Slider.Dot index={index}>
-                  <Image
-                    style={{ aspectRatio: ASPECT_RATIO }}
-                    class="group-disabled:border-base-300 border rounded "
-                    width={63}
-                    height={87.5}
-                    src={img.url!}
-                    alt={img.alternateName}
-                  />
-                </Slider.Dot>
-              </li>
-            ))}
-          </ul>
+              <Slider.PrevButton
+                class="no-animation absolute left-2 top-1/2 btn btn-circle btn-outline"
+                disabled
+              >
+                <Icon size={24} id="ChevronLeft" strokeWidth={3} />
+              </Slider.PrevButton>
+
+              <Slider.NextButton
+                class="no-animation absolute right-2 top-1/2 btn btn-circle btn-outline"
+                disabled={images.length < 2}
+              >
+                <Icon size={24} id="ChevronRight" strokeWidth={3} />
+              </Slider.NextButton>
+
+              <div class="absolute top-2 right-2 bg-base-100 rounded-full">
+                <ProductImageZoom
+                  images={images}
+                  width={700}
+                  height={Math.trunc(700 * HEIGHT / WIDTH)}
+                />
+              </div>
+            </div>
+            {/* Dots */}
+            <ul class="flex gap-1 justify-start overflow-auto">
+              {images.map((img, index) => (
+                <li class="min-w-[64px] min-h-[64px]">
+                  <Slider.Dot index={index}>
+                    <Image
+                      style={{ aspectRatio: ASPECT_RATIO }}
+                      class="group-disabled:border-base-300 border "
+                      width={64}
+                      height={64}
+                      src={img.url!}
+                      alt={img.alternateName}
+                    />
+                  </Slider.Dot>
+                </li>
+              ))}
+            </ul>
+          </div>
 
           {/* Product Info */}
-          <div class="px-4 sm:pr-0 sm:pl-6 sm:col-start-3 sm:col-span-1 sm:row-start-1">
+          <div class="max-md:order-2 w-full md:w-[32%]">
             <ProductInfo page={page} />
           </div>
         </div>
         <SliderJS rootId={id}></SliderJS>
-      </>
+      </div>
     );
   }
 
@@ -393,9 +550,185 @@ function ProductDetails({ page, variant: maybeVar = "auto" }: Props) {
       : "slider"
     : maybeVar;
 
+  const description = page?.product.description;
+
+  const iframe = page?.product.isVariantOf &&
+    page?.product.isVariantOf.additionalProperty.find((item: any) =>
+      item.name === "Vídeo"
+    );
+
+  const forrosIndicados = page?.product.isVariantOf &&
+    page?.product.isVariantOf.additionalProperty.filter((item: any) =>
+      item.name === "Forros Indicados"
+    );
+
+  const utilizacao = page?.product.isVariantOf &&
+    page?.product.isVariantOf.additionalProperty.filter((item: any) =>
+      item.name === "Utilização"
+    );
+
+  const modelagem = page?.product.isVariantOf &&
+    page?.product.isVariantOf.additionalProperty.filter((item: any) =>
+      item.name === "Corte e Modelagem"
+    );
+
+  const periodos = page?.product.isVariantOf &&
+    page?.product.isVariantOf.additionalProperty.filter((item: any) =>
+      item.name === "Período"
+    );
+
+  const tendencias = page?.product.isVariantOf &&
+    page?.product.isVariantOf.additionalProperty.filter((item: any) =>
+      item.name === "Tendências"
+    );
+
   return (
-    <div class="container py-0 sm:py-10">
+    <div class="container py-0 sm:py-5">
       {page ? <Details page={page} variant={variant} /> : <NotFound />}
+      {page &&
+        (
+          <div class="w-full max-w-[1236px] mx-auto max-md:px-5">
+            <div class="flex flex-wrap">
+              {forrosIndicados && forrosIndicados?.length > 0 &&
+                (
+                  <div class="w-[100%] md:w-[50%]">
+                    <h3 class="text-lg md:text-2xl font-bold leading-[26px] tracking-[0] text-[#171413] mx-0 my-10">
+                      Estilista virtual
+                    </h3>
+                    <div class="w-full flex flex-wrap justify-between max-md:flex-col">
+                      <div class="w-full md:w-[50%] mb-10 flex items-start">
+                        <img
+                          width={44}
+                          height={44}
+                          src="/arquivos/virtual-forros-indicados.png"
+                          alt="forro"
+                        />
+                        <div class="ml-4">
+                          <h5 class="text-[13px] font-semibold tracking-[0] leading-4">
+                            Forros Indicados
+                          </h5>
+                          {forrosIndicados.map((item: any) => (
+                            <p class="text-[13px] font-normal tracking-[0] leading-4 mt-2.5">
+                              {item.value}
+                            </p>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div class="w-full md:w-[50%] mb-10 flex items-start">
+                        <img
+                          width={44}
+                          height={44}
+                          src="/arquivos/virtual-utilizacao.png"
+                          alt="forro"
+                        />
+                        <div class="ml-4">
+                          <h5 class="text-[13px] font-semibold tracking-[0] leading-4">
+                            Utilização
+                          </h5>
+                          {utilizacao &&
+                            utilizacao.map((item: any) => (
+                              <p class="text-[13px] font-normal tracking-[0] leading-4 mt-2.5">
+                                {item.value}
+                              </p>
+                            ))}
+                        </div>
+                      </div>
+
+                      <div class="w-full md:w-[50%] mb-10 flex items-start">
+                        <img
+                          width={44}
+                          height={44}
+                          src="/arquivos/virtual-corte-e-modelagem.png"
+                          alt="forro"
+                        />
+                        <div class="ml-4">
+                          <h5 class="text-[13px] font-semibold tracking-[0] leading-4">
+                            Corte e Modelagem
+                          </h5>
+                          {modelagem &&
+                            modelagem.map((item: any) => (
+                              <p class="text-[13px] font-normal tracking-[0] leading-4 mt-2.5">
+                                {item.value}
+                              </p>
+                            ))}
+                        </div>
+                      </div>
+
+                      <div class="w-full md:w-[50%] mb-10 flex items-start">
+                        <img
+                          width={44}
+                          height={44}
+                          src="/arquivos/virtual-tendencias.png"
+                          alt="forro"
+                        />
+                        <div class="ml-4">
+                          <h5 class="text-[13px] font-semibold tracking-[0] leading-4">
+                            Tendências
+                          </h5>
+                          {tendencias &&
+                            tendencias.map((item: any) => (
+                              <p class="text-[13px] font-normal tracking-[0] leading-4 mt-2.5">
+                                {item.value}
+                              </p>
+                            ))}
+                        </div>
+                      </div>
+
+                      <div class="w-full md:w-[50%] mb-10 flex items-start">
+                        <img
+                          width={44}
+                          height={44}
+                          src="/arquivos/virtual-periodo.png"
+                          alt="forro"
+                        />
+                        <div class="ml-4">
+                          <h5 class="text-[13px] font-semibold tracking-[0] leading-4">
+                            Período
+                          </h5>
+                          {periodos &&
+                            periodos.map((item: any) => (
+                              <p class="text-[13px] font-normal tracking-[0] leading-4 mt-2.5">
+                                {item.value}
+                              </p>
+                            ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+              {iframe &&
+                (
+                  <div class="w-[100%] md:w-[50%]">
+                    <h3 class="text-lg md:text-2xl font-bold leading-[26px] tracking-[0] text-[#171413] mx-0 my-10">
+                      Vídeo
+                    </h3>
+                    <div class="w-full flex justify-center items-center bg-[#f5f5f5] py-10">
+                      <iframe
+                        class="w-full md:w-[523px] md:h-[295px]"
+                        src={iframe.value}
+                        frameBorder="0"
+                      >
+                      </iframe>
+                    </div>
+                  </div>
+                )}
+            </div>
+            {description && (
+              <h3 class="text-lg md:text-2xl font-bold leading-[26px] tracking-[0] text-[#171413] mx-0 my-10">
+                Descrição:
+              </h3>
+            )}
+            {description && (
+              <div
+                class="w-full max-w-[865px] text-sm tracking-[0] text-[#171413] leading-[21px]"
+                dangerouslySetInnerHTML={{ __html: description }}
+              >
+              </div>
+            )}
+          </div>
+        )}
     </div>
   );
 }

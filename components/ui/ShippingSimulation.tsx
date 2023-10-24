@@ -47,27 +47,23 @@ function ShippingContent({ simulation }: {
   }
 
   return (
-    <ul class="flex flex-col gap-4 p-4 bg-base-200 rounded-[4px]">
+    <ul class="flex flex-col border border-solid border-[#f3f3f4]">
+      <li><h6 class="h-[38px] bg-[#f3f3f4] flex items-center justify-center text-xs font-semibold leading-[29px] tracking-[0px] text-[#0d0c22] rounded-[3px]">Resultados</h6></li>
       {methods.map((method) => (
-        <li class="flex justify-between items-center border-base-200 not-first-child:border-t">
-          <span class="text-button text-center">
+        <li class="flex justify-between p-[15px] border-b-[#f3f3f4] border-b border-solid">
+          <span class="text-xs font-medium leading-[19px] tracking-[0px] text-[#0d0c22]">
             Entrega {method.name}
           </span>
-          <span class="text-button">
-            até {formatShippingEstimate(method.shippingEstimate)}
+          <span class="text-xs font-medium leading-[19px] tracking-[0px] text-[#0d0c22]">
+            {formatShippingEstimate(method.shippingEstimate)} dias úteis
           </span>
-          <span class="text-base font-semibold text-right">
+          <span class="text-xs font-medium leading-[19px] tracking-[0px] text-[#0d0c22]">
             {method.price === 0 ? "Grátis" : (
               formatPrice(method.price / 100, currencyCode, locale)
             )}
           </span>
         </li>
-      ))}
-      <span class="text-base-300">
-        Os prazos de entrega começam a contar a partir da confirmação do
-        pagamento e podem variar de acordo com a quantidade de produtos na
-        sacola.
-      </span>
+      ))}      
     </ul>
   );
 }
@@ -96,14 +92,10 @@ function ShippingSimulation({ items }: Props) {
   }, []);
 
   return (
-    <div class="flex flex-col gap-2">
-      <div class="flex flex-col">
-        <span>Calcular frete</span>
-        <span>
-          Informe seu CEP para consultar os prazos de entrega
-        </span>
-      </div>
-
+    <div class="flex flex-col gap-2 mt-[27px] pt-[27px] border-t-[#eaeaea] border-t border-solid">
+      <p class="text-sm font-normal leading-6 tracking-[0] text-neutral-800 mb-2.5">
+        Calcular <b>frete</b> e <b>prazo</b>
+      </p>
       <form
         class="join"
         onSubmit={(e) => {
@@ -114,8 +106,8 @@ function ShippingSimulation({ items }: Props) {
         <input
           as="input"
           type="text"
-          class="input input-bordered join-item"
-          placeholder="Seu cep aqui"
+          class="w-[280px] h-12 border text-sm font-normal leading-6 tracking-[0] text-[#999] p-[15px] rounded-sm border-solid border-[#eaeaea]"
+          placeholder="00000-000"
           value={postalCode.value}
           maxLength={8}
           size={8}
@@ -123,8 +115,12 @@ function ShippingSimulation({ items }: Props) {
             postalCode.value = e.currentTarget.value;
           }}
         />
-        <Button type="submit" loading={loading.value} class="join-item">
-          Calcular
+        <Button
+          type="submit"
+          loading={loading.value}
+          class="w-[60px] h-12 text-sm font-normal leading-6 text-white ml-2 flex justify-center items-center rounded-[4px] border-[none] bg-[#171413]"
+        >
+          OK
         </Button>
       </form>
 

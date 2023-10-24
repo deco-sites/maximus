@@ -44,7 +44,7 @@ function Newsletter(
 
   return (
     <div
-      class={"w-full max-w-[1236px] m-auto py-8 flex justify-between max-md:flex-col"}
+      class={"w-full max-w-[1236px] m-auto py-8 flex justify-around max-md:flex-col"}
     >
       <div class="max-w-[380px] flex flex-col gap-4">
         {content?.title && (

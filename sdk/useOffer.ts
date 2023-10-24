@@ -45,7 +45,7 @@ const installmentToString = (
 
   const withTaxes = sellingPrice < price;
 
-  return `${billingDuration}x de R$ ${billingIncrement} ${
+  return `Até ${billingDuration}x de R$ ${billingIncrement} ${
     withTaxes ? "com juros" : "sem juros"
   }`;
 };
@@ -59,12 +59,14 @@ export const useOffer = (aggregateOffer?: AggregateOffer) => {
   const seller = offer?.seller;
   const price = offer?.price;
   const availability = offer?.availability;
+  const stock = offer?.inventoryLevel;  
 
   return {
     price,
     listPrice: listPrice?.price,
     availability,
     seller,
+    stock,
     installments: installment && price
       ? installmentToString(installment, price)
       : null,

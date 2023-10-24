@@ -8,13 +8,13 @@ function Breadcrumb({ itemListElement = [] }: Props) {
   const items = [{ name: "Home", item: "/" }, ...itemListElement];
 
   return (
-    <div class="breadcrumbs">
-      <ul class="flex justify-center">
+    <div>
+      <ul class="flex items-center justify-center">
         {items
           .filter(({ name, item }) => name && item)
           .map(({ name, item }) => (
-            <li>
-              <a href={item}>{name}</a>
+            <li class="flex items-center after:content-[''] after:w-[3px] after:h-[3px] after:bg-[#222] after:mx-[9px] after:my-0 after:rounded-[50%]">
+              <a class="text-xs font-normal tracking-[0px] text-neutral-800 underline flex items-center" href={item}>{name}</a>
             </li>
           ))}
       </ul>

@@ -21,6 +21,19 @@
     /* Firefox */
   }
 
+  .scrollbar-track::-webkit-scrollbar-track {
+    background-color: #e7e7e7
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    width: 5px;
+    background-color: #fff
+  }
+
+  .scrollbar-thumb::-webkit-scrollbar-thumb {
+    background-color: #000000
+  }
+
   .btn-slider-custom {
     display: flex;
     align-items: center;

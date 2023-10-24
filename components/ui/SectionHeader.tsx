@@ -18,18 +18,18 @@ function Header(props: Props) {
           >
             {props.title &&
               (
-                <h1
-                  class={`text-2xl leading-8 lg:leading-10
+                <h3
+                  class={`font-bold leading-[34px]
                   ${
                     props.colorReverse
                       ? "text-primary-content"
                       : "text-base-content"
                   }
-                  ${props.fontSize === "Normal" ? "lg:text-3xl" : "lg:text-4xl"}
+                  ${props.fontSize === "Normal" ? "text-lg md:text-2xl" : "text-2xl"}
                 `}
                 >
                   {props.title}
-                </h1>
+                </h3>
               )}
             {props.description &&
               (
