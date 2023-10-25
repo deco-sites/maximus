@@ -27,8 +27,8 @@ function MeterHelp() {
           class="w-screen h-screen absolute left-0 top-0"
         >
         </div>
-        <div class="w-[56%] h-[90vh] absolute bg-white mx-auto py-[50px] px-[50px] rounded-sm left-[22%] top-[30px] overflow-y-scroll max-h-full scrollbar-thumb scrollbar scrollbar-track">
-          modall
+        <div class="w-[96%] md:w-[56%] h-[90vh] absolute bg-white mx-auto py-[50px] md:px-[50px] rounded-sm left-[2%] md:left-[22%] top-[30px] overflow-y-scroll max-h-full scrollbar-thumb scrollbar scrollbar-track">
+          <p class="w-full text-center">em breve</p>
         </div>
       </div>
     </div>

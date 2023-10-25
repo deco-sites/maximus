@@ -29,7 +29,7 @@ function Conservation() {
         } w-screen h-screen fixed z-[99] items-center justify-center left-0 top-0 bg-[#00000073]`}
       >
         <div onClick={() => setShow(false)} class="w-screen h-screen absolute left-0 top-0"></div>
-        <div class="w-[56%] h-[90vh] absolute bg-white mx-auto my-0 pl-[100px] pr-10 py-[50px] rounded-sm left-[22%] top-[30px] overflow-y-scroll max-h-full scrollbar-thumb scrollbar scrollbar-track">
+        <div class="w-[96%] md:w-[56%] h-[90vh] absolute bg-white mx-auto py-[50px] md:px-[50px] rounded-sm left-[2%] md:left-[22%] top-[30px] overflow-y-scroll max-h-full scrollbar-thumb scrollbar scrollbar-track">
             <img
               src="https://tfcszo.vteximg.com.br/arquivos/tabela-conservacao-desk.png"
               alt="tabela de conservaçao"

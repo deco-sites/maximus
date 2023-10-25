@@ -1,5 +1,7 @@
 import { useState } from "preact/hooks";
 
+import { useUI } from "$store/sdk/useUI.ts";
+
 import MeterHelp from "$store/islands/MeterHelp.tsx";
 import { useCart } from "deco-sites/std/packs/vtex/hooks/useCart.ts";
 import Button, { Props as BtnProps } from "./common.tsx";
@@ -14,6 +16,10 @@ function AddToCartButton(props: Props) {
   const quantityMin = isMeter ? 4 : 1;
 
   const [quantity, setQuantity] = useState(isMeter ? 10 : 1);
+
+  const { quantityPdp } = useUI();
+  quantityPdp.value = quantity;
+
   const { addItems } = useCart();
 
   console.log("isMeter", isMeter);

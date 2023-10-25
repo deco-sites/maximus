@@ -10,11 +10,14 @@ const displayMenu = signal(false);
 const displaySearchPopup = signal(false);
 const displaySearchDrawer = signal(false);
 
+const quantityPdp = signal(1);
+
 const state = {
   displayCart,
   displayMenu,
   displaySearchPopup,
   displaySearchDrawer,
+  quantityPdp
 };
 
 export const useUI = () => state;
