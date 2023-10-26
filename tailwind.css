@@ -9,6 +9,10 @@
     font-family: var(--font-family);
   }
 
+  .collapse-title-2 {
+    top: 0.4rem !important;
+  }
+
   .text-shadow{
     text-shadow: 0 0 black;
   }
