@@ -9,6 +9,10 @@
     font-family: var(--font-family);
   }
 
+  .text-shadow{
+    text-shadow: 0 0 black;
+  }
+  
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
