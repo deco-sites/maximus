@@ -4,7 +4,7 @@ import { useUI } from "$store/sdk/useUI.ts";
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 
 const LazySearchbar = lazy(() =>
-  import("$store/components/search/Searchbar.tsx")
+  import("$store/islands/Header/Searchbar2.tsx")
 );
 
 export interface Props {
@@ -13,7 +13,7 @@ export interface Props {
 
 function Searchbar({ searchbar }: Props) {
   const { displaySearchPopup } = useUI();
-  const open = displaySearchPopup.value ? displaySearchPopup.value : true;
+  const open = displaySearchPopup.value;
 
   return (
     <div>

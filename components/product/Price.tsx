@@ -17,8 +17,7 @@ function Price({ price, listPrice, installments, offers, isMeter }: Props, {}) {
       {listPrice !== price && (
         <div class="flex flex-row gap-2 items-center">
           <span class="text-[13px] font-normal tracking-[0] text-[#bababa] leading-4 line-through mb-2">
-            De:{" "}
-            {formatPrice(
+            De: {formatPrice(
               (listPrice * quantityPdp.value) / 10,
               offers!.priceCurrency!,
             )}
@@ -31,9 +30,8 @@ function Price({ price, listPrice, installments, offers, isMeter }: Props, {}) {
       )}
       <div>
         <span class="font-extrabold text-2xl tracking-[0] text-[#171413] leading-[26px] mb-2">
-          {listPrice !== price && "Por:"}{" "}
-          {formatPrice(
-            (price * quantityPdp.value) / 10,
+          {listPrice !== price && "Por:"} {formatPrice(
+            (price * quantityPdp.value) / (isMeter ? 10 : 1),
             offers!.priceCurrency!,
           )}
           {isMeter && (
@@ -42,9 +40,13 @@ function Price({ price, listPrice, installments, offers, isMeter }: Props, {}) {
         </span>
       </div>
       <div>
-        <span class="text-sm font-normal tracking-[0] text-[#171413] leading-4 flex flex-col mb-2.5">
-          {"(" + installments + ")"}
-        </span>
+        {installments &&
+          (
+            <span class="text-sm font-normal tracking-[0] text-[#171413] leading-4 flex flex-col my-2.5">
+              {installments}
+            </span>
+          )}
+
         <p class="block text-xs font-semibold leading-[29px] mb-[15px]">
           5% de desconto para pagamentos à vista
         </p>

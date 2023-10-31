@@ -117,7 +117,7 @@ function Navbar({ items, searchbar, logo, logoCurt }: {
         </div>
       </div>
       <div class="hidden md:flex flex-row justify-center h-[35px]">
-        {items.map((item) => <NavItem item={item} />)}
+        {items.map((item) => <NavItem item={item} showLogo={showLogo} />)}
       </div>
     </>
   );

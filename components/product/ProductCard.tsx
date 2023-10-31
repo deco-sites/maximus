@@ -62,9 +62,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
     image: images,
     offers,
     isVariantOf,
-  } = product;
-
-  //console.log("product::", product.additionalProperty);
+  } = product;  
 
   const id = `product-card-${productID}`;
   const productGroupID = isVariantOf?.productGroupID;
@@ -72,6 +70,11 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
   const { listPrice, price, installments } = useOffer(offers);
   const possibilities = useVariantPossibilities(product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
+  const isMeter =
+  product?.additionalProperty?.find((item: any) => item.name === "category")
+      ?.value === "TECIDOS"
+    ? true
+    : false;
 
   const l = layout;
   const align =
@@ -261,7 +264,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
                 {formatPrice(listPrice, offers!.priceCurrency!)}
               </div>
               <div class="text-sm font-bold leading-[34px] text-[#171413]">
-                {formatPrice(price, offers!.priceCurrency!)}
+                {formatPrice(price, offers!.priceCurrency!)} {isMeter ? "/ metro" : "/ un"}
               </div>
             </div>
             {l?.hide?.installments

@@ -2,7 +2,7 @@ import { SendEventOnLoad } from "$store/components/Analytics.tsx";
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
-import Slider from "$store/components/ui/Slider.tsx";
+import Slider from "$store/components/ui/SliderPdp.tsx";
 import { PLATFORM } from "$store/platform.ts";
 import AddToCartButtonVNDA from "$store/islands/AddToCartButton/vnda.tsx";
 import AddToCartButtonVTEX from "$store/islands/AddToCartButton/vtex.tsx";
@@ -343,7 +343,7 @@ function Details({
         >
           <div class="flex flex-col max-md:order-3 w-full md:w-[32%] pr-4 max-md:px-4">
             <div class="max-md:order-2 max-md:border-b border-[#ebebeb] max-md:pb-5 flex">
-              <div class="w-[42%] text-[13px] font-medium leading-[19px] tracking-[0px] text-[#171413]">
+              <div class="flex items-center w-[42%] text-[13px] font-medium leading-[19px] tracking-[0px] text-[#171413]">
                 Vendido e entregue por
               </div>
               <div class="w-[58%]">
@@ -361,7 +361,7 @@ function Details({
                   {name}
                 </h1>
               </div>
-              <div class="w-[20%]">
+              <div class="w-[20%] flex items-center justify-end">
                 <WishlistButton
                   productID={productID}
                   productGroupID={productGroupID}
@@ -379,7 +379,7 @@ function Details({
                   <p class="text-[13px] leading-4 tracking-[0] text-[#171413] mb-3">
                     <strong>Composição</strong>
                     <br />
-                    {composition}
+                    <span class="lowercase font-roboto mt-2 block">{composition}</span>
                   </p>
                 )}
 
@@ -387,8 +387,8 @@ function Details({
                 (
                   <p class="text-[13px] leading-4 tracking-[0] text-[#171413] mb-3">
                     <strong>Gramatura</strong>
-                    <br />
-                    {gramatura} gramas/m
+                    <br />                    
+                    <span class="lowercase font-roboto mt-2 block">{gramatura} gramas/m</span>
                   </p>
                 )}
 
@@ -426,14 +426,14 @@ function Details({
               </Slider>
 
               <Slider.PrevButton
-                class="no-animation absolute left-2 top-1/2 btn btn-circle btn-outline"
+                class="absolute left-2 top-1/2 btn-slider-custom  btn-circle"
                 disabled
               >
                 <Icon size={24} id="ChevronLeft" strokeWidth={3} />
               </Slider.PrevButton>
 
               <Slider.NextButton
-                class="no-animation absolute right-2 top-1/2 btn btn-circle btn-outline"
+                class="absolute right-2 top-1/2 btn-slider-custom  btn-circle"
                 disabled={images.length < 2}
               >
                 <Icon size={24} id="ChevronRight" strokeWidth={3} />
@@ -565,7 +565,7 @@ function ProductDetails({ page, variant: maybeVar = "auto" }: Props) {
               {forrosIndicados && forrosIndicados?.length > 0 &&
                 (
                   <div class="w-[100%] md:w-[50%]">
-                    <h3 class="text-lg md:text-2xl font-bold leading-[26px] tracking-[0] text-[#171413] mx-0 my-10">
+                    <h3 class="text-lg md:text-2xl font-semibold leading-[26px] tracking-[0] text-[#171413] mx-0 my-10">
                       Estilista virtual
                     </h3>
                     <div class="w-full flex flex-wrap justify-between max-md:flex-col">
@@ -674,7 +674,7 @@ function ProductDetails({ page, variant: maybeVar = "auto" }: Props) {
               {iframe &&
                 (
                   <div class="w-[100%] md:w-[50%]">
-                    <h3 class="text-lg md:text-2xl font-bold leading-[26px] tracking-[0] text-[#171413] mx-0 my-10">
+                    <h3 class="text-lg md:text-2xl font-semibold leading-[26px] tracking-[0] text-[#171413] mx-0 my-10">
                       Vídeo
                     </h3>
                     <div class="w-full flex justify-center items-center bg-[#f5f5f5] py-10">

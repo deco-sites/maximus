@@ -8,7 +8,7 @@ export interface INavItem {
   image?: { src?: string; alt?: string };
 }
 
-function NavItem({ item }: { item: INavItem }) {
+function NavItem({ item, showLogo }: { item: INavItem; showLogo: boolean }) {
   const { href, label, children, image } = item;
 
   return (
@@ -23,7 +23,11 @@ function NavItem({ item }: { item: INavItem }) {
         (
           <div
             class="fixed hidden hover:flex group-hover:flex flex-col bg-base-100 z-50 items-center justify-center gap-6 border-t border-b-2 border-base-200 w-screen"
-            style={{ top: "0px", left: "0px", marginTop: headerHeight }}
+            style={{
+              top: "0px",
+              left: "0px",
+              marginTop: showLogo ? "159px" : headerHeight,
+            }}
           >
             {image?.src && (
               <Image

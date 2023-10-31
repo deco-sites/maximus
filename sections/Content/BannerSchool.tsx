@@ -128,7 +128,7 @@ export default function BannerSchool(
             <h5 class="my-3 text-center text-base font-semibold leading-[29px] uppercase text-[#262626]">
               {banner.title}
             </h5>
-            <p class="px-4 mb-9 text-center text-xs md:text-sm font-medium leading-[19px] text-[#262626]">
+            <p class="min-h-[80px] px-0 md:px-6 mb-9 text-center text-xs md:text-sm font-medium leading-[19px] text-[#262626]">
               {banner.text}
             </p>
             <span class="w-[200px] h-[45px] rounded-[2px] mx-auto bg-[#6EB212] text-sm text-white flex items-center justify-center mt-6">
@@ -152,7 +152,7 @@ export default function BannerSchool(
         com as próprias mãos.
       </p>
       <div class="w-full max-w-[1246px] mx-auto mt-9 max-md:px-3 pt-2 pb-10 relative">
-        <Slider class="carousel carousel-end gap-4 lg:gap-8 row-start-2 row-end-5 w-full">
+        <Slider class="carousel carousel-center gap-4 lg:gap-8 row-start-2 row-end-5 w-full">
           {listBanners}
         </Slider>
         <div class="hidden md:block">

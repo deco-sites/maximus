@@ -1,5 +1,5 @@
 import { useComputed, useSignal } from "@preact/signals";
-import Icon from "$store/components/ui/Icon.tsx";
+//import Icon from "$store/components/ui/Icon.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import { useWishlist } from "deco-sites/std/packs/vtex/hooks/useWishlist.ts";
 import { useUser } from "deco-sites/std/packs/vtex/hooks/useUser.ts";
@@ -55,11 +55,11 @@ function WishlistButton({
         }
       }}
     >
-      <Icon
-        id="Heart"
-        size={20}
-        strokeWidth={2}
-        fill={inWishlist ? "black" : "none"}
+      <img
+        width={30}
+        height={30}
+        src="/arquivos/icon-fav.svg"
+        alt={inWishlist ? "adicionado" : "nao adicionado"}
       />
       {variant === "icon" ? null : inWishlist ? "Remover" : "Favoritar"}
     </Button>

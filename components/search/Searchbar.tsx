@@ -73,7 +73,11 @@ function Searchbar({
       class="w-full md:overflow-y-hidden"
       style={{ gridTemplateRows: "min-content auto" }}
     >
-      <form id={id} action={action} class="join w-[100%] md:w-[280px] hover:bg-white relative text-white hover:text-[#171413]">
+      <form
+        id={id}
+        action={action}
+        class="join w-[100%] md:w-[280px] hover:bg-white relative text-white hover:text-[#171413]"
+      >
         <input
           ref={searchInputRef}
           id="search-input"
@@ -116,6 +120,7 @@ function Searchbar({
             <Button
               type="button join-item"
               class="btn-ghost btn-square hidden sm:inline-flex"
+              onClick={() => displaySearchPopup.value = false}
             >
               <Icon id="XMark" size={24} strokeWidth={2} />
             </Button>
