@@ -178,8 +178,14 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
         </div>
       </div>
       {/* Prices */}
-      <Price price={price} listPrice={listPrice} installments={installments} offers={offers} isMeter={isMeter} />
-      
+      <Price
+        price={price}
+        listPrice={listPrice}
+        installments={installments}
+        offers={offers}
+        isMeter={isMeter}
+      />
+
       {/*modal payments*/}
       <Payments
         price={price}
@@ -202,6 +208,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
                   productID={productID}
                   productGroupID={productGroupID}
                   price={price}
+                  offers={offers}
                   discount={discount}
                   seller={seller}
                   isMeter={isMeter}
@@ -315,6 +322,20 @@ function Details({
       item.name === "Gramatura aproximada (Tecidos em M ou UN)"
     )?.value;
 
+  const conservationsList = product.isVariantOf?.additionalProperty.filter(
+    (item: any) => {
+      if (
+        item.name === "Lavagem" || item.name === "Alvejamento" ||
+        item.name === "Passadoria" || item.name === "Limpeza a Seco" ||
+        item.name === "Secagem Natural" ||
+        item.name === "Processo de Secagem em Tambor" ||
+        item.name === "Limpeza a Umido Profissional"
+      ) {
+        return item.value;
+      }
+    },
+  );
+
   if (variant === "slider") {
     return (
       <div class="max-md:mt-32">
@@ -379,7 +400,9 @@ function Details({
                   <p class="text-[13px] leading-4 tracking-[0] text-[#171413] mb-3">
                     <strong>Composição</strong>
                     <br />
-                    <span class="lowercase font-roboto mt-2 block">{composition}</span>
+                    <span class="lowercase font-roboto mt-2 block">
+                      {composition}
+                    </span>
                   </p>
                 )}
 
@@ -387,12 +410,14 @@ function Details({
                 (
                   <p class="text-[13px] leading-4 tracking-[0] text-[#171413] mb-3">
                     <strong>Gramatura</strong>
-                    <br />                    
-                    <span class="lowercase font-roboto mt-2 block">{gramatura} gramas/m</span>
+                    <br />
+                    <span class="lowercase font-roboto mt-2 block">
+                      {gramatura} gramas/m
+                    </span>
                   </p>
                 )}
 
-              {isMeter && <Conservation />}
+              {isMeter && <Conservation conservationsList={conservationsList} />}
             </div>
 
             <div class="max-md:order-4">

@@ -1,6 +1,7 @@
 import { useState } from "preact/hooks";
 
 import { useUI } from "$store/sdk/useUI.ts";
+import { formatPrice } from "$store/sdk/format.ts";
 
 import MeterHelp from "$store/islands/MeterHelp.tsx";
 import { useCart } from "deco-sites/std/packs/vtex/hooks/useCart.ts";
@@ -78,7 +79,61 @@ function AddToCartButton(props: Props) {
 
         {isMeter && <MeterHelp />}
       </div>
-      <Button onAddItem={onAddItem} {...props} />
+      <div class="mt-[35px]">
+        <Button onAddItem={onAddItem} {...props} />
+      </div>
+      {/* comprar fixo */}
+      <div class="w-screen max-md:flex-wrap flex justify-center items-center bg-white fixed z-[4] py-3 px-5 md:py-5 border-t-[#eaeaea] border-t border-solid left-0 bottom-0">
+        <div class="hidden md:flex items-center">
+          <img
+            width={60}
+            height={60}
+            src="https://tfcszo.vteximg.com.br//arquivos/ids/184368-60-auto/4303-TECIDO-BEMBERG-OFF-WHITE--1-.jpg?v=638330808260530000"
+            alt="imagem produto"
+          />
+          <h3 class="w-[235px] text-sm font-medium tracking-[0] text-[#171413] leading-[21px] ml-[25px] mr-[50px]">
+            Tecido bemberg off white (failete)
+          </h3>
+        </div>
+        <div class="max-md:w-[50%] flex items-center md:mx-10">
+          <span class="hidden md:block text-sm font-medium leading-[19px] tracking-[0] text-[#171413] mr-5">
+            Comprimento em <strong>metros</strong>
+          </span>
+          <div class="w-[126px] h-12 bg-white border flex justify-around items-center border-solid border-[#eaeaea]">
+            <span
+              class="cursor-pointer block text-[#171413] text-base relative right-[-5px] top-px"
+              onClick={() => updateQuantity("minus")}
+            >
+              -
+            </span>
+            <span class="cursor-default">
+              {isMeter ? (quantity * .1).toFixed(2) : quantity}
+            </span>
+            <span
+              class="cursor-pointer block text-[#171413] text-base relative left-[-5px] top-0.5"
+              onClick={() => updateQuantity("plus")}
+            >
+              +
+            </span>
+          </div>
+        </div>
+        <div class="max-md:w-[50%] md:mr-10">
+          <span class="font-extrabold text-2xl tracking-[0] text-[#171413] leading-[26px]">
+            {props.price &&
+              formatPrice(
+                (props.price * quantity) / (props.isMeter ? 10 : 1),
+                props.offers!.priceCurrency!,
+              )}
+          </span>
+          <span class="text-sm font-normal leading-6">/metro</span> <br />
+          <p class="hidden md:block text-xs font-semibold leading-[29px]">
+            5% de desconto para pagamentos à vista
+          </p>
+        </div>
+        <div class="max-md:w-full max-md:mt-3 flex items-center">
+          <Button onAddItem={onAddItem} {...props} />
+        </div>
+      </div>
     </>
   );
 }

@@ -32,14 +32,15 @@ const Aside = (
 ) => (
   <div class="bg-base-100 grid grid-rows-[auto_1fr] h-full max-w-[90vw]">
     <div
-      class={`flex items-center ${
+      class={`flex items-center border-b border-[#ebebeb] ${
         title === "Menu" ? "py-3 justify-center" : "justify-between"
       }`}
     >
       {title !== "Menu" &&
         (
-          <h1 class="px-4 py-3">
-            <span class="font-medium text-2xl">{title}</span>
+          <h1 class="flex items-center px-6 py-3">
+            <img width={16} height={16} src="/arquivos/icone-cart-black.svg" alt="icone cart" />
+            <span class="ml-3 text-base font-normal leading-6 tracking-[0.5px] uppercase">{title}</span>
           </h1>
         )}
       {logo && (
@@ -53,7 +54,7 @@ const Aside = (
       )}
       {onClose && (
         <Button class="btn btn-ghost absolute right-0" onClick={onClose}>
-          <Icon id="XMark" size={24} strokeWidth={2} />
+          <Icon id="XMark" size={20} strokeWidth={2} />
         </Button>
       )}
     </div>

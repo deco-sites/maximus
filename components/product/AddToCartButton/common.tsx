@@ -65,7 +65,7 @@ export default function AddToCartButton(props: Props) {
     <Button
       {...btnProps}
       data-deco="add-to-cart"
-      class="btn-primary h-[54px] bg-[#6EB212] mt-[35px] rounded-sm border-0 text-xs font-medium leading-[19px] tracking-[0.6px] text-white hover:bg-[#86c92c] transition-[0.4s]"
+      class="btn-primary w-full h-[54px] bg-[#6EB212] rounded-sm border-0 text-xs font-medium leading-[19px] tracking-[0.6px] text-white hover:bg-[#86c92c] transition-[0.4s]"
     >
       Adicionar ao carrinho
     </Button>

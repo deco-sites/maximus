@@ -1,7 +1,36 @@
 import { useState } from "preact/hooks";
 
-function Conservation() {
+function Conservation({ conservationsList }: { conservationsList: any }) {
   const [show, setShow] = useState<boolean>(false);
+
+  const buildImage = (prefix: string, img: string) => {
+    if (!img) return;
+
+    const srcMounted = `https://tfcszo.vteximg.com.br/arquivos/conservacao-${
+      rewrite(prefix)
+    }-${rewrite(img)}.svg`;
+
+    return srcMounted || "";
+  };
+
+  const rewrite = (str: string) => {
+    if (str) {
+      str = str
+        .toLowerCase()
+        .trim()
+        .replace(/[áàãâä]/g, "a")
+        .replace(/[éèẽêë]/g, "e")
+        .replace(/[íìĩîï]/g, "i")
+        .replace(/[óòõôö]/g, "o")
+        .replace(/[úùũûü]/g, "u")
+        .replace(/ç/g, "c")
+        .replace(/( |_)+/, " ")
+        .replace(/(^-+|-+$)/, "")
+        .replace(/[ ]/g, "-");
+    }
+
+    return str;
+  };
 
   return (
     <div>
@@ -9,6 +38,14 @@ function Conservation() {
         <strong>Conservação</strong>
         <br />
       </p>
+      <div class="flex items-center">
+        {conservationsList.length > 0 &&
+          conservationsList?.map((item: any) => (
+            <div class="mb-5 mr-2">
+              <img src={buildImage(item.name, item.value)} alt={item.value} />
+            </div>
+          ))}
+      </div>
       <div
         onClick={() => setShow(true)}
         class="w-[178px] h-[35px] border text-[#171413] text-xs font-medium leading-[19px] tracking-[0] flex items-center justify-center cursor-pointer no-underline border-solid border-[#171413] hover:underline"

@@ -46,15 +46,7 @@ function Cart({
       {isEmtpy
         ? (
           <div class="flex flex-col gap-6">
-            <span class="font-medium text-2xl">Sua sacola está vazia</span>
-            <Button
-              class="btn-outline"
-              onClick={() => {
-                displayCart.value = false;
-              }}
-            >
-              Escolher produtos
-            </Button>
+            <span class="text-base font-semibold leading-[29px]">No momento, não há produtos adicionados no carrinho.</span>            
           </div>
         )
         : (
