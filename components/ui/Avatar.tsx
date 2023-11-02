@@ -36,7 +36,7 @@ const variants = {
 
 function urlFormatada(str: string) {
   return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ /g, "-")
-    .toLowerCase().replace(/%20/g, "-");
+    .toLowerCase().replace(/%20/g, "-").replace(/%40/g, "-").replace(/-slash/g, "");
 }
 
 function Avatar({ content, variant = "default", type }: Props) {
@@ -50,8 +50,11 @@ function Avatar({ content, variant = "default", type }: Props) {
             } ${variants[variant]}`}
           >
             <span
+              title={content}
               style={{
-                backgroundImage: `url(/arquivos/${urlFormatada(content)}.png)`,
+                backgroundImage: `url(/arquivos/${
+                  urlFormatada(content)
+                }.png?v=noah14092023)`,
               }}
               class="w-[25px] h-[25px] border border-neutral-100 bg-contain bg-no-repeat rounded-[50%] border-solid"
             >

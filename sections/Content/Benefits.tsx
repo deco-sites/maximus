@@ -82,7 +82,7 @@ export default function Benefits(
     <>
       {!layout?.variation || layout?.variation === "Simple"
         ? (
-          <div class="w-full max-w-[1246px] mr-auto ml-auto container my-8 mb-10 flex gap-8">
+          <div class="w-full max-w-[1246px] mr-auto ml-auto container my-8 mb-10 hidden md:flex gap-8">
             <Header
               title={title}
               description={description}
