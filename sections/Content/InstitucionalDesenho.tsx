@@ -1,16 +1,10 @@
 export interface Props {
   title: string;
-  /** @format html */
-  html?: string;
-  /** @format textarea */
-  text?: string;
 }
 
 export default function InstitucionalDesenho(props: Props) {
   const {
     title = "Troca e Devolução",
-    html = "",
-    text = "Lorem...",
   } = props;
   return (
     <div class="w-full max-w-[94%] md:max-w-[1165px] mx-auto md:mt-10 mt-20 py-[25px]">
