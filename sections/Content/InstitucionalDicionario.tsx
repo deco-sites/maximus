@@ -1,10 +1,22 @@
+import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+
+export interface Item {
+  title: string;
+  /** @format textarea */
+  content: string;
+  image: LiveImage;
+  link: string;
+}
+
 export interface Props {
   title: string;
+  items: Item[];
 }
 
 export default function InstitucionalDicionario(props: Props) {
   const {
-    title = "Troca e Devolução",
+    title = "Dicionário de Tecidos",
+    items = [],
   } = props;
   return (
     <div class="w-full mt-32 md:mt-10 mb-[-32px] border-b border-[#ebebeb]">
@@ -66,43 +78,33 @@ export default function InstitucionalDicionario(props: Props) {
 
       <div class="w-full mt-7 md:mt-10 px-0 py-[50px] bg-[#f5f5f5]">
         <div class="max-w-[94%] md:max-w-[1246px] mx-auto">
-          <details class="w-full collapse collapse-arrow join-itemborder mb-[25px] px-2 md:px-10 rounded-sm border border-[#EBEBEB] bg-white">
-            <summary class="collapse-title text-lg font-medium">
-              <div class="flex items-center">
-                <img
-                  width={45}
-                  height={45}
-                  src="https://tfcszo.vteximg.com.br/arquivos/inst-image-tecido.png"
-                  alt="thumb do tecido"
-                />
-                <span class="text-neutral-800 text-[15px] uppercase font-semibold mx-10 my-0">
-                  ALFAIATARIA
-                </span>{" "}
-                <a href="#" class="text-xs text-neutral-800 underline">
-                  Ver na loja
-                </a>
-              </div>
-            </summary>
-            <div class="collapse-content text-[13px] tracking-[0] text-neutral-800 leading-[21px] mb-[18px]">
-              Os tecidos de alfaiataria nunca saem de moda, pois são elegantes e
-              vestem bem todos os estilos. São mais estruturados, perfeitos para
-              confecção de peças clássicas como ternos e blazers, tanto
-              masculinos quanto femininos. Os tecidos sintéticos amassam menos e
-              possuem excelente custo benefício.
-              <br />
-              <br />
-              <strong>Sugestões de modelos com tecidos de alfaiataria:</strong>
-              <br />
-              <br />
-
-              - Moda festa: clássicos da alfaiataria como blazer, tubinhos,
-              macacão, além de vestidos e saias;
-
-              - Moda casual: vestidos e saias mais justas ou com volume e
-              blazers.
-            </div>
-          </details>
-          
+          {items && items.map((item: Item) => (
+            <details class="w-full collapse collapse-arrow join-itemborder mb-[25px] px-2 md:px-10 rounded-sm border border-[#EBEBEB] bg-white">
+              <summary class="collapse-title text-lg font-medium">
+                <div class="flex items-center">
+                  <img
+                    width={45}
+                    height={45}
+                    src={item.image}
+                    alt="thumb do tecido"
+                  />
+                  <span class="text-neutral-800 text-[15px] uppercase font-semibold mx-10 my-0">
+                    {item.title}
+                  </span>{" "}
+                  <a
+                    href={item.link}
+                    class="text-xs text-neutral-800 underline"
+                  >
+                    Ver na loja
+                  </a>
+                </div>
+              </summary>
+              <div
+                class="collapse-content text-[13px] tracking-[0] text-neutral-800 leading-[21px] mb-[18px]"
+                dangerouslySetInnerHTML={{ __html: item.content }}
+              ></div>
+            </details>
+          ))}
         </div>
       </div>
     </div>
