@@ -71,7 +71,7 @@ function NavItem({ item, showLogo }: { item: INavItem; showLogo: boolean }) {
             {/*<only desk>*/}
             <div class="w-full max-w-[1260px] pb-[20px]">
               <a href={href}>
-                <span class="flex items-center uppercase text-[#171413] after:text-base after:scale-x-[2] after:content-['\0279E'] after:ml-5 hover:underline after:no-underline">
+                <span class="flex items-center uppercase text-[#171413] after:text-base after:scale-x-[2] after:content-['\0279E'] after:ml-5 hover:underline after:hover:no-underline-2">
                   Ver todos os produtos
                 </span>
               </a>
