@@ -44,11 +44,15 @@ function Result({
   layout,
   cardLayout,
 }: Omit<Props, "page"> & { page: ProductListingPage }) {
-  const { products, filters, breadcrumb, pageInfo, sortOptions } = page;  
+  const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
 
   return (
     <>
-      <div class={`max-w-[1206px] mx-auto container px-4 sm:py-10 mt-6 border-t-[#EBEBEB] ${breadcrumb.numberOfItems > 0 ? 'border-t' : 'border-0'}`}>
+      <div
+        class={`max-w-[1206px] mx-auto container px-4 sm:py-10 mt-6 border-t-[#EBEBEB] ${
+          breadcrumb.numberOfItems > 0 ? "border-t" : "border-0"
+        }`}
+      >
         <h3 class="hidden">{breadcrumb.itemListElement[0]?.name}</h3>
         <h1 class="hidden max-md:block text-2xl font-semibold leading-[29px] text-center text-[#333333] mb-4 mt-8">
           TECIDOS

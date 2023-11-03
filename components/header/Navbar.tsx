@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks'
+import { useState } from "preact/hooks";
 
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 //import Icon from "$store/components/ui/Icon.tsx";
@@ -12,7 +12,7 @@ import type { INavItem } from "./NavItem.tsx";
 import NavItem from "./NavItem.tsx";
 import { navbarHeight } from "./constants.ts";
 
-import Searchh from "$store/components/search/Searchbar.tsx"
+import Searchh from "$store/components/search/Searchbar.tsx";
 
 function Navbar({ items, searchbar, logo, logoCurt }: {
   items: INavItem[];
@@ -20,19 +20,17 @@ function Navbar({ items, searchbar, logo, logoCurt }: {
   logo?: { src: string; alt: string };
   logoCurt?: { src: string; alt: string };
 }) {
-  const [showLogo, setShowLogo] = useState(false)
+  const [showLogo, setShowLogo] = useState(false);
 
-  const window_ = window
+  const window_ = window;
 
-  window_.addEventListener('scroll', function() {
+  window_.addEventListener("scroll", function () {
     const scrollTop = window.scrollY;
-    
-    if(scrollTop > 50){
-      setShowLogo(true)
-      
-    }
-    else {
-      setShowLogo(false)
+
+    if (scrollTop > 50) {
+      setShowLogo(true);
+    } else {
+      setShowLogo(false);
     }
   });
 
@@ -69,22 +67,22 @@ function Navbar({ items, searchbar, logo, logoCurt }: {
             href="/wishlist"
             aria-label="Wishlist"
           >
-           <img src="/arquivos/icone-wishlist.svg" />
+            <img src="/arquivos/icone-wishlist.svg" />
           </a>
           {PLATFORM === "vtex" && <CartButtonVTEX />}
           {PLATFORM === "vnda" && <CartButtonVDNA />}
         </div>
       </div>
 
-      <div class="flex justify-center md:hidden w-full p-3 pt-0"> 
-        <Searchh/>
+      <div class="flex justify-center md:hidden w-full p-3 pt-0">
+        <Searchh />
       </div>
 
       {/* Desktop Version */}
       <div class="w-full max-w-[1246px] mr-auto ml-auto hidden md:flex flex-row justify-between items-center pl-6 pr-6 h-[92px]">
         <div class="flex-none min-w-[25%] relative">
-           {/*<Searchbar searchbar={searchbar} />*/}
-          <Searchh/>
+          {/*<Searchbar searchbar={searchbar} />*/}
+          <Searchh />
         </div>
         <div class="flex-auto flex justify-center">
           {logo && (
@@ -93,7 +91,12 @@ function Navbar({ items, searchbar, logo, logoCurt }: {
               aria-label="Store logo"
               class="block pl-5"
             >
-              <Image src={showLogo && logoCurt ? logoCurt.src : logo.src} alt={logo.alt} width={showLogo ? 46 : 200} height={44} />
+              <Image
+                src={showLogo && logoCurt ? logoCurt.src : logo.src}
+                alt={logo.alt}
+                width={showLogo ? 46 : 200}
+                height={44}
+              />
             </a>
           )}
         </div>

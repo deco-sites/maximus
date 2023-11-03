@@ -11,35 +11,31 @@ export interface Props {
 export default function CategoryBannerHeader(
   { pageInfo }: { pageInfo: Props },
 ) {
+  if (!pageInfo.records || !pageInfo.recordPerPage) return;
+  const href = window.location.href;
 
+  console.log(">window.location", window.location);
 
-    if (!pageInfo.records || !pageInfo.recordPerPage) return;
-    const href = window.location.href
+  const pageFormated = href.indexOf("?") != -1 ? "&page=" : "?page=";
 
-    console.log(">window.location", window.location);
-    
-  
-    const pageFormated = href.indexOf("?") != -1 ? "&page=" : "?page="
-  
-    let newUrl = ""
-  
-    if (href.indexOf("page=") != -1) {
-      const beforeUrl = window.location.href.split("page=")[0];
-      newUrl = beforeUrl + pageFormated;
-    } else {
-      newUrl = href + pageFormated;
-    }
-  
-    const links = [];
-    const totalPages = Math.ceil(pageInfo.records / pageInfo.recordPerPage);
-  
-    for (let i = 1; i <= totalPages; i++) {
-      links.push({
-        "label": i,
-        "href": `${newUrl}${i}`,
-      });
-    }
- 
+  let newUrl = "";
+
+  if (href.indexOf("page=") != -1) {
+    const beforeUrl = window.location.href.split("page=")[0];
+    newUrl = beforeUrl + pageFormated;
+  } else {
+    newUrl = href + pageFormated;
+  }
+
+  const links = [];
+  const totalPages = Math.ceil(pageInfo.records / pageInfo.recordPerPage);
+
+  for (let i = 1; i <= totalPages; i++) {
+    links.push({
+      "label": i,
+      "href": `${newUrl}${i}`,
+    });
+  }
 
   return (
     <div class="flex justify-center my-4">

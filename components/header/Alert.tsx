@@ -1,10 +1,10 @@
-import { useState } from 'preact/hooks'
+import { useState } from "preact/hooks";
 
 import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "$store/sdk/useId.ts";
 
-export interface Props {  
+export interface Props {
   alerts: string[];
   /**
    * @title Autoplay interval
@@ -15,28 +15,26 @@ export interface Props {
 
 function Alert({ alerts = [], interval = 5 }: Props) {
   const id = useId();
-  const [showLogo, setShowLogo] = useState(false)
+  const [showLogo, setShowLogo] = useState(false);
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText("PRIMEIRACOMPRA");
   };
 
-  const window_ = window
+  const window_ = window;
 
-  window_.addEventListener('scroll', function() {
+  window_.addEventListener("scroll", function () {
     const scrollTop = window.scrollY;
-    
-    if(scrollTop > 50){
-      setShowLogo(true)
-      
-    }
-    else {
-      setShowLogo(false)
+
+    if (scrollTop > 50) {
+      setShowLogo(true);
+    } else {
+      setShowLogo(false);
     }
   });
 
   return (
-    <div class={`hidden ${showLogo ? 'hidden' : 'md:flex'}`} id={id}>
+    <div class={`hidden ${showLogo ? "hidden" : "md:flex"}`} id={id}>
       <Slider class="carousel carousel-center w-screen bg-black gap-6">
         {alerts.map((alert, index) => (
           <Slider.Item index={index} class="carousel-item">
@@ -47,7 +45,7 @@ function Alert({ alerts = [], interval = 5 }: Props) {
         ))}
         <Slider.Item index={alerts.length} class="carousel-item">
           <span class="text-xs break-space text-secondary-content flex justify-center items-center w-screen h-[30px]">
-            <strong>5% off </strong> na sua primeira compra
+            <strong>5% off</strong> na sua primeira compra
             <div
               onClick={copyToClipboard}
               class="relative text-xs font-normal leading-6 text-white text-center border rounded inline-block ml-[18px] px-[21px] py-0.5 border-solid border-[#457404] bg-[#7cc519]"
@@ -65,7 +63,12 @@ function Alert({ alerts = [], interval = 5 }: Props) {
         </Slider.Item>
       </Slider>
 
-      <SliderJS rootId={id} scroll="smooth" infinite interval={interval && interval * 1e3} />
+      <SliderJS
+        rootId={id}
+        scroll="smooth"
+        infinite
+        interval={interval && interval * 1e3}
+      />
     </div>
   );
 }

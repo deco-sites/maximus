@@ -18,13 +18,15 @@ export default function BannerSchool(
 ) {
   const {
     banners = [{
-      image: "/arquivos/Influenciadora-da-costura-flag.jpg?v=638102736555600000",
+      image:
+        "/arquivos/Influenciadora-da-costura-flag.jpg?v=638102736555600000",
       title: "Influenciadora da Costura",
       text:
         "Aprenda a divulgar suas costuras de forma profissional nas redes sociais para valorizar o seu trabalho e conquistar mais clientes.",
       link: "#",
     }, {
-      image: "/arquivos/Capas%20dos%20Cursos%20-%20FLAGS.jpg?v=638259813071030000",
+      image:
+        "/arquivos/Capas%20dos%20Cursos%20-%20FLAGS.jpg?v=638259813071030000",
       title: "Ajustes e Consertos",
       text:
         "Aprenda a arte do ajuste e conserto de todos os tipos de roupas com Viviane Alves. Um dos cursos mais pedidos pelas alunas, agora na nossa Escola.",
@@ -47,8 +49,7 @@ export default function BannerSchool(
       text:
         "Aprenda Modelar as principais peças de roupas femininas estudando com a lenda viva da Modelagem Plana no Brasil.",
       link: "#",
-    },
-    {
+    }, {
       image: "/arquivos/Modelagem-malhas-flag.jpg?v=638056006589700000",
       title: "Modelagem de Malhas",
       text:
@@ -66,8 +67,7 @@ export default function BannerSchool(
       text:
         "Aprenda a costurar as peças mais pedidas e lucrativas da Costura Criativa com Menino Costureiro, o Fenômeno da Costura na Internet.",
       link: "#",
-    },
-    {
+    }, {
       image: "/arquivos/Costura-Pet-flag.jpg?v=638056006584200000",
       title: "Costura Pet",
       text:
@@ -76,7 +76,7 @@ export default function BannerSchool(
     }],
   } = props;
 
-  const id = useId();  
+  const id = useId();
 
   function Dots({ banners }: Props) {
     return (
@@ -94,15 +94,16 @@ export default function BannerSchool(
         />
         <div class="flex justify-center">
           <ul class="carousel justify-center col-span-full gap-4 z-10 row-start-4">
-            {banners && banners.map((_, index) => (
-              <li class="carousel-item hidden itemDots">
-                <Slider.Dot index={index}>
-                  <div class="py-5">
-                    <div class="w-[14px] h-[7px] group-disabled:bg-[#171413] bg-[#EBEBEB]" />
-                  </div>
-                </Slider.Dot>
-              </li>
-            ))}
+            {banners &&
+              banners.map((_, index) => (
+                <li class="carousel-item hidden itemDots">
+                  <Slider.Dot index={index}>
+                    <div class="py-5">
+                      <div class="w-[14px] h-[7px] group-disabled:bg-[#171413] bg-[#EBEBEB]" />
+                    </div>
+                  </Slider.Dot>
+                </li>
+              ))}
           </ul>
         </div>
       </>

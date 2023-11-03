@@ -39,8 +39,15 @@ const Aside = (
       {title !== "Menu" &&
         (
           <h1 class="flex items-center px-6 py-3">
-            <img width={16} height={16} src="/arquivos/icone-cart-black.svg" alt="icone cart" />
-            <span class="ml-3 text-base font-normal leading-6 tracking-[0.5px] uppercase">{title}</span>
+            <img
+              width={16}
+              height={16}
+              src="/arquivos/icone-cart-black.svg"
+              alt="icone cart"
+            />
+            <span class="ml-3 text-base font-normal leading-6 tracking-[0.5px] uppercase">
+              {title}
+            </span>
           </h1>
         )}
       {logo && (

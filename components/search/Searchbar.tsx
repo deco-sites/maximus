@@ -121,7 +121,7 @@ function Searchbar({
               type="button join-item"
               class="btn-ghost btn-square hidden sm:inline-flex"
               onClick={() => displaySearchPopup.value = false}
-            >              
+            >
               <Icon id="XMark" size={24} strokeWidth={2} />
             </Button>
             <span

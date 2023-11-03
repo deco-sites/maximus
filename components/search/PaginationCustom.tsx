@@ -15,7 +15,7 @@ export default function PaginationCustom(
 ) {
   if (!pageInfo.records || !pageInfo.recordPerPage) return;
 
- // console.log("nextPage", pageInfo.nextPage);
+  // console.log("nextPage", pageInfo.nextPage);
 
   const pageFormated = pageInfo.nextPage
     ? pageInfo.nextPage.split("page=")[0]
@@ -28,8 +28,11 @@ export default function PaginationCustom(
     links.push({
       "label": i,
       "href": `${pageFormated}page=${i}`,
-      "show": i < 5 && pageInfo.currentPage < 4 ? true : i > pageInfo.currentPage - 3 && i < pageInfo.currentPage + 2 ? true : false,
-      
+      "show": i < 5 && pageInfo.currentPage < 4
+        ? true
+        : i > pageInfo.currentPage - 3 && i < pageInfo.currentPage + 2
+        ? true
+        : false,
     });
   }
 
@@ -40,7 +43,9 @@ export default function PaginationCustom(
           aria-label="previous page link"
           rel="prev"
           href={pageInfo.previousPage ?? "#"}
-          class={`mr-1 ${pageInfo.currentPage === 1 ? 'hidden' : 'flex'} items-center justify-center text-neutral-800 w-8 h-8 hover:bg-white rounded-[5px] border border-solid border-[#EAEAEA] hover:border-black`}
+          class={`mr-1 ${
+            pageInfo.currentPage === 1 ? "hidden" : "flex"
+          } items-center justify-center text-neutral-800 w-8 h-8 hover:bg-white rounded-[5px] border border-solid border-[#EAEAEA] hover:border-black`}
         >
           <Icon id="ChevronLeft" size={20} strokeWidth={1} />
         </a>

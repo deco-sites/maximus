@@ -41,7 +41,7 @@ export default function BannerSlider2(
           loading="lazy"
           src={banner.image}
           alt="banner"
-        />        
+        />
       </a>
     );
   });

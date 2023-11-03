@@ -37,12 +37,12 @@ function Payments({ price, offers, numberInstallments }: Props, {}) {
         >
         </div>
         <div class="w-[96%] md:w-[56%] h-[90vh] absolute bg-white mx-auto py-[50px] md:px-[50px] rounded-sm left-[2%] md:left-[22%] top-[30px] overflow-y-scroll max-h-full scrollbar-thumb scrollbar scrollbar-track">
-        <div
-        style={{backgroundImage: "url('/arquivos/close-modal.svg')"}}
-          onClick={() => setShow(false)}
-          class="absolute cursor-pointer z-[99999] w-6 h-6 bg-no-repeat bg-center appearance-none transition-[0.2s] duration-[ease-in-out] m-0 p-[7px] rounded-[50%] border-[none] scale-150 right-5 md:right-10 top-[15px];"
-        >
-        </div>
+          <div
+            style={{ backgroundImage: "url('/arquivos/close-modal.svg')" }}
+            onClick={() => setShow(false)}
+            class="absolute cursor-pointer z-[99999] w-6 h-6 bg-no-repeat bg-center appearance-none transition-[0.2s] duration-[ease-in-out] m-0 p-[7px] rounded-[50%] border-[none] scale-150 right-5 md:right-10 top-[15px];"
+          >
+          </div>
           <h3 class="text-lg font-semibold leading-5 text-[#171413] uppercase text-center mb-10 pb-[25px] border-b-[#eaeaea] border-b border-solid">
             FORMAS DE PAGAMENTO
           </h3>

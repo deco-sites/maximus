@@ -417,7 +417,9 @@ function Details({
                   </p>
                 )}
 
-              {isMeter && <Conservation conservationsList={conservationsList} />}
+              {isMeter && (
+                <Conservation conservationsList={conservationsList} />
+              )}
             </div>
 
             <div class="max-md:order-4">

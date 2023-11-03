@@ -48,7 +48,11 @@ function ShippingContent({ simulation }: {
 
   return (
     <ul class="flex flex-col border border-solid border-[#f3f3f4]">
-      <li><h6 class="h-[38px] bg-[#f3f3f4] flex items-center justify-center text-xs font-semibold leading-[29px] tracking-[0px] text-[#0d0c22] rounded-[3px]">Resultados</h6></li>
+      <li>
+        <h6 class="h-[38px] bg-[#f3f3f4] flex items-center justify-center text-xs font-semibold leading-[29px] tracking-[0px] text-[#0d0c22] rounded-[3px]">
+          Resultados
+        </h6>
+      </li>
       {methods.map((method) => (
         <li class="flex justify-between p-[15px] border-b-[#f3f3f4] border-b border-solid">
           <span class="text-xs font-medium leading-[19px] tracking-[0px] text-[#0d0c22]">
@@ -63,7 +67,7 @@ function ShippingContent({ simulation }: {
             )}
           </span>
         </li>
-      ))}      
+      ))}
     </ul>
   );
 }

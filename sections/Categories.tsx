@@ -9,7 +9,9 @@ export async function loader(
   { title }: Props,
   _req: Request,
 ) {
-  const data: any = await fetch("https://tfcszo.myvtex.com/api/catalog_system/pub/category/tree/3").then(
+  const data: any = await fetch(
+    "https://tfcszo.myvtex.com/api/catalog_system/pub/category/tree/3",
+  ).then(
     (r) => {
       if (r.ok) {
         console.log("data>>>>>>>", r.clone().json());

@@ -74,7 +74,12 @@ function Header({
           <div class="bg-[#171413] fixed w-full z-50">
             <Alert alerts={alerts} />
             <Contact />
-            <Navbar items={navItems} searchbar={searchbar} logo={logo} logoCurt={logoCurt} />
+            <Navbar
+              items={navItems}
+              searchbar={searchbar}
+              logo={logo}
+              logoCurt={logoCurt}
+            />
           </div>
         </Drawers>
       </header>

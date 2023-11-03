@@ -17,7 +17,7 @@ const state = {
   displayMenu,
   displaySearchPopup,
   displaySearchDrawer,
-  quantityPdp
+  quantityPdp,
 };
 
 export const useUI = () => state;
