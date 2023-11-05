@@ -12,7 +12,7 @@ export default function Description({ text }: Props) {
       {text && (
         <p
           dangerouslySetInnerHTML={{ __html: text }}
-          class={`text-base font-normal leading-6 tracking-[0px] text-[#171413] text-center ${
+          class={`w-full max-w-[1200px] mx-auto my-8 text-base font-normal leading-6 tracking-[0px] text-[#171413] text-center ${
             showMore ? "max-h-[650px]" : "max-h-[65px]"
           } overflow-hidden transition-all duration-[0.8s]`}
         >

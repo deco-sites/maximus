@@ -1,35 +1,41 @@
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import type { ProductListingPage } from "apps/commerce/types.ts";
-import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
-
-export interface Props {
-  page?: ProductListingPage | null;
-  image?: LiveImage;
-  imageMobile?: LiveImage;
+export interface IBanner {
+  url?: string;
+  image?: string;
+  imageMobile?: string;
 }
 
-export default function CategoryBannerHeader(props: Props) {
-  const {
-    image = "/arquivos/ids/167773/TECIDOS.jpg?v=638076806586230000",
-    imageMobile = "/arquivos/ids/167773/TECIDOS.jpg?v=638076806586230000",
-  } = props;
+export interface Props {
+  banners?: IBanner[];
+  title?: string;
+  urlCurrent: string;
+}
+
+export default function CategoryBannerHeader(
+  { title, banners, urlCurrent }: Props,
+) {
+  console.log("banners", banners);
+  const bannerCurrent = banners?.find((item:IBanner) => item.url === urlCurrent);
 
   return (
-    <div class="w-full max-w-[1236px] mx-auto mb-6 mt-9 max-md:px-3 relative flex items-center justify-center max-md:mt-[128px]">
+    <>
+    {bannerCurrent ?
+      <div class="w-full max-w-[1236px] mx-auto mb-6 mt-9 max-md:px-3 relative flex items-center justify-center max-md:mt-[128px]">
       <img
         class="hidden max-md:block"
-        src={imageMobile}
+        src={bannerCurrent?.imageMobile}
         alt="banner de categoria"
       />
-      <img class="hidden md:block" src={image} alt="banner de categoria" />
-      <div class="absolute text-white">
+      <img class="hidden md:block" src={bannerCurrent?.image} />
+      <div class="flex flex-col items-center absolute text-white">
         <p class="text-[28px] font-medium leading-[19px] text-white text-center mb-4">
-          TECIDOS
+          {title}
         </p>
-        <Breadcrumb
-          itemListElement={[]}
-        />
+        <a href="/">Home</a>
       </div>
     </div>
+    :
+    <></>}
+    </>
+    
   );
 }

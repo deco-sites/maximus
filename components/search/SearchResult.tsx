@@ -1,7 +1,7 @@
 import { SendEventOnLoad } from "$store/components/Analytics.tsx";
 import { Layout as cardLayout } from "$store/components/product/ProductCard.tsx";
 import Filters from "$store/components/search/Filters.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
+import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import SearchControls from "$store/islands/SearchControls.tsx";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import type { ProductListingPage } from "apps/commerce/types.ts";
@@ -10,7 +10,10 @@ import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
 
 import InfoPagination from "$store/components/search/InfoPagination.tsx";
 import Paginations from "$store/islands/PaginationCustom.tsx";
-//import Pagination from "$store/components/search/Pagination.tsx";
+
+import BannerTitle from "$store/sections/Category/CategoryBannerHeader.tsx";
+import TextSeo from "$store/sections/Category/CategoryTextHeader.tsx";
+import Categories from "$store/sections/Category/CategoryBannersSlider.tsx";
 
 import Sort from "$store/components/search/Sort.tsx";
 
@@ -25,10 +28,24 @@ export interface Layout {
   columns: Columns;
 }
 
+export interface IBanner {
+  url?: string;
+  image?: LiveImage;
+  imageMobile?: LiveImage;
+}
+
+export interface IText {
+  url?: string;
+  /** @format textarea */
+  text?: string;
+}
+
 export interface Props {
   page: ProductListingPage | null;
   layout?: Layout;
   cardLayout?: cardLayout;
+  banners?: IBanner[];
+  texts?: IText[];
 }
 
 function NotFound() {
@@ -112,12 +129,54 @@ function Result({
   );
 }
 
-function SearchResult({ page, ...props }: Props) {
+function SearchResult({ page, banners, texts, ...props }: Props) {
+  const { breadcrumb } = page;
+  const { itemListElement, numberOfItems } = breadcrumb;
+  console.log("pageInfo>><>", itemListElement);
+  console.log("tamanho>><>", numberOfItems);
+  console.log("TITLE>><>", itemListElement[0]?.name);
+  console.log("image>><>", banners);
+
+  const format = (str: string) => {
+    if (!str) return;
+
+    return str.toLowerCase().toLowerCase()
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/,/g, "")
+      .replace(/\s+/g, "-").replace(/[^a-z0-9-]+/g, "");
+  };
+
+  const urlCurrent = numberOfItems === 2
+    ? `/${format(itemListElement[0]?.name)}/${format(itemListElement[1]?.name)}`
+    : `/${format(itemListElement[0]?.name)}`;
+
+  console.log("urlCurrent", urlCurrent);
+
   if (!page) {
     return <NotFound />;
   }
 
-  return <Result {...props} page={page} />;
+  return (
+    <>
+      {numberOfItems
+        ? (
+          <div>
+            <BannerTitle
+              banners={banners}
+              urlCurrent={urlCurrent}
+              title={itemListElement[0]?.name}
+            />
+            <TextSeo
+              urlCurrent={urlCurrent}
+              texts={texts}
+            />
+            <Categories />
+          </div>
+        )
+        : null}
+
+      <Result {...props} page={page} />
+    </>
+  );
 }
 
 export default SearchResult;
