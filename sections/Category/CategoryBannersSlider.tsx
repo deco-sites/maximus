@@ -6,9 +6,9 @@ import Icon from "$store/components/ui/Icon.tsx";
 
 export interface Props {
   banners?: Array<{
-    image: LiveImage;
-    title: string;
-    link: string;
+    image?: LiveImage;
+    title?: string;
+    link?: string;
   }>;
 }
 

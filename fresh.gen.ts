@@ -5,27 +5,28 @@
 import * as $0 from "./routes/_app.tsx";
 import * as $$0 from "./islands/AddToCartButton/vnda.tsx";
 import * as $$1 from "./islands/AddToCartButton/vtex.tsx";
-import * as $$2 from "./islands/CategoryTextHeader.tsx";
-import * as $$3 from "./islands/ColorsSimilars.tsx";
-import * as $$4 from "./islands/Conservation.tsx";
-import * as $$5 from "./islands/Header/Alert.tsx";
-import * as $$6 from "./islands/Header/Buttons.tsx";
-import * as $$7 from "./islands/Header/Cart/vnda.tsx";
-import * as $$8 from "./islands/Header/Cart/vtex.tsx";
-import * as $$9 from "./islands/Header/Drawers.tsx";
-import * as $$10 from "./islands/Header/Searchbar.tsx";
-import * as $$11 from "./islands/MeterHelp.tsx";
-import * as $$12 from "./islands/Navbar.tsx";
-import * as $$13 from "./islands/Newsletter.tsx";
-import * as $$14 from "./islands/OutOfStock.tsx";
-import * as $$15 from "./islands/PaginationCustom.tsx";
-import * as $$16 from "./islands/Payments.tsx";
-import * as $$17 from "./islands/Price.tsx";
-import * as $$18 from "./islands/ProductImageZoom.tsx";
-import * as $$19 from "./islands/SearchControls.tsx";
-import * as $$20 from "./islands/ShippingSimulation.tsx";
-import * as $$21 from "./islands/SliderJS.tsx";
-import * as $$22 from "./islands/WishlistButton.tsx";
+import * as $$2 from "./islands/CategoryBannersSlider.tsx";
+import * as $$3 from "./islands/CategoryTextHeader.tsx";
+import * as $$4 from "./islands/ColorsSimilars.tsx";
+import * as $$5 from "./islands/Conservation.tsx";
+import * as $$6 from "./islands/Header/Alert.tsx";
+import * as $$7 from "./islands/Header/Buttons.tsx";
+import * as $$8 from "./islands/Header/Cart/vnda.tsx";
+import * as $$9 from "./islands/Header/Cart/vtex.tsx";
+import * as $$10 from "./islands/Header/Drawers.tsx";
+import * as $$11 from "./islands/Header/Searchbar.tsx";
+import * as $$12 from "./islands/MeterHelp.tsx";
+import * as $$13 from "./islands/Navbar.tsx";
+import * as $$14 from "./islands/Newsletter.tsx";
+import * as $$15 from "./islands/OutOfStock.tsx";
+import * as $$16 from "./islands/PaginationCustom.tsx";
+import * as $$17 from "./islands/Payments.tsx";
+import * as $$18 from "./islands/Price.tsx";
+import * as $$19 from "./islands/ProductImageZoom.tsx";
+import * as $$20 from "./islands/SearchControls.tsx";
+import * as $$21 from "./islands/ShippingSimulation.tsx";
+import * as $$22 from "./islands/SliderJS.tsx";
+import * as $$23 from "./islands/WishlistButton.tsx";
 
 const manifest = {
   routes: {
@@ -34,27 +35,28 @@ const manifest = {
   islands: {
     "./islands/AddToCartButton/vnda.tsx": $$0,
     "./islands/AddToCartButton/vtex.tsx": $$1,
-    "./islands/CategoryTextHeader.tsx": $$2,
-    "./islands/ColorsSimilars.tsx": $$3,
-    "./islands/Conservation.tsx": $$4,
-    "./islands/Header/Alert.tsx": $$5,
-    "./islands/Header/Buttons.tsx": $$6,
-    "./islands/Header/Cart/vnda.tsx": $$7,
-    "./islands/Header/Cart/vtex.tsx": $$8,
-    "./islands/Header/Drawers.tsx": $$9,
-    "./islands/Header/Searchbar.tsx": $$10,
-    "./islands/MeterHelp.tsx": $$11,
-    "./islands/Navbar.tsx": $$12,
-    "./islands/Newsletter.tsx": $$13,
-    "./islands/OutOfStock.tsx": $$14,
-    "./islands/PaginationCustom.tsx": $$15,
-    "./islands/Payments.tsx": $$16,
-    "./islands/Price.tsx": $$17,
-    "./islands/ProductImageZoom.tsx": $$18,
-    "./islands/SearchControls.tsx": $$19,
-    "./islands/ShippingSimulation.tsx": $$20,
-    "./islands/SliderJS.tsx": $$21,
-    "./islands/WishlistButton.tsx": $$22,
+    "./islands/CategoryBannersSlider.tsx": $$2,
+    "./islands/CategoryTextHeader.tsx": $$3,
+    "./islands/ColorsSimilars.tsx": $$4,
+    "./islands/Conservation.tsx": $$5,
+    "./islands/Header/Alert.tsx": $$6,
+    "./islands/Header/Buttons.tsx": $$7,
+    "./islands/Header/Cart/vnda.tsx": $$8,
+    "./islands/Header/Cart/vtex.tsx": $$9,
+    "./islands/Header/Drawers.tsx": $$10,
+    "./islands/Header/Searchbar.tsx": $$11,
+    "./islands/MeterHelp.tsx": $$12,
+    "./islands/Navbar.tsx": $$13,
+    "./islands/Newsletter.tsx": $$14,
+    "./islands/OutOfStock.tsx": $$15,
+    "./islands/PaginationCustom.tsx": $$16,
+    "./islands/Payments.tsx": $$17,
+    "./islands/Price.tsx": $$18,
+    "./islands/ProductImageZoom.tsx": $$19,
+    "./islands/SearchControls.tsx": $$20,
+    "./islands/ShippingSimulation.tsx": $$21,
+    "./islands/SliderJS.tsx": $$22,
+    "./islands/WishlistButton.tsx": $$23,
   },
   baseUrl: import.meta.url,
 };
