@@ -47,7 +47,7 @@ export default function BannerSlider2(
   });
 
   return (
-    <div class="w-full my-9 px-3 grid md:hidden gap-28 grid-flow-col auto-cols-fr overflow-auto no-scrollbar">
+    <div class="w-full my-9 px-3 flex md:hidden justify-start gap-3 overflow-auto no-scrollbar">
       {listBanners}
     </div>
   );

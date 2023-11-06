@@ -95,7 +95,7 @@ function AddToCartButton(props: Props) {
             Tecido bemberg off white (failete)
           </h3>
         </div>
-        <div class="max-md:w-[50%] flex items-center md:mx-10">
+        <div class="max-md:w-[45%] flex items-center md:mx-10">
           <span class="hidden md:block text-sm font-medium leading-[19px] tracking-[0] text-[#171413] mr-5">
             Comprimento em <strong>metros</strong>
           </span>
@@ -117,8 +117,8 @@ function AddToCartButton(props: Props) {
             </span>
           </div>
         </div>
-        <div class="max-md:w-[50%] md:mr-10">
-          <span class="font-extrabold text-2xl tracking-[0] text-[#171413] leading-[26px]">
+        <div class="max-md:w-[55%] md:mr-10">
+          <span class="font-extrabold text-[22px] md:text-2xl tracking-[0] text-[#171413] leading-[26px]">
             {props.price &&
               formatPrice(
                 (props.price * quantity) / (props.isMeter ? 10 : 1),

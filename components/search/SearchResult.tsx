@@ -49,9 +49,9 @@ function Result({
   return (
     <>
       <div
-        class={`max-w-[1206px] mx-auto container px-4 sm:py-10 mt-6 border-t-[#EBEBEB] ${
+        class={`max-w-[1206px] mx-auto container px-4 sm:py-10 border-t-[#EBEBEB] ${
           breadcrumb.numberOfItems > 0 ? "border-t" : "border-0"
-        }`}
+        } ${title ? 'mt-6' : 'mt-32'}`}
       >
         {title
           ? (

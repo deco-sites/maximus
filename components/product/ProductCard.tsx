@@ -213,7 +213,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
         </figcaption>
       </figure>
       {/* Prices & Name */}
-      <div class="flex-auto flex flex-col p-2 gap-3 lg:gap-4">
+      <div class="flex-auto flex flex-col py-2 gap-3 lg:gap-4">
         {/* SKU Selector */}
         {(!l?.elementsPositions?.skuSelector ||
           l?.elementsPositions?.skuSelector === "Top") && (
@@ -257,16 +257,16 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
                 l?.basics?.oldPriceSize === "Normal"
                   ? "lg:flex-row lg:gap-2"
                   : ""
-              } ${align === "center" ? "justify-center" : "justify-start"}`}
+              } ${align === "center" ? "justify-center" : "justify-center"}`}
             >
               <div
-                class={`flex items-center flex-wrap mr-2 line-through text-base-300 text-xs ${
+                class={`items-center flex-wrap mr-2 line-through text-base-300 text-xs ${
                   l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
-                }`}
+                } ${listPrice !== price ? 'flex' : 'hidden'}`}
               >
                 {formatPrice(listPrice, offers!.priceCurrency!)}
               </div>
-              <div class="text-sm font-bold leading-[34px] text-[#171413]">
+              <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413]">
                 {formatPrice(price, offers!.priceCurrency!)}{" "}
                 {isMeter ? "/ metro" : "/ un"}
               </div>
