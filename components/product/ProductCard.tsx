@@ -70,6 +70,13 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
   const { listPrice, price, installments } = useOffer(offers);
   const possibilities = useVariantPossibilities(product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
+  const nameFormated =product.isVariantOf?.name;
+  const discountt = listPrice &&
+    Math.round(((listPrice - (price ? price : 0)) / listPrice) * 100);
+  const novidades = product?.additionalProperty?.find((item: any) =>
+    item.value === "Novidade"
+  );
+
   const isMeter =
     product?.additionalProperty?.find((item: any) => item.name === "category")
         ?.value === "TECIDOS"
@@ -135,6 +142,26 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
         class="relative overflow-hidden"
         style={{ aspectRatio: `${WIDTH} / ${HEIGHT}` }}
       >
+        {/* flags */}
+        <div class="absolute top-4 z-10 left-0">
+          <div class="flex flex-col">
+            {novidades &&
+              (
+                <span class="flex items-center justify-center bg-black text-[10px] leading-[14px] text-center text-white uppercase w-[90px] h-[21px] font-bold rounded-[0_5px_5px_0] mb-1">
+                  Novidade
+                </span>
+              )}
+
+            {discountt && discountt > 0
+              ? (
+                <span class="flex items-center justify-center bg-[#ff6f61] text-[10px] leading-[14px] text-center text-white uppercase w-[90px] h-[21px] font-bold rounded-[0_5px_5px_0]">
+                  -{discountt} % Off
+                </span>
+              )
+              : ""}
+          </div>
+        </div>
+
         {/* Wishlist button */}
         <div
           class={`absolute top-2 z-10
@@ -237,8 +264,8 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
               {l?.hide?.productName
                 ? ""
                 : (
-                  <h2 class="truncate text-xs md:text-base text-base-content">
-                    {name}
+                  <h2 class="truncate text-xs md:text-base text-base-content text-center">
+                    {nameFormated}
                   </h2>
                 )}
               {l?.hide?.productDescription
@@ -262,7 +289,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
               <div
                 class={`items-center flex-wrap mr-2 line-through text-base-300 text-xs ${
                   l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
-                } ${listPrice !== price ? 'flex' : 'hidden'}`}
+                } ${listPrice !== price ? "flex" : "hidden"}`}
               >
                 {formatPrice(listPrice, offers!.priceCurrency!)}
               </div>

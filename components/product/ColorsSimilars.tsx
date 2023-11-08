@@ -4,12 +4,12 @@ function ColorsSimilars() {
   const [seeMore, setSeeMore] = useState<boolean>(false);
 
   return (
-    <div class="md:my-36">
+    <div class="md:my-28">
       <p class="text-[13px] font-medium leading-[19px] tracking-[0] text-[#171413] mb-3">
         <strong>Outras cores disponíveis</strong>
       </p>
       <div
-        class={`flex flex-wrap w-[770px] max-w-full ${
+        class={`flex flex-wrap w-full md:min-w-[770px] max-w-full ${
           seeMore ? "max-h-[1000px]" : "max-h-[142px]"
         } mt-[15px] mb-5 mx-0 overflow-hidden transition-[0.4s] `}
       >

@@ -17,6 +17,7 @@ function AddToCartButton(props: Props) {
   const quantityMin = isMeter ? 4 : 1;
 
   const [quantity, setQuantity] = useState(isMeter ? 10 : 1);
+  const [notification, setNotification] = useState(false);
 
   const { quantityPdp } = useUI();
   quantityPdp.value = quantity;
@@ -34,12 +35,24 @@ function AddToCartButton(props: Props) {
       }],
     });
 
+  const handleNotification = () => {
+    setNotification(true);
+
+    setTimeout(() => {
+      setNotification(false);
+    }, 5000);
+  };
+
   const updateQuantity = (type: string) => {
     if (type === "minus") {
       if ((quantity - 1) > quantityMin) {
         setQuantity(quantity - 1);
       } else {
         setQuantity(quantityMin);
+
+        if ((quantity - 1) < quantityMin) {
+          handleNotification();
+        }
       }
     } else if (type === "plus") {
       if ((quantity + 1) <= stock) {
@@ -134,6 +147,15 @@ function AddToCartButton(props: Props) {
           <Button onAddItem={onAddItem} {...props} />
         </div>
       </div>
+      {notification
+        ? (
+          <div class="w-full fixed z-10 bottom-2 left-0 flex justify-center items-center">
+            <div class="text-xs font-medium tracking-[0px] text-white border rounded px-6 py-4 flex justify-center items-center mb-5 border-solid border-[#e90000] bg-[#e90000]">
+              A quantidade deve ser igual ou maior que 0.40 centímetro!
+            </div>
+          </div>
+        )
+        : <></>}
     </>
   );
 }

@@ -296,9 +296,11 @@ function Details({
     productID,
     isVariantOf,
   } = product;
+
   const id = useId();
   const images = useStableImages(product);
   const productGroupID = isVariantOf?.productGroupID ?? "";
+  const nameFormated =product.isVariantOf?.name;
 
   const isMeter =
     product?.additionalProperty?.find((item: any) => item.name === "category")
@@ -348,7 +350,7 @@ function Details({
         <div class="flex md:hidden my-5 px-5">
           <div class="w-[90%]">
             <h1 class="text-2xl font-normal leading-6 tracking-[0] text-[#171413]">
-              {name}
+              {nameFormated}
             </h1>
           </div>
           <div class="w-[10%]">
@@ -377,12 +379,12 @@ function Details({
               </div>
             </div>
             <div class="flex mt-5 max-md:hidden">
-              <div class="w-[80%]">
+              <div class="w-[90%]">
                 <h1 class="text-2xl font-normal leading-6 tracking-[0] text-[#171413]">
-                  {name}
+                  {nameFormated}
                 </h1>
               </div>
-              <div class="w-[20%] flex items-center justify-end">
+              <div class="w-[10%] flex items-center justify-end">
                 <WishlistButton
                   productID={productID}
                   productGroupID={productGroupID}

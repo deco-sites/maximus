@@ -1,5 +1,6 @@
 export interface Props {
-  title: string;
+  breadcrumb?: string;
+  title?: string;
   /** @format html */
   html?: string;
   /** @format textarea */
@@ -8,6 +9,7 @@ export interface Props {
 
 export default function Institucional(props: Props) {
   const {
+    breadcrumb = "",
     title = "Troca e Devolução",
     html = "",
     text = "Lorem...",
@@ -19,7 +21,7 @@ export default function Institucional(props: Props) {
           Home
         </span>
         <span class="text-xs font-normal leading-6 flex items-center">
-          {title}
+          {breadcrumb ? breadcrumb : title}
         </span>
       </div>
       <div class="border border-neutral-100 mb-[100px] px-5 md:px-10 py-[25px] border-solid">
