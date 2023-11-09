@@ -59,7 +59,7 @@ function Menu({ items }: Props) {
         <li>
           <a
             class="flex items-center gap-4 px-4 py-4 border"
-            href="https://www.deco.cx"
+            href="/login"
           >
             <Icon id="User" size={24} strokeWidth={2} />
             <span class="text-sm uppercase font-medium">Entrar/Cadastrar</span>
