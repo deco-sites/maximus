@@ -37,42 +37,22 @@ export default function BannerSlider(
       image: "/arquivos/banner-slider-5.png?v=1245",
       title: "Chiffon",
       link: "#",
+    }, {
+      image: "/arquivos/banner-slider-3.png?v=1245",
+      title: "Camurça",
+      link: "#",
+    }, {
+      image: "/arquivos/banner-slider-4.png?v=1245",
+      title: "Cetim",
+      link: "#",
+    }, {
+      image: "/arquivos/banner-slider-5.png?v=1245",
+      title: "Chiffon",
+      link: "#",
     }],
   } = props;
 
   const id = useId();
-
-  function Dots({ banners }: Props) {
-    return (
-      <>
-        <style
-          dangerouslySetInnerHTML={{
-            __html: `
-            @property --dot-progress {
-              syntax: '<percentage>';
-              inherits: false;
-              initial-value: 0%;
-            }
-            `,
-          }}
-        />
-        <div class="hidden justify-center">
-          <ul class="carousel justify-center col-span-full gap-4 z-10 row-start-4">
-            {banners &&
-              banners.map((_, index) => (
-                <li class="carousel-item hidden itemDots">
-                  <Slider.Dot index={index}>
-                    <div class="py-5">
-                      <div class="w-[14px] h-[7px] group-disabled:bg-[#171413] bg-[#EBEBEB]" />
-                    </div>
-                  </Slider.Dot>
-                </li>
-              ))}
-          </ul>
-        </div>
-      </>
-    );
-  }
 
   const listBanners = banners && banners.map((banner, index) => {
     return (
@@ -100,8 +80,11 @@ export default function BannerSlider(
   });
 
   return (
-    <div class="w-full max-w-[1246px] mx-auto my-9 max-md:px-3 relative">
-      <Slider class="carousel carousel-center gap-4 lg:gap-8 row-start-2 row-end-5 w-full">
+    <div
+      id={id}
+      class="w-full max-w-[1246px] mx-auto my-9 max-md:px-3 relative"
+    >
+      <Slider class="carousel carousel-start md:carousel-center gap-4 lg:gap-8 row-start-2 row-end-5 w-full">
         {listBanners}
       </Slider>
       <div class="hidden md:block">
@@ -116,8 +99,8 @@ export default function BannerSlider(
           </Slider.NextButton>
         </div>
       </div>
-      {banners && banners?.length > 1 && <Dots banners={banners} />}
-      <SliderJS rootId={id} interval={6 * 1e3} infinite={true} />
+
+      <SliderJS rootId={id} infinite={true} />
     </div>
   );
 }
