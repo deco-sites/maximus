@@ -26,6 +26,27 @@
   .text-shadow{
     text-shadow: 0 0 black;
   }
+
+  .pontinhos-base {
+    content: '';
+    width: 100%;
+    height: 3px;
+    display: block;
+    background: url(https://tfcszo.vteximg.com.br/arquivos/linha-horizontal-tempo.png);
+    background-size: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .pontinhos {
+    content: '';
+    width: 3px;
+    height: 55px;
+    display: block;
+    background: url(https://tfcszo.vteximg.com.br/arquivos/linha-do-tempo-linha.png) no-repeat center;
+    background-size: 100%;
+    margin: 0 auto;
+  }
   
   .no-scrollbar::-webkit-scrollbar {
     display: none;
