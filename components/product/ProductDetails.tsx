@@ -18,16 +18,19 @@ import type { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "deco-sites/std/commerce/utils/productToAnalyticsItem.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 import ProductSelector from "./ProductVariantSelector.tsx";
+import type { Product } from "apps/commerce/types.ts";
 
 import Conservation from "$store/islands/Conservation.tsx";
 import Payments from "$store/islands/Payments.tsx";
 import Price from "$store/islands/Price.tsx";
 import ColorsSimilars from "$store/islands/ColorsSimilars.tsx";
+import AddCombinador from "$store/islands/AddCombinador.tsx";
 
 export type Variant = "front-back" | "slider" | "auto";
 
 export interface Props {
   page: ProductDetailsPage | null;
+  pageSimilar: Product[] | null;
   /**
    * @title Product view
    * @description Ask for the developer to remove this option since this is here to help development only and should not be used in production
@@ -234,6 +237,9 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
           Compra 100% segura.
         </p>
       </div>
+
+      <AddCombinador sku={productGroupID} />
+
       {/* Shipping Simulation */}
       <div class="mt-8">
         <ShippingSimulation
@@ -300,7 +306,7 @@ function Details({
   const id = useId();
   const images = useStableImages(product);
   const productGroupID = isVariantOf?.productGroupID ?? "";
-  const nameFormated =product.isVariantOf?.name;
+  const nameFormated = product.isVariantOf?.name;
 
   const isMeter =
     product?.additionalProperty?.find((item: any) => item.name === "category")
@@ -540,7 +546,9 @@ function Details({
   );
 }
 
-function ProductDetails({ page, variant: maybeVar = "auto" }: Props) {
+function ProductDetails(
+  { page, pageSimilar, variant: maybeVar = "auto" }: Props,
+) {
   /**
    * Showcase the different product views we have on this template. In case there are less
    * than two images, render a front-back, otherwhise render a slider
@@ -583,6 +591,8 @@ function ProductDetails({ page, variant: maybeVar = "auto" }: Props) {
     page?.product.isVariantOf.additionalProperty.filter((item: any) =>
       item.name === "Tendências"
     );
+
+    console.log("pageSimilar", pageSimilar)
 
   return (
     <div class="container py-0 sm:py-5">

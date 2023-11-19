@@ -8,6 +8,8 @@ import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "deco-sites/std/commerce/utils/productToAnalyticsItem.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 
+//import Rating from "$store/islands/RatingYV.tsx";
+
 export interface Layout {
   basics?: {
     contentAlignment?: "Left" | "Center";
@@ -70,7 +72,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
   const { listPrice, price, installments } = useOffer(offers);
   const possibilities = useVariantPossibilities(product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
-  const nameFormated =product.isVariantOf?.name;
+  const nameFormated = product.isVariantOf?.name;
   const discountt = listPrice &&
     Math.round(((listPrice - (price ? price : 0)) / listPrice) * 100);
   const novidades = product?.additionalProperty?.find((item: any) =>
@@ -256,6 +258,9 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
             )}
           </>
         )}
+
+        <div class="yv-review-quickreview" value={productGroupID}></div>
+        {/* <Rating id={productGroupID} /> */}
 
         {l?.hide?.productName && l?.hide?.productDescription
           ? ""

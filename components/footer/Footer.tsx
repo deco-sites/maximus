@@ -7,6 +7,8 @@ import Sociais from "./Sociais.tsx";
 import Payments from "./Payments.tsx";
 import Copyrigth from "./Copyrigth.tsx";
 
+import Combination from "$store/islands/Combination.tsx";
+
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface benefitsItem {
@@ -330,6 +332,7 @@ function Footer({
       <Sociais content={sociais} />
       <Payments payments={payments} security={security} />
       <Copyrigth copyrigth={copyrigth} />
+      <Combination/>
     </footer>
   );
 }

@@ -11,6 +11,8 @@ const displaySearchPopup = signal(false);
 const displaySearchDrawer = signal(false);
 
 const quantityPdp = signal(1);
+const displayCombinador = signal(false);
+const skusCombination = signal([]);
 
 const state = {
   displayCart,
@@ -18,6 +20,8 @@ const state = {
   displaySearchPopup,
   displaySearchDrawer,
   quantityPdp,
+  displayCombinador,
+  skusCombination
 };
 
 export const useUI = () => state;
