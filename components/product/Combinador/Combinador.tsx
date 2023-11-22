@@ -32,7 +32,7 @@ const [products, setProducts] = useState<any>([])
       setProducts(productsF);
     };
     get();
-  });
+  }, []);
 
   /* data teste */
   const skus: any = [
