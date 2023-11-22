@@ -13,11 +13,11 @@ const action = async (
 
   console.log("entrou");
 
-  const data =
-    await vcsDeprecated[
-      `https://www.maximustecidos.com.br/api/catalog_system/pub/products/search/?${query}`
-    ];
-  return data;
+  const vtexProducts =await vcsDeprecated
+  ["GET /api/catalog_system/pub/products/search/:term?"](query)
+  .then((res) => res.json());
+
+    return vtexProducts;
 };
 
 export default action;

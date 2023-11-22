@@ -1,24 +1,38 @@
+import { useEffect, useState } from "preact/hooks";
+
 import { Runtime } from "$store/runtime.ts";
-import { IS_BROWSER } from "$fresh/runtime.ts";
-import { useCallback } from "preact/hooks";
+//import { IS_BROWSER } from "$fresh/runtime.ts";
+//import { useCallback } from "preact/hooks";
 
 import List from "$store/islands/CombinationList.tsx";
 
 export default function Combinador() {
-  if (!IS_BROWSER) {
-    return <></>;
-  }
+const [products, setProducts] = useState<any>([])
 
-  const query = "fq=skuId:100021460&fq=skuId:100021385&fq=skuId:100021307";
+  const query = "skuId:100021460,skuId:100021385,skuId:100021307";
 
-  const fetchData = useCallback(async () => {
-    const data = await Runtime.invoke["deco-sites/maximus"].loaders.combination
-      .getProducts({ query });
+  useEffect(() => {
+    const get = async () => {
+      const data = await Runtime.invoke({
+        key: "deco-sites/std/loaders/vtex/legacy/productList.ts",
+        props: { fq: query, count: 5 },
+      });
 
-    console.log("data1", data);
-  }, []);
+      if (!data?.length) return;
+      console.log("DATA::", data);
+      const productsF = data?.map(((item:any)=>(
+        {
+          "image": item.image[0].url,
+          "skuId": item.sku,
+          "stock": item.offers?.offers[0]?.availability,
+          "price": item.offers?.highPrice,
+        }
+      )));
 
-  fetchData();
+      setProducts(productsF);
+    };
+    get();
+  });
 
   /* data teste */
   const skus: any = [
@@ -47,7 +61,7 @@ export default function Combinador() {
 
   return (
     <div class="p-4">
-      <List skus={skus} />
+      <List skus={products} />
     </div>
   );
 }

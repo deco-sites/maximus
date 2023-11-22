@@ -1,6 +1,4 @@
 import Button from "$store/components/ui/Button.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
-import QuantitySelector from "$store/components/ui/QuantitySelector.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { AnalyticsItem } from "apps/commerce/types.ts";
@@ -45,6 +43,9 @@ function CartItem(
   const isGift = sale < 0.01;
   const [loading, setLoading] = useState(false);
 
+  //console.log("Item cart::", item);
+  //console.log("Item image::", image);
+
   const withLoading = useCallback(
     <A,>(cb: (args: A) => Promise<void>) => async (e: A) => {
       try {
@@ -65,20 +66,40 @@ function CartItem(
       }}
     >
       <Image
-        {...image}
-        style={{ aspectRatio: "108 / 150" }}
-        width={108}
-        height={150}
+        src={image?.src.replace("55-55", "190-190")}
+        alt={image?.alt}
+        style={{ aspectRatio: "190 / 190" }}
+        width={190}
+        height={190}
         class="h-full object-contain"
       />
 
-      <div class="flex flex-col gap-2">
-        <div class="flex justify-between items-center">
-          <span>{name}</span>
+      <div class="flex gap-2">
+        <div class="ml-20 w-[390px]">
+          <div class="flex justify-between items-center">
+            <span class="text-sm font-normal leading-6 w-full whitespace-normal overflow-hidden text-ellipsis pt-2.5">
+              {name}
+            </span>
+          </div>
+          <div class="flex items-center gap-2">
+            {list !== (sale * 10) && (
+              <span class="line-through text-base-300 text-sm">
+                {formatPrice(list, currency, locale)}
+              </span>
+            )}
+
+            <span class="text-[#171413] text-base font-semibold text-shadow leading-[29px]">
+              {isGift
+                ? "Grátis"
+                : formatPrice(sale * quantity, currency, locale)}
+            </span>
+          </div>
+        </div>
+        <div class="w-[100px]">
           <Button
             disabled={loading || isGift}
             loading={loading}
-            class="btn-ghost btn-square"
+            class="btn-ghost btn-square text-[#171413] text-sm font-normal leading-6 w-full h-full hover:underline hover:text-[#ef9492] hover:bg-transparent"
             onClick={withLoading(async () => {
               const analyticsItem = itemToAnalyticsItem(index);
 
@@ -90,37 +111,9 @@ function CartItem(
               });
             })}
           >
-            <Icon id="Trash" size={24} />
+            excluir
           </Button>
         </div>
-        <div class="flex items-center gap-2">
-          <span class="line-through text-base-300 text-sm">
-            {formatPrice(list, currency, locale)}
-          </span>
-          <span class="text-sm text-secondary">
-            {isGift ? "Grátis" : formatPrice(sale, currency, locale)}
-          </span>
-        </div>
-
-        <QuantitySelector
-          disabled={loading || isGift}
-          quantity={quantity}
-          onChange={withLoading(async (quantity) => {
-            const analyticsItem = itemToAnalyticsItem(index);
-            const diff = quantity - item.quantity;
-
-            await onUpdateQuantity(quantity, index);
-
-            if (analyticsItem) {
-              analyticsItem.quantity = diff;
-
-              sendEvent({
-                name: diff < 0 ? "remove_from_cart" : "add_to_cart",
-                params: { items: [analyticsItem] },
-              });
-            }
-          })}
-        />
       </div>
     </div>
   );

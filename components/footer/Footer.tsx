@@ -332,8 +332,8 @@ function Footer({
       <Sociais content={sociais} />
       <Payments payments={payments} security={security} />
       <Copyrigth copyrigth={copyrigth} />
-      <Combination/>
-    </footer>
+      <Combination />
+   </footer>
   );
 }
 

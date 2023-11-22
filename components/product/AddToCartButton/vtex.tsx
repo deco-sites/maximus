@@ -13,6 +13,8 @@ export interface Props extends Omit<BtnProps, "onAddItem" | "platform"> {
 
 function AddToCartButton(props: Props) {
   const stock = props.stock;
+  const name = props.name;
+  const image = props.image;
   const isMeter = props.isMeter;
   const quantityMin = isMeter ? 4 : 1;
 
@@ -101,11 +103,12 @@ function AddToCartButton(props: Props) {
           <img
             width={60}
             height={60}
-            src="https://tfcszo.vteximg.com.br//arquivos/ids/184368-60-auto/4303-TECIDO-BEMBERG-OFF-WHITE--1-.jpg?v=638330808260530000"
+            src={image}
             alt="imagem produto"
+            loading="lazy"
           />
           <h3 class="w-[235px] text-sm font-medium tracking-[0] text-[#171413] leading-[21px] ml-[25px] mr-[50px]">
-            Tecido bemberg off white (failete)
+            {name}
           </h3>
         </div>
         <div class="max-md:w-[45%] flex items-center md:mx-10">

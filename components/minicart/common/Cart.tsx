@@ -52,7 +52,7 @@ function Cart({
         : (
           <>
             {/* Free Shipping Bar */}
-            <div class="px-2 py-4 w-full">
+            <div class="hidden px-2 py-4 w-full">
               <FreeShippingProgressBar
                 total={total}
                 locale={locale}
@@ -64,7 +64,7 @@ function Cart({
             {/* Cart Items */}
             <ul
               role="list"
-              class="mt-6 px-2 flex-grow overflow-y-auto flex flex-col gap-6 w-full"
+              class="mt-6 px-6 flex-grow overflow-y-auto flex flex-col gap-6 w-full"
             >
               {items.map((item, index) => (
                 <li key={index}>
@@ -83,7 +83,7 @@ function Cart({
             {/* Cart Footer */}
             <footer class="w-full">
               {/* Subtotal */}
-              <div class="border-t border-base-200 py-2 flex flex-col">
+              <div class="border-t border-base-200 py-2 hidden flex-col">
                 {discounts > 0 && (
                   <div class="flex justify-between items-center px-4">
                     <span class="text-sm">Descontos</span>
@@ -93,8 +93,8 @@ function Cart({
                   </div>
                 )}
                 <div class="w-full flex justify-between px-4 text-sm">
-                  <span>Subtotal</span>
-                  <span class="px-4">
+                  <span class="text-sm font-normal leading-6 w-full whitespace-normal overflow-hidden text-ellipsis pt-2.5">Subtotal</span>
+                  <span class="px-4 text-base font-semibold text-shadow leading-[29px]">
                     {formatPrice(subtotal, currency, locale)}
                   </span>
                 </div>
@@ -102,23 +102,23 @@ function Cart({
               </div>
 
               {/* Total */}
-              <div class="border-t border-base-200 pt-4 flex flex-col justify-end items-end gap-2 mx-4">
+              <div class="border-t border-base-200 pt-4 flex flex-col justify-end items-end gap-2 mx-6">
                 <div class="flex justify-between items-center w-full">
-                  <span>Total</span>
+                  <span>Subtotal</span>
                   <span class="font-medium text-xl">
-                    {formatPrice(total, currency, locale)}
+                  {formatPrice(subtotal, currency, locale)}
                   </span>
                 </div>
-                <span class="text-sm text-base-300">
+                <span class="hidden text-sm text-base-300">
                   Taxas e fretes serão calculados no checkout
                 </span>
               </div>
 
-              <div class="p-4">
+              <div class="py-4 px-6">
                 <a class="inline-block w-full" href="/checkout">
                   <Button
                     data-deco="buy-button"
-                    class="btn-primary btn-block"
+                    class="flex items-center justify-start w-full h-12 text-base font-semibold leading-[19px] text-white transition-[0.2s] duration-[ease-in-out] rounded-none border px-5 border-solid border-[#171413] bg-[#171413] hover:bg-white hover:text-[#171413] after:content-['\0279E'] after:text-white after:ml-2 after:block after:scale-x-[2] hover:after:text-[#171413]"
                     disabled={loading || isEmtpy}
                     onClick={() => {
                       sendEvent({
@@ -136,7 +136,7 @@ function Cart({
                       });
                     }}
                   >
-                    Fechar pedido
+                    Finalizar compra
                   </Button>
                 </a>
               </div>

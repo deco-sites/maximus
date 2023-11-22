@@ -86,6 +86,13 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
       ? true
       : false;
 
+  const categoryID = product?.additionalProperty?.find((item: any) =>
+    item.name === "category"
+  )?.propertyID;
+
+  const nameCurrent = product.isVariantOf?.hasVariant[0]?.name;
+  const imageFirst = product.isVariantOf?.hasVariant[0]?.image ? product.isVariantOf?.hasVariant[0]?.image[0]?.url : null;
+
   const stockAvailable = stock?.value;
 
   const novidades = product?.additionalProperty?.find((item: any) =>
@@ -112,6 +119,25 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
 
   return (
     <div class="px-[27px] py-4 bg-[#fbfbfb]">
+      {/* yourviews inputs */}
+      <input id="yv-productId" type="hidden" class="oxi" value={`${productGroupID}`} />
+
+      <input id="yv-productName" type="hidden" value={nameCurrent} />
+
+      <input
+        id="yv-productImage"
+        type="hidden"
+        value={imageFirst ? imageFirst : ''}
+      />
+
+      <input id="yv-productPrice" type="hidden" value={`${formatPrice(price, offers!.priceCurrency!)}`} />
+
+      <input
+        id="yv-productCategory"
+        type="hidden"
+        value={categoryID}
+      />
+
       {/* infos rigth */}
       <div class="">
         <div class="flex items-center justify-between mb-3">
@@ -208,6 +234,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
               {PLATFORM === "vtex" && (
                 <AddToCartButtonVTEX
                   name={name}
+                  image={imageFirst}
                   productID={productID}
                   productGroupID={productGroupID}
                   price={price}
@@ -294,11 +321,12 @@ const useStableImages = (product: ProductDetailsPage["product"]) => {
 
 function Details({
   page,
+  pageSimilar,
   variant,
-}: { page: ProductDetailsPage; variant: Variant }) {
+}: { page: ProductDetailsPage; pageSimilar: Product[]; variant: Variant }) {
   const { product, breadcrumbList } = page;
+  
   const {
-    name = "",
     productID,
     isVariantOf,
   } = product;
@@ -344,6 +372,13 @@ function Details({
     },
   );
 
+  const similarsFormated = pageSimilar && pageSimilar?.map(((item:any)=>(
+    {
+      "image": item.image[0].url,
+      "url": item.url
+    }
+  )));
+
   if (variant === "slider") {
     return (
       <div class="max-md:mt-32">
@@ -371,7 +406,12 @@ function Details({
           class="max-w-[1236px] mx-auto flex items-start justify-between max-md:flex-col"
         >
           <div class="flex flex-col max-md:order-3 w-full md:w-[32%] pr-4 max-md:px-4">
-            <div class="max-md:order-2 max-md:border-b border-[#ebebeb] max-md:pb-5 flex">
+            <div class="max-md:order-2 max-md:border-b border-[#ebebeb] max-md:pb-5 flex flex-wrap">
+              <div
+                class="mt-2 w-full"
+                id="yv-review-quickreview"
+              >
+              </div>
               <div class="flex items-center w-[42%] text-[13px] font-medium leading-[19px] tracking-[0px] text-[#171413]">
                 Vendido e entregue por
               </div>
@@ -431,7 +471,7 @@ function Details({
             </div>
 
             <div class="max-md:order-4">
-              {isMeter && <ColorsSimilars />}
+              {isMeter && <ColorsSimilars similars={similarsFormated} />}
             </div>
           </div>
           {/* images */}
@@ -499,6 +539,22 @@ function Details({
                 </li>
               ))}
             </ul>
+
+            <a
+              href="https://www.lojaconfiavel.com/maximustecidos"
+              class="mt-3"
+              data-lcname="maximustecidos"
+              target="_blank"
+              v-if="isMobile"
+            >
+              <img
+                src="//service.yourviews.com.br/image/ae97f62a-00ed-4eb7-8fbf-024f90f5ff8a/400_79/stamplarge.jpg"
+                width={400}
+                height={79}
+                title="Loja Confiável"
+                alt="Loja Confiável"
+              />
+            </a>
           </div>
 
           {/* Product Info */}
@@ -592,11 +648,9 @@ function ProductDetails(
       item.name === "Tendências"
     );
 
-    console.log("pageSimilar", pageSimilar)
-
   return (
     <div class="container py-0 sm:py-5">
-      {page ? <Details page={page} variant={variant} /> : <NotFound />}
+      {page ? <Details page={page} pageSimilar={pageSimilar} variant={variant} /> : <NotFound />}
       {page &&
         (
           <div class="w-full max-w-[1236px] mx-auto max-md:px-5">
@@ -741,6 +795,9 @@ function ProductDetails(
             )}
           </div>
         )}
+
+      <div id="yv-reviews"></div>
+      <div class="yv-qa"></div>
     </div>
   );
 }
