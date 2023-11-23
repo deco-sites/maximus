@@ -98,7 +98,7 @@ function AddToCartButton(props: Props) {
         <Button onAddItem={onAddItem} {...props} />
       </div>
       {/* comprar fixo */}
-      <div class="w-screen max-md:flex-wrap flex justify-center items-center bg-white fixed z-[4] py-3 px-5 md:py-5 border-t-[#eaeaea] border-t border-solid left-0 bottom-0">
+      <div class="w-screen max-md:flex-wrap flex justify-center items-center bg-white fixed z-[9] py-3 px-5 md:py-5 border-t-[#eaeaea] border-t border-solid left-0 bottom-0">
         <div class="hidden md:flex items-center">
           <img
             width={60}

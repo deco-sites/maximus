@@ -117,10 +117,56 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
   const discountt = listPrice &&
     Math.round(((listPrice - price) / listPrice) * 100);
 
+   
+
+const dataL =JSON.stringify({
+  "@context":"https://schema.org/",
+  "@type":"Product",
+  "productID": "9170",
+  "@id": "https://www.maximustecidos.com.br/tecido-alfaiataria-spandex-two-way-verde-floresta9726/p?skuId=100021185",
+  "name": "Tecido alfaiataria spandex two way verde floresta",
+  "brand":{
+      "@type": "Brand",
+      "name": "MAXIMUS TECIDOS TOLEDO - PR"
+  },
+  "image": "https://tfcszo.vteximg.com.br/arquivos/ids/184356/4369-TECIDO-ALFAIATARIA-SPANDEX-TWO-WAY-VERDE-FLORESTA--1-.jpg?v=638330796351670000",
+  "description": "<p><strong>O QUE COSTURAR COM O TECIDO ALFAIATARIA SPANDEX TWO WAY VERDE FLORESTA?</strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>A principal caracter&iacute;stica do tecido de alfaiataria &eacute; que ele proporciona estrutura a pe&ccedil;a. Ele &eacute; ideal para confec&ccedil;&atilde;o de ternos, blazers, cal&ccedil;as e coletes, tanto masculinos quanto femininos.&nbsp;&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Em pe&ccedil;as cl&aacute;ssicas femininas de alfaiataria, pode ser usado para fazer vestido tubinho e saia l&aacute;pis (ou secret&aacute;ria).</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>O tecido de alfaiataria pode ser usado tamb&eacute;m para vestido e saia god&ecirc; e evas&ecirc;. Ele vai proporcionar um leve volume no caimento.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>CARACTER&Iacute;STICAS PRINCIPAIS DO TECIDO ALFAIATARIA</strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>- &Eacute; um tecido bem estruturado.</p>\r\n\r\n<p>- &Eacute; um tecido de fibra sint&eacute;tica e n&atilde;o amassa com facilidade.</p>\r\n\r\n<p>- Adere aos vincos das pe&ccedil;as de alfaiataria com facilidade.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>QUAL TECIDO IDEAL PARA USAR DE FORRO NAS PE&Ccedil;AS DE ALFAIATARIA?</strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>As roupas de alfaiataria t&ecirc;m como caracter&iacute;stica principal a eleg&acirc;ncia dos acabamentos (na maioria das vezes, todos embutidos), portanto, o uso do forro &eacute; indispens&aacute;vel.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para essa categoria de roupas, as op&ccedil;&otilde;es de forros s&atilde;o diversas em op&ccedil;&otilde;es e valores. Nossas sugest&otilde;es s&atilde;o:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Forros diferenciados e sofisticados: jacquard, crepe nuage ou crepe lorraine</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Forros tradicionais: cetim com elastano, forro leve de poli&eacute;ster, alpaca ou bemberg.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para forro de bolsos em cal&ccedil;as e bermudas: forro leve de poli&eacute;ster, alpaca ou bemberg.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>A ALFAIATARIA NA HIST&Oacute;RIA DA MODA</strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>No in&iacute;cio da sociedade, a roupa era usada apenas para proteger o corpo. Foi no final da idade m&eacute;dia na Europa, que o corte e o tecido da roupa passaram a ser valorizados e surgiu a profiss&atilde;o do alfaiate.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Os alfaiates eram aqueles que faziam roupas de forma artesanal e sob medida para os nobres da &eacute;poca. Inicialmente a alfaiataria era exclusivamente masculina, foi s&oacute; depois da Revolu&ccedil;&atilde;o Francesa no s&eacute;culo XIX que ela passou a fazer parte do guarda-roupa feminino tamb&eacute;m.</p>",
+  "mpn": "100021185",
+  "sku": "100021185",
+  "offers":{
+      "@type": "AggregateOffer",
+      "lowPrice": 3900,
+      "highPrice": 3900,
+      "priceCurrency": "BRL",
+      "offers":[
+          {
+              "@type": "Offer",
+              "price": 3900,
+              "priceCurrency": "BRL",
+              "availability": "http://schema.org/InStock",
+              "sku": "100021185",
+              "itemCondition":"http://schema.org/NewCondition",
+              "priceValidUntil": 3900,
+              "seller":{
+                  "@type":"Organization",
+                  "name": "Maximus Tecidos Toledo"
+              }
+          }
+      ],
+      "offerCount": 1
+  }
+});
+
+
+
   return (
     <div class="px-[27px] py-4 bg-[#fbfbfb]">
       {/* yourviews inputs */}
-      <input id="yv-productId" type="hidden" class="oxi" value={`${productGroupID}`} />
+      <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: dataL }}
+        />   
+      <input id="yv-productId" type="hidden" class="oxi" value={`9170`} />
 
       <input id="yv-productName" type="hidden" value={nameCurrent} />
 
@@ -130,7 +176,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
         value={imageFirst ? imageFirst : ''}
       />
 
-      <input id="yv-productPrice" type="hidden" value={`${formatPrice(price, offers!.priceCurrency!)}`} />
+      <input id="yv-productPrice" type="hidden" value={`R$ 39,00`} />
 
       <input
         id="yv-productCategory"

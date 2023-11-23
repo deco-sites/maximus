@@ -145,7 +145,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
         style={{ aspectRatio: `${WIDTH} / ${HEIGHT}` }}
       >
         {/* flags */}
-        <div class="absolute top-4 z-10 left-0">
+        <div class="absolute top-4 z-[8] left-0">
           <div class="flex flex-col">
             {novidades &&
               (
