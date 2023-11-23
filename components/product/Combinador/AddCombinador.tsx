@@ -4,12 +4,9 @@ export default function Combinador({ sku }: { sku: string }) {
   const { displayCombinador,skusCombination } = useUI();
 
   const addCombinador = () => {
-    console.log("11");
-
     displayCombinador.value = true;
 
     if (localStorage.getItem("combinador") == null) {
-      console.log("222");
 
       localStorage.setItem("combinador", "[]");
     }

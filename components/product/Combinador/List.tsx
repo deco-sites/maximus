@@ -22,11 +22,11 @@ export default function List({ skus }: { skus: Props }) {
   const useAddToCart = () => {
     if (!products) return;
 
-    const productsStock = products.filter((product: any) => product.stock > 0);
+    const productsStock = products.filter((product: any) => product.stock > 9);
     const productsFormated = productsStock.map((product: any) => ({
       id: product.skuId,
       seller: "1",
-      quantity: 1,
+      quantity: 10,
     }));
 
     console.log("clicouu", productsFormated);
@@ -114,6 +114,8 @@ export default function List({ skus }: { skus: Props }) {
             </h3>
             <p class="text-sm font-medium tracking-[0px] text-neutral-800 text-center leading-6">
               Use essa ferramenta para combinar e comparar cores dos tecidos!
+              <br/>
+              <small>*clique e arraste para mudar a posição dos tecidos</small>
             </p>
             <div class="py-6 flex flex-wrap items-center justify-start">
               {products && products?.map((sku: Props, index: number) => (
@@ -123,7 +125,7 @@ export default function List({ skus }: { skus: Props }) {
                   onDragEnter={() => draggedItemOver.current = index}
                   onDragEnd={handleSort}
                   onDragOver={(e) => e.preventDefault()}
-                  class="w-[33%] md:w-[18%] flex items-center flex-col border relative mr-[2%] mb-[15px] p-[3px] border-solid border-[#ebebeb]"
+                  class="w-[31%] md:w-[18%] flex items-center flex-col border relative mr-[2%] mb-[15px] p-[3px] border-solid border-[#ebebeb]"
                 >
                   <div
                     onClick={() => remove(sku.productId)}
@@ -147,23 +149,23 @@ export default function List({ skus }: { skus: Props }) {
               ))}
             </div>
           </div>
-          {products &&
+          {products.length ?
             (
-              <div class="flex justify-end pt-6">
+              <div class="flex justify-end pt-6 max-md:flex-col max-md:items-center">
                 <button
                   onClick={useAddToCart}
-                  class="w-[347px] h-[54px] flex justify-center items-center bg-[#6eb212] hover:bg-[#86c92c] text-xs font-semibold tracking-[0.6px] text-white transition-[0.2s] mr-[35px] rounded-sm border-0"
+                  class="w-[347px] h-[54px] flex justify-center items-center bg-[#6eb212] hover:bg-[#86c92c] text-xs font-semibold tracking-[0.6px] text-white transition-[0.2s] md:mr-[35px] rounded-sm border-0"
                 >
                   Adicionar todos à sacola
                 </button>
                 <button
                   onClick={clearAll}
-                  class="flex justify-center items-center text-xs font-semibold tracking-[0.6px] text-neutral-800 hover:text-[#D15252]"
+                  class="max-md:mt-5 flex justify-center items-center text-xs font-semibold tracking-[0.6px] text-neutral-800 hover:text-[#D15252]"
                 >
                   Remover tudo
                 </button>
               </div>
-            )}
+            ): <p class="text-sm font-medium tracking-[0px] text-neutral-800 text-center leading-6">Não encontramos nenhum produto!</p>}
         </div>
       </div>
     </div>

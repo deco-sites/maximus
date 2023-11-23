@@ -19,13 +19,18 @@ export default function Combinador() {
 
     const listFq = JSON.parse(listStorage)?.map((id: any) => `productId:${id}`);
 
-    console.log("tem?", listFq);
+    console.log("tem?", listFq);    
+    console.log("listFq.length?", listFq.length);    
 
-    if (listFq.length < 1) return;
+    if(!listFq.length){
+      console.log("nao tem?");    
+      setProducts([]);
+      return
+    }
 
     const data = await Runtime.invoke({
       key: "deco-sites/std/loaders/vtex/legacy/productList.ts",
-      props: { fq: listFq, count: listFq.length - 1 },
+      props: { fq: listFq, count: listFq.length },
     });
 
     if (!data?.length) return;

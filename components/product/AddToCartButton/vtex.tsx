@@ -112,9 +112,11 @@ function AddToCartButton(props: Props) {
           </h3>
         </div>
         <div class="max-md:w-[45%] flex items-center md:mx-10">
-          <span class="hidden md:block text-sm font-medium leading-[19px] tracking-[0] text-[#171413] mr-5">
-            Comprimento em <strong>metros</strong>
-          </span>
+          {isMeter && (
+            <span class="hidden md:block text-sm font-medium leading-[19px] tracking-[0] text-[#171413] mr-5">
+              Comprimento em <strong>metros</strong>
+            </span>
+          )}
           <div class="w-[126px] h-12 bg-white border flex justify-around items-center border-solid border-[#eaeaea]">
             <span
               class="cursor-pointer block text-[#171413] text-base relative right-[-5px] top-px"
