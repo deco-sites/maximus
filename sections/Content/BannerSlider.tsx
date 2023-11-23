@@ -18,35 +18,35 @@ export default function BannerSlider(
 ) {
   const {
     banners = [{
-      image: "/arquivos/banner-slider-1.png?v=1245",
+      image: "/arquivos/banner-slider-1.png",
       title: "Alfaiataria",
       link: "#",
     }, {
-      image: "/arquivos/banner-slider-2.png?v=1245",
+      image: "/arquivos/banner-slider-2.png",
       title: "Algodão",
       link: "#",
     }, {
-      image: "/arquivos/banner-slider-3.png?v=1245",
+      image: "/arquivos/banner-slider-3.png",
       title: "Camurça",
       link: "#",
     }, {
-      image: "/arquivos/banner-slider-4.png?v=1245",
+      image: "/arquivos/banner-slider-4.png",
       title: "Cetim",
       link: "#",
     }, {
-      image: "/arquivos/banner-slider-5.png?v=1245",
+      image: "/arquivos/banner-slider-5.png",
       title: "Chiffon",
       link: "#",
     }, {
-      image: "/arquivos/banner-slider-3.png?v=1245",
+      image: "/arquivos/banner-slider-3.png",
       title: "Camurça",
       link: "#",
     }, {
-      image: "/arquivos/banner-slider-4.png?v=1245",
+      image: "/arquivos/banner-slider-4.png",
       title: "Cetim",
       link: "#",
     }, {
-      image: "/arquivos/banner-slider-5.png?v=1245",
+      image: "/arquivos/banner-slider-5.png",
       title: "Chiffon",
       link: "#",
     }],
@@ -68,7 +68,7 @@ export default function BannerSlider(
             width={234}
             height={240}
             loading="lazy"
-            src={banner.image}
+            src={`${banner.image}?v=231123`}
             alt="banner"
           />
           <p class="mt-3 mb-9 text-center text-base">

@@ -19,56 +19,56 @@ export default function BannerSchool(
   const {
     banners = [{
       image:
-        "/arquivos/Influenciadora-da-costura-flag.jpg?v=638102736555600000",
+        "/arquivos/Influenciadora-da-costura-flag.jpg",
       title: "Influenciadora da Costura",
       text:
         "Aprenda a divulgar suas costuras de forma profissional nas redes sociais para valorizar o seu trabalho e conquistar mais clientes.",
       link: "#",
     }, {
       image:
-        "/arquivos/Capas%20dos%20Cursos%20-%20FLAGS.jpg?v=638259813071030000",
+        "/arquivos/Capas%20dos%20Cursos%20-%20FLAGS.jpg",
       title: "Ajustes e Consertos",
       text:
         "Aprenda a arte do ajuste e conserto de todos os tipos de roupas com Viviane Alves. Um dos cursos mais pedidos pelas alunas, agora na nossa Escola.",
       link: "#",
     }, {
-      image: "/arquivos/modaeestilo.png?v=638319371613930000",
+      image: "/arquivos/modaeestilo.png",
       title: "MOLDES MODA E ESTILO",
       text:
         "Faça sua Assinatura e Tenha Acesso Ilimitado à Maior e mais Confiável Biblioteca de Moldes de Costura do Brasil com a Curadoria da Modelista Marlene Mukai.",
       link: "#",
     }, {
-      image: "/arquivos/Curso-costura-online-flag.jpg?v=638189159801630000",
+      image: "/arquivos/Curso-costura-online-flag.jpg",
       title: "Costura de Sucesso",
       text:
         "Aprenda a costurar toda e qualquer peça de roupa do absoluto zero, seja por hobby, terapia, ou para literalmente viver de costuras!",
       link: "#",
     }, {
-      image: "/arquivos/Modelagem-flag.jpg?v=638056006588000000",
+      image: "/arquivos/Modelagem-flag.jpg",
       title: "Modelista Profissional",
       text:
         "Aprenda Modelar as principais peças de roupas femininas estudando com a lenda viva da Modelagem Plana no Brasil.",
       link: "#",
     }, {
-      image: "/arquivos/Modelagem-malhas-flag.jpg?v=638056006589700000",
+      image: "/arquivos/Modelagem-malhas-flag.jpg",
       title: "Modelagem de Malhas",
       text:
         "Perca o medo da Modelagem e aprenda a fazer as principais peças de malha estudando com Marlene Mukai.",
       link: "#",
     }, {
-      image: "/arquivos/Costura-infantil-%20flag.jpg?v=638056006582330000",
+      image: "/arquivos/Costura-infantil-%20flag.jpg",
       title: "Costura Infantil",
       text:
         "Aprenda costurar roupas infantis e enxovais para seus filhos e netos e ganhe dinheiro num dos ramos mais lucrativos da costura;",
       link: "#",
     }, {
-      image: "/arquivos/Costura-criativa-flag.jpg?v=638056006578530000",
+      image: "/arquivos/Costura-criativa-flag.jpg",
       title: "Costura Criativa",
       text:
         "Aprenda a costurar as peças mais pedidas e lucrativas da Costura Criativa com Menino Costureiro, o Fenômeno da Costura na Internet.",
       link: "#",
     }, {
-      image: "/arquivos/Costura-Pet-flag.jpg?v=638056006584200000",
+      image: "/arquivos/Costura-Pet-flag.jpg",
       title: "Costura Pet",
       text:
         'Aprenda costurar roupinhas para seus "filhos de 4 patas" e lucre com o nicho de costura que mais cresce no Brasil!',
@@ -121,8 +121,10 @@ export default function BannerSchool(
           class="block border border-[#EBEBEB] text-[#262626]"
         >
           <img
+            width={398}
+            height={398}
             loading="lazy"
-            src={banner.image}
+            src={`${banner.image}?v=231123`}
             alt="banner"
           />
           <div class="px-4 py-9 bg-white">
