@@ -431,34 +431,34 @@ export default function Departaments() {
             <input class="md:hidden" type="checkbox" />
             <a
               class="max-md:collapse-title flex max-md:items-center md:mb-4 text-xs text-[#525252] md:underline max-md:after:text-lg"
-              href="#"
+              href="https://materiais.maximustecidos.com.br/maximus-escola-de-moda-online?_gl=1*1g9njnu*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzExNTcuMC4wLjA.*_fplc*OGhndnY0bjIyUnFPQ3NTak9Fd0ZIVTlYellCazc0VEpGV25UUkFiNjVkUTQ0Z0lNQ3locW9welFtUk9YV25MWTBRRUJmVFFQdjNhMmYxZEs3bWljSFNQSEdWVlklMkZ3VVppYklXYnpXNm9LNmd1VFRBRHVoTkRiTldzQXI2cXclM0QlM0Q."
             >
               CURSOS
             </a>
 
             <ul class="max-h-[initial] md:max-h-[540px] flex md:flex-wrap flex-col content-start collapse-content md:visible md:px-0">
               <li>
-                <a class="text-xs text-[#525252] mb-3 max-w-[150px] block">
+                <a href="https://materiais.maximustecidos.com.br/curso-online-modelagem-profissional-de-malhas-marlene-mukai?_gl=1*fcji3q*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzE1MjMuMC4wLjA.*_fplc*OGhndnY0bjIyUnFPQ3NTak9Fd0ZIVTlYellCazc0VEpGV25UUkFiNjVkUTQ0Z0lNQ3locW9welFtUk9YV25MWTBRRUJmVFFQdjNhMmYxZEs3bWljSFNQSEdWVlklMkZ3VVppYklXYnpXNm9LNmd1VFRBRHVoTkRiTldzQXI2cXclM0QlM0Q." class="text-xs text-[#525252] mb-3 max-w-[150px] block">
                   Modelagem
                 </a>
               </li>{" "}
               <li>
-                <a class="text-xs text-[#525252] mb-3 max-w-[150px] block">
+                <a href="https://materiais.maximustecidos.com.br/curso-de-costura-online-costura-de-sucesso-nea-santtana?_gl=1*afhdoc*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzE1MjMuMC4wLjA.*_fplc*OGhndnY0bjIyUnFPQ3NTak9Fd0ZIVTlYellCazc0VEpGV25UUkFiNjVkUTQ0Z0lNQ3locW9welFtUk9YV25MWTBRRUJmVFFQdjNhMmYxZEs3bWljSFNQSEdWVlklMkZ3VVppYklXYnpXNm9LNmd1VFRBRHVoTkRiTldzQXI2cXclM0QlM0Q." class="text-xs text-[#525252] mb-3 max-w-[150px] block">
                   Corte e Costura
                 </a>
               </li>{" "}
               <li>
-                <a class="text-xs text-[#525252] mb-3 max-w-[150px] block">
+                <a href="https://materiais.maximustecidos.com.br/curso-de-desenho-de-moda-online-estilista-de-fato-valmir-pazeto?_gl=1*owpanu*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzE1MjMuMC4wLjA.*_fplc*OGhndnY0bjIyUnFPQ3NTak9Fd0ZIVTlYellCazc0VEpGV25UUkFiNjVkUTQ0Z0lNQ3locW9welFtUk9YV25MWTBRRUJmVFFQdjNhMmYxZEs3bWljSFNQSEdWVlklMkZ3VVppYklXYnpXNm9LNmd1VFRBRHVoTkRiTldzQXI2cXclM0QlM0Q." class="text-xs text-[#525252] mb-3 max-w-[150px] block">
                   Desenho de Moda
                 </a>
               </li>{" "}
               <li>
-                <a class="text-xs text-[#525252] mb-3 max-w-[150px] block">
+                <a href="https://materiais.maximustecidos.com.br/curso-online-de-redes-sociais-influenciadora-da-costura-ana-paula-mocelin?_gl=1*afhdoc*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzE1MjMuMC4wLjA.*_fplc*OGhndnY0bjIyUnFPQ3NTak9Fd0ZIVTlYellCazc0VEpGV25UUkFiNjVkUTQ0Z0lNQ3locW9welFtUk9YV25MWTBRRUJmVFFQdjNhMmYxZEs3bWljSFNQSEdWVlklMkZ3VVppYklXYnpXNm9LNmd1VFRBRHVoTkRiTldzQXI2cXclM0QlM0Q." class="text-xs text-[#525252] mb-3 max-w-[150px] block">
                   Marketing e Negócios para Costura
                 </a>
               </li>{" "}
               <li>
-                <a class="text-xs text-[#525252] mb-3 max-w-[150px] block">
+                <a href="https://materiais.maximustecidos.com.br/curso-online-arte-do-bordado-fernanda-nadal?_gl=1*afhdoc*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzE1MjMuMC4wLjA.*_fplc*OGhndnY0bjIyUnFPQ3NTak9Fd0ZIVTlYellCazc0VEpGV25UUkFiNjVkUTQ0Z0lNQ3locW9welFtUk9YV25MWTBRRUJmVFFQdjNhMmYxZEs3bWljSFNQSEdWVlklMkZ3VVppYklXYnpXNm9LNmd1VFRBRHVoTkRiTldzQXI2cXclM0QlM0Q." class="text-xs text-[#525252] mb-3 max-w-[150px] block">
                   Bordados
                 </a>
               </li>

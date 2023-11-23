@@ -8,7 +8,7 @@ export interface PaymentsItem {
 
 export interface SecurityItem {
   image: LiveImage;
-  link: string;
+  link?: string;
   width: number;
   height: number;
 }
@@ -53,16 +53,29 @@ export default function Payments({ payments, security }: {
                   <li>
                     {item?.image &&
                       (
-                        <a href={item?.link} class="block mx-2 max-md:mb-5">
-                          <Image
-                            class="grayscale"
-                            src={item?.image}
-                            alt="social"
-                            width={item?.width}
-                            height={item?.height}
-                            loading="lazy"
-                          />
-                        </a>
+                        item?.link
+                          ? (
+                            <a href={item?.link} class="block mx-2 max-md:mb-5">
+                              <Image
+                                class="grayscale"
+                                src={item?.image}
+                                alt="social"
+                                width={item?.width}
+                                height={item?.height}
+                                loading="lazy"
+                              />
+                            </a>
+                          )
+                          : (
+                            <Image
+                              class="grayscale"
+                              src={item?.image}
+                              alt="social"
+                              width={item?.width}
+                              height={item?.height}
+                              loading="lazy"
+                            />
+                          )
                       )}
                   </li>
                 );

@@ -19,7 +19,7 @@ export interface benefitsItem {
 
 export interface sociaisItem {
   image: LiveImage;
-  link: string;
+  link?: string;
   size: number;
 }
 
@@ -30,13 +30,13 @@ export interface PaymentsItem {
 
 export interface SecurityItem {
   image: LiveImage;
-  link: string;
+  link?: string;
   width: number;
   height: number;
 }
 
 export interface link {
-  link: string;
+  link?: string;
   text: string;
 }
 

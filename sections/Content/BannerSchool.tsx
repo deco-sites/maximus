@@ -23,56 +23,56 @@ export default function BannerSchool(
       title: "Influenciadora da Costura",
       text:
         "Aprenda a divulgar suas costuras de forma profissional nas redes sociais para valorizar o seu trabalho e conquistar mais clientes.",
-      link: "#",
+      link: "https://materiais.maximustecidos.com.br/curso-online-de-redes-sociais-influenciadora-da-costura-ana-paula-mocelin?_gl=1*i8qwcv*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzA1NzAuMC4wLjA.*_fplc*RUhpNCUyRlZQcVdwSmRZeTlNZ2ZMTUZrc1R4eW9xb0pmJTJGZ0d1ZDJ3dE1KSE5weUN4REdsa3dOdGxtY3lyazFLJTJGRWI5UWk3MG1QeHA1V2xTVmpjSnpja3ZWb3FJbFFkREJ3bTExaXJTS1NoZlo1a3VXcjYwVEpkOWJQeE5ueFVBJTNEJTNE",
     }, {
       image:
         "/arquivos/Capas%20dos%20Cursos%20-%20FLAGS.jpg",
       title: "Ajustes e Consertos",
       text:
         "Aprenda a arte do ajuste e conserto de todos os tipos de roupas com Viviane Alves. Um dos cursos mais pedidos pelas alunas, agora na nossa Escola.",
-      link: "#",
+      link: "https://materiais.maximustecidos.com.br/curso-online-costura-ajustes-consertos-de-roupas-viviane-alves?_gl=1*7qgfjh*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzA1NzAuMC4wLjA.*_fplc*bWo4Ynd3WGQ3WHVrZGF5bFJoM2ZJSUZheG5oZDhZblNlQmFyJTJCNWFjSE13cTFCJTJCS2Zod3puQU5wZVpNeHJ3bjJrTHFzdTlrWG10TXRxZjdob21yelVGOWlhZWh1aXB6ajRIaHRTZmxWbCUyRnVnNFBQeDNXRldlMVEyMnJWT3l3JTNEJTNE",
     }, {
       image: "/arquivos/modaeestilo.png",
       title: "MOLDES MODA E ESTILO",
       text:
         "Faça sua Assinatura e Tenha Acesso Ilimitado à Maior e mais Confiável Biblioteca de Moldes de Costura do Brasil com a Curadoria da Modelista Marlene Mukai.",
-      link: "#",
+      link: "https://materiais.maximustecidos.com.br/assinatura-online-moldes-moda-estilo-marlene-mukai?_gl=1*7qgfjh*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzA1NzAuMC4wLjA.*_fplc*bWo4Ynd3WGQ3WHVrZGF5bFJoM2ZJSUZheG5oZDhZblNlQmFyJTJCNWFjSE13cTFCJTJCS2Zod3puQU5wZVpNeHJ3bjJrTHFzdTlrWG10TXRxZjdob21yelVGOWlhZWh1aXB6ajRIaHRTZmxWbCUyRnVnNFBQeDNXRldlMVEyMnJWT3l3JTNEJTNE",
     }, {
       image: "/arquivos/Curso-costura-online-flag.jpg",
       title: "Costura de Sucesso",
       text:
         "Aprenda a costurar toda e qualquer peça de roupa do absoluto zero, seja por hobby, terapia, ou para literalmente viver de costuras!",
-      link: "#",
+      link: "https://materiais.maximustecidos.com.br/curso-de-costura-online-costura-de-sucesso-nea-santtana?_gl=1*vl4lwz*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzA1NzAuMC4wLjA.*_fplc*RG4xdXRTdzRpM2MxNVRCRkNJUUVra1IwU3d4c2NqZHAzdndpSFhEeFVyY2w3RE54R0lDZUlnUHo1VlF0dUclMkZwZmVBallrWFhFRjBrUkRpY0l4TzNYbyUyQlRKaGM0JTJGUWwlMkJJUWx3YjREeTloN0M5NkNnZlIlMkJNSW9pWERrRkJ6USUzRCUzRA..",
     }, {
       image: "/arquivos/Modelagem-flag.jpg",
       title: "Modelista Profissional",
       text:
         "Aprenda Modelar as principais peças de roupas femininas estudando com a lenda viva da Modelagem Plana no Brasil.",
-      link: "#",
+      link: "https://materiais.maximustecidos.com.br/curso-online-modelista-profissional-marlene-mukai?_gl=1*vl4lwz*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzA1NzAuMC4wLjA.*_fplc*RG4xdXRTdzRpM2MxNVRCRkNJUUVra1IwU3d4c2NqZHAzdndpSFhEeFVyY2w3RE54R0lDZUlnUHo1VlF0dUclMkZwZmVBallrWFhFRjBrUkRpY0l4TzNYbyUyQlRKaGM0JTJGUWwlMkJJUWx3YjREeTloN0M5NkNnZlIlMkJNSW9pWERrRkJ6USUzRCUzRA..",
     }, {
       image: "/arquivos/Modelagem-malhas-flag.jpg",
       title: "Modelagem de Malhas",
       text:
         "Perca o medo da Modelagem e aprenda a fazer as principais peças de malha estudando com Marlene Mukai.",
-      link: "#",
+      link: "https://materiais.maximustecidos.com.br/curso-online-modelagem-profissional-de-malhas-marlene-mukai?_gl=1*1cq1tin*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzA1NzAuMC4wLjA.*_fplc*RG4xdXRTdzRpM2MxNVRCRkNJUUVra1IwU3d4c2NqZHAzdndpSFhEeFVyY2w3RE54R0lDZUlnUHo1VlF0dUclMkZwZmVBallrWFhFRjBrUkRpY0l4TzNYbyUyQlRKaGM0JTJGUWwlMkJJUWx3YjREeTloN0M5NkNnZlIlMkJNSW9pWERrRkJ6USUzRCUzRA..",
     }, {
       image: "/arquivos/Costura-infantil-%20flag.jpg",
       title: "Costura Infantil",
       text:
         "Aprenda costurar roupas infantis e enxovais para seus filhos e netos e ganhe dinheiro num dos ramos mais lucrativos da costura;",
-      link: "#",
+      link: "https://materiais.maximustecidos.com.br/curso-de-costura-online-costura-infantil-clara-calui?_gl=1*1cq1tin*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzA1NzAuMC4wLjA.*_fplc*RG4xdXRTdzRpM2MxNVRCRkNJUUVra1IwU3d4c2NqZHAzdndpSFhEeFVyY2w3RE54R0lDZUlnUHo1VlF0dUclMkZwZmVBallrWFhFRjBrUkRpY0l4TzNYbyUyQlRKaGM0JTJGUWwlMkJJUWx3YjREeTloN0M5NkNnZlIlMkJNSW9pWERrRkJ6USUzRCUzRA..",
     }, {
       image: "/arquivos/Costura-criativa-flag.jpg",
       title: "Costura Criativa",
       text:
         "Aprenda a costurar as peças mais pedidas e lucrativas da Costura Criativa com Menino Costureiro, o Fenômeno da Costura na Internet.",
-      link: "#",
+      link: "https://materiais.maximustecidos.com.br/curso-de-costura-online-costura-criativa-menino-costureiro?_gl=1*1cq1tin*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzA1NzAuMC4wLjA.*_fplc*RG4xdXRTdzRpM2MxNVRCRkNJUUVra1IwU3d4c2NqZHAzdndpSFhEeFVyY2w3RE54R0lDZUlnUHo1VlF0dUclMkZwZmVBallrWFhFRjBrUkRpY0l4TzNYbyUyQlRKaGM0JTJGUWwlMkJJUWx3YjREeTloN0M5NkNnZlIlMkJNSW9pWERrRkJ6USUzRCUzRA..",
     }, {
       image: "/arquivos/Costura-Pet-flag.jpg",
       title: "Costura Pet",
       text:
         'Aprenda costurar roupinhas para seus "filhos de 4 patas" e lucre com o nicho de costura que mais cresce no Brasil!',
-      link: "#",
+      link: "https://materiais.maximustecidos.com.br/curso-de-costura-online-costura-pet-aury-moda-pet?_gl=1*1cq1tin*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzA1NzAuMC4wLjA.*_fplc*RG4xdXRTdzRpM2MxNVRCRkNJUUVra1IwU3d4c2NqZHAzdndpSFhEeFVyY2w3RE54R0lDZUlnUHo1VlF0dUclMkZwZmVBallrWFhFRjBrUkRpY0l4TzNYbyUyQlRKaGM0JTJGUWwlMkJJUWx3YjREeTloN0M5NkNnZlIlMkJNSW9pWERrRkJ6USUzRCUzRA..",
     }],
   } = props;
 

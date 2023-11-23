@@ -20,35 +20,35 @@ export default function BannerSlider(
     banners = [{
       image: "/arquivos/banner-slider-1.png",
       title: "Alfaiataria",
-      link: "#",
+      link: "/tecidos/alfaiataria",
     }, {
       image: "/arquivos/banner-slider-2.png",
       title: "Algodão",
-      link: "#",
+      link: "/tecidos/algodao",
     }, {
       image: "/arquivos/banner-slider-3.png",
       title: "Camurça",
-      link: "#",
+      link: "/tecidos/camurca",
     }, {
       image: "/arquivos/banner-slider-4.png",
       title: "Cetim",
-      link: "#",
+      link: "/tecidos/cetim",
     }, {
       image: "/arquivos/banner-slider-5.png",
       title: "Chiffon",
-      link: "#",
+      link: "/tecidos/chiffon",
     }, {
       image: "/arquivos/banner-slider-3.png",
       title: "Camurça",
-      link: "#",
+      link: "/tecidos/camurca",
     }, {
       image: "/arquivos/banner-slider-4.png",
       title: "Cetim",
-      link: "#",
+      link: "/tecidos/cetim",
     }, {
       image: "/arquivos/banner-slider-5.png",
       title: "Chiffon",
-      link: "#",
+      link: "/tecidos/chiffon",
     }],
   } = props;
 
