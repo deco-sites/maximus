@@ -94,7 +94,7 @@ export default function Categories(
   return (
     <div id={id} class="w-full max-md:px-3 py-8">
       <div class="w-full max-w-[950px] mx-auto relative">
-        <Slider class="flex items-center carousel carousel-end w-full">
+        <Slider class="flex items-center justify-center carousel carousel-end w-full">
           {listBanners}
         </Slider>
         <div class="block">

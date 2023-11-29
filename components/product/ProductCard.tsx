@@ -259,7 +259,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
           </>
         )}
 
-        <div class="yv-review-quickreview" value={productGroupID}></div>
+        <div class="yv-review-quickreview flex justify-center" value={productGroupID}></div>
         {/* <Rating id={productGroupID} /> */}
 
         {l?.hide?.productName && l?.hide?.productDescription

@@ -89,6 +89,11 @@
     display: block;
   }
 
+  .text-shadow p {
+      letter-spacing: 0.2px;
+      line-height: 25px;
+  }
+
   /*cores*/
   .bg-color-azul {
     background-color: #0055ff;
