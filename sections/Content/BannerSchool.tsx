@@ -129,7 +129,7 @@ export default function BannerSchool(
           />
           <div class="px-4 py-9 bg-white">
             <h5 class="my-3 text-center text-base font-semibold leading-[29px] uppercase text-[#262626]">
-              {banner.title}
+              {banner.title}.
             </h5>
             <p class="min-h-[80px] px-0 md:px-6 mb-9 text-center text-xs md:text-sm font-medium leading-[19px] text-[#262626]">
               {banner.text}
