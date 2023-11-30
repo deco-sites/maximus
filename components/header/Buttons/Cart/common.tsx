@@ -26,7 +26,7 @@ function CartButton({ loading, currency, total, items }: Props) {
   return (
     <div class="indicator">
       <Button
-        class="btn-ghost text-white flex items-center px-0 hover:bg-[#171413]"
+        class="max-md:hidden btn-ghost text-white flex items-center px-0 hover:bg-[#171413]"
         aria-label="open cart"
         data-deco={displayCart.value && "open-cart"}
         loading={loading}
@@ -37,6 +37,12 @@ function CartButton({ loading, currency, total, items }: Props) {
           {totalItems > 9 ? "9+" : totalItems}
         </div>
       </Button>
+      <a class="flex items-center justify-between w-[48px] md:hidden" href="/checkout">
+      <img src="/arquivos/icon-cart-2.svg" />
+        <div class="w-[25px] h-[25px] max-md:ml-[-6px] flex items-center justify-center border rounded border-[#e4a886] text-white font-light">
+          {totalItems > 9 ? "9+" : totalItems}
+        </div>
+      </a>
     </div>
   );
 }

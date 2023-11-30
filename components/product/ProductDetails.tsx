@@ -97,7 +97,11 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
 
   const stockAvailable = stock?.value;
 
-  const novidades = product?.additionalProperty?.find((item: any) =>
+  const fretegratis = product?.additionalProperty?.find((item: any) =>
+    item.value === "Frete Grátis"
+  );
+
+    const novidades = product?.additionalProperty?.find((item: any) =>
     item.value === "Novidade"
   );
 
@@ -208,6 +212,12 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
         </div>
         {/* flags */}
         <div class="mb-5">
+        {fretegratis &&
+            (
+              <span class="bg-[#6eb212] text-white text-sm font-bold px-3.5 py-1 rounded-[0_5px_5px_0] mr-3">
+                Frete Grátis
+              </span>
+            )}
           {novidades &&
             (
               <span class="bg-black text-white text-sm font-bold px-3.5 py-1 rounded-[0_5px_5px_0] mr-3">
@@ -382,6 +392,7 @@ function Details({
   const images = useStableImages(product);
   const productGroupID = isVariantOf?.productGroupID ?? "";
   const nameFormated = product.isVariantOf?.name;
+  const brand = product.brand.name;
 
   const isMeter =
     product?.additionalProperty?.find((item: any) => item.name === "category")
@@ -467,7 +478,7 @@ function Details({
                   href="#"
                   class="text-[13px] font-medium leading-[19px] tracking-[0px] text-[#171413] underline"
                 >
-                  MAXIMUS TECIDOS TOLEDO - PR
+                  {brand}
                 </a>
               </div>
             </div>

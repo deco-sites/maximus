@@ -83,6 +83,7 @@ function Filters({ filters }: Props) {
             class={`flex flex-col gap-4 ${
               filter.label === "Cores Disponíveis" && "order-1"
             }
+              ${filter.label === "Categories" && "order-1"}
               ${filter.label === "Brands" && "order-2"}
               ${filter.label === "Fibras" && "order-3"}
               ${filter.label === "Forros Indicados" && "order-4"}
@@ -90,7 +91,8 @@ function Filters({ filters }: Props) {
               ${filter.label === "Corte e Modelagem" && "order-6"}
               ${filter.label === "Tendências" && "order-7"}
                ${filter.label === "Período" && "order-8"}
-               ${filter.label === "Departmentss" && "hidden"}`}
+               ${filter.label === "PriceRanges" && "order-9"}
+               ${filter.label === "Departments" && "hidden"}`}
           >
             {filter.label === "Forros Indicados" && (
               <img
@@ -101,7 +103,7 @@ function Filters({ filters }: Props) {
               />
             )}
             <span class="text-base font-semibold leading-[19px] text-neutral-800">
-              {filter.label === "Brands" ? "Marcas" : filter.label}
+            {filter.label === "Brands" ? "Marcas" : filter.label === "PriceRanges" ? 'Preço' : filter.label === "Categories" ? 'Categorias' : filter.label}
             </span>
             <FilterValues {...filter} />
           </li>

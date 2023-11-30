@@ -75,6 +75,11 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
   const nameFormated = product.isVariantOf?.name;
   const discountt = listPrice &&
     Math.round(((listPrice - (price ? price : 0)) / listPrice) * 100);
+
+  const fretegratis = product?.additionalProperty?.find((item: any) =>
+    item.value === "Frete Grátis"
+  );
+
   const novidades = product?.additionalProperty?.find((item: any) =>
     item.value === "Novidade"
   );
@@ -147,6 +152,13 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
         {/* flags */}
         <div class="absolute top-4 z-[8] left-0">
           <div class="flex flex-col">
+            {fretegratis &&
+              (
+                <span class="flex items-center justify-center bg-[#6eb212] text-[10px] leading-[14px] text-center text-white uppercase w-[90px] h-[21px] font-bold rounded-[0_5px_5px_0] mb-1">
+                  Frete Grátis
+                </span>
+              )}
+
             {novidades &&
               (
                 <span class="flex items-center justify-center bg-black text-[10px] leading-[14px] text-center text-white uppercase w-[90px] h-[21px] font-bold rounded-[0_5px_5px_0] mb-1">
@@ -285,7 +297,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
         {l?.hide?.allPrices ? "" : (
           <div class="flex flex-col gap-2">
             <div
-              class={`flex gap-0 ${
+              class={`flex flex-wrap gap-0 ${
                 l?.basics?.oldPriceSize === "Normal"
                   ? "lg:flex-row lg:gap-2"
                   : ""
