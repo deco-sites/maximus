@@ -11,11 +11,11 @@
     font-family: var(--font-family);
   }
 
-  .font-roboto{
+  .font-roboto {
     font-family: 'Roboto', sans-serif;
   }
 
-  .no-underline-2{
+  .no-underline-2 {
     text-decoration: none !important;
   }
 
@@ -23,8 +23,13 @@
     top: 0.4rem !important;
   }
 
-  .text-shadow{
+  .text-shadow {
     text-shadow: 0 0 black;
+  }
+
+  .text-shadow p {
+    letter-spacing: 0.2px;
+    line-height: 25px;
   }
 
   .pontinhos-base {
@@ -47,7 +52,7 @@
     background-size: 100%;
     margin: 0 auto;
   }
-  
+
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }

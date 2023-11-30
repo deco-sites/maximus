@@ -14,14 +14,12 @@ export async function loader(
   { page }: Props,
   _req: Request,
 ) {
-  //console.log("page 06: ", page);
-
+ 
   const data: any = await fetch(
     "https://tfcszo.myvtex.com/api/catalog_system/pub/category/tree/3",
   ).then(
     (r) => {
-      if (r.ok) {
-        //console.log("data>>>>>>>", r.clone().json());
+      if (r.ok) {        
         return r.clone().json();
       }
     },
@@ -94,7 +92,7 @@ export default function Categories(
   return (
     <div id={id} class="w-full max-md:px-3 py-8">
       <div class="w-full max-w-[950px] mx-auto relative">
-        <Slider class="flex items-center carousel carousel-end w-full">
+        <Slider class="flex justify-center items-center carousel carousel-end w-full">
           {listBanners}
         </Slider>
         <div class="block">

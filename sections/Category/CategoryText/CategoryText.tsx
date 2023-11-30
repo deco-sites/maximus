@@ -13,7 +13,7 @@ export default function Description({ text }: Props) {
         <p
           dangerouslySetInnerHTML={{ __html: text }}
           class={`w-full max-w-[1200px] mx-auto my-8 text-base font-normal leading-6 tracking-[0px] text-[#171413] text-center ${
-            showMore ? "max-h-[650px]" : "max-h-[65px]"
+            showMore ? "max-h-[650px]" : "max-h-[95px]"
           } overflow-hidden transition-all duration-[0.8s]`}
         >
         </p>

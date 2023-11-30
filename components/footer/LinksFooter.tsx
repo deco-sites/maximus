@@ -48,7 +48,7 @@ export default function LinksFooter(
 
             <div class="collapse-content md:visible md:px-0">
               <ul class="text-[#171413] text-xs md:max-w-[252px] max-h-[206px] flex flex-wrap flex-col">
-                <li class="flex items-start py-2 mb-2 border-b border-[#ebebeb]">
+                <li class="flex items-start py-2 mb-2 border-b border-[#ebebeb] flex-wrap">
                   <img
                     src="https://tfcszo.vteximg.com.br/arquivos/clockicon.png"
                     width={14}
@@ -56,9 +56,11 @@ export default function LinksFooter(
                     alt="icone"
                     loading="lazy"
                     class="block mr-3"
-                  />
-                  De segunda a sexta das 09:00 às 18:00 horas Sábado das 09:00
-                  às 12:30 horas
+                  />                 
+                   <p class="mb-[5px]">De segunda a sexta</p> 
+                  <p class="w-full ml-[10%] my-[5px] max-md:ml-[25px]">das 09:00 às 18:00 horas</p>
+                  <p class="w-full ml-[10%] my-[5px] max-md:ml-[25px]">Sábado</p>  
+                  <p class="w-full ml-[10%] my-[5px] max-md:ml-[25px]">das 09:00 às 12:30 horas</p>
                 </li>
                 <li class="flex items-start py-2">
                   <img
