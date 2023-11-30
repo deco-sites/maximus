@@ -43,7 +43,6 @@ function ProductShelf({
         fontSize={layout?.headerfontSize || "Large"}
         alignment={layout?.headerAlignment || "center"}
       />
-
       <div
         id={id}
         class="container grid grid-cols-[48px_1fr_48px] px-0 max-sm:px-2"
