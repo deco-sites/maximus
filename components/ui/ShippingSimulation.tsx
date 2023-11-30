@@ -16,7 +16,7 @@ export interface Props {
 const formatShippingEstimate = (estimate: string) => {
   const [, time, type] = estimate.split(/(\d+)/);
 
-  if (type === "bd") return `${time} dias úteis`;
+  if (type === "bd") return `${time}`;
   if (type === "d") return `${time} dias`;
   if (type === "h") return `${time} horas`;
 };
@@ -46,6 +46,8 @@ function ShippingContent({ simulation }: {
     );
   }
 
+  console.log("FFFFF", methods);
+
   return (
     <ul class="flex flex-col border border-solid border-[#f3f3f4]">
       <li>
@@ -56,7 +58,10 @@ function ShippingContent({ simulation }: {
       {methods.map((method) => (
         <li class="flex justify-between p-[15px] border-b-[#f3f3f4] border-b border-solid">
           <span class="text-xs font-medium leading-[19px] tracking-[0px] text-[#0d0c22]">
-            Entrega {method.name}
+            {method.deliveryChannel === "delivery"
+              ? "Entrega " + method.name
+              : "Retirada na Loja (" + method.pickupStoreInfo?.address?.city +
+                "-" + method.pickupStoreInfo?.address?.state + ")"}
           </span>
           <span class="text-xs font-medium leading-[19px] tracking-[0px] text-[#0d0c22]">
             {formatShippingEstimate(method.shippingEstimate)} dias úteis

@@ -1,6 +1,6 @@
 import { useState } from "preact/hooks";
 
-function ColorsSimilars({similars}: any) {
+function ColorsSimilars({ similars }: any) {
   const [seeMore, setSeeMore] = useState<boolean>(false);
 
   return (
@@ -13,14 +13,20 @@ function ColorsSimilars({similars}: any) {
           seeMore ? "max-h-[1000px]" : "max-h-[142px]"
         } mt-[15px] mb-5 mx-0 overflow-hidden transition-[0.4s] `}
       >
-        {similars && Object.values(similars)?.map((item: any) => (
-          <div class="bg-[#ccc] w-16 h-16 mr-2 mb-2">
-            <a href={item.url}>
-              <img loading="lazy" width={64} height={64} src={item.image} alt={item.image} />
-            </a>
-          </div>
-        ))}
-       
+        {similars &&
+          Object.values(similars)?.map((item: any) => (
+            <div class="bg-[#ccc] w-16 h-16 mr-2 mb-2">
+              <a href={item.url}>
+                <img
+                  loading="lazy"
+                  width={64}
+                  height={64}
+                  src={item.image}
+                  alt={item.image}
+                />
+              </a>
+            </div>
+          ))}
       </div>
       <div
         class={`text-[13px] font-medium leading-[19px] tracking-[0] text-[#171413] cursor-pointer flex items-center whitespace-nowrap after:content-[''] after:w-[15px] after:h-[15px] after:bg-[url(/arquivos/seta.png)] after:flex after:bg-contain after:bg-no-repeat after:justify-center after:bg-center after:items-center after:ml-[5px] ${

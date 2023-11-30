@@ -15,7 +15,7 @@ export default function InstitucionalLojas(props: Props) {
       {/* banner */}
       <div class="w-full flex items-center justify-center max-h-[335px] overflow-hidden">
         <img
-        class="max-md:min-h-[295px] max-md:object-cover"
+          class="max-md:min-h-[295px] max-md:object-cover"
           src="https://tfcszo.vteximg.com.br/arquivos/desconto-para-estudantes-bg.png"
           alt="Desconto do Estudante Maximus Tecidos"
         />
@@ -95,8 +95,8 @@ export default function InstitucionalLojas(props: Props) {
         </div>
       </div>
 
-{/* last section*/}
-      <div class="w-full max-w-[90%] md:max-w-[1236px] mx-auto mt-10 md:mt-24 mb-32 md:mb-40">        
+      {/* last section*/}
+      <div class="w-full max-w-[90%] md:max-w-[1236px] mx-auto mt-10 md:mt-24 mb-32 md:mb-40">
         <div class="flex items-center justify-between max-md:flex-col">
           <img
             class="w-full md:w-[500px] max-md:mb-5"

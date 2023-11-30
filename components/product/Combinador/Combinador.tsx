@@ -19,13 +19,13 @@ export default function Combinador() {
 
     const listFq = JSON.parse(listStorage)?.map((id: any) => `productId:${id}`);
 
-    console.log("tem?", listFq);    
-    console.log("listFq.length?", listFq.length);    
+    console.log("tem?", listFq);
+    console.log("listFq.length?", listFq.length);
 
-    if(!listFq.length){
-      console.log("nao tem?");    
+    if (!listFq.length) {
+      console.log("nao tem?");
       setProducts([]);
-      return
+      return;
     }
 
     const data = await Runtime.invoke({

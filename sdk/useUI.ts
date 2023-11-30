@@ -21,7 +21,7 @@ const state = {
   displaySearchDrawer,
   quantityPdp,
   displayCombinador,
-  skusCombination
+  skusCombination,
 };
 
 export const useUI = () => state;

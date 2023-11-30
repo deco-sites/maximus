@@ -101,7 +101,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
     item.value === "Frete Grátis"
   );
 
-    const novidades = product?.additionalProperty?.find((item: any) =>
+  const novidades = product?.additionalProperty?.find((item: any) =>
     item.value === "Novidade"
   );
 
@@ -212,7 +212,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
         </div>
         {/* flags */}
         <div class="mb-5">
-        {fretegratis &&
+          {fretegratis &&
             (
               <span class="bg-[#6eb212] text-white text-sm font-bold px-3.5 py-1 rounded-[0_5px_5px_0] mr-3">
                 Frete Grátis
@@ -439,7 +439,7 @@ function Details({
 
   if (variant === "slider") {
     return (
-      <div class="max-md:mt-32">
+      <div class="max-md:mt-32 relative">
         {/* Breadcrumb */}
         <div class="max-w-[1236px] mx-auto max-md:px-5 flex justify-start mb-3">
           <Breadcrumb
@@ -559,26 +559,24 @@ function Details({
               </Slider>
 
               <Slider.PrevButton
-                class="absolute left-2 top-1/2 btn-slider-custom  btn-circle"
+                class="absolute z-10 left-2 top-1/2 btn-slider-custom  btn-circle"
                 disabled
               >
                 <Icon size={24} id="ChevronLeft" strokeWidth={3} />
               </Slider.PrevButton>
 
               <Slider.NextButton
-                class="absolute right-2 top-1/2 btn-slider-custom  btn-circle"
+                class="absolute z-10 right-2 top-1/2 btn-slider-custom  btn-circle"
                 disabled={images.length < 2}
               >
                 <Icon size={24} id="ChevronRight" strokeWidth={3} />
               </Slider.NextButton>
 
-              <div class="absolute top-2 right-2 bg-base-100 rounded-full">
-                <ProductImageZoom
-                  images={images}
-                  width={700}
-                  height={Math.trunc(700 * HEIGHT / WIDTH)}
-                />
-              </div>
+              <ProductImageZoom
+                images={images}
+                width={700}
+                height={Math.trunc(700 * HEIGHT / WIDTH)}
+              />
             </div>
             {/* Dots */}
             <ul class="flex gap-1 justify-start overflow-auto">

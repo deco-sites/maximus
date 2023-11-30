@@ -56,11 +56,17 @@ export default function LinksFooter(
                     alt="icone"
                     loading="lazy"
                     class="block mr-3"
-                  />                 
-                   <p class="mb-[5px]">De segunda a sexta</p> 
-                  <p class="w-full ml-[10%] my-[5px] max-md:ml-[25px]">das 09:00 às 18:00 horas</p>
-                  <p class="w-full ml-[10%] my-[5px] max-md:ml-[25px]">Sábado</p>  
-                  <p class="w-full ml-[10%] my-[5px] max-md:ml-[25px]">das 09:00 às 12:30 horas</p>
+                  />
+                  <p class="mb-[5px]">De segunda a sexta</p>
+                  <p class="w-full ml-[10%] my-[5px] max-md:ml-[25px]">
+                    das 09:00 às 18:00 horas
+                  </p>
+                  <p class="w-full ml-[10%] my-[5px] max-md:ml-[25px]">
+                    Sábado
+                  </p>
+                  <p class="w-full ml-[10%] my-[5px] max-md:ml-[25px]">
+                    das 09:00 às 12:30 horas
+                  </p>
                 </li>
                 <li class="flex items-start py-2">
                   <img

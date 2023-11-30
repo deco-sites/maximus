@@ -333,9 +333,9 @@ function Footer({
       <Sociais content={sociais} />
       <Payments payments={payments} security={security} />
       <Copyrigth copyrigth={copyrigth} />
-      <Whatsapp/>
+      <Whatsapp />
       <Combination />
-   </footer>
+    </footer>
   );
 }
 

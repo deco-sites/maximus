@@ -1,4 +1,5 @@
 import { useState } from "preact/hooks";
+import { useUI } from "$store/sdk/useUI.ts";
 import { formatPrice } from "$store/sdk/format.ts";
 
 export interface Props {
@@ -7,9 +8,12 @@ export interface Props {
   numberInstallments: number;
 }
 
-function Payments({ price, offers, numberInstallments }: Props, {}) {
+function Payments({ price, offers, numberInstallments }: Props) {
   const [show, setShow] = useState<boolean>(false);
-
+  const { quantityPdp } = useUI();
+  console.log("quantityPdp", quantityPdp.value);
+  const priceQuantity = price * quantityPdp.value;
+  console.log("priceQuantity", priceQuantity);
   return (
     <div>
       <div
@@ -63,10 +67,18 @@ function Payments({ price, offers, numberInstallments }: Props, {}) {
                 À vista(boleto e pix)
               </div>
               <div class="flex items-center text-center w-2/5 min-h-[35px] text-sm font-medium text-black leading-4">
-                {formatPrice(price - (price * 0.05), offers)}
+                {formatPrice(
+                  ((price * quantityPdp.value) / 10) -
+                    (((price * quantityPdp.value) / 10) * 0.05),
+                  offers,
+                )}
               </div>
               <div class="flex items-center text-right w-1/5 min-h-[35px] text-sm font-medium text-black leading-4">
-                {formatPrice(price - (price * 0.05), offers)}
+                {formatPrice(
+                  ((price * quantityPdp.value) / 10) -
+                    (((price * quantityPdp.value) / 10) * 0.05),
+                  offers,
+                )}
               </div>
             </div>
             <div class="w-full flex justify-between px-[15px] md:px-[50px] py-0">
@@ -74,10 +86,13 @@ function Payments({ price, offers, numberInstallments }: Props, {}) {
                 {numberInstallments}x sem juros
               </div>
               <div class="flex items-center text-center w-2/5 min-h-[35px] text-sm font-medium text-black leading-4">
-                {formatPrice(price / numberInstallments, offers)}
+                {formatPrice(
+                  ((price * quantityPdp.value) / 10) / numberInstallments,
+                  offers,
+                )}
               </div>
               <div class="flex items-center text-right w-1/5 min-h-[35px] text-sm font-medium text-black leading-4">
-                {formatPrice(price / numberInstallments, offers)}
+                {formatPrice((price * quantityPdp.value) / 10, offers)}
               </div>
             </div>
           </div>

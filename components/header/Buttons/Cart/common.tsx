@@ -37,8 +37,11 @@ function CartButton({ loading, currency, total, items }: Props) {
           {totalItems > 9 ? "9+" : totalItems}
         </div>
       </Button>
-      <a class="flex items-center justify-between w-[48px] md:hidden" href="/checkout">
-      <img src="/arquivos/icon-cart-2.svg" />
+      <a
+        class="flex items-center justify-between w-[48px] md:hidden"
+        href="/checkout"
+      >
+        <img src="/arquivos/icon-cart-2.svg" />
         <div class="w-[25px] h-[25px] max-md:ml-[-6px] flex items-center justify-center border rounded border-[#e4a886] text-white font-light">
           {totalItems > 9 ? "9+" : totalItems}
         </div>

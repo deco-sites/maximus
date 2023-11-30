@@ -182,10 +182,10 @@ export default function InstitucionalAbout(props: Props) {
                 2022
               </h5>
               <p class="font-normal leading-6 text-center text-[13px] mb-3">
-              Lançamento do Marketplace. Espalhar o nosso propósito e formar
+                Lançamento do Marketplace. Espalhar o nosso propósito e formar
                 milhares de alunos no mundo todo
               </p>
-            </div>            
+            </div>
           </div>
 
           {/* time desktop */}

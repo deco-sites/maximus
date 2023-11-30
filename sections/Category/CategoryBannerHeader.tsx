@@ -29,16 +29,16 @@ export default function CategoryBannerHeader(
       .replace(/\s+/g, "-").replace(/[^a-z0-9-]+/g, "");
   };
 
-/* banner category */
+  /* banner category */
   const urlCurrent = numberOfItems === 2
-  ? `/${format(itemListElement[0]?.name)}/${format(itemListElement[1]?.name)}`
-  : `/${format(itemListElement[0]?.name)}`;
+    ? `/${format(itemListElement[0]?.name)}/${format(itemListElement[1]?.name)}`
+    : `/${format(itemListElement[0]?.name)}`;
 
   const bannerCurrent = banners?.find((item: IBanner) =>
     item.url === urlCurrent
   );
 
-  if(!title) return
+  if (!title) return;
 
   return (
     <div class="w-full max-w-[1236px] mx-auto min-h-[200px] bg-[#171413] mb-6 mt-9 relative flex items-center justify-center max-md:mt-[128px]">

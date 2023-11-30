@@ -93,7 +93,9 @@ function Cart({
                   </div>
                 )}
                 <div class="w-full flex justify-between px-4 text-sm">
-                  <span class="text-sm font-normal leading-6 w-full whitespace-normal overflow-hidden text-ellipsis pt-2.5">Subtotal</span>
+                  <span class="text-sm font-normal leading-6 w-full whitespace-normal overflow-hidden text-ellipsis pt-2.5">
+                    Subtotal
+                  </span>
                   <span class="px-4 text-base font-semibold text-shadow leading-[29px]">
                     {formatPrice(subtotal, currency, locale)}
                   </span>
@@ -106,7 +108,7 @@ function Cart({
                 <div class="flex justify-between items-center w-full">
                   <span>Subtotal</span>
                   <span class="font-medium text-xl">
-                  {formatPrice(subtotal, currency, locale)}
+                    {formatPrice(subtotal, currency, locale)}
                   </span>
                 </div>
                 <span class="hidden text-sm text-base-300">

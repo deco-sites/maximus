@@ -20,6 +20,7 @@ function AddToCartButton(props: Props) {
 
   const [quantity, setQuantity] = useState(isMeter ? 10 : 1);
   const [notification, setNotification] = useState(false);
+  const [showBuy, setShowBuy] = useState(false);
 
   const { quantityPdp } = useUI();
   quantityPdp.value = quantity;
@@ -65,6 +66,17 @@ function AddToCartButton(props: Props) {
     }
   };
 
+  const window_ = window;
+  window_.addEventListener("scroll", function () {
+    const scrollTop = window.scrollY;
+
+    if (scrollTop > 600) {
+      setShowBuy(true);
+    } else {
+      setShowBuy(false);
+    }
+  });
+
   return (
     <>
       {isMeter && (
@@ -98,7 +110,11 @@ function AddToCartButton(props: Props) {
         <Button onAddItem={onAddItem} {...props} />
       </div>
       {/* comprar fixo */}
-      <div class="w-screen max-md:flex-wrap flex justify-center items-center bg-white fixed z-[9] py-3 px-5 md:py-5 border-t-[#eaeaea] border-t border-solid left-0 bottom-0">
+      <div
+        class={`w-screen max-md:flex-wrap ${
+          showBuy ? "flex" : "hidden"
+        } justify-center items-center bg-white fixed z-[9] py-3 px-5 md:py-5 border-t-[#eaeaea] border-t border-solid left-0 bottom-0`}
+      >
         <div class="hidden md:flex items-center">
           <img
             width={60}

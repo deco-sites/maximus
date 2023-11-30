@@ -103,7 +103,13 @@ function Filters({ filters }: Props) {
               />
             )}
             <span class="text-base font-semibold leading-[19px] text-neutral-800">
-            {filter.label === "Brands" ? "Marcas" : filter.label === "PriceRanges" ? 'Preço' : filter.label === "Categories" ? 'Categorias' : filter.label}
+              {filter.label === "Brands"
+                ? "Marcas"
+                : filter.label === "PriceRanges"
+                ? "Preço"
+                : filter.label === "Categories"
+                ? "Categorias"
+                : filter.label}
             </span>
             <FilterValues {...filter} />
           </li>

@@ -1,4 +1,3 @@
-import Button from "$store/components/ui/Button.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import Modal from "$store/components/ui/Modal.tsx";
 import Slider from "$store/components/ui/Slider.tsx";
@@ -19,13 +18,15 @@ function ProductImageZoom({ images, width, height }: Props) {
   const open = useSignal(false);
 
   return (
-    <>
-      <Button
-        class="hidden sm:inline-flex btn-ghost"
+    <div class="cursor-pointer w-full h-full absolute z-0 bottom-0 right-0 bg-[transparent]">
+      <div
+        class="w-full h-full hidden sm:inline-flex"
         onClick={() => open.value = true}
       >
-        <Icon id="Zoom" size={24} />
-      </Button>
+        <div class="text-white absolute z-0 bottom-3 right-3">
+          <Icon id="Zoom" size={24} />
+        </div>
+      </div>
       <div id={id}>
         <Modal
           class="w-11/12 max-w-7xl grid grid-cols-[48px_1fr_48px] grid-rows-1 place-items-center"
@@ -62,7 +63,7 @@ function ProductImageZoom({ images, width, height }: Props) {
           <SliderJS rootId={id} />
         </Modal>
       </div>
-    </>
+    </div>
   );
 }
 

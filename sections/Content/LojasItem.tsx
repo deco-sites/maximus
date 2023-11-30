@@ -2,16 +2,16 @@ import { useState } from "preact/hooks";
 
 export interface LojaItem {
   name?: string;
-   /** @format textarea */
+  /** @format textarea */
   address?: string;
   email?: string;
-   /** @format textarea */
+  /** @format textarea */
   call?: string;
   phone?: string;
   phoneFormated?: string;
   whatsapp?: string;
   whatsappFormated?: string;
-   /** @format textarea */
+  /** @format textarea */
   iframe?: string | undefined;
 }
 

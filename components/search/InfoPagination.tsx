@@ -6,8 +6,7 @@ export interface Props {
   recordPerPage?: number | undefined;
 }
 
-export default function InfoPagination({ pageInfo }: { pageInfo: Props }) {  
-
+export default function InfoPagination({ pageInfo }: { pageInfo: Props }) {
   return (
     <div class="w-full">
       {pageInfo.records && pageInfo.recordPerPage && (

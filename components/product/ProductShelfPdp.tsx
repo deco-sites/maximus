@@ -43,48 +43,49 @@ function ProductShelf({
         fontSize={layout?.headerfontSize || "Large"}
         alignment={layout?.headerAlignment || "center"}
       />
-      
+
       <div
         id={id}
         class="container grid grid-cols-[48px_1fr_48px] px-0 max-sm:px-2"
       >
-     
-          <Slider class="max-md:hidden carousel carousel-center sm:carousel-end gap-6 col-span-full row-start-2 row-end-5">
-            {products?.map((product, index) => (
-              <Slider.Item
-                index={index}
-                class="carousel-item w-[38%] sm:w-[234px] first:pl-0 sm:first:pl-0 last:pr-6 sm:last:pr-0"
-              >
-                <ProductCard
-                  product={product}
-                  itemListName={title}
-                  layout={cardLayout}
-                />
-              </Slider.Item>
-            ))}
-          </Slider>
-          
-            <div class="max-md:hidden relative sm:block z-10 col-start-1 row-start-3">
-              <Slider.PrevButton class="btn-slider-custom btn-circle absolute right-1/2 -top-20">
-                <Icon size={18} id="ChevronLeft" strokeWidth={3} />
-              </Slider.PrevButton>
-            </div>
-            <div class="hidden relative sm:block z-10 col-start-3 row-start-3">
-              <Slider.NextButton class="btn-slider-custom btn-circle absolute left-1/2 -top-20">
-                <Icon size={24} id="ChevronRight" strokeWidth={3} />
-              </Slider.NextButton>
-            </div>
-          <div class="hidden md:block"><SliderJS rootId={id} /></div>
-       
+        <Slider class="max-md:hidden carousel carousel-center sm:carousel-end gap-6 col-span-full row-start-2 row-end-5">
+          {products?.map((product, index) => (
+            <Slider.Item
+              index={index}
+              class="carousel-item w-[38%] sm:w-[234px] first:pl-0 sm:first:pl-0 last:pr-6 sm:last:pr-0"
+            >
+              <ProductCard
+                product={product}
+                itemListName={title}
+                layout={cardLayout}
+              />
+            </Slider.Item>
+          ))}
+        </Slider>
+
+        <div class="max-md:hidden relative sm:block z-10 col-start-1 row-start-3">
+          <Slider.PrevButton class="btn-slider-custom btn-circle absolute right-1/2 -top-20">
+            <Icon size={18} id="ChevronLeft" strokeWidth={3} />
+          </Slider.PrevButton>
+        </div>
+        <div class="hidden relative sm:block z-10 col-start-3 row-start-3">
+          <Slider.NextButton class="btn-slider-custom btn-circle absolute left-1/2 -top-20">
+            <Icon size={24} id="ChevronRight" strokeWidth={3} />
+          </Slider.NextButton>
+        </div>
+        <div class="hidden md:block">
+          <SliderJS rootId={id} />
+        </div>
+
         <div class="md:hidden max-md:flex flex-wrap justify-between w-[96vw]">
           {products?.slice(0, 4)?.map((product) => (
-           <div class="w-[49%] mb-5">
-             <ProductCard
-              product={product}
-              itemListName={title}
-              layout={cardLayout}
-            />
-           </div>
+            <div class="w-[49%] mb-5">
+              <ProductCard
+                product={product}
+                itemListName={title}
+                layout={cardLayout}
+              />
+            </div>
           ))}
         </div>
         <SendEventOnLoad

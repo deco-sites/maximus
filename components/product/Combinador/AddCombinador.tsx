@@ -1,13 +1,12 @@
 import { useUI } from "$store/sdk/useUI.ts";
 
 export default function Combinador({ sku }: { sku: string }) {
-  const { displayCombinador,skusCombination } = useUI();
+  const { displayCombinador, skusCombination } = useUI();
 
   const addCombinador = () => {
     displayCombinador.value = true;
 
     if (localStorage.getItem("combinador") == null) {
-
       localStorage.setItem("combinador", "[]");
     }
 

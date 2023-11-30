@@ -14,12 +14,11 @@ export async function loader(
   { page }: Props,
   _req: Request,
 ) {
- 
   const data: any = await fetch(
     "https://tfcszo.myvtex.com/api/catalog_system/pub/category/tree/3",
   ).then(
     (r) => {
-      if (r.ok) {        
+      if (r.ok) {
         return r.clone().json();
       }
     },
@@ -37,7 +36,7 @@ export default function Categories(
   const { itemListElement, numberOfItems } = breadcrumb;
   const nameCurrent = itemListElement[numberOfItems - 1]?.name;
 
-  if(!nameCurrent) return
+  if (!nameCurrent) return;
 
   let banners: any;
   const name1 = itemListElement[0]?.name;
@@ -49,7 +48,7 @@ export default function Categories(
   } else {
     banners = data.find((item: any) => item.name == name1);
   }
-  
+
   const format = (str: string) => {
     if (!str) return;
 
@@ -87,26 +86,35 @@ export default function Categories(
         </Slider.Item>
       );
     });
-    
 
   return (
     <div id={id} class="w-full max-md:px-3 py-8">
       <div class="w-full max-w-[950px] mx-auto relative">
-        <Slider class="flex justify-center items-center carousel carousel-end w-full">
+        <Slider
+          class={`flex ${
+            banners?.children?.length < 9 ? "justify-center" : ""
+          } items-center carousel carousel-end w-full`}
+        >
           {listBanners}
         </Slider>
-        <div class="block">
-          <div class="z-10 absolute -left-2 lg:-left-20 top-1/2">
-            <Slider.PrevButton class="btn-slider-custom btn-circle max-md:w-[35px] max-md:h-[35px]">
-              <Icon size={18} id="ChevronLeft" strokeWidth={3} />
-            </Slider.PrevButton>
-          </div>
-          <div class="z-10 absolute -right-2 lg:-right-20 top-1/2">
-            <Slider.NextButton class="btn-slider-custom btn-circle max-md:w-[35px] max-md:h-[35px]">
-              <Icon size={24} id="ChevronRight" strokeWidth={3} />
-            </Slider.NextButton>
-          </div>
-        </div>
+
+        {banners?.children?.length > 8
+          ? (
+            <div class="block">
+              <div class="z-10 absolute -left-2 lg:-left-20 top-1/2">
+                <Slider.PrevButton class="btn-slider-custom btn-circle max-md:w-[35px] max-md:h-[35px]">
+                  <Icon size={18} id="ChevronLeft" strokeWidth={3} />
+                </Slider.PrevButton>
+              </div>
+              <div class="z-10 absolute -right-2 lg:-right-20 top-1/2">
+                <Slider.NextButton class="btn-slider-custom btn-circle max-md:w-[35px] max-md:h-[35px]">
+                  <Icon size={24} id="ChevronRight" strokeWidth={3} />
+                </Slider.NextButton>
+              </div>
+            </div>
+          )
+          : <></>}
+
         <SliderJS rootId={id} infinite />
       </div>
     </div>

@@ -114,7 +114,7 @@ export default function List({ skus }: { skus: Props }) {
             </h3>
             <p class="text-sm font-medium tracking-[0px] text-neutral-800 text-center leading-6">
               Use essa ferramenta para combinar e comparar cores dos tecidos!
-              <br/>
+              <br />
               <small>*clique e arraste para mudar a posição dos tecidos</small>
             </p>
             <div class="py-6 flex flex-wrap items-center justify-start">
@@ -149,8 +149,8 @@ export default function List({ skus }: { skus: Props }) {
               ))}
             </div>
           </div>
-          {products.length ?
-            (
+          {products.length
+            ? (
               <div class="flex justify-end pt-6 max-md:flex-col max-md:items-center">
                 <button
                   onClick={useAddToCart}
@@ -165,7 +165,12 @@ export default function List({ skus }: { skus: Props }) {
                   Remover tudo
                 </button>
               </div>
-            ): <p class="text-sm font-medium tracking-[0px] text-neutral-800 text-center leading-6">Não encontramos nenhum produto!</p>}
+            )
+            : (
+              <p class="text-sm font-medium tracking-[0px] text-neutral-800 text-center leading-6">
+                Não encontramos nenhum produto!
+              </p>
+            )}
         </div>
       </div>
     </div>

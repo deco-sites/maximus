@@ -13,11 +13,11 @@ const action = async (
 
   console.log("entrou");
 
-  const vtexProducts =await vcsDeprecated
-  ["GET /api/catalog_system/pub/products/search/:term?"](query)
-  .then((res) => res.json());
+  const vtexProducts = await vcsDeprecated
+    ["GET /api/catalog_system/pub/products/search/:term?"](query)
+    .then((res) => res.json());
 
-    return vtexProducts;
+  return vtexProducts;
 };
 
 export default action;
