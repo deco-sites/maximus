@@ -54,6 +54,7 @@ export default function Benefits(
             width={45}
             src={benefit.image}
             alt="beneficios"
+            title="beneficios"
             class="mr-2"
           />
         </div>

@@ -87,7 +87,8 @@ export default function InstitucionalDicionario(props: Props) {
                       width={45}
                       height={45}
                       src={item.image}
-                      alt="thumb do tecido"
+                      alt={item.title}
+                      title={item.title}
                     />
                     <span class="text-neutral-800 text-[15px] uppercase font-semibold mx-10 my-0">
                       {item.title}

@@ -25,6 +25,7 @@ export default function InstitucionalAbout(props: Props) {
               height={45}
               src="https://tfcszo.vteximg.com.br/arquivos/logo-sobre-nos.png"
               alt="logo"
+              title="logo"
             />
             <h1 class="text-[28px] leading-[34px] md:text-[38px] font-normal md:leading-[47px] text-white my-4">
               Resgatar o hábito de costurar
@@ -59,6 +60,7 @@ export default function InstitucionalAbout(props: Props) {
           height={551}
           src="https://tfcszo.vteximg.com.br/arquivos/header-sobre-nos.png"
           alt="quem somos"
+          title="quem somos"
         />
       </div>
 
@@ -69,7 +71,8 @@ export default function InstitucionalAbout(props: Props) {
           width={540}
           height={412}
           src="https://tfcszo.vteximg.com.br/arquivos/sobre-nos-escola-online.png"
-          alt="banner"
+          alt="banner escola"
+          title="banner escola"
         />
         <div class="max-w-full w-[508px]">
           <h3 class="text-[15px] text-neutral-800 uppercase font-medium text-shadow mb-[22px]">
@@ -206,7 +209,8 @@ export default function InstitucionalAbout(props: Props) {
                     width={33}
                     height={23}
                     src="https://tfcszo.vteximg.com.br/arquivos/logo-linha-do-tem.png"
-                    alt="logo"
+                    alt="logo institucional"
+                    title="logo institucional"
                   />
                 </div>
 
@@ -222,7 +226,8 @@ export default function InstitucionalAbout(props: Props) {
                     width={33}
                     height={23}
                     src="https://tfcszo.vteximg.com.br/arquivos/logo-linha-do-tem.png"
-                    alt="logo"
+                    alt="logo institucional"
+                    title="logo institucional"
                   />
                 </div>
 
@@ -239,7 +244,8 @@ export default function InstitucionalAbout(props: Props) {
                     width={33}
                     height={23}
                     src="https://tfcszo.vteximg.com.br/arquivos/logo-linha-do-tem.png"
-                    alt="logo"
+                    alt="logo institucional"
+                    title="logo institucional"
                   />
                 </div>
 
@@ -257,7 +263,8 @@ export default function InstitucionalAbout(props: Props) {
                     width={33}
                     height={23}
                     src="https://tfcszo.vteximg.com.br/arquivos/logo-linha-do-tem.png"
-                    alt="logo"
+                    alt="logo institucional"
+                    title="logo institucional"
                   />
                 </div>
               </div>
@@ -269,7 +276,8 @@ export default function InstitucionalAbout(props: Props) {
                     width={33}
                     height={23}
                     src="https://tfcszo.vteximg.com.br/arquivos/logo-linha-do-tem.png"
-                    alt="logo"
+                    alt="logo institucional"
+                    title="logo institucional"
                   />
                   <h5 class="text-[#E4A886] text-2xl text-center font-medium mb-[5px]">
                     2013
@@ -285,7 +293,8 @@ export default function InstitucionalAbout(props: Props) {
                     width={33}
                     height={23}
                     src="https://tfcszo.vteximg.com.br/arquivos/logo-linha-do-tem.png"
-                    alt="logo"
+                    alt="logo institucional"
+                    title="logo institucional"
                   />
                   <h5 class="text-[#E4A886] text-2xl text-center font-medium mb-[5px]">
                     2017
@@ -301,7 +310,8 @@ export default function InstitucionalAbout(props: Props) {
                     width={33}
                     height={23}
                     src="https://tfcszo.vteximg.com.br/arquivos/logo-linha-do-tem.png"
-                    alt="logo"
+                    alt="logo institucional"
+                    title="logo institucional"
                   />
                   <h5 class="text-[#E4A886] text-2xl text-center font-medium mb-[5px]">
                     2019
@@ -319,12 +329,14 @@ export default function InstitucionalAbout(props: Props) {
                   height={31}
                   src="https://tfcszo.vteximg.com.br/arquivos/logo-linha-do-tem.png"
                   alt="linha do tempo"
+                  title="linha do tempo"
                 />
                 <img
                   width={48}
                   height={48}
                   src="https://tfcszo.vteximg.com.br/arquivos/logo-novo-inst-sobre.png"
                   alt="linha do tempo"
+                  title="linha do tempo"
                 />
               </div>
               <h5 class="text-[#E4A886] text-2xl text-center font-medium mb-[5px]">

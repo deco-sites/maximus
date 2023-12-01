@@ -51,7 +51,7 @@ function Navbar({ items, searchbar, logo, logoCurt }: {
             style={{ minHeight: navbarHeight }}
             aria-label="Store logo"
           >
-            <Image src={logo.src} alt={logo.alt} width={150} height={33} />
+            <Image src={logo.src} alt={logo.alt} title={logo.alt} width={150} height={33} />
           </a>
         )}
 
@@ -62,7 +62,7 @@ function Navbar({ items, searchbar, logo, logoCurt }: {
             href="/wishlist"
             aria-label="Wishlist"
           >
-            <img src="/arquivos/icone-wishlist.svg" />
+            <img src="/arquivos/icone-wishlist.svg" alt="icone wishlist" title="icone wishlist" />
           </a>
           {PLATFORM === "vtex" && <CartButtonVTEX />}
           {PLATFORM === "vnda" && <CartButtonVDNA />}
@@ -89,6 +89,7 @@ function Navbar({ items, searchbar, logo, logoCurt }: {
               <Image
                 src={showLogo && logoCurt ? logoCurt.src : logo.src}
                 alt={logo.alt}
+                title={logo.alt}
                 width={showLogo ? 46 : 200}
                 height={44}
               />
@@ -102,7 +103,7 @@ function Navbar({ items, searchbar, logo, logoCurt }: {
             href="/wishlist"
             aria-label="Wishlist"
           >
-            <img src="/arquivos/icone-wishlist.svg" />
+            <img src="/arquivos/icone-wishlist.svg" alt="icone wishlist" title="icone wishlist" />
           </a>
           {PLATFORM === "vtex" && <CartButtonVTEX />}
           {PLATFORM === "vnda" && <CartButtonVDNA />}

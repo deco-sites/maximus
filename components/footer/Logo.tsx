@@ -17,6 +17,7 @@ export default function Logo({ logo }: Props) {
               loading="lazy"
               src={logo?.image}
               alt={logo?.description}
+              title={logo?.description}
               width={200}
               height={200}
             />

@@ -547,6 +547,7 @@ function Details({
                       style={{ aspectRatio: ASPECT_RATIO }}
                       src={img.url!}
                       alt={img.alternateName}
+                      title={img.alternateName}
                       width={WIDTH}
                       height={HEIGHT}
                       // Preload LCP image for better web vitals
@@ -589,6 +590,7 @@ function Details({
                       height={64}
                       src={img.url!}
                       alt={img.alternateName}
+                      title={img.alternateName}
                     />
                   </Slider.Dot>
                 </li>
@@ -639,6 +641,7 @@ function Details({
               style={{ aspectRatio: ASPECT_RATIO }}
               src={img.url!}
               alt={img.alternateName}
+              title={img.alternateName}
               width={WIDTH}
               height={HEIGHT}
               // Preload LCP image for better web vitals
@@ -724,7 +727,8 @@ function ProductDetails(
                           width={44}
                           height={44}
                           src="/arquivos/virtual-forros-indicados.png"
-                          alt="forro"
+                          alt="Forros Indicados"
+                          title="Forros Indicados"
                         />
                         <div class="ml-4">
                           <h5 class="text-[13px] font-semibold tracking-[0] leading-4">
@@ -743,7 +747,8 @@ function ProductDetails(
                           width={44}
                           height={44}
                           src="/arquivos/virtual-utilizacao.png"
-                          alt="forro"
+                          alt="Utilização"
+                          title="Utilização"
                         />
                         <div class="ml-4">
                           <h5 class="text-[13px] font-semibold tracking-[0] leading-4">
@@ -763,7 +768,8 @@ function ProductDetails(
                           width={44}
                           height={44}
                           src="/arquivos/virtual-corte-e-modelagem.png"
-                          alt="forro"
+                          alt="Corte e Modelagem"
+                          title="Corte e Modelagem"
                         />
                         <div class="ml-4">
                           <h5 class="text-[13px] font-semibold tracking-[0] leading-4">
@@ -784,6 +790,7 @@ function ProductDetails(
                           height={44}
                           src="/arquivos/virtual-tendencias.png"
                           alt="forro"
+                          title="Tendências"
                         />
                         <div class="ml-4">
                           <h5 class="text-[13px] font-semibold tracking-[0] leading-4">
@@ -803,7 +810,8 @@ function ProductDetails(
                           width={44}
                           height={44}
                           src="/arquivos/virtual-periodo.png"
-                          alt="forro"
+                          alt="Período"
+                          title="Período"
                         />
                         <div class="ml-4">
                           <h5 class="text-[13px] font-semibold tracking-[0] leading-4">

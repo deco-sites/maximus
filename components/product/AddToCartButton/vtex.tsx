@@ -120,7 +120,8 @@ function AddToCartButton(props: Props) {
             width={60}
             height={60}
             src={image}
-            alt="imagem produto"
+            alt={name}
+            title={name}
             loading="lazy"
           />
           <h3 class="w-[235px] text-sm font-medium tracking-[0] text-[#171413] leading-[21px] ml-[25px] mr-[50px]">

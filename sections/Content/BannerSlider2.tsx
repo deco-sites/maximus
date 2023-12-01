@@ -40,7 +40,8 @@ export default function BannerSlider2(
           height={80}
           loading="lazy"
           src={banner.image}
-          alt="banner"
+          alt={banner.title}
+          title={banner.title}
         />
       </a>
     );

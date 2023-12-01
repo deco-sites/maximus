@@ -132,7 +132,8 @@ export default function BannerSchool(
             height={398}
             loading="lazy"
             src={`${banner.image}?v=231123`}
-            alt="banner"
+            alt="banner de cursos"
+            title="banner de cursos"
           />
           <div class="px-4 py-9 bg-white border border-solid border-[#ebebeb]">
             <h5 class="my-3 text-center text-base font-semibold leading-[29px] uppercase text-[#262626]">

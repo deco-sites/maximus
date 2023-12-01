@@ -18,6 +18,7 @@ export default function InstitucionalLojas(props: Props) {
           class="max-md:min-h-[295px] max-md:object-cover"
           src="https://tfcszo.vteximg.com.br/arquivos/desconto-para-estudantes-bg.png"
           alt="Desconto do Estudante Maximus Tecidos"
+          title="Desconto do Estudante Maximus Tecidos"
         />
         <div class="absolute max-md:px-5 py-6">
           <h1 class="text-lg leading-[22px] md:text-2xl font-semibold md:leading-[29px] text-white text-center">
@@ -52,6 +53,7 @@ export default function InstitucionalLojas(props: Props) {
                   height={46}
                   src="https://tfcszo.vteximg.com.br/arquivos/estudante-desenho-icon.png"
                   alt="icone tecido"
+                  title="icone tecido"
                 />
                 <span class="w-3 h-px block mt-[15px] mb-[17px] mx-auto bg-[#707070]">
                 </span>
@@ -65,6 +67,7 @@ export default function InstitucionalLojas(props: Props) {
                   height={46}
                   src="https://tfcszo.vteximg.com.br/arquivos/estudante-mensagem-icon.png"
                   alt="icone tecido"
+                  title="icone tecido"
                 />
                 <span class="w-3 h-px block mt-[15px] mb-[17px] mx-auto bg-[#707070]">
                 </span>
@@ -78,6 +81,7 @@ export default function InstitucionalLojas(props: Props) {
                   height={46}
                   src="https://tfcszo.vteximg.com.br/arquivos/estudante-phone-icon.png"
                   alt="icone tecido"
+                  title="icone tecido"
                 />
                 <span class="w-3 h-px block mt-[15px] mb-[17px] mx-auto bg-[#707070]">
                 </span>
@@ -91,6 +95,7 @@ export default function InstitucionalLojas(props: Props) {
             class="w-full md:w-[400px] max-md:hidden"
             src="https://tfcszo.vteximg.com.br/arquivos/desconto-estudante-header.png"
             alt="pessoa com papel"
+            title="pessoa com papel"
           />
         </div>
       </div>
@@ -102,6 +107,7 @@ export default function InstitucionalLojas(props: Props) {
             class="w-full md:w-[500px] max-md:mb-5"
             src="https://tfcszo.vteximg.com.br/arquivos/desconto-estudante-footer.png"
             alt="pessoa com caneta"
+            title="pessoa com caneta"
           />
           <div class="w-full md:w-[650px]">
             <h3 class="leading-[34px] text-[15px] text-neutral-800 uppercase font-medium text-shadow">
@@ -112,6 +118,7 @@ export default function InstitucionalLojas(props: Props) {
                 class="w-3 h-3 block mr-2"
                 src="https://tfcszo.vteximg.com.br/arquivos/estudante-time-icon.png"
                 alt="clock"
+                title="clock"
               />
               Leva 2 minutos. Para fazer seu cadastro é rápido e fácil! Basta
               seguir as seguintes instruções:

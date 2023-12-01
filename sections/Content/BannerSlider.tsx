@@ -69,7 +69,8 @@ export default function BannerSlider(
             height={240}
             loading="lazy"
             src={`${banner.image}?v=231123`}
-            alt="banner"
+            alt={banner.title}
+            title={banner.title}
           />
           <p class="mt-3 mb-9 text-center text-base">
             {banner.title}

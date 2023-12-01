@@ -48,6 +48,7 @@ function ColorsSimilars({query, url}: any) {
                   height={64}
                   src={item.image}
                   alt={item.name}
+                  title={item.name}
                 />
               </a>
             </div>

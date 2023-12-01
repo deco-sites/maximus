@@ -43,6 +43,7 @@ export default function Combinador({ sku }: { sku: string }) {
         class="mr-3"
         src="/arquivos/icon-combinador-black.svg"
         alt="icone combinador"
+        title="icone combinador"
       />Combinar tecido
     </div>
   );

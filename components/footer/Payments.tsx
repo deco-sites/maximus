@@ -31,7 +31,8 @@ export default function Payments({ payments, security }: {
                       (
                         <Image
                           src={item?.image}
-                          alt="social"
+                          alt="icone de pagamento"
+                          title="icone de pagamento"
                           width={item?.size}
                           height={24}
                           loading="lazy"
@@ -59,7 +60,8 @@ export default function Payments({ payments, security }: {
                               <Image
                                 class="grayscale"
                                 src={item?.image}
-                                alt="social"
+                                alt="icone de pagamento"
+                                title="icone de pagamento"
                                 width={item?.width}
                                 height={item?.height}
                                 loading="lazy"
@@ -70,7 +72,8 @@ export default function Payments({ payments, security }: {
                             <Image
                               class="grayscale"
                               src={item?.image}
-                              alt="social"
+                              alt="icone de pagamento"
+                              title="icone de pagamento"
                               width={item?.width}
                               height={item?.height}
                               loading="lazy"

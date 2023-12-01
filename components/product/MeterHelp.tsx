@@ -19,6 +19,7 @@ function MeterHelp() {
           class="ml-3"
           src="/arquivos/icone-regua.png?v=694743"
           alt="regua"
+          title="regua"
         />
       </div>
 

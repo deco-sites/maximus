@@ -68,6 +68,7 @@ export default function InstitucionalDesenho(props: Props) {
             height={527}
             src="https://tfcszo.vteximg.com.br/arquivos/inst-desenho-gratuito.png"
             alt="imagem institucional"
+            title="imagem institucional"
           />
         </div>
       </div>

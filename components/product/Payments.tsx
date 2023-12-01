@@ -24,6 +24,7 @@ function Payments({ price, offers, numberInstallments }: Props) {
           class="mr-3"
           src="/arquivos/icon-methods-payment.svg"
           alt="icon payments"
+          title="icon payments"
         />
         <span class="cursor-pointer text-xs font-normal tracking-[0] text-[#171413] leading-4 hover:underline">
           Ver todas as formas de pagamento

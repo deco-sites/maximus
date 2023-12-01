@@ -56,7 +56,8 @@ export default function Item({ sku }: { sku: Props }, index: number) {
         width={170}
         height={170}
         src={sku.image}
-        alt="produto do combinador"
+        alt={sku.name}
+        tite={sku.name}
       />
       <div class="text-sm font-semibold tracking-[0px] text-[#171413] px-2.5 py-0">
         {(sku.price / 100).toLocaleString("pt-BR", {

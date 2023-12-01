@@ -9,7 +9,8 @@ export default function Whatsapp() {
     >
       <Image
         src="https://tfcszo.vteximg.com.br/arquivos/icon-whatsapp-cr.png?v=123"
-        alt="logo"
+        alt="logo whatsapp"
+        title="logo whatsapp"
         width={20}
         height={20}
         loading="lazy"

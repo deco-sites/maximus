@@ -34,6 +34,7 @@ function NavItem({ item, showLogo }: { item: INavItem; showLogo: boolean }) {
                 class="p-6"
                 src={image.src}
                 alt={image.alt}
+                title={image.alt}
                 width={300}
                 height={332}
                 loading="lazy"

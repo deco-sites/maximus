@@ -59,7 +59,8 @@ function WishlistButton({
         width={30}
         height={30}
         src="/arquivos/icon-fav.svg"
-        alt={inWishlist ? "adicionado" : "nao adicionado"}
+        alt={inWishlist ? "produto adicionado" : "produto nao adicionado"}
+        title={inWishlist ? "produto adicionado" : "produto nao adicionado"}
       />
       {variant === "icon" ? null : inWishlist ? "Remover" : "Favoritar"}
     </Button>

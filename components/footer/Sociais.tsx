@@ -17,6 +17,7 @@ export default function Sociais({ content }: {
           <Image
             src="https://tfcszo.vteximg.com.br/arquivos/icon-maximus-social.svg?v=637966974692800000"
             alt="logo"
+            title="logo"
             width={54}
             height={39}
             loading="lazy"
@@ -33,6 +34,7 @@ export default function Sociais({ content }: {
                         <Image
                           src={item?.image}
                           alt="social"
+                          title="social"
                           width={item?.size}
                           loading="lazy"
                         />
@@ -51,6 +53,7 @@ export default function Sociais({ content }: {
             <Image
               src="https://tfcszo.vteximg.com.br/arquivos/2bdigital_black.svg"
               alt="vtex"
+              title="vtex"
               width={70}
               height={20}
               loading="lazy"
@@ -63,6 +66,7 @@ export default function Sociais({ content }: {
             <Image
               src="https://tfcszo.vteximg.com.br/arquivos/icon-vtex-benefits.svg"
               alt="2b"
+              title="2b"
               width={54}
               height={24}
               loading="lazy"

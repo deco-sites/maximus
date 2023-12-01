@@ -56,6 +56,7 @@ function Alert({ alerts = [], interval = 5 }: Props) {
                   width="15px"
                   src="/arquivos/icone-copy-pitbar.svg"
                   alt="copy"
+                  title="copy"
                 />
               </div>
             </div>

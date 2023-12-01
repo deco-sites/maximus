@@ -23,7 +23,8 @@ export default function Benefits({ content }: {
                         loading="lazy"
                         width={30}
                         src={item?.image}
-                        alt=""
+                        alt={item?.texto}
+                        title="Item de beneficios"
                       />
                     </div>
                   )}
@@ -45,7 +46,8 @@ export default function Benefits({ content }: {
                   loading="lazy"
                   width={18}
                   src="https://tfcszo.vteximg.com.br/arquivos/Question@2x.png?v=637966970345700000"
-                  alt=""
+                  alt="Ainda em duvida?"
+                  title="Ainda em duvida?"
                 />
               </div>
               <div>

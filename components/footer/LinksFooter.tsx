@@ -53,7 +53,8 @@ export default function LinksFooter(
                     src="https://tfcszo.vteximg.com.br/arquivos/clockicon.png"
                     width={14}
                     height={14}
-                    alt="icone"
+                    alt="icone horario"
+                    title="icone horario"
                     loading="lazy"
                     class="block mr-3"
                   />
@@ -73,7 +74,8 @@ export default function LinksFooter(
                     src="https://tfcszo.vteximg.com.br/arquivos/telicon.png"
                     width={14}
                     height={14}
-                    alt="icone"
+                    alt="icone atendimento"
+                    title="icone atendimento"
                     loading="lazy"
                     class="block mr-3"
                   />
@@ -87,7 +89,8 @@ export default function LinksFooter(
                     src="https://tfcszo.vteximg.com.br/arquivos/whtasicon.png"
                     width={14}
                     height={14}
-                    alt="icone"
+                    alt="icone whatsapp"
+                    title="icone whatsapp"
                     loading="lazy"
                     class="block mr-3"
                   />

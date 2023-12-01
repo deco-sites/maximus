@@ -44,6 +44,7 @@ const Aside = (
               height={16}
               src="/arquivos/icone-cart-black.svg"
               alt="icone cart"
+              title="icone cart"
             />
             <span class="ml-3 text-base font-normal leading-6 tracking-[0.5px] uppercase">
               {title}
@@ -55,6 +56,7 @@ const Aside = (
           class="invert"
           src={logo.src}
           alt={logo.alt}
+          title={logo.alt}
           width={199}
           height={44}
         />

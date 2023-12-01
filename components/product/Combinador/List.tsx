@@ -76,6 +76,7 @@ export default function List({ skus }: { skus: Props }) {
           class="ml-3"
           src="/arquivos/icon-combinador.svg"
           alt="regua"
+          title="regua"
         />
         <span class="w-[25px] h-[25px] text-sm font-semibold tracking-[0px] text-white flex items-center justify-center bg-[#ef9492] absolute right-[-5px] top-[-5px] rounded-[25px]">
           {products?.length}
@@ -106,7 +107,8 @@ export default function List({ skus }: { skus: Props }) {
                 height={25}
                 class="mr-3"
                 src="/arquivos/icon-combinador-black.svg"
-                alt="icone combinador"
+                alt={"icone combinador"}
+                title="icone combinador"
               />COMBINADOR DE TECIDOS:
             </h3>
             <p class="text-sm font-medium tracking-[0px] text-neutral-800 text-center leading-6">
@@ -134,7 +136,8 @@ export default function List({ skus }: { skus: Props }) {
                     width={170}
                     height={170}
                     src={sku.image}
-                    alt="produto do combinador"
+                    alt={sku.name}
+                    title={sku.name}
                   />
                   <div class="text-sm font-semibold tracking-[0px] text-[#171413] px-2.5 py-0">
                     {(sku.price / 100).toLocaleString("pt-BR", {

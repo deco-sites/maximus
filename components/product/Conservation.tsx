@@ -42,7 +42,7 @@ function Conservation({ conservationsList }: { conservationsList: any }) {
         {conservationsList.length > 0 &&
           conservationsList?.map((item: any) => (
             <div class="mb-5 mr-2">
-              <img src={buildImage(item.name, item.value)} alt={item.value} />
+              <img src={buildImage(item.name, item.value)} alt={item.value} title={item.value} />
             </div>
           ))}
       </div>
@@ -54,6 +54,7 @@ function Conservation({ conservationsList }: { conservationsList: any }) {
           class="mr-3"
           src="/arquivos/icon-composition.png"
           alt="icone composicao"
+          title="icone composicao"
         />
         Tabela de conservação
       </div>
@@ -78,6 +79,7 @@ function Conservation({ conservationsList }: { conservationsList: any }) {
           <img
             src="https://tfcszo.vteximg.com.br/arquivos/tabela-conservacao-desk.png"
             alt="tabela de conservaçao"
+            title="tabela de conservaçao"
           />
         </div>
       </div>

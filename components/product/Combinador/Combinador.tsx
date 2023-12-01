@@ -32,6 +32,7 @@ export default function Combinador() {
     const productsF = data?.map((item: any) => (
       {
         "image": item.image[0].url,
+        "name": item.name,
         "skuId": item.sku,
         "productId": item.inProductGroupWithID,
         "stock": item.offers?.offers[0]?.inventoryLevel.value,

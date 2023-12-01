@@ -210,6 +210,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
           <Image
             src={front.url!}
             alt={name}
+            title={name}
             width={WIDTH}
             height={HEIGHT}
             class={`bg-base-100 col-span-full row-span-full w-full ${
@@ -227,6 +228,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
             <Image
               src={back?.url ?? front.url!}
               alt={name}
+              title={name}
               width={WIDTH}
               height={HEIGHT}
               class="bg-base-100 col-span-full row-span-full transition-opacity w-full opacity-0 lg:group-hover:opacity-100"
