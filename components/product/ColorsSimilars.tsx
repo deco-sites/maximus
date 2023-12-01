@@ -29,7 +29,7 @@ function ColorsSimilars({query, url}: any) {
 }
 
   return (
-    <div class="md:my-28">
+    <div class="md:my-48">
       <p class="text-[13px] font-medium leading-[19px] tracking-[0] text-[#171413] mb-3">
         <strong>Outras cores disponíveis</strong>
       </p>

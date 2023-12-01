@@ -4,11 +4,12 @@ function Login() {
 const {user} = useUser();
 console.log("useUser", user.value?.email)
 console.log("user", user.value)
+console.log("user email", user.email)
 
 return (
 <div class="relative group">
   {
-  user ?
+  user?.email ?
   <div>
     <a class="btn btn-circle btn-sm btn-ghost hover:bg-[#171413] text-white" href="#" aria-label="Log in">
       <img src="/arquivos/icone-profile.svg" />

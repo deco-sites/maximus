@@ -8,46 +8,48 @@ import * as $$$$$$2 from "./sections/Category/CategoryBannerHeader.tsx";
 import * as $$$$$$3 from "./sections/Category/CategoryBannersSlider.tsx";
 import * as $$$$$$4 from "./sections/Category/CategoryList.tsx";
 import * as $$$$$$5 from "./sections/Category/CategoryText/CategoryText.tsx";
-import * as $$$$$$6 from "./sections/Category/CategoryTextHeader.tsx";
-import * as $$$$$$7 from "./sections/Content/BannerSchool.tsx";
-import * as $$$$$$8 from "./sections/Content/BannerSlider.tsx";
-import * as $$$$$$9 from "./sections/Content/BannerSlider2.tsx";
-import * as $$$$$$10 from "./sections/Content/Benefits.tsx";
-import * as $$$$$$11 from "./sections/Content/Faq.tsx";
-import * as $$$$$$12 from "./sections/Content/Institucional.tsx";
-import * as $$$$$$13 from "./sections/Content/InstitucionalAbout.tsx";
-import * as $$$$$$14 from "./sections/Content/InstitucionalClube.tsx";
-import * as $$$$$$15 from "./sections/Content/InstitucionalDesenho.tsx";
-import * as $$$$$$16 from "./sections/Content/InstitucionalDicionario.tsx";
-import * as $$$$$$17 from "./sections/Content/InstitucionalEstudante.tsx";
-import * as $$$$$$18 from "./sections/Content/InstitucionalFaq.tsx";
-import * as $$$$$$19 from "./sections/Content/InstitucionalLojas.tsx";
-import * as $$$$$$20 from "./sections/Content/Logos.tsx";
-import * as $$$$$$21 from "./sections/Content/LojasItem.tsx";
-import * as $$$$$$22 from "./sections/Content/TagH1.tsx";
-import * as $$$$$$23 from "./sections/Content/Testimonials.tsx";
-import * as $$$$$$24 from "./sections/Content/TitleShelf.tsx";
-import * as $$$$$$25 from "./sections/Footer/Footer.tsx";
-import * as $$$$$$26 from "./sections/Header/Header.tsx";
-import * as $$$$$$27 from "./sections/Images/BannerGrid.tsx";
-import * as $$$$$$28 from "./sections/Images/Carousel.tsx";
-import * as $$$$$$29 from "./sections/Images/ImageGallery.tsx";
-import * as $$$$$$30 from "./sections/Images/ShoppableBanner.tsx";
-import * as $$$$$$31 from "./sections/Integrations/YourviewsIntegrations.tsx";
-import * as $$$$$$32 from "./sections/Integrations/YourviewsReviewStore.tsx";
-import * as $$$$$$33 from "./sections/Links/LinkTree.tsx";
-import * as $$$$$$34 from "./sections/Links/Shortcuts.tsx";
-import * as $$$$$$35 from "./sections/Miscellaneous/CampaignTimer.tsx";
-import * as $$$$$$36 from "./sections/Miscellaneous/CookieConsent.tsx";
-import * as $$$$$$37 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$38 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$39 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$40 from "./sections/Product/ProductShelfPdp.tsx";
-import * as $$$$$$41 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$42 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$43 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$44 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$45 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$6 from "./sections/Category/CategoryText/CategoryTextFooter.tsx";
+import * as $$$$$$7 from "./sections/Category/CategoryTextFooter.tsx";
+import * as $$$$$$8 from "./sections/Category/CategoryTextHeader.tsx";
+import * as $$$$$$9 from "./sections/Content/BannerSchool.tsx";
+import * as $$$$$$10 from "./sections/Content/BannerSlider.tsx";
+import * as $$$$$$11 from "./sections/Content/BannerSlider2.tsx";
+import * as $$$$$$12 from "./sections/Content/Benefits.tsx";
+import * as $$$$$$13 from "./sections/Content/Faq.tsx";
+import * as $$$$$$14 from "./sections/Content/Institucional.tsx";
+import * as $$$$$$15 from "./sections/Content/InstitucionalAbout.tsx";
+import * as $$$$$$16 from "./sections/Content/InstitucionalClube.tsx";
+import * as $$$$$$17 from "./sections/Content/InstitucionalDesenho.tsx";
+import * as $$$$$$18 from "./sections/Content/InstitucionalDicionario.tsx";
+import * as $$$$$$19 from "./sections/Content/InstitucionalEstudante.tsx";
+import * as $$$$$$20 from "./sections/Content/InstitucionalFaq.tsx";
+import * as $$$$$$21 from "./sections/Content/InstitucionalLojas.tsx";
+import * as $$$$$$22 from "./sections/Content/Logos.tsx";
+import * as $$$$$$23 from "./sections/Content/LojasItem.tsx";
+import * as $$$$$$24 from "./sections/Content/TagH1.tsx";
+import * as $$$$$$25 from "./sections/Content/Testimonials.tsx";
+import * as $$$$$$26 from "./sections/Content/TitleShelf.tsx";
+import * as $$$$$$27 from "./sections/Footer/Footer.tsx";
+import * as $$$$$$28 from "./sections/Header/Header.tsx";
+import * as $$$$$$29 from "./sections/Images/BannerGrid.tsx";
+import * as $$$$$$30 from "./sections/Images/Carousel.tsx";
+import * as $$$$$$31 from "./sections/Images/ImageGallery.tsx";
+import * as $$$$$$32 from "./sections/Images/ShoppableBanner.tsx";
+import * as $$$$$$33 from "./sections/Integrations/YourviewsIntegrations.tsx";
+import * as $$$$$$34 from "./sections/Integrations/YourviewsReviewStore.tsx";
+import * as $$$$$$35 from "./sections/Links/LinkTree.tsx";
+import * as $$$$$$36 from "./sections/Links/Shortcuts.tsx";
+import * as $$$$$$37 from "./sections/Miscellaneous/CampaignTimer.tsx";
+import * as $$$$$$38 from "./sections/Miscellaneous/CookieConsent.tsx";
+import * as $$$$$$39 from "./sections/Newsletter/Newsletter.tsx";
+import * as $$$$$$40 from "./sections/Product/ProductDetails.tsx";
+import * as $$$$$$41 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$42 from "./sections/Product/ProductShelfPdp.tsx";
+import * as $$$$$$43 from "./sections/Product/SearchResult.tsx";
+import * as $$$$$$44 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$45 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$46 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$47 from "./sections/Theme/Theme.tsx";
 import * as $$$$$$$$$$$0 from "./apps/site.ts";
 
 const manifest = {
@@ -59,48 +61,51 @@ const manifest = {
     "deco-sites/maximus/sections/Category/CategoryList.tsx": $$$$$$4,
     "deco-sites/maximus/sections/Category/CategoryText/CategoryText.tsx":
       $$$$$$5,
-    "deco-sites/maximus/sections/Category/CategoryTextHeader.tsx": $$$$$$6,
-    "deco-sites/maximus/sections/Content/BannerSchool.tsx": $$$$$$7,
-    "deco-sites/maximus/sections/Content/BannerSlider.tsx": $$$$$$8,
-    "deco-sites/maximus/sections/Content/BannerSlider2.tsx": $$$$$$9,
-    "deco-sites/maximus/sections/Content/Benefits.tsx": $$$$$$10,
-    "deco-sites/maximus/sections/Content/Faq.tsx": $$$$$$11,
-    "deco-sites/maximus/sections/Content/Institucional.tsx": $$$$$$12,
-    "deco-sites/maximus/sections/Content/InstitucionalAbout.tsx": $$$$$$13,
-    "deco-sites/maximus/sections/Content/InstitucionalClube.tsx": $$$$$$14,
-    "deco-sites/maximus/sections/Content/InstitucionalDesenho.tsx": $$$$$$15,
-    "deco-sites/maximus/sections/Content/InstitucionalDicionario.tsx": $$$$$$16,
-    "deco-sites/maximus/sections/Content/InstitucionalEstudante.tsx": $$$$$$17,
-    "deco-sites/maximus/sections/Content/InstitucionalFaq.tsx": $$$$$$18,
-    "deco-sites/maximus/sections/Content/InstitucionalLojas.tsx": $$$$$$19,
-    "deco-sites/maximus/sections/Content/Logos.tsx": $$$$$$20,
-    "deco-sites/maximus/sections/Content/LojasItem.tsx": $$$$$$21,
-    "deco-sites/maximus/sections/Content/TagH1.tsx": $$$$$$22,
-    "deco-sites/maximus/sections/Content/Testimonials.tsx": $$$$$$23,
-    "deco-sites/maximus/sections/Content/TitleShelf.tsx": $$$$$$24,
-    "deco-sites/maximus/sections/Footer/Footer.tsx": $$$$$$25,
-    "deco-sites/maximus/sections/Header/Header.tsx": $$$$$$26,
-    "deco-sites/maximus/sections/Images/BannerGrid.tsx": $$$$$$27,
-    "deco-sites/maximus/sections/Images/Carousel.tsx": $$$$$$28,
-    "deco-sites/maximus/sections/Images/ImageGallery.tsx": $$$$$$29,
-    "deco-sites/maximus/sections/Images/ShoppableBanner.tsx": $$$$$$30,
+    "deco-sites/maximus/sections/Category/CategoryText/CategoryTextFooter.tsx":
+      $$$$$$6,
+    "deco-sites/maximus/sections/Category/CategoryTextFooter.tsx": $$$$$$7,
+    "deco-sites/maximus/sections/Category/CategoryTextHeader.tsx": $$$$$$8,
+    "deco-sites/maximus/sections/Content/BannerSchool.tsx": $$$$$$9,
+    "deco-sites/maximus/sections/Content/BannerSlider.tsx": $$$$$$10,
+    "deco-sites/maximus/sections/Content/BannerSlider2.tsx": $$$$$$11,
+    "deco-sites/maximus/sections/Content/Benefits.tsx": $$$$$$12,
+    "deco-sites/maximus/sections/Content/Faq.tsx": $$$$$$13,
+    "deco-sites/maximus/sections/Content/Institucional.tsx": $$$$$$14,
+    "deco-sites/maximus/sections/Content/InstitucionalAbout.tsx": $$$$$$15,
+    "deco-sites/maximus/sections/Content/InstitucionalClube.tsx": $$$$$$16,
+    "deco-sites/maximus/sections/Content/InstitucionalDesenho.tsx": $$$$$$17,
+    "deco-sites/maximus/sections/Content/InstitucionalDicionario.tsx": $$$$$$18,
+    "deco-sites/maximus/sections/Content/InstitucionalEstudante.tsx": $$$$$$19,
+    "deco-sites/maximus/sections/Content/InstitucionalFaq.tsx": $$$$$$20,
+    "deco-sites/maximus/sections/Content/InstitucionalLojas.tsx": $$$$$$21,
+    "deco-sites/maximus/sections/Content/Logos.tsx": $$$$$$22,
+    "deco-sites/maximus/sections/Content/LojasItem.tsx": $$$$$$23,
+    "deco-sites/maximus/sections/Content/TagH1.tsx": $$$$$$24,
+    "deco-sites/maximus/sections/Content/Testimonials.tsx": $$$$$$25,
+    "deco-sites/maximus/sections/Content/TitleShelf.tsx": $$$$$$26,
+    "deco-sites/maximus/sections/Footer/Footer.tsx": $$$$$$27,
+    "deco-sites/maximus/sections/Header/Header.tsx": $$$$$$28,
+    "deco-sites/maximus/sections/Images/BannerGrid.tsx": $$$$$$29,
+    "deco-sites/maximus/sections/Images/Carousel.tsx": $$$$$$30,
+    "deco-sites/maximus/sections/Images/ImageGallery.tsx": $$$$$$31,
+    "deco-sites/maximus/sections/Images/ShoppableBanner.tsx": $$$$$$32,
     "deco-sites/maximus/sections/Integrations/YourviewsIntegrations.tsx":
-      $$$$$$31,
+      $$$$$$33,
     "deco-sites/maximus/sections/Integrations/YourviewsReviewStore.tsx":
-      $$$$$$32,
-    "deco-sites/maximus/sections/Links/LinkTree.tsx": $$$$$$33,
-    "deco-sites/maximus/sections/Links/Shortcuts.tsx": $$$$$$34,
-    "deco-sites/maximus/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$35,
-    "deco-sites/maximus/sections/Miscellaneous/CookieConsent.tsx": $$$$$$36,
-    "deco-sites/maximus/sections/Newsletter/Newsletter.tsx": $$$$$$37,
-    "deco-sites/maximus/sections/Product/ProductDetails.tsx": $$$$$$38,
-    "deco-sites/maximus/sections/Product/ProductShelf.tsx": $$$$$$39,
-    "deco-sites/maximus/sections/Product/ProductShelfPdp.tsx": $$$$$$40,
-    "deco-sites/maximus/sections/Product/SearchResult.tsx": $$$$$$41,
-    "deco-sites/maximus/sections/Product/Wishlist.tsx": $$$$$$42,
-    "deco-sites/maximus/sections/Social/InstagramPosts.tsx": $$$$$$43,
-    "deco-sites/maximus/sections/Social/WhatsApp.tsx": $$$$$$44,
-    "deco-sites/maximus/sections/Theme/Theme.tsx": $$$$$$45,
+      $$$$$$34,
+    "deco-sites/maximus/sections/Links/LinkTree.tsx": $$$$$$35,
+    "deco-sites/maximus/sections/Links/Shortcuts.tsx": $$$$$$36,
+    "deco-sites/maximus/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$37,
+    "deco-sites/maximus/sections/Miscellaneous/CookieConsent.tsx": $$$$$$38,
+    "deco-sites/maximus/sections/Newsletter/Newsletter.tsx": $$$$$$39,
+    "deco-sites/maximus/sections/Product/ProductDetails.tsx": $$$$$$40,
+    "deco-sites/maximus/sections/Product/ProductShelf.tsx": $$$$$$41,
+    "deco-sites/maximus/sections/Product/ProductShelfPdp.tsx": $$$$$$42,
+    "deco-sites/maximus/sections/Product/SearchResult.tsx": $$$$$$43,
+    "deco-sites/maximus/sections/Product/Wishlist.tsx": $$$$$$44,
+    "deco-sites/maximus/sections/Social/InstagramPosts.tsx": $$$$$$45,
+    "deco-sites/maximus/sections/Social/WhatsApp.tsx": $$$$$$46,
+    "deco-sites/maximus/sections/Theme/Theme.tsx": $$$$$$47,
   },
   "apps": {
     "deco-sites/maximus/apps/site.ts": $$$$$$$$$$$0,
