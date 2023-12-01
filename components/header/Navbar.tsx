@@ -10,6 +10,7 @@ import { PLATFORM } from "$store/platform.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 import type { INavItem } from "./NavItem.tsx";
 import NavItem from "./NavItem.tsx";
+import Login from "./Login.tsx";
 import { navbarHeight } from "./constants.ts";
 
 import Searchh from "$store/components/search/Searchbar.tsx";
@@ -55,13 +56,7 @@ function Navbar({ items, searchbar, logo, logoCurt }: {
         )}
 
         <div class="flex items-center gap-2">
-          <a
-            class="btn btn-circle btn-sm btn-ghost hover:bg-[#171413] text-white"
-            href="/login"
-            aria-label="Log in"
-          >
-            <img src="/arquivos/icone-profile.svg" />
-          </a>
+          <Login/>
           <a
             class="btn btn-circle btn-sm btn-ghost hover:bg-[#171413] text-white"
             href="/wishlist"
@@ -101,13 +96,7 @@ function Navbar({ items, searchbar, logo, logoCurt }: {
           )}
         </div>
         <div class="flex-none min-w-[25%] flex items-center justify-end gap-4">
-          <a
-            class="btn btn-circle btn-sm btn-ghost hover:bg-[#171413] text-white"
-            href="/login"
-            aria-label="Log in"
-          >
-            <img src="/arquivos/icone-profile.svg" />
-          </a>
+         <Login/>
           <a
             class="btn btn-circle btn-sm btn-ghost hover:bg-[#171413] text-white"
             href="/wishlist"

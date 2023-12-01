@@ -12,9 +12,7 @@ export default function CategoryBannerHeader(
   { pageInfo }: { pageInfo: Props },
 ) {
   if (!pageInfo.records || !pageInfo.recordPerPage) return;
-  const href = window.location.href;
-
-  console.log(">window.location", window.location);
+  const href = window.location.href; 
 
   const pageFormated = href.indexOf("?") != -1 ? "&page=" : "?page=";
 

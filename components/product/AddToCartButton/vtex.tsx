@@ -27,7 +27,7 @@ function AddToCartButton(props: Props) {
 
   const { addItems } = useCart();
 
-  console.log("isMeter", isMeter);
+  //console.log("isMeter", isMeter);
 
   const onAddItem = () =>
     addItems({

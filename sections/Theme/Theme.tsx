@@ -407,6 +407,7 @@ function Section({
     <Head>
       <meta name="theme-color" content={theme["primary"]} />
       <meta name="msapplication-TileColor" content={theme["primary"]} />
+      <meta name="author" content="MAXIMUS TECIDOS"/>
       {fontsSheet?.map((fontSheet) => (
         <style
           type="text/css"

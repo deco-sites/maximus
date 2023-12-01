@@ -17,7 +17,6 @@ export default function List({ skus }: { skus: Props }) {
   const [products, setProducts] = useState<any>([]);
   const { addItems } = useCart();
   const { skusCombination } = useUI();
-  console.log("item", skus);
 
   const useAddToCart = () => {
     if (!products) return;
@@ -28,8 +27,6 @@ export default function List({ skus }: { skus: Props }) {
       seller: "1",
       quantity: 10,
     }));
-
-    console.log("clicouu", productsFormated);
 
     addItems({
       orderItems: productsFormated,

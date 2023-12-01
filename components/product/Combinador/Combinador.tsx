@@ -15,15 +15,9 @@ export default function Combinador() {
   const get = async () => {
     const listStorage: any | null = localStorage.getItem("combinador");
 
-    console.log("listStorage", listStorage);
-
-    const listFq = JSON.parse(listStorage)?.map((id: any) => `productId:${id}`);
-
-    console.log("tem?", listFq);
-    console.log("listFq.length?", listFq.length);
+    const listFq = JSON.parse(listStorage)?.map((id: any) => `productId:${id}`); 
 
     if (!listFq.length) {
-      console.log("nao tem?");
       setProducts([]);
       return;
     }

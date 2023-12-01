@@ -22,7 +22,7 @@ export default function Combinador({ sku }: { sku: string }) {
     });
 
     if (achou) {
-      console.log("ja existe");
+      //console.log("ja existe");
       return;
     }
 

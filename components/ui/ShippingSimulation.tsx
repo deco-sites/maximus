@@ -46,8 +46,6 @@ function ShippingContent({ simulation }: {
     );
   }
 
-  console.log("FFFFF", methods);
-
   return (
     <ul class="flex flex-col border border-solid border-[#f3f3f4]">
       <li>

@@ -55,9 +55,9 @@ function Result({
       >
         {title
           ? (
-            <h1 class="hidden max-md:block text-2xl font-semibold leading-[29px] text-center text-[#333333] mb-4 mt-8">
+            <h3 class="hidden max-md:block text-2xl font-semibold leading-[29px] text-center text-[#333333] mb-4 mt-8">
               {title}
-            </h1>
+            </h3>
           )
           : ""}
         <SearchControls

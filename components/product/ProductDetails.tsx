@@ -18,7 +18,6 @@ import type { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "deco-sites/std/commerce/utils/productToAnalyticsItem.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 import ProductSelector from "./ProductVariantSelector.tsx";
-import type { Product } from "apps/commerce/types.ts";
 
 import Conservation from "$store/islands/Conservation.tsx";
 import Payments from "$store/islands/Payments.tsx";
@@ -30,7 +29,6 @@ export type Variant = "front-back" | "slider" | "auto";
 
 export interface Props {
   page: ProductDetailsPage | null;
-  pageSimilar: Product[] | null;
   /**
    * @title Product view
    * @description Ask for the developer to remove this option since this is here to help development only and should not be used in production
@@ -121,9 +119,10 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
     ?.value;
 
   const discountt = listPrice &&
-    Math.round(((listPrice - price) / listPrice) * 100);
+    Math.round(((listPrice - price) / listPrice) * 100);    
 
-  const dataL = JSON.stringify({
+
+  /*const dataL = JSON.stringify({
     "@context": "https://schema.org/",
     "@type": "Product",
     "productID": "9170",
@@ -162,15 +161,15 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
       ],
       "offerCount": 1,
     },
-  });
+  });*/
+  
 
   return (
-    <div class="px-[27px] py-4 bg-[#fbfbfb]">
-      {/* yourviews inputs */}
-      <script
+    <div class="px-[27px] py-4 bg-[#fbfbfb]">   
+       {/*<script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: dataL }}
-      />
+      /> */}
       <input id="yv-productId" type="hidden" class="oxi" value={`9170`} />
 
       <input id="yv-productName" type="hidden" value={nameCurrent} />
@@ -280,7 +279,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
       />
 
       {/* Sku Selector */}
-      <div class="mt-4 sm:mt-6 hidden">
+      <div class="mt-4 sm:mt-6">
         <ProductSelector product={product} />
       </div>
       {/* Add to Cart and Favorites button */}
@@ -378,9 +377,8 @@ const useStableImages = (product: ProductDetailsPage["product"]) => {
 
 function Details({
   page,
-  pageSimilar,
   variant,
-}: { page: ProductDetailsPage; pageSimilar: Product[]; variant: Variant }) {
+}: { page: ProductDetailsPage; variant: Variant }) {
   const { product, breadcrumbList } = page;
 
   const {
@@ -430,13 +428,14 @@ function Details({
     },
   );
 
-  const similarsFormated = pageSimilar && pageSimilar?.map((item: any) => (
-    {
-      "image": item.image[0].url,
-      "url": item.url,
-    }
-  ));
+  const listCategory = product?.additionalProperty.filter((item)=>item.name==='category');
+  const queryCategory = listCategory.reduce((acc, obj) => {
+    acc += `/${obj.propertyID}`;
+    return acc;
+  }, 'C:');
+  const queryUrl = product?.category.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/>/g, '/').replace(/ /g, '-');
 
+ 
   if (variant === "slider") {
     return (
       <div class="max-md:mt-32 relative">
@@ -448,9 +447,9 @@ function Details({
         </div>
         <div class="flex md:hidden my-5 px-5">
           <div class="w-[90%]">
-            <h1 class="text-2xl font-normal leading-6 tracking-[0] text-[#171413]">
+            <h2 class="text-2xl font-normal leading-6 tracking-[0] text-[#171413]">
               {nameFormated}
-            </h1>
+            </h2>
           </div>
           <div class="w-[10%]">
             <WishlistButton
@@ -529,7 +528,7 @@ function Details({
             </div>
 
             <div class="max-md:order-4">
-              {isMeter && <ColorsSimilars similars={similarsFormated} />}
+              {isMeter && <ColorsSimilars query={queryCategory} url={queryUrl} />}
             </div>
           </div>
           {/* images */}
@@ -659,7 +658,7 @@ function Details({
 }
 
 function ProductDetails(
-  { page, pageSimilar, variant: maybeVar = "auto" }: Props,
+  { page, variant: maybeVar = "auto" }: Props,
 ) {
   /**
    * Showcase the different product views we have on this template. In case there are less
@@ -707,7 +706,7 @@ function ProductDetails(
   return (
     <div class="container py-0 sm:py-5">
       {page
-        ? <Details page={page} pageSimilar={pageSimilar} variant={variant} />
+        ? <Details page={page} variant={variant} />
         : <NotFound />}
       {page &&
         (

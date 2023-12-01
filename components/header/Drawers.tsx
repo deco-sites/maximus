@@ -38,7 +38,7 @@ const Aside = (
     >
       {title !== "Menu" &&
         (
-          <h1 class="flex items-center px-6 py-3">
+          <div class="flex items-center px-6 py-3">
             <img
               width={16}
               height={16}
@@ -48,7 +48,7 @@ const Aside = (
             <span class="ml-3 text-base font-normal leading-6 tracking-[0.5px] uppercase">
               {title}
             </span>
-          </h1>
+          </div>
         )}
       {logo && (
         <Image
