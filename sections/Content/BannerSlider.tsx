@@ -89,12 +89,12 @@ export default function BannerSlider(
         {listBanners}
       </Slider>
       <div class="hidden md:block">
-        <div class="z-10 absolute -left-2 lg:-left-8 top-1/2">
+        <div class="z-10 absolute -left-2 lg:-left-8 top-[100px]">
           <Slider.PrevButton class="btn-slider-custom btn-circle">
             <Icon size={18} id="ChevronLeft" strokeWidth={3} />
           </Slider.PrevButton>
         </div>
-        <div class="z-10 absolute -right-2 lg:-right-8 top-1/2">
+        <div class="z-10 absolute -right-2 lg:-right-8 top-[100px]">
           <Slider.NextButton class="btn-slider-custom btn-circle">
             <Icon size={24} id="ChevronRight" strokeWidth={3} />
           </Slider.NextButton>
