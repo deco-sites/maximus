@@ -17,7 +17,7 @@ export default function Combinador() {
 
     const listFq = JSON.parse(listStorage)?.map((id: any) => `productId:${id}`); 
 
-    if (!listFq.length) {
+    if (!listFq?.length) {
       setProducts([]);
       return;
     }

@@ -8,7 +8,7 @@ import { mapProductToAnalyticsItem } from "deco-sites/std/commerce/utils/product
 import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
 
 import InfoPagination from "$store/components/search/InfoPagination.tsx";
-import Paginations from "$store/islands/PaginationCustom.tsx";
+//import Paginations from "$store/islands/PaginationCustom.tsx";
 import Sort from "$store/components/search/Sort.tsx";
 
 export interface Layout {
@@ -88,12 +88,12 @@ function Result({
               <div class="hidden md:flex items-center justify-between">
                 {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}
 
-                <Paginations pageInfo={pageInfo} />
+                
               </div>
             </div>
             <ProductGallery products={products} layout={cardLayout} />
 
-            <Paginations pageInfo={pageInfo} />
+            
             <InfoPagination pageInfo={pageInfo} />
           </div>
         </div>

@@ -386,11 +386,28 @@ function Details({
     isVariantOf,
   } = product;
 
+  const formatBrandLink = (str) => {
+    // Remover acentos e substituir "(" e ")" por "-"
+    const replacedStr = str
+      .normalize('NFD') // Normalizar para decompor os caracteres acentuados
+      .replace(/[\u0300-\u036f]/g, '') // Remover diacríticos
+      .replace(/[()]/g, '-'); // Substituir "(" e ")" por "-"
+  
+    // Substituir espaços por hifens e converter para maiúsculas
+    const hyphenatedStr = replacedStr.replace(/\s+/g, '-').toUpperCase();
+  
+    // Adicionar uma barra no início e no final
+    const finalStr = `/${hyphenatedStr}/`;
+  
+    return finalStr;
+  }
+
   const id = useId();
   const images = useStableImages(product);
   const productGroupID = isVariantOf?.productGroupID ?? "";
   const nameFormated = product.isVariantOf?.name;
   const brand = product.brand.name;
+  const brandLink = formatBrandLink(product.brand.name);
 
   const isMeter =
     product?.additionalProperty?.find((item: any) => item.name === "category")
@@ -429,6 +446,7 @@ function Details({
   );
 
   const listCategory = product?.additionalProperty.filter((item)=>item.name==='category');
+  
   const queryCategory = listCategory.reduce((acc, obj) => {
     acc += `/${obj.propertyID}`;
     return acc;
@@ -474,7 +492,7 @@ function Details({
               </div>
               <div class="w-[58%]">
                 <a
-                  href="#"
+                  href={brandLink}
                   class="text-[13px] font-medium leading-[19px] tracking-[0px] text-[#171413] underline"
                 >
                   {brand}
