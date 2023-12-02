@@ -1,4 +1,6 @@
 import Icon from "$store/components/ui/Icon.tsx";
+import { useUser } from "deco-sites/std/packs/vtex/hooks/useUser.ts";
+
 import type { INavItem } from "./NavItem.tsx";
 
 export interface Props {
@@ -6,6 +8,8 @@ export interface Props {
 }
 
 function MenuItem({ item }: { item: INavItem }) {
+  const {user} = useUser();
+
   return (
     <div class="collapse collapse-plus">
       {item.children?.length
@@ -62,7 +66,7 @@ function Menu({ items }: Props) {
             href="/login"
           >
             <Icon id="User" size={24} strokeWidth={2} />
-            <span class="text-sm uppercase font-medium">Entrar/Cadastrar</span>
+            <span class="text-sm uppercase font-medium">{user?.email ? "Minha Conta" : "Entrar/Cadastrar"}</span>
           </a>
         </li>
         <li>

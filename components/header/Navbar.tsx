@@ -59,7 +59,7 @@ function Navbar({ items, searchbar, logo, logoCurt }: {
           <Login/>
           <a
             class="btn btn-circle btn-sm btn-ghost hover:bg-[#171413] text-white"
-            href="/wishlist"
+            href="/_secure/account#/wishlist"
             aria-label="Wishlist"
           >
             <img src="/arquivos/icone-wishlist.svg" alt="icone wishlist" title="icone wishlist" />
@@ -100,7 +100,7 @@ function Navbar({ items, searchbar, logo, logoCurt }: {
          <Login/>
           <a
             class="btn btn-circle btn-sm btn-ghost hover:bg-[#171413] text-white"
-            href="/wishlist"
+            href="/_secure/account#/wishlist"
             aria-label="Wishlist"
           >
             <img src="/arquivos/icone-wishlist.svg" alt="icone wishlist" title="icone wishlist" />

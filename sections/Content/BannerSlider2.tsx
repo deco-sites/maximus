@@ -1,3 +1,4 @@
+import Image from "deco-sites/std/components/Image.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface Props {
@@ -12,37 +13,37 @@ export default function BannerSlider2(
 ) {
   const {
     banners = [{
-      image: "/arquivos/banner-2-marcacao.png",
+      image: "https://tfcszo.vteximg.com.br/arquivos/banner-2-marcacao.png",
       link: "#",
     }, {
-      image: "/arquivos/banner-2-marcacao-2.png",
+      image: "https://tfcszo.vteximg.com.br/arquivos/banner-2-marcacao-2.png",
       link: "#",
     }, {
-      image: "/arquivos/banner-2-marcacao-3.png",
+      image: "https://tfcszo.vteximg.com.br/arquivos/banner-2-marcacao-3.png",
       link: "#",
     }, {
-      image: "/arquivos/banner-2-marcacao-2.png",
+      image: "https://tfcszo.vteximg.com.br/arquivos/banner-2-marcacao-2.png",
       link: "#",
     }, {
-      image: "/arquivos/banner-2-marcacao-3.png",
+      image: "https://tfcszo.vteximg.com.br/arquivos/banner-2-marcacao-3.png",
       link: "#",
     }],
   } = props;
 
-  const listBanners = banners && banners.map((banner) => {
+  const listBanners = banners && banners.map((banner, index) => {
     return (
       <a
         href={banner.link}
         class="block min-w-[150px] text-[#585858] hover:text-[#000] hover:font-medium"
       >
-        <img
-          width={150}
-          height={80}
-          loading="lazy"
-          src={banner.image}
-          alt={banner.title}
-          title={banner.title}
-        />
+        <Image
+              src={banner.image}
+              alt={banner.title ? banner.title : `item ${index} da categoria`}
+              title={banner.title ? banner.title : `item ${index} da categoria`}
+              width={150}
+              height={80}
+              loading="eager"
+            />        
       </a>
     );
   });

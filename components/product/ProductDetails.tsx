@@ -80,8 +80,8 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
 
   const isMeter =
     product?.additionalProperty?.find((item: any) => item.name === "category")
-        ?.value === "TECIDOS"
-      ? true
+        ?.value === "TECIDOS" && product?.additionalProperty?.find((item: any) => item.name === "cluster")
+        ?.propertyID !== "160" ? true
       : false;
 
   const categoryID = product?.additionalProperty?.find((item: any) =>
@@ -411,8 +411,8 @@ function Details({
 
   const isMeter =
     product?.additionalProperty?.find((item: any) => item.name === "category")
-        ?.value === "TECIDOS"
-      ? true
+        ?.value === "TECIDOS" && product?.additionalProperty?.find((item: any) => item.name === "cluster")
+        ?.propertyID !== "160" ? true
       : false;
 
   const descriptionCurt = product.isVariantOf &&

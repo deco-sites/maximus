@@ -1,5 +1,6 @@
 import { useId } from "$store/sdk/useId.ts";
 
+import Image from "deco-sites/std/components/Image.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
@@ -18,35 +19,35 @@ export default function BannerSlider(
 ) {
   const {
     banners = [{
-      image: "/arquivos/banner-slider-1.png",
+      image: "https://tfcszo.vteximg.com.br/arquivos/banner-slider-1.png",
       title: "Alfaiataria",
       link: "/tecidos/alfaiataria",
     }, {
-      image: "/arquivos/banner-slider-2.png",
+      image: "https://tfcszo.vteximg.com.br/arquivos/banner-slider-2.png",
       title: "Algodão",
       link: "/tecidos/algodao",
     }, {
-      image: "/arquivos/banner-slider-3.png",
+      image: "https://tfcszo.vteximg.com.br/arquivos/banner-slider-3.png",
       title: "Camurça",
       link: "/tecidos/camurca",
     }, {
-      image: "/arquivos/banner-slider-4.png",
+      image: "https://tfcszo.vteximg.com.br/arquivos/banner-slider-4.png",
       title: "Cetim",
       link: "/tecidos/cetim",
     }, {
-      image: "/arquivos/banner-slider-5.png",
+      image: "https://tfcszo.vteximg.com.br/arquivos/banner-slider-5.png",
       title: "Chiffon",
       link: "/tecidos/chiffon",
     }, {
-      image: "/arquivos/banner-slider-3.png",
+      image: "https://tfcszo.vteximg.com.br/arquivos/banner-slider-3.png",
       title: "Camurça",
       link: "/tecidos/camurca",
     }, {
-      image: "/arquivos/banner-slider-4.png",
+      image: "https://tfcszo.vteximg.com.br/arquivos/banner-slider-4.png",
       title: "Cetim",
       link: "/tecidos/cetim",
     }, {
-      image: "/arquivos/banner-slider-5.png",
+      image: "https://tfcszo.vteximg.com.br/arquivos/banner-slider-5.png",
       title: "Chiffon",
       link: "/tecidos/chiffon",
     }],
@@ -63,15 +64,15 @@ export default function BannerSlider(
         <a
           href={banner.link}
           class="block w-full text-[#585858] hover:text-[#000] hover:font-medium"
-        >
-          <img
-            width={234}
-            height={240}
-            loading="lazy"
-            src={`${banner.image}?v=231123`}
-            alt={banner.title}
-            title={banner.title}
-          />
+        >         
+          <Image
+             src={`${banner.image}?v=231123`}
+             alt={banner.title}
+             title={banner.title}
+              width={234}
+              height={240}
+              loading="lazy"
+            />    
           <p class="mt-3 mb-9 text-center text-base">
             {banner.title}
           </p>

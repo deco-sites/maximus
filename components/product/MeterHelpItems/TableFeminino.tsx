@@ -24,7 +24,7 @@ export default function TableFeminino() {
     <div class="w-full [&>*:nth-child(odd)]:bg-[#eaeaea]">
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           BLAZER MANGA CURTA COM GOLA
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">1,50 M</div>
@@ -34,7 +34,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           BLAZER MANGA LONGA
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">1,70 M</div>
@@ -44,7 +44,7 @@ export default function TableFeminino() {
   
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           CALÇA ALFAIATARIA
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">1,20 M</div>
@@ -54,7 +54,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           CALÇA CIGARRETE
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">1,10 M</div>
@@ -64,7 +64,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           CALÇA PANTALONA
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">2,10 M</div>
@@ -74,7 +74,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           CAMISETE OU CAMISA
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">1,20 M</div>
@@ -84,7 +84,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           MACACÃO CURTO
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">1,80 M</div>
@@ -94,7 +94,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           MACACÃO LONGO
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">2,80 M</div>
@@ -104,7 +104,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           MINI-SAIA
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">0,60 M</div>
@@ -114,7 +114,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           REGATA
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">0,70 M</div>
@@ -124,7 +124,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           SAIA ENVELOPE
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">1,00 M</div>
@@ -134,7 +134,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           SAIA LÁPIS
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">0,80 M</div>
@@ -144,7 +144,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           SAIA LONGA EVASÊ (6 FOLHAS)
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">3,00 M</div>
@@ -154,7 +154,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           SAIA LONGA EVASÊ (NO FIO RETO)
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">2,00 M</div>
@@ -164,7 +164,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           SAIA LONGA GODÊ
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">3,00 M</div>
@@ -174,7 +174,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           SAIA LONGA GODÊ DUPLO
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">6,00 M</div>
@@ -184,7 +184,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           SAIA LONGA RETA
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">1,20 M</div>
@@ -194,7 +194,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           SHORTS CURTO
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">0,70 M</div>
@@ -204,7 +204,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           TOP TOMARA QUE CAIA (CORPETE)
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">0,60 M</div>
@@ -214,7 +214,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           VESTIDO CURTO GODÊ
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">2,00 M</div>
@@ -224,7 +224,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           VESTIDO EVASÊ CURTO
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">2,00 M</div>
@@ -234,7 +234,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           VESTIDO LONGO EVASÊ
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">6,00 M</div>
@@ -244,7 +244,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           VESTIDO LONGO SEREIA
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">3,00 M</div>
@@ -254,7 +254,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           VESTIDO TUBINHO CURTO
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">1,00 M</div>
@@ -264,7 +264,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+          <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
           VESTIDO TUBINHO CURTO C/ MANGA
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">1,50 M</div>

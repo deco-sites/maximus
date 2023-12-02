@@ -86,7 +86,8 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
 
   const isMeter =
     product?.additionalProperty?.find((item: any) => item.name === "category")
-        ?.value === "TECIDOS"
+        ?.value === "TECIDOS" && product?.additionalProperty?.find((item: any) => item.name === "cluster")
+        ?.propertyID !== "160" 
       ? true
       : false;
 
@@ -95,6 +96,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
     !l?.basics?.contentAlignment || l?.basics?.contentAlignment == "Left"
       ? "left"
       : "center";
+
   const skuSelector = variants.map(([value, [link]]) => (
     <li>
       <a href={link}>
@@ -232,7 +234,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
               width={WIDTH}
               height={HEIGHT}
               class="bg-base-100 col-span-full row-span-full transition-opacity w-full opacity-0 lg:group-hover:opacity-100"
-              sizes="(max-width: 640px) 50vw, 20vw"
+              sizes="(max-width: 640px) 30vw, 20vw"
               loading="lazy"
               decoding="async"
             />

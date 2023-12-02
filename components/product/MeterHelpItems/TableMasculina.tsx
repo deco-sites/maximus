@@ -24,7 +24,7 @@ export default function TableMasculina() {
       <div class="w-full [&>*:nth-child(odd)]:bg-[#eaeaea]">
         <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
           <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-            <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+            <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
             COLETE
           </div>
           <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">0,80 M</div>
@@ -34,7 +34,7 @@ export default function TableMasculina() {
   
         <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
           <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-            <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+            <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
             CAMISA
           </div>
           <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">1,20 M</div>
@@ -44,7 +44,7 @@ export default function TableMasculina() {
 
         <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
           <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-            <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+            <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
             CALÇA ALFAIATARIA
           </div>
           <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">1,30 M</div>
@@ -54,7 +54,7 @@ export default function TableMasculina() {
 
         <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
           <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-            <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+            <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
             BLAZER (PALETÓ)
           </div>
           <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">1,80 M</div>

@@ -171,9 +171,9 @@ function AddToCartButton(props: Props) {
       </div>
       {notification
         ? (
-          <div class="w-full fixed z-10 bottom-2 left-0 flex justify-center items-center">
+          <div class="w-full fixed z-[99] bottom-2 left-0 flex justify-center items-center">
             <div class="text-xs font-medium tracking-[0px] text-white border rounded px-6 py-4 flex justify-center items-center mb-5 border-solid border-[#e90000] bg-[#e90000]">
-              A quantidade deve ser igual ou maior que 0.40 centímetro!
+             {` A quantidade deve ser igual ou maior que ${isMeter ? "0.40 centímetro" : "1"}`}
             </div>
           </div>
         )
