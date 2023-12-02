@@ -92,7 +92,7 @@ export default function Categories(
       <div class="w-full max-w-[950px] mx-auto relative">
         <Slider
           class={`flex ${
-            banners?.children?.length < 9 ? "justify-center" : ""
+            banners?.children?.length < 9 ? "justify-start md:justify-center" : ""
           } items-center carousel carousel-end w-full`}
         >
           {listBanners}
