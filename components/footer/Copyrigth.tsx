@@ -17,9 +17,7 @@ export default function Copyrigth({ copyrigth }: Props) {
         )}
       {copyrigth?.texto2 &&
         (
-          <p class="max-w-[265px] m-auto text-center text-[#999] text-[10px] mb-5">
-            {copyrigth.texto2}
-          </p>
+          <p class="max-w-[265px] m-auto text-center text-[#999] text-[10px] mb-5" dangerouslySetInnerHTML={{__html: copyrigth.texto2}}></p>
         )}
       {copyrigth?.texto3 &&
         (

@@ -317,7 +317,7 @@ function Footer({
     texto1:
       "As fotos aqui veiculadas, logotipo e marca são de propriedade do site www.maximustecidos.com.br. É vetada a sua reprodução, total ou parcial, sem a expressa autorização da administradora do site. Preços e condições de pagamento apresentados neste 'site' somente são válidos para as compras efetuadas no ato da sua exibição.",
     texto2:
-      "Maximus Comércio de Tecidos Eireli CNPJ: 02.449.665/0001-02 Av Maripá, 4846, Centro, Toledo/PR, Cep: 85901-000",
+      "Maximus Comércio de Tecidos Eireli <br> CNPJ: 02.449.665/0001-02 <br> Av Maripá, 4846, Centro, Toledo/PR, Cep: 85901-000",
     texto3: "Copyright ©2022 - Todos os Direitos Reservados à Maximus Tecidos",
   },
 }: Props) {
