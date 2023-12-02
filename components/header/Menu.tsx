@@ -8,8 +8,6 @@ export interface Props {
 }
 
 function MenuItem({ item }: { item: INavItem }) {
-  const {user} = useUser();
-
   return (
     <div class="collapse collapse-plus">
       {item.children?.length
@@ -49,6 +47,7 @@ function MenuItem({ item }: { item: INavItem }) {
 }
 
 function Menu({ items }: Props) {
+  const {user} = useUser();
   return (
     <div class="flex flex-col h-full bg-white">
       <ul class="px-2 flex-grow flex flex-col">
