@@ -57,7 +57,7 @@ function Avatar({ content, variant = "default", type }: Props) {
               style={{
                 backgroundImage: `url(/arquivos/${
                   urlFormatada(content)
-                }.png?v=noah14092023)`,
+                }.png?v=haonabuc14092023)`,
               }}
               class="w-[25px] h-[25px] border border-neutral-100 bg-contain bg-no-repeat rounded-[50%] border-solid"
             >

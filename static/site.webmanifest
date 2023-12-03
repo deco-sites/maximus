@@ -15,17 +15,17 @@
             "type": "image/png"
         },
         {
-            "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a9e91e5f-df85-4b45-bae6-f61c3a5a5c4e",
+            "src": "/icon-v2-256x256.png",
             "sizes": "256x256",
             "type": "image/png"
         },
         {
-            "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a9e91e5f-df85-4b45-bae6-f61c3a5a5c4e",
+            "src": "/icon-v2-387x384.png",
             "sizes": "384x384",
             "type": "image/png"
         },
         {
-            "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a9e91e5f-df85-4b45-bae6-f61c3a5a5c4e",
+            "src": "/icon-v2-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }

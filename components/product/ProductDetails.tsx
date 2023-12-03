@@ -170,7 +170,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: dataL }}
       /> */}
-      <input id="yv-productId" type="hidden" class="oxi" value={`9170`} />
+      <input id="yv-productId" type="hidden" class="2b" value={productGroupID} />
 
       <input id="yv-productName" type="hidden" value={nameCurrent} />
 
@@ -180,7 +180,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
         value={imageFirst ? imageFirst : ""}
       />
 
-      <input id="yv-productPrice" type="hidden" value={`R$ 39,00`} />
+      <input id="yv-productPrice" type="hidden" value={`R$ 113,39`} />
 
       <input
         id="yv-productCategory"
