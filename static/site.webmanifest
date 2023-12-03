@@ -1,34 +1,34 @@
 {
-    "theme_color": "#5f9b9a",
-    "background_color": "#a3adcc",
+    "theme_color": "#171413",
+    "background_color": "#000",
     "display": "fullscreen",
     "scope": "/",
     "start_url": "/",
     "id": "/?source=pwa",
-    "name": "Tecidos - Confira toda a coleção da Maximus Tecidos",
-    "short_name": "Fashion",
+    "name": "Maximus Tecidos",
+    "short_name": "Maximus",
     "orientation": "portrait",
     "icons": [
         {
-            "src": "/icon-v2-192x192.png",
+            "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a9e91e5f-df85-4b45-bae6-f61c3a5a5c4e",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/icon-v2-256x256.png",
+            "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a9e91e5f-df85-4b45-bae6-f61c3a5a5c4e",
             "sizes": "256x256",
             "type": "image/png"
         },
         {
-            "src": "/icon-v2-384x384.png",
+            "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a9e91e5f-df85-4b45-bae6-f61c3a5a5c4e",
             "sizes": "384x384",
             "type": "image/png"
         },
         {
-            "src": "/icon-v2-512x512.png",
+            "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a9e91e5f-df85-4b45-bae6-f61c3a5a5c4e",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
-    "description": "Latest fashion trends in Rio"
+    "description": "Tecidos - Confira toda a coleção da Maximus Tecidos"
 }

@@ -46,7 +46,7 @@ function FilterValues({ key, values }: FilterToggle) {
 
         if (key === "Cores Disponíveis" || key === "tamanho") {
           return (
-            <a href={url}>
+            <a href={url} rel="nofollow">
               <Avatar
                 content={value}
                 variant={selected ? "active" : "default"}
