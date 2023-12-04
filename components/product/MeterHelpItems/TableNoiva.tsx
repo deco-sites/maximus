@@ -24,7 +24,7 @@ export default function TableNoiva() {
       <div class="w-full [&>*:nth-child(odd)]:bg-[#eaeaea]">
         <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
           <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-            <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
+            <img class="mr-2.5" src="/arquivos/icon-tabela-26.svg" alt="icone" />
             VESTIDO SEREIA
           </div>
           <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">4,50 M</div>
@@ -34,7 +34,7 @@ export default function TableNoiva() {
   
         <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
           <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-            <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
+            <img class="mr-2.5" src="/arquivos/icon-tabela-27.svg" alt="icone" />
             VESTIDO EVASÊ DE FOLHAS
           </div>
           <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">4,50 M</div>
@@ -44,7 +44,7 @@ export default function TableNoiva() {
     
         <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
           <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-            <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
+            <img class="mr-2.5" src="/arquivos/icon-tabela-28.svg" alt="icone" />
             CAUDA AVULSA
           </div>
           <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">4,50 M</div>
@@ -54,7 +54,7 @@ export default function TableNoiva() {
   
         <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
           <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-            <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
+            <img class="mr-2.5" src="/arquivos/icon-tabela-29.svg" alt="icone" />
             2 GODÊ SEM CAUDA
           </div>
           <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">6,00 M</div>
@@ -64,7 +64,7 @@ export default function TableNoiva() {
   
         <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
           <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-            <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
+            <img class="mr-2.5" src="/arquivos/icon-tabela-30.svg" alt="icone" />
             2 GODÊ COM CAUDA
           </div>
           <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">8,00 M</div>
@@ -74,7 +74,7 @@ export default function TableNoiva() {
   
         <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
           <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-            <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
+            <img class="mr-2.5" src="/arquivos/icon-tabela-31.svg" alt="icone" />
             1 GODÊ SEM CAUDA
           </div>
           <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">3,00 M</div>
@@ -84,7 +84,7 @@ export default function TableNoiva() {
   
         <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
           <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-            <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone da tabela de medida" title="icone da tabela de medida"/>
+            <img class="mr-2.5" src="/arquivos/icon-tabela-32.svg" alt="icone" />
             1 GODÊ COM CAUDA
           </div>
           <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">4,50 M</div>

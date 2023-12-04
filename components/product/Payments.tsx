@@ -1,19 +1,25 @@
-import { useState } from "preact/hooks";
+import { useState, useEffect } from "preact/hooks";
 import { useUI } from "$store/sdk/useUI.ts";
 import { formatPrice } from "$store/sdk/format.ts";
 
 export interface Props {
-  price: number;
-  offers: any;
-  numberInstallments: number;
+  price: number,
+  offers: any,
+  maxParcels: number,
+  isMeter: boolean,
 }
 
-function Payments({ price, offers, numberInstallments }: Props) {
+function Payments({ price, offers, maxParcels,isMeter }: Props) {
   const [show, setShow] = useState<boolean>(false);
+  const [numberParcels, setNumberParcels] = useState<any>([]);
   const { quantityPdp } = useUI();
-  console.log("quantityPdp", quantityPdp.value);
-  const priceQuantity = price * quantityPdp.value;
-  console.log("priceQuantity", priceQuantity);
+
+  useEffect(() => {
+    const minParcels = Math.trunc((price * quantityPdp.value)/25);
+    const parcels = Array(minParcels).fill(minParcels);
+    setNumberParcels(parcels);
+  },[quantityPdp.value]);
+
   return (
     <div>
       <div
@@ -69,33 +75,51 @@ function Payments({ price, offers, numberInstallments }: Props) {
               </div>
               <div class="flex items-center text-center w-2/5 min-h-[35px] text-sm font-medium text-black leading-4">
                 {formatPrice(
-                  ((price * quantityPdp.value) / 10) -
-                    (((price * quantityPdp.value) / 10) * 0.05),
+                  (price * quantityPdp.value) -
+                    ((price * quantityPdp.value) * 0.05),
                   offers,
                 )}
               </div>
               <div class="flex items-center text-right w-1/5 min-h-[35px] text-sm font-medium text-black leading-4">
                 {formatPrice(
-                  ((price * quantityPdp.value) / 10) -
-                    (((price * quantityPdp.value) / 10) * 0.05),
+                  (price * quantityPdp.value) -
+                    ((price * quantityPdp.value) * 0.05),
                   offers,
                 )}
               </div>
             </div>
-            <div class="w-full flex justify-between px-[15px] md:px-[50px] py-0">
-              <div class="flex items-center w-3/5 min-h-[35px] text-sm font-medium text-black leading-4">
-                {numberInstallments}x sem juros
-              </div>
-              <div class="flex items-center text-center w-2/5 min-h-[35px] text-sm font-medium text-black leading-4">
-                {formatPrice(
-                  ((price * quantityPdp.value) / 10) / numberInstallments,
-                  offers,
-                )}
-              </div>
-              <div class="flex items-center text-right w-1/5 min-h-[35px] text-sm font-medium text-black leading-4">
-                {formatPrice((price * quantityPdp.value) / 10, offers)}
-              </div>
-            </div>
+            {
+              numberParcels?.map((item:any,index:number)=>(
+                <div class={`w-full ${(index+1) <= maxParcels ? 'flex' : 'hidden'} justify-between px-[15px] md:px-[50px] py-0`}>
+                  <div class="flex items-center w-3/5 min-h-[35px] text-sm font-medium text-black leading-4">
+                    {isMeter ?                  
+                    `${index+1}x ${(index+1) < 4 ? "sem juros" : "com juros"}`
+                    :
+                    `${index+1} x sem juros`
+                    }
+                  </div>
+                  <div class="flex items-center text-center w-2/5 min-h-[35px] text-sm font-medium text-black leading-4">
+                    {(index + 1) > 3 
+                    ?
+                    formatPrice(((price * quantityPdp.value) + ((price * quantityPdp.value) * .02)) / (index + 1), offers)
+                    :
+                    formatPrice(
+                      (price * quantityPdp.value) / (index+1),
+                      offers,
+                    )
+                    }
+                  </div>
+                  <div class="flex items-center text-right w-1/5 min-h-[35px] text-sm font-medium text-black leading-4">
+                    {(index + 1) > 3 && isMeter
+                      ?
+                      formatPrice((price * quantityPdp.value) + ((price * quantityPdp.value) * .02), offers)
+                      :
+                      formatPrice(price * quantityPdp.value, offers)
+                    }
+                  </div>
+                </div>
+              ))
+            }
           </div>
         </div>
       </div>

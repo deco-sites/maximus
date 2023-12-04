@@ -30,7 +30,7 @@ const Aside = (
     logo?: { src: string; alt: string };
   },
 ) => (
-  <div class="bg-base-100 grid grid-rows-[auto_1fr] h-full max-w-[90vw]">
+  <div class="bg-base-100 grid grid-rows-[auto_1fr] h-full max-w-[100vw] md:max-w-[90vw]">
     <div
       class={`flex items-center border-b border-[#ebebeb] ${
         title === "Menu" ? "py-3 justify-center" : "justify-between"

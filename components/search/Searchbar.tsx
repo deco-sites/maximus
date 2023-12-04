@@ -116,7 +116,7 @@ function Searchbar({
 
       {notFound && searchInputRef.current
         ? (
-          <div class="bg-white flex flex-col gap-4 w-[500px] absolute left-0">
+          <div class="bg-white hidden flex-col gap-4 w-[500px] absolute left-0">
             <Button
               type="button join-item"
               class="btn-ghost btn-square hidden sm:inline-flex"

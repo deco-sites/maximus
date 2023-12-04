@@ -72,11 +72,11 @@ function CartItem(
         style={{ aspectRatio: "190 / 190" }}
         width={190}
         height={190}
-        class="h-full object-contain"
+        class="h-full object-contain min-w-[80px]"
       />
 
       <div class="flex gap-2">
-        <div class="ml-20 w-[390px]">
+        <div class="ml-2 md:ml-20 w-[150px] md:w-[390px]">
           <div class="flex justify-between items-center">
             <span class="text-sm font-normal leading-6 w-full whitespace-normal overflow-hidden text-ellipsis pt-2.5">
               {name}
@@ -96,7 +96,7 @@ function CartItem(
             </span>
           </div>
         </div>
-        <div class="w-[100px]">
+        <div class="w-[60px] md:w-[100px]">
           <Button
             disabled={loading || isGift}
             loading={loading}
