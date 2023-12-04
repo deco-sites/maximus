@@ -1,9 +1,16 @@
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Header from "$store/components/ui/SectionHeader.tsx";
+import Modal from "$store/components/ui/Modal.tsx";
+import { useId } from "$store/sdk/useId.ts";
+import { useSignal } from "@preact/signals";
+
+import Item from "$store/islands/BenefitItem.tsx";
 
 export interface Props {
   title?: string;
   description?: string;
+ /** @format textarea */
+  content?: string;
   benefits?: Array<{
     image: LiveImage;
     description: string;
@@ -17,23 +24,30 @@ export interface Props {
 export default function Benefits(
   props: Props,
 ) {
+  const id = useId();
+  const open = useSignal(false);
+
   const {
     title = "",
     description = "",
     benefits = [{
       image: "/arquivos/benefits-1.png",
       description: "Loja <b>100% Segura!</b> <br> Somos a maior do Brasil",
+      content: "",
     }, {
       image: "/arquivos/benefits-2.png",
       description:
         "<b>3x sem juros</b> no cartão <br> ou <b>5% desconto</b> no pix",
+        content: "",
     }, {
       image: "/arquivos/benefits-3.png",
       description:
         "<b>Frete grátis</b> para todo o <br> Brasil. <b>*consulte condições</b>",
+        content: "contennt aqui ne",
     }, {
       image: "/arquivos/benefits-4.png",
       description: "Conheça os cursos da Escola <br> de Moda On-line",
+      content: "",
     }],
     layout,
   } = props;
@@ -46,7 +60,8 @@ export default function Benefits(
 
     return (
       <div
-        class={`flex items-center px-4 py-3 border border-[#eeeeee] rounded-[16px] max-md:min-w-max`}
+        class={`${benefit.content ? 'cursor-pointer' : ''} flex items-center px-4 py-3 border border-[#eeeeee] rounded-[16px] max-md:min-w-max`} 
+        onClick={() => open.value = true}
       >
         <div class="flex-none">
           <img
@@ -74,7 +89,7 @@ export default function Benefits(
             }}
           >
           </p>
-        </div>
+        </div>       
       </div>
     );
   });
@@ -91,9 +106,20 @@ export default function Benefits(
             />
             <div class="w-full flex justify-center">
               <div class="flex gap-4 lg:gap-8 w-full lg:grid grid-flow-col auto-cols-fr overflow-auto no-scrollbar">
+              <Item/>
                 {listOfBenefits}
               </div>
             </div>
+            <div id={id}>
+        <Modal
+          class="w-11/12 max-w-7xl grid grid-cols-[48px_1fr_48px] grid-rows-1 place-items-center"
+          loading="lazy"
+          open={open.value}
+          onClose={() => open.value = false}
+        >
+          <p>testee..</p>
+          </Modal>
+        </div>
           </div>
         )
         : ""}
@@ -117,9 +143,9 @@ export default function Benefits(
             title={title}
             description={description}
             alignment={layout?.headerAlignment || "center"}
-          />
-          <div class="w-full flex justify-center">
-            <div class="grid grid-cols-2 gap-4 w-full lg:gap-8 lg:grid-flow-col lg:auto-cols-fr">
+          />          
+          <div class="w-full flex justify-center">         
+            <div class="grid grid-cols-2 gap-4 w-full lg:gap-8 lg:grid-flow-col lg:auto-cols-fr">           
               {listOfBenefits}
             </div>
           </div>

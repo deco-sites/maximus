@@ -12,12 +12,14 @@ const displaySearchDrawer = signal(false);
 
 const quantityPdp = signal(1);
 const displayCombinador = signal(false);
+const benefitsPopup = signal(false);
 const skusCombination = signal([]);
 
 const state = {
   displayCart,
   displayMenu,
   displaySearchPopup,
+  benefitsPopup,
   displaySearchDrawer,
   quantityPdp,
   displayCombinador,

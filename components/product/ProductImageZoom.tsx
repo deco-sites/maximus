@@ -18,7 +18,7 @@ function ProductImageZoom({ images, width, height }: Props) {
   const open = useSignal(false);
 
   return (
-    <div class="cursor-pointer w-full h-full absolute z-0 bottom-0 right-0 bg-[transparent]">
+    <div class={`cursor-pointer w-full h-full absolute ${open ? "z-[99]" : "z-0"} bottom-0 right-0 bg-[transparent]`}>
       <div
         class="w-full h-full hidden sm:inline-flex"
         onClick={() => open.value = true}

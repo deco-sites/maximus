@@ -289,7 +289,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
               {l?.hide?.productName
                 ? ""
                 : (
-                  <h2 class="truncate text-xs md:text-base text-base-content text-center">
+                  <h2 class="ellipsis-2 min-h-[30px] md:min-h-[46px] text-xs md:text-base text-base-content text-center">
                     {nameFormated}
                   </h2>
                 )}

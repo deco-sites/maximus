@@ -879,8 +879,10 @@ function ProductDetails(
           </div>
         )}
 
-      <div id="yv-reviews"></div>
-      <div class="yv-qa"></div>
+      <div class="w-full max-w-[1236px] mt-16 mx-auto max-md:px-5">
+        <div id="yv-reviews"></div>
+        <div class="yv-qa"></div>
+      </div>
     </div>
   );
 }
