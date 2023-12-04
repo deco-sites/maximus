@@ -24,7 +24,7 @@ export default function TableInfantis() {
       <div class="w-full [&>*:nth-child(odd)]:bg-[#eaeaea]">
         <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
           <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-            <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+            <img class="mr-2.5" src="/arquivos/icon-tabela-33.svg" alt="icone" />
             VESTIDO INFANTIL (A PARTIR DE 6 ANOS)
           </div>
           <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">6,00 M</div>
@@ -34,7 +34,7 @@ export default function TableInfantis() {
   
         <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
           <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-            <img class="mr-2.5" src="/arquivos/icon-tabela-1.svg" alt="icone" />
+            <img class="mr-2.5" src="/arquivos/icon-tabela-34.svg" alt="icone" />
             VESTIDO INFANTIL (ATÉ 4 ANOS)
           </div>
           <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">2,00 M</div>
