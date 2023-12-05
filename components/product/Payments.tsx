@@ -6,10 +6,10 @@ export interface Props {
   price: number,
   offers: any,
   maxParcels: number,
-  isMeter: boolean,
+  isFabric: boolean,
 }
 
-function Payments({ price, offers, maxParcels,isMeter }: Props) {
+function Payments({ price, offers, maxParcels, isFabric }: Props) {
   const [show, setShow] = useState<boolean>(false);
   const [numberParcels, setNumberParcels] = useState<any>([]);
   const { quantityPdp } = useUI();
@@ -92,7 +92,7 @@ function Payments({ price, offers, maxParcels,isMeter }: Props) {
               numberParcels?.map((item:any,index:number)=>(
                 <div class={`w-full ${(index+1) <= maxParcels ? 'flex' : 'hidden'} justify-between px-[15px] md:px-[50px] py-0`}>
                   <div class="flex items-center w-3/5 min-h-[35px] text-sm font-medium text-black leading-4">
-                    {isMeter ?                  
+                    {isFabric ?                  
                     `${index+1}x ${(index+1) < 4 ? "sem juros" : "com juros"}`
                     :
                     `${index+1} x sem juros`
@@ -110,7 +110,7 @@ function Payments({ price, offers, maxParcels,isMeter }: Props) {
                     }
                   </div>
                   <div class="flex items-center text-right w-1/5 min-h-[35px] text-sm font-medium text-black leading-4">
-                    {(index + 1) > 3 && isMeter
+                    {(index + 1) > 3 && isFabric
                       ?
                       formatPrice((price * quantityPdp.value) + ((price * quantityPdp.value) * .02), offers)
                       :

@@ -24,7 +24,7 @@ function ProductImageZoom({ images, width, height }: Props) {
         onClick={() => open.value = true}
       >
         </div>
-        <div class="text-white absolute z-0 bottom-3 right-3">
+        <div class="text-white absolute z-[-1] bottom-3 right-3">
           <Icon id="Zoom" size={24} />
         </div>
       

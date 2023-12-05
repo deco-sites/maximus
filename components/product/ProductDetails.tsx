@@ -84,6 +84,11 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
         ?.propertyID !== "160" ? true
       : false;
 
+      const isFabric =
+      product?.additionalProperty?.find((item: any) => item.name === "category")
+          ?.value === "TECIDOS" ? true
+        : false;
+
   const categoryID = product?.additionalProperty?.find((item: any) =>
     item.name === "category"
   )?.propertyID;
@@ -232,7 +237,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
         price={isMeter ? (price /10) : price}
         offers={offers!.priceCurrency!}
         maxParcels={maxParcels ? 12 : 6}
-        isMeter={isMeter}
+        isFabric={isFabric}
       />
 
       {/* Sku Selector */}

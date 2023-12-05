@@ -1,5 +1,5 @@
 import Seo, { Props as SeoProps } from "apps/website/components/Seo.tsx";
-import { ProductListingPage } from "deco-sites/std/components/types.ts";
+import type { ProductListingPage } from "apps/commerce/types.ts";
 import { canonicalFromBreadcrumblist } from "apps/commerce/utils/canonical.ts";
 
 export type Props = {
@@ -9,13 +9,7 @@ export type Props = {
 function Section({ jsonLD, ...props }: Props) {
   const title = jsonLD?.seo?.title;
   const description = jsonLD?.seo?.description;
-  const canonical = "2b"+props.canonical
-    ? props.canonical
-    : jsonLD?.seo?.canonical
-    ? jsonLD.seo.canonical
-    : jsonLD?.breadcrumb
-    ? canonicalFromBreadcrumblist(jsonLD?.breadcrumb)
-    : undefined;
+  const canonical = jsonLD?.seo?.canonical.split("?page=")[0].toLocaleLowerCase();
 
   const noIndexing = !jsonLD || !jsonLD.products.length;
 

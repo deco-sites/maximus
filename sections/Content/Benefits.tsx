@@ -1,8 +1,5 @@
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Header from "$store/components/ui/SectionHeader.tsx";
-import Modal from "$store/components/ui/Modal.tsx";
-import { useId } from "$store/sdk/useId.ts";
-import { useSignal } from "@preact/signals";
 
 import Item from "$store/islands/BenefitItem.tsx";
 
@@ -24,9 +21,6 @@ export interface Props {
 export default function Benefits(
   props: Props,
 ) {
-  const id = useId();
-  const open = useSignal(false);
-
   const {
     title = "",
     description = "",
@@ -43,7 +37,7 @@ export default function Benefits(
       image: "/arquivos/benefits-3.png",
       description:
         "<b>Frete grátis</b> para todo o <br> Brasil. <b>*consulte condições</b>",
-        content: "contennt aqui ne",
+        content: "<h3 class='text-lg text-center font-bold mb-5'>Política de Frete Grátis</h3><p class='text-sm font-normal leading-6'><strong>Paraná:</strong> Frete grátis para pedidos acima de R$ 199,00</p><p class='text-sm font-normal leading-6'><strong>Sul e Sudeste: </strong> Frete grátis para pedidos acima de R$ 299,00</p><p class='text-sm font-normal leading-6'><strong>Todo Brasil: </strong>Frete grátis para pedidos acima de R$ 499,00</p><p class='text-sm font-normal leading-6'>O serviço de entrega será escolhido automaticamente de acordo com o pedido (peso e cubagem) o CEP de destino. Reservamo-nos ao direito de alterar a politica de frete grátis sem aviso prévio.*Essa política de frete grátis é válida apenas para os produtos das maximus tecidos. As lojas de terceiros que vendem produtos em nosso site como bordado, manequins pet e máquinas de costura não obedecem a mesma política.</p>",
     }, {
       image: "/arquivos/benefits-4.png",
       description: "Conheça os cursos da Escola <br> de Moda On-line",
@@ -59,10 +53,14 @@ export default function Benefits(
       : "piledup";
 
     return (
-      <div
-        class={`${benefit.content ? 'cursor-pointer' : ''} flex items-center px-4 py-3 border border-[#eeeeee] rounded-[16px] max-md:min-w-max`} 
-        onClick={() => open.value = true}
-      >
+     <>
+      {
+        benefit?.content ?
+        <Item benefit={benefit} />
+          :
+          <div
+        class={`${benefit?.content ? 'cursor-pointer' : ''} flex items-center px-4 py-3 border border-[#eeeeee] rounded-[16px] max-md:min-w-max`} >
+        
         <div class="flex-none">
           <img
             loading="lazy"
@@ -91,6 +89,8 @@ export default function Benefits(
           </p>
         </div>       
       </div>
+      }
+     </>    
     );
   });
 
@@ -105,21 +105,10 @@ export default function Benefits(
               alignment={layout?.headerAlignment || "center"}
             />
             <div class="w-full flex justify-center">
-              <div class="flex gap-4 lg:gap-8 w-full lg:grid grid-flow-col auto-cols-fr overflow-auto no-scrollbar">
-              <Item/>
+              <div class="flex gap-4 lg:gap-8 w-full lg:grid grid-flow-col auto-cols-fr overflow-auto no-scrollbar">              
                 {listOfBenefits}
               </div>
-            </div>
-            <div id={id}>
-        <Modal
-          class="w-11/12 max-w-7xl grid grid-cols-[48px_1fr_48px] grid-rows-1 place-items-center"
-          loading="lazy"
-          open={open.value}
-          onClose={() => open.value = false}
-        >
-          <p>testee..</p>
-          </Modal>
-        </div>
+            </div>            
           </div>
         )
         : ""}
