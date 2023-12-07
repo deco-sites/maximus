@@ -47,7 +47,7 @@ export default function BannerSlider(
     return (
       <Slider.Item
         index={index}
-        class="flex flex-col gap-4 carousel-item w-[234px]"
+        class="flex flex-col gap-4 carousel-item w-[134px] md:w-[234px]"
       >
         <a
           href={banner.link}

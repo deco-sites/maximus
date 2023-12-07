@@ -21,7 +21,7 @@ return (
       <a class="text-sm font-medium text-shadow hover:underline leading-[19px] tracking-[0px] text-[#171413] capitalize block p-[5px]"
         href="/_secure/account#/orders">meus pedidos</a>
       <a class="text-sm font-medium text-shadow hover:underline leading-[19px] tracking-[0px] text-[#171413] capitalize block p-[5px]"
-        href="/_secure/lista-de-desejos">Favoritos</a>
+        href="/account#/wishlist">Favoritos</a>
       <a class="text-sm font-medium text-shadow hover:underline leading-[19px] tracking-[0px] text-[#171413] capitalize block p-[5px]"
         href="/api/vtexid/pub/logout?scope=tfcszo&amp;returnUrl=%2F">sair</a>
     </div>

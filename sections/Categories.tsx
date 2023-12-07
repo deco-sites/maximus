@@ -54,8 +54,16 @@ export default function Categories(
 
     return str.toLowerCase().toLowerCase()
       .normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/,/g, "")
-      .replace(/\s+/g, "-").replace(/[^a-z0-9-]+/g, "");
+      .replace(/\s+/g, "-").replace(/[^a-z0-9-]+/g, "");      
   };
+
+  const formatUrl = (url: string) => {
+    if (!url) return;
+
+    return url.replace("https://tfcszo.myvtex.com", "")
+  };
+
+  console.log("banners?.children", banners?.children)
 
   const listBanners = banners &&
     banners?.children?.map((banner: any, index: number) => {
@@ -65,7 +73,7 @@ export default function Categories(
           class="flex flex-col gap-4 carousel-item w-[33.3%] md:w-[12.5%]"
         >
           <a
-            href={banner.url}
+            href={formatUrl(banner.url)}
             class="min-h-[145px] flex items-center justify-start flex-col"
           >
             <img

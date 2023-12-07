@@ -1,7 +1,7 @@
 import { useEffect, useState } from "preact/hooks";
 import { Runtime } from "$store/runtime.ts";
 
-function ColorsSimilars({query, url}: any) {
+function ColorsSimilars({query, url, isMeter}: any) {
   const [seeMore, setSeeMore] = useState<boolean>(false);
   const [products, setProducts] = useState<any>([]);
 
@@ -30,7 +30,7 @@ function ColorsSimilars({query, url}: any) {
 }
 
   return (
-    <div class="md:mb-54 md:mt-72">
+    <div class="md:my-56">
       <p class="text-[13px] font-medium leading-[19px] tracking-[0] text-[#171413] mb-3">
         <strong>Outras cores disponíveis</strong>
       </p>
@@ -62,7 +62,7 @@ function ColorsSimilars({query, url}: any) {
         }`}
         onClick={() => setSeeMore(!seeMore)}
       >
-        {seeMore ? "Ver menos cores disponíveis" : "Ver mais cores disponíveis"}
+        {seeMore ? `Ver menos ${isMeter ? 'cores' : 'opções'} disponíveis` : `Ver mais ${isMeter ? 'cores' : 'opções'} disponíveis`}
       </div>
     </div>
   );

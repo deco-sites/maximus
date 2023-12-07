@@ -508,7 +508,7 @@ function Details({
             </div>
 
             <div class="max-md:order-4">
-             <ColorsSimilars query={queryCategory} url={queryUrl} />
+             <ColorsSimilars query={queryCategory} url={queryUrl} isMeter={isMeter} />
             </div>
           </div>
           {/* images */}
