@@ -23,7 +23,7 @@ import Conservation from "$store/islands/Conservation.tsx";
 import Payments from "$store/islands/Payments.tsx";
 import Price from "$store/islands/Price.tsx";
 import ColorsSimilars from "$store/islands/ColorsSimilars.tsx";
-import AddCombinador from "$store/islands/AddCombinador.tsx";
+//import AddCombinador from "$store/islands/AddCombinador.tsx";
 
 export type Variant = "front-back" | "slider" | "auto";
 
@@ -283,7 +283,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
         </p>
       </div>
 
-      {isMeter && <AddCombinador sku={productGroupID} />}
+      {/*isMeter && <AddCombinador sku={productGroupID} />*/}
 
       {/* Shipping Simulation */}
       <div class="mt-8">
@@ -508,7 +508,7 @@ function Details({
             </div>
 
             <div class="max-md:order-4">
-              {isMeter && <ColorsSimilars query={queryCategory} url={queryUrl} />}
+             <ColorsSimilars query={queryCategory} url={queryUrl} />
             </div>
           </div>
           {/* images */}

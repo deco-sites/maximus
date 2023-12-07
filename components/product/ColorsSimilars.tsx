@@ -6,6 +6,7 @@ function ColorsSimilars({query, url}: any) {
   const [products, setProducts] = useState<any>([]);
 
   useEffect(() => {
+    console.log("query", query)
     get();
   }, [query]);
   
@@ -29,7 +30,7 @@ function ColorsSimilars({query, url}: any) {
 }
 
   return (
-    <div class="md:my-48">
+    <div class="md:mb-54 md:mt-72">
       <p class="text-[13px] font-medium leading-[19px] tracking-[0] text-[#171413] mb-3">
         <strong>Outras cores disponíveis</strong>
       </p>

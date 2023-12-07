@@ -7,7 +7,7 @@ import Sociais from "./Sociais.tsx";
 import Payments from "./Payments.tsx";
 import Copyrigth from "./Copyrigth.tsx";
 
-import Combination from "$store/islands/Combination.tsx";
+//import Combination from "$store/islands/Combination.tsx";
 import Whatsapp from "./Whatsapp.tsx";
 
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
@@ -334,7 +334,7 @@ function Footer({
       <Payments payments={payments} security={security} />
       <Copyrigth copyrigth={copyrigth} />
       <Whatsapp />
-      <Combination />
+      {/* <Combination /> */}
     </footer>
   );
 }

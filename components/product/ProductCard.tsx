@@ -320,7 +320,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
               </div>
               <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413]">
                 {formatPrice(price, offers!.priceCurrency!)}{" "}
-                {isMeter ? "/ metro" : "/ un"}
+                {price ? isMeter ? "/ metro" : "/ un" : <p class="text-center font-medium">indisponível</p>}
               </div>
             </div>
             {l?.hide?.installments

@@ -38,18 +38,6 @@ export default function BannerSlider(
       image: "https://tfcszo.vteximg.com.br/arquivos/banner-slider-5.png",
       title: "Chiffon",
       link: "/tecidos/chiffon",
-    }, {
-      image: "https://tfcszo.vteximg.com.br/arquivos/banner-slider-3.png",
-      title: "Camurça",
-      link: "/tecidos/camurca",
-    }, {
-      image: "https://tfcszo.vteximg.com.br/arquivos/banner-slider-4.png",
-      title: "Cetim",
-      link: "/tecidos/cetim",
-    }, {
-      image: "https://tfcszo.vteximg.com.br/arquivos/banner-slider-5.png",
-      title: "Chiffon",
-      link: "/tecidos/chiffon",
     }],
   } = props;
 
