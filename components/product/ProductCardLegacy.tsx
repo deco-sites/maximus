@@ -82,6 +82,8 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
     item.value === "Novidade"
   );
 
+
+
   const isMeter =
   (product?.additionalProperty?.find((item: any) => item.name === "category")?.value === "TECIDOS" &&
     product?.additionalProperty?.find((item: any) => item.name === "cluster")?.propertyID !== "160") ||
@@ -90,7 +92,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
     : false;
 
       const discountt = listPrice &&
-      Math.round(((listPrice - ((isMeter ? price * 10 : price) ? (isMeter ? price * 10 : price) : 0)) / listPrice) * 100);
+    Math.round(((listPrice - (price ? price : 0)) / listPrice) * 100);
 
   const l = layout;
   const align =
@@ -315,12 +317,12 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
               <div
                 class={`items-center flex-wrap mr-2 line-through text-base-300 text-xs ${
                   l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
-                } ${listPrice !== (isMeter ? price * 10 : price) ? "flex" : "hidden"}`}
+                } ${listPrice !== price ? "flex" : "hidden"}`}
               >
                 {formatPrice(listPrice, offers!.priceCurrency!)}
               </div>
               <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413]">
-                {formatPrice((isMeter ? price * 10 : price), offers!.priceCurrency!)}{" "}
+                {formatPrice(price, offers!.priceCurrency!)}{" "}
                 {price ? isMeter ? "/ metro" : "/ un" : <p class="text-center font-medium">indisponível</p>}
               </div>
             </div>
