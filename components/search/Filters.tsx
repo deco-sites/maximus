@@ -35,22 +35,23 @@ function ValueItem(
 }
 
 function FilterValues({ key, values }: FilterToggle) {
-  const flexDirection = key === "tamanho" || key === "Cores Disponíveis"
+  const flexDirection = key === "tamanho" || key === "cores-disponiveis"
     ? "flex-row"
-    : "flex-col";
+    : "flex-col";  
 
   return (
     <ul class={`flex flex-wrap gap-2 ${flexDirection}`}>
       {values.map((item) => {
         const { url, selected, value, quantity } = item;
+       <h3> {key}</h3>
 
-        if (key === "Cores Disponíveis" || key === "tamanho") {
+        if (key === "cores-disponiveis" || key === "tamanho") {
           return (
             <a href={url} rel="nofollow">
               <Avatar
                 content={value}
                 variant={selected ? "active" : "default"}
-                type={key === "Cores Disponíveis" ? "color" : "default"}
+                type={key === "cores-disponiveis" ? "color" : "default"}
               />
             </a>
           );
@@ -80,11 +81,12 @@ function Filters({ filters }: Props) {
         .filter(isToggle)
         .map((filter) => (
           <li
-            class={`flex flex-col gap-4 ${
-              filter.label === "Cores Disponíveis" && "order-1"
-            }
+            class={`flex flex-col gap-4 
+            ${filter.label === "Cores Disponíveis" && "order-1"}
               ${filter.label === "Categories" && "order-1"}
+              ${filter.label === "Categoria" && "order-1"}
               ${filter.label === "Brands" && "order-2"}
+              ${filter.label === "Marca" && "order-2"}
               ${filter.label === "Fibras" && "order-3"}
               ${filter.label === "Forros Indicados" && "order-4"}
               ${filter.label === "Utilização" && "order-5"}
@@ -92,8 +94,13 @@ function Filters({ filters }: Props) {
               ${filter.label === "Tendências" && "order-7"}
                ${filter.label === "Período" && "order-8"}
                ${filter.label === "PriceRanges" && "order-9"}
-               ${filter.label === "Departments" && "hidden"}`}
-          >
+               ${filter.label === "Preço" && "order-9"}
+               ${filter.label === "Departments" && "hidden"}
+               ${filter.label === "Departamento" && "hidden"}
+               ${filter.label === "Composi��o" && "hidden"}
+               ${filter.label === "Composicao" && "hidden"}
+               ${filter.label === "Subcategoria" && "hidden"}`}
+          >           
             {filter.label === "Forros Indicados" && (
               <img
                 src="/arquivos/banner-filter.png"

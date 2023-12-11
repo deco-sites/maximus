@@ -8,7 +8,7 @@ export default function Description({ description }: Props) {
       {description &&
         (
           <div
-            class="max-w-[1236px] m-auto text-center text-[12px] font-normal leading-6"
+            class="max-w-[1236px] max-md:px-3 m-auto text-center text-[12px] font-normal leading-6"
             dangerouslySetInnerHTML={{ __html: description }}
           >
           </div>

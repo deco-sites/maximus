@@ -61,7 +61,7 @@ export default function BannerSlider(
               height={240}
               loading="lazy"
             />    
-          <p class="mt-3 mb-9 text-center text-base">
+          <p class="mt-3 mb-0 md:mb-9 text-center text-base">
             {banner.title}
           </p>
         </a>
@@ -72,7 +72,7 @@ export default function BannerSlider(
   return (
     <div
       id={id}
-      class="w-full max-w-[1246px] mx-auto my-9 max-md:px-3 relative"
+      class="w-full max-w-[1246px] mx-auto mt-9 mb-8 max-md:px-3 relative"
     >
       <Slider class="carousel carousel-start md:carousel-center gap-4 lg:gap-8 row-start-2 row-end-5 w-full">
         {listBanners}

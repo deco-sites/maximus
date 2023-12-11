@@ -46,7 +46,7 @@ function Newsletter(
     <div
       class={"w-full max-w-[1236px] m-auto py-8 flex justify-around max-md:flex-col"}
     >
-      <div class="max-w-[380px] flex flex-col gap-4">
+      <div class="max-w-full max-md:px-3 md:max-w-[380px] flex flex-col gap-4">
         {content?.title && (
           <h5 class={"text-2xl font-medium max-md:text-center"}>
             {content?.title}

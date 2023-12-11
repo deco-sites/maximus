@@ -29,6 +29,7 @@ const portugueseMappings = {
   "name:asc": "Nome - de A a Z",
   // "release:desc": "Relevância - Decrescente",
   "discount:desc": "Maior desconto",
+  "release:desc": "Lançamento",
 };
 function Sort({ sortOptions }: Props) {
   const sort = useSort();

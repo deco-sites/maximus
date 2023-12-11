@@ -7,9 +7,10 @@ export interface Props {
   installments: any;
   offers: any;
   isMeter: boolean;
+  maxParcels: number;
 }
 
-function Price({ price, listPrice, installments, offers, isMeter }: Props, {}) {
+function Price({ price, listPrice, installments, offers, isMeter, maxParcels }: Props, {}) {
   const { quantityPdp } = useUI();
 
   return (
@@ -48,7 +49,7 @@ function Price({ price, listPrice, installments, offers, isMeter }: Props, {}) {
           )}
 
         <p class="block text-xs font-semibold leading-[29px] mb-[15px]">
-          5% de desconto para pagamentos à vista
+          {maxParcels > 6 ? '13%' : '5%'} de desconto para pagamentos à vista
         </p>
       </div>
     </div>

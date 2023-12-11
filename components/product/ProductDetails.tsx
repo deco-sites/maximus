@@ -86,7 +86,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
 
       const isFabric =
       product?.additionalProperty?.find((item: any) => item.name === "category")
-          ?.value === "TECIDOS" ? true
+          ?.value !== "MÁQUINAS" ? true
         : false;
 
   const categoryID = product?.additionalProperty?.find((item: any) =>
@@ -230,6 +230,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
         installments={installments}
         offers={offers}
         isMeter={isMeter}
+        maxParcels={maxParcels ? 12 : 6}
       />
 
       {/*modal payments*/}
@@ -260,6 +261,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
                   discount={discount}
                   seller={seller}
                   isMeter={isMeter}
+                  maxParcels={maxParcels ? 12 : 6}
                   stock={stockAvailable}
                 />
               )}
@@ -438,12 +440,9 @@ function Details({
             />
           </div>
         </div>
-        <div
-          id={id}
-          class="max-w-[1236px] mx-auto flex items-start justify-between max-md:flex-col"
-        >
-          <div class="flex flex-col max-md:order-3 w-full md:w-[32%] pr-4 max-md:px-4">
-            <div class="max-md:order-2 max-md:border-b border-[#ebebeb] max-md:pb-5 flex flex-wrap">
+
+<div class="max-w-[1236px] mx-auto flex justify-start md:relative">
+<div class="md:absolute md:top-0 md:left-0 w-full md:w-[32%] flex max-md:order-2 max-md:border-b border-[#ebebeb] max-md:pb-5 max-md:px-5 flex-wrap">
               <div
                 class="mt-2 w-full"
                 id="yv-review-quickreview"
@@ -461,7 +460,15 @@ function Details({
                 </a>
               </div>
             </div>
-            <div class="flex mt-5 max-md:hidden">
+</div>
+
+        <div
+          id={id}
+          class="max-w-[1236px] mx-auto flex items-start justify-between max-md:flex-col"
+        >
+          <div class="flex flex-col max-md:order-3 w-full md:w-[32%] pr-4 max-md:px-4">
+           
+            <div class="flex mt-5 max-md:hidden md:pt-[60px]">
               <div class="w-[90%]">
                 <h1 class="text-2xl font-normal leading-6 tracking-[0] text-[#171413]">
                   {nameFormated}
@@ -511,6 +518,7 @@ function Details({
              <ColorsSimilars query={queryCategory} url={queryUrl} isMeter={isMeter} />
             </div>
           </div>
+        
           {/* images */}
           <div class="max-md:order-1 max-md:px-5 w-full md:w-[32%]">
             {/* Image Slider */}
@@ -817,7 +825,7 @@ function ProductDetails(
                     </h3>
                     <div class="w-full flex justify-center items-center bg-[#f5f5f5] py-10">
                       <iframe
-                        class="w-full md:w-[523px] md:h-[295px]"
+                        class="w-full md:w-[523px] md:h-[295px] aspect-[19/9]"
                         src={iframe.value}
                         frameBorder="0"
                       >

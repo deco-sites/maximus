@@ -13,6 +13,7 @@ export interface Props {
   discount: number;
   isMeter: boolean;
   stock: number;
+  maxParcels: number;
   onAddItem: () => Promise<void>;
 }
 

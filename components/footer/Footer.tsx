@@ -1,4 +1,5 @@
 import Benefits from "./Benefits.tsx";
+import BenefitsMobile from "./BenefitsMobile.tsx";
 import Newsletter from "$store/islands/Newsletter.tsx";
 import Description from "./Description.tsx";
 import Departaments from "./Departaments.tsx";
@@ -57,6 +58,9 @@ export interface Props {
   beneficios?: {
     items: benefitsItem[];
   };
+  beneficiosMobile?: {
+    items: benefitsItem[];
+  };
   newsletter?: {
     title?: string;
     /** @format textarea */
@@ -102,6 +106,33 @@ function Footer({
         texto:
           "<strong>Frete grátis</strong> para todo o Brasil. <strong>*consulte condições</strong>",
       },
+    ],
+  },
+  beneficiosMobile = {
+    items: [
+      {
+        image:
+          "https://tfcszo.vteximg.com.br/arquivos/icon-truck-mob.png?v=638043861321970000",
+        texto: "Frete grátis para todo o Brasil. *consulte condições",
+      },
+      {
+        image:
+          "https://tfcszo.vteximg.com.br/arquivos/icon-credit-card.png?v=637966970343030000",
+        texto:
+          "Pague em até 3x sem juros no cartão (5% de desconto no pix).",
+      },
+      {
+        image:
+          "https://tfcszo.vteximg.com.br/arquivos/icon-security-mob.png?v=637966970348030000",
+        texto:
+          "Loja 100% Segura! Mais de 90mil clientes satisfeitos",
+      },
+      {
+        image:
+          "https://tfcszo.vteximg.com.br/arquivos/icon-whats-mob.png?v=637966970348030000",
+        texto:
+          "<a href='https://api.whatsapp.com/send?phone=5545999110056' target='_blank'>WhastApp Maximus De seg a sex 09:00 às 18:00 horas</a>",
+      }
     ],
   },
   newsletter = {
@@ -329,6 +360,7 @@ function Footer({
       <Newsletter content={newsletter} />
       <Description description={description} />
       <Departaments />
+      <BenefitsMobile content={beneficiosMobile} />
       <Links content={links} />
       <Sociais content={sociais} />
       <Payments payments={payments} security={security} />

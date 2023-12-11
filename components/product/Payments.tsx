@@ -76,14 +76,14 @@ function Payments({ price, offers, maxParcels, isFabric }: Props) {
               <div class="flex items-center text-center w-2/5 min-h-[35px] text-sm font-medium text-black leading-4">
                 {formatPrice(
                   (price * quantityPdp.value) -
-                    ((price * quantityPdp.value) * 0.05),
+                    ((price * quantityPdp.value) * (maxParcels > 6 ? 0.13 : 0.05)),
                   offers,
                 )}
               </div>
               <div class="flex items-center text-right w-1/5 min-h-[35px] text-sm font-medium text-black leading-4">
                 {formatPrice(
                   (price * quantityPdp.value) -
-                    ((price * quantityPdp.value) * 0.05),
+                    ((price * quantityPdp.value) * (maxParcels > 6 ? 0.13 : 0.05)),
                   offers,
                 )}
               </div>

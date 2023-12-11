@@ -9,7 +9,6 @@ import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
 
 import InfoPagination from "$store/components/search/InfoPagination.tsx";
 import Paginations from "$store/islands/PaginationCustom.tsx";
-import Sort from "$store/components/search/Sort.tsx";
 
 export interface Layout {
   /**
@@ -51,7 +50,7 @@ function Result({
       <div
         class={`max-w-[1206px] mx-auto container px-4 sm:py-10 border-t-[#EBEBEB] ${
           breadcrumb.numberOfItems > 0 ? "border-t" : "border-0"
-        } ${title ? "mt-6" : "mt-32"}`}
+        } ${!title && 'max-md:mt-32'} md:mt-6`}
       >
         {title
           ? (
@@ -77,7 +76,7 @@ function Result({
             </aside>
           )}
           <div class="flex-grow">
-            <div class="ml-0 md:ml-10 py-3">
+            <div class="md:grid md:h-[133px] ml-0 md:ml-10 py-3">
               {title
                 ? (
                   <h1 class="hidden md:block text-2xl font-semibold leading-[29px] text-center text-[#333333] mb-4">
@@ -85,9 +84,8 @@ function Result({
                   </h1>
                 )
                 : ""}
-              <div class="hidden md:flex items-center justify-between">
-                {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}
-
+              <div class="hidden md:flex items-center justify-between">              
+                  <div></div>
                 <Paginations pageInfo={pageInfo} />
               </div>
             </div>

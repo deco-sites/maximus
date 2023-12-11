@@ -114,7 +114,7 @@ function Searchbar({
         </Button>
       </form>
 
-      {notFound && searchInputRef.current
+      {notFound
         ? (
           <div class="bg-white hidden flex-col gap-4 w-[500px] absolute left-0">
             <Button
@@ -138,7 +138,7 @@ function Searchbar({
           </div>
         )
         : (
-          <div class="overflow-y-scroll">
+          <div class="overflow-y-scroll absolute w-[1200px] bg-white hidden">
             <div class="gap-4 grid grid-cols-1 sm:grid-rows-1 sm:grid-cols-[150px_1fr]">
               <div
                 class={hasTerms ? "flex flex-col gap-6" : "hidden"}

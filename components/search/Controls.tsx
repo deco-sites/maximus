@@ -41,12 +41,12 @@ function SearchControls(
         </>
       }
     >
-      <div class="hidden max-md:flex flex-col justify-between md:mb-4 py-4 sm:mb-0 sm:p-0 sm:gap-4 sm:flex-row sm:h-[53px]">
+      <div class="md:h-0 flex flex-col justify-between py-4 sm:mb-0 sm:p-0 sm:gap-4 sm:flex-row sm:h-[53px]">
         <div class="hidden flex-row items-center sm:p-0 mb-2">
           <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
         </div>
 
-        <div class="flex flex-row items-center justify-between sm:gap-4">
+        <div class="flex flex-row items-center justify-between sm:gap-4 md:absolute md:left-[284px] md:top-[50px]">
           <Button
             class={displayFilter
               ? "w-[145px] bg-black rounded-sm border-0 text-white font-normal"

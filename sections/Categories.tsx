@@ -63,7 +63,7 @@ export default function Categories(
     return url.replace("https://tfcszo.myvtex.com", "")
   };
 
-  console.log("banners?.children", banners?.children)
+  //console.log("banners?.children", banners?.children)
 
   const listBanners = banners &&
     banners?.children?.map((banner: any, index: number) => {
