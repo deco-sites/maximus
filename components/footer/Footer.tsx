@@ -113,19 +113,19 @@ function Footer({
       {
         image:
           "https://tfcszo.vteximg.com.br/arquivos/icon-truck-mob.png?v=638043861321970000",
-        texto: "Frete grátis para todo o Brasil. *consulte condições",
+        texto: "<strong>Frete grátis</strong> para todo o Brasil. <strong>*consulte condições</strong>",
       },
       {
         image:
           "https://tfcszo.vteximg.com.br/arquivos/icon-credit-card.png?v=637966970343030000",
         texto:
-          "Pague em até 3x sem juros no cartão (5% de desconto no pix).",
+          "Pague em até <strong>3x sem juros</strong> no cartão (5% de desconto no pix).",
       },
       {
         image:
           "https://tfcszo.vteximg.com.br/arquivos/icon-security-mob.png?v=637966970348030000",
         texto:
-          "Loja 100% Segura! Mais de 90mil clientes satisfeitos",
+          "Loja <strong>100% Segura!</strong> Mais de 90mil clientes satisfeitos",
       },
       {
         image:

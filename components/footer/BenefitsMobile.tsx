@@ -30,7 +30,7 @@ export default function Benefits({ content }: {
                 {item?.texto &&
                   (
                     <p
-                      class="max-w-[278px] px-3 tracking-[0px] text-neutral-800 text-[10px]"
+                      class="max-w-[278px] tracking-[0px] text-neutral-800 text-[12px]"
                       dangerouslySetInnerHTML={{ __html: item.texto }}
                     >
                     </p>

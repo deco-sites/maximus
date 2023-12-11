@@ -351,16 +351,13 @@ function Details({
   } = product;
 
   const formatBrandLink = (str) => {
-    // Remover acentos e substituir "(" e ")" por "-"
     const replacedStr = str
-      .normalize('NFD') // Normalizar para decompor os caracteres acentuados
-      .replace(/[\u0300-\u036f]/g, '') // Remover diacríticos
-      .replace(/[()]/g, '-'); // Substituir "(" e ")" por "-"
-  
-    // Substituir espaços por hifens e converter para maiúsculas
-    const hyphenatedStr = replacedStr.replace(/\s+/g, '-').toUpperCase();
-  
-    // Adicionar uma barra no início e no final
+      .normalize('NFD') 
+      .replace(/[\u0300-\u036f]/g, '') 
+      .replace(/[()]/g, '-');   
+    
+    const hyphenatedStr = replacedStr.replace(/\s+/g, '-').toUpperCase();  
+   
     const finalStr = `/${hyphenatedStr}/`;
   
     return finalStr;
@@ -448,10 +445,10 @@ function Details({
                 id="yv-review-quickreview"
               >
               </div>
-              <div class="flex items-center w-[42%] text-[13px] font-medium leading-[19px] tracking-[0px] text-[#171413]">
+              <div class="hidden md:flex items-center w-[42%] text-[13px] font-medium leading-[19px] tracking-[0px] text-[#171413]">
                 Vendido e entregue por
               </div>
-              <div class="w-[58%]">
+              <div class="hidden md:flex w-[58%]">
                 <a
                   href={brandLink}
                   class="text-[13px] font-medium leading-[19px] tracking-[0px] text-[#171413] underline"
@@ -485,7 +482,20 @@ function Details({
               <p class="text-sm tracking-[0] text-[#171413] leading-[21px]">
                 {descriptionCurt}
               </p>
-            </div>
+            </div> 
+            <div class="flex md:hidden items-center order-1">
+              <div class="flex items-center w-[49%] text-[13px] font-medium leading-[19px] tracking-[0px] text-[#171413]">
+                Vendido e entregue por
+              </div>
+              <div class="w-[49%]">
+                <a
+                  href={brandLink}
+                  class="text-[13px] font-medium leading-[19px] tracking-[0px] text-[#171413] underline"
+                >
+                  {brand}
+                </a>
+              </div>
+              </div>           
             <div class="max-md:order-3 py-7">
               {composition &&
                 (
@@ -655,7 +665,8 @@ function ProductDetails(
    * Showcase the different product views we have on this template. In case there are less
    * than two images, render a front-back, otherwhise render a slider
    * Remove one of them and go with the best suited for your use case.
-   */
+   */  
+
   const variant = maybeVar === "auto"
     ? page?.product.image?.length && page?.product.image?.length < 2
       ? "front-back"
@@ -693,7 +704,7 @@ function ProductDetails(
     page?.product.isVariantOf.additionalProperty.filter((item: any) =>
       item.name === "Tendências"
     );
-
+    
   return (
     <div class="container py-0 sm:py-5">
       {page
@@ -845,7 +856,7 @@ function ProductDetails(
                 dangerouslySetInnerHTML={{ __html: description }}
               >
               </div>
-            )}
+            )}            
           </div>
         )}
 

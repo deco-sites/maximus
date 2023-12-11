@@ -99,7 +99,7 @@ function Payments({ price, offers, maxParcels, isFabric }: Props) {
                     }
                   </div>
                   <div class="flex items-center text-center w-2/5 min-h-[35px] text-sm font-medium text-black leading-4">
-                    {(index + 1) > 3 
+                    {(index + 1) > 3 && isFabric
                     ?
                     formatPrice(((price * quantityPdp.value) + ((price * quantityPdp.value) * .02)) / (index + 1), offers)
                     :

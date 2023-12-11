@@ -32,7 +32,7 @@ function ColorsSimilars({query, url, isMeter}: any) {
   return (
     <div class="md:mt-56 md:mb-5">
       <p class="text-[13px] font-medium leading-[19px] tracking-[0] text-[#171413] mb-3">
-        <strong>Outras cores disponíveis</strong>
+        <strong>Outras {isMeter ? "cores": "opções"} disponíveis</strong>
       </p>
       <div
         class={`flex flex-wrap w-full md:min-w-[770px] max-w-full ${
