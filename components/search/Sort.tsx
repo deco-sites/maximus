@@ -21,15 +21,14 @@ const applySort = (e: JSX.TargetedEvent<HTMLSelectElement, Event>) => {
 export type Props = Pick<ProductListingPage, "sortOptions">;
 
 const portugueseMappings = {
+  "release:desc": "Lançamento",
   "relevance:desc": "Relevância",
   "price:desc": "Maior Preço",
   "price:asc": "Menor Preço",
   "orders:desc": "Mais vendidos",
   "name:desc": "Nome - de Z a A",
   "name:asc": "Nome - de A a Z",
-  // "release:desc": "Relevância - Decrescente",
   "discount:desc": "Maior desconto",
-  "release:desc": "Lançamento",
 };
 function Sort({ sortOptions }: Props) {
   const sort = useSort();

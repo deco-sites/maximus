@@ -73,7 +73,7 @@ export default function Categories(
           class="flex flex-col gap-4 carousel-item w-[33.3%] md:w-[12.5%]"
         >
           <a
-            href={formatUrl(banner.url)}
+            href= {`${formatUrl(banner.url)}?sort=release%3Adesc`}
             class="min-h-[145px] flex items-center justify-start flex-col"
           >
             <img

@@ -3,11 +3,12 @@ import { Runtime } from "$store/runtime.ts";
 import type { JSX } from "preact";
 
 const subscribe = Runtime.create(
-  "deco-sites/std/actions/vtex/newsletter/subscribe.ts",
+  "deco-sites/maximus/actions/form-contact/form.ts",
 );
 
 export default function Form() {
     const loading = useSignal(false);
+    const success = useSignal(false);
 
   const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
@@ -15,10 +16,18 @@ export default function Form() {
     try {
       loading.value = true;
 
-      const email =
-        (e.currentTarget.elements.namedItem("email") as RadioNodeList)?.value;
+      const email = (e.currentTarget.elements.namedItem("email") as RadioNodeList)?.value;
+      const name = (e.currentTarget.elements.namedItem("name") as RadioNodeList)?.value;
+      const phone = (e.currentTarget.elements.namedItem("phone") as RadioNodeList)?.value;
+      const subject = (e.currentTarget.elements.namedItem("subject") as RadioNodeList)?.value;
+      const message = (e.currentTarget.elements.namedItem("message") as RadioNodeList)?.value;
+      const state = (e.currentTarget.elements.namedItem("state") as RadioNodeList)?.value;
+      const city = (e.currentTarget.elements.namedItem("city") as RadioNodeList)?.value;
 
-      await subscribe({ email });
+      await subscribe({ email, name, phone, subject, message, state, city }).then(()=>{
+        success.value=true;
+        e.currentTarget?.elements?.reset();
+      });
     } finally {
       loading.value = false;
     }
@@ -97,6 +106,12 @@ export default function Form() {
                 Enviar
             </button>
          </div>
+         {
+            success.value ?
+            <p class="w-full mt-7 text-center">Enviado com sucesso!</p>
+            :
+            <></>
+         }
         </form>
   );
 }

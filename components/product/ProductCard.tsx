@@ -73,8 +73,6 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
   const possibilities = useVariantPossibilities(product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
   const nameFormated = product.isVariantOf?.name;
-  const discountt = listPrice &&
-    Math.round(((listPrice - (price ? price : 0)) / listPrice) * 100);
 
   const fretegratis = product?.additionalProperty?.find((item: any) =>
     item.value === "Frete Grátis"
@@ -90,6 +88,9 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
         ?.propertyID !== "160" 
       ? true
       : false;
+
+      const discountt = listPrice &&
+      Math.round(((listPrice - ((isMeter ? price * 10 : price) ? (isMeter ? price * 10 : price) : 0)) / listPrice) * 100);
 
   const l = layout;
   const align =
@@ -314,12 +315,12 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
               <div
                 class={`items-center flex-wrap mr-2 line-through text-base-300 text-xs ${
                   l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
-                } ${listPrice !== price ? "flex" : "hidden"}`}
+                } ${listPrice !== (isMeter ? price * 10 : price) ? "flex" : "hidden"}`}
               >
                 {formatPrice(listPrice, offers!.priceCurrency!)}
               </div>
               <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413]">
-                {formatPrice(price, offers!.priceCurrency!)}{" "}
+                {formatPrice((isMeter ? price * 10 : price), offers!.priceCurrency!)}{" "}
                 {price ? isMeter ? "/ metro" : "/ un" : <p class="text-center font-medium">indisponível</p>}
               </div>
             </div>

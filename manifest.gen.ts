@@ -54,6 +54,7 @@ import * as $$$$$$48 from "./sections/Product/Wishlist.tsx";
 import * as $$$$$$49 from "./sections/Social/InstagramPosts.tsx";
 import * as $$$$$$50 from "./sections/Social/WhatsApp.tsx";
 import * as $$$$$$51 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$$$$0 from "./actions/form-contact/form.ts";
 import * as $$$$$$$$$$$0 from "./apps/site.ts";
 
 const manifest = {
@@ -114,6 +115,9 @@ const manifest = {
     "deco-sites/maximus/sections/Social/InstagramPosts.tsx": $$$$$$49,
     "deco-sites/maximus/sections/Social/WhatsApp.tsx": $$$$$$50,
     "deco-sites/maximus/sections/Theme/Theme.tsx": $$$$$$51,
+  },
+  "actions": {
+    "deco-sites/maximus/actions/form-contact/form.ts": $$$$$$$$$0,
   },
   "apps": {
     "deco-sites/maximus/apps/site.ts": $$$$$$$$$$$0,
