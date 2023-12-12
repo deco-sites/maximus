@@ -79,10 +79,11 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
   const discount = price && listPrice ? listPrice - price : 0;
 
   const isMeter =
-    product?.additionalProperty?.find((item: any) => item.name === "category")
-        ?.value === "TECIDOS" && product?.additionalProperty?.find((item: any) => item.name === "cluster")
-        ?.propertyID !== "160" ? true
-      : false;
+  (product?.additionalProperty?.find((item: any) => item.name === "category")?.value === "TECIDOS" &&
+    product?.additionalProperty?.find((item: any) => item.name === "cluster")?.propertyID !== "160") ||
+    product?.additionalProperty?.find((item) => item.name === "category" && item.value === "Crinol") !== undefined
+    ? true
+    : false;
 
       const isFabric =
       product?.additionalProperty?.find((item: any) => item.name === "category")

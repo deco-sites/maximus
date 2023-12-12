@@ -1,10 +1,5 @@
 import { useSignal } from "@preact/signals";
-import { Runtime } from "$store/runtime.ts";
 import type { JSX } from "preact";
-
-const subscribe = Runtime.create(
-  "deco-sites/maximus/actions/form-contact/form.ts",
-);
 
 export default function Form() {
     const loading = useSignal(false);
@@ -24,10 +19,17 @@ export default function Form() {
       const state = (e.currentTarget.elements.namedItem("state") as RadioNodeList)?.value;
       const city = (e.currentTarget.elements.namedItem("city") as RadioNodeList)?.value;
 
-      await subscribe({ email, name, phone, subject, message, state, city }).then(()=>{
-        success.value=true;
-        e.currentTarget?.elements?.reset();
-      });
+      await fetch("/api/dataentities/FC/documents", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json", // Adicione os cabeçalhos necessários conforme necessário
+        },
+        body: JSON.stringify({ email, name, phone, subject, message, state, city }),
+      }).then(()=>{
+    success.value=true;
+    e.currentTarget?.elements?.reset();
+  });
+
     } finally {
       loading.value = false;
     }
@@ -58,12 +60,8 @@ export default function Form() {
          </div>
          <div class="w-full md:w-[49%] mb-6 flex flex-col">
             <label class="text-xs font-medium leading-[19px] tracking-[0.6px] text-neutral-800 uppercase">ESTADO:</label>
-            <input
-                    name="state"
-                    class="h-10 text-sm font-normal leading-6 tracking-[0px] text-[#999999] border transition-[0.3s] pl-[15px] rounded-sm border-solid border-[#EAEAEA] hover:border-[#222]"
-                    placeholder={"Estado:"}
-                    required
-            />
+        
+            <select name="state" class="h-10 text-sm font-normal leading-6 tracking-[0px] text-[#999999] border transition-[0.3s] pl-[15px] rounded-sm border-solid border-[#EAEAEA] hover:border-[#222]"><option disabled="disabled" value=""></option> <option value="AC">Acre</option> <option value="AL">Alagoas</option> <option value="AP">Amapá</option> <option value="AM">Amazonas</option> <option value="BA">Bahia</option> <option value="CE">Ceará</option> <option value="DF">Distrito Federal</option> <option value="ES">Espírito Santo</option> <option value="GO">Goiás</option> <option value="MA">Maranhão</option> <option value="MT">Mato Grosso</option> <option value="MS">Mato Grosso do Sul</option> <option value="MG">Minas Gerais</option> <option value="PA">Pará</option> <option value="PB">Paraíba</option> <option value="PR">Paraná</option> <option value="PE">Pernambuco</option> <option value="PI">Piauí</option> <option value="RJ">Rio de Janeiro</option> <option value="RN">Rio Grande do Norte</option> <option value="RS">Rio Grande do Sul</option> <option value="RO">Rondônia</option> <option value="RR">Roraima</option> <option value="SC">Santa Catarina</option> <option value="SP">São Paulo</option> <option value="SE">Sergipe</option> <option value="TO">Tocantins</option> <option value="EX">Estrangeiro</option></select>
          </div>
          <div class="w-full mb-6 flex flex-col">
             <label class="text-xs font-medium leading-[19px] tracking-[0.6px] text-neutral-800 uppercase">SEU E-MAIL:</label>
