@@ -66,6 +66,10 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
     isVariantOf,
   } = product;
 
+  const {
+    availability,
+  } = useOffer(offers);
+
   const id = `product-card-${productID}`;
   const productGroupID = isVariantOf?.productGroupID;
   const [front, back] = images ?? [];
@@ -312,17 +316,24 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
                   : ""
               } ${align === "center" ? "justify-center" : "justify-center"}`}
             >
-              <div
-                class={`items-center flex-wrap mr-2 line-through text-base-300 text-xs ${
-                  l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
-                } ${listPrice !== price ? "flex" : "hidden"}`}
-              >
-                {formatPrice(listPrice, offers!.priceCurrency!)}
-              </div>
-              <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413]">
-                {formatPrice(price, offers!.priceCurrency!)}{" "}
-                {price ? isMeter ? "/ metro" : "/ un" : <p class="text-center font-medium">indisponível</p>}
-              </div>
+               {
+                availability === "https://schema.org/InStock" ?
+                <>
+                  <div
+                    class={`items-center flex-wrap mr-2 line-through text-base-300 text-xs ${
+                      l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
+                    } ${listPrice !== price ? "flex" : "hidden"}`}
+                  >
+                    {formatPrice(listPrice, offers!.priceCurrency!)}
+                  </div>
+                  <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413]">
+                    {formatPrice(price, offers!.priceCurrency!)}{" "}
+                    {price ? isMeter ? "/ metro" : "/ un" : <p class="text-center font-medium">indisponível</p>}
+                  </div>
+                  </>
+                   :
+                   <p class="text-center font-medium">indisponível</p>
+               }
             </div>
             {l?.hide?.installments
               ? ""

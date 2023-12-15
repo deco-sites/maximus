@@ -204,7 +204,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
               {RefId}
             </p>
           </div>
-          {isMeter && (
+          {isMeter && availability === "https://schema.org/InStock" && (
             <>
               <div class="w-[40%]">
                 <p>
@@ -226,8 +226,12 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
           )}
         </div>
       </div>
-      {/* Prices */}
-      <Price
+      
+      {
+        availability === "https://schema.org/InStock"?
+        <>
+        {/* Prices */}
+        <Price
         price={price}
         listPrice={listPrice}
         installments={installments}
@@ -243,6 +247,11 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
         maxParcels={maxParcels ? 12 : 6}
         isFabric={isFabric}
       />
+        </>
+        :
+      <></>
+      }
+ 
 
       {/* Sku Selector */}
       <div class="mt-4 sm:mt-6">
