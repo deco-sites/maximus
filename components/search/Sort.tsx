@@ -7,7 +7,8 @@ const SORT_QUERY_PARAM = "sort";
 const useSort = () =>
   useMemo(() => {
     const urlSearchParams = new URLSearchParams(window.location?.search);
-    return urlSearchParams.get(SORT_QUERY_PARAM) ?? "";
+
+    return urlSearchParams.get(SORT_QUERY_PARAM) ?? "release:desc";
   }, []);
 
 // TODO: Replace with "search utils"
@@ -31,7 +32,7 @@ const portugueseMappings = {
   "discount:desc": "Maior desconto",
 };
 function Sort({ sortOptions }: Props) {
-  const sort = useSort();
+  const sort = useSort();  
 
   return (
     <select

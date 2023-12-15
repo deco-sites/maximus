@@ -21,7 +21,7 @@ function ColorsSimilars({query, url, isMeter}: any) {
   const newProducts = data?.map((item: any) => (
     {
       "image": item.image[0].url,
-      "link": item.url,     
+      "link": item.url?.split('?skuId')[0],     
       "name": item.name     
     }
   ));

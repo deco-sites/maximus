@@ -13,7 +13,7 @@ function NavItem({ item, showLogo }: { item: INavItem; showLogo: boolean }) {
 
   return (
     <li class="group flex items-center text-white">
-      <a href={`${href}?sort=release%3Adesc`} class="px-6 py-3">
+      <a href={`${href}`} class="px-6 py-3">
         <span class="text-sm uppercase">
           {label}
         </span>
@@ -52,14 +52,14 @@ function NavItem({ item, showLogo }: { item: INavItem; showLogo: boolean }) {
             <ul class="w-full max-w-[1260px] max-h-[250px] flex flex-col flex-wrap content-start">
               {children.map((node) => (
                 <li class="py-1 pr-[90px]">
-                  <a class=" hover:underline text-[#171413]" href={`${node.href}?sort=release%3Adesc`}>
+                  <a class=" hover:underline text-[#171413]" href={`${node.href}`}>
                     <span class="text-sm">{node.label}</span>
                   </a>
 
                   <ul class="flex flex-col gap-1 mt-4">
                     {node.children?.map((leaf) => (
                       <li>
-                        <a class="hover:underline" href={`${leaf.href}?sort=release%3Adesc`}>
+                        <a class="hover:underline" href={`${leaf.href}`}>
                           <span class="text-xs">{leaf.label}</span>
                         </a>
                       </li>
@@ -71,7 +71,7 @@ function NavItem({ item, showLogo }: { item: INavItem; showLogo: boolean }) {
 
             {/*<only desk>*/}
             <div class="w-full max-w-[1260px] pb-[20px]">
-              <a href={`${href}?sort=release%3Adesc`}>
+              <a href={`${href}`}>
                 <span class="flex items-center uppercase text-[#171413] after:text-base after:scale-x-[2] after:content-['\0279E'] after:ml-5 hover:underline after:hover:no-underline-2">
                   Ver todos os produtos
                 </span>
