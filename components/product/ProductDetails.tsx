@@ -87,10 +87,9 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
     ? true
     : false;
 
-      const isFabric =
-      product?.additionalProperty?.find((item: any) => item.name === "category")
-          ?.value !== "MÁQUINAS" ? true
-        : false;
+      const isFabric =product?.additionalProperty?.find((item) => item.name === "Vendedores" && item.value !== "Singer (Jundiaí - PR)") !== undefined
+      ? true
+      : false;
 
   const categoryID = product?.additionalProperty?.find((item: any) =>
     item.name === "category"
@@ -129,8 +128,9 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
   const discountt = listPrice &&
     Math.round(((listPrice - price) / listPrice) * 100);      
 
-    const maxParcels = product?.additionalProperty?.find((item: any) => item.name === "category")
-    ?.value === "MÁQUINAS"
+    const maxParcels = product?.additionalProperty?.find((item) => item.name === "Vendedores" && item.value === "Singer (Jundiaí - PR)") !== undefined
+    ? true
+    : false;
 
   return (
     <div class="px-[27px] py-4 bg-[#fbfbfb]"> 

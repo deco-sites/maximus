@@ -19,7 +19,7 @@ function Price({ price, listPrice, installments, offers, isMeter, maxParcels }: 
         <div class="flex flex-row gap-2 items-center">
           <span class="text-[13px] font-normal tracking-[0] text-[#bababa] leading-4 line-through mb-2">
             De: {formatPrice(
-              (listPrice * quantityPdp.value) / 10,
+              (listPrice * quantityPdp.value) /  (isMeter ? 10 : 1),
               offers!.priceCurrency!,
             )}
           </span>
