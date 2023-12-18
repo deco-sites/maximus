@@ -34,7 +34,7 @@ export default function BannerSlider2(
     return (
       <a
         href={banner.link}
-        class="block min-w-[150px] text-[#585858] hover:text-[#000] hover:font-medium"
+        class="block min-w-[150px] overflow-hidden rounded-[14px] text-[#585858] hover:text-[#000] hover:font-medium"
       >
         <Image
               src={banner.image}
