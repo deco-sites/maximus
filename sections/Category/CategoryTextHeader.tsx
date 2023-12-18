@@ -2,8 +2,9 @@ import type { ProductListingPage } from "apps/commerce/types.ts";
 import CategoryText from "$store/islands/CategoryTextHeader.tsx";
 
 export interface IText {
-  url: string;
-  text?: string;
+  url?: string;
+  text: string;
+  collection?: boolean
 }
 
 export interface Props {
@@ -30,7 +31,7 @@ export default function CategoryTextHeader(
     ? `/${format(itemListElement[0]?.name)}/${format(itemListElement[1]?.name)}`
     : `/${format(itemListElement[0]?.name)}`;
 
-  const seo = texts?.find((item: IText) => item.url === urlCurrent);
+  const seo = texts?.find((item: IText) => item.url === urlCurrent || item.collection);
 
   return (
     <>
