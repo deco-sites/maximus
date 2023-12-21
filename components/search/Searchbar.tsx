@@ -53,20 +53,25 @@ function Searchbar({
 }: Props) {
   const id = useId();
   const { displaySearchPopup } = useUI();
+
   const searchInputRef = useRef<HTMLInputElement>(null);
   const { setSearch, suggestions, loading } = useAutocomplete();
   const { products = [], searches = [] } = suggestions.value ?? {};
   const hasProducts = Boolean(products.length);
   const hasTerms = Boolean(searches.length);
-  const notFound = !hasProducts && !hasTerms;
+  const notFound = !searchInputRef.current?.value || !hasProducts;
 
   useEffect(() => {
     if (!searchInputRef.current) {
       return;
-    }
+    }   
 
     searchInputRef.current.focus();
   }, []);
+
+  
+  console.log("searchInputRef", searchInputRef.current?.value); 
+  console.log("notFound", notFound);
 
   return (
     <div
@@ -138,13 +143,13 @@ function Searchbar({
           </div>
         )
         : (
-          <div class="overflow-y-scroll absolute w-[1200px] bg-white hidden">
-            <div class="gap-4 grid grid-cols-1 sm:grid-rows-1 sm:grid-cols-[150px_1fr]">
+          <div class="overflow-y-scroll absolute z-[99] max-md:w-[94%] max-md:mt-3 md:w-[1106px] md:mt-1 bg-white rounded-[3px]">
+            <div class="gap-4 grid grid-cols-1 sm:grid-rows-1 sm:grid-cols-[150px_1fr] py-4 px-6">
               <div
                 class={hasTerms ? "flex flex-col gap-6" : "hidden"}
               >
                 <span
-                  class="font-medium text-xl"
+                  class="font-medium"
                   role="heading"
                   aria-level={3}
                 >
@@ -171,17 +176,27 @@ function Searchbar({
               </div>
               <div
                 class={hasProducts
-                  ? "flex flex-col pt-6 md:pt-0 gap-6 overflow-x-hidden"
+                  ? "hidden md:flex flex-col pt-6 md:pt-0 gap-6 overflow-x-hidden"
                   : "hidden"}
               >
                 <span
-                  class="font-medium text-xl"
+                  class="font-medium"
                   role="heading"
                   aria-level={3}
                 >
                   Produtos sugeridos
+                  <Button
+                    type="button"
+                    class="border-0 bg-white hover:border-0 hover:bg-white absolute right-[15px] top-2.5"
+                    onClick={() => {
+                      searchInputRef.current && (searchInputRef.current.value = '')
+                      setSearch('')
+                    }}
+                  >
+                    <Icon id="XMark" size={24} strokeWidth={2} />
+                  </Button>
                 </span>
-                <Slider class="carousel">
+                <Slider class="carousel gap-5">
                   {products.map((product, index) => (
                     <Slider.Item
                       index={index}

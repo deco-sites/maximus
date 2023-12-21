@@ -12,6 +12,16 @@ interface Props {
   filters: ProductListingPage["filters"];
 }
 
+const reorder = (children: any) => {
+  if (!children) return
+
+  // eslint-disable-next-line
+  return children.slice().sort((a: any, b: any) =>
+    // eslint-disable-next-line
+    a.value.localeCompare(b.value),
+  );
+}
+
 const isToggle = (filter: Filter): filter is FilterToggle =>
   filter["@type"] === "FilterToggle";
 
@@ -41,7 +51,7 @@ function FilterValues({ key, values }: FilterToggle) {
 
   return (
     <ul class={`flex flex-wrap gap-2 ${flexDirection}`}>
-      {values.map((item) => {
+      {reorder(values).map((item) => {
         const { url, selected, value, quantity } = item;
        <h3> {key}</h3>
 
@@ -76,12 +86,12 @@ function FilterValues({ key, values }: FilterToggle) {
 
 function Filters({ filters }: Props) {
   return (
-    <ul class="flex flex-col gap-6 max-md:p-4">
+    <ul class="flex flex-col gap-6 max-md:p-4 relative">
       {filters
         .filter(isToggle)
         .map((filter) => (
-          <li
-            class={`flex flex-col gap-4 
+          <details open
+            class={`collapse collapse-plus rounded-none row flex flex-col gap-4 
             ${filter.label === "Cores Disponíveis" && "order-1"}
               ${filter.label === "Categories" && "order-1"}
               ${filter.label === "Categoria" && "order-1"}
@@ -109,7 +119,7 @@ function Filters({ filters }: Props) {
                 loading={"lazy"}
               />
             )}
-            <span class="text-base font-semibold leading-[19px] text-neutral-800">
+            <summary class="collapse-title px-0 text-base font-semibold leading-[19px] text-neutral-800">
               {filter.label === "Brands"
                 ? "Marcas"
                 : filter.label === "PriceRanges"
@@ -117,9 +127,9 @@ function Filters({ filters }: Props) {
                 : filter.label === "Categories"
                 ? "Categorias"
                 : filter.label}
-            </span>
+            </summary>
             <FilterValues {...filter} />
-          </li>
+          </details>
         ))}
     </ul>
   );
