@@ -67,11 +67,7 @@ function Searchbar({
     }   
 
     searchInputRef.current.focus();
-  }, []);
-
-  
-  console.log("searchInputRef", searchInputRef.current?.value); 
-  console.log("notFound", notFound);
+  }, []); 
 
   return (
     <div
