@@ -27,7 +27,9 @@ export default function CategoryTextFooter(
   };
 
   /* text category */
-  const urlCurrent = numberOfItems === 2
+  const urlCurrent = numberOfItems === 3 ? 
+  `/${format(itemListElement[0]?.name)}/${format(itemListElement[1]?.name)}/${format(itemListElement[2]?.name)}` : 
+  numberOfItems === 2
     ? `/${format(itemListElement[0]?.name)}/${format(itemListElement[1]?.name)}`
     : `/${format(itemListElement[0]?.name)}`;
 

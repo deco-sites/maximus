@@ -36,7 +36,7 @@ export default function Categories(
   const { itemListElement, numberOfItems } = breadcrumb;
   const nameCurrent = itemListElement[numberOfItems - 1]?.name;
 
-  if (!nameCurrent) return;
+  if (!nameCurrent || numberOfItems > 2) return;
 
   let banners: any;
   const name1 = itemListElement[0]?.name;
@@ -54,13 +54,13 @@ export default function Categories(
 
     return str.toLowerCase().toLowerCase()
       .normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/,/g, "")
-      .replace(/\s+/g, "-").replace(/[^a-z0-9-]+/g, "");      
+      .replace(/\s+/g, "-").replace(/[^a-z0-9-]+/g, "");
   };
 
   const formatUrl = (url: string) => {
     if (!url) return;
 
-    return url.replace("https://tfcszo.myvtex.com", "")
+    return url.replace("https://tfcszo.myvtex.com", "");
   };
 
   //console.log("banners?.children", banners?.children)
@@ -73,7 +73,7 @@ export default function Categories(
           class="flex flex-col gap-4 carousel-item w-[33.3%] md:w-[12.5%]"
         >
           <a
-            href= {`${formatUrl(banner.url)}`}
+            href={`${formatUrl(banner.url)}`}
             class="min-h-[145px] flex items-center justify-start flex-col"
           >
             <img
@@ -100,7 +100,9 @@ export default function Categories(
       <div class="w-full max-w-[950px] mx-auto relative">
         <Slider
           class={`flex ${
-            banners?.children?.length < 9 ? "justify-start md:justify-center" : ""
+            banners?.children?.length < 9
+              ? "justify-start md:justify-center"
+              : ""
           } items-center carousel carousel-end w-full`}
         >
           {listBanners}
