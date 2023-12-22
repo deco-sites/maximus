@@ -60,7 +60,8 @@ export default function Categories(
   const formatUrl = (url: string) => {
     if (!url) return;
 
-    return url.replace("https://tfcszo.myvtex.com", "");
+    return url.replace("https://tfcszo.myvtex.com", "")
+    .replace("https://secure.maximustecidos.com.br", "");
   };
 
   //console.log("banners?.children", banners?.children)

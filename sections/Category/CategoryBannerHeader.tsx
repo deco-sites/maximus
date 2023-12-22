@@ -36,8 +36,6 @@ export default function CategoryBannerHeader(
     ? `/${format(itemListElement[0]?.name)}/${format(itemListElement[1]?.name)}`
     : `/${format(itemListElement[0]?.name)}`;
 
-    console.log('urlCurrent',urlCurrent)
-
   const bannerCurrent = banners?.find((item: IBanner) =>
     item.url === urlCurrent
   );
