@@ -82,7 +82,8 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
 
   const isMeter =
   (product?.additionalProperty?.find((item: any) => item.name === "category")?.value === "TECIDOS" &&
-    !product?.additionalProperty?.some((item) => item.name === "cluster" && item.propertyID === "160")) ||
+    !product?.additionalProperty?.some((item) => item.name === "cluster" && item.propertyID === "160")) || 
+    product?.additionalProperty?.find((item) => item.name === "category" && item.value === "Entretelas") !== undefined || 
     product?.additionalProperty?.find((item) => item.name === "category" && item.value === "Crinol") !== undefined
     ? true
     : false;
