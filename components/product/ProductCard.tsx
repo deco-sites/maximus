@@ -86,12 +86,10 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
     item.value === "Novidade"
   );
 
-  const isMeter =
-  (product?.additionalProperty?.find((item: any) => item.name === "category")?.value === "TECIDOS" &&
-    !product?.additionalProperty?.some((item) => item.name === "cluster" && item.propertyID === "160")) ||
-    product?.additionalProperty?.find((item) => item.name === "category" && item.value === "Entretelas") !== undefined ||
-    product?.additionalProperty?.find((item) => item.name === "category" && item.value === "Crinol") !== undefined ? true
-    : false;
+  const isMeter = (product?.additionalProperty?.find((item) => item.name === "category")?.value === "TECIDOS" &&
+  !product?.additionalProperty?.some((item) => item.name === "cluster" && item.propertyID === "160")) || 
+  (product?.additionalProperty?.find((item) => item.name === "category" && item.value === "Entretelas") !== undefined && !product?.additionalProperty?.some((item) => item.name === "cluster" && item.propertyID === "160")) || product?.additionalProperty?.find((item) => item.name === "category" && item.value === "Crinol") !== undefined ? true
+  : false;
 
       const discountt = listPrice &&
       Math.round(((listPrice - ((isMeter ? price * 10 : price) ? (isMeter ? price * 10 : price) : 0)) / listPrice) * 100);

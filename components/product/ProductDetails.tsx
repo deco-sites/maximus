@@ -75,18 +75,13 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
     stock,
   } = useOffer(offers);
 
-  console.log('product?.additionalProperty', product?.additionalProperty)
-
   const productGroupID = isVariantOf?.productGroupID ?? "";
   const discount = price && listPrice ? listPrice - price : 0;
 
-  const isMeter =
-  (product?.additionalProperty?.find((item: any) => item.name === "category")?.value === "TECIDOS" &&
-    !product?.additionalProperty?.some((item) => item.name === "cluster" && item.propertyID === "160")) || 
-    product?.additionalProperty?.find((item) => item.name === "category" && item.value === "Entretelas") !== undefined || 
-    product?.additionalProperty?.find((item) => item.name === "category" && item.value === "Crinol") !== undefined
-    ? true
-    : false;
+  const isMeter = (product?.additionalProperty?.find((item) => item.name === "category")?.value === "TECIDOS" &&
+  !product?.additionalProperty?.some((item) => item.name === "cluster" && item.propertyID === "160")) || 
+  (product?.additionalProperty?.find((item) => item.name === "category" && item.value === "Entretelas") !== undefined && !product?.additionalProperty?.some((item) => item.name === "cluster" && item.propertyID === "160")) || product?.additionalProperty?.find((item) => item.name === "category" && item.value === "Crinol") !== undefined ? true
+  : false;
 
       const isFabric =product?.additionalProperty?.find((item) => item.name === "Vendedores" && item.value !== "Singer (Jundiaí - PR)") !== undefined
       ? true
