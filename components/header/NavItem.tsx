@@ -4,16 +4,17 @@ import { headerHeight } from "./constants.ts";
 export interface INavItem {
   label: string;
   href: string;
+  newTab?: boolean;
   children?: INavItem[];
   image?: { src?: string; alt?: string };
 }
 
 function NavItem({ item, showLogo }: { item: INavItem; showLogo: boolean }) {
-  const { href, label, children, image } = item;
+  const { href, label, newTab, children, image } = item;
 
   return (
     <li class="group flex items-center text-white">
-      <a href={`${href}`} class="px-6 py-3">
+      <a href={`${href}`} target={newTab || label == 'cursos' ? '_blank' : '_self'} class="px-6 py-3">
         <span class="text-sm uppercase">
           {label}
         </span>

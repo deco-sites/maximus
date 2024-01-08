@@ -9,6 +9,7 @@ import Navbar from "$store/islands/Navbar.tsx";
 export interface NavItem {
   label: string;
   href: string;
+  newTable?: boolean;
   children?: Array<{
     label: string;
     href: string;

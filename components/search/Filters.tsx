@@ -13,14 +13,14 @@ interface Props {
 }
 
 const reorder = (children: any) => {
-  if (!children) return
+  if (!children) return;
 
   // eslint-disable-next-line
   return children.slice().sort((a: any, b: any) =>
     // eslint-disable-next-line
-    a.value.localeCompare(b.value),
+    a.value.localeCompare(b.value)
   );
-}
+};
 
 const isToggle = (filter: Filter): filter is FilterToggle =>
   filter["@type"] === "FilterToggle";
@@ -47,13 +47,13 @@ function ValueItem(
 function FilterValues({ key, values }: FilterToggle) {
   const flexDirection = key === "tamanho" || key === "cores-disponiveis"
     ? "flex-row"
-    : "flex-col";  
+    : "flex-col";
 
   return (
     <ul class={`flex flex-wrap gap-2 ${flexDirection}`}>
       {reorder(values).map((item) => {
         const { url, selected, value, quantity } = item;
-       <h3> {key}</h3>
+        <h3>{key}</h3>;
 
         if (key === "cores-disponiveis" || key === "tamanho") {
           return (
@@ -90,7 +90,8 @@ function Filters({ filters }: Props) {
       {filters
         .filter(isToggle)
         .map((filter) => (
-          <details open
+          <details
+            open
             class={`collapse collapse-plus rounded-none row flex flex-col gap-4 
             ${filter.label === "Cores Disponíveis" && "order-1"}
               ${filter.label === "Categories" && "order-1"}
@@ -110,15 +111,7 @@ function Filters({ filters }: Props) {
                ${filter.label === "Composi��o" && "hidden"}
                ${filter.label === "Composicao" && "hidden"}
                ${filter.label === "Subcategoria" && "hidden"}`}
-          >           
-            {filter.label === "Forros Indicados" && (
-              <img
-                src="/arquivos/banner-filter.png"
-                alt="Forros Indicados"
-                width={236}
-                loading={"lazy"}
-              />
-            )}
+          >
             <summary class="collapse-title px-0 text-base font-semibold leading-[19px] text-neutral-800">
               {filter.label === "Brands"
                 ? "Marcas"
@@ -129,6 +122,16 @@ function Filters({ filters }: Props) {
                 : filter.label}
             </summary>
             <FilterValues {...filter} />
+
+            {filter.label === "Fibras" && (
+              <img
+                class="mt-8"
+                src="/arquivos/banner-filter.png"
+                alt="Forros Indicados"
+                width={236}
+                loading={"lazy"}
+              />
+            )}
           </details>
         ))}
     </ul>

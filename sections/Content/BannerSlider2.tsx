@@ -4,6 +4,7 @@ import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 export interface Props {
   banners?: Array<{
     image: LiveImage;
+    newTab?: boolean;
     link: string;
   }>;
 }
@@ -15,18 +16,23 @@ export default function BannerSlider2(
     banners = [{
       image: "https://tfcszo.vteximg.com.br/arquivos/banner-2-marcacao.png",
       link: "#",
+      newTab: false,
     }, {
       image: "https://tfcszo.vteximg.com.br/arquivos/banner-2-marcacao-2.png",
       link: "#",
+      newTab: false,
     }, {
       image: "https://tfcszo.vteximg.com.br/arquivos/banner-2-marcacao-3.png",
       link: "#",
+      newTab: false,
     }, {
       image: "https://tfcszo.vteximg.com.br/arquivos/banner-2-marcacao-2.png",
       link: "#",
+      newTab: false,
     }, {
       image: "https://tfcszo.vteximg.com.br/arquivos/banner-2-marcacao-3.png",
       link: "#",
+      newTab: false,
     }],
   } = props;
 
@@ -34,6 +40,7 @@ export default function BannerSlider2(
     return (
       <a
         href={banner.link}
+        target={banner.newTab ? '_blank' : '_self'}
         class="block min-w-[150px] overflow-hidden rounded-[14px] text-[#585858] hover:text-[#000] hover:font-medium"
       >
         <Image
