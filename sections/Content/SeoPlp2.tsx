@@ -9,7 +9,7 @@ export type Props = {
 function Section({ jsonLD, ...props }: Props) {
   const title = jsonLD?.seo?.title;
   const description = jsonLD?.seo?.description;
-  const canonical = jsonLD?.seo?.canonical.split("?page=")[0].toLocaleLowerCase()+"?sort=release%3Adesc";
+  const canonical = jsonLD?.seo?.canonical?.split("?")[0]?.toLowerCase();
 
   const noIndexing = !jsonLD || !jsonLD.products.length;
 

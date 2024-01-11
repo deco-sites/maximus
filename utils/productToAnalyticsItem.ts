@@ -44,7 +44,7 @@ export const mapProductToAnalyticsItem = (
           .filter(Boolean) ??
           [],
       )
-      : mapProductCategoryToAnalyticsCategories(product.category ?? "");
+      : mapProductCategoryToAnalyticsCategories(product.category ?? "");      
   
     return {
       item_id: productGroupID, //productID,
