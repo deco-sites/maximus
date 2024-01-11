@@ -34,7 +34,8 @@ import * as $$27 from "./islands/ProductImageZoom.tsx";
 import * as $$28 from "./islands/SearchControls.tsx";
 import * as $$29 from "./islands/ShippingSimulation.tsx";
 import * as $$30 from "./islands/SliderJS.tsx";
-import * as $$31 from "./islands/WishlistButton.tsx";
+import * as $$31 from "./islands/TabelaDeMedidas.tsx";
+import * as $$32 from "./islands/WishlistButton.tsx";
 
 const manifest = {
   routes: {
@@ -72,7 +73,8 @@ const manifest = {
     "./islands/SearchControls.tsx": $$28,
     "./islands/ShippingSimulation.tsx": $$29,
     "./islands/SliderJS.tsx": $$30,
-    "./islands/WishlistButton.tsx": $$31,
+    "./islands/TabelaDeMedidas.tsx": $$31,
+    "./islands/WishlistButton.tsx": $$32,
   },
   baseUrl: import.meta.url,
 };

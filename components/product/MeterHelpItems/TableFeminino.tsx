@@ -244,7 +244,7 @@ export default function TableFeminino() {
 
       <div class="flex items-center justify-between px-[15px] py-2 max-md:w-max">
         <div class="max-md:w-[250px] flex items-center w-6/12 text-xs whitespace-nowrap font-medium tracking-[0px] text-neutral-800">
-          <img class="mr-2.5" src="/arquivos/icon-tabela-23.svg" alt="icone" />
+          <img width={25} class="mr-2.5" src="/arquivos/icon-tabela-23.svg" alt="icone" />
           VESTIDO LONGO SEREIA
         </div>
         <div class="text-sm font-medium tracking-[0px] text-neutral-800 whitespace-nowrap max-md:mx-2.5">3,00 M</div>
