@@ -6,8 +6,6 @@ export interface Props {
   active: boolean;
 }
 
-export default function Space({active}:Props) { 
-  return (
-   <div class={`${active ? 'max-md:mt-[116px]' : ''}`}></div>
-  );
+export default function Space({ active }: Props) {
+  return <div class={`${active ? "max-md:mt-[116px]" : ""}`}></div>;
 }

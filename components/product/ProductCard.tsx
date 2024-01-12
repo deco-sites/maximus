@@ -86,13 +86,30 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
     item.value === "Novidade"
   );
 
-  const isMeter = (product?.additionalProperty?.find((item) => item.name === "category")?.value === "TECIDOS" &&
-  !product?.additionalProperty?.some((item) => item.name === "cluster" && item.propertyID === "160")) || 
-  (product?.additionalProperty?.find((item) => item.name === "category" && item.value === "Entretelas") !== undefined && !product?.additionalProperty?.some((item) => item.name === "cluster" && item.propertyID === "160")) || product?.additionalProperty?.find((item) => item.name === "category" && item.value === "Crinol") !== undefined ? true
-  : false;
+  const isMeter =
+    (product?.additionalProperty?.find((item) => item.name === "category")
+            ?.value === "TECIDOS" &&
+        !product?.additionalProperty?.some((item) =>
+          item.name === "cluster" && item.propertyID === "160"
+        )) ||
+      (product?.additionalProperty?.find((item) =>
+            item.name === "category" && item.value === "Entretelas"
+          ) !== undefined &&
+        !product?.additionalProperty?.some((item) =>
+          item.name === "cluster" && item.propertyID === "160"
+        )) ||
+      product?.additionalProperty?.find((item) =>
+          item.name === "category" && item.value === "Crinol"
+        ) !== undefined
+      ? true
+      : false;
 
-      const discountt = listPrice &&
-      Math.round(((listPrice - ((isMeter ? price * 10 : price) ? (isMeter ? price * 10 : price) : 0)) / listPrice) * 100);
+  const discountt = listPrice &&
+    Math.round(
+      ((listPrice -
+        ((isMeter ? price * 10 : price) ? (isMeter ? price * 10 : price) : 0)) /
+        listPrice) * 100,
+    );
 
   const l = layout;
   const align =
@@ -314,24 +331,29 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
                   : ""
               } ${align === "center" ? "justify-center" : "justify-center"}`}
             >
-              {
-                availability === "https://schema.org/InStock" ?
-                <>
-                <div
-                  class={`items-center flex-wrap mr-2 line-through text-base-300 text-xs ${
-                    l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
-                  } ${listPrice !== (isMeter ? price * 10 : price) ? "flex" : "hidden"}`}
-                >
-                  {formatPrice(listPrice, offers!.priceCurrency!)}
-                </div>
-                <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413]">
-                  {formatPrice((isMeter ? price * 10 : price), offers!.priceCurrency!)}{" "}
-                  {isMeter ? "/ metro" : "/ un"}
-                </div>
-                </>
-                :
-                <p class="text-center font-medium">indisponível</p>
-              }             
+              {availability === "https://schema.org/InStock"
+                ? (
+                  <>
+                    <div
+                      class={`items-center flex-wrap mr-2 line-through text-base-300 text-xs ${
+                        l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
+                      } ${
+                        listPrice !== (isMeter ? price * 10 : price)
+                          ? "flex"
+                          : "hidden"
+                      }`}
+                    >
+                      {formatPrice(listPrice, offers!.priceCurrency!)}
+                    </div>
+                    <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413]">
+                      {formatPrice(
+                        isMeter ? price * 10 : price,
+                        offers!.priceCurrency!,
+                      )} {isMeter ? "/ metro" : "/ un"}
+                    </div>
+                  </>
+                )
+                : <p class="text-center font-medium">indisponível</p>}
             </div>
             {l?.hide?.installments
               ? ""

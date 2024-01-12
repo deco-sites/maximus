@@ -161,9 +161,12 @@ function AddToCartButton(props: Props) {
                 props.offers!.priceCurrency!,
               )}
           </span>
-          <span class="text-sm font-normal leading-6">{props.isMeter ? ' /metro' : ' /un'}</span> <br />
+          <span class="text-sm font-normal leading-6">
+            {props.isMeter ? " /metro" : " /un"}
+          </span>{" "}
+          <br />
           <p class="hidden md:block text-xs font-semibold leading-[29px]">
-          {maxParcels > 6 ? '13%' : '5%'} de desconto para pagamentos à vista
+            {maxParcels > 6 ? "13%" : "5%"} de desconto para pagamentos à vista
           </p>
         </div>
         <div class="max-md:w-full max-md:mt-3 flex items-center">
@@ -174,7 +177,9 @@ function AddToCartButton(props: Props) {
         ? (
           <div class="w-full fixed z-[99] bottom-2 left-0 flex justify-center items-center">
             <div class="text-xs font-medium tracking-[0px] text-white border rounded px-6 py-4 flex justify-center items-center mb-5 border-solid border-[#e90000] bg-[#e90000]">
-             {` A quantidade deve ser igual ou maior que ${isMeter ? "0.40 centímetro" : "1"}`}
+              {` A quantidade deve ser igual ou maior que ${
+                isMeter ? "0.40 centímetro" : "1"
+              }`}
             </div>
           </div>
         )

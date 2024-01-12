@@ -51,18 +51,28 @@ function Navbar({ items, searchbar, logo, logoCurt }: {
             style={{ minHeight: navbarHeight }}
             aria-label="Store logo"
           >
-            <Image src={logo.src} alt={logo.alt} title={logo.alt} width={150} height={33} />
+            <Image
+              src={logo.src}
+              alt={logo.alt}
+              title={logo.alt}
+              width={150}
+              height={33}
+            />
           </a>
         )}
 
         <div class="flex items-center gap-2">
-          <Login/>
+          <Login />
           <a
             class="btn btn-circle btn-sm btn-ghost hover:bg-[#171413] text-white"
             href="/_secure/account#/wishlist"
             aria-label="Wishlist"
           >
-            <img src="/arquivos/icone-wishlist.svg" alt="icone wishlist" title="icone wishlist" />
+            <img
+              src="/arquivos/icone-wishlist.svg"
+              alt="icone wishlist"
+              title="icone wishlist"
+            />
           </a>
           {PLATFORM === "vtex" && <CartButtonVTEX />}
           {PLATFORM === "vnda" && <CartButtonVDNA />}
@@ -97,13 +107,17 @@ function Navbar({ items, searchbar, logo, logoCurt }: {
           )}
         </div>
         <div class="flex-none min-w-[25%] flex items-center justify-end gap-4">
-         <Login/>
+          <Login />
           <a
             class="btn btn-circle btn-sm btn-ghost hover:bg-[#171413] text-white"
             href="/_secure/account#/wishlist"
             aria-label="Wishlist"
           >
-            <img src="/arquivos/icone-wishlist.svg" alt="icone wishlist" title="icone wishlist" />
+            <img
+              src="/arquivos/icone-wishlist.svg"
+              alt="icone wishlist"
+              title="icone wishlist"
+            />
           </a>
           {PLATFORM === "vtex" && <CartButtonVTEX />}
           {PLATFORM === "vnda" && <CartButtonVDNA />}

@@ -40,17 +40,17 @@ export default function BannerSlider2(
     return (
       <a
         href={banner.link}
-        target={banner.newTab ? '_blank' : '_self'}
+        target={banner.newTab ? "_blank" : "_self"}
         class="block min-w-[150px] overflow-hidden rounded-[14px] text-[#585858] hover:text-[#000] hover:font-medium"
       >
         <Image
-              src={banner.image}
-              alt={banner.title ? banner.title : `item ${index} da categoria`}
-              title={banner.title ? banner.title : `item ${index} da categoria`}
-              width={150}
-              height={80}
-              loading="eager"
-            />        
+          src={banner.image}
+          alt={banner.title ? banner.title : `item ${index} da categoria`}
+          title={banner.title ? banner.title : `item ${index} da categoria`}
+          width={150}
+          height={80}
+          loading="eager"
+        />
       </a>
     );
   });

@@ -107,8 +107,9 @@ export default function BannerSchool({ content }: {
 
   const id = useId();
 
-  function Dots({ content }: { content?: { itemsSchool?: bannerSchoolItem[] };
-  }) {
+  function Dots(
+    { content }: { content?: { itemsSchool?: bannerSchoolItem[] } },
+  ) {
     return (
       <>
         <style
@@ -124,7 +125,8 @@ export default function BannerSchool({ content }: {
         />
         <div class="flex justify-center">
           <ul class="carousel justify-center col-span-full gap-4 z-10 row-start-4">
-            {content && content.itemsSchool && content.itemsSchool.length > 0 && content.itemsSchool.map((_, index) => (
+            {content && content.itemsSchool && content.itemsSchool.length > 0 &&
+              content.itemsSchool.map((_, index) => (
                 <li class="carousel-item hidden itemDots">
                   <Slider.Dot index={index}>
                     <div class="py-5">
@@ -139,39 +141,41 @@ export default function BannerSchool({ content }: {
     );
   }
 
-  const listBanners = content && content.itemsSchool && content.itemsSchool.length > 0 && content?.itemsSchool.map((banner, index) => {
-    return (
-      <Slider.Item
-        index={index}
-        class="flex flex-col gap-4 carousel-item w-[70%] md:w-[400px]"
-      >
-        <a
-          href={banner.link}
-          class="block border border-[#EBEBEB] text-[#262626]"
+  const listBanners = content && content.itemsSchool &&
+    content.itemsSchool.length > 0 &&
+    content?.itemsSchool.map((banner, index) => {
+      return (
+        <Slider.Item
+          index={index}
+          class="flex flex-col gap-4 carousel-item w-[70%] md:w-[400px]"
         >
-          <img
-            width={398}
-            height={398}
-            loading="lazy"
-            src={`${banner.image}?v=231123`}
-            alt="banner de cursos"
-            title="banner de cursos"
-          />
-          <div class="px-4 py-9 bg-white border border-solid border-[#ebebeb]">
-            <h5 class="my-3 text-center text-base font-semibold leading-[29px] uppercase text-[#262626]">
-              {banner.title}
-            </h5>
-            <p class="min-h-[80px] px-0 md:px-6 mb-9 text-center text-xs md:text-sm font-medium leading-[19px] text-[#262626]">
-              {banner.text}
-            </p>
-            <span class="w-[200px] h-[45px] rounded-[2px] mx-auto bg-[#6EB212] text-sm text-white flex items-center justify-center mt-6">
-              CONHEÇA O CURSO
-            </span>
-          </div>
-        </a>
-      </Slider.Item>
-    );
-  });
+          <a
+            href={banner.link}
+            class="block border border-[#EBEBEB] text-[#262626]"
+          >
+            <img
+              width={398}
+              height={398}
+              loading="lazy"
+              src={`${banner.image}?v=231123`}
+              alt="banner de cursos"
+              title="banner de cursos"
+            />
+            <div class="px-4 py-9 bg-white border border-solid border-[#ebebeb]">
+              <h5 class="my-3 text-center text-base font-semibold leading-[29px] uppercase text-[#262626]">
+                {banner.title}
+              </h5>
+              <p class="min-h-[80px] px-0 md:px-6 mb-9 text-center text-xs md:text-sm font-medium leading-[19px] text-[#262626]">
+                {banner.text}
+              </p>
+              <span class="w-[200px] h-[45px] rounded-[2px] mx-auto bg-[#6EB212] text-sm text-white flex items-center justify-center mt-6">
+                CONHEÇA O CURSO
+              </span>
+            </div>
+          </a>
+        </Slider.Item>
+      );
+    });
 
   return (
     <div id={id} class="w-full bg-[#F5F5F5] text-[#262626] pt-4 mt-8">
@@ -200,7 +204,9 @@ export default function BannerSchool({ content }: {
             </Slider.NextButton>
           </div>
         </div>
-        {content && content.itemsSchool && content.itemsSchool.length > 1 && <Dots content={content} />}
+        {content && content.itemsSchool && content.itemsSchool.length > 1 && (
+          <Dots content={content} />
+        )}
         <SliderJS rootId={id} interval={6 * 1e3} infinite={true} />
       </div>
     </div>

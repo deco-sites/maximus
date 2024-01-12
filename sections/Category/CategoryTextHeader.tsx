@@ -4,7 +4,7 @@ import CategoryText from "$store/islands/CategoryTextHeader.tsx";
 export interface IText {
   url?: string;
   text: string;
-  collection?: boolean
+  collection?: boolean;
 }
 
 export interface Props {
@@ -27,13 +27,17 @@ export default function CategoryTextHeader(
   };
 
   /* text category */
-  const urlCurrent = numberOfItems === 3 ? 
-  `/${format(itemListElement[0]?.name)}/${format(itemListElement[1]?.name)}/${format(itemListElement[2]?.name)}` : 
-  numberOfItems === 2
+  const urlCurrent = numberOfItems === 3
+    ? `/${format(itemListElement[0]?.name)}/${
+      format(itemListElement[1]?.name)
+    }/${format(itemListElement[2]?.name)}`
+    : numberOfItems === 2
     ? `/${format(itemListElement[0]?.name)}/${format(itemListElement[1]?.name)}`
     : `/${format(itemListElement[0]?.name)}`;
 
-  const seo = texts?.find((item: IText) => item.url === urlCurrent || item.collection);
+  const seo = texts?.find((item: IText) =>
+    item.url === urlCurrent || item.collection
+  );
 
   return (
     <>

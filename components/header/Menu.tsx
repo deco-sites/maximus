@@ -47,7 +47,7 @@ function MenuItem({ item }: { item: INavItem }) {
 }
 
 function Menu({ items }: Props) {
-  const {user} = useUser();
+  const { user } = useUser();
   return (
     <div class="flex flex-col h-full bg-white">
       <ul class="px-2 flex-grow flex flex-col">
@@ -65,7 +65,9 @@ function Menu({ items }: Props) {
             href="/login"
           >
             <Icon id="User" size={24} strokeWidth={2} />
-            <span class="text-sm uppercase font-medium">{user?.email ? "Minha Conta" : "Entrar/Cadastrar"}</span>
+            <span class="text-sm uppercase font-medium">
+              {user?.email ? "Minha Conta" : "Entrar/Cadastrar"}
+            </span>
           </a>
         </li>
         <li>

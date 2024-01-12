@@ -64,10 +64,10 @@ function Searchbar({
   useEffect(() => {
     if (!searchInputRef.current) {
       return;
-    }   
+    }
 
     searchInputRef.current.focus();
-  }, []); 
+  }, []);
 
   return (
     <div
@@ -185,8 +185,9 @@ function Searchbar({
                     type="button"
                     class="border-0 bg-white hover:border-0 hover:bg-white absolute right-[15px] top-2.5"
                     onClick={() => {
-                      searchInputRef.current && (searchInputRef.current.value = '')
-                      setSearch('')
+                      searchInputRef.current &&
+                        (searchInputRef.current.value = "");
+                      setSearch("");
                     }}
                   >
                     <Icon id="XMark" size={24} strokeWidth={2} />

@@ -32,7 +32,11 @@ function CartButton({ loading, currency, total, items }: Props) {
         loading={loading}
         onClick={onClick}
       >
-        <img src="/arquivos/icon-cart-2.svg" alt="icone cart" title="icone card" />
+        <img
+          src="/arquivos/icon-cart-2.svg"
+          alt="icone cart"
+          title="icone card"
+        />
         <div class="w-[25px] h-[25px] max-md:ml-[-6px] flex items-center justify-center border rounded border-[#e4a886] text-white font-light">
           {totalItems > 9 ? "9+" : totalItems}
         </div>
@@ -41,7 +45,11 @@ function CartButton({ loading, currency, total, items }: Props) {
         class="flex items-center justify-between w-[48px] md:hidden"
         href="/checkout"
       >
-        <img src="/arquivos/icon-cart-2.svg" alt="icone cart" title="icone card" />
+        <img
+          src="/arquivos/icon-cart-2.svg"
+          alt="icone cart"
+          title="icone card"
+        />
         <div class="w-[25px] h-[25px] max-md:ml-[-6px] flex items-center justify-center border rounded border-[#e4a886] text-white font-light">
           {totalItems > 9 ? "9+" : totalItems}
         </div>

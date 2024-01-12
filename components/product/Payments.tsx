@@ -1,12 +1,12 @@
-import { useState, useEffect } from "preact/hooks";
+import { useEffect, useState } from "preact/hooks";
 import { useUI } from "$store/sdk/useUI.ts";
 import { formatPrice } from "$store/sdk/format.ts";
 
 export interface Props {
-  price: number,
-  offers: any,
-  maxParcels: number,
-  isFabric: boolean,
+  price: number;
+  offers: any;
+  maxParcels: number;
+  isFabric: boolean;
 }
 
 function Payments({ price, offers, maxParcels, isFabric }: Props) {
@@ -15,10 +15,10 @@ function Payments({ price, offers, maxParcels, isFabric }: Props) {
   const { quantityPdp } = useUI();
 
   useEffect(() => {
-    const minParcels = Math.trunc((price * quantityPdp.value)/25);
+    const minParcels = Math.trunc((price * quantityPdp.value) / 25);
     const parcels = Array(minParcels).fill(minParcels);
     setNumberParcels(parcels);
-  },[quantityPdp.value]);
+  }, [quantityPdp.value]);
 
   return (
     <div>
@@ -76,50 +76,56 @@ function Payments({ price, offers, maxParcels, isFabric }: Props) {
               <div class="flex items-center text-center w-2/5 min-h-[35px] text-sm font-medium text-black leading-4">
                 {formatPrice(
                   (price * quantityPdp.value) -
-                    ((price * quantityPdp.value) * (maxParcels > 6 ? 0.13 : 0.05)),
+                    ((price * quantityPdp.value) *
+                      (maxParcels > 6 ? 0.13 : 0.05)),
                   offers,
                 )}
               </div>
               <div class="flex items-center text-right w-1/5 min-h-[35px] text-sm font-medium text-black leading-4">
                 {formatPrice(
                   (price * quantityPdp.value) -
-                    ((price * quantityPdp.value) * (maxParcels > 6 ? 0.13 : 0.05)),
+                    ((price * quantityPdp.value) *
+                      (maxParcels > 6 ? 0.13 : 0.05)),
                   offers,
                 )}
               </div>
             </div>
-            {
-              numberParcels?.map((item:any,index:number)=>(
-                <div class={`w-full ${(index+1) <= maxParcels ? 'flex' : 'hidden'} justify-between px-[15px] md:px-[50px] py-0`}>
-                  <div class="flex items-center w-3/5 min-h-[35px] text-sm font-medium text-black leading-4">
-                    {isFabric ?                  
-                    `${index+1}x ${(index+1) < 4 ? "sem juros" : "com juros"}`
-                    :
-                    `${index+1} x sem juros`
-                    }
-                  </div>
-                  <div class="flex items-center text-center w-2/5 min-h-[35px] text-sm font-medium text-black leading-4">
-                    {(index + 1) > 3 && isFabric
-                    ?
-                    formatPrice(((price * quantityPdp.value) + ((price * quantityPdp.value) * .02)) / (index + 1), offers)
-                    :
-                    formatPrice(
-                      (price * quantityPdp.value) / (index+1),
+            {numberParcels?.map((item: any, index: number) => (
+              <div
+                class={`w-full ${
+                  (index + 1) <= maxParcels ? "flex" : "hidden"
+                } justify-between px-[15px] md:px-[50px] py-0`}
+              >
+                <div class="flex items-center w-3/5 min-h-[35px] text-sm font-medium text-black leading-4">
+                  {isFabric
+                    ? `${index + 1}x ${
+                      (index + 1) < 4 ? "sem juros" : "com juros"
+                    }`
+                    : `${index + 1} x sem juros`}
+                </div>
+                <div class="flex items-center text-center w-2/5 min-h-[35px] text-sm font-medium text-black leading-4">
+                  {(index + 1) > 3 && isFabric
+                    ? formatPrice(
+                      ((price * quantityPdp.value) +
+                        ((price * quantityPdp.value) * .02)) / (index + 1),
                       offers,
                     )
-                    }
-                  </div>
-                  <div class="flex items-center text-right w-1/5 min-h-[35px] text-sm font-medium text-black leading-4">
-                    {(index + 1) > 3 && isFabric
-                      ?
-                      formatPrice((price * quantityPdp.value) + ((price * quantityPdp.value) * .02), offers)
-                      :
-                      formatPrice(price * quantityPdp.value, offers)
-                    }
-                  </div>
+                    : formatPrice(
+                      (price * quantityPdp.value) / (index + 1),
+                      offers,
+                    )}
                 </div>
-              ))
-            }
+                <div class="flex items-center text-right w-1/5 min-h-[35px] text-sm font-medium text-black leading-4">
+                  {(index + 1) > 3 && isFabric
+                    ? formatPrice(
+                      (price * quantityPdp.value) +
+                        ((price * quantityPdp.value) * .02),
+                      offers,
+                    )
+                    : formatPrice(price * quantityPdp.value, offers)}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

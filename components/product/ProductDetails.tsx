@@ -78,12 +78,28 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
   const productGroupID = isVariantOf?.productGroupID ?? "";
   const discount = price && listPrice ? listPrice - price : 0;
 
-  const isMeter = (product?.additionalProperty?.find((item) => item.name === "category")?.value === "TECIDOS" &&
-  !product?.additionalProperty?.some((item) => item.name === "cluster" && item.propertyID === "160")) || 
-  (product?.additionalProperty?.find((item) => item.name === "category" && item.value === "Entretelas") !== undefined && !product?.additionalProperty?.some((item) => item.name === "cluster" && item.propertyID === "160")) || product?.additionalProperty?.find((item) => item.name === "category" && item.value === "Crinol") !== undefined ? true
-  : false;
+  const isMeter =
+    (product?.additionalProperty?.find((item) => item.name === "category")
+            ?.value === "TECIDOS" &&
+        !product?.additionalProperty?.some((item) =>
+          item.name === "cluster" && item.propertyID === "160"
+        )) ||
+      (product?.additionalProperty?.find((item) =>
+            item.name === "category" && item.value === "Entretelas"
+          ) !== undefined &&
+        !product?.additionalProperty?.some((item) =>
+          item.name === "cluster" && item.propertyID === "160"
+        )) ||
+      product?.additionalProperty?.find((item) =>
+          item.name === "category" && item.value === "Crinol"
+        ) !== undefined
+      ? true
+      : false;
 
-      const isFabric =product?.additionalProperty?.find((item) => item.name === "Vendedores" && item.value !== "Singer (Jundiaí - PR)") !== undefined
+  const isFabric =
+    product?.additionalProperty?.find((item) =>
+        item.name === "Vendedores" && item.value !== "Singer (Jundiaí - PR)"
+      ) !== undefined
       ? true
       : false;
 
@@ -122,15 +138,23 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
     ?.value;
 
   const discountt = listPrice &&
-    Math.round(((listPrice - price) / listPrice) * 100);      
+    Math.round(((listPrice - price) / listPrice) * 100);
 
-    const maxParcels = product?.additionalProperty?.find((item) => item.name === "Vendedores" && item.value === "Singer (Jundiaí - PR)") !== undefined
-    ? true
-    : false;
+  const maxParcels =
+    product?.additionalProperty?.find((item) =>
+        item.name === "Vendedores" && item.value === "Singer (Jundiaí - PR)"
+      ) !== undefined
+      ? true
+      : false;
 
   return (
-    <div class="px-[27px] py-4 bg-[#fbfbfb]"> 
-      <input id="yv-productId" type="hidden" class="2b" value={productGroupID} />
+    <div class="px-[27px] py-4 bg-[#fbfbfb]">
+      <input
+        id="yv-productId"
+        type="hidden"
+        class="2b"
+        value={productGroupID}
+      />
 
       <input id="yv-productName" type="hidden" value={nameCurrent} />
 
@@ -222,32 +246,30 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
           )}
         </div>
       </div>
-      
-      {
-        availability === "https://schema.org/InStock"?
-        <>
-        {/* Prices */}
-        <Price
-        price={price}
-        listPrice={listPrice}
-        installments={installments}
-        offers={offers}
-        isMeter={isMeter}
-        maxParcels={maxParcels ? 12 : 6}
-      />
 
-      {/*modal payments*/}
-      <Payments
-        price={isMeter ? (price /10) : price}
-        offers={offers!.priceCurrency!}
-        maxParcels={maxParcels ? 12 : 6}
-        isFabric={isFabric}
-      />
-        </>
-        :
-      <></>
-      }
- 
+      {availability === "https://schema.org/InStock"
+        ? (
+          <>
+            {/* Prices */}
+            <Price
+              price={price}
+              listPrice={listPrice}
+              installments={installments}
+              offers={offers}
+              isMeter={isMeter}
+              maxParcels={maxParcels ? 12 : 6}
+            />
+
+            {/*modal payments*/}
+            <Payments
+              price={isMeter ? (price / 10) : price}
+              offers={offers!.priceCurrency!}
+              maxParcels={maxParcels ? 12 : 6}
+              isFabric={isFabric}
+            />
+          </>
+        )
+        : <></>}
 
       {/* Sku Selector */}
       <div class="mt-4 sm:mt-6">
@@ -360,16 +382,16 @@ function Details({
 
   const formatBrandLink = (str) => {
     const replacedStr = str
-      .normalize('NFD') 
-      .replace(/[\u0300-\u036f]/g, '') 
-      .replace(/[()]/g, '-');   
-    
-    const hyphenatedStr = replacedStr.replace(/\s+/g, '-').toUpperCase();  
-   
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[()]/g, "-");
+
+    const hyphenatedStr = replacedStr.replace(/\s+/g, "-").toUpperCase();
+
     const finalStr = `/${hyphenatedStr}/`;
-  
+
     return finalStr;
-  }
+  };
 
   const id = useId();
   const images = useStableImages(product);
@@ -380,8 +402,10 @@ function Details({
 
   const isMeter =
     product?.additionalProperty?.find((item: any) => item.name === "category")
-        ?.value === "TECIDOS" && product?.additionalProperty?.find((item: any) => item.name === "cluster")
-        ?.propertyID !== "160" ? true
+          ?.value === "TECIDOS" &&
+      product?.additionalProperty?.find((item: any) => item.name === "cluster")
+          ?.propertyID !== "160"
+      ? true
       : false;
 
   const descriptionCurt = product.isVariantOf &&
@@ -414,15 +438,19 @@ function Details({
     },
   );
 
-  const listCategory = product?.additionalProperty.filter((item)=>item.name==='category');
-  
+  const listCategory = product?.additionalProperty.filter((item) =>
+    item.name === "category"
+  );
+
   const queryCategory = listCategory.reduce((acc, obj) => {
     acc += `/${obj.propertyID}`;
     return acc;
-  }, 'C:');
-  const queryUrl = product?.category.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/>/g, '/').replace(/ /g, '-');
+  }, "C:");
+  const queryUrl = product?.category.toLowerCase().normalize("NFD").replace(
+    /[\u0300-\u036f]/g,
+    "",
+  ).replace(/>/g, "/").replace(/ /g, "-");
 
- 
   if (variant === "slider") {
     return (
       <div class="max-md:mt-32 relative">
@@ -446,33 +474,32 @@ function Details({
           </div>
         </div>
 
-<div class="max-w-[1236px] mx-auto flex justify-start md:relative">
-<div class="md:absolute md:top-0 md:left-0 w-full md:w-[32%] flex max-md:order-2 max-md:border-b border-[#ebebeb] max-md:pb-5 max-md:px-5 flex-wrap">
-              <div
-                class="mt-2 w-full"
-                id="yv-review-quickreview"
-              >
-              </div>
-              <div class="hidden md:flex items-center w-[42%] text-[13px] font-medium leading-[19px] tracking-[0px] text-[#171413]">
-                Vendido e entregue por
-              </div>
-              <div class="hidden md:flex w-[58%]">
-                <a
-                  href={brandLink}
-                  class="text-[13px] font-medium leading-[19px] tracking-[0px] text-[#171413] underline"
-                >
-                  {brand}
-                </a>
-              </div>
+        <div class="max-w-[1236px] mx-auto flex justify-start md:relative">
+          <div class="md:absolute md:top-0 md:left-0 w-full md:w-[32%] flex max-md:order-2 max-md:border-b border-[#ebebeb] max-md:pb-5 max-md:px-5 flex-wrap">
+            <div
+              class="mt-2 w-full"
+              id="yv-review-quickreview"
+            >
             </div>
-</div>
+            <div class="hidden md:flex items-center w-[42%] text-[13px] font-medium leading-[19px] tracking-[0px] text-[#171413]">
+              Vendido e entregue por
+            </div>
+            <div class="hidden md:flex w-[58%]">
+              <a
+                href={brandLink}
+                class="text-[13px] font-medium leading-[19px] tracking-[0px] text-[#171413] underline"
+              >
+                {brand}
+              </a>
+            </div>
+          </div>
+        </div>
 
         <div
           id={id}
           class="max-w-[1236px] mx-auto flex items-start justify-between max-md:flex-col"
         >
           <div class="flex flex-col max-md:order-3 w-full md:w-[32%] pr-4 max-md:px-4">
-           
             <div class="flex mt-5 max-md:hidden md:pt-[60px]">
               <div class="w-[90%]">
                 <h1 class="text-2xl font-normal leading-6 tracking-[0] text-[#171413]">
@@ -490,7 +517,7 @@ function Details({
               <p class="text-sm tracking-[0] text-[#171413] leading-[21px]">
                 {descriptionCurt}
               </p>
-            </div> 
+            </div>
             <div class="flex md:hidden items-center order-1">
               <div class="flex items-center w-[49%] text-[13px] font-medium leading-[19px] tracking-[0px] text-[#171413]">
                 Vendido e entregue por
@@ -503,7 +530,7 @@ function Details({
                   {brand}
                 </a>
               </div>
-              </div>           
+            </div>
             <div class="max-md:order-3 py-7">
               {composition &&
                 (
@@ -533,10 +560,14 @@ function Details({
             </div>
 
             <div class="max-md:order-4">
-             <ColorsSimilars query={queryCategory} url={queryUrl} isMeter={isMeter} />
+              <ColorsSimilars
+                query={queryCategory}
+                url={queryUrl}
+                isMeter={isMeter}
+              />
             </div>
           </div>
-        
+
           {/* images */}
           <div class="max-md:order-1 max-md:px-5 w-full md:w-[32%]">
             {/* Image Slider */}
@@ -673,7 +704,7 @@ function ProductDetails(
    * Showcase the different product views we have on this template. In case there are less
    * than two images, render a front-back, otherwhise render a slider
    * Remove one of them and go with the best suited for your use case.
-   */  
+   */
 
   const variant = maybeVar === "auto"
     ? page?.product.image?.length && page?.product.image?.length < 2
@@ -712,12 +743,10 @@ function ProductDetails(
     page?.product.isVariantOf.additionalProperty.filter((item: any) =>
       item.name === "Tendências"
     );
-    
+
   return (
     <div class="container py-0 sm:py-5">
-      {page
-        ? <Details page={page} variant={variant} />
-        : <NotFound />}
+      {page ? <Details page={page} variant={variant} /> : <NotFound />}
       {page &&
         (
           <div class="w-full max-w-[1236px] mx-auto max-md:px-5">
@@ -864,7 +893,7 @@ function ProductDetails(
                 dangerouslySetInnerHTML={{ __html: description }}
               >
               </div>
-            )}            
+            )}
           </div>
         )}
 

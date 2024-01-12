@@ -48,7 +48,7 @@ export default function Contato(props: Props) {
           )}
 
         <div>
-          <Form/>
+          <Form />
         </div>
       </div>
     </div>

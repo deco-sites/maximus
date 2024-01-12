@@ -15,7 +15,7 @@ export default function Combinador() {
   const get = async () => {
     const listStorage: any | null = localStorage.getItem("combinador");
 
-    const listFq = JSON.parse(listStorage)?.map((id: any) => `productId:${id}`); 
+    const listFq = JSON.parse(listStorage)?.map((id: any) => `productId:${id}`);
 
     if (!listFq?.length) {
       setProducts([]);

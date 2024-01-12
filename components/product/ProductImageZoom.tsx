@@ -18,16 +18,20 @@ function ProductImageZoom({ images, width, height }: Props) {
   const open = useSignal(false);
 
   return (
-    <div class={`cursor-pointer w-full h-full absolute ${open.value ? "z-[99]" : "z-0"} bottom-0 right-0 bg-[transparent]`}>
+    <div
+      class={`cursor-pointer w-full h-full absolute ${
+        open.value ? "z-[99]" : "z-0"
+      } bottom-0 right-0 bg-[transparent]`}
+    >
       <div
         class="w-full h-full hidden sm:inline-flex"
         onClick={() => open.value = true}
       >
-        </div>
-        <div class="text-white absolute z-[-1] bottom-3 right-3">
-          <Icon id="Zoom" size={24} />
-        </div>
-      
+      </div>
+      <div class="text-white absolute z-[-1] bottom-3 right-3">
+        <Icon id="Zoom" size={24} />
+      </div>
+
       <div id={id}>
         <Modal
           class="w-11/12 max-w-7xl grid grid-cols-[48px_1fr_48px] grid-rows-1 place-items-center"

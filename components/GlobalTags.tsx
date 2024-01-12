@@ -12,7 +12,10 @@ function GlobalTags() {
       {/* Web Manifest */}
       <link rel="manifest" href={asset("/site.webmanifest")} />
 
-      <meta name="google-site-verification" content="fOuk4oYX2s2kRLnAwkTOYB8CDwt8LeWEOKN0bCzzU6g" />
+      <meta
+        name="google-site-verification"
+        content="fOuk4oYX2s2kRLnAwkTOYB8CDwt8LeWEOKN0bCzzU6g"
+      />
     </Head>
   );
 }

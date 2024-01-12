@@ -10,7 +10,10 @@ export interface Props {
   maxParcels: number;
 }
 
-function Price({ price, listPrice, installments, offers, isMeter, maxParcels }: Props, {}) {
+function Price(
+  { price, listPrice, installments, offers, isMeter, maxParcels }: Props,
+  {},
+) {
   const { quantityPdp } = useUI();
 
   return (
@@ -19,7 +22,7 @@ function Price({ price, listPrice, installments, offers, isMeter, maxParcels }: 
         <div class="flex flex-row gap-2 items-center">
           <span class="text-[13px] font-normal tracking-[0] text-[#bababa] leading-4 line-through mb-2">
             De: {formatPrice(
-              (listPrice * quantityPdp.value) /  (isMeter ? 10 : 1),
+              (listPrice * quantityPdp.value) / (isMeter ? 10 : 1),
               offers!.priceCurrency!,
             )}
           </span>
@@ -49,7 +52,7 @@ function Price({ price, listPrice, installments, offers, isMeter, maxParcels }: 
           )}
 
         <p class="block text-xs font-semibold leading-[29px] mb-[15px]">
-          {maxParcels > 6 ? '13%' : '5%'} de desconto para pagamentos à vista
+          {maxParcels > 6 ? "13%" : "5%"} de desconto para pagamentos à vista
         </p>
       </div>
     </div>

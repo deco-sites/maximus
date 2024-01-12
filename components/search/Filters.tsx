@@ -29,7 +29,7 @@ function ValueItem(
   { url, selected, label, quantity }: FilterToggleValue,
 ) {
   return (
-    <a href={url} class="flex items-center gap-2">
+    <a href={url} class="flex items-center gap-2" rel="nofollow">
       <div
         aria-checked={selected}
         class="checkbox  rounded-none border-black w-[15px] h-[15px]"

@@ -42,7 +42,11 @@ function Conservation({ conservationsList }: { conservationsList: any }) {
         {conservationsList.length > 0 &&
           conservationsList?.map((item: any) => (
             <div class="mb-5 mr-2">
-              <img src={buildImage(item.name, item.value)} alt={item.value} title={item.value} />
+              <img
+                src={buildImage(item.name, item.value)}
+                alt={item.value}
+                title={item.value}
+              />
             </div>
           ))}
       </div>

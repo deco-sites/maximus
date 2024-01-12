@@ -50,7 +50,7 @@ function Result({
       <div
         class={`max-w-[1206px] mx-auto container px-4 sm:py-10 border-t-[#EBEBEB] ${
           breadcrumb.numberOfItems > 0 ? "border-t" : "border-0"
-        } ${!title && 'max-md:mt-32'} md:mt-6`}
+        } ${!title && "max-md:mt-32"} md:mt-6`}
       >
         {title
           ? (
@@ -84,8 +84,8 @@ function Result({
                   </h1>
                 )
                 : ""}
-              <div class="hidden md:flex items-center justify-between">              
-                  <div></div>
+              <div class="hidden md:flex items-center justify-between">
+                <div></div>
                 <Paginations pageInfo={pageInfo} />
               </div>
             </div>

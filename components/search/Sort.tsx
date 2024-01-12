@@ -32,7 +32,7 @@ const portugueseMappings = {
   "discount:desc": "Maior desconto",
 };
 function Sort({ sortOptions }: Props) {
-  const sort = useSort();  
+  const sort = useSort();
 
   return (
     <select

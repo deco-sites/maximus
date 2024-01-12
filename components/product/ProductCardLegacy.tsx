@@ -86,12 +86,25 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
     item.value === "Novidade"
   );
 
-  const isMeter = (product?.additionalProperty?.find((item) => item.name === "category")?.value === "TECIDOS" &&
-  !product?.additionalProperty?.some((item) => item.name === "cluster" && item.propertyID === "160")) || 
-  (product?.additionalProperty?.find((item) => item.name === "category" && item.value === "Entretelas") !== undefined && !product?.additionalProperty?.some((item) => item.name === "cluster" && item.propertyID === "160")) || product?.additionalProperty?.find((item) => item.name === "category" && item.value === "Crinol") !== undefined ? true
-  : false;
+  const isMeter =
+    (product?.additionalProperty?.find((item) => item.name === "category")
+            ?.value === "TECIDOS" &&
+        !product?.additionalProperty?.some((item) =>
+          item.name === "cluster" && item.propertyID === "160"
+        )) ||
+      (product?.additionalProperty?.find((item) =>
+            item.name === "category" && item.value === "Entretelas"
+          ) !== undefined &&
+        !product?.additionalProperty?.some((item) =>
+          item.name === "cluster" && item.propertyID === "160"
+        )) ||
+      product?.additionalProperty?.find((item) =>
+          item.name === "category" && item.value === "Crinol"
+        ) !== undefined
+      ? true
+      : false;
 
-      const discountt = listPrice &&
+  const discountt = listPrice &&
     Math.round(((listPrice - (price ? price : 0)) / listPrice) * 100);
 
   const l = layout;
@@ -314,24 +327,24 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
                   : ""
               } ${align === "center" ? "justify-center" : "justify-center"}`}
             >
-               {
-                availability === "https://schema.org/InStock" ?
-                <>
-                  <div
-                    class={`items-center flex-wrap mr-2 line-through text-base-300 text-xs ${
-                      l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
-                    } ${listPrice !== price ? "flex" : "hidden"}`}
-                  >
-                    {formatPrice(listPrice, offers!.priceCurrency!)}
-                  </div>
-                  <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413]">
-                    {formatPrice(price, offers!.priceCurrency!)}{" "}
-                    {price ? isMeter ? "/ metro" : "/ un" : <p class="text-center font-medium">indisponível</p>}
-                  </div>
+              {availability === "https://schema.org/InStock"
+                ? (
+                  <>
+                    <div
+                      class={`items-center flex-wrap mr-2 line-through text-base-300 text-xs ${
+                        l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
+                      } ${listPrice !== price ? "flex" : "hidden"}`}
+                    >
+                      {formatPrice(listPrice, offers!.priceCurrency!)}
+                    </div>
+                    <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413]">
+                      {formatPrice(price, offers!.priceCurrency!)} {price
+                        ? isMeter ? "/ metro" : "/ un"
+                        : <p class="text-center font-medium">indisponível</p>}
+                    </div>
                   </>
-                   :
-                   <p class="text-center font-medium">indisponível</p>
-               }
+                )
+                : <p class="text-center font-medium">indisponível</p>}
             </div>
             {l?.hide?.installments
               ? ""

@@ -17,15 +17,15 @@ export default function Benefits({ content }: {
             return (
               <li class="w-[48%] p-3 flex justify-center items-start">
                 {item?.image &&
-                  (                   
-                      <img
-                        loading="lazy"
-                        width={24}
-                        height={24}
-                        src={item?.image}
-                        alt={item?.texto}
-                        title="Item de beneficios"
-                      />
+                  (
+                    <img
+                      loading="lazy"
+                      width={24}
+                      height={24}
+                      src={item?.image}
+                      alt={item?.texto}
+                      title="Item de beneficios"
+                    />
                   )}
                 {item?.texto &&
                   (
@@ -37,7 +37,7 @@ export default function Benefits({ content }: {
                   )}
               </li>
             );
-          })}          
+          })}
         </ul>
       )}
     </div>

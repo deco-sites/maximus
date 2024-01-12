@@ -43,54 +43,56 @@ export default function BannerSlider(
 
   const id = useId();
 
-  const listBanners = banners && banners.map((banner, index) => {
-    return (
-      <Slider.Item
-        index={index}
-        class="flex flex-col gap-4 carousel-item w-[134px] md:w-[234px]"
-      >
-        <a
-          href={banner.link}
-          class="block w-full text-[#585858] hover:text-[#000] hover:font-medium"
-        >         
-          <Image
-             src={`${banner.image}?v=231123`}
-             alt={banner.title}
-             title={banner.title}
-              width={234}
-              height={240}
-              loading="lazy"
-            />    
-          <p class="mt-3 mb-0 md:mb-9 text-center text-base">
-            {banner.title}
-          </p>
-        </a>
-      </Slider.Item>
-    );
-  });
+  if (!banners || banners.length === 0) {
+    return null;
+  }
 
   return (
-    <div
-      id={id}
-      class="w-full max-w-[1246px] mx-auto mt-9 mb-8 max-md:px-3 relative"
-    >
-      <Slider class="carousel carousel-start md:carousel-center gap-4 lg:gap-8 row-start-2 row-end-5 w-full">
-        {listBanners}
-      </Slider>
-      <div class="hidden md:block">
-        <div class="z-10 absolute -left-2 lg:-left-8 top-[100px]">
-          <Slider.PrevButton class="btn-slider-custom btn-circle">
-            <Icon size={18} id="ChevronLeft" strokeWidth={3} />
-          </Slider.PrevButton>
-        </div>
-        <div class="z-10 absolute -right-2 lg:-right-8 top-[100px]">
-          <Slider.NextButton class="btn-slider-custom btn-circle">
-            <Icon size={24} id="ChevronRight" strokeWidth={3} />
-          </Slider.NextButton>
-        </div>
-      </div>
+    <div class="w-full max-w-[1246px] mr-auto ml-auto container py-8 flex flex-col gap-12 lg:gap-16 lg:py-10">
+      <div
+        id={id}
+        class="container grid grid-cols-[48px_1fr_48px] px-0 max-sm:px-2"
+      >
+        <Slider class="carousel carousel-center sm:carousel-end gap-6 col-span-full row-start-2 row-end-5">
+          {banners?.map((banner, index) => (
+            <Slider.Item
+              index={index}
+              class="carousel-item w-[38%] sm:w-[234px] first:pl-0 sm:first:pl-0 last:pr-6 sm:last:pr-0"
+            >
+              <a
+                href={banner.link}
+                class="block w-full text-[#585858] hover:text-[#000] hover:font-medium"
+              >
+                <Image
+                  src={`${banner.image}?v=231123`}
+                  alt={banner.title}
+                  title={banner.title}
+                  width={234}
+                  height={240}
+                  loading="lazy"
+                />
+                <p class="mt-3 mb-0 md:mb-9 text-center text-base">
+                  {banner.title}
+                </p>
+              </a>
+            </Slider.Item>
+          ))}
+        </Slider>
 
-      <SliderJS rootId={id} infinite={true} />
+        <>
+          <div class="hidden relative sm:block z-10 col-start-1 row-start-3">
+            <Slider.PrevButton class="btn-slider-custom btn-circle absolute right-1/2 top-[-50px]">
+              <Icon size={18} id="ChevronLeft" strokeWidth={3} />
+            </Slider.PrevButton>
+          </div>
+          <div class="hidden relative sm:block z-10 col-start-3 row-start-3">
+            <Slider.NextButton class="btn-slider-custom btn-circle absolute left-1/2 top-[-50px]">
+              <Icon size={24} id="ChevronRight" strokeWidth={3} />
+            </Slider.NextButton>
+          </div>
+        </>
+        <SliderJS rootId={id} infinite={true} />
+      </div>
     </div>
   );
 }

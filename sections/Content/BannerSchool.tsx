@@ -80,28 +80,25 @@ export default function BannerSchool(
         'Aprenda costurar roupinhas para seus "filhos de 4 patas" e lucre com o nicho de costura que mais cresce no Brasil!',
       link:
         "https://materiais.maximustecidos.com.br/curso-de-costura-online-costura-pet-aury-moda-pet?_gl=1*1cq1tin*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzA1NzAuMC4wLjA.*_fplc*RG4xdXRTdzRpM2MxNVRCRkNJUUVra1IwU3d4c2NqZHAzdndpSFhEeFVyY2w3RE54R0lDZUlnUHo1VlF0dUclMkZwZmVBallrWFhFRjBrUkRpY0l4TzNYbyUyQlRKaGM0JTJGUWwlMkJJUWx3YjREeTloN0M5NkNnZlIlMkJNSW9pWERrRkJ6USUzRCUzRA..",
-    },
-    {
+    }, {
       image: "/arquivos/Bordado-a-mão-flag.jpg",
       title: "Arte do Bordado à mão",
       text:
-        'Aprenda a bordar desde os pontos mais simples até desenhos inteiros, mesmo que nunca tenha bordado antes.',
+        "Aprenda a bordar desde os pontos mais simples até desenhos inteiros, mesmo que nunca tenha bordado antes.",
       link:
         "https://materiais.maximustecidos.com.br/curso-online-arte-do-bordado-fernanda-nadal?_gl=1*y5d03a*_ga*MTIyNDExNTQwNi4xNjk3NzI1MzMy*_ga_HGM4SXF2FQ*MTcwNDcyODM4Mi40MS4wLjE3MDQ3MjgzODIuMC4wLjA.",
-    },
-    {
+    }, {
       image: "/arquivos/bordadoluneville.jpg",
       title: "Bordado Luneville",
       text:
-        'Aprenda a bordar rendas sofisticadas e peças luxuosas utilizando a mesma técnica artesanal de roupas da Alta Costura.',
+        "Aprenda a bordar rendas sofisticadas e peças luxuosas utilizando a mesma técnica artesanal de roupas da Alta Costura.",
       link:
         "https://materiais.maximustecidos.com.br/curso-online-bordado-luneville-fernanda-nadal?_gl=1*8n9egc*_ga*MTIyNDExNTQwNi4xNjk3NzI1MzMy*_ga_HGM4SXF2FQ*MTcwNDcyODM4Mi40MS4wLjE3MDQ3MjgzODIuMC4wLjA.",
-    },
-    {
+    }, {
       image: "/arquivos/Estilista-de-fato-flag.jpg",
       title: "Estilista de Fato",
       text:
-        'Aprenda Desenho de Moda com um método simples e seja valorizada no mercado da Costura como um (a) Estilista de Fato!',
+        "Aprenda Desenho de Moda com um método simples e seja valorizada no mercado da Costura como um (a) Estilista de Fato!",
       link:
         "https://materiais.maximustecidos.com.br/curso-de-desenho-de-moda-online-estilista-de-fato-valmir-pazeto?_gl=1*8n9egc*_ga*MTIyNDExNTQwNi4xNjk3NzI1MzMy*_ga_HGM4SXF2FQ*MTcwNDcyODM4Mi40MS4wLjE3MDQ3MjgzODIuMC4wLjA.",
     }],

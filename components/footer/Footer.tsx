@@ -15,10 +15,10 @@ import Whatsapp from "./Whatsapp.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface bannerSchoolItem {
-    image: LiveImage;
-    title: string;
-    text: string;
-    link: string;
+  image: LiveImage;
+  title: string;
+  text: string;
+  link: string;
 }
 
 export interface benefitsItem {
@@ -107,56 +107,64 @@ function Footer({
           "Aprenda a divulgar suas costuras de forma profissional nas redes sociais para valorizar o seu trabalho e conquistar mais clientes.",
         link:
           "https://materiais.maximustecidos.com.br/curso-online-de-redes-sociais-influenciadora-da-costura-ana-paula-mocelin?_gl=1*i8qwcv*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzA1NzAuMC4wLjA.*_fplc*RUhpNCUyRlZQcVdwSmRZeTlNZ2ZMTUZrc1R4eW9xb0pmJTJGZ0d1ZDJ3dE1KSE5weUN4REdsa3dOdGxtY3lyazFLJTJGRWI5UWk3MG1QeHA1V2xTVmpjSnpja3ZWb3FJbFFkREJ3bTExaXJTS1NoZlo1a3VXcjYwVEpkOWJQeE5ueFVBJTNEJTNE",
-      }, {
+      },
+      {
         image: "/arquivos/Capas%20dos%20Cursos%20-%20FLAGS.jpg",
         title: "Ajustes e Consertos",
         text:
           "Aprenda a arte do ajuste e conserto de todos os tipos de roupas com Viviane Alves. Um dos cursos mais pedidos pelas alunas, agora na nossa Escola.",
         link:
           "https://materiais.maximustecidos.com.br/curso-online-costura-ajustes-consertos-de-roupas-viviane-alves?_gl=1*7qgfjh*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzA1NzAuMC4wLjA.*_fplc*bWo4Ynd3WGQ3WHVrZGF5bFJoM2ZJSUZheG5oZDhZblNlQmFyJTJCNWFjSE13cTFCJTJCS2Zod3puQU5wZVpNeHJ3bjJrTHFzdTlrWG10TXRxZjdob21yelVGOWlhZWh1aXB6ajRIaHRTZmxWbCUyRnVnNFBQeDNXRldlMVEyMnJWT3l3JTNEJTNE",
-      }, {
+      },
+      {
         image: "/arquivos/modaeestilo.png",
         title: "MOLDES MODA E ESTILO",
         text:
           "Faça sua Assinatura e Tenha Acesso Ilimitado à Maior e mais Confiável Biblioteca de Moldes de Costura do Brasil com a Curadoria da Modelista Marlene Mukai.",
         link:
           "https://materiais.maximustecidos.com.br/assinatura-online-moldes-moda-estilo-marlene-mukai?_gl=1*7qgfjh*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzA1NzAuMC4wLjA.*_fplc*bWo4Ynd3WGQ3WHVrZGF5bFJoM2ZJSUZheG5oZDhZblNlQmFyJTJCNWFjSE13cTFCJTJCS2Zod3puQU5wZVpNeHJ3bjJrTHFzdTlrWG10TXRxZjdob21yelVGOWlhZWh1aXB6ajRIaHRTZmxWbCUyRnVnNFBQeDNXRldlMVEyMnJWT3l3JTNEJTNE",
-      }, {
+      },
+      {
         image: "/arquivos/Curso-costura-online-flag.jpg",
         title: "Costura de Sucesso",
         text:
           "Aprenda a costurar toda e qualquer peça de roupa do absoluto zero, seja por hobby, terapia, ou para literalmente viver de costuras!",
         link:
           "https://materiais.maximustecidos.com.br/curso-de-costura-online-costura-de-sucesso-nea-santtana?_gl=1*vl4lwz*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzA1NzAuMC4wLjA.*_fplc*RG4xdXRTdzRpM2MxNVRCRkNJUUVra1IwU3d4c2NqZHAzdndpSFhEeFVyY2w3RE54R0lDZUlnUHo1VlF0dUclMkZwZmVBallrWFhFRjBrUkRpY0l4TzNYbyUyQlRKaGM0JTJGUWwlMkJJUWx3YjREeTloN0M5NkNnZlIlMkJNSW9pWERrRkJ6USUzRCUzRA..",
-      }, {
+      },
+      {
         image: "/arquivos/Modelagem-flag.jpg",
         title: "Modelista Profissional",
         text:
           "Aprenda Modelar as principais peças de roupas femininas estudando com a lenda viva da Modelagem Plana no Brasil.",
         link:
           "https://materiais.maximustecidos.com.br/curso-online-modelista-profissional-marlene-mukai?_gl=1*vl4lwz*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzA1NzAuMC4wLjA.*_fplc*RG4xdXRTdzRpM2MxNVRCRkNJUUVra1IwU3d4c2NqZHAzdndpSFhEeFVyY2w3RE54R0lDZUlnUHo1VlF0dUclMkZwZmVBallrWFhFRjBrUkRpY0l4TzNYbyUyQlRKaGM0JTJGUWwlMkJJUWx3YjREeTloN0M5NkNnZlIlMkJNSW9pWERrRkJ6USUzRCUzRA..",
-      }, {
+      },
+      {
         image: "/arquivos/Modelagem-malhas-flag.jpg",
         title: "Modelagem de Malhas",
         text:
           "Perca o medo da Modelagem e aprenda a fazer as principais peças de malha estudando com Marlene Mukai.",
         link:
           "https://materiais.maximustecidos.com.br/curso-online-modelagem-profissional-de-malhas-marlene-mukai?_gl=1*1cq1tin*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzA1NzAuMC4wLjA.*_fplc*RG4xdXRTdzRpM2MxNVRCRkNJUUVra1IwU3d4c2NqZHAzdndpSFhEeFVyY2w3RE54R0lDZUlnUHo1VlF0dUclMkZwZmVBallrWFhFRjBrUkRpY0l4TzNYbyUyQlRKaGM0JTJGUWwlMkJJUWx3YjREeTloN0M5NkNnZlIlMkJNSW9pWERrRkJ6USUzRCUzRA..",
-      }, {
+      },
+      {
         image: "/arquivos/Costura-infantil-%20flag.jpg",
         title: "Costura Infantil",
         text:
           "Aprenda costurar roupas infantis e enxovais para seus filhos e netos e ganhe dinheiro num dos ramos mais lucrativos da costura;",
         link:
           "https://materiais.maximustecidos.com.br/curso-de-costura-online-costura-infantil-clara-calui?_gl=1*1cq1tin*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzA1NzAuMC4wLjA.*_fplc*RG4xdXRTdzRpM2MxNVRCRkNJUUVra1IwU3d4c2NqZHAzdndpSFhEeFVyY2w3RE54R0lDZUlnUHo1VlF0dUclMkZwZmVBallrWFhFRjBrUkRpY0l4TzNYbyUyQlRKaGM0JTJGUWwlMkJJUWx3YjREeTloN0M5NkNnZlIlMkJNSW9pWERrRkJ6USUzRCUzRA..",
-      }, {
+      },
+      {
         image: "/arquivos/Costura-criativa-flag.jpg",
         title: "Costura Criativa",
         text:
           "Aprenda a costurar as peças mais pedidas e lucrativas da Costura Criativa com Menino Costureiro, o Fenômeno da Costura na Internet.",
         link:
           "https://materiais.maximustecidos.com.br/curso-de-costura-online-costura-criativa-menino-costureiro?_gl=1*1cq1tin*_ga*MzgyMjYzODQ2LjE2OTg3MDc2MzM.*_ga_HGM4SXF2FQ*MTcwMDc3MDExNS40NS4xLjE3MDA3NzA1NzAuMC4wLjA.*_fplc*RG4xdXRTdzRpM2MxNVRCRkNJUUVra1IwU3d4c2NqZHAzdndpSFhEeFVyY2w3RE54R0lDZUlnUHo1VlF0dUclMkZwZmVBallrWFhFRjBrUkRpY0l4TzNYbyUyQlRKaGM0JTJGUWwlMkJJUWx3YjREeTloN0M5NkNnZlIlMkJNSW9pWERrRkJ6USUzRCUzRA..",
-      }, {
+      },
+      {
         image: "/arquivos/Costura-Pet-flag.jpg",
         title: "Costura Pet",
         text:
@@ -168,7 +176,7 @@ function Footer({
         image: "/arquivos/Bordado-a-mão-flag.jpg",
         title: "Arte do Bordado à mão",
         text:
-          'Aprenda a bordar desde os pontos mais simples até desenhos inteiros, mesmo que nunca tenha bordado antes.',
+          "Aprenda a bordar desde os pontos mais simples até desenhos inteiros, mesmo que nunca tenha bordado antes.",
         link:
           "https://materiais.maximustecidos.com.br/curso-online-arte-do-bordado-fernanda-nadal?_gl=1*y5d03a*_ga*MTIyNDExNTQwNi4xNjk3NzI1MzMy*_ga_HGM4SXF2FQ*MTcwNDcyODM4Mi40MS4wLjE3MDQ3MjgzODIuMC4wLjA.",
       },
@@ -176,7 +184,7 @@ function Footer({
         image: "/arquivos/bordadoluneville.jpg",
         title: "Bordado Luneville",
         text:
-          'Aprenda a bordar rendas sofisticadas e peças luxuosas utilizando a mesma técnica artesanal de roupas da Alta Costura.',
+          "Aprenda a bordar rendas sofisticadas e peças luxuosas utilizando a mesma técnica artesanal de roupas da Alta Costura.",
         link:
           "https://materiais.maximustecidos.com.br/curso-online-bordado-luneville-fernanda-nadal?_gl=1*8n9egc*_ga*MTIyNDExNTQwNi4xNjk3NzI1MzMy*_ga_HGM4SXF2FQ*MTcwNDcyODM4Mi40MS4wLjE3MDQ3MjgzODIuMC4wLjA.",
       },
@@ -184,10 +192,10 @@ function Footer({
         image: "/arquivos/Estilista-de-fato-flag.jpg",
         title: "Estilista de Fato",
         text:
-          'Aprenda Desenho de Moda com um método simples e seja valorizada no mercado da Costura como um (a) Estilista de Fato!',
+          "Aprenda Desenho de Moda com um método simples e seja valorizada no mercado da Costura como um (a) Estilista de Fato!",
         link:
           "https://materiais.maximustecidos.com.br/curso-de-desenho-de-moda-online-estilista-de-fato-valmir-pazeto?_gl=1*8n9egc*_ga*MTIyNDExNTQwNi4xNjk3NzI1MzMy*_ga_HGM4SXF2FQ*MTcwNDcyODM4Mi40MS4wLjE3MDQ3MjgzODIuMC4wLjA.",
-      }
+      },
     ],
   },
   beneficios = {
@@ -216,7 +224,8 @@ function Footer({
       {
         image:
           "https://tfcszo.vteximg.com.br/arquivos/icon-truck-mob.png?v=638043861321970000",
-        texto: "<strong>Frete grátis</strong> para todo o Brasil. <strong>*consulte condições</strong>",
+        texto:
+          "<strong>Frete grátis</strong> para todo o Brasil. <strong>*consulte condições</strong>",
       },
       {
         image:
@@ -235,7 +244,7 @@ function Footer({
           "https://tfcszo.vteximg.com.br/arquivos/icon-whats-mob.png?v=637966970348030000",
         texto:
           "<a href='https://api.whatsapp.com/send?phone=5545999110056' target='_blank'>WhastApp Maximus De seg a sex 09:00 às 18:00 horas</a>",
-      }
+      },
     ],
   },
   newsletter = {

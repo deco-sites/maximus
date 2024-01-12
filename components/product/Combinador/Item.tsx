@@ -19,7 +19,7 @@ export default function Item({ sku }: { sku: Props }, index: number) {
     const getList: any | null = localStorage.getItem("combinador");
     const listIds = JSON.parse(getList);
     localStorage.setItem("combinador", "[]");
-   
+
     const newList = listIds.filter((item: string) => item != id);
 
     localStorage.setItem("combinador", JSON.stringify(newList));

@@ -23,39 +23,39 @@ export const mapProductCategoryToAnalyticsCategories = (category: string) => {
 };
 
 export const mapProductToAnalyticsItem = (
-    { product, breadcrumbList, price, listPrice }: {
-      product: Product;
-      breadcrumbList?: BreadcrumbList;
-      price?: number;
-      listPrice?: number;
-    },
-  ): AnalyticsItem => {
-    const { name, isVariantOf } = product;
-    const productGroupID = isVariantOf?.productGroupID
-    const index = Math.max(
-      product.isVariantOf?.hasVariant.findIndex((v) => v.url === product.url) ||
-        0,
+  { product, breadcrumbList, price, listPrice }: {
+    product: Product;
+    breadcrumbList?: BreadcrumbList;
+    price?: number;
+    listPrice?: number;
+  },
+): AnalyticsItem => {
+  const { name, isVariantOf } = product;
+  const productGroupID = isVariantOf?.productGroupID;
+  const index = Math.max(
+    product.isVariantOf?.hasVariant.findIndex((v) => v.url === product.url) ||
       0,
-    );
-  
-    const categories = breadcrumbList?.itemListElement
-      ? mapCategoriesToAnalyticsCategories(
-        breadcrumbList?.itemListElement.map(({ name: _name }) => _name ?? "")
-          .filter(Boolean) ??
-          [],
-      )
-      : mapProductCategoryToAnalyticsCategories(product.category ?? "");      
-  
-    return {
-      item_id: productGroupID, //productID,
-      quantity: 1,
-      coupon: "",
-      price,
-      index,
-      discount: Number((price && listPrice ? listPrice - price : 0).toFixed(2)),
-      item_name: isVariantOf?.name ?? name ?? "",
-      item_variant: name,
-      item_brand: product.brand?.name ?? "",
-      ...categories,
-    };
+    0,
+  );
+
+  const categories = breadcrumbList?.itemListElement
+    ? mapCategoriesToAnalyticsCategories(
+      breadcrumbList?.itemListElement.map(({ name: _name }) => _name ?? "")
+        .filter(Boolean) ??
+        [],
+    )
+    : mapProductCategoryToAnalyticsCategories(product.category ?? "");
+
+  return {
+    item_id: productGroupID, //productID,
+    quantity: 1,
+    coupon: "",
+    price,
+    index,
+    discount: Number((price && listPrice ? listPrice - price : 0).toFixed(2)),
+    item_name: isVariantOf?.name ?? name ?? "",
+    item_variant: name,
+    item_brand: product.brand?.name ?? "",
+    ...categories,
   };
+};
