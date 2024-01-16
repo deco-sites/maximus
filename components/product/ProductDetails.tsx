@@ -23,7 +23,7 @@ import Conservation from "$store/islands/Conservation.tsx";
 import Payments from "$store/islands/Payments.tsx";
 import Price from "$store/islands/Price.tsx";
 import ColorsSimilars from "$store/islands/ColorsSimilars.tsx";
-//import AddCombinador from "$store/islands/AddCombinador.tsx";
+import FilePdf from "$store/islands/filePdf.tsx";
 
 export type Variant = "front-back" | "slider" | "auto";
 
@@ -712,6 +712,8 @@ function ProductDetails(
       : "slider"
     : maybeVar;
 
+    const productID = page?.product.isVariantOf?.productGroupID ?? "";
+
   const description = page?.product.description;
 
   const iframe = page?.product.isVariantOf &&
@@ -882,6 +884,9 @@ function ProductDetails(
                   </div>
                 )}
             </div>
+
+            <FilePdf productId={productID}/>
+       
             {description && (
               <h3 class="text-lg md:text-2xl font-bold leading-[26px] tracking-[0] text-[#171413] mx-0 my-10">
                 Descrição:
