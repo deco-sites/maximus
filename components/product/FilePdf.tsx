@@ -10,7 +10,7 @@ function FilePdf({ productId }: Props) {
 
    const fetchFile = async () => {
  try {
-    await fetch(`/api/dataentities/FM/search?productId=${productId}&_fields=id,productId,file`).then(response => response.json()).then(response => {
+    await fetch("https://www.maximustecidos.com.br/api/dataentities/FM/search?productId="+productId+"&_fields=id,productId,file").then(response => response.json()).then(response => {
         if(response){             
             idItem.value = response[0]?.id;
             fileItem.value = response[0]?.file;
