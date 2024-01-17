@@ -25,7 +25,7 @@ function FilePdf({ productId }: Props) {
     
 
   return (
-    <div>
+    <div class="pdf-download">
        {idItem.value && fileItem.value && (
         <a href={`https://tfcszo.vtexcrm.com.br/DynamicForm/GetFile?dataEntityInstanceId=FM-${idItem.value}&fileName=${fileItem.value}`} class="w-[250px] text-[#171413] font-medium text-center border text-sm transition-all duration-[0.3s] block mt-5 px-5 py-[15px] border-solid border-[#171413] hover:bg-[#171413] hover:text-white">
         Baixar Manual em PDF
