@@ -23,7 +23,7 @@ import Conservation from "$store/islands/Conservation.tsx";
 import Payments from "$store/islands/Payments.tsx";
 import Price from "$store/islands/Price.tsx";
 import ColorsSimilars from "$store/islands/ColorsSimilars.tsx";
-import FilePdf from "$store/islands/filePdf.tsx";
+import FilePdf from "$store/islands/FilePdf.tsx";
 
 export type Variant = "front-back" | "slider" | "auto";
 
