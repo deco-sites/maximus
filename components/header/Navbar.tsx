@@ -1,4 +1,4 @@
-import { useState } from "preact/hooks";
+import { useState, useEffect } from "preact/hooks";
 
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 //import Icon from "$store/components/ui/Icon.tsx";
@@ -23,17 +23,22 @@ function Navbar({ items, searchbar, logo, logoCurt }: {
 }) {
   const [showLogo, setShowLogo] = useState(false);
 
-  const window_ = window;
+  useEffect(() => {
+    const window_ = window;
 
-  window_.addEventListener("scroll", function () {
-    const scrollTop = window.scrollY;
-
-    if (scrollTop > 50) {
-      setShowLogo(true);
-    } else {
-      setShowLogo(false);
-    }
-  });
+    const handleScroll = function () {
+      const scrollTop = window.scrollY;
+  
+      if (scrollTop > 50) {
+        setShowLogo(true);
+      } else {
+        setShowLogo(false);
+      }
+    };
+  
+    window_.addEventListener("scroll", handleScroll);
+    return () => window_.removeEventListener("keyup", handleScroll);
+  }, []);
 
   return (
     <>
