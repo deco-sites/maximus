@@ -1,4 +1,4 @@
-import { useState } from "preact/hooks";
+import { useState, useEffect } from "preact/hooks";
 
 import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
@@ -21,16 +21,21 @@ function Alert({ alerts = [], interval = 5 }: Props) {
     navigator.clipboard.writeText("PRIMEIRACOMPRA");
   };
 
-  const window_ = window;
+  useEffect(() => {
+    const window_ = window;
 
-  window_.addEventListener("scroll", function () {
-    const scrollTop = window.scrollY;
-
-    if (scrollTop > 50) {
-      setShowLogo(true);
-    } else {
-      setShowLogo(false);
-    }
+    const handleScroll = function () {
+      const scrollTop = window.scrollY;
+  
+      if (scrollTop > 50) {
+        setShowLogo(true);
+      } else {
+        setShowLogo(false);
+      }
+    };
+  
+    window_.addEventListener("scroll", handleScroll);
+    return () => window_.removeEventListener("scroll", handleScroll);
   });
 
   return (

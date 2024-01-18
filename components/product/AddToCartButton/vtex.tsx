@@ -1,4 +1,4 @@
-import { useState } from "preact/hooks";
+import { useState, useEffect } from "preact/hooks";
 
 import { useUI } from "$store/sdk/useUI.ts";
 import { formatPrice } from "$store/sdk/format.ts";
@@ -66,16 +66,21 @@ function AddToCartButton(props: Props) {
       }
     }
   };
+  useEffect(() => {
+    const window_ = window;
 
-  const window_ = window;
-  window_.addEventListener("scroll", function () {
-    const scrollTop = window.scrollY;
-
-    if (scrollTop > 600) {
-      setShowBuy(true);
-    } else {
-      setShowBuy(false);
-    }
+    const handleScroll = function () {
+      const scrollTop = window.scrollY;
+  
+      if (scrollTop > 600) {
+        setShowBuy(true);
+      } else {
+        setShowBuy(false);
+      }
+    };
+  
+    window_.addEventListener("scroll", handleScroll);
+    return () => window_.removeEventListener("scroll", handleScroll);
   });
 
   return (
