@@ -38,7 +38,7 @@ function Navbar({ items, searchbar, logo, logoCurt }: {
   
     window_.addEventListener("scroll", handleScroll);
     return () => window_.removeEventListener("scroll", handleScroll);
-  }, []);
+  });
 
   return (
     <>
