@@ -35,7 +35,7 @@ function Alert({ alerts = [], interval = 5 }: Props) {
     };
   
     window_.addEventListener("scroll", handleScroll);
-    return () => window_.removeEventListener("keyup", handleScroll);
+    return () => window_.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
