@@ -15,7 +15,7 @@ export async function loader(
   _req: Request,
 ) {
   const data: any = await fetch(
-    "https://tfcszo.myvtex.com/api/catalog_system/pub/category/tree/3",
+    "https://fastly.decocache.com/https://tfcszo.myvtex.com/api/catalog_system/pub/category/tree/3",
   ).then(
     (r) => {
       if (r.ok) {
