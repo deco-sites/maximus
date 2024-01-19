@@ -122,6 +122,10 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
     item.value === "Novidade"
   );
 
+  const descontoVariacao = product?.additionalProperty?.some((item) =>
+  item.name === "cluster" && item.propertyID === "162"
+  )
+
   const largura = product?.additionalProperty?.find((item: any) =>
     item.name === "Largura do Tecido ou Tamanho"
   )
@@ -207,6 +211,13 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
                 Novidade
               </span>
             )}
+
+            {descontoVariacao &&
+              (
+                <span class="flex items-center justify-center bg-[#6eb212] text-[10px] leading-[14px] text-center text-white uppercase w-[90px] h-[21px] font-bold rounded-[0_5px_5px_0] mb-1">
+                  13% à vista
+                </span>
+              )}
 
           {discountt && discountt > 0
             ? (

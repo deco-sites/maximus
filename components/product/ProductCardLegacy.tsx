@@ -86,6 +86,10 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
     item.value === "Novidade"
   );
 
+  const descontoVariacao = product?.additionalProperty?.some((item) =>
+  item.name === "cluster" && item.propertyID === "162"
+  )
+
   const isMeter =
     (product?.additionalProperty?.find((item) => item.name === "category")
             ?.value === "TECIDOS" &&
@@ -181,6 +185,13 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
               (
                 <span class="flex items-center justify-center bg-black text-[10px] leading-[14px] text-center text-white uppercase w-[90px] h-[21px] font-bold rounded-[0_5px_5px_0] mb-1">
                   Novidade
+                </span>
+              )}
+
+            {descontoVariacao &&
+              (
+                <span class="flex items-center justify-center bg-[#6eb212] text-[10px] leading-[14px] text-center text-white uppercase w-[90px] h-[21px] font-bold rounded-[0_5px_5px_0] mb-1">
+                  13% à vista
                 </span>
               )}
 
