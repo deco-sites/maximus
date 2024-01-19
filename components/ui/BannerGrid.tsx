@@ -135,6 +135,8 @@ export default function BannnerGrid({
                 alt={alt}
                 decoding="async"
                 loading="lazy"
+                width={250}
+                height={250}
               />
             </Picture>
           </a>

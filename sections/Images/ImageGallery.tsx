@@ -157,6 +157,8 @@ function Banner(
           class="w-full h-full object-cover"
           src={srcMobile}
           alt={alt}
+          width={640}
+          height={420}
           decoding="async"
           loading="lazy"
         />

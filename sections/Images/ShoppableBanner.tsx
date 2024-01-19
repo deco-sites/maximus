@@ -70,6 +70,8 @@ export default function ShoppableBanner(props: Props) {
               src={image?.mobile}
               alt={image?.altText}
               decoding="async"
+              width={384}
+              height={227}
               loading="lazy"
             />
           </Picture>
