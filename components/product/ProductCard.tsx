@@ -90,6 +90,8 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
   item.name === "cluster" && item.propertyID === "162"
   )
 
+  const isSinger = product?.brand?.name === "SINGER (Jundiaí - SP)";
+
   const isMeter =
     (product?.additionalProperty?.find((item) => item.name === "category")
             ?.value === "TECIDOS" &&
@@ -366,13 +368,13 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
                 )
                 : <p class="text-center font-medium">indisponível</p>}
             </div>
-            {l?.hide?.installments
-              ? ""
-              : (
-                <div class="hidden text-base-300 text-sm lg:text-base">
+            {installments && isSinger 
+              ? <div class="text-base-300 text-xs text-center text-[#171413]">
                   ou {installments}
                 </div>
-              )}
+              : 
+                ""
+            }
           </div>
         )}
 

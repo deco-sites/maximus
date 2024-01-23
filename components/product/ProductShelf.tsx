@@ -20,6 +20,7 @@ export interface Props {
     headerfontSize?: "Normal" | "Large";
   };
   cardLayout?: cardLayout;
+  installments: any;
 }
 
 function ProductShelf({
@@ -28,6 +29,7 @@ function ProductShelf({
   description,
   layout,
   cardLayout,
+  installments
 }: Props) {
   const id = useId();
 
@@ -57,11 +59,11 @@ function ProductShelf({
                 product={product}
                 itemListName={title}
                 layout={cardLayout}
+                installments={installments}
               />
             </Slider.Item>
           ))}
         </Slider>
-
         <>
           <div class="hidden relative sm:block z-10 col-start-1 row-start-3">
             <Slider.PrevButton class="btn-slider-custom btn-circle absolute right-1/2 -top-20">

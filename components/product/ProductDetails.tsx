@@ -221,7 +221,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
 
           {discountt && discountt > 0
             ? (
-              <span class="bg-[#ff6f61] text-white text-sm font-bold ml-1.5 px-3.5 py-1 rounded-[0_5px_5px_0]">
+              <span class="bg-[#ff6f61] text-white text-sm font-bold px-3.5 py-1 rounded-[0_5px_5px_0]">
                 -{discountt} % Off
               </span>
             )
