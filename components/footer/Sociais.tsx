@@ -49,7 +49,7 @@ export default function Sociais({ content }: {
       <div class="w-30 flex flex-wrap max-md:flex-col items-center">
         <div class="flex items-center mr-9 max-md:mb-5">
           <p class="text-xs text-[#999] mr-3">Desenvolvido por</p>
-          <a href="https://vtex.com/br-pt/" target="_blank">
+          <a href="https://www.agencia2bdigital.com.br/" target="_blank">
             <Image
               src="https://tfcszo.vteximg.com.br/arquivos/2bdigital_black.svg"
               alt="vtex"
@@ -62,7 +62,7 @@ export default function Sociais({ content }: {
         </div>
         <div class="flex items-center">
           <p class="text-xs text-[#999] mr-4">Plataforma</p>
-          <a href="https://agencia2bdigital.com.br/" target="_blank">
+          <a href="https://vtex.com/br-pt/" target="_blank">
             <Image
               src="https://tfcszo.vteximg.com.br/arquivos/icon-vtex-benefits.svg"
               alt="2b"

@@ -3,6 +3,7 @@ import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import { useId } from "$store/sdk/useId.ts";
+import Image from "apps/website/components/Image.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 /**
@@ -64,15 +65,17 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
           src={desktop}
           height={454}
           width={1246}
-        />
-        <img
-          class="object-cover w-full h-full"
-          loading={lcp ? "eager" : "lazy"}
+        />       
+
+        <Image
+          class="w-full h-full 2b"
           src={desktop}
-          alt={alt}
+          title={alt}
           height={454}
           width={1246}
-        />
+          fit="contain"
+          loading={lcp ? "eager" : "lazy"}
+      />
       </Picture>
     </a>
   );

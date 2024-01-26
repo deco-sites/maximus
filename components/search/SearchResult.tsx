@@ -59,12 +59,12 @@ function Result({
             </h3>
           )
           : ""}
-        <SearchControls
+        {products.length > 0 && <SearchControls
           sortOptions={sortOptions}
           filters={filters}
           breadcrumb={breadcrumb}
           displayFilter={layout?.variant === "drawer"}
-        />
+        />}
 
         <div class="flex flex-row">
           {layout?.variant === "aside" && filters.length > 0 && (
@@ -92,7 +92,7 @@ function Result({
             <ProductGallery products={products} layout={cardLayout} />
 
             <Paginations pageInfo={pageInfo} />
-            <InfoPagination pageInfo={pageInfo} />
+            {products?.length>0 && <InfoPagination pageInfo={pageInfo} />}
           </div>
         </div>
       </div>

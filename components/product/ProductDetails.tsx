@@ -460,7 +460,7 @@ function Details({
   const queryUrl = product?.category.toLowerCase().normalize("NFD").replace(
     /[\u0300-\u036f]/g,
     "",
-  ).replace(/>/g, "/").replace(/ /g, "-");
+  ).replace(/>/g, "/").replace(/ /g, "-").replace(/,/g, '');
 
   if (variant === "slider") {
     return (
