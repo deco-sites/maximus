@@ -7,7 +7,7 @@ function YourViewsIntegration() {
         async
         src="//service.yourviews.com.br/script/ae97f62a-00ed-4eb7-8fbf-024f90f5ff8a/yvapi.js"
       >
-      </script>
+      </script>       
     </>
   );
 }

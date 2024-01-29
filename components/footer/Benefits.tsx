@@ -22,6 +22,7 @@ export default function Benefits({ content }: {
                       <img
                         loading="lazy"
                         width={30}
+                        height={30}
                         src={item?.image}
                         alt={item?.texto}
                         title="Item de beneficios"
@@ -45,6 +46,7 @@ export default function Benefits({ content }: {
                 <img
                   loading="lazy"
                   width={18}
+                  height={30}
                   src="https://tfcszo.vteximg.com.br/arquivos/Question@2x.png?v=637966970345700000"
                   alt="Ainda em duvida?"
                   title="Ainda em duvida?"
