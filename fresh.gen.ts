@@ -2,83 +2,84 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $0 from "./routes/_app.tsx";
-import * as $$0 from "./islands/AddCombinador.tsx";
-import * as $$1 from "./islands/AddToCartButton/vnda.tsx";
-import * as $$2 from "./islands/AddToCartButton/vtex.tsx";
-import * as $$3 from "./islands/BenefitItem.tsx";
-import * as $$4 from "./islands/CategoryBannersSlider.tsx";
-import * as $$5 from "./islands/CategoryTextFooter.tsx";
-import * as $$6 from "./islands/CategoryTextHeader.tsx";
-import * as $$7 from "./islands/ColorsSimilars.tsx";
-import * as $$8 from "./islands/Combination.tsx";
-import * as $$9 from "./islands/CombinationItem.tsx";
-import * as $$10 from "./islands/CombinationList.tsx";
-import * as $$11 from "./islands/Conservation.tsx";
-import * as $$12 from "./islands/FilePdf.tsx";
-import * as $$13 from "./islands/Form.tsx";
-import * as $$14 from "./islands/Header/Alert.tsx";
-import * as $$15 from "./islands/Header/Buttons.tsx";
-import * as $$16 from "./islands/Header/Cart/vnda.tsx";
-import * as $$17 from "./islands/Header/Cart/vtex.tsx";
-import * as $$18 from "./islands/Header/Drawers.tsx";
-import * as $$19 from "./islands/Header/Searchbar.tsx";
-import * as $$20 from "./islands/LojaItem.tsx";
-import * as $$21 from "./islands/MeterHelp.tsx";
-import * as $$22 from "./islands/Navbar.tsx";
-import * as $$23 from "./islands/Newsletter.tsx";
-import * as $$24 from "./islands/OutOfStock.tsx";
-import * as $$25 from "./islands/PaginationCustom.tsx";
-import * as $$26 from "./islands/Payments.tsx";
-import * as $$27 from "./islands/Price.tsx";
-import * as $$28 from "./islands/ProductImageZoom.tsx";
-import * as $$29 from "./islands/SearchControls.tsx";
-import * as $$30 from "./islands/ShippingSimulation.tsx";
-import * as $$31 from "./islands/SliderJS.tsx";
-import * as $$32 from "./islands/TabelaDeMedidas.tsx";
-import * as $$33 from "./islands/WishlistButton.tsx";
+import * as $_app from "./routes/_app.tsx";
+import * as $AddCombinador from "./islands/AddCombinador.tsx";
+import * as $AddToCartButton_vnda from "./islands/AddToCartButton/vnda.tsx";
+import * as $AddToCartButton_vtex from "./islands/AddToCartButton/vtex.tsx";
+import * as $BenefitItem from "./islands/BenefitItem.tsx";
+import * as $CategoryBannersSlider from "./islands/CategoryBannersSlider.tsx";
+import * as $CategoryTextFooter from "./islands/CategoryTextFooter.tsx";
+import * as $CategoryTextHeader from "./islands/CategoryTextHeader.tsx";
+import * as $ColorsSimilars from "./islands/ColorsSimilars.tsx";
+import * as $Combination from "./islands/Combination.tsx";
+import * as $CombinationItem from "./islands/CombinationItem.tsx";
+import * as $CombinationList from "./islands/CombinationList.tsx";
+import * as $Conservation from "./islands/Conservation.tsx";
+import * as $FilePdf from "./islands/FilePdf.tsx";
+import * as $Form from "./islands/Form.tsx";
+import * as $Header_Alert from "./islands/Header/Alert.tsx";
+import * as $Header_Buttons from "./islands/Header/Buttons.tsx";
+import * as $Header_Cart_vnda from "./islands/Header/Cart/vnda.tsx";
+import * as $Header_Cart_vtex from "./islands/Header/Cart/vtex.tsx";
+import * as $Header_Drawers from "./islands/Header/Drawers.tsx";
+import * as $Header_Searchbar from "./islands/Header/Searchbar.tsx";
+import * as $LojaItem from "./islands/LojaItem.tsx";
+import * as $MeterHelp from "./islands/MeterHelp.tsx";
+import * as $Navbar from "./islands/Navbar.tsx";
+import * as $Newsletter from "./islands/Newsletter.tsx";
+import * as $OutOfStock from "./islands/OutOfStock.tsx";
+import * as $PaginationCustom from "./islands/PaginationCustom.tsx";
+import * as $Payments from "./islands/Payments.tsx";
+import * as $Price from "./islands/Price.tsx";
+import * as $ProductImageZoom from "./islands/ProductImageZoom.tsx";
+import * as $SearchControls from "./islands/SearchControls.tsx";
+import * as $ShippingSimulation from "./islands/ShippingSimulation.tsx";
+import * as $SliderJS from "./islands/SliderJS.tsx";
+import * as $TabelaDeMedidas from "./islands/TabelaDeMedidas.tsx";
+import * as $WishlistButton from "./islands/WishlistButton.tsx";
+import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
-    "./routes/_app.tsx": $0,
+    "./routes/_app.tsx": $_app,
   },
   islands: {
-    "./islands/AddCombinador.tsx": $$0,
-    "./islands/AddToCartButton/vnda.tsx": $$1,
-    "./islands/AddToCartButton/vtex.tsx": $$2,
-    "./islands/BenefitItem.tsx": $$3,
-    "./islands/CategoryBannersSlider.tsx": $$4,
-    "./islands/CategoryTextFooter.tsx": $$5,
-    "./islands/CategoryTextHeader.tsx": $$6,
-    "./islands/ColorsSimilars.tsx": $$7,
-    "./islands/Combination.tsx": $$8,
-    "./islands/CombinationItem.tsx": $$9,
-    "./islands/CombinationList.tsx": $$10,
-    "./islands/Conservation.tsx": $$11,
-    "./islands/FilePdf.tsx": $$12,
-    "./islands/Form.tsx": $$13,
-    "./islands/Header/Alert.tsx": $$14,
-    "./islands/Header/Buttons.tsx": $$15,
-    "./islands/Header/Cart/vnda.tsx": $$16,
-    "./islands/Header/Cart/vtex.tsx": $$17,
-    "./islands/Header/Drawers.tsx": $$18,
-    "./islands/Header/Searchbar.tsx": $$19,
-    "./islands/LojaItem.tsx": $$20,
-    "./islands/MeterHelp.tsx": $$21,
-    "./islands/Navbar.tsx": $$22,
-    "./islands/Newsletter.tsx": $$23,
-    "./islands/OutOfStock.tsx": $$24,
-    "./islands/PaginationCustom.tsx": $$25,
-    "./islands/Payments.tsx": $$26,
-    "./islands/Price.tsx": $$27,
-    "./islands/ProductImageZoom.tsx": $$28,
-    "./islands/SearchControls.tsx": $$29,
-    "./islands/ShippingSimulation.tsx": $$30,
-    "./islands/SliderJS.tsx": $$31,
-    "./islands/TabelaDeMedidas.tsx": $$32,
-    "./islands/WishlistButton.tsx": $$33,
+    "./islands/AddCombinador.tsx": $AddCombinador,
+    "./islands/AddToCartButton/vnda.tsx": $AddToCartButton_vnda,
+    "./islands/AddToCartButton/vtex.tsx": $AddToCartButton_vtex,
+    "./islands/BenefitItem.tsx": $BenefitItem,
+    "./islands/CategoryBannersSlider.tsx": $CategoryBannersSlider,
+    "./islands/CategoryTextFooter.tsx": $CategoryTextFooter,
+    "./islands/CategoryTextHeader.tsx": $CategoryTextHeader,
+    "./islands/ColorsSimilars.tsx": $ColorsSimilars,
+    "./islands/Combination.tsx": $Combination,
+    "./islands/CombinationItem.tsx": $CombinationItem,
+    "./islands/CombinationList.tsx": $CombinationList,
+    "./islands/Conservation.tsx": $Conservation,
+    "./islands/FilePdf.tsx": $FilePdf,
+    "./islands/Form.tsx": $Form,
+    "./islands/Header/Alert.tsx": $Header_Alert,
+    "./islands/Header/Buttons.tsx": $Header_Buttons,
+    "./islands/Header/Cart/vnda.tsx": $Header_Cart_vnda,
+    "./islands/Header/Cart/vtex.tsx": $Header_Cart_vtex,
+    "./islands/Header/Drawers.tsx": $Header_Drawers,
+    "./islands/Header/Searchbar.tsx": $Header_Searchbar,
+    "./islands/LojaItem.tsx": $LojaItem,
+    "./islands/MeterHelp.tsx": $MeterHelp,
+    "./islands/Navbar.tsx": $Navbar,
+    "./islands/Newsletter.tsx": $Newsletter,
+    "./islands/OutOfStock.tsx": $OutOfStock,
+    "./islands/PaginationCustom.tsx": $PaginationCustom,
+    "./islands/Payments.tsx": $Payments,
+    "./islands/Price.tsx": $Price,
+    "./islands/ProductImageZoom.tsx": $ProductImageZoom,
+    "./islands/SearchControls.tsx": $SearchControls,
+    "./islands/ShippingSimulation.tsx": $ShippingSimulation,
+    "./islands/SliderJS.tsx": $SliderJS,
+    "./islands/TabelaDeMedidas.tsx": $TabelaDeMedidas,
+    "./islands/WishlistButton.tsx": $WishlistButton,
   },
   baseUrl: import.meta.url,
-};
+} satisfies Manifest;
 
 export default manifest;
