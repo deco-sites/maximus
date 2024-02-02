@@ -70,7 +70,7 @@ function AddToCartButton(props: Props) {
     const window_ = window;
 
     const handleScroll = function () {
-      const scrollTop = window.scrollY;
+      const scrollTop = window_.scrollY;
   
       if (scrollTop > 600) {
         setShowBuy(true);

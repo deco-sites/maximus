@@ -25,7 +25,7 @@ function Alert({ alerts = [], interval = 5 }: Props) {
     const window_ = window;
 
     const handleScroll = function () {
-      const scrollTop = window.scrollY;
+      const scrollTop = window_.scrollY;
   
       if (scrollTop > 50) {
         setShowLogo(true);

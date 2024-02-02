@@ -1,26 +1,12 @@
-/// <reference no-default-lib="true"/>
-/// <reference lib="dom" />
-/// <reference lib="deno.ns" />
-/// <reference lib="esnext" />
-
-import plugins from "deco-sites/std/plugins/mod.ts";
-//import partytownPlugin from "partytown/mod.ts";
-
-import decoManifest from "./manifest.gen.ts";
-
 import { defineConfig } from "$fresh/server.ts";
+import plugins from "https://denopkg.com/deco-sites/std@1.24.1/plugins/mod.ts";
+import manifest from "./manifest.gen.ts";
+import tailwind from "./tailwind.config.ts";
+
 export default defineConfig({
-  build: { target: ["chrome99", "firefox99", "safari12"] },
-  plugins: [
-    ...plugins(
-      {
-        manifest: decoManifest,
-      },
-    ),
-    //partytownPlugin(),
-  ],
-  render: (ctx, render) => {
-    ctx.lang = "pt-BR";
-    render();
-  },
+  plugins: plugins({
+    manifest,
+    // deno-lint-ignore no-explicit-any
+    tailwind: tailwind as any,
+  }),
 });

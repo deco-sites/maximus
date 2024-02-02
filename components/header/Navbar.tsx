@@ -27,7 +27,7 @@ function Navbar({ items, searchbar, logo, logoCurt }: {
     const window_ = window;
 
     const handleScroll = function () {
-      const scrollTop = window.scrollY;
+      const scrollTop = window_.scrollY;
   
       if (scrollTop > 50) {
         setShowLogo(true);
