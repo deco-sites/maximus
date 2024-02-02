@@ -150,9 +150,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
       ) !== undefined
       ? true
       : false;
-
-      console.log('stock::::::', stock)
-
+      
   return (
     <div class="px-[27px] py-4 bg-[#fbfbfb]">
       <input
@@ -290,7 +288,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
       </div>
       {/* Add to Cart and Favorites button */}
       <div class="mt-6 flex flex-col gap-2 px-0 pt-5 border-t-[#eaeaea] border-t border-solid">
-        {(isMeter && stockAvailable > 3) || (!isMeter && (availability === "https://schema.org/InStock"))
+        {(isMeter && stockAvailable && (stockAvailable > 3)) || (!isMeter && (availability === "https://schema.org/InStock"))
           ? (
             <>
               {PLATFORM === "vtex" && (

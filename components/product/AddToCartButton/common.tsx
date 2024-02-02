@@ -6,7 +6,7 @@ import { useState } from "preact/hooks";
 export interface Props {
   /** @description: sku name */
   name: string;
-  image: string;
+  image: string | null | undefined;
   productID: string;
   productGroupID: string;
   price: number;
