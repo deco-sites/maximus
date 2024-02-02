@@ -14,10 +14,6 @@ export interface Banner {
   desktop: LiveImage;
   /** @description mobile otimized image */
   mobile: LiveImage;
-  /** @description Altura para Desktop */
-  alturaDesktop?: number;
-   /** @description Altura para Mobile */
-   alturaMobile?: number;
   /** @description Image's alt text */
   alt: string;
   action?: {
@@ -46,8 +42,6 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
     alt,
     mobile,
     desktop,
-    alturaDesktop,
-    alturaMobile,
     action,
   } = image;
 
@@ -62,27 +56,27 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
           media="(max-width: 767px)"
           fetchPriority={lcp ? "high" : "auto"}
           src={mobile}
-          height={alturaMobile ?? 229}
+          height={229}
           width={360}
         />
         <Source
           media="(min-width: 768px)"
           fetchPriority={lcp ? "high" : "auto"}
           src={desktop}
-          height={alturaDesktop ?? 454}
+          height={454}
           width={1246}
-        /> 
+        />       
 
         <Image
-          class="w-full 2b"
+          class="w-full h-full 2b"
           src={desktop}
           title={alt}
-          height={alturaDesktop ?? 454}
-          fit="contain"
+          height={454}
           width={1246}
+          fit="contain"
           loading={lcp ? "eager" : "lazy"}
-        />
-      </Picture>      
+      />
+      </Picture>
     </a>
   );
 }

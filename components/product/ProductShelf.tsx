@@ -20,7 +20,7 @@ export interface Props {
     headerfontSize?: "Normal" | "Large";
   };
   cardLayout?: cardLayout;
-  installments?: any;
+  installments: any;
 }
 
 function ProductShelf({
