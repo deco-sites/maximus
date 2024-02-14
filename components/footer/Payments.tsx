@@ -95,7 +95,7 @@ export default function Payments({ payments, security }: {
                         loading="lazy"
                       />                      
                       </a>
-                      <div width={168} id="seloGoogleMerchant"></div>
+                      <iframe frameborder="0" scrolling="no" class="max-md:mb-5" width={168} height={70} src="https://www.google.com/shopping/customerreviews/badge?usegapi=1&merchant_id=107860355&position=INLINE&origin=https%3A%2F%2Fwww.maximustecidos.com.br&gsrc=3p&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.pt_BR.2nQ7-Je3qk8.O%2Fd%3D1%2Frs%3DAHpOoo8APPf5x2OHuU_4vxaQv22DSYiiAg%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh&id=I0_1707920934479&_gfid=I0_1707920934479&parent=https%3A%2F%2Fwww.maximustecidos.com.br&pfname=&rpctoken=31896982"></iframe>
             </div>
         </div>
       </div>
