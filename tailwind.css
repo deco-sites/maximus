@@ -15,6 +15,10 @@
     font-family: 'Roboto', sans-serif;
   }
 
+  .min-width-390 {
+    min-width: 390px!important;
+  }
+
   .no-underline-2 {
     text-decoration: none !important;
   }

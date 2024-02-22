@@ -3,16 +3,14 @@ import { useId } from "$store/sdk/useId.ts";
 import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
-
 export interface bannerSchoolItem {
   image: LiveImage;
   title: string;
   text: string;
   link: string;
 }
-
 export default function BannerSchool({ content }: {
-  content?: { itemsSchool?: bannerSchoolItem[] };
+  content?: { title?: string; text?: string; itemsSchool?: bannerSchoolItem[] };
 }) {
   /*const {
     banners = [{
@@ -104,9 +102,7 @@ export default function BannerSchool({ content }: {
         "https://materiais.maximustecidos.com.br/curso-de-desenho-de-moda-online-estilista-de-fato-valmir-pazeto?_gl=1*8n9egc*_ga*MTIyNDExNTQwNi4xNjk3NzI1MzMy*_ga_HGM4SXF2FQ*MTcwNDcyODM4Mi40MS4wLjE3MDQ3MjgzODIuMC4wLjA.",
     }],
   } = props;*/
-
   const id = useId();
-
   function Dots(
     { content }: { content?: { itemsSchool?: bannerSchoolItem[] } },
   ) {
@@ -140,7 +136,6 @@ export default function BannerSchool({ content }: {
       </>
     );
   }
-
   const listBanners = content && content.itemsSchool &&
     content.itemsSchool.length > 0 &&
     content?.itemsSchool.map((banner, index) => {
@@ -161,7 +156,7 @@ export default function BannerSchool({ content }: {
               alt="banner de cursos"
               title="banner de cursos"
             />
-            <div class="px-4 py-9 bg-white border border-solid border-[#ebebeb]">
+            <div class="px-4 py-9 bg-white border border-solid border-[#EBEBEB]">
               <h5 class="my-3 text-center text-base font-semibold leading-[29px] uppercase text-[#262626]">
                 {banner.title}
               </h5>
@@ -176,17 +171,13 @@ export default function BannerSchool({ content }: {
         </Slider.Item>
       );
     });
-
   return (
     <div id={id} class="w-full bg-[#F5F5F5] text-[#262626] pt-4 mt-8">
       <h4 class="text-lg md:text-2xl text-center mb-2 mt-8 font-semibold">
-        Maximus Escola de Moda
+         { content.title }
       </h4>
       <p class="max-w-[824px] mx-auto text-sm md:text-base text-center max-md:px-5">
-        A Maximus Tecidos acredita no poder da costura como um movimento capaz
-        de transformar vidas. Nossa Escola de Moda Online já conta com mais de
-        11.000 alunas (os). Escolha um curso e redescubra a arte de fazer a moda
-        com as próprias mãos.
+      { content.text }
       </p>
       <div class="w-full max-w-[1246px] mx-auto mt-9 max-md:px-3 pt-2 pb-10 relative">
         <Slider class="carousel carousel-center gap-4 lg:gap-8 row-start-2 row-end-5 w-full">

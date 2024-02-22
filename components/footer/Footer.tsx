@@ -62,8 +62,20 @@ export interface NewsletterForm {
   helpText?: string;
 }
 
+export interface footerItemsI {
+  label: string;
+  href: string;
+  children?: Array<{
+    label: string;
+    href: string;
+  }>;
+}
+
 export interface Props {
+  footerItems?: footerItemsI[];
   bannerSchool?: {
+    title: string;
+    text: string;
     itemsSchool: bannerSchoolItem[];
   };
   beneficios?: {
@@ -95,6 +107,8 @@ export interface Props {
     texto2?: string;
     texto3?: string;
   };
+
+  
 }
 
 function Footer({
@@ -463,6 +477,28 @@ function Footer({
       "Maximus Comércio de Tecidos Eireli <br> CNPJ: 02.449.665/0001-02 <br> Av Maripá, 4846, Centro, Toledo/PR, Cep: 85901-000",
     texto3: "Copyright ©2022 - Todos os Direitos Reservados à Maximus Tecidos",
   },
+  footerItems = [
+    {
+      label: "label 1",
+      href: "##",
+      children: [
+        {
+          label: "label 2",
+          href: "href 2"
+        }
+      ]
+    },
+    {
+      label: "label 2",
+      href: "##",
+      children: [
+        {
+          label: "label 3",
+          href: "href 3"
+        }
+      ]
+    }
+  ]
 }: Props) {
   return (
     <footer
@@ -472,7 +508,7 @@ function Footer({
       <Benefits content={beneficios} />
       <Newsletter content={newsletter} />
       <Description description={description} />
-      <Departaments />
+      <Departaments content={footerItems} />
       <BenefitsMobile content={beneficiosMobile} />
       <Links content={links} />
       <Sociais content={sociais} />
