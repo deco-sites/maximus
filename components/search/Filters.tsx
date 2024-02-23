@@ -91,7 +91,7 @@ function Filters({ filters }: Props) {
         .filter(isToggle)
         .map((filter) => (
           <details
-            open
+            
             class={`collapse collapse-plus rounded-none row flex flex-col gap-4 
             ${filter.label === "Cores Disponíveis" && "order-1"}
               ${filter.label === "Categories" && "order-1"}
