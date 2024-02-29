@@ -110,6 +110,10 @@ function Filters({ filters }: Props) {
                ${filter.label === "Departamento" && "hidden"}
                ${filter.label === "Composi��o" && "hidden"}
                ${filter.label === "Composicao" && "hidden"}
+               ${filter.label === "Cor Pantone" && "hidden"}
+               ${filter.label === "Largura do Tecido ou Tamanho" && "hidden"}
+               ${filter.label === "Vendedores" && "hidden"}
+               ${filter.label === "Cor" && "hidden"}
                ${filter.label === "Subcategoria" && "hidden"}`}
           >
             <summary class="collapse-title px-0 text-base font-semibold leading-[19px] text-neutral-800">
@@ -117,6 +121,8 @@ function Filters({ filters }: Props) {
                 ? "Marcas"
                 : filter.label === "PriceRanges"
                 ? "Preço"
+                : filter.label === "Cores Disponíveis"
+                ? "Cores"
                 : filter.label === "Categories"
                 ? "Categorias"
                 : filter.label}
