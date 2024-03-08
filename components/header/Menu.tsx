@@ -1,5 +1,5 @@
 import Icon from "$store/components/ui/Icon.tsx";
-import { useUser } from "deco-sites/std/packs/vtex/hooks/useUser.ts";
+import { useUser } from "apps/vtex/hooks/useUser.ts";
 
 import type { INavItem } from "./NavItem.tsx";
 

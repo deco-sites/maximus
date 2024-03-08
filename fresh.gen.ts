@@ -19,7 +19,6 @@ import * as $FilePdf from "./islands/FilePdf.tsx";
 import * as $Form from "./islands/Form.tsx";
 import * as $Header_Alert from "./islands/Header/Alert.tsx";
 import * as $Header_Buttons from "./islands/Header/Buttons.tsx";
-import * as $Header_Cart_vnda from "./islands/Header/Cart/vnda.tsx";
 import * as $Header_Cart_vtex from "./islands/Header/Cart/vtex.tsx";
 import * as $Header_Drawers from "./islands/Header/Drawers.tsx";
 import * as $Header_Searchbar from "./islands/Header/Searchbar.tsx";
@@ -60,7 +59,6 @@ const manifest = {
     "./islands/Form.tsx": $Form,
     "./islands/Header/Alert.tsx": $Header_Alert,
     "./islands/Header/Buttons.tsx": $Header_Buttons,
-    "./islands/Header/Cart/vnda.tsx": $Header_Cart_vnda,
     "./islands/Header/Cart/vtex.tsx": $Header_Cart_vtex,
     "./islands/Header/Drawers.tsx": $Header_Drawers,
     "./islands/Header/Searchbar.tsx": $Header_Searchbar,

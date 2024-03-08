@@ -3,7 +3,6 @@ import { useState, useEffect } from "preact/hooks";
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 //import Icon from "$store/components/ui/Icon.tsx";
 import { MenuButton } from "$store/islands/Header/Buttons.tsx";
-import CartButtonVDNA from "$store/islands/Header/Cart/vnda.tsx";
 import CartButtonVTEX from "$store/islands/Header/Cart/vtex.tsx";
 //import Searchbar from "$store/islands/Header/Searchbar.tsx";
 import { PLATFORM } from "$store/platform.ts";
@@ -80,7 +79,6 @@ function Navbar({ items, searchbar, logo, logoCurt }: {
             />
           </a>
           {PLATFORM === "vtex" && <CartButtonVTEX />}
-          {PLATFORM === "vnda" && <CartButtonVDNA />}
         </div>
       </div>
 
@@ -125,7 +123,6 @@ function Navbar({ items, searchbar, logo, logoCurt }: {
             />
           </a>
           {PLATFORM === "vtex" && <CartButtonVTEX />}
-          {PLATFORM === "vnda" && <CartButtonVDNA />}
         </div>
       </div>
       <div class="hidden md:flex flex-row justify-center h-[35px]">
