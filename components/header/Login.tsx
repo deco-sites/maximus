@@ -1,4 +1,4 @@
-import { useUser } from "deco-sites/std/packs/vtex/hooks/useUser.ts";
+import { useUser } from "apps/vtex/hooks/useUser.ts";
 
 function Login() {
   const { user } = useUser();
