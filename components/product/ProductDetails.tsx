@@ -78,23 +78,41 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
   const productGroupID = isVariantOf?.productGroupID ?? "";
   const discount = price && listPrice ? listPrice - price : 0;
 
+  console.log("######", product.additionalProperty)
+
   const isMeter =
-    (product?.additionalProperty?.find((item) => item.name === "category")
-            ?.value === "TECIDOS" &&
-        !product?.additionalProperty?.some((item) =>
-          item.name === "cluster" && item.propertyID === "160"
-        )) ||
-      (product?.additionalProperty?.find((item) =>
-            item.name === "category" && item.value === "Entretelas"
-          ) !== undefined &&
-        !product?.additionalProperty?.some((item) =>
-          item.name === "cluster" && item.propertyID === "160"
-        )) ||
-      product?.additionalProperty?.find((item) =>
+        (
+          product?.additionalProperty?.find((item) => item.name === "category")
+              ?.value === "TECIDOS" 
+          
+          &&
+
+          !product?.additionalProperty?.some((item) =>
+            item.name === "cluster" && item.propertyID === "160"
+          )
+        ) 
+        
+        ||
+        
+        (
+          product?.additionalProperty?.find((item) =>
+            item.name === "category" && item.value === "Entretelas")   !== undefined 
+        
+          &&
+        
+          !product?.additionalProperty?.some((item) =>
+            item.name === "cluster" && item.propertyID === "160"
+          )
+        ) 
+        
+        ||
+        
+        product?.additionalProperty?.find((item) =>
           item.name === "category" && item.value === "Crinol"
         ) !== undefined
-      ? true
-      : false;
+        
+        ? true
+        : false;
 
   const isFabric =
     product?.additionalProperty?.find((item) =>

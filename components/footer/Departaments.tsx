@@ -31,7 +31,6 @@ export default function Departaments({ content }: {
           <ul class="max-h-[initial] md:max-h-[540px] flex md:flex-wrap flex-col content-start collapse-content md:visible md:px-0 flex-col md:flex md:flex-wrap md:h-80 md:gap-[0_10px]">
             {item.children &&
               item.children.map((sub, index) => {
-                console.log('Valor de sub:', sub); 
                 return (
                   <li key={sub.label} id="0">
                     <a
