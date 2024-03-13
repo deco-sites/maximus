@@ -91,7 +91,7 @@ function Filters({ filters }: Props) {
         .filter(isToggle)
         .map((filter) => (
           <details
-            
+            open
             class={`collapse collapse-plus rounded-none row flex flex-col gap-4 
             ${filter.label === "Cores Disponíveis" && "order-1"}
               ${filter.label === "Categories" && "order-1"}
@@ -112,6 +112,7 @@ function Filters({ filters }: Props) {
                ${filter.label === "Composicao" && "hidden"}
                ${filter.label === "Cor Pantone" && "hidden"}
                ${filter.label === "Largura do Tecido ou Tamanho" && "hidden"}
+               ${filter.label === "Tendências" && "hidden"}
                ${filter.label === "Vendedores" && "hidden"}
                ${filter.label === "Cor" && "hidden"}
                ${filter.label === "Subcategoria" && "hidden"}`}
@@ -127,7 +128,10 @@ function Filters({ filters }: Props) {
                 ? "Categorias"
                 : filter.label}
             </summary>
-            <FilterValues {...filter} />
+
+            <div class="scrollbar-filter" style="max-height: 200px;overflow: auto;">
+              <FilterValues {...filter} />
+            </div>
 
             {filter.label === "Fibras" && (
               <img
