@@ -377,13 +377,11 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
                       </div>
                     }
 
-                    -------
-
-                    <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413]">
+                    { /* <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413]">
                       { formatPrice( isMeter ? price * 10 : price, offers!.priceCurrency!) } 
                       
                       <span> {isMeter ? "/ metro" : "/ un"} </span>
-                    </div>
+                    </div> */ }
                   </>
                 )
                 : <p class="text-center font-medium">indisponível</p>}
