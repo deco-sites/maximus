@@ -78,41 +78,28 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
   const productGroupID = isVariantOf?.productGroupID ?? "";
   const discount = price && listPrice ? listPrice - price : 0;
 
-  console.log("######", product.additionalProperty)
+  //console.log("######", product.additionalProperty);
 
-  const isMeter =
-        (
-          product?.additionalProperty?.find((item) => item.name === "category")
-              ?.value === "TECIDOS" 
-          
-          &&
-
-          !product?.additionalProperty?.some((item) =>
-            item.name === "cluster" && item.propertyID === "160"
-          )
-        ) 
-        
-        ||
-        
-        (
-          product?.additionalProperty?.find((item) =>
-            item.name === "category" && item.value === "Entretelas")   !== undefined 
-        
-          &&
-        
-          !product?.additionalProperty?.some((item) =>
-            item.name === "cluster" && item.propertyID === "160"
-          )
-        ) 
-        
-        ||
-        
+  const isMeter = (
+      product?.additionalProperty?.find((item) => item.name === "category")
+          ?.value === "TECIDOS" &&
+      !product?.additionalProperty?.some((item) =>
+        item.name === "cluster" && item.propertyID === "160"
+      )
+    ) ||
+      (
         product?.additionalProperty?.find((item) =>
+            item.name === "category" && item.value === "Entretelas"
+          ) !== undefined &&
+        !product?.additionalProperty?.some((item) =>
+          item.name === "cluster" && item.propertyID === "160"
+        )
+      ) ||
+      product?.additionalProperty?.find((item) =>
           item.name === "category" && item.value === "Crinol"
         ) !== undefined
-        
-        ? true
-        : false;
+    ? true
+    : false;
 
   const isFabric =
     product?.additionalProperty?.find((item) =>
@@ -140,9 +127,17 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
     item.value === "Novidade"
   );
 
+  const isTecidoSustentavel = product?.additionalProperty?.find((item: any) =>
+    item.value === "Flag Tecido Sustentável"
+  );
+
+  const isTecidoSobra = product?.additionalProperty?.find((item: any) =>
+    item.value === "Flag Sobra Têxtil"
+  );
+
   const descontoVariacao = product?.additionalProperty?.some((item) =>
-  item.name === "cluster" && item.propertyID === "162"
-  )
+    item.name === "cluster" && item.propertyID === "162"
+  );
 
   const largura = product?.additionalProperty?.find((item: any) =>
     item.name === "Largura do Tecido ou Tamanho"
@@ -169,7 +164,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
       ? true
       : false;
 
-      console.log('stock::::::', stock)
+  //console.log("stock::::::", stock);
 
   return (
     <div class="px-[27px] py-4 bg-[#fbfbfb]">
@@ -232,12 +227,12 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
               </span>
             )}
 
-            {descontoVariacao &&
-              (
-                <span class="flex items-center justify-center bg-[#6eb212] text-[10px] leading-[14px] text-center text-white uppercase w-[90px] h-[21px] font-bold rounded-[0_5px_5px_0] mb-1">
-                  13% à vista
-                </span>
-              )}
+          {descontoVariacao &&
+            (
+              <span class="flex items-center justify-center bg-[#6eb212] text-[10px] leading-[14px] text-center text-white uppercase w-[90px] h-[21px] font-bold rounded-[0_5px_5px_0] mb-1">
+                13% à vista
+              </span>
+            )}
 
           {discountt && discountt > 0
             ? (
@@ -246,6 +241,24 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
               </span>
             )
             : ""}
+
+          {isTecidoSobra &&
+            (
+              <img
+                style="display:block; margin:5px 0;"
+                src="/arquivos/tag-tecido-sobra.png?v=123"
+                alt="selo banco de tecido"
+              />
+            )}
+
+          {isTecidoSustentavel &&
+            (
+              <img
+                style="display:block; margin:5px 0;"
+                src="/arquivos/tag-tecido-sustentavel.png?v=123"
+                alt="selo banco de tecido"
+              />
+            )}
         </div>
         {/* referencia */}
         <div class="flex flex-wrap text-[13px] font-normal tracking-[0] text-[#171413] leading-4 my-5">
@@ -308,7 +321,8 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
       </div>
       {/* Add to Cart and Favorites button */}
       <div class="mt-6 flex flex-col gap-2 px-0 pt-5 border-t-[#eaeaea] border-t border-solid">
-        {(isMeter && stockAvailable > 3) || (!isMeter && (availability === "https://schema.org/InStock"))
+        {(isMeter && stockAvailable > 3) ||
+            (!isMeter && (availability === "https://schema.org/InStock"))
           ? (
             <>
               {PLATFORM === "vtex" && (
@@ -480,7 +494,10 @@ function Details({
   const queryUrl = product?.category.toLowerCase().normalize("NFD").replace(
     /[\u0300-\u036f]/g,
     "",
-  ).replace(/>/g, "/").replace(/ /g, "-").replace(/,/g, '');
+  ).replace(/>/g, "/").replace(/ /g, "-").replace(/,/g, "");
+
+  const isBancoTecido =
+    product?.brand.name === "BANCO DE TECIDO (São Paulo - SP)";
 
   if (variant === "slider") {
     return (
@@ -603,6 +620,13 @@ function Details({
           <div class="max-md:order-1 max-md:px-5 w-full md:w-[32%]">
             {/* Image Slider */}
             <div class="relative sm:col-start-2 sm:col-span-1 sm:row-start-1">
+              {isBancoTecido && (
+                <img
+                  style="width: 80px; position: absolute; left: 1rem; bottom: 1.5rem;"
+                  src="/arquivos/banco-tecido.png?v=123"
+                  alt="selo banco de tecido"
+                />
+              )}
               <Slider class="carousel carousel-center gap-6 w-full">
                 {images.map((img, index) => (
                   <Slider.Item
@@ -743,7 +767,7 @@ function ProductDetails(
       : "slider"
     : maybeVar;
 
-    const productID = page?.product.isVariantOf?.productGroupID ?? "";
+  const productID = page?.product.isVariantOf?.productGroupID ?? "";
 
   const description = page?.product.description;
 
@@ -916,8 +940,8 @@ function ProductDetails(
                 )}
             </div>
 
-            <FilePdf productId={productID}/>
-       
+            <FilePdf productId={productID} />
+
             {description && (
               <h3 class="text-lg md:text-2xl font-bold leading-[26px] tracking-[0] text-[#171413] mx-0 my-10">
                 Descrição:
