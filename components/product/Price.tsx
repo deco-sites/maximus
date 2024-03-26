@@ -38,6 +38,7 @@ function Price(
             (price * quantityPdp.value) / (isMeter ? 10 : 1),
             offers!.priceCurrency!,
           )}
+          
           {isMeter && (
             <small class="text-sm font-normal leading-6">/metro</small>
           )}

@@ -7,6 +7,7 @@ import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "deco-sites/std/commerce/utils/productToAnalyticsItem.ts";
 import Image from "deco-sites/std/components/Image.tsx";
+import { useUI } from "$store/sdk/useUI.ts";
 
 //import Rating from "$store/islands/RatingYV.tsx";
 
@@ -68,7 +69,12 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
 
   const {
     availability,
+    seller
   } = useOffer(offers);
+
+  const { quantityPdp } = useUI();
+
+  console.log("###### seller", seller)
 
   const id = `product-card-${productID}`;
   const productGroupID = isVariantOf?.productGroupID;
@@ -338,7 +344,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
         {l?.hide?.allPrices ? "" : (
           <div class="flex flex-col gap-2">
             <div
-              class={`flex flex-wrap gap-0 ${
+              class={`flex-wrap gap-0 ${
                 l?.basics?.oldPriceSize === "Normal"
                   ? "lg:flex-row lg:gap-2"
                   : ""
@@ -358,16 +364,31 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
                     >
                       {formatPrice(listPrice, offers!.priceCurrency!)}
                     </div>
+
+                    {seller === "bancodetecido099" ? 
+                      <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413]">
+                        {formatPrice((price * 10) / (isMeter ? 10 : 1), offers!.priceCurrency!)}
+                        <span> {isMeter ? "/ metro" : "/ un"} </span>
+                      </div>
+                      : 
+                      <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413]">
+                        {formatPrice(isMeter ? price * 10 : price, offers!.priceCurrency!)} 
+                        <span> {isMeter ? "/ metro" : "/ un"} </span>
+                      </div>
+                    }
+
+                    -------
+
                     <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413]">
-                      {formatPrice(
-                        isMeter ? price * 10 : price,
-                        offers!.priceCurrency!,
-                      )} {isMeter ? "/ metro" : "/ un"}
+                      { formatPrice( isMeter ? price * 10 : price, offers!.priceCurrency!) } 
+                      
+                      <span> {isMeter ? "/ metro" : "/ un"} </span>
                     </div>
                   </>
                 )
                 : <p class="text-center font-medium">indisponível</p>}
             </div>
+            
             {installments && isSinger 
               ? <div class="text-base-300 text-xs text-center text-[#171413]">
                   ou {installments}
