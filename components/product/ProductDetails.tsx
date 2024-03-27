@@ -245,8 +245,8 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
           {isTecidoSobra &&
             (
               <img
-                style="display:block; margin:5px 0;"
-                src="/arquivos/tag-tecido-sobra.png?v=123"
+                style="height:23px; display:block; margin:5px 0;"
+                src="/arquivos/reciclagem-tecido@2x.png"
                 alt="selo banco de tecido"
               />
             )}
@@ -254,8 +254,8 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
           {isTecidoSustentavel &&
             (
               <img
-                style="display:block; margin:5px 0;"
-                src="/arquivos/tag-tecido-sustentavel.png?v=123"
+                style="height:23px; display:block; margin:5px 0;"
+                src="/arquivos/reciclagem-sobra@2x.png"
                 alt="selo banco de tecido"
               />
             )}
