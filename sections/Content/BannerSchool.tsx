@@ -146,6 +146,7 @@ export default function BannerSchool(
       >
         <a
           href={banner.link}
+          target="_blank"
           class="block border border-[#EBEBEB] text-[#262626]"
         >
           <img
