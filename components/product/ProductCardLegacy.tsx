@@ -350,7 +350,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
                     >
                       {formatPrice(listPrice, offers!.priceCurrency!)}
                     </div>
-                    <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413]">
+                    <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413] text-center">
                       {formatPrice(price, offers!.priceCurrency!)} {price
                         ? isMeter ? "/ metro" : "/ un"
                         : <p class="text-center font-medium">indisponível</p>}

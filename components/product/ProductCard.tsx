@@ -366,12 +366,12 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
                     </div>
 
                     {seller === "bancodetecido099" ? 
-                      <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413]">
+                      <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413] text-center">
                         {formatPrice((price * 10) / (isMeter ? 10 : 1), offers!.priceCurrency!)}
                         <span> {isMeter ? "/ metro" : "/ un"} </span>
                       </div>
                       : 
-                      <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413]">
+                      <div class="text-xs md:text-sm font-bold leading-[14px] text-[#171413] text-center">
                         {formatPrice(isMeter ? price * 10 : price, offers!.priceCurrency!)} 
                         <span> {isMeter ? "/ metro" : "/ un"} </span>
                       </div>
