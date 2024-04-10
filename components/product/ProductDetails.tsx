@@ -289,9 +289,9 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
             </>
           )}
         </div>
-      </div>
+      </div>      
 
-      {availability === "https://schema.org/InStock"
+      {(!isMeter && availability === "https://schema.org/InStock") || (isMeter && stockAvailable > 3)
         ? (
           <>
             {/* Prices */}

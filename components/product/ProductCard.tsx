@@ -96,6 +96,8 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
   item.name === "cluster" && item.propertyID === "162"
   )
 
+  console.log('price:::', price)
+
   const isSinger = product?.brand?.name === "SINGER (Jundiaí - SP)";
 
   const isMeter =
@@ -354,7 +356,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
                 ? (
                   <>
                     <div
-                      class={`items-center flex-wrap mr-2 line-through text-base-300 text-xs justify-center ${
+                      class={`items-center flex-wrap mr-2 line-through text-base-300 text-xs ${
                         l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
                       } ${
                         listPrice !== (isMeter ? price * 10 : price)
