@@ -96,8 +96,6 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
   item.name === "cluster" && item.propertyID === "162"
   )
 
-  console.log('price:::', price)
-
   const isSinger = product?.brand?.name === "SINGER (Jundiaí - SP)";
 
   const isMeter =
