@@ -354,7 +354,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
                 ? (
                   <>
                     <div
-                      class={`items-center flex-wrap mr-2 line-through text-base-300 text-xs ${
+                      class={`items-center flex-wrap mr-2 line-through text-base-300 text-xs justify-center ${
                         l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
                       } ${
                         listPrice !== (isMeter ? price * 10 : price)
