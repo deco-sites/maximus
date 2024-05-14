@@ -21,22 +21,22 @@ function Alert({ alerts = [], interval = 5 }: Props) {
     navigator.clipboard.writeText("PRIMEIRACOMPRA");
   };
 
-  useEffect(() => {
-    const window_ = window;
+  // useEffect(() => {
+  //   const window_ = window;
 
-    const handleScroll = function () {
-      const scrollTop = window_.scrollY;
+  //   const handleScroll = function () {
+  //     const scrollTop = window_.scrollY;
   
-      if (scrollTop > 50) {
-        setShowLogo(true);
-      } else {
-        setShowLogo(false);
-      }
-    };
+  //     if (scrollTop > 50) {
+  //       setShowLogo(true);
+  //     } else {
+  //       setShowLogo(false);
+  //     }
+  //   };
   
-    window_.addEventListener("scroll", handleScroll);
-    return () => window_.removeEventListener("scroll", handleScroll);
-  });
+  //   window_.addEventListener("scroll", handleScroll);
+  //   return () => window_.removeEventListener("scroll", handleScroll);
+  // });
 
   return (
     <div class={`hidden ${showLogo ? "hidden" : "md:flex"}`} id={id}>

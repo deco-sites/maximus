@@ -31,7 +31,7 @@ function NavItem({ item, showLogo }: { item: INavItem; showLogo: boolean }) {
             style={{
               top: "0px",
               left: "0px",
-              marginTop: showLogo ? "159px" : headerHeight,
+              marginTop: "189px",
             }}
           >
             {image?.src && (
