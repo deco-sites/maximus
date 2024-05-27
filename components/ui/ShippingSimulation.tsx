@@ -26,10 +26,12 @@ function ShippingContent({ simulation }: {
 }) {
   const { cart } = useCart();
 
-  const methods = simulation.value?.logisticsInfo?.reduce(
-    (initial, { slas }) => [...initial, ...slas],
-    [] as Sla[],
-  ) ?? [];
+  // const methods = simulation.value?.logisticsInfo?.reduce(
+  //   (initial, { slas }) => [...initial, ...slas],
+  //   [] as Sla[],
+  // ) ?? [];
+
+  const methods = simulation.value?.logisticsInfo?.[0] ? simulation.value?.logisticsInfo?.[0].slas : []
 
   const locale = cart.value?.clientPreferencesData.locale || "pt-BR";
   const currencyCode = cart.value?.storePreferencesData.currencyCode || "BRL";
@@ -46,7 +48,10 @@ function ShippingContent({ simulation }: {
     );
   }
 
+  console.log("#### simulation", methods)
+
   return (
+  
     <ul class="flex flex-col border border-solid border-[#f3f3f4]">
       <li>
         <h6 class="h-[38px] bg-[#f3f3f4] flex items-center justify-center text-xs font-semibold leading-[29px] tracking-[0px] text-[#0d0c22] rounded-[3px]">
