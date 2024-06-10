@@ -25,6 +25,8 @@ export interface Banner {
     href: string;
     /** @description Image text title */
     label: string;
+    /** @description Image target */
+    target: string;
   };
 }
 
@@ -81,6 +83,7 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
           fit="contain"
           width={1246}
           loading={lcp ? "eager" : "lazy"}
+          target={action?.target ?? "_self"}
         />
       </Picture>      
     </a>
@@ -101,13 +104,13 @@ function Dots({ images, interval = 0 }: Props) {
           `,
         }}
       />
-      <ul class="carousel justify-center col-span-full gap-4 z-10 row-start-4">
+      <ul class="teste-dots carousel bg-[#171413] justify-center col-span-full gap-4 z-10 h-[30px] mt-5 mb-0 mx-auto px-5 py-0 md:rounded-[26px]">
         {images?.map((_, index) => (
           <li class="carousel-item">
             <Slider.Dot index={index}>
-              <div class="py-5">
+              <div>
                 <div
-                  class="w-16 sm:w-20 h-0.5 rounded group-disabled:animate-progress bg-gradient-to-r from-base-100 from-[length:var(--dot-progress)] to-[rgba(255,255,255,0.4)] to-[length:var(--dot-progress)]"
+                  class="w-10 sm:w-10 h-0.5 rounded group-disabled:animate-progress bg-gradient-to-r from-base-100 from-[length:var(--dot-progress)] to-[rgba(255,255,255,0.4)] to-[length:var(--dot-progress)]"
                   style={{ animationDuration: `${interval}s` }}
                 />
               </div>
