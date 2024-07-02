@@ -1,2 +1,11 @@
 User-agent: *
+Disallow: /
+
+User-agent: SemrushBot
+Allow: /
+
+User-Agent: FacebookBot
+Allow: /
+
+User-agent: Googlebot
 Allow: /
