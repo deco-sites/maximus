@@ -53,7 +53,7 @@ function Price(
           )}
 
         <p class="block text-xs font-semibold leading-[29px] mb-[15px]">
-          {maxParcels > 6 ? "13%" : "5%"} de desconto para pagamentos à vista
+          {maxParcels > 6 ? "10%" : "3%"} de desconto para pagamentos à vista
         </p>
       </div>
     </div>

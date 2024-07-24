@@ -77,7 +77,7 @@ function Payments({ price, offers, maxParcels, isFabric }: Props) {
                 {formatPrice(
                   (price * quantityPdp.value) -
                     ((price * quantityPdp.value) *
-                      (maxParcels > 6 ? 0.13 : 0.05)),
+                      (maxParcels > 6 ? 0.10 : 0.03)),
                   offers,
                 )}
               </div>
@@ -85,7 +85,7 @@ function Payments({ price, offers, maxParcels, isFabric }: Props) {
                 {formatPrice(
                   (price * quantityPdp.value) -
                     ((price * quantityPdp.value) *
-                      (maxParcels > 6 ? 0.13 : 0.05)),
+                      (maxParcels > 6 ? 0.10 : 0.03)),
                   offers,
                 )}
               </div>

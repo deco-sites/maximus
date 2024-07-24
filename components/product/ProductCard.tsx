@@ -196,7 +196,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
             {descontoVariacao &&
               (
                 <span class="flex items-center justify-center bg-[#6eb212] text-[10px] leading-[14px] text-center text-white uppercase w-[90px] h-[21px] font-bold rounded-[0_5px_5px_0] mb-1">
-                  13% à vista
+                  10% à vista
                 </span>
               )}
 

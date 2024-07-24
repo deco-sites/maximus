@@ -171,7 +171,7 @@ function AddToCartButton(props: Props) {
           </span>{" "}
           <br />
           <p class="hidden md:block text-xs font-semibold leading-[29px]">
-            {maxParcels > 6 ? "13%" : "5%"} de desconto para pagamentos à vista
+            {maxParcels > 6 ? "10%" : "3%"} de desconto para pagamentos à vista
           </p>
         </div>
         <div class="max-md:w-full max-md:mt-3 flex items-center">
