@@ -10,10 +10,10 @@ import * as $$$$$$1 from "./sections/Category/CategoryBanner.tsx";
 import * as $$$$$$2 from "./sections/Category/CategoryBannerHeader.tsx";
 import * as $$$$$$3 from "./sections/Category/CategoryBannersSlider.tsx";
 import * as $$$$$$4 from "./sections/Category/CategoryList.tsx";
-import * as $$$$$$7 from "./sections/Category/CategoryText/CategoryText.tsx";
-import * as $$$$$$8 from "./sections/Category/CategoryText/CategoryTextFooter.tsx";
-import * as $$$$$$5 from "./sections/Category/CategoryTextFooter.tsx";
-import * as $$$$$$6 from "./sections/Category/CategoryTextHeader.tsx";
+import * as $$$$$$5 from "./sections/Category/CategoryText/CategoryText.tsx";
+import * as $$$$$$6 from "./sections/Category/CategoryText/CategoryTextFooter.tsx";
+import * as $$$$$$7 from "./sections/Category/CategoryTextFooter.tsx";
+import * as $$$$$$8 from "./sections/Category/CategoryTextHeader.tsx";
 import * as $$$$$$9 from "./sections/Content/BannerSchool.tsx";
 import * as $$$$$$10 from "./sections/Content/BannerSlider.tsx";
 import * as $$$$$$11 from "./sections/Content/BannerSlider2.tsx";
@@ -67,11 +67,11 @@ const manifest = {
     "deco-sites/maximus/sections/Category/CategoryBannersSlider.tsx": $$$$$$3,
     "deco-sites/maximus/sections/Category/CategoryList.tsx": $$$$$$4,
     "deco-sites/maximus/sections/Category/CategoryText/CategoryText.tsx":
-      $$$$$$7,
+      $$$$$$5,
     "deco-sites/maximus/sections/Category/CategoryText/CategoryTextFooter.tsx":
-      $$$$$$8,
-    "deco-sites/maximus/sections/Category/CategoryTextFooter.tsx": $$$$$$5,
-    "deco-sites/maximus/sections/Category/CategoryTextHeader.tsx": $$$$$$6,
+      $$$$$$6,
+    "deco-sites/maximus/sections/Category/CategoryTextFooter.tsx": $$$$$$7,
+    "deco-sites/maximus/sections/Category/CategoryTextHeader.tsx": $$$$$$8,
     "deco-sites/maximus/sections/Content/BannerSchool.tsx": $$$$$$9,
     "deco-sites/maximus/sections/Content/BannerSlider.tsx": $$$$$$10,
     "deco-sites/maximus/sections/Content/BannerSlider2.tsx": $$$$$$11,

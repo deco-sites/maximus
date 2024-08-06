@@ -159,12 +159,17 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
 
   const maxParcels =
     product?.additionalProperty?.find((item) =>
-        item.name === "Vendedores" && item.value === "Singer (Jundiaí - PR)"
-      ) !== undefined
+        item.name === "Vendedores" && item.value === "Singer (Jundiaí - PR)" ) !== undefined
       ? true
       : false;
 
-  //console.log("stock::::::", stock);
+  const sellerDraft = product?.offers?.offers.find((offer) => {
+    return offer.sellerName === "Draft Manequins"
+  })
+
+  const sellerMaxParcels = sellerDraft ? 3 : (maxParcels ? 12 : 6)
+
+  console.log("###### maxParcels ######", {sellerDraft, sellerMaxParcels, maxParcels});
 
   return (
     <div class="px-[27px] py-4 bg-[#fbfbfb]">
@@ -305,10 +310,11 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
             />
 
             {/*modal payments*/}
+
             <Payments
               price={isMeter ? (price / 10) : price}
               offers={offers!.priceCurrency!}
-              maxParcels={maxParcels ? 12 : 6}
+              maxParcels={sellerMaxParcels}
               isFabric={isFabric}
             />
           </>
