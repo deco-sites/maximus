@@ -17,7 +17,7 @@ function NavItem({ item, showLogo }: { item: INavItem; showLogo: boolean }) {
       <a
         href={`${href}`}
         target={newTab || label == "cursos" ? "_blank" : "_self"}
-        class="px-6 py-3"
+        class="px-4 py-3 xxl:px-4"
       >
         <span class="text-sm uppercase">
           {label}
