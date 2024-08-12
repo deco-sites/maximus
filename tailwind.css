@@ -155,12 +155,7 @@
   }
 }
 
-.cc-window {
-  background-color: red;
-}
-
-@media (min-width:1320px) and (max-width: 1400px) {
-  .menuuu {
-    background-color: red;
-  }
+.cc-banner.cc-bottom {
+  position: relative;
+  padding: 0;
 }
