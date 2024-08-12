@@ -157,5 +157,5 @@
 
 .cc-banner.cc-bottom {
   position: relative;
-  padding: 0;
+  padding: 0 !important;
 }
