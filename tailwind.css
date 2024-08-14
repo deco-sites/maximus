@@ -159,3 +159,11 @@
   position: relative;
   padding: 0 !important;
 }
+
+.cc-banner.cc-bottom {
+  display: none;
+}
+
+.cc-banner.cc-bottom:first-of-type {
+  display: block;
+}
