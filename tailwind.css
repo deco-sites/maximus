@@ -161,9 +161,9 @@
 }
 
 .cc-banner.cc-bottom {
-  display: none;
+  display: none !important;
 }
 
 .cc-banner.cc-bottom:first-of-type {
-  display: block;
+  display: block !important; 
 }
