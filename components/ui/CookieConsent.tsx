@@ -11,10 +11,12 @@ const script = (id: string) => {
 
     if (consent !== ACCEPTED && elem) {
       const accept = elem.querySelector("[data-button-cc-accept]");
+      
       accept && accept.addEventListener("click", () => {
         localStorage.setItem(KEY, ACCEPTED);
         elem.classList.add(HIDDEN);
       });
+
       const close = elem.querySelector("[data-button-cc-close]");
       close &&
         close.addEventListener("click", () => elem.classList.add(HIDDEN));
@@ -57,7 +59,7 @@ const DEFAULT_PROPS = {
   },
   layout: {
     position: "Expanded",
-    content: "Tiled",
+    content: "Piled up",
   },
 };
 
