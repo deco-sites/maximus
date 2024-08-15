@@ -70,6 +70,8 @@ function CookieConsent(props: Props) {
     ...props,
   };
 
+  console.log({ title, text, policy, buttons, layout })
+
   return (
     <>
       <div

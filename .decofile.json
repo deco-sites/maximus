@@ -4994,7 +4994,7 @@
     "__resolveType": "deco-sites/maximus/sections/Category/CategoryBanner.tsx"
   },
   "Cookie Consent - 01": {
-    "text": "<div class=\"cc-window cc-banner cc-type-info cc-theme-classic cc-bottom cc-color-override-1444386161\" role=\"dialog\" aria-live=\"polite\" aria-label=\"cookieconsent\" aria-describedby=\"cookieconsent:desc\">Cookies: a gente guarda estatísticas de visitas para melhorar sua experiência de navegação. Ao continuar navegando, você concorda com a nossa Política de Privacidade.&nbsp;<span style=\"background-color: rgb(255, 255, 255); color: rgb(64, 156, 255);\" data-mce-style=\"background-color: rgb(255, 255, 255); color: rgb(64, 156, 255);\"><a class=\"cc-link\" role=\"button\" href=\"https://www.maximustecidos.com.br/Institucional/politicas-de-privacidade\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" aria-label=\"learn more about cookies\" data-mce-href=\"https://www.maximustecidos.com.br/Institucional/politicas-de-privacidade\" data-mce-tabindex=\"0\" style=\"background-color: rgb(255, 255, 255); color: rgb(64, 156, 255);\" data-mce-style=\"background-color: rgb(255, 255, 255); color: rgb(64, 156, 255);\" data-mce-selected=\"inline-boundary\">Saiba mais﻿</a></span></div>",
+    "text": "",
     "title": "Cookies",
     "layout": {
       "content": "Piled up",
