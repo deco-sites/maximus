@@ -169,7 +169,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
 
   const sellerMaxParcels = sellerDraft ? 3 : (maxParcels ? 12 : 6)
 
-  console.log("###### maxParcels ######", {sellerDraft, sellerMaxParcels, maxParcels});
+  // console.log("###### maxParcels ######", {sellerDraft, sellerMaxParcels, maxParcels});
 
   return (
     <div class="px-[27px] py-4 bg-[#fbfbfb]">

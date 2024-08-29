@@ -23,12 +23,15 @@ function AddToCartButton(props: Props) {
   const [notification, setNotification] = useState(false);
   const [showBuy, setShowBuy] = useState(false);
 
+  const [
+    PRRODUCT_IS_COURCE, 
+    SET_PRRODUCT_IS_COURCE
+  ] = useState();
+
   const { quantityPdp } = useUI();
   quantityPdp.value = quantity;
 
   const { addItems } = useCart();
-
-  //console.log("isMeter", isMeter);
 
   const onAddItem = () =>
     addItems({
@@ -37,7 +40,7 @@ function AddToCartButton(props: Props) {
         seller: props.seller,
         quantity: quantity,
       }],
-    });
+  });
 
   const handleNotification = () => {
     setNotification(true);
@@ -66,6 +69,7 @@ function AddToCartButton(props: Props) {
       }
     }
   };
+
   useEffect(() => {
     const window_ = window;
 
@@ -83,38 +87,76 @@ function AddToCartButton(props: Props) {
     return () => window_.removeEventListener("scroll", handleScroll);
   });
 
+
+  const fetchProductLavagemInfo = async () => {
+    try {
+      const response = await fetch(
+        `/api/catalog_system/pub/products/search?fq=skuId:${props.productID}`
+      );
+  
+      if (!response.ok) {
+        throw new Error(`Failed to fetch: ${response.status} ${response.statusText}`);
+      }
+  
+      const [ product ] = await response.json();
+  
+      const cource = product?.['Lavagem']?.[0] || false;
+  
+      console.log({ cource });
+  
+      SET_PRRODUCT_IS_COURCE(cource);
+    } catch (error) {
+      console.error("Error fetching product data:", error);
+    }
+  };
+
+  fetchProductLavagemInfo();
+
   return (
     <>
-      {isMeter && (
+      {isMeter && !PRRODUCT_IS_COURCE && (
         <p class="text-sm font-medium leading-[19px] tracking-[0] text-[#171413] mb-2.5">
           Comprimento em <strong>metros</strong>
         </p>
       )}
 
       <div class="flex items-center justify-between">
-        <div class="w-[126px] h-12 bg-white border flex justify-around items-center border-solid border-[#eaeaea]">
-          <span
-            class="cursor-pointer block text-[#171413] text-base relative right-[-5px] top-px"
-            onClick={() => updateQuantity("minus")}
-          >
-            -
-          </span>
-          <span class="cursor-default">
-            {isMeter ? (quantity * .1).toFixed(2) : quantity}
-          </span>
-          <span
-            class="cursor-pointer block text-[#171413] text-base relative left-[-5px] top-0.5"
-            onClick={() => updateQuantity("plus")}
-          >
-            +
-          </span>
-        </div>
+        {!PRRODUCT_IS_COURCE && (
+          <div class="w-[126px] h-12 bg-white border flex justify-around items-center border-solid border-[#eaeaea]">
+            <span
+              class="cursor-pointer block text-[#171413] text-base relative right-[-5px] top-px"
+              onClick={() => updateQuantity("minus")}
+            >
+              -
+            </span>
+            <span class="cursor-default">
+              {isMeter ? (quantity * .1).toFixed(2) : quantity}
+            </span>
+            <span
+              class="cursor-pointer block text-[#171413] text-base relative left-[-5px] top-0.5"
+              onClick={() => updateQuantity("plus")}
+            >
+              +
+            </span>
+          </div>
+        )}
 
-        {isMeter && <MeterHelp />}
+        {isMeter && !PRRODUCT_IS_COURCE && <MeterHelp />}
       </div>
+
       <div class="mt-[35px]">
-        <Button onAddItem={onAddItem} {...props} />
+        {PRRODUCT_IS_COURCE
+          ? 
+            (
+              <a href={PRRODUCT_IS_COURCE} class="btn no-animation btn btn__buy btn-primary w-full h-[54px] bg-[#6EB212] rounded-sm border-0 text-xs font-medium leading-[19px] tracking-[0.6px] text-white hover:bg-[#86c92c] transition-[0.4s]"> 
+                  Comprar currso 
+              </a> 
+            )
+          : <Button onAddItem={onAddItem} {...props} />
+        }
+        
       </div>
+
       {/* comprar fixo */}
       <div
         class={`w-screen max-md:flex-wrap ${
@@ -140,6 +182,8 @@ function AddToCartButton(props: Props) {
               Comprimento em <strong>metros</strong>
             </span>
           )}
+
+        {!PRRODUCT_IS_COURCE && (
           <div class="w-[126px] h-12 bg-white border flex justify-around items-center border-solid border-[#eaeaea]">
             <span
               class="cursor-pointer block text-[#171413] text-base relative right-[-5px] top-px"
@@ -157,6 +201,9 @@ function AddToCartButton(props: Props) {
               +
             </span>
           </div>
+        )} 
+
+
         </div>
         <div class="max-md:w-[55%] md:mr-10">
           <span class="font-extrabold text-[22px] md:text-2xl tracking-[0] text-[#171413] leading-[26px]">
@@ -174,6 +221,7 @@ function AddToCartButton(props: Props) {
             {maxParcels > 6 ? "10%" : "3%"} de desconto para pagamentos à vista
           </p>
         </div>
+        
         <div class="max-md:w-full max-md:mt-3 flex items-center">
           <Button onAddItem={onAddItem} {...props} />
         </div>

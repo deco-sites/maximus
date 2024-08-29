@@ -18,7 +18,6 @@ export default function Departaments({ content }: {
         <ul class="flex justify-center md:justify-between max-md:flex-col">
   {content &&
     content.map((item, index) => {
-      console.log('Valor de item:', index); 
       return (
         <li class={`${index === 0 ? "flex flex-wrap" : ""} max-md:collapse max-md:collapse-plus max-md:border-t border-[#EBEBEB] max-md:rounded-none  `} key={index}>
           <input class="md:hidden" type="checkbox" />
