@@ -1,5 +1,6 @@
-import { useUI } from "$store/sdk/useUI.ts";
 import { formatPrice } from "$store/sdk/format.ts";
+import { useUI } from "$store/sdk/useUI.ts";
+import { useEffect, useState } from "preact/hooks";
 
 export interface Props {
   price: number;
@@ -8,14 +9,34 @@ export interface Props {
   offers: any;
   isMeter: boolean;
   maxParcels: number;
+  product: {
+    brand: {
+        name: string
+    }
+  }
 }
 
 function Price(
-  { price, listPrice, installments, offers, isMeter, maxParcels }: Props,
+  { price, listPrice, installments, offers, isMeter, maxParcels, product }: Props,
   {},
 ) {
   const { quantityPdp } = useUI();
+  
+  const [discount, setDiscount] = useState<string>("");
 
+  useEffect(() => {
+    const brandName = product.brand.name;
+
+    if (brandName.includes("DRAFT")) {
+        setDiscount("3%");
+    } else if (brandName.includes("SINGER")) {
+        setDiscount("10%");
+    } else {
+        setDiscount("5%");
+    }
+  }, []);	
+  
+  
   return (
     <div class="mt-4">
       {listPrice !== price && (
@@ -53,7 +74,7 @@ function Price(
           )}
 
         <p class="block text-xs font-semibold leading-[29px] mb-[15px]">
-          {maxParcels > 6 ? "10%" : "3%"} de desconto para pagamentos à vista
+          {discount} de desconto para pagamentos à vista
         </p>
       </div>
     </div>
