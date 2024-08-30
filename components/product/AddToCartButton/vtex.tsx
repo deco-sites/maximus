@@ -102,8 +102,6 @@ function AddToCartButton(props: Props) {
   
       const cource = product?.['Lavagem']?.[0] || false;
   
-      console.log({ cource });
-  
       SET_PRRODUCT_IS_COURCE(cource);
     } catch (error) {
       console.error("Error fetching product data:", error);
