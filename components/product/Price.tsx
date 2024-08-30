@@ -27,13 +27,18 @@ function Price(
   useEffect(() => {
     const brandName = product.brand.name;
 
-    if (brandName.includes("DRAFT")) {
-        setDiscount("3%");
-    } else if (brandName.includes("SINGER")) {
-        setDiscount("10%");
-    } else {
-        setDiscount("5%");
+    switch (true) {
+        case brandName.includes("DRAFT"):
+            setDiscount("3%");
+            break;
+        case brandName.includes("SINGER"):
+            setDiscount("10%");
+            break;
+        default:
+            setDiscount("5%");
+            break;
     }
+    
   }, []);	
   
   
