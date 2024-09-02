@@ -8,7 +8,7 @@ export interface Props {
   installments: any;
   offers: any;
   isMeter: boolean;
-  maxParcels?: number;
+  maxParcels: number;
   product: {
     brand: {
         name: string
@@ -17,7 +17,7 @@ export interface Props {
 }
 
 function Price(
-  { price, listPrice, installments, offers, isMeter, product }: Props,
+  { price, listPrice, installments, offers, isMeter, product, maxParcels }: Props,
   {},
 ) {
   const { quantityPdp } = useUI();
