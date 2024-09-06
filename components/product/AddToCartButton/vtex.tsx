@@ -100,8 +100,10 @@ function AddToCartButton(props: Props) {
   
       const [ product ] = await response.json();
   
-      const cource = product?.['Lavagem']?.[0] || false;
+      const cource = product?.['COURSE_URL']?.[0] || false;
   
+      console.log("#########", { product }, product?.['COURSE_URL']?.[0])
+
       SET_PRRODUCT_IS_COURCE(cource);
     } catch (error) {
       console.error("Error fetching product data:", error);
@@ -146,7 +148,7 @@ function AddToCartButton(props: Props) {
         {PRRODUCT_IS_COURCE
           ? 
             (
-              <a href={PRRODUCT_IS_COURCE} class="btn no-animation btn btn__buy btn-primary w-full h-[54px] bg-[#6EB212] rounded-sm border-0 text-xs font-medium leading-[19px] tracking-[0.6px] text-white hover:bg-[#86c92c] transition-[0.4s]"> 
+              <a href={PRRODUCT_IS_COURCE} target="_blank" class="btn no-animation btn btn__buy btn-primary w-full h-[54px] bg-[#6EB212] rounded-sm border-0 text-xs font-medium leading-[19px] tracking-[0.6px] text-white hover:bg-[#86c92c] transition-[0.4s]"> 
                   Comprar currso 
               </a> 
             )
