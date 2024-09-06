@@ -3,7 +3,6 @@ import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import Slider from "$store/components/ui/SliderPdp.tsx";
-import { PLATFORM } from "$store/platform.ts";
 import AddToCartButtonVNDA from "$store/islands/AddToCartButton/vnda.tsx";
 import AddToCartButtonVTEX from "$store/islands/AddToCartButton/vtex.tsx";
 import OutOfStock from "$store/islands/OutOfStock.tsx";
@@ -11,19 +10,20 @@ import ProductImageZoom from "$store/islands/ProductImageZoom.tsx";
 import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import WishlistButton from "$store/islands/WishlistButton.tsx";
+import { PLATFORM } from "$store/platform.ts";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useId } from "$store/sdk/useId.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
-import type { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "$store/utils/productToAnalyticsItem.ts";
+import type { ProductDetailsPage } from "apps/commerce/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 import ProductSelector from "./ProductVariantSelector.tsx";
 
+import ColorsSimilars from "$store/islands/ColorsSimilars.tsx";
 import Conservation from "$store/islands/Conservation.tsx";
+import FilePdf from "$store/islands/FilePdf.tsx";
 import Payments from "$store/islands/Payments.tsx";
 import Price from "$store/islands/Price.tsx";
-import ColorsSimilars from "$store/islands/ColorsSimilars.tsx";
-import FilePdf from "$store/islands/FilePdf.tsx";
 
 export type Variant = "front-back" | "slider" | "auto";
 
@@ -307,6 +307,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
               offers={offers}
               isMeter={isMeter}
               maxParcels={maxParcels ? 12 : 6}
+              product={product}
             />
 
             {/*modal payments*/}
