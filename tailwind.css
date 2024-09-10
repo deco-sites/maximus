@@ -154,16 +154,3 @@
     --dot-progress: 100%
   }
 }
-
-.cc-banner.cc-bottom {
-  position: relative;
-  padding: 0 !important;
-}
-
-.cc-banner.cc-bottom {
-  display: none !important;
-}
-
-.cc-banner.cc-bottom:first-of-type {
-  display: block !important; 
-}
