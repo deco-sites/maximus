@@ -149,7 +149,7 @@ function AddToCartButton(props: Props) {
           ? 
             (
               <a href={PRRODUCT_IS_COURCE} target="_blank" class="btn no-animation btn btn__buy btn-primary w-full h-[54px] bg-[#6EB212] rounded-sm border-0 text-xs font-medium leading-[19px] tracking-[0.6px] text-white hover:bg-[#86c92c] transition-[0.4s]"> 
-                  Comprar currso 
+                  Comprar curso 
               </a> 
             )
           : <Button onAddItem={onAddItem} {...props} />
