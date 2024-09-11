@@ -198,25 +198,6 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
 
       {/* infos rigth */}
       <div class="">
-        <div class="flex items-center justify-between mb-3">
-          <span class="w-[50%] text-[10px] font-bold leading-[34px] tracking-[0] text-neutral-800 italic whitespace-nowrap">
-            {stockAvailable && isMeter
-              ? (stockAvailable * .1).toFixed(1) > 80000
-                ? +"Estoque disponível"
-                : (stockAvailable * .1).toFixed(1) + " metros em estoque"
-              : stockAvailable && stockAvailable > 80000
-              ? "Estoque disponível"
-              : stockAvailable + " Unidades disponíveis"}
-          </span>
-          <div class="w-[50%]">
-            {pantone &&
-              (
-                <p class="text-[13px] font-normal tracking-[0] text-[#171413] leading-4">
-                  <strong>Cor Pantone</strong> <br /> {pantone}
-                </p>
-              )}
-          </div>
-        </div>
         {/* flags */}
         <div class="mb-5">
           {fretegratis &&
