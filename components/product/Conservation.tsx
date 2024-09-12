@@ -46,6 +46,7 @@ function Conservation({ conservationsList }: { conservationsList: any }) {
                 src={buildImage(item.name, item.value)}
                 alt={item.value}
                 title={item.value}
+                width={18}
               />
             </div>
           ))}

@@ -66,6 +66,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
     isVariantOf,
     additionalProperty = [],
   } = product;
+
   const {
     price = 0,
     listPrice,
