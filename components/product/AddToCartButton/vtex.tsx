@@ -31,6 +31,12 @@ function AddToCartButton(props: Props) {
   const { quantityPdp } = useUI();
   quantityPdp.value = quantity;
 
+  if (quantity > stock) {
+    setQuantity(stock);
+  }
+
+  console.log({ stock }, quantityPdp.value)
+
   const { addItems } = useCart();
 
   const onAddItem = () =>

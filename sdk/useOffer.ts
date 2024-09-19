@@ -46,7 +46,7 @@ const installmentToString = (
   const withTaxes = sellingPrice < price;
 
   return billingDuration > 1
-    ? `(Até ${billingDuration}x de R$ ${billingIncrement} ${
+    ? `(Até ${billingDuration}x de R$ ${billingIncrement.toFixed(2)} ${
       withTaxes ? "com juros" : "sem juros"
     })`
     : "";
