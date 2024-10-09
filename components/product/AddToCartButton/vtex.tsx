@@ -17,11 +17,30 @@ function AddToCartButton(props: Props) {
   const image = props.image;
   const isMeter = props.isMeter;
   const maxParcels = props.maxParcels;
+  const multiplier = props.multiplier;
+
   const quantityMin = isMeter ? 4 : 1;
+
+  
+
+ 
 
   const [quantity, setQuantity] = useState(isMeter ? 10 : 1);
   const [notification, setNotification] = useState(false);
   const [showBuy, setShowBuy] = useState(false);
+
+  const setQuantityCustom = (() => {
+    if (multiplier) {
+      // console.log(parseFloat(multiplier.value), { props })
+    }
+
+    if (!multiplier) {
+      // console.log(isMeter ? 10 : 1)
+    }
+   
+  })
+
+  setQuantityCustom()
 
   const [
     PRRODUCT_IS_COURCE, 
@@ -34,8 +53,6 @@ function AddToCartButton(props: Props) {
   if (quantity > stock) {
     setQuantity(stock);
   }
-
-  console.log({ stock }, quantityPdp.value)
 
   const { addItems } = useCart();
 
@@ -107,8 +124,6 @@ function AddToCartButton(props: Props) {
       const [ product ] = await response.json();
   
       const cource = product?.['COURSE_URL']?.[0] || false;
-  
-      console.log("#########", { product }, product?.['COURSE_URL']?.[0])
 
       SET_PRRODUCT_IS_COURCE(cource);
     } catch (error) {

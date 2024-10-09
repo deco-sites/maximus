@@ -79,8 +79,11 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
   const productGroupID = isVariantOf?.productGroupID ?? "";
   const discount = price && listPrice ? listPrice - price : 0;
 
-  //console.log("######", product.additionalProperty);
 
+  // console.log({ product })
+  // console.log(product?.isVariantOf?.additionalProperty)
+
+  
   const isMeter = (
       product?.additionalProperty?.find((item) => item.name === "category")
           ?.value === "TECIDOS" &&
@@ -168,9 +171,11 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
     return offer.sellerName === "Draft Manequins"
   })
 
-  const sellerMaxParcels = sellerDraft ? 3 : (maxParcels ? 12 : 6)
+  const isCustomMultiplier = product?.isVariantOf?.additionalProperty.find((specification) => {
+    return specification.name === "SELLER_UNIIT_MULTIPLLIER"
+  })
 
-  // console.log("###### maxParcels ######", {sellerDraft, sellerMaxParcels, maxParcels});
+  const sellerMaxParcels = sellerDraft ? 3 : (maxParcels ? 12 : 6)
 
   return (
     <div class="px-[27px] py-4 bg-[#fbfbfb]">
@@ -348,6 +353,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
                   isMeter={isMeter}
                   maxParcels={maxParcels ? 12 : 6}
                   stock={stockAvailable}
+                  multiplier={isCustomMultiplier}
                 />
               )}
               {PLATFORM === "vnda" && (

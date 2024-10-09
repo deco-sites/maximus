@@ -14,6 +14,7 @@ export interface Props {
   isMeter: boolean;
   stock: number;
   maxParcels: number;
+  multiplier: any
   onAddItem: () => Promise<void>;
 }
 
