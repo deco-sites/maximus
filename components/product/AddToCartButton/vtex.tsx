@@ -150,7 +150,7 @@ function AddToCartButton(props: Props) {
         {isMeter && !PRRODUCT_IS_COURCE && <MeterHelp />}
       </div>
 
-      <div class="mt-[35px]">
+      <div class={`${PRRODUCT_IS_COURCE ? 'mt-[5px]' : 'mt-[35px]'}`}>
         {PRRODUCT_IS_COURCE
           ? 
             (

@@ -172,6 +172,10 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
 
   // console.log("###### maxParcels ######", {sellerDraft, sellerMaxParcels, maxParcels});
 
+  const PRRODUCT_IS_COURCE = additionalProperty?.find((category:any) => {
+    return category?.name === "category" && category?.value === "CURSOS"
+  })
+
   return (
     <div class="px-[27px] py-4 bg-[#fbfbfb]">
       <input
@@ -374,13 +378,15 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
 
       {/* Shipping Simulation */}
       <div class="mt-8">
-        <ShippingSimulation
-          items={[{
-            id: Number(product.sku),
-            quantity: 1,
-            seller: seller,
-          }]}
-        />
+        {!PRRODUCT_IS_COURCE && (
+          <ShippingSimulation
+            items={[{
+              id: Number(product.sku),
+              quantity: 1,
+              seller: seller,
+            }]}
+          />
+        )}
       </div>
 
       {/* Analytics Event */}

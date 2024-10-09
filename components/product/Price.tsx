@@ -21,7 +21,12 @@ function Price(
   {},
 ) {
   const { quantityPdp } = useUI();
-  
+  const { additionalProperty }:any = product;
+
+  const PRRODUCT_IS_COURCE = additionalProperty?.find((category:any) => {
+    return category?.name === "category" && category?.value === "CURSOS"
+  })
+
   const [discount, setDiscount] = useState<string>("");
 
   useEffect(() => {
@@ -71,16 +76,24 @@ function Price(
         </span>
       </div>
       <div>
-        {installments &&
-          (
-            <span class="text-sm font-normal tracking-[0] text-[#171413] leading-4 flex flex-col my-2.5">
-              {installments}
-            </span>
-          )}
+        {installments && !PRRODUCT_IS_COURCE && (
+          <span class="text-sm font-normal tracking-[0] text-[#171413] leading-4 flex flex-col my-2.5">
+            {installments}
+          </span>
+        )}
 
-        <p class="block text-xs font-semibold leading-[29px] mb-[15px]">
-          {discount} de desconto para pagamentos à vista
-        </p>
+        {installments && PRRODUCT_IS_COURCE && (
+          <span class="text-sm font-normal tracking-[0] text-[#171413] leading-4 flex flex-col my-2.5">
+            (Até 12x)
+          </span>
+        )}
+
+          {!PRRODUCT_IS_COURCE && (
+            <p class="block text-xs font-semibold leading-[29px] mb-[15px]">
+              {discount} de desconto para pagamentos à vista
+            </p>
+          )}
+       
       </div>
     </div>
   );
