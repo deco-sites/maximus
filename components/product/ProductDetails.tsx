@@ -168,13 +168,29 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
     return offer.sellerName === "Draft Manequins"
   })
 
-  const sellerMaxParcels = sellerDraft ? 3 : (maxParcels ? 12 : 6)
-
-  // console.log("###### maxParcels ######", {sellerDraft, sellerMaxParcels, maxParcels});
-
   const PRRODUCT_IS_COURCE = additionalProperty?.find((category:any) => {
     return category?.name === "category" && category?.value === "CURSOS"
   })
+
+  // const sellerMaxParcels = sellerDraft ? 3 : (maxParcels ? 12 : 6)
+
+  let MAX_PARCELS = 12;
+
+  if (maxParcels) {
+    MAX_PARCELS = 12
+  }
+
+  if (!maxParcels) {
+    MAX_PARCELS = 6
+  }
+
+  if (sellerDraft) {
+    MAX_PARCELS = 3
+  }
+
+  if (PRRODUCT_IS_COURCE) {
+    MAX_PARCELS = 12
+  }
 
   return (
     <div class="px-[27px] py-4 bg-[#fbfbfb]">
@@ -322,7 +338,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
             <Payments
               price={isMeter ? (price / 10) : price}
               offers={offers!.priceCurrency!}
-              maxParcels={sellerMaxParcels}
+              maxParcels={MAX_PARCELS}
               isFabric={isFabric}
             />
           </>

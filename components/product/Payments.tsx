@@ -18,6 +18,9 @@ function Payments({ price, offers, maxParcels, isFabric }: Props) {
     const minParcels = Math.trunc((price * quantityPdp.value) / 25);
     const parcels = Array(minParcels).fill(minParcels);
     setNumberParcels(parcels);
+
+    console.log({ parcels, maxParcels })
+
   }, [quantityPdp.value]);
 
   return (
@@ -54,9 +57,11 @@ function Payments({ price, offers, maxParcels, isFabric }: Props) {
             class="absolute cursor-pointer z-[99999] w-6 h-6 bg-no-repeat bg-center appearance-none transition-[0.2s] duration-[ease-in-out] m-0 p-[7px] rounded-[50%] border-[none] scale-150 right-5 md:right-10 top-[15px];"
           >
           </div>
+          
           <h3 class="text-lg font-semibold leading-5 text-[#171413] uppercase text-center mb-10 pb-[25px] border-b-[#eaeaea] border-b border-solid">
             FORMAS DE PAGAMENTO
           </h3>
+          
           <header class="w-full flex justify-between px-[15px] md:px-[50px] py-0 mb-6">
             <div class="w-3/5 text-sm font-semibold text-black leading-4">
               Pagamento
@@ -68,6 +73,7 @@ function Payments({ price, offers, maxParcels, isFabric }: Props) {
               Valor total
             </div>
           </header>
+          
           <div class="[&>*:nth-child(odd)]:bg-[#eaeaea]">
             <div class="w-full flex justify-between px-[15px] md:px-[50px] py-0">
               <div class="flex items-center w-3/5 min-h-[35px] text-sm font-medium text-black leading-4">
@@ -81,6 +87,7 @@ function Payments({ price, offers, maxParcels, isFabric }: Props) {
                   offers,
                 )}
               </div>
+              
               <div class="flex items-center text-right w-1/5 min-h-[35px] text-sm font-medium text-black leading-4">
                 {formatPrice(
                   (price * quantityPdp.value) -
@@ -90,6 +97,7 @@ function Payments({ price, offers, maxParcels, isFabric }: Props) {
                 )}
               </div>
             </div>
+
             {numberParcels?.map((item: any, index: number) => (
               <div
                 class={`w-full ${

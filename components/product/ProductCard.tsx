@@ -74,8 +74,6 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
 
   const { quantityPdp } = useUI();
 
-  console.log("###### seller", seller)
-
   const id = `product-card-${productID}`;
   const productGroupID = isVariantOf?.productGroupID;
   const [front, back] = images ?? [];
