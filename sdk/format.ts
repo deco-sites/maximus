@@ -9,6 +9,7 @@ const formatter = (currency: string, locale: string) => {
       new Intl.NumberFormat(locale, {
         style: "currency",
         currency,
+        minimumFractionDigits: 2
       }),
     );
   }

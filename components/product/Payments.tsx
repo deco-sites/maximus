@@ -111,6 +111,7 @@ function Payments({ price, offers, maxParcels, isFabric }: Props) {
                     }`
                     : `${index + 1} x sem juros`}
                 </div>
+                
                 <div class="flex items-center text-center w-2/5 min-h-[35px] text-sm font-medium text-black leading-4">
                   {(index + 1) > 3 && isFabric
                     ? formatPrice(
@@ -123,6 +124,7 @@ function Payments({ price, offers, maxParcels, isFabric }: Props) {
                       offers,
                     )}
                 </div>
+
                 <div class="flex items-center text-right w-1/5 min-h-[35px] text-sm font-medium text-black leading-4">
                   {(index + 1) > 3 && isFabric
                     ? formatPrice(
