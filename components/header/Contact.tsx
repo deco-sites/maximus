@@ -18,7 +18,7 @@ function Contact({
     >
       <p>Atendimento - {telefone}</p>
       <a
-        class="hover:text-[#23527c] hover:underline transition-[0.2s]"
+        class="hover:text-[#23527c] hover:underline transition-[0.2s] z-10"
         href={`https://api.whatsapp.com/send?phone=55${
           whatsApp.replace(/\D/g, "")
         }`}
