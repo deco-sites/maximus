@@ -14,7 +14,8 @@ function Contact({
   return (
     <div
       id={id}
-      class="hidden md:flex bg-[#171413] w-full h=[29px] justify-evenly text-white pt-2 pb-2 text-xs"
+      class="hidden md:flex bg-[#171413] w-full h=[29px] justify-evenly text-white pt-2 pb-2 text-xs z-10"
+      style="z-index: 10;"
     >
       <p>Atendimento - {telefone}</p>
       <a
@@ -23,6 +24,7 @@ function Contact({
           whatsApp.replace(/\D/g, "")
         }`}
         target="_blank"
+              style="z-index: 10;"
       >
         WhatsApp - {whatsApp}
       </a>
