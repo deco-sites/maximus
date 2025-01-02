@@ -37,6 +37,8 @@ function AddToCartButton(props: Props) {
 
   console.log("stock", { stock }, quantityPdp.value)
 
+  console.log("#### empty")
+
   const { addItems } = useCart();
 
   const onAddItem = () =>
