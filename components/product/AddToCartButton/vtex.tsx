@@ -1,7 +1,7 @@
-import { useState, useEffect } from "preact/hooks";
+import { useEffect, useState } from "preact/hooks";
 
-import { useUI } from "$store/sdk/useUI.ts";
 import { formatPrice } from "$store/sdk/format.ts";
+import { useUI } from "$store/sdk/useUI.ts";
 
 import MeterHelp from "$store/islands/MeterHelp.tsx";
 import { useCart } from "apps/vtex/hooks/useCart.ts";
@@ -35,7 +35,7 @@ function AddToCartButton(props: Props) {
     setQuantity(stock);
   }
 
-  console.log({ stock }, quantityPdp.value)
+  console.log("stock", { stock }, quantityPdp.value)
 
   const { addItems } = useCart();
 
