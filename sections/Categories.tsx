@@ -1,4 +1,4 @@
-import type { SectionProps } from "$live/mod.ts";
+import type { SectionProps } from "deco/mod.ts";
 import type { ProductListingPage } from "apps/commerce/types.ts";
 import { useId } from "$store/sdk/useId.ts";
 import Slider from "$store/components/ui/Slider.tsx";
