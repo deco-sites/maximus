@@ -66,7 +66,7 @@ export default function LinksFooter(
                     Sábado
                   </p>
                   <p class="w-full ml-[10%] my-[5px] max-md:ml-[25px]">
-                    das 09:00 às 12:30 horas
+                    das 09:00 às 13:00 horas
                   </p>
                 </li>
                 <li class="flex items-start py-2">

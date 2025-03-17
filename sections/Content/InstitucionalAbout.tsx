@@ -79,14 +79,7 @@ export default function InstitucionalAbout(props: Props) {
             ESCOLA DE MODA ONLINE
           </h3>
           <p class="text-[13px] tracking-[0] text-neutral-800 leading-[21px] mb-[18px]">
-            A Maximus Tecidos acredita no poder da costura como um movimento
-            capaz de transformar vidas e expandiu suas atividades no ramo da
-            educação. Além dos materiais educacionais que se tornaram um dos
-            carros chefes, agora também conta com a Maximus Escola de Moda
-            Online, que já conta com mais de 37.000 alunas (os), com cursos de
-            Desenho de Moda, Corte e Costura (reconhecido pelo MEC), Costura
-            Pet, Costura Infantil, Costura Criativa, Modelagem (reconhecido pelo
-            MEC), Bordados, Marketing e Negócios para Costura.
+            A Maximus Tecidos acredita no poder da costura como um movimento capaz de transformar vidas e expandiu suas atividades no ramo da educação. Além dos materiais educacionais que se tornaram um dos carros chefes, agora também conta com a Maximus Escola de Moda Online, que já conta com 13 Programas de Formação Reconhecidos pelo MEC, com cursos de Desenho de Moda (reconhecido pelo MEC), Corte e Costura Feminina (reconhecido pelo MEC), Costura Pet (reconhecido pelo MEC), Costura Infantil (reconhecido pelo MEC), Costura Criativa (reconhecido pelo MEC), Costura Masculina, Modelagem (reconhecidos pelo MEC), Bordados (reconhecidos pelo MEC), Marketing e Negócios para Costura (reconhecido pelo MEC), Crochê, Ajustes e Consertos de Roupas (reconhecido pelo MEC), Costura de Lingerie e Pijamas, Personal de Estilo da Moda Sob Medida (reconhecido pelo MEC), Regulagem e Manutenção de Máquinas de Costura (reconhecido pelo MEC) e uma Assinatura de Moldes.
             <br />
             <br />
             A missão é lançar outros cursos no segmento da Moda e se tornar uma
