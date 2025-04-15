@@ -11,6 +11,8 @@ export interface LojaItem {
   phoneFormated?: string;
   whatsapp?: string;
   whatsappFormated?: string;
+  whatsappSecondary?: string;
+  whatsappSecondaryFormated?: string;
   /** @format textarea */
   iframe?: string | undefined;
 }
@@ -75,6 +77,23 @@ export default function InstitucionalLojas(
               </span>
               {item.whatsapp}
             </a>
+
+            <br />
+
+            {item.whatsappSecondary && (
+              <a
+                class="text-[13px] font-medium leading-[19px] tracking-[0px] text-neutral-800 underline mb-[5px]"
+                href={`https://api.whatsapp.com/send?phone=${item.whatsappSecondaryFormated}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="text-[15px] text-shadow">
+                  Whatsapp:
+                </span>
+                {item.whatsappSecondary}
+              </a>
+            )}
+
             <div class="flex items-center my-5">
               <span
                 onClick={() => setStore(item.iframe ? item.iframe : "")}

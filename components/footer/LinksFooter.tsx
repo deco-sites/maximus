@@ -47,7 +47,7 @@ export default function LinksFooter(
             </div>
 
             <div class="collapse-content md:visible md:px-0">
-              <ul class="text-[#171413] text-xs md:max-w-[252px] max-h-[206px] flex flex-wrap flex-col">
+              <ul class="text-[#171413] text-xs md:max-w-[252px] max-h-[226px] flex flex-wrap flex-col">
                 <li class="flex items-start py-2 mb-2 border-b border-[#ebebeb] flex-wrap">
                   <img
                     src="https://tfcszo.vteximg.com.br/arquivos/clockicon.png"
@@ -79,11 +79,12 @@ export default function LinksFooter(
                     loading="lazy"
                     class="block mr-3"
                   />
-                  SAC Loja virtual -{" "}
+                  SAC Loja virtual -
                   <a href="tel:+5545302201345">
                     (45) 3020-1345
                   </a>
                 </li>
+
                 <li class="flex items-start py-2">
                   <img
                     src="https://tfcszo.vteximg.com.br/arquivos/whtasicon.png"
@@ -94,9 +95,27 @@ export default function LinksFooter(
                     loading="lazy"
                     class="block mr-3"
                   />
-                  WhatsApp -{" "}
-                  <a href="https://api.whatsapp.com/send?phone=5545999110056">
-                    (45) 99911-0056
+                  WhatsApp <span class="mx-[5px]">-</span>
+
+                  <a href="https://api.whatsapp.com/send?phone=5545999060660">
+                     (45) 99906 - 0660
+                  </a>
+                </li>
+
+                <li class="flex items-start py-2">
+                  <img
+                    src="https://tfcszo.vteximg.com.br/arquivos/whtasicon.png"
+                    width={14}
+                    height={14}
+                    alt="icone whatsapp"
+                    title="icone whatsapp"
+                    loading="lazy"
+                    class="block mr-3"
+                  />
+                  WhatsApp <span class="mx-[5px]">-</span>
+
+                  <a href="https://api.whatsapp.com/send?phone=5545998620521">
+                     (45) 99862-0521
                   </a>
                 </li>
               </ul>
