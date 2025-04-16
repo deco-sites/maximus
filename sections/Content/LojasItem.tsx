@@ -1,6 +1,7 @@
 import { useState } from "preact/hooks";
 
 export interface LojaItem {
+  id?: string;
   name?: string;
   /** @format textarea */
   address?: string;
@@ -13,6 +14,7 @@ export interface LojaItem {
   whatsappFormated?: string;
   whatsappSecondary?: string;
   whatsappSecondaryFormated?: string;
+
   /** @format textarea */
   iframe?: string | undefined;
 }
@@ -22,6 +24,8 @@ export default function InstitucionalLojas(
 ) {
   const [store, setStore] = useState<string>("");
 
+  console.log(content);
+
   return (
     <div class="w-full max-w-[96%] md:max-w-[1236px] mx-auto py-[25px]">
       <div class="flex items-center max-md:flex-col">
@@ -30,42 +34,51 @@ export default function InstitucionalLojas(
             <h5 class="text-base font-semibold leading-[29px] tracking-[0px] text-neutral-800 mb-[15px]">
               {item.name}
             </h5>
+            
             <p class="text-[15px] font-medium text-shadow leading-[19px] tracking-[0px] text-neutral-800 mb-[5px]">
               Atendimento
             </p>
+            
             <p class="text-[13px] font-medium leading-[19px] tracking-[0px] text-neutral-800 mb-6">
               {item.call}
             </p>
+            
             <p class="text-[15px] font-medium text-shadow leading-[19px] tracking-[0px] text-neutral-800 mb-[5px]">
               Endereço:
             </p>
+
             <p class="text-[13px] font-medium leading-[19px] tracking-[0px] text-neutral-800 mb-6">
               {item.address}
             </p>
+
             <a
               class="text-[13px] font-medium leading-[19px] tracking-[0px] text-neutral-800 underline mb-[5px]"
               href={`mailto:${item.email}`}
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               <span class="text-[15px] text-shadow">
                 E-mail:
               </span>{" "}
               {item.email}
             </a>
+
             <br />
+            
             <a
               class="text-[13px] font-medium leading-[19px] tracking-[0px] text-neutral-800 underline mb-[5px]"
               href={`tel:${item.phoneFormated}`}
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
+
               <span class="text-[15px] text-shadow">
                 Telefone(s):
               </span>{" "}
+
               {item.phone}
             </a>
+            
             <br />
+
             <a
               class="text-[13px] font-medium leading-[19px] tracking-[0px] text-neutral-800 underline mb-[5px]"
               href={`https://api.whatsapp.com/send?phone=${item.whatsappFormated}`}
@@ -73,7 +86,7 @@ export default function InstitucionalLojas(
               rel="noopener noreferrer"
             >
               <span class="text-[15px] text-shadow">
-                Whatsapp:
+                Whatsapp: 
               </span>
               {item.whatsapp}
             </a>
@@ -88,7 +101,7 @@ export default function InstitucionalLojas(
                 rel="noopener noreferrer"
               >
                 <span class="text-[15px] text-shadow">
-                  Whatsapp:
+                  Whatsapp: 
                 </span>
                 {item.whatsappSecondary}
               </a>

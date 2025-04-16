@@ -10,6 +10,8 @@ export interface LojaItem {
   whatsapp?: string;
   whatsappFormated?: string;
   iframe?: string;
+  whatsappSecondary?: string;
+  whatsappSecondaryFormated?: string;
 }
 
 export interface Props {
