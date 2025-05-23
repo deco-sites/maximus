@@ -32,7 +32,7 @@
     "deco-sites/staging/": "./",
     "deco-sites/fashion/": "./",
     "$store/": "./",
-    "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.24.2/",
+    "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.26.8/",
     "$live/": "https://denopkg.com/deco-cx/deco@1.57.9/",
     "$fresh/": "https://deno.land/x/fresh@1.6.3/",
     "preact": "https://esm.sh/preact@10.19.2",
