@@ -1,1 +1,106 @@
-{"name":"Product page","path":"/:slug/p","sections":[{"__resolveType":"site/sections/Integrations/YourviewsIntegrations.tsx"},{"__resolveType":"Fashion theme"},{"trackingIds":["GTM-PJP2V2"],"__resolveType":"deco-sites/std/sections/Analytics.tsx","googleAnalyticsIds":["G-HGM4SXF2FQ"]},{"__resolveType":"Header - 01"},{"page":{"slug":{"0":"a","param":"slug","__resolveType":"deco-sites/std/functions/requestToParam.ts"},"__resolveType":"vtex/loaders/legacy/productDetailsPage.ts"},"variant":"slider","LinksPDF":[{"link":"maquina-de-costura-ultraloque-14HD854.pdf","skuId":"9632"},{"link":"maquina-de-costura-eletronica-CE677.pdf","skuId":"9623"},{"link":"Singer_Manual_S0105.pdf","skuId":"9585"},{"link":"maquina-de-costura-singer-23-pontos-m3205.pdf","skuId":"9597"},{"link":"maquina-de-costura-singer-m1605.pdf","skuId":"9622"},{"link":"maquina-de-costura-eletronica-C7255.pdf","skuId":"9628"},{"link":"maquina-de-costura-singer-23-pontos-m3205.pdf","skuId":"9597"},{"link":"\tmaquina-de-costura-mecanica-manual-M2405 (1).pdf","skuId":"9348"}],"pageSimilar":{"count":49,"crossSelling":"whosawalsosaw","__resolveType":"deco-sites/std/functions/vtexLegacyRelatedProductsLoader.ts"},"__resolveType":"site/sections/Product/ProductDetails.tsx"},{"__resolveType":"analytics"},{"title":"Quem comprou, também comprou","products":{"crossSelling":"whosawalsosaw","__resolveType":"deco-sites/std/functions/vtexLegacyRelatedProductsLoader.ts"},"__resolveType":"site/sections/Product/ProductShelfPdp.tsx"},{"__resolveType":"Footer - 05"},{"type":"website","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/cf0a9187-fe91-4a65-8c73-e972a3851a07","jsonLD":{"slug":{"param":"slug","__resolveType":"deco-sites/std/functions/requestToParam.ts"},"__resolveType":"vtex/loaders/legacy/productDetailsPage.ts"},"favicon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a4406a50-9592-476a-a37a-dca689ae6796","omitVariants":false,"__resolveType":"commerce/sections/Seo/SeoPDP.tsx","titleTemplate":"%s | Maximus Tecidos..","descriptionTemplate":"%s"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Product page",
+  "path": "/:slug/p",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Integrations/YourviewsIntegrations.tsx"
+    },
+    {
+      "__resolveType": "Fashion theme"
+    },
+    {
+      "trackingIds": [
+        "GTM-PJP2V2"
+      ],
+      "__resolveType": "deco-sites/std/sections/Analytics.tsx",
+      "googleAnalyticsIds": [
+        "G-HGM4SXF2FQ"
+      ]
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "page": {
+        "slug": {
+          "0": "a",
+          "param": "slug",
+          "__resolveType": "deco-sites/std/functions/requestToParam.ts"
+        },
+        "__resolveType": "vtex/loaders/legacy/productDetailsPage.ts"
+      },
+      "variant": "slider",
+      "LinksPDF": [
+        {
+          "link": "maquina-de-costura-ultraloque-14HD854.pdf",
+          "skuId": "9632"
+        },
+        {
+          "link": "maquina-de-costura-eletronica-CE677.pdf",
+          "skuId": "9623"
+        },
+        {
+          "link": "Singer_Manual_S0105.pdf",
+          "skuId": "9585"
+        },
+        {
+          "link": "maquina-de-costura-singer-23-pontos-m3205.pdf",
+          "skuId": "9597"
+        },
+        {
+          "link": "maquina-de-costura-singer-m1605.pdf",
+          "skuId": "9622"
+        },
+        {
+          "link": "maquina-de-costura-eletronica-C7255.pdf",
+          "skuId": "9628"
+        },
+        {
+          "link": "maquina-de-costura-singer-23-pontos-m3205.pdf",
+          "skuId": "9597"
+        },
+        {
+          "link": "\tmaquina-de-costura-mecanica-manual-M2405 (1).pdf",
+          "skuId": "9348"
+        }
+      ],
+      "pageSimilar": {
+        "count": 49,
+        "crossSelling": "whosawalsosaw",
+        "__resolveType": "deco-sites/std/functions/vtexLegacyRelatedProductsLoader.ts"
+      },
+      "__resolveType": "site/sections/Product/ProductDetails.tsx"
+    },
+    {
+      "__resolveType": "analytics"
+    },
+    {
+      "title": "Quem comprou, também comprou",
+      "products": {
+        "crossSelling": "whosawalsosaw",
+        "__resolveType": "deco-sites/std/functions/vtexLegacyRelatedProductsLoader.ts"
+      },
+      "__resolveType": "site/sections/Product/ProductShelfPdp.tsx"
+    },
+    {
+      "__resolveType": "Footer - 05"
+    },
+    {
+      "type": "website",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/cf0a9187-fe91-4a65-8c73-e972a3851a07",
+      "jsonLD": {
+        "slug": {
+          "param": "slug",
+          "__resolveType": "deco-sites/std/functions/requestToParam.ts"
+        },
+        "__resolveType": "vtex/loaders/legacy/productDetailsPage.ts"
+      },
+      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a4406a50-9592-476a-a37a-dca689ae6796",
+      "omitVariants": false,
+      "__resolveType": "commerce/sections/Seo/SeoPDP.tsx",
+      "titleTemplate": "%s | Maximus Tecidos..",
+      "descriptionTemplate": "%s"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

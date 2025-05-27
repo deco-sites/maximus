@@ -3,8 +3,9 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $$$$$$$$$0 from "./actions/form-contact/form.ts";
-import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
-import * as $$$$$$$$$$$1 from "./apps/site.ts";
+import * as $$$$$$$$$$$0 from "./apps/deco/analytics.ts";
+import * as $$$$$$$$$$$1 from "./apps/deco/vtex.ts";
+import * as $$$$$$$$$$$2 from "./apps/site.ts";
 import * as $$$$$$0 from "./sections/Categories.tsx";
 import * as $$$$$$1 from "./sections/Category/CategoryBanner.tsx";
 import * as $$$$$$2 from "./sections/Category/CategoryBannerHeader.tsx";
@@ -66,10 +67,8 @@ const manifest = {
     "site/sections/Category/CategoryBannerHeader.tsx": $$$$$$2,
     "site/sections/Category/CategoryBannersSlider.tsx": $$$$$$3,
     "site/sections/Category/CategoryList.tsx": $$$$$$4,
-    "site/sections/Category/CategoryText/CategoryText.tsx":
-      $$$$$$5,
-    "site/sections/Category/CategoryText/CategoryTextFooter.tsx":
-      $$$$$$6,
+    "site/sections/Category/CategoryText/CategoryText.tsx": $$$$$$5,
+    "site/sections/Category/CategoryText/CategoryTextFooter.tsx": $$$$$$6,
     "site/sections/Category/CategoryTextFooter.tsx": $$$$$$7,
     "site/sections/Category/CategoryTextHeader.tsx": $$$$$$8,
     "site/sections/Content/BannerSchool.tsx": $$$$$$9,
@@ -101,10 +100,8 @@ const manifest = {
     "site/sections/Images/Carousel.tsx": $$$$$$35,
     "site/sections/Images/ImageGallery.tsx": $$$$$$36,
     "site/sections/Images/ShoppableBanner.tsx": $$$$$$37,
-    "site/sections/Integrations/YourviewsIntegrations.tsx":
-      $$$$$$38,
-    "site/sections/Integrations/YourviewsReviewStore.tsx":
-      $$$$$$39,
+    "site/sections/Integrations/YourviewsIntegrations.tsx": $$$$$$38,
+    "site/sections/Integrations/YourviewsReviewStore.tsx": $$$$$$39,
     "site/sections/Links/LinkTree.tsx": $$$$$$40,
     "site/sections/Links/Shortcuts.tsx": $$$$$$41,
     "site/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$42,
@@ -123,8 +120,9 @@ const manifest = {
     "site/actions/form-contact/form.ts": $$$$$$$$$0,
   },
   "apps": {
-    "site/apps/decohub.ts": $$$$$$$$$$$0,
-    "site/apps/site.ts": $$$$$$$$$$$1,
+    "site/apps/deco/analytics.ts": $$$$$$$$$$$0,
+    "site/apps/deco/vtex.ts": $$$$$$$$$$$1,
+    "site/apps/site.ts": $$$$$$$$$$$2,
   },
   "name": "site",
   "baseUrl": import.meta.url,

@@ -1,1 +1,27 @@
-{"name":"desconto-estudante","path":"/desconto-estudante","sections":[{"__resolveType":"Fashion theme"},{"__resolveType":"Header - 01"},{"__resolveType":"site/sections/Content/InstitucionalEstudante.tsx"},{"__resolveType":"Footer - 05"},{"type":"website","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/d76e9128-ed92-471b-a1f3-3b6d686b1e8d","title":"Desconto do Estudante","favicon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/51f697d2-1609-4526-b512-a72fffad89fa","__resolveType":"website/sections/Seo/Seo.tsx","descriptionTemplate":"%s"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "desconto-estudante",
+  "path": "/desconto-estudante",
+  "sections": [
+    {
+      "__resolveType": "Fashion theme"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "site/sections/Content/InstitucionalEstudante.tsx"
+    },
+    {
+      "__resolveType": "Footer - 05"
+    },
+    {
+      "type": "website",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/d76e9128-ed92-471b-a1f3-3b6d686b1e8d",
+      "title": "Desconto do Estudante",
+      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/51f697d2-1609-4526-b512-a72fffad89fa",
+      "__resolveType": "website/sections/Seo/Seo.tsx",
+      "descriptionTemplate": "%s"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

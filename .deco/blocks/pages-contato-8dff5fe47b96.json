@@ -1,1 +1,30 @@
-{"name":"contato","path":"/Institucional/contato","sections":[{"__resolveType":"Fashion theme"},{"__resolveType":"Header - 01"},{"text":"Ainda em dúvida sobre algo? Mande uma mensagem! Responderemos em até 2 dias úteis.","title":"Fale conosco","breadcrumb":"Fale conosco","__resolveType":"site/sections/Content/Contato.tsx"},{"__resolveType":"Footer - 05"},{"type":"website","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/26662b14-9321-42f4-941e-7ecf9dda48fc","title":"Onde estamos","favicon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/08b8bb2e-d026-44ff-8b69-6c72b88fabdc","__resolveType":"website/sections/Seo/Seo.tsx","descriptionTemplate":"%s"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "contato",
+  "path": "/Institucional/contato",
+  "sections": [
+    {
+      "__resolveType": "Fashion theme"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "text": "Ainda em dúvida sobre algo? Mande uma mensagem! Responderemos em até 2 dias úteis.",
+      "title": "Fale conosco",
+      "breadcrumb": "Fale conosco",
+      "__resolveType": "site/sections/Content/Contato.tsx"
+    },
+    {
+      "__resolveType": "Footer - 05"
+    },
+    {
+      "type": "website",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/26662b14-9321-42f4-941e-7ecf9dda48fc",
+      "title": "Onde estamos",
+      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/08b8bb2e-d026-44ff-8b69-6c72b88fabdc",
+      "__resolveType": "website/sections/Seo/Seo.tsx",
+      "descriptionTemplate": "%s"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

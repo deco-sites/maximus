@@ -1,1 +1,460 @@
-{"name":"Home","path":"/","sections":{"variants":[{"rule":{"__resolveType":"website/matchers/always.ts"},"value":[{"__resolveType":"Fashion theme"},{"__resolveType":"SEODefault"},{"__resolveType":"Header - 01"},{"value":"116px","active":true,"__resolveType":"site/sections/Content/Space.tsx"},{"images":[{"alt":"Mês da Costureira","action":{"href":"/tecidos","label":"Mês da Costureira","title":"Demo Store","target":"_self","subTitle":"Visit our site and start building now:"},"mobile":"https://assets.decocache.com/maximus/495d7099-010c-442e-a9e4-616599984563/MOBILE.webp","desktop":"https://assets.decocache.com/maximus/43541b57-c8bb-4072-a656-be21b56cb897/BANNER-_2_.webp"}],"preload":true,"interval":7,"__resolveType":"site/sections/Images/Carousel.tsx"},{"layout":{"variation":"Simple"},"__resolveType":"site/sections/Content/Benefits.tsx"},{"__resolveType":"site/sections/Content/TagH1.tsx"},{"banners":[{"link":"/novidades","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/108fd90b-6862-4d61-9fc2-519958ffc77b"},{"link":"/tecidos","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/896743c0-f92e-46a3-abdb-bbbd20dc317b"},{"link":"/livros-moldes-e-reguas","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/14ed659f-5374-4d86-b354-6ef86a35f3f0"},{"link":"/costura-e-artesanato","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/0f575fce-b547-4c16-8a6b-b7ce86615f44"},{"link":"/aviamentos-e-bordado","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/f450c67f-45fe-406d-817b-d445fd84ce45"},{"link":"/maquinas","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/d3db304c-61ce-4c4a-9353-cd7aedba28d0"},{"link":"/ofertas","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a17084ec-d6b0-4166-8f1b-14bdb06cf457"},{"link":"https://materiais.maximustecidos.com.br/maximus-escola-de-moda-online","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/2c0aac0f-dbbc-43b8-9210-edf7e0fca982","newTab":true}],"__resolveType":"site/sections/Content/BannerSlider2.tsx"},{"link":"/novidades","text":"Só Tecidos de Qualidade","title":"Novidades em Tecidos para Confecção de Roupas","__resolveType":"site/sections/Content/TitleShelf.tsx"},{"products":{"fq":[],"sort":"OrderByPriceDESC","props":{"sort":"","term":"tecido ","count":20,"similars":false,"collection":"158"},"__resolveType":"vtex/loaders/intelligentSearch/productList.ts"},"cardLayout":{"hide":{"cta":false},"onMouseOver":{"showFavoriteIcon":true}},"__resolveType":"site/sections/Product/ProductShelf.tsx"},{"images":[{"alt":"Confira nossos Tecidos Mais Vendidos","action":{"href":"/tecidos","label":"Tecido","target":"_self"},"mobile":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/eca79b1a-c4e2-443e-bd43-1c27bcd57e2a/VITRINE-1-MOBILE.webp","desktop":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/d69892a1-67e4-472e-b199-197c57f45d89/VITRINE-1-DESKTOP.webp"}],"preload":false,"__resolveType":"site/sections/Images/Carousel.tsx"},{"link":"/tecidos","text":"Os Tecidos mais Elegantes da Internet","title":"Confira nossos Tecidos Mais Vendidos","__resolveType":"site/sections/Content/TitleShelf.tsx"},{"banners":[{"link":"/tecidos/alfaiataria","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/6ab6adaa-958c-4316-a979-03625924bf8a/1-alfaiataria.jpg","title":"Alfaiataria"},{"link":"https://www.maximustecidos.com.br/tecidos/algodao","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/00e6b1d0-7a29-4e34-ac9b-add585018b9d/2-algodao.jpg","title":"Algodão"},{"link":"/tecidos/cetim","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/798dc84f-a7f8-497d-9617-0ee41ef9b7e4/3-cetim.jpg","title":"Cetim"},{"link":"https://www.maximustecidos.com.br/tecidos/crepe","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/cfb31e67-9c3c-412e-9742-5da2fc0769aa/4-crepe.jpg","title":"Crepe"},{"link":"https://www.maximustecidos.com.br/tecidos/linho","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/6f81ed2b-f669-4c95-800d-d2eeb1fa7132/5-linho.jpg","title":"Linho"},{"link":"https://www.maximustecidos.com.br/tecidos/musseline","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/803791e3-03f4-4e5b-a9e3-b0a69042a66f/7-musseline.jpg","title":"Musseline"},{"link":"https://www.maximustecidos.com.br/tecidos/rendas-e-tules","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/8278d8d9-aa18-4615-b962-4f73b735652d/8-rendas-e-tules.jpg","title":"Rendas e Tules"},{"link":"https://www.maximustecidos.com.br/tecidos/tafeta","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/e733eeca-1e55-45a1-ad66-43b428e8109a/9-tafeta.jpg","title":"Tafetá"},{"link":"https://www.maximustecidos.com.br/tecidos/tules-lisos","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/5d1f9f1a-52ec-42d5-8239-624b0d7af86f/10-tules-lisos.jpg","title":"Tules Lisos"},{"link":"https://www.maximustecidos.com.br/tecidos/viscose","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/3ea37f90-2af4-4c20-a5f6-f3aa9f3ae1bc/11-viscose.jpg","title":"Viscose"},{"link":"https://www.maximustecidos.com.br/tecidos/zibeline","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/79f9033a-217c-48f2-9f6f-afe069e257eb/12-zibeline.jpg","title":"Zibeline"}],"__resolveType":"site/sections/Content/BannerSlider.tsx"},{"images":[{"alt":"banner","action":{"href":"/tecidos/algodao","label":"Algodão","target":"_self"},"mobile":"https://assets.decocache.com/maximus/2539cc35-3f16-4695-84c1-ca1701b43096/VITRINE-2-MOBILE-1.webp","desktop":"https://assets.decocache.com/maximus/deaaa195-53d2-472f-ac37-0029048a7ddc/VITRINE-2-DESKTOP-1.webp"}],"preload":false,"__resolveType":"site/sections/Images/Carousel.tsx"},{"link":"/tecidos/algodao","text":"O tecido perfeito para costureiras com criatividade.","title":"Algodão: O Tecido Natural que traz Sofisticação!","__resolveType":"site/sections/Content/TitleShelf.tsx"},{"products":{"fq":[],"ids":[],"sort":"OrderByPriceDESC","props":{"sort":"","term":"viscolinho","count":20,"collection":"159"},"__resolveType":"vtex/loaders/intelligentSearch/productList.ts"},"cardLayout":{"hide":{"cta":false},"onMouseOver":{"image":"Change image","showFavoriteIcon":true}},"__resolveType":"site/sections/Product/ProductShelf.tsx"},{"images":[{"alt":"banner","action":{"href":"/livros-moldes-costura-frete-gratis","label":"fretegrátis","target":"_self"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/37ebbbda-f6ca-4ffa-a491-5705c89f0235","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/e85c8b84-52dc-41ea-988e-3e67eb5447d9"}],"preload":false,"__resolveType":"site/sections/Images/Carousel.tsx"},{"link":"/livros-moldes-costura-frete-gratis","text":"Os Livros e Moldes de Costura mais desejados do Brasil","title":"Queridinhos das Costureiras com Frete Grátis!","__resolveType":"site/sections/Content/TitleShelf.tsx"},{"products":{"fq":[],"ids":[],"sort":"OrderByPriceDESC","props":{"sort":"","count":20,"collection":"161"},"__resolveType":"vtex/loaders/intelligentSearch/productList.ts"},"cardLayout":{"hide":{"cta":false},"onMouseOver":{"showFavoriteIcon":true}},"__resolveType":"site/sections/Product/ProductShelf.tsx"},{"images":[{"alt":"Máquinas Singer","action":{"href":"/maquinas","label":"máquinassinger","target":"_self"},"mobile":"https://data.decoassets.com/maximus/f6a445ed-7fa4-4838-a090-54448aebc645/Maximus_Banner_SINGER_vitrine-mob-720x448px-(1).webp","desktop":"https://data.decoassets.com/maximus/fcd91575-d0d9-4d3b-871b-53cfb7ca0398/Maximus_Banner_vitrine_SINGER.webp"}],"preload":false,"__resolveType":"site/sections/Images/Carousel.tsx"},{"link":"/maquinas","text":"Ganhe 10% Off com o Cupom: SINGERMAXIMUS + 10% pagando à vista","title":"Máquinas Singer Preço Imbatível","__resolveType":"site/sections/Content/TitleShelf.tsx"},{"products":{"fq":[],"ids":[],"sort":"OrderByPriceDESC","props":{"sort":"","count":20,"collection":"163"},"__resolveType":"vtex/loaders/intelligentSearch/productList.ts"},"cardLayout":{"hide":{"cta":false},"onMouseOver":{"showFavoriteIcon":true}},"__resolveType":"site/sections/Product/ProductShelf.tsx"},{"images":[{"alt":"Manequins Draft","action":{"href":"/manequins/manequins-de-modelagem","label":"manequinsdraft","target":"_self"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/44268766-0e70-4f46-bacf-aedac01b0734","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/d27e26e2-7dec-4d1c-a6ca-5be16bdddd6b"}],"preload":false,"__resolveType":"site/sections/Images/Carousel.tsx"},{"link":"/manequins/manequins-de-modelagem","text":"Os únicos 100% Alfinetáveis, feitos para o Corpo da Mulher Brasileira","title":"Manequins Draft de Modelagem Tridimensional","__resolveType":"site/sections/Content/TitleShelf.tsx"},{"products":{"fq":[],"ids":[],"sort":"OrderByPriceDESC","props":{"sort":"","count":20,"collection":"172"},"__resolveType":"vtex/loaders/intelligentSearch/productList.ts"},"cardLayout":{"hide":{"cta":false},"onMouseOver":{"showFavoriteIcon":true}},"__resolveType":"site/sections/Product/ProductShelf.tsx"},{"images":[{"alt":"Materiais de Costura","action":{"href":"/LEVOLPE--SAO-PAULO---SP-","label":"materiaisdecostura","target":"_self"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/0ddc6852-c04d-4551-905d-a2e0c75b0ef8","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/66720fa2-13fe-4460-a0f1-f6cf7224574e"}],"preload":false,"__resolveType":"site/sections/Images/Carousel.tsx"},{"link":"/LEVOLPE--SAO-PAULO---SP-","text":"Tudo para Costura, Bordado, Patchwork e Artesanato","title":"Ofertas da Loja Oficial Levolpe","__resolveType":"site/sections/Content/TitleShelf.tsx"},{"products":{"fq":[],"ids":[],"sort":"OrderByPriceDESC","props":{"sort":"","count":20,"collection":"167"},"__resolveType":"vtex/loaders/intelligentSearch/productList.ts"},"cardLayout":{"hide":{"cta":false},"onMouseOver":{"showFavoriteIcon":true}},"__resolveType":"site/sections/Product/ProductShelf.tsx"},{"images":[{"alt":"Baixe o aplicativo","action":{"href":"https://materiais.maximustecidos.com.br/baixe-aplicativo-maximus","label":"Baixe o aplicativo","target":"_self"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/f74245d3-2ec4-44eb-8b63-56a0c028f146","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/320d3213-ce1f-4fa3-8f2b-18c28d5510ee","alturaMobile":150,"alturaDesktop":220}],"preload":false,"__resolveType":"site/sections/Images/Carousel.tsx"},{"__resolveType":"site/sections/Integrations/YourviewsReviewStore.tsx"},{"__resolveType":"Footer - 05"},{"__resolveType":"Cookie Consent - 01"},{"__resolveType":"site/sections/Integrations/YourviewsIntegrations.tsx"}]}],"__resolveType":"website/flags/multivariate.ts"},"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Home",
+  "path": "/",
+  "sections": {
+    "variants": [
+      {
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
+        "value": [
+          {
+            "__resolveType": "Fashion theme"
+          },
+          {
+            "__resolveType": "SEODefault"
+          },
+          {
+            "__resolveType": "Header - 01"
+          },
+          {
+            "value": "116px",
+            "active": true,
+            "__resolveType": "site/sections/Content/Space.tsx"
+          },
+          {
+            "images": [
+              {
+                "alt": "Mês da Costureira",
+                "action": {
+                  "href": "/tecidos",
+                  "label": "Mês da Costureira",
+                  "title": "Demo Store",
+                  "target": "_self",
+                  "subTitle": "Visit our site and start building now:"
+                },
+                "mobile": "https://assets.decocache.com/maximus/495d7099-010c-442e-a9e4-616599984563/MOBILE.webp",
+                "desktop": "https://assets.decocache.com/maximus/43541b57-c8bb-4072-a656-be21b56cb897/BANNER-_2_.webp"
+              }
+            ],
+            "preload": true,
+            "interval": 7,
+            "__resolveType": "site/sections/Images/Carousel.tsx"
+          },
+          {
+            "layout": {
+              "variation": "Simple"
+            },
+            "__resolveType": "site/sections/Content/Benefits.tsx"
+          },
+          {
+            "__resolveType": "site/sections/Content/TagH1.tsx"
+          },
+          {
+            "banners": [
+              {
+                "link": "/novidades",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/108fd90b-6862-4d61-9fc2-519958ffc77b"
+              },
+              {
+                "link": "/tecidos",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/896743c0-f92e-46a3-abdb-bbbd20dc317b"
+              },
+              {
+                "link": "/livros-moldes-e-reguas",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/14ed659f-5374-4d86-b354-6ef86a35f3f0"
+              },
+              {
+                "link": "/costura-e-artesanato",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/0f575fce-b547-4c16-8a6b-b7ce86615f44"
+              },
+              {
+                "link": "/aviamentos-e-bordado",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/f450c67f-45fe-406d-817b-d445fd84ce45"
+              },
+              {
+                "link": "/maquinas",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/d3db304c-61ce-4c4a-9353-cd7aedba28d0"
+              },
+              {
+                "link": "/ofertas",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a17084ec-d6b0-4166-8f1b-14bdb06cf457"
+              },
+              {
+                "link": "https://materiais.maximustecidos.com.br/maximus-escola-de-moda-online",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/2c0aac0f-dbbc-43b8-9210-edf7e0fca982",
+                "newTab": true
+              }
+            ],
+            "__resolveType": "site/sections/Content/BannerSlider2.tsx"
+          },
+          {
+            "link": "/novidades",
+            "text": "Só Tecidos de Qualidade",
+            "title": "Novidades em Tecidos para Confecção de Roupas",
+            "__resolveType": "site/sections/Content/TitleShelf.tsx"
+          },
+          {
+            "products": {
+              "fq": [],
+              "sort": "OrderByPriceDESC",
+              "props": {
+                "sort": "",
+                "term": "tecido ",
+                "count": 20,
+                "similars": false,
+                "collection": "158"
+              },
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+            },
+            "cardLayout": {
+              "hide": {
+                "cta": false
+              },
+              "onMouseOver": {
+                "showFavoriteIcon": true
+              }
+            },
+            "__resolveType": "site/sections/Product/ProductShelf.tsx"
+          },
+          {
+            "images": [
+              {
+                "alt": "Confira nossos Tecidos Mais Vendidos",
+                "action": {
+                  "href": "/tecidos",
+                  "label": "Tecido",
+                  "target": "_self"
+                },
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/eca79b1a-c4e2-443e-bd43-1c27bcd57e2a/VITRINE-1-MOBILE.webp",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/d69892a1-67e4-472e-b199-197c57f45d89/VITRINE-1-DESKTOP.webp"
+              }
+            ],
+            "preload": false,
+            "__resolveType": "site/sections/Images/Carousel.tsx"
+          },
+          {
+            "link": "/tecidos",
+            "text": "Os Tecidos mais Elegantes da Internet",
+            "title": "Confira nossos Tecidos Mais Vendidos",
+            "__resolveType": "site/sections/Content/TitleShelf.tsx"
+          },
+          {
+            "banners": [
+              {
+                "link": "/tecidos/alfaiataria",
+                "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/6ab6adaa-958c-4316-a979-03625924bf8a/1-alfaiataria.jpg",
+                "title": "Alfaiataria"
+              },
+              {
+                "link": "https://www.maximustecidos.com.br/tecidos/algodao",
+                "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/00e6b1d0-7a29-4e34-ac9b-add585018b9d/2-algodao.jpg",
+                "title": "Algodão"
+              },
+              {
+                "link": "/tecidos/cetim",
+                "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/798dc84f-a7f8-497d-9617-0ee41ef9b7e4/3-cetim.jpg",
+                "title": "Cetim"
+              },
+              {
+                "link": "https://www.maximustecidos.com.br/tecidos/crepe",
+                "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/cfb31e67-9c3c-412e-9742-5da2fc0769aa/4-crepe.jpg",
+                "title": "Crepe"
+              },
+              {
+                "link": "https://www.maximustecidos.com.br/tecidos/linho",
+                "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/6f81ed2b-f669-4c95-800d-d2eeb1fa7132/5-linho.jpg",
+                "title": "Linho"
+              },
+              {
+                "link": "https://www.maximustecidos.com.br/tecidos/musseline",
+                "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/803791e3-03f4-4e5b-a9e3-b0a69042a66f/7-musseline.jpg",
+                "title": "Musseline"
+              },
+              {
+                "link": "https://www.maximustecidos.com.br/tecidos/rendas-e-tules",
+                "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/8278d8d9-aa18-4615-b962-4f73b735652d/8-rendas-e-tules.jpg",
+                "title": "Rendas e Tules"
+              },
+              {
+                "link": "https://www.maximustecidos.com.br/tecidos/tafeta",
+                "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/e733eeca-1e55-45a1-ad66-43b428e8109a/9-tafeta.jpg",
+                "title": "Tafetá"
+              },
+              {
+                "link": "https://www.maximustecidos.com.br/tecidos/tules-lisos",
+                "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/5d1f9f1a-52ec-42d5-8239-624b0d7af86f/10-tules-lisos.jpg",
+                "title": "Tules Lisos"
+              },
+              {
+                "link": "https://www.maximustecidos.com.br/tecidos/viscose",
+                "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/3ea37f90-2af4-4c20-a5f6-f3aa9f3ae1bc/11-viscose.jpg",
+                "title": "Viscose"
+              },
+              {
+                "link": "https://www.maximustecidos.com.br/tecidos/zibeline",
+                "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/79f9033a-217c-48f2-9f6f-afe069e257eb/12-zibeline.jpg",
+                "title": "Zibeline"
+              }
+            ],
+            "__resolveType": "site/sections/Content/BannerSlider.tsx"
+          },
+          {
+            "images": [
+              {
+                "alt": "banner",
+                "action": {
+                  "href": "/tecidos/algodao",
+                  "label": "Algodão",
+                  "target": "_self"
+                },
+                "mobile": "https://assets.decocache.com/maximus/2539cc35-3f16-4695-84c1-ca1701b43096/VITRINE-2-MOBILE-1.webp",
+                "desktop": "https://assets.decocache.com/maximus/deaaa195-53d2-472f-ac37-0029048a7ddc/VITRINE-2-DESKTOP-1.webp"
+              }
+            ],
+            "preload": false,
+            "__resolveType": "site/sections/Images/Carousel.tsx"
+          },
+          {
+            "link": "/tecidos/algodao",
+            "text": "O tecido perfeito para costureiras com criatividade.",
+            "title": "Algodão: O Tecido Natural que traz Sofisticação!",
+            "__resolveType": "site/sections/Content/TitleShelf.tsx"
+          },
+          {
+            "products": {
+              "fq": [],
+              "ids": [],
+              "sort": "OrderByPriceDESC",
+              "props": {
+                "sort": "",
+                "term": "viscolinho",
+                "count": 20,
+                "collection": "159"
+              },
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+            },
+            "cardLayout": {
+              "hide": {
+                "cta": false
+              },
+              "onMouseOver": {
+                "image": "Change image",
+                "showFavoriteIcon": true
+              }
+            },
+            "__resolveType": "site/sections/Product/ProductShelf.tsx"
+          },
+          {
+            "images": [
+              {
+                "alt": "banner",
+                "action": {
+                  "href": "/livros-moldes-costura-frete-gratis",
+                  "label": "fretegrátis",
+                  "target": "_self"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/37ebbbda-f6ca-4ffa-a491-5705c89f0235",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/e85c8b84-52dc-41ea-988e-3e67eb5447d9"
+              }
+            ],
+            "preload": false,
+            "__resolveType": "site/sections/Images/Carousel.tsx"
+          },
+          {
+            "link": "/livros-moldes-costura-frete-gratis",
+            "text": "Os Livros e Moldes de Costura mais desejados do Brasil",
+            "title": "Queridinhos das Costureiras com Frete Grátis!",
+            "__resolveType": "site/sections/Content/TitleShelf.tsx"
+          },
+          {
+            "products": {
+              "fq": [],
+              "ids": [],
+              "sort": "OrderByPriceDESC",
+              "props": {
+                "sort": "",
+                "count": 20,
+                "collection": "161"
+              },
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+            },
+            "cardLayout": {
+              "hide": {
+                "cta": false
+              },
+              "onMouseOver": {
+                "showFavoriteIcon": true
+              }
+            },
+            "__resolveType": "site/sections/Product/ProductShelf.tsx"
+          },
+          {
+            "images": [
+              {
+                "alt": "Máquinas Singer",
+                "action": {
+                  "href": "/maquinas",
+                  "label": "máquinassinger",
+                  "target": "_self"
+                },
+                "mobile": "https://data.decoassets.com/maximus/f6a445ed-7fa4-4838-a090-54448aebc645/Maximus_Banner_SINGER_vitrine-mob-720x448px-(1).webp",
+                "desktop": "https://data.decoassets.com/maximus/fcd91575-d0d9-4d3b-871b-53cfb7ca0398/Maximus_Banner_vitrine_SINGER.webp"
+              }
+            ],
+            "preload": false,
+            "__resolveType": "site/sections/Images/Carousel.tsx"
+          },
+          {
+            "link": "/maquinas",
+            "text": "Ganhe 10% Off com o Cupom: SINGERMAXIMUS + 10% pagando à vista",
+            "title": "Máquinas Singer Preço Imbatível",
+            "__resolveType": "site/sections/Content/TitleShelf.tsx"
+          },
+          {
+            "products": {
+              "fq": [],
+              "ids": [],
+              "sort": "OrderByPriceDESC",
+              "props": {
+                "sort": "",
+                "count": 20,
+                "collection": "163"
+              },
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+            },
+            "cardLayout": {
+              "hide": {
+                "cta": false
+              },
+              "onMouseOver": {
+                "showFavoriteIcon": true
+              }
+            },
+            "__resolveType": "site/sections/Product/ProductShelf.tsx"
+          },
+          {
+            "images": [
+              {
+                "alt": "Manequins Draft",
+                "action": {
+                  "href": "/manequins/manequins-de-modelagem",
+                  "label": "manequinsdraft",
+                  "target": "_self"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/44268766-0e70-4f46-bacf-aedac01b0734",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/d27e26e2-7dec-4d1c-a6ca-5be16bdddd6b"
+              }
+            ],
+            "preload": false,
+            "__resolveType": "site/sections/Images/Carousel.tsx"
+          },
+          {
+            "link": "/manequins/manequins-de-modelagem",
+            "text": "Os únicos 100% Alfinetáveis, feitos para o Corpo da Mulher Brasileira",
+            "title": "Manequins Draft de Modelagem Tridimensional",
+            "__resolveType": "site/sections/Content/TitleShelf.tsx"
+          },
+          {
+            "products": {
+              "fq": [],
+              "ids": [],
+              "sort": "OrderByPriceDESC",
+              "props": {
+                "sort": "",
+                "count": 20,
+                "collection": "172"
+              },
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+            },
+            "cardLayout": {
+              "hide": {
+                "cta": false
+              },
+              "onMouseOver": {
+                "showFavoriteIcon": true
+              }
+            },
+            "__resolveType": "site/sections/Product/ProductShelf.tsx"
+          },
+          {
+            "images": [
+              {
+                "alt": "Materiais de Costura",
+                "action": {
+                  "href": "/LEVOLPE--SAO-PAULO---SP-",
+                  "label": "materiaisdecostura",
+                  "target": "_self"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/0ddc6852-c04d-4551-905d-a2e0c75b0ef8",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/66720fa2-13fe-4460-a0f1-f6cf7224574e"
+              }
+            ],
+            "preload": false,
+            "__resolveType": "site/sections/Images/Carousel.tsx"
+          },
+          {
+            "link": "/LEVOLPE--SAO-PAULO---SP-",
+            "text": "Tudo para Costura, Bordado, Patchwork e Artesanato",
+            "title": "Ofertas da Loja Oficial Levolpe",
+            "__resolveType": "site/sections/Content/TitleShelf.tsx"
+          },
+          {
+            "products": {
+              "fq": [],
+              "ids": [],
+              "sort": "OrderByPriceDESC",
+              "props": {
+                "sort": "",
+                "count": 20,
+                "collection": "167"
+              },
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+            },
+            "cardLayout": {
+              "hide": {
+                "cta": false
+              },
+              "onMouseOver": {
+                "showFavoriteIcon": true
+              }
+            },
+            "__resolveType": "site/sections/Product/ProductShelf.tsx"
+          },
+          {
+            "images": [
+              {
+                "alt": "Baixe o aplicativo",
+                "action": {
+                  "href": "https://materiais.maximustecidos.com.br/baixe-aplicativo-maximus",
+                  "label": "Baixe o aplicativo",
+                  "target": "_self"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/f74245d3-2ec4-44eb-8b63-56a0c028f146",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/320d3213-ce1f-4fa3-8f2b-18c28d5510ee",
+                "alturaMobile": 150,
+                "alturaDesktop": 220
+              }
+            ],
+            "preload": false,
+            "__resolveType": "site/sections/Images/Carousel.tsx"
+          },
+          {
+            "__resolveType": "site/sections/Integrations/YourviewsReviewStore.tsx"
+          },
+          {
+            "__resolveType": "Footer - 05"
+          },
+          {
+            "__resolveType": "Cookie Consent - 01"
+          },
+          {
+            "__resolveType": "site/sections/Integrations/YourviewsIntegrations.tsx"
+          }
+        ]
+      }
+    ],
+    "__resolveType": "website/flags/multivariate.ts"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

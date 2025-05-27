@@ -1,1 +1,381 @@
-{"routes":[{"handler":{"value":{"page":{"__resolveType":"Search Page"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/s"},{"handler":{"value":{"page":{"__resolveType":"Categories"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/*"},{"handler":{"value":{"page":{"__resolveType":"Home"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/"},{"handler":{"value":{"page":{"__resolveType":"Product Page"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/:slug/p"},{"handler":{"value":{"page":{"__resolveType":"pages-offline-cb98cb6146a4"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/offline"},{"handler":{"value":{"page":{"__resolveType":"pages-testee-8cb9d38d4813"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/Institucional/trocas-e-devolucoes"},{"handler":{"value":{"page":{"__resolveType":"pages-condicoes-de-uso-6e43095fee15"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/Institucional/condicoes-de-uso"},{"handler":{"value":{"page":{"__resolveType":"pages-politicas-de-privacidade-b2ccf6c869b2"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/Institucional/politicas-de-privacidade"},{"handler":{"value":{"page":{"__resolveType":"pages-frete-gratis-e6a730864b6b"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/Institucional/frete-gratis"},{"handler":{"value":{"page":{"__resolveType":"pages-faq-3515aff2ba80"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/Institucional/faq"},{"handler":{"value":{"page":{"__resolveType":"pages-cuidados-com-tecidos-6d6ee8d24a70"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/cuidados-com-tecidos"},{"handler":{"value":{"page":{"__resolveType":"pages-desenho-gratuito-da7be4145730"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/desenho-gratuito"},{"handler":{"value":{"page":{"__resolveType":"pages-dicionario-de-tecidos-26c8501f83d9"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/dicionario-de-tecidos"},{"handler":{"value":{"page":{"__resolveType":"pages-clube-da-costureira-facf18ceb9e5"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/clube-da-costureira"},{"handler":{"value":{"page":{"__resolveType":"pages-desconto-estudante-794fbbfb730a"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/desconto-estudante"},{"handler":{"value":{"page":{"__resolveType":"pages-sobre-nos-d0accea52722"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/sobre-nos"},{"handler":{"value":{"page":{"__resolveType":"pages-mais-vendidos-6634e5d5912c"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/mais-vendidos"},{"handler":{"value":{"page":{"__resolveType":"pages-novidades-0ef5f947daa3"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/novidades"},{"handler":{"value":{"page":{"__resolveType":"pages-ondeestamos-66f75a906d72"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/onde-estamos"},{"handler":{"value":{"page":{"__resolveType":"pages-wishlist-b44023691885"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/wishlist"},{"handler":{"value":{"page":{"__resolveType":"pages-contato-8dff5fe47b96"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/Institucional/contato"},{"handler":{"value":{"page":{"__resolveType":"pages-lp-teste-5562a04f208f"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/lp-teste"},{"handler":{"value":{"page":{"__resolveType":"pages-seller-maximus-tecidos-toledo-d0634bbdfe83"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/MAXIMUS-TECIDOS-TOLEDO---PR"},{"handler":{"value":{"page":{"__resolveType":"pages-tabelademedidas-463a5ce75f95"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/tabela-de-medidas"},{"handler":{"value":{"page":{"__resolveType":"pages-produtoscomfretegrátis-196dda98de2b"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/livros-moldes-costura-frete-gratis"},{"handler":{"value":{"page":{"__resolveType":"pages-clubedacostureira-f12758ff5901"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/EDITORA-CLUBE-DA-COSTUREIRA--TOLEDO---PR-"},{"handler":{"value":{"page":{"__resolveType":"pages-singer-c1a1e56f7eba"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/SINGER--JUNDIAI---SP-"},{"handler":{"value":{"page":{"__resolveType":"pages-aurymodapet-a140a6fcccd2"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/AURY-MODA-PET--APARECIDA-DE-GOIANIA---GO-"},{"handler":{"value":{"page":{"__resolveType":"pages-fernandanadalbordados-651741d297f7"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/FERNANDA-NADAL-BORDADOS--PONTA-GROSSA---PR-"},{"handler":{"value":{"page":{"__resolveType":"pages-levolpe-8136d8ba97e5"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/LEVOLPE--SAO-PAULO---SP-"},{"handler":{"value":{"page":{"__resolveType":"pages-máquinassinger-62c4b6a5c63f"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/maquinas-costura-singer"},{"handler":{"value":{"page":{"__resolveType":"pages-pretimalhas-537ce1251337"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/PRETI-MALHAS--BRUSQUE---SC-"},{"handler":{"value":{"page":{"__resolveType":"pages-novidadestecidosdeinverno-58ae36f96dd2"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/novidades-tecidos-inverno"},{"handler":{"value":{"page":{"__resolveType":"pages-draftmanequinsseller-c2ed651692ae"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/DRAFT-MANEQUINS--RIO-DE-JANEIRO---RJ-"}],"matcher":{},"overrides":[],"__resolveType":"$live/flags/everyone.ts"}
+{
+  "routes": [
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "Search Page"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/s"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "Categories"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/*"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "Home"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "Product Page"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/:slug/p"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-offline-cb98cb6146a4"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/offline"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-testee-8cb9d38d4813"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/Institucional/trocas-e-devolucoes"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-condicoes-de-uso-6e43095fee15"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/Institucional/condicoes-de-uso"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-politicas-de-privacidade-b2ccf6c869b2"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/Institucional/politicas-de-privacidade"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-frete-gratis-e6a730864b6b"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/Institucional/frete-gratis"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-faq-3515aff2ba80"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/Institucional/faq"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-cuidados-com-tecidos-6d6ee8d24a70"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/cuidados-com-tecidos"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-desenho-gratuito-da7be4145730"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/desenho-gratuito"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-dicionario-de-tecidos-26c8501f83d9"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/dicionario-de-tecidos"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-clube-da-costureira-facf18ceb9e5"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/clube-da-costureira"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-desconto-estudante-794fbbfb730a"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/desconto-estudante"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-sobre-nos-d0accea52722"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/sobre-nos"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-mais-vendidos-6634e5d5912c"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/mais-vendidos"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-novidades-0ef5f947daa3"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/novidades"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-ondeestamos-66f75a906d72"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/onde-estamos"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-wishlist-b44023691885"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/wishlist"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-contato-8dff5fe47b96"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/Institucional/contato"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-lp-teste-5562a04f208f"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/lp-teste"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-seller-maximus-tecidos-toledo-d0634bbdfe83"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/MAXIMUS-TECIDOS-TOLEDO---PR"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-tabelademedidas-463a5ce75f95"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/tabela-de-medidas"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-produtoscomfretegrátis-196dda98de2b"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/livros-moldes-costura-frete-gratis"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-clubedacostureira-f12758ff5901"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/EDITORA-CLUBE-DA-COSTUREIRA--TOLEDO---PR-"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-singer-c1a1e56f7eba"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/SINGER--JUNDIAI---SP-"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-aurymodapet-a140a6fcccd2"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/AURY-MODA-PET--APARECIDA-DE-GOIANIA---GO-"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-fernandanadalbordados-651741d297f7"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/FERNANDA-NADAL-BORDADOS--PONTA-GROSSA---PR-"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-levolpe-8136d8ba97e5"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/LEVOLPE--SAO-PAULO---SP-"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-máquinassinger-62c4b6a5c63f"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/maquinas-costura-singer"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-pretimalhas-537ce1251337"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/PRETI-MALHAS--BRUSQUE---SC-"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-novidadestecidosdeinverno-58ae36f96dd2"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/novidades-tecidos-inverno"
+    },
+    {
+      "handler": {
+        "value": {
+          "page": {
+            "__resolveType": "pages-draftmanequinsseller-c2ed651692ae"
+          },
+          "__resolveType": "website/handlers/fresh.ts"
+        }
+      },
+      "pathTemplate": "/DRAFT-MANEQUINS--RIO-DE-JANEIRO---RJ-"
+    }
+  ],
+  "matcher": {},
+  "overrides": [],
+  "__resolveType": "website/flags/everyone.ts"
+}

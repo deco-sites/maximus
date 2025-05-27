@@ -1,1 +1,129 @@
-{"name":"AURY MODA PET","path":"/AURY-MODA-PET--APARECIDA-DE-GOIANIA---GO-","sections":[{"__resolveType":"Fashion theme"},{"__resolveType":"Header - 01"},{"banners":[{"image":{"alt":"novidades","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5074a80f-a037-4941-9f8e-cea35fc17cb4","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5e5316a8-028f-4b40-98a4-3b77a80bc764"},"matcher":"/novidades"},{"image":{"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/9fa1b5c0-d7c7-4997-b3d0-9cd2dbeaf68f","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/93b46171-e611-442c-bd05-8706915dc035"},"matcher":"/AURY-MODA-PET--APARECIDA-DE-GOIANIA---GO-"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"page":{"sort":"OrderByReleaseDateDESC","term":"Maximus Tecidos","count":24,"filters":"dynamic","__resolveType":"deco-sites/std/loaders/vtex/legacy/productListingPage.ts"},"text":"<p>Contamos com mais de&nbsp;<strong>3 mil tecidos finos</strong>&nbsp;exclusivos e de qualidade para vestidos de&nbsp;<strong>festa</strong>, vestidos de&nbsp;<strong>noiva</strong>&nbsp;e&nbsp;<strong>roupas casuais</strong>. Confira opções de tecidos na Maior Loja de Tecidos Finos Online.</p>","banners":[{"url":"/AURY-MODA-PET--APARECIDA-DE-GOIANIA---GO-","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b3516e65-3c5d-4eff-8fc2-92f2ba3a7438","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/1eea1b71-03f6-4388-819b-f2b45d918957"}],"__resolveType":"site/sections/Category/CategoryBannerHeader.tsx"},{"page":{"sort":"OrderByReleaseDateDESC","count":24,"filters":"dynamic","__resolveType":"deco-sites/std/loaders/vtex/legacy/productListingPage.ts"},"texts":[{"url":"/AURY-MODA-PET--APARECIDA-DE-GOIANIA---GO-","text":"AurY Moda Pet oferece Manequins Pet confeccionados à mão pela própria professora e designer de moda especialista em roupas pet. Os Manequins são ideais para quem costura apenas para seu próprio animalzinho de estimação e para divulgar seus trabalhos em redes sociais ou vitrines de lojas e pet shops.","collection":true}],"__resolveType":"site/sections/Category/CategoryTextHeader.tsx"},{"page":{"sort":"release:desc","count":24,"fuzzy":"automatic","query":"AURY MODA PET","__resolveType":"vtex/loaders/intelligentSearch/productListingPage.ts"},"layout":{"columns":{"mobile":1},"variant":"aside"},"columns":{},"variant":"aside","cardLayout":{"onMouseOver":{"showFavoriteIcon":true}},"__resolveType":"site/sections/Product/SearchResult.tsx"},{"__resolveType":"Footer - 05"},{"__resolveType":"Shortcuts - 01"},{"page":{"sort":"OrderByPriceDESC","count":24,"filters":"dynamic","__resolveType":"deco-sites/std/loaders/vtex/legacy/productListingPage.ts"},"jsonLD":{"sort":"OrderByPriceDESC","count":24,"filters":"dynamic","__resolveType":"deco-sites/std/loaders/vtex/legacy/productListingPage.ts"},"__resolveType":"deco-sites/std/sections/SEOPLP.tsx","titleTemplate":"%s | Deco.cx"},{"type":"website","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a8e308d3-8537-4455-bf62-3d84ec458da6","title":"Novidades – Maximus Tecido","jsonLD":{"sort":"OrderByReleaseDateDESC","count":24,"filters":"dynamic","__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"favicon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/3d7f1080-07ed-4e84-b10a-a5176d52afd6","description":"Conheça a Maximus Tecidos e compre com segurança na maior loja online de tecidos finos do Brasil. Tecidos de qualidade pelo preço justo. Atendimento com assessoria de estilistas. Enviamos para todo o Brasil.","__resolveType":"commerce/sections/Seo/SeoPLP.tsx"},{"__resolveType":"site/sections/Integrations/YourviewsIntegrations.tsx"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "AURY MODA PET",
+  "path": "/AURY-MODA-PET--APARECIDA-DE-GOIANIA---GO-",
+  "sections": [
+    {
+      "__resolveType": "Fashion theme"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "banners": [
+        {
+          "image": {
+            "alt": "novidades",
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5074a80f-a037-4941-9f8e-cea35fc17cb4",
+            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5e5316a8-028f-4b40-98a4-3b77a80bc764"
+          },
+          "matcher": "/novidades"
+        },
+        {
+          "image": {
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/9fa1b5c0-d7c7-4997-b3d0-9cd2dbeaf68f",
+            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/93b46171-e611-442c-bd05-8706915dc035"
+          },
+          "matcher": "/AURY-MODA-PET--APARECIDA-DE-GOIANIA---GO-"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+    },
+    {
+      "page": {
+        "sort": "OrderByReleaseDateDESC",
+        "term": "Maximus Tecidos",
+        "count": 24,
+        "filters": "dynamic",
+        "__resolveType": "deco-sites/std/loaders/vtex/legacy/productListingPage.ts"
+      },
+      "text": "<p>Contamos com mais de&nbsp;<strong>3 mil tecidos finos</strong>&nbsp;exclusivos e de qualidade para vestidos de&nbsp;<strong>festa</strong>, vestidos de&nbsp;<strong>noiva</strong>&nbsp;e&nbsp;<strong>roupas casuais</strong>. Confira opções de tecidos na Maior Loja de Tecidos Finos Online.</p>",
+      "banners": [
+        {
+          "url": "/AURY-MODA-PET--APARECIDA-DE-GOIANIA---GO-",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b3516e65-3c5d-4eff-8fc2-92f2ba3a7438",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/1eea1b71-03f6-4388-819b-f2b45d918957"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryBannerHeader.tsx"
+    },
+    {
+      "page": {
+        "sort": "OrderByReleaseDateDESC",
+        "count": 24,
+        "filters": "dynamic",
+        "__resolveType": "deco-sites/std/loaders/vtex/legacy/productListingPage.ts"
+      },
+      "texts": [
+        {
+          "url": "/AURY-MODA-PET--APARECIDA-DE-GOIANIA---GO-",
+          "text": "AurY Moda Pet oferece Manequins Pet confeccionados à mão pela própria professora e designer de moda especialista em roupas pet. Os Manequins são ideais para quem costura apenas para seu próprio animalzinho de estimação e para divulgar seus trabalhos em redes sociais ou vitrines de lojas e pet shops.",
+          "collection": true
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryTextHeader.tsx"
+    },
+    {
+      "page": {
+        "sort": "release:desc",
+        "count": 24,
+        "fuzzy": "automatic",
+        "query": "AURY MODA PET",
+        "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
+      },
+      "layout": {
+        "columns": {
+          "mobile": 1
+        },
+        "variant": "aside"
+      },
+      "columns": {},
+      "variant": "aside",
+      "cardLayout": {
+        "onMouseOver": {
+          "showFavoriteIcon": true
+        }
+      },
+      "__resolveType": "site/sections/Product/SearchResult.tsx"
+    },
+    {
+      "__resolveType": "Footer - 05"
+    },
+    {
+      "__resolveType": "Shortcuts - 01"
+    },
+    {
+      "page": {
+        "sort": "OrderByPriceDESC",
+        "count": 24,
+        "filters": "dynamic",
+        "__resolveType": "deco-sites/std/loaders/vtex/legacy/productListingPage.ts"
+      },
+      "jsonLD": {
+        "sort": "OrderByPriceDESC",
+        "count": 24,
+        "filters": "dynamic",
+        "__resolveType": "deco-sites/std/loaders/vtex/legacy/productListingPage.ts"
+      },
+      "__resolveType": "deco-sites/std/sections/SEOPLP.tsx",
+      "titleTemplate": "%s | Deco.cx"
+    },
+    {
+      "type": "website",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a8e308d3-8537-4455-bf62-3d84ec458da6",
+      "title": "Novidades – Maximus Tecido",
+      "jsonLD": {
+        "sort": "OrderByReleaseDateDESC",
+        "count": 24,
+        "filters": "dynamic",
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/3d7f1080-07ed-4e84-b10a-a5176d52afd6",
+      "description": "Conheça a Maximus Tecidos e compre com segurança na maior loja online de tecidos finos do Brasil. Tecidos de qualidade pelo preço justo. Atendimento com assessoria de estilistas. Enviamos para todo o Brasil.",
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Integrations/YourviewsIntegrations.tsx"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
