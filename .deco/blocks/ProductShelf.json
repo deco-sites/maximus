@@ -1,0 +1,1 @@
+{"products":{"fq":[],"ids":[],"sort":"OrderByPriceDESC","props":{"sort":"","term":"viscolinho","count":20,"collection":"159"},"__resolveType":"vtex/loaders/intelligentSearch/productList.ts"},"cardLayout":{"hide":{"cta":false},"onMouseOver":{"image":"Change image","showFavoriteIcon":true}},"__resolveType":"site/sections/Product/ProductShelf.tsx"}

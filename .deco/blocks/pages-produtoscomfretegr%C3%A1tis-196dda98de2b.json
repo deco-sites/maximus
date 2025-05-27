@@ -1,0 +1,635 @@
+{
+  "name": "Produtos com Frete Grátis",
+  "path": "/livros-moldes-costura-frete-gratis",
+  "sections": [
+    {
+      "__resolveType": "Fashion theme"
+    },
+    {
+      "type": "website",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/2bc8b7af-83c8-4a1f-b1eb-207fbf11a0c8",
+      "jsonLD": {
+        "sort": "OrderByReleaseDateDESC",
+        "count": 1,
+        "filters": "dynamic",
+        "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+      },
+      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/e16fbe5c-67df-41ed-a4b3-4772a6ea4f72",
+      "__resolveType": "site/sections/Content/SeoPlp2.tsx"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "page": {
+        "sort": "OrderByPriceDESC",
+        "count": 24,
+        "filters": "dynamic",
+        "__resolveType": "deco-sites/std/loaders/vtex/legacy/productListingPage.ts"
+      },
+      "title": "t",
+      "banners": [
+        {
+          "url": "/livros-moldes-e-reguas",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/fe39b27a-860c-4850-8e05-f8f0aaab4ffe",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/2c4c9880-13e5-434d-847a-873e8a3027a8"
+        },
+        {
+          "url": "/aviamentos-e-bordado",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/91e1ab00-59b8-4a57-a697-4c44d8c020d4",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c6c17773-d91f-40ee-a8cb-53148a8022f4"
+        },
+        {
+          "url": "/tecidos",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c64b81f3-96de-4282-a39a-7d54ac837886",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/f19bdf8f-4683-4224-9b45-c99d5f2c948e"
+        },
+        {
+          "url": "/novidades",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/2baa8103-6ed8-4219-9708-2607d2c9e30b",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/33329e44-0157-4890-90d0-77bc41e2178b"
+        },
+        {
+          "url": "/ofertas",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/aee5e853-dcc9-4685-8c0f-e5f9a2c58b26",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/20fc1c8b-bdf2-4fbf-b011-c327320c1234"
+        },
+        {},
+        {
+          "url": "/tecidos/crepe",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/2653c677-3da0-4da2-bed0-d384351d1b20",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/70db2793-85f9-4e1a-b588-1ca6cb1f37bb"
+        },
+        {
+          "url": "/tecidos/alfaiataria",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/ada755d1-8c1d-4c30-840f-790db30b7d98",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5c366196-21c0-4878-b7dd-efcaa7436fb3"
+        },
+        {
+          "url": "/tecidos/algodao",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/9ecd05a5-c719-494a-96eb-a9eb3463206a",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/d9fd703e-0ec7-46f4-9c82-2f3132a7beee"
+        },
+        {
+          "url": "/tecidos/camurca",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c3972ba4-3893-43f7-a12b-8421f1ea11a5",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b136d8d0-6ad1-4500-8505-c699ac5f5cab"
+        },
+        {
+          "url": "/tecidos/cetim",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/2c819111-6f34-4a80-82d4-b545e6f532a1",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c4894ebb-5f0a-4622-9e67-90cfb66462c8"
+        },
+        {
+          "url": "/tecidos/chiffon",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/054fb3cc-9322-4ca4-8762-685b2f7fb83e"
+        },
+        {
+          "url": "/tecidos/crepe",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/fb50b0ea-588d-4b66-be69-f811cbc0d717",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5e944c2d-7c44-4b8e-96c3-c8844ab81df3"
+        },
+        {
+          "url": "/tecidos/flanela",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/f52808a4-ae80-419d-807c-bf74b2df952a",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/bf7348bc-7168-4244-9cdd-72ab10735f14"
+        },
+        {
+          "url": "/tecidos/forros",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c745f072-429e-4cc8-81cb-ecb31930f089",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/e837370c-6508-46fb-b155-ed97fd6c1711"
+        },
+        {
+          "url": "/tecidos/gazar",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/663c1136-eebc-4876-b054-a7f58fa46d0c",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/3f47c655-1ca2-4caf-b04e-2011dcaa3655"
+        },
+        {
+          "url": "/jacquard-brocados",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/f6031f87-7c3c-4a7b-994f-ca0356b04a80",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/3399b55c-18f1-4f66-b55d-6ed11128771b"
+        },
+        {
+          "url": "/lame-e-lurex--brilho-",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/29cbc6a2-7dcb-4325-b0f1-f7caa2ec7271",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/7f5172d5-0c15-4e6a-8396-e8de56f06219"
+        },
+        {
+          "url": "/tecidos/linho",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/91374f13-1865-41ce-bc6e-6bc12154921e",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b3eb82d1-7e4f-4c2e-aaf9-e79216f5c277"
+        },
+        {
+          "url": "/tecidos/las-puras-e-mistas",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/caf46387-60bb-4f81-8383-177c840f6333",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/24081fd5-172f-431a-91ce-17879169c38f"
+        },
+        {
+          "url": "/tecidos/malhas",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/4ff04645-721e-4f5b-9cc1-72fdd115275d",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/df849146-3725-4c9e-b438-3f96b45c8311"
+        },
+        {
+          "url": "/tecidos/musseline",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/7d46901d-165f-403b-82da-22fe4828671c",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/3d4c2239-69cd-421f-a629-cfe81e80afd8"
+        },
+        {
+          "url": "/tecidos/neoprene",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/1822136d-98ac-4aa4-8b71-dbb4b016533a",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c1f8ad91-60a6-4d1c-b20c-da545d36905c"
+        },
+        {
+          "url": "/tecidos/organza",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a00f4587-0d9c-4c96-a7e7-9f3f9d2178c2",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/011892ff-ad83-4a62-9b41-1850e5534b90"
+        },
+        {
+          "url": "/tecidos/paetes",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/14bb01c5-d674-47e1-9612-97737df72316",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5303034a-80dc-417c-b328-cab7eb16b036"
+        },
+        {
+          "url": "/tecidos/peles-artificiais",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/fd4eea22-430f-45de-a4ae-689a260cbc2e",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/61304c72-0bf5-415c-a930-9cdb4a863159"
+        },
+        {
+          "url": "/tecidos/piquet",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/255570b1-5456-4219-8ec9-a91e3b8f80c4",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/d01c33f6-4635-4aa1-a278-9a6032af684c"
+        },
+        {
+          "url": "/tecidos/rendas-e-tules",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b39b8cec-6a9c-4ebf-8c96-034cfe9af301",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/2ae2e729-5f28-4ccc-99cc-3ddebc3ebf14"
+        },
+        {
+          "url": "/tecidos/sarja",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5aefc789-498a-4bfe-9244-ff9c590bb448",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/70808c47-3ade-4d66-85df-9030705ddfc2"
+        },
+        {
+          "url": "/tecidos/shantung",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/cef3afae-dd3a-45af-a969-64e5aad9a44e",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a9f36def-cdba-4cc0-9307-0d5a8d35c359"
+        },
+        {
+          "url": "/tecidos/tafeta",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/6172c682-9e38-491c-af69-2eb9cede2319",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c8f59142-5d67-4133-a2dc-4f9f547fa9d9"
+        },
+        {
+          "url": "/tecidos/tecido-sintetico",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b0971603-3a06-4bbc-a0c6-5d522538daa1",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/8c37795f-8954-418b-b060-fcbadb607025"
+        },
+        {
+          "url": "/tecidos/tecidos-para-decoracao",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b4733041-3bae-4f0b-a3da-a771e16bdb10",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/9d698479-6bf6-433d-9335-5a17ea72c178"
+        },
+        {
+          "url": "/tecidos/tules-lisos",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/bd04b68e-cb9f-455b-b6c7-eab79560af1f",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/f96c1240-055e-4dd2-89d9-366e9b643a7e"
+        },
+        {
+          "url": "/tecidos/veludo",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/e03a638c-4aaa-4d98-9244-e01cc2494d29",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b2e7323f-600d-467a-ba4f-62060852c871"
+        },
+        {
+          "url": "/tecidos/viscose",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/ae075081-a007-430a-b581-0381a7d72e2b",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/4c8f36a3-1d3a-4cee-b2ab-14422b7fbb11"
+        },
+        {
+          "url": "/tecidos/zibeline",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/af6e7816-4b1a-4f70-af76-14771f29a93a",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b27b6f5b-f6e9-44f6-8344-e0891ae4a8ac"
+        },
+        {
+          "url": "/livros-moldes-e-reguas/coloracao-e-combinacao",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/9e292f31-fc62-41aa-abc5-8f908045cd70",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c6771a75-0eb5-4e67-8837-40dfb99e94b6"
+        },
+        {
+          "url": "/livros-moldes-e-reguas/desenho-de-moda",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a4231962-707f-4305-9c1b-9e4986897d29",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/7f6ea229-692e-4703-a196-77f91ed8ceb3"
+        },
+        {
+          "url": "/livros-moldes-e-reguas/livros-e-apostilas",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/8d65b2df-5030-407e-bff7-aabf39c9c3fb",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/3133d303-060e-4296-8867-197d55ecd992"
+        },
+        {
+          "url": "/livros-moldes-e-reguas/manequins",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/8eb28815-2a8e-47a8-831a-73bf67ca404a",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/92140b7e-f4cf-43aa-b09f-2bc6e1f44de1"
+        },
+        {
+          "url": "/livros-moldes-e-reguas/moldes-de-roupas",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/02fe73de-3430-4344-8a04-e93f2f33938d",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a83d8d77-a017-4526-9b88-c0e45833b106"
+        },
+        {
+          "url": "/livros-moldes-e-reguas/reguas",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/18b71881-e60b-478a-bb40-319aa8524cda",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b0c3bf6f-5726-477e-9b5a-a7f14873a407"
+        },
+        {
+          "url": "/aviamentos-e-bordado/armarinhos-e-aviamentos",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/975191bb-be0d-4d4c-a4cf-d895784ed4d6",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/7182678b-29c5-41c6-9264-7974a4743919"
+        },
+        {
+          "url": "/aviamentos-e-bordado/bordado-e-pedrarias",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/7569efb5-009b-4769-8be9-d87a21daa50c",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a1e4227f-da6f-4531-a3a5-de5a5babf9f1"
+        },
+        {
+          "url": "/ofertas/armarinhos-aviamentos-e-bordados",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a4dcc425-0c32-4a05-9cc8-0c4ff5c35b53",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/733155dd-6291-44a1-9a21-948c91071720"
+        },
+        {
+          "url": "/ofertas/livros-moldes-e-reguas",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/526dd93c-8e5c-4724-b345-30c663ed487c",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/bc14559b-46e0-4d0e-8b37-9a6c7a6aa637"
+        },
+        {
+          "url": "/ofertas/tecidos-promocionais",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/99a9b098-52aa-4d74-8c7a-84e2fb26d736",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/6734e43b-ea9f-49d6-a98b-228dc0e81454"
+        },
+        {
+          "url": "/ofertas/tecidos-fim-de-peca",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/bd3572a8-2257-4217-a2d2-07c176d216e5",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/4c8a6dc4-2277-49a9-b92b-18694a509eb7"
+        },
+        {},
+        {
+          "url": "/costura-e-artesanato",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/699dffdc-0987-42cf-9f95-61da1a3fe04b",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/e42a1e57-c824-4a19-b9f1-1563c72d22d1"
+        },
+        {
+          "url": "/tecidos/linho/linho-misto",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5c6d0045-928c-4a0b-9ed1-abab67a5ea66",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/3bdce1f7-ae16-42e9-ba55-7c5b532e1385"
+        },
+        {
+          "url": "/livros-moldes-costura-frete-gratis",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/359d34df-d2a5-4a97-8e66-81b9da8a9809",
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/0251368d-11c4-4aa0-80ad-43e658603927"
+        }
+      ],
+      "urlCurrent": "t",
+      "__resolveType": "site/sections/Category/CategoryBannerHeader.tsx"
+    },
+    {
+      "banners": [
+        {
+          "image": {
+            "alt": "novidades",
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5074a80f-a037-4941-9f8e-cea35fc17cb4",
+            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5e5316a8-028f-4b40-98a4-3b77a80bc764"
+          },
+          "matcher": "/novidades"
+        },
+        {
+          "image": {
+            "alt": "seller maximus",
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/8a6ae9af-a0a1-4253-ac58-4cf10ae96aa9",
+            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/47cc03cd-bfa1-49c3-9781-3c3076929707"
+          },
+          "matcher": "/EDITORA-CLUBE-DA-COSTUREIRA--TOLEDO---PR-"
+        },
+        {
+          "image": {
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/744856dd-73cb-43e7-ace5-86a9f1ed8a54",
+            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/87590888-c189-4310-ac72-c0e6baea2a66"
+          },
+          "matcher": "/livros-moldes-costura-frete-gratis"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+    },
+    {
+      "page": {
+        "sort": "OrderByPriceDESC",
+        "count": 24,
+        "filters": "dynamic",
+        "__resolveType": "deco-sites/std/loaders/vtex/legacy/productListingPage.ts"
+      },
+      "texts": [
+        {
+          "url": "/livros-moldes-e-reguas",
+          "text": "Nossos Livros, Moldes e Réguas são materiais indispensáveis para quem costura. Nossa editora, Clube da Costureira, conta com mais de <strong>10 títulos de livros</strong> de grandes nomes da moda, como a modelista <strong>Marlene Mukai</strong>, além de outros autores e materiais exclusivos, como réguas de modelagem básicas e personalizadas. Para a costureira que prefere moldes prontos em tamanho real, contamos com mais de <strong>160 opções de modelos</strong> que vão da festa ao casual, em grades de tamanho que vão do 36 ao 54."
+        },
+        {
+          "url": "/tecidos",
+          "text": "Contamos com mais de <strong>3 mil tecidos finos</strong> exclusivos e de qualidade para vestidos de <strong>festa</strong>, vestidos de <strong>noiva</strong> e <strong>roupas casuais</strong>. Confira opções de tecidos na Maior Loja de Tecidos Finos Online."
+        },
+        {
+          "url": "/tecidos/alfaiataria",
+          "text": "Os tecidos de alfaiataria são elegantes, possuem uma sofisticação única e nunca saem de moda. São peças curingas que vestem bem todos os estilos e podem transitar do dia à noite sem problema algum. São clássicos e excelentes para confecção de blazers, calças, coletes e ternos, tanto femininos quanto masculinos. Confira todas as opções de Tecidos de Alfaiataria na Maior Loja de Tecidos Finos Online:"
+        },
+        {
+          "url": "/tecidos/algodao",
+          "text": "Os tecidos de algodão são de fibra natural macia e por isso são conhecidos pelo seu conforto, durabilidade e capacidade de se adaptar para todos os tipos de clima. Confira todas as opções de Tecidos de Algodão na Maior Loja de Tecidos Finos Online:"
+        },
+        {
+          "url": "/tecidos/camurca",
+          "text": "A camurça é um tecido que confere um ar setentinha muito versátil, tanto aos looks de inverno, como nos de verão. É um tecido sintético que imita o material feito da pele do animal. Seu toque suave e macio é muito gostoso e confortável! Confira todas as opções de Tecidos Camurça e outros tecidos de inverno na Maior Loja de Tecidos Finos Online:"
+        },
+        {
+          "url": "/tecidos/cetim",
+          "text": "O Cetim é um tecido de aspecto brilhoso e elegante, por isso possui uma vocação para confeccionar vestidos de festa. Seu toque liso e agradável combinado com seu caimento mais fluído oferece muito conforto para quem veste. Algumas variedades de Cetim são mais indicadas para forro enquanto outras são utilizadas como tecido de base. Confira todas as opções de Cetim na Maior Loja Online de Tecidos Finos:"
+        },
+        {
+          "url": "/tecidos/chiffon",
+          "text": "O chiffon é um tecido leve, fino, mas que tem um certo peso. Não chega a dar volume para as peças, mas proporciona um bom caimento. Confira todas as nossas opções:"
+        },
+        {
+          "url": "/tecidos/crepe",
+          "text": "O Crepe é um tecido maleável muito usado na confecção de vestidos para moda festa e também roupas de moda casual. O seu caimento é perfeito e varia conforme o tipo de crepe escolhido. O Crepe apresenta uma variedade imensa de espessuras. Alguns são mais finos, outros médios, pesados, com elastano ou sem elastano. Confira essas e todas as outras opções de Crepe na Maior Loja de Tecidos Finos Online:"
+        },
+        {
+          "url": "/tecidos/flanela",
+          "text": "A Flanela é um clássico tecido de inverno e ao mesmo tempo moderno. Sejam para confeccionar as típicas camisas no melhor estilo lenhador ou pijamas quentinhos para o inverno, a Flanela nunca sai de moda e é o xodó dos dias mais frios. Os tecidos de inverno como a flanela possuem uma superfície felpuda, de textura macia e toque muito gostoso e aconchegante. Confira todas as opções de Flanela e outros tecidos de inverno na Maior Loja de Tecidos Finos Online:"
+        },
+        {
+          "url": "/tecidos/forros",
+          "text": "É notável a qualidade superior na roupa quando há um forro colocado corretamente. O forro não só valoriza mais a sua roupa, mas também garante maior conforto e durabilidade. Os nossos tecidos para forros são fáceis de higienizar e não amarrotam com facilidade. Na Maximus Tecidos você pode comprar tecidos para forros de várias cores e estampas. Confira as opções de forro na Maior Loja de Tecidos Finos Online:"
+        },
+        {
+          "url": "/tecidos/gazar",
+          "text": "O Gazar é um tecido fluido, que fica armado com mais facilidade, mas que tem movimento. É muito usado na moda noiva e moda festa. Confira as opções de Gazar na Maior Loja de Tecidos Finos Online:"
+        },
+        {
+          "url": "/tecidos/jacquard-brocados",
+          "text": "O Jacquard é um tecido muito sofisticado e estiloso que pode ser utilizado na moda festa e também na moda casual. É muito versátil e nunca sai de moda, garantindo um toque de requinte e sofisticação a peça. Sua superfície é toda trabalhada numa textura em alto relevo, muito delicada. Confira as opções de Jacquard e Brocados na Maior Loja Online de Tecidos Finos:"
+        },
+        {
+          "url": "/lame-e-lurex--brilho-",
+          "text": "O Lamê e o Lurex são tecidos com bom caimento, semelhante às malharias. Possuem um brilho metalizado ou de glitter muito sofisticado e moderno. Confira as opções de Lamê e Lurex na Maior Loja Online de Tecidos Finos."
+        },
+        {
+          "url": "/tecidos/linho",
+          "text": "O Linho é um tecido de aspecto rústico que está super na moda. É um tecido versátil que ao mesmo tempo em que é sofisticado, também pode ser usado para peças casuais e despojadas. O linho é caracterizado como um tecido que simboliza conforto e elegância. Confira as opções de Tecidos de Linho na Maior Loja Online de Tecidos Finos."
+        },
+        {
+          "url": "/tecidos/las-puras-e-mistas",
+          "text": "Temos as lãs puras (naturais) e as lãs mistas. Os tecidos de inverno como a lã são excelentes para confecção de casacos e sobretudos porque deixam qualquer look mais elegante. Quando as temperaturas caem, ninguém resiste ao conforto da textura quentinha e macia da lã. Confira as opções de Lãs Puras e Mistas e outros tecidos de inverno na Maior Loja Online de Tecidos Finos."
+        },
+        {
+          "url": "/tecidos/malhas",
+          "text": "A Malha como o nome já diz, é um tecido bem maleável, que estica bastante e não amassa. Com excelente elasticidade e flexibilidade, adapta aos movimentos do corpo. Os tecidos de malha estão entre os mais antigos do mundo. Sua porosidade proporciona uma sensação térmica agradável e confortável. Confira as opções de Tecidos de Malha na Maior Loja Online de Tecidos Finos."
+        },
+        {
+          "url": "/tecidos/musseline",
+          "text": "A Musseline ou Musselina, como é conhecida por alguns, é um tecido muito leve, transparente, com toque macio e delicado, muito usado na moda festa e moda casual. Existem vários tipos de Musseline, em cores lisas, estampadas, a Musseline toque de seda e a Musseline pesada, mas a característica principal de todas é a textura pigmentada e o caimento fluido e ventilado. Confira todas as opções de Musseline na Maior Loja Online de Tecidos Finos:"
+        },
+        {
+          "url": "/tecidos/neoprene",
+          "text": "Os tecidos de Neoprene são famosos por apresentarem excelente custo-benefício. São tecidos térmicos que mantêm a temperatura do corpo e podem ser usados em qualquer estação. No calor se tornam refrescantes e no frio são quentinhos. Confira todas as opções de Tecidos Neoprene na Maior Loja de Tecidos Finos Online:"
+        },
+        {
+          "url": "/tecidos/organza",
+          "text": "A Organza é um tecido leve, porém muito armado. É usada para confecção de peças que necessitam de volume, como vestidos de daminhas e debutantes. Além disso, pode ser combinado com outros materiais e tecidos para peças casuais ou mais elegantes. E ainda pode aparecer incrementando a decoração de ambientes porque possui um valor bem acessível. Confira as opções de Organza na Maior Loja Online de Tecidos Finos."
+        },
+        {
+          "url": "/tecidos/paetes",
+          "text": "Os tecidos de paetê são brilhosos e elegantes, por isso são muito usados na moda festa. A maioria das lantejoulas utilizadas para confecção de paetês são feitas de vinil e costuradas em uma base de tule ou malha, que são tecidos maleáveis. As peças com aplicações mais espaçada costumam ter um caimento mais leve. Já aquelas com maior quantidade de lantejoulas e sem muito ou nenhum espaço entre elas, têm um resultado mais encorpado. Confira as opções de Paetês na Maior Loja de Tecidos Finos Online."
+        },
+        {
+          "url": "/tecidos/peles-artificiais",
+          "text": "A pele artificial é um clássico tecido do inverno porque aquece qualquer look com muito charme e glamour. Além de quentinho, seu toque é tão macio quanto abraçar um ursinho de pelúcia. A Maximus Tecidos pensando na responsabilidade com o meio ambiente e com os animais, trabalha com tecidos puramente sintéticos, sem perder a sofisticação. Confira as opções de Peles Artificiais e outros tecidos de inverno na Maior Loja de Tecidos Finos Online."
+        },
+        {
+          "url": "/tecidos/piquet",
+          "text": "O piquet é um tecido charmoso, caracterizado por sua superfície com desenhos em alto relevo no formato de losango ou casa de abelha. O processo de matelassê aumenta o efeito do relevo. Por conta do seu toque confortável, é ideal para confecção de peças de meia estação que podem ser usadas tanto em dias quentes, quanto em dias frios. Confira as opções de Piquet na Maior Loja de Tecidos Finos Online:"
+        },
+        {
+          "url": "/tecidos/rendas-e-tules",
+          "text": "A renda é a principal escolha para a moda festa e a moda noiva, apesar de ser muito utilizada também na moda casual. Pode ser aplicada em vários tecidos. As rendas são conhecidas por serem clássicas e atemporais, além de muito versáteis. Podemos considerá-las curingas do guarda-roupa feminino. Confira as opções de Rendas Finas e Tules Bordados na Maior Loja de Tecidos Finos Online:"
+        },
+        {
+          "url": "/tecidos/sarja",
+          "text": "A Sarja é um tecido plano, muito confortável que proporciona movimento e não absorve muito calor. Possui um toque mais lustroso e macio. O ligamento sarja é frequentemente mais firme do que o Tecido com ligamento em tela, este desenho é utilizado em tecidos de algodão, como o brim. A sarja algodão é mais refinada que o brim, pois possui toque mais lustroso e macio. Confira as opções de Sarja na Maior Loja de Tecidos Finos Online."
+        },
+        {
+          "url": "/tecidos/shantung",
+          "text": "O shantung é um tecido leve e maleável, de aspecto macio, mesmo sendo mais encorpado. É muito utilizado na moda festa para confeccionar saias e vestidos. O shantung é um Tecido que apresenta toda a leveza e elegância chinesa. Foi criado há muitas décadas na província de Chan-Tung, na China, por meio da junção de fios de seda. Confira as opções de Shantung na Maior Loja de Tecidos Finos Online:"
+        },
+        {
+          "url": "/tecidos/tafeta",
+          "text": "O Tafetá é um dos tecidos mais antigos do mundo. Seja para confecção de vestidos de festa ou para cortinas e decoração, o Tafetá é sinônimo de luxo e sofisticação. É um tecido mais sequinho, que arma um pouco e possui ótimo caimento. Pode ser mais leve ou mais volumoso, mais liso ou um pouco amarrotado, dependendo da composição. Confira todas as opções de Tafetá na Maior Loja de Tecidos Finos Online:"
+        },
+        {
+          "url": "/tecidos/tecido-sintetico",
+          "text": "Estes tecidos sintéticos nunca saem de moda. São tendência em todo inverno, por serem tecidos estilosos e quentinhos. São politicamente corretos sem perder a sofisticação. A Maximus Tecidos pensando na responsabilidade com o meio ambiente e com os animais, trabalha com tecidos puramente sintéticos, sem perder a sofisticação. Confira as opções de Tecido Sintético e outros tecidos de inverno na Maior Loja de Tecidos Finos Online:"
+        },
+        {
+          "url": "/tecidos/tecidos-para-decoracao",
+          "text": " "
+        },
+        {
+          "url": "/tecidos/tules-lisos",
+          "text": "Os Tules lisos muito usados em sobreposições nas saias de moda festa, além de aparecer em babados e detalhes das roupas da moda casual. O tecido tule ganhou este nome pela sua cidade de origem, Tulle na França em meados de 1700. Anos mais tarde se tornou conhecido por ser encorporado nos figurinos de ballet. Na Maior Loja de Tecidos Finos Online você encontra várias opções de tule: Tule Ilusione, Tule Filó, Tule Francês, Tule Mince e mais!"
+        },
+        {
+          "url": "/tecidos/veludo",
+          "text": "O veludo é um tecido de inverno democrático que pode ser facilmente utilizado, tanto na confecção de vestidos de festa luxuosos quanto em roupas casuais. É considerado um dos tecidos mais antigos do mundo e foi muito usado para roupas exclusivas de classes nobres. Até hoje o veludo é sinônimo de riqueza e sofisticação e está entre as principais apostas das últimas temporadas de moda. Confira as opções de Veludo e outros tecidos de inverno na Maior Loja de Tecidos Finos Online."
+        },
+        {
+          "url": "/tecidos/viscose",
+          "text": "A Viscose é o tecido mais usado no verão para a confecção de roupas casuais por ser leve, fresquinha e com um bom caimento. Não se trata de um tecido transparente, porém por ser fino, necessita de forro. As estampas são sempre tendência e deixam as peças mais charmosas. Confira as opções de Viscose na Maior Loja de Tecidos Finos Online."
+        },
+        {
+          "url": "/tecidos/zibeline",
+          "text": "O Zibeline é um tecido luxuoso queridinho das costureiras e estilistas. Tem um brilho acetinado e é bem encorpado, perfeito para fazer modelos de vestidos de festa e vestidos de noiva com volume nos cortes evasê e sereia. Confira as opções de Zibeline na Maior Loja de Tecidos Finos Online."
+        },
+        {
+          "url": "/livros-moldes-e-reguas/coloracao-e-combinacao",
+          "text": "As cores trazem alegria à vida e vida à moda! Para saber usar as cores a seu favor, seja na hora de criar uma roupa, fazer combinações de tecidos e estampas ou orientar seu cliente sobre as cores que a favorecem, o Círculo Cromático e os Cards de Coloração Pessoal são ferramentas fundamentais. Assinados pela consultora de imagem Roberta Pasqualatto, referência dessa área no Brasil, nossos materiais de combinação e coloração são essenciais para quem trabalha com moda."
+        },
+        {
+          "url": "/livros-moldes-e-reguas/desenho-de-moda",
+          "text": "O Desenho de Moda personaliza e agrega valor ao trabalho do estilista e da costureira. A Maximus Tecidos conta com diversos materiais que facilitam e agilizam o processo de passar a ideia para o papel, como Réguas de Desenho e o Caderno de Croquis com mais de 70 poses diferentes para você usar como base de suas criações."
+        },
+        {
+          "url": "/livros-moldes-e-reguas/livros-e-apostilas",
+          "text": "Nossa editora própria, chamada Clube da Costureira, conta com mais de 10 títulos publicados. São livros de grandes nomes da costura e modelagem, com destaque para a professora, autora e modelista Marlene Mukai. Além de outros materiais exclusivos que reúnem Desenho de Moda, Crônicas de Costura e Agenda da Costureira, que vão te apoiar na sua jornada com a moda sob medida como materiais de estudo, organização, ou apenas como uma bela leitura!"
+        },
+        {
+          "url": "/livros-moldes-e-reguas/manequins",
+          "text": " "
+        },
+        {
+          "url": "/livros-moldes-e-reguas/moldes-de-roupas",
+          "text": "Trabalhar com moldes prontos pode ser uma grande vantagem para a costureira que prefere ir direto para a máquina, ou que ainda não se sente segura em desenvolver suas próprias modelagens. Na Maximus Tecidos contamos com um catálogo de mais de 160 moldes de roupas em amplas grades de tamanho, que vão do básico à moda festa, femininos, masculinos, infantis e da moda pet, desenvolvidos e assinados por modelistas que são referências em costura modelagem no Brasil."
+        },
+        {
+          "url": "/livros-moldes-e-reguas/reguas",
+          "text": "Na Maximus Tecidos, trabalhamos com réguas de costura e modelagem das mais básicas e essenciais, como curvas e esquadros, até réguas exclusivas e personalizadas, assinadas por profissionais que são referências na moda sob medida, como régua de saia, régua em L, diversos tipos de curvas, régua para moda pet e guia para margem de costura."
+        },
+        {
+          "url": "/tecidos/linho/linho-misto",
+          "text": "O linho misto é mais macio, se comparado ao linho puro. É um tecido super confortável e fresquinho. Ótimo para confeccionar looks charmosos de verão. O linho é caracterizado como um tecido que simboliza conforto e elegância. Confira todas as opções de Linho Misto na Maior Loja de Tecidos Finos Online:"
+        },
+        {
+          "url": "/livros-moldes-costura-frete-gratis",
+          "text": "Confira todos os produtos com Frete Grátis na Maximus Tecidos!"
+        }
+      ],
+      "urlCurrent": "/",
+      "__resolveType": "site/sections/Category/CategoryTextHeader.tsx"
+    },
+    {
+      "page": {
+        "sort": "OrderByPriceDESC",
+        "count": 24,
+        "filters": "dynamic",
+        "__resolveType": "deco-sites/std/loaders/vtex/legacy/productListingPage.ts"
+      },
+      "__resolveType": "site/sections/Categories.tsx"
+    },
+    {
+      "page": {
+        "sort": "release:desc",
+        "count": 24,
+        "fuzzy": "automatic",
+        "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+        "selectedFacets": [
+          {
+            "key": "productClusterIds",
+            "value": "144"
+          }
+        ]
+      },
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/4fa45ab6-5b94-48a8-a976-9512beb0c96b",
+      "texts": [
+        {
+          "url": "/livros-moldes-e-reguas",
+          "text": "Nossos Livros, Moldes e Réguas são materiais indispensáveis para quem costura. Nossa editora, Clube da Costureira, conta com mais de <strong>10 títulos de livros</strong> de grandes nomes da moda, como a modelista <strong>Marlene Mukai</strong>, além de outros autores e materiais exclusivos, como réguas de modelagem básicas e personalizadas. Para a costureira que prefere moldes prontos em tamanho real, contamos com mais de <strong>160 opções de modelos</strong> que vão da festa ao casual, em grades de tamanho que vão do 36 ao 54."
+        },
+        {
+          "url": "/tecidos",
+          "text": "Contamos com mais de <strong>3 mil tecidos finos</strong> exclusivos e de qualidade para vestidos de <strong>festa</strong>, vestidos de <strong>noiva</strong> e <strong>roupas casuais</strong>. Confira opções de tecidos na Maior Loja de Tecidos Finos Online."
+        }
+      ],
+      "layout": {
+        "columns": {
+          "mobile": 2,
+          "desktop": 3
+        },
+        "variant": "aside"
+      },
+      "banners": [
+        {
+          "url": "/aviamentos-e-bordado",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/db318509-03bb-41c9-a533-b65bf9c3e084"
+        },
+        {
+          "url": "/tecidos",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/15412e96-9b42-4243-8fd7-35a05ad8a97f"
+        },
+        {
+          "url": "/livros-moldes-e-reguas",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c9bf3d96-9d40-4066-bdfe-3a078087c051"
+        }
+      ],
+      "columns": {},
+      "variant": "aside",
+      "cardLayout": {
+        "onMouseOver": {
+          "showCta": false,
+          "showFavoriteIcon": true
+        },
+        "elementsPositions": {
+          "favoriteIcon": "Top right"
+        }
+      },
+      "__resolveType": "site/sections/Product/SearchResult.tsx"
+    },
+    {
+      "page": {
+        "sort": "OrderByPriceDESC",
+        "count": 24,
+        "filters": "dynamic",
+        "__resolveType": "deco-sites/std/functions/vtexLegacyProductListingPage.ts"
+      },
+      "texts": [
+        {
+          "url": "/tecidos/alfaiataria",
+          "text": "    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Alfaiataria</h2>\n    <p class=\"text-sm font-normal leading-6\">A <strong>alfaiataria</strong> é muito mais do que apenas um estilo de vestuário; é uma forma de arte que abraça\n        a elegância, a precisão e o cuidado para criar peças de roupa únicas.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">E para que isso seja possível, é de extrema importância cuidar do tecido, da textura e todos os detalhes da peça\n        com muito cuidado.</p>\n    <p class=\"text-sm font-normal leading-6\">Venha explorar o mundo da alfaiataria com a <strong>Maximus Tecidos</strong> e conheça nossas opções para suas\n        criações!</p><br>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">O que não é alfaiataria?</h2>\n    <p class=\"text-sm font-normal leading-6\">Para falar de alfaiataria, é importante primeiro esclarecer o que ela <strong>não é</strong>.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Ao contrário de roupas prontas que são produzidas em massa, a alfaiataria não se trata de um tamanho único e que\n        serve para todos.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Ao invés disso, podemos dizer que ela é a antítese da “moda rápida”. Alfaiataria é sobre <strong>roupas sob\n            medida, projetadas especificamente para se ajustarem ao corpo de quem as usa</strong>, respeitando suas\n        preferências e estilo pessoal.</p><br>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Quais são os tipos de alfaiataria?</h2>\n    <p class=\"text-sm font-normal leading-6\">A alfaiataria é uma arte abrangente que engloba diversos estilos e peças.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Na <strong>alfaiataria masculina</strong>, você encontra ternos clássicos, blazers, coletes e calças, todos\n        criados para realçar a elegância masculina.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Já a <strong>alfaiataria feminina</strong> abrange uma ampla variedade de vestidos, saias, blusas e terninhos,\n        cada um projetado para destacar a beleza e a sofisticação das mulheres.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Além disso, a alfaiataria também se estende aos acessórios, como gravatas, lenços, cintos e até mesmo chapéus,\n        trazendo um toque de requinte para qualquer look.</p><br>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Quais são os tecidos de alfaiataria?</h2>\n    <p class=\"text-sm font-normal leading-6\">A escolha dos <a href=\"https://www.maximustecidos.com.br/tecidos\"><strong>tecidos</strong></a> é fundamental na\n        alfaiataria, pois eles desempenham um papel crucial no ajuste, no conforto e na aparência das peças.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Entre os tecidos mais comuns estão o <a\n            href=\"https://www.maximustecidos.com.br/tecidos/linho\"><strong>linho</strong></a>, que é conhecido por sua\n        durabilidade e versatilidade, sendo adequado para todas as estações; o algodão, que oferece conforto e é ideal\n        para climas mais quentes; e o <a\n            href=\"https://www.maximustecidos.com.br/tecidos/zibeline\"><strong>zibeline</strong></a>, que confere um\n        toque luxuoso e é usado em peças de alfaiataria feminina.</p>\n    <p class=\"text-sm font-normal leading-6\">Além dessas opções incríveis, você também encontra <strong>misturas de tecidos </strong>na alfaiataria, como é o\n        caso da<strong> lã com seda</strong>, que combina o melhor de ambos os mundos e cria um tecido que é ao mesmo\n        tempo elegante e confortável.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\"><strong>Tecidos de viscose e poliéster</strong> também são usados para criar peças de alfaiataria que são fáceis\n        de cuidar e têm uma aparência impecável.</p><br>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Maximus Tecidos indica</h2>\n    <p class=\"text-sm font-normal leading-6\">Na busca pela excelência em alfaiataria, a<strong> escolha dos tecidos</strong> tem um papel fundamental.&nbsp;\n    </p>\n    <p class=\"text-sm font-normal leading-6\">Seja a lã, algodão, seda e misturas sofisticadas, o que vale é focar na qualidade e na criatividade para criar\n        peças únicas e que estejam alinhadas com a alfaiataria de primeira.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Aqui na <strong>Maximus Tecidos</strong>, você encontra tudo o que precisa para explorar esse universo, trazendo\n        toda a beleza e elegância que suas peças merecem. Conheça nossa variedade de tecidos, cores e texturas para\n        peças de alfaiataria e aproveite!</p>\n    <p class=\"text-sm font-normal leading-6\"></p>"
+        },
+        {
+          "url": "/maquinas",
+          "text": "\n    <p class=\"text-sm font-normal leading-6\">Bem-vindo ao nosso departamento de Máquinas de Costura! Aqui, oferecemos uma ampla variedade de produtos\n        relacionados à costura, desde Máquinas de Costura Domésticas até Acessórios e Máquinas de Bordar.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Se você está em busca da máquina perfeita para suas necessidades de costura, ou simplesmente deseja conhecer mais\n        sobre os diversos tipos disponíveis, você está no lugar certo.&nbsp;</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\"><a href=\"https://www.maximustecidos.com.br/maquinas/maquinas-de-costura-domestica\">Máquinas de Costura\n            Domésticas</a></h2>\n    <p class=\"text-sm font-normal leading-6\">As Máquinas de Costura Domésticas são ideais para entusiastas da costura que desejam confeccionar suas próprias\n        roupas, fazer reparos ou criar projetos de costura em casa. Nossas máquinas domésticas são projetadas para\n        atender a diversas necessidades e orçamentos, desde modelos básicos até os mais avançados.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\"><a href=\"https://www.maximustecidos.com.br/maquinas/acessorios\">Acessórios para Máquinas de Costura</a></h2>\n    <p class=\"text-sm font-normal leading-6\">Certifique-se de verificar nossa seleção de acessórios de alta qualidade para manter sua máquina funcionando\n        perfeitamente e garantir resultados excepcionais em seus projetos.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\"><a href=\"https://www.maximustecidos.com.br/maquinas/maquinas-de-costura-domestica/maquinas-de-bordar\">Máquinas\n            de Bordar</a></h2>\n    <p class=\"text-sm font-normal leading-6\">Se você deseja adicionar detalhes e designs personalizados aos seus projetos, nossas Máquinas de Bordar são a\n        escolha perfeita. Explore nossa gama de máquinas que oferecem recursos avançados de bordado, incluindo\n        diferentes pontos e opções de personalização.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\"><a\n            href=\"https://www.maximustecidos.com.br/maquinas/maquinas-de-costura-domestica/maquina-de-costura-eletronica\">Máquinas\n            de Costura Eletrônica</a></h2>\n    <p class=\"text-sm font-normal leading-6\">As Máquinas de Costura Eletrônicas combinam tecnologia avançada com facilidade de uso. Descubra como essas\n        máquinas modernas podem tornar a costura mais eficiente e precisa. Explore nossa seleção de modelos eletrônicos\n        para encontrar a máquina que melhor se adapta às suas necessidades.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\"><a\n            href=\"https://www.maximustecidos.com.br/maquinas/maquinas-de-costura-domestica/maquina-de-costura-mecanica-domestica\">Máquinas\n            de Costura Mecânica Doméstica</a></h2>\n    <p class=\"text-sm font-normal leading-6\">Se você prefere uma abordagem mais tradicional, nossas Máquinas de Costura Mecânicas Domésticas oferecem\n        durabilidade e confiabilidade. Essas máquinas são ideais para iniciantes e costureiros experientes que preferem\n        um funcionamento mecânico simples.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\"><a href=\"https://www.maximustecidos.com.br/maquinas/maquinas-de-costura-domestica/maquina-de-costura-overloque\">Máquinas\n            de Costura Overloque</a></h2>\n    <p class=\"text-sm font-normal leading-6\">Para acabamentos profissionais em suas costuras, as Máquinas de Costura Overloque são indispensáveis. Elas são\n        projetadas para criar costuras perfeitas em tecidos elásticos e evitar o desfiamento das bordas. Conheça nossa\n        linha de máquinas overloque para obter resultados impecáveis.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">A Maximus pode te ajudar na escolha ideal da sua máquina de costura</h2>\n    <p class=\"text-sm font-normal leading-6\">Nossa equipe é altamente qualificada e está pronta para orientá-lo e fornecer recomendações personalizadas. Seja\n        você um iniciante que deseja começar no mundo da costura ou um costureiro experiente em busca de uma máquina\n        específica, estamos aqui para ouvir suas necessidades e oferecer suporte especializado. Com a Maximus, você pode\n        ter a confiança de que está investindo na máquina de costura perfeita para atender às suas expectativas e\n        ampliar suas habilidades de costura.</p>\n    <p class=\"text-sm font-normal leading-6\">Conheça nossos <a\n            href=\"https://materiais.maximustecidos.com.br/maximus-escola-de-moda-online?_gl=1*4a93a*_ga*MTIwMzUzODI1MS4xNjkxNDI1MDY4*_ga_HGM4SXF2FQ*MTY5OTYyMTc5MS4yNi4xLjE2OTk2MjYxNjEuMC4wLjA.*_fplc*QmowRWFJcSUyRjhRZHVlJTJCUThTRTIwZ2hranBaZzZDJTJGdWlQRFE4MGFaUiUyQkFjVnQ3bGg2cnMlMkJMM2tUaWYlMkJQWWswSjF5bmZNUU9JaG0xYmpqQkRkVzZseTY0Qmx5V0dyU0l0JTJGZDNuMVVvTCUyRndYM3RqeWl6SUNzaFJoQWhiM0ElMkJBJTNEJTNE3\">cursos\n            de costura</a> de iniciante ao avançado!</p>"
+        },
+        {
+          "url": "/tecidos/alfaiataria",
+          "text": "\n        <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Alfaiataria</h1>\n        <p class=\"text-sm font-normal leading-6\">A <strong>alfaiataria</strong> é muito mais do que apenas um estilo de vestuário; é uma forma de arte que\n            abraça a elegância, a precisão e o cuidado para criar peças de roupa únicas.&nbsp;</p>\n        <p class=\"text-sm font-normal leading-6\">E para que isso seja possível, é de extrema importância cuidar do tecido, da textura e todos os detalhes da\n            peça com muito cuidado.</p>\n        <p class=\"text-sm font-normal leading-6\">Venha explorar o mundo da alfaiataria com a <strong>Maximus Tecidos</strong> e conheça nossas opções para\n            suas criações!</p><br>\n        <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">O que não é alfaiataria?</h2>\n        <p class=\"text-sm font-normal leading-6\">Para falar de alfaiataria, é importante primeiro esclarecer o que ela <strong>não é</strong>.&nbsp;</p>\n        <p class=\"text-sm font-normal leading-6\">Ao contrário de roupas prontas que são produzidas em massa, a alfaiataria não se trata de um tamanho único e\n            que serve para todos.&nbsp;</p>\n        <p class=\"text-sm font-normal leading-6\">Ao invés disso, podemos dizer que ela é a antítese da “moda rápida”. Alfaiataria é sobre <strong>roupas sob\n                medida, projetadas especificamente para se ajustarem ao corpo de quem as usa</strong>, respeitando suas\n            preferências e estilo pessoal.</p><br>\n        <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Quais são os tipos de alfaiataria?</h2>\n        <p class=\"text-sm font-normal leading-6\">A alfaiataria é uma arte abrangente que engloba diversos estilos e peças.&nbsp;</p>\n        <p class=\"text-sm font-normal leading-6\">Na <strong>alfaiataria masculina</strong>, você encontra ternos clássicos, blazers, coletes e calças, todos\n            criados para realçar a elegância masculina.&nbsp;</p>\n        <p class=\"text-sm font-normal leading-6\">Já a <strong>alfaiataria feminina</strong> abrange uma ampla variedade de vestidos, saias, blusas e\n            terninhos, cada um projetado para destacar a beleza e a sofisticação das mulheres.&nbsp;</p>\n        <p class=\"text-sm font-normal leading-6\">Além disso, a alfaiataria também se estende aos acessórios, como gravatas, lenços, cintos e até mesmo\n            chapéus, trazendo um toque de requinte para qualquer look.</p><br>\n        <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Quais são os tecidos de alfaiataria?</h2>\n        <p class=\"text-sm font-normal leading-6\">A escolha dos <a href=\"https://www.maximustecidos.com.br/tecidos\"><strong>tecidos</strong></a> é fundamental\n            na alfaiataria, pois eles desempenham um papel crucial no ajuste, no conforto e na aparência das\n            peças.&nbsp;</p>\n        <p class=\"text-sm font-normal leading-6\">Entre os tecidos mais comuns estão o <a\n                href=\"https://www.maximustecidos.com.br/tecidos/linho\"><strong>linho</strong></a>, que é conhecido por\n            sua durabilidade e versatilidade, sendo adequado para todas as estações; o algodão, que oferece conforto e é\n            ideal para climas mais quentes; e o <a\n                href=\"https://www.maximustecidos.com.br/tecidos/zibeline\"><strong>zibeline</strong></a>, que confere um\n            toque luxuoso e é usado em peças de alfaiataria feminina.</p>\n        <p class=\"text-sm font-normal leading-6\">Além dessas opções incríveis, você também encontra <strong>misturas de tecidos </strong>na alfaiataria, como\n            é o caso da<strong> lã com seda</strong>, que combina o melhor de ambos os mundos e cria um tecido que é ao\n            mesmo tempo elegante e confortável.&nbsp;</p>\n        <p class=\"text-sm font-normal leading-6\"><strong>Tecidos de viscose e poliéster</strong> também são usados para criar peças de alfaiataria que são\n            fáceis de cuidar e têm uma aparência impecável.</p><br>\n        <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Maximus Tecidos indica</h2>\n        <p class=\"text-sm font-normal leading-6\">Na busca pela excelência em alfaiataria, a<strong> escolha dos tecidos</strong> tem um papel\n            fundamental.&nbsp;</p>\n        <p class=\"text-sm font-normal leading-6\">Seja a lã, algodão, seda e misturas sofisticadas, o que vale é focar na qualidade e na criatividade para\n            criar peças únicas e que estejam alinhadas com a alfaiataria de primeira.&nbsp;</p>\n        <p class=\"text-sm font-normal leading-6\">Aqui na <strong>Maximus Tecidos</strong>, você encontra tudo o que precisa para explorar esse universo,\n            trazendo toda a beleza e elegância que suas peças merecem. Conheça nossa variedade de tecidos, cores e\n            texturas para peças de alfaiataria e aproveite!</p>\n        <p class=\"text-sm font-normal leading-6\"></p>"
+        },
+        {
+          "url": "/tecidos/chiffon",
+          "text": "<h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Chiffon</h2>\n    <p class=\"text-sm font-normal leading-6\">Quando se trata de tecidos que trazem maciez e delicadeza em suas fibras, o <strong>chiffon</strong> se destaca\n        como uma escolha atemporal na moda e na decoração.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Utilizar um tecido como este significa deixar suas peças mais charmosas, sem abrir mão do conforto que faz tanta\n        diferença no dia a dia.</p>\n    <p class=\"text-sm font-normal leading-6\">Conheça mais sobre o tecido chiffon e explore um universo de oportunidades com as opções da <strong>Maximus\n            Tecidos</strong>!</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">O que é tecido chiffon?</h2>\n    <p class=\"text-sm font-normal leading-6\">O chiffon é um <strong>tecido leve e transparente</strong>, conhecido por sua textura suave e fluida.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Ele é produzido a partir de fibras naturais, como cetim, seda, algodão, <a\n            href=\"https://www.maximustecidos.com.br/tecidos/viscose\"><strong>viscose</strong></a>, também fibras\n        sintéticas, incluindo o poliéster e o acetato.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">O chiffon é bastante conhecido por ter bom caimento, fazendo com que ele seja uma escolha certa para\n        <strong>vestidos, saias, godês</strong> e muito mais.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Tipos de chiffon</h2>\n    <p class=\"text-sm font-normal leading-6\">O chiffon está disponível em uma variedade de tipos, cada um com seus detalhes únicos. Alguns dos mais comuns\n        incluem:</p>\n    <ul>\n        <li aria-level=\"1\"><strong>Chiffon de seda: </strong>Reconhecido por sua suavidade incomparável e brilho\n            natural, é uma escolha perfeita para roupas de festa e vestidos;</li>\n        <li aria-level=\"1\"><strong>Chiffon de poliéster:</strong> Mais acessível e durável, ele mantém a leveza e a\n            fluidez do chiffon;</li>\n        <li aria-level=\"1\"><strong>Chiffon de algodão: </strong>Tecido bem confortável, sendo uma ótima escolha para\n            roupas casuais e acessórios de verão.</li>\n    </ul>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Características do chiffon</h2>\n    <p class=\"text-sm font-normal leading-6\">O chiffon possui algumas características únicas que o tornam um dos <a\n            href=\"https://www.maximustecidos.com.br/tecidos\"><strong>tecidos</strong></a> bastante requisitados para\n        criação de peças. Olha só!</p>\n    <ul>\n        <li aria-level=\"1\"><strong>Leveza: </strong>O chiffon é extremamente leve, o que o torna ideal para roupas de\n            verão e vestidos esvoaçantes;</li>\n        <li aria-level=\"1\"><strong>Transparência:</strong> Sua transparência sutil traz um toque de sensualidade e\n            elegância às roupas e aos acessórios;</li>\n        <li aria-level=\"1\"><strong>Caimento: </strong>O chiffon possui um caimento inigualável, proporcionando um\n            movimento gracioso e fluidez em cada peça de vestuário;</li>\n        <li aria-level=\"1\"><strong>Versatilidade:</strong> Assim como o <a\n                href=\"https://www.maximustecidos.com.br/tecidos/cetim\"><strong>cetim</strong></a>, ele é um tecido\n            versátil que pode ser usado para criar vestidos plissados, lenços delicados, artigos de decoração e muito\n            mais.</li>\n    </ul>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Qual a diferença entre chiffon e seda?</h2>\n    <p class=\"text-sm font-normal leading-6\">Embora muitas vezes associado à seda, o chiffon é um tecido com outras características.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">A principal diferença está na<strong> composição das fibras</strong>. Enquanto o chiffon pode ser feito de várias\n        fibras, incluindo seda, a seda pura é produzida apenas a partir dos casulos dos bichos-da-seda.</p>\n    <p class=\"text-sm font-normal leading-6\">Enquanto o chiffon possui uma textura mais transparente e fluída, a seda pura tem uma superfície mais brilhante e\n        densa.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Cuidados com o tecido chiffon</h2>\n    <p class=\"text-sm font-normal leading-6\">Para manter o chiffon em perfeitas condições, é importante seguir essas dicas:</p>\n    <ul>\n        <li aria-level=\"1\">Lave à mão em água fria com um detergente suave;</li>\n        <li aria-level=\"1\">Evite torcer ou esfregar o tecido durante a lavagem;</li>\n        <li aria-level=\"1\">Seque à sombra, longe da luz direta do sol;</li>\n        <li aria-level=\"1\">Evite o uso de ferro quente e vapor, pois o chiffon é sensível ao calor.</li>\n    </ul>\n    <p class=\"text-sm font-normal leading-6\">Viu só? O chiffon pode ser o tecido ideal para suas peças ganharem leveza e conforto, se tornando um grande\n        destaque do guarda-roupa!</p>\n    <p class=\"text-sm font-normal leading-6\"><br>Conheça nossas opções em tecido chiffon e leve a elegância e o estilo das suas peças para outro nível com a\n        <strong>Maximus Tecidos</strong>!</p>"
+        },
+        {
+          "url": "/tecidos/flanela",
+          "text": "\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Flanela</h2>\n    <p class=\"text-sm font-normal leading-6\">A flanela é um tecido que remete ao <strong>aconchego, calor e conforto</strong>.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Sempre lembrada por sua maciez, ela é a preferência de muitas pessoas para aplicações têxteis, desde roupas até\n        itens de decoração.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Aqui na <strong>Maximus</strong>, você encontra o tecido de flanela em diferentes versões, estampas e texturas, e\n        pode escolher aquela que mais se encaixa às suas criações. Saiba mais sobre a flanela e explore nossas opções\n        desse tecido que é paixão nacional!</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">O que é um tecido de flanela?</h2>\n    <p class=\"text-sm font-normal leading-6\">A flanela é um tecido conhecido por sua <strong>textura macia e mais peluda</strong>.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Geralmente, é composta de fibras naturais, como algodão, lã ou seda, mas também pode ser feita de materiais\n        sintéticos, como poliéster ou acrílico. A característica que a diferencia é o processo de acabamento chamado\n        \"escovagem\", que cria uma superfície de fibras soltas e felpudas.</p>\n    <p class=\"text-sm font-normal leading-6\">Assim como o <a href=\"https://www.maximustecidos.com.br/tecidos/jacquard-brocados\"><strong>Jacquard</strong></a>,\n        ela é versátil e pode ser utilizada para produzir os mais diferentes tipos de peças.&nbsp;</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Os tipos de flanela</h2>\n    <p class=\"text-sm font-normal leading-6\">Quem deseja usar <a href=\"https://www.maximustecidos.com.br/tecidos\"><strong>tecidos</strong></a> como a flanela\n        encontra uma série de tipos e opções diferentes. Confira a seguir alguns dos principais modelos:&nbsp;</p>\n    <ul>\n        <li aria-level=\"1\"><strong>Flanela de algodão: </strong>A flanela de algodão é a mais comum e versátil. É leve e\n            respirável, tornando-a perfeita para roupas de cama, pijamas e camisas;</li>\n        <li aria-level=\"1\"><strong>Flanela de lã:</strong> Ideal para o inverno, a flanela de lã oferece calor\n            excepcional. É frequentemente usada em casacos, mantas e lenços;</li>\n        <li aria-level=\"1\"><strong>Flanela de seda:</strong> A flanela de seda combina a suavidade da seda com a textura\n            da flanela. É uma opção elegante para roupas mais formais;</li>\n        <li aria-level=\"1\"><strong>Flanela de poliéster:</strong> A flanela de poliéster é resistente e de baixa\n            manutenção. É geralmente usada em uniformes e roupas de trabalho;</li>\n        <li aria-level=\"1\"><strong>Flanela de viscose: </strong>Macia e elegante, a flanela de viscose é usada\n            normalmente em vestidos e blusas;</li>\n        <li aria-level=\"1\"><strong>Flanela de renda:</strong> A flanela de renda é delicada e usada em roupas femininas\n            e lingeries;</li>\n        <li aria-level=\"1\"><strong>Flanela de bordado: </strong>Perfeita para detalhes decorativos, a flanela de bordado\n            é muito usada em roupas e acessórios;</li>\n        <li aria-level=\"1\"><strong>Flanela de estamparia e tingimento:</strong> Essa flanela é decorada com estampas e\n            tingimentos variados, trazendo opções de design exclusivas.</li>\n    </ul>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Como a flanela é produzida?</h2>\n    <p class=\"text-sm font-normal leading-6\">A produção da flanela envolve um processo específico de <strong>escovagem das fibras</strong> após a\n        tecelagem.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Primeiro, o tecido é fabricado a partir das fibras escolhidas. Em seguida, passa por um processo de escovagem, no\n        qual as fibras são penteadas e levantadas da superfície do tecido, criando o toque macio e aveludado\n        característico da flanela.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Esse processo também ajuda na <strong>retenção de calor</strong>, tornando-a uma opção ideal para climas mais\n        frios, como é o caso da <a\n            href=\"https://www.maximustecidos.com.br/tecidos/las-puras-e-mistas\"><strong>lã</strong></a>.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Maximus Tecidos indica</h2>\n    <p class=\"text-sm font-normal leading-6\">Gostou? A <strong>flanela é um tecido versátil </strong>que oferece conforto como poucos tecidos e uma ampla\n        variedade de opções. Seja para roupas, decoração ou projetos de artesanato, a flanela é uma escolha clássica que\n        nunca sai de moda.</p>\n    <p class=\"text-sm font-normal leading-6\">Aqui na <strong>Maximus Tecidos</strong>, você encontra diversas opções de flanelas de alta qualidade para o seu\n        projeto. Explore nossa coleção e encontre o tecido ideal para suas criações ganharem mais conforto e estilo!</p>\n"
+        },
+        {
+          "url": "/tecidos/malhas",
+          "text": "\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Malhas</h2>\n    <p class=\"text-sm font-normal leading-6\">As <strong>malhas</strong> são aquelas peças do guarda-roupa que combinam conforto e estilo como nenhuma\n        outra!&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Super versáteis, elas podem ser utilizadas nos mais diferentes tipos de peças, sendo uma escolha mais do que\n        certa para suas criações.</p>\n    <p class=\"text-sm font-normal leading-6\">Explore o mundo das malhas aqui na Maximus Tecidos e encontre a opção que mais se encaixa às suas peças. Confira!\n    </p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">O que são malhas?</h2>\n    <p class=\"text-sm font-normal leading-6\">As malhas são <a href=\"https://www.maximustecidos.com.br/tecidos\"><strong>tecidos</strong></a> conhecidos por sua\n        estrutura entrelaçada de fios, o que garante mais <strong>elasticidade e flexibilidade</strong>.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Essa estrutura única torna as malhas ideais para <strong>roupas que precisam se ajustar ao corpo</strong>, como\n        camisetas, leggings e roupas íntimas. Elas também são usadas em uma variedade de outras peças, incluindo roupas\n        esportivas, roupas de cama e itens de decoração.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Os tipos de malhas</h2>\n    <p class=\"text-sm font-normal leading-6\">Se você está pensando em explorar as malhas, aí vai uma ótima notícia: existem muitas opções para usar o tecido,\n        sendo que cada uma delas oferece características únicas:</p>\n    <ul>\n        <li aria-level=\"1\"><strong>Malhas de algodão: </strong>Conhecidas por sua suavidade e respirabilidade, as malhas\n            de <a href=\"https://www.maximustecidos.com.br/tecidos/algodao\"><strong>algodão</strong></a> são perfeitas\n            para camisetas e roupas casuais;</li>\n        <li aria-level=\"1\"><strong>Malhas de poliéster: </strong>Duráveis e de secagem rápida, as malhas de poliéster\n            são ideais para roupas esportivas;</li>\n        <li aria-level=\"1\"><strong>Malhas de elastano:</strong> Também conhecidas como malhas elásticas, elas são ideais\n            para roupas que exigem maior flexibilidade;</li>\n        <li aria-level=\"1\"><strong>Malhas de viscose: </strong>Leves e elegantes, as malhas de viscose são ótimas para\n            vestidos e blusas.</li>\n        <li aria-level=\"1\"><strong>Malhas de lã:</strong> Oferecem calor e conforto, sendo ideais para suéteres e peças\n            de inverno;</li>\n        <li aria-level=\"1\"><strong>Malhas de seda: </strong>Luxuosas e suaves, as malhas feitas em seda são normalmente\n            usadas em roupas de alta costura;</li>\n        <li aria-level=\"1\"><strong>Malhas de renda: </strong>Delicadas e femininas, as malhas feitas com tecido de renda\n            são ideais para roupas íntimas e vestidos de festa;</li>\n        <li aria-level=\"1\"><strong>Malhas de acabamento e aplicação: </strong>Usadas para detalhes decorativos em roupas\n            e acessórios.</li>\n    </ul>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Como as malhas são produzidas?</h2>\n    <p class=\"text-sm font-normal leading-6\">A produção de malhas envolve um processo de tricô, no qual os fios são entrelaçados em uma série de loops\n        interconectados.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Esse processo permite que as <strong>malhas tenham elasticidade natural</strong>, tornando-as ideais para roupas\n        que exigem mais movimento e conforto. Além disso, as malhas podem ser fabricadas a partir de uma variedade de\n        materiais, incluindo <a href=\"https://www.maximustecidos.com.br/tecidos/tecido-sintetico\"><strong>tecidos\n                sintéticos</strong></a>, algodão, poliéster, elastano, viscose, lã, seda e muito mais.</p>\n    <p class=\"text-sm font-normal leading-6\">Isso significa que você pode encontrar malhas que são suaves e sedosas, perfeitas para roupas de alta costura, ou\n        malhas mais texturizadas e robustas, ideais para peças de inverno e acessórios.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Escolhendo a malha perfeita para você</h2>\n    <p class=\"text-sm font-normal leading-6\">Viu só? Tem muita opção para usar a criatividade e explorar o <strong>tecido de malha</strong>, não é mesmo?</p>\n    <p class=\"text-sm font-normal leading-6\">Seja qual for o seu projeto, a <strong>Maximus Tecidos</strong> possui as malhas certas para você criar peças de\n        moda, decoração ou artesanato que têm tudo para fazer sucesso, trazendo muito conforto e qualidade.</p>\n    <p class=\"text-sm font-normal leading-6\">Conheça nossas opções de malhas e aproveite!</p>\n"
+        },
+        {
+          "url": "/tecidos/musseline",
+          "text": "\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\"><strong>Musseline</strong></h2>\n    <p class=\"text-sm font-normal leading-6\">A escolha do tecido tem um papel muito importante na criação de peças únicas e elegantes.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">E quando se trata de <a href=\"https://www.maximustecidos.com.br/tecidos\"><strong>tecidos</strong></a> leves e\n        delicados, a <strong>musseline</strong> é uma opção que possui muito destaque.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">É por conta da <strong>leveza, da delicadeza e da qualidade</strong> que esse tecido tem sido a escolha de muitas\n        pessoas para compor peças dos mais diferentes tipos. Acompanhe mais detalhes e saiba tudo sobre a musseline da\n        Maximus!</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\"><strong>O que é o tecido musseline?</strong></h2>\n    <p class=\"text-sm font-normal leading-6\"><strong>Musseline</strong> é um tecido conhecido por sua leveza e transparência, que o tornam uma escolha muito\n        requisitada na moda festa e casual. Sua textura pigmentada possui uma aparência única e seu caimento fluido e\n        ventilado o tornam ideal para peças de roupa que fluem suavemente.</p>\n    <p class=\"text-sm font-normal leading-6\">Este tecido é geralmente feito de fibras naturais, como algodão, seda e viscose. Mas também há versões de\n        musseline de poliéster, linho e lã. Cada tipo de musseline possui suas características, permitindo que você\n        escolha o que melhor se adapta à sua peça.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\"><strong>Qual a diferença entre crepe e musseline?&nbsp;</strong></h2>\n    <p class=\"text-sm font-normal leading-6\">Uma pergunta muito comum na moda é sobre a <strong>diferença entre a musseline e o </strong><a\n            href=\"https://www.maximustecidos.com.br/tecidos/crepe\"><strong>crepe</strong></a>.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Embora as duas opções sejam <strong>tecidos</strong> <strong>leves</strong>, elas possuem características\n        diferentes. O crepe é conhecido por sua textura enrugada e pode ser mais pesado em comparação com a\n        musseline.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Já a musseline tem uma textura pigmentada e um toque mais macio, com um caimento fluido. Ambas são ótimas opções\n        e têm tudo para deixar suas peças incríveis!</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\"><strong>Quais são os tipos de musseline?</strong></h2>\n    <p class=\"text-sm font-normal leading-6\">Com o tecido musseline, versatilidade é o que não falta! Cada um dos tipos possui suas próprias características\n        únicas e que deixam as peças especiais:&nbsp;</p>\n    <ul>\n        <li aria-level=\"1\"><strong>Musseline de algodão: </strong>Feita a partir de fibras naturais de algodão, é leve e\n            respirável, perfeita para roupas de verão.</li>\n        <li aria-level=\"1\"><strong>Musseline de seda:</strong> Reconhecida pela sua elegância e brilho natural, a\n            musseline de seda é ideal para vestidos de noite e ocasiões especiais.</li>\n        <li aria-level=\"1\"><a href=\"https://www.maximustecidos.com.br/tecidos/viscose\"><strong>Musseline de\n                    viscose</strong></a><strong>: </strong>Combina a suavidade da viscose com a textura da musseline,\n            proporcionando conforto e estilo.</li>\n        <li aria-level=\"1\"><strong>Musseline de linho: </strong>O linho dá um toque mais rústico à musseline, tornando-a\n            perfeita para peças casuais e de praia.</li>\n        <li aria-level=\"1\"><strong>Musseline de lã: </strong>Proporciona calor e conforto, sendo uma escolha excelente\n            para peças de outono e inverno.</li>\n        <li aria-level=\"1\"><strong>Musseline de Jacquard: </strong>Esta versão possui padrões intrincados diretamente no\n            tecido, dando um toque de elegância a qualquer peça.</li>\n        <li aria-level=\"1\"><strong>Musseline para costura: </strong>Disponível em uma variedade de cores e texturas, é a\n            escolha ideal para estilistas e costureiros que desejam criar peças personalizadas.</li>\n    </ul>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\"><strong>Maximus Tecidos indica</strong></h2>\n    <p class=\"text-sm font-normal leading-6\">A musseline é um tecido leve e versátil que pode elevar o seu estilo e proporcionar um <strong>toque de elegância\n            a qualquer peça de roupa</strong>. Seja para vestidos de verão, blusas casuais ou roupas de festa mais\n        sofisticadas, a musseline é uma escolha que combina conforto e beleza.</p>\n    <p class=\"text-sm font-normal leading-6\"><br>Aqui na <strong>Maximus Tecidos</strong>, você encontra diversas opções de musseline! Deixe sua criatividade\n        fluir e crie peças de moda incríveis e cativantes com a musseline!</p>"
+        },
+        {
+          "url": "/tecidos/tules-lisos",
+          "text": "\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Tules lisos</h2>\n    <p class=\"text-sm font-normal leading-6\"><strong>Vestidos e saias com sobreposições</strong> te lembram alguma coisa? Isso mesmo, os famosos tules!</p>\n    <p class=\"text-sm font-normal leading-6\">Esse tecido é muito tradicional e conhecido por <strong>dar mais volume</strong> e um toque de sofisticação às\n        peças de roupas. O tule liso se destaca como um dos tecidos mais versáteis e queridos para criações de diversos\n        tipos.</p>\n    <p class=\"text-sm font-normal leading-6\">Venha conhecer mais sobre os tules lisos e explore sua criatividade com este tecido incrível aqui na<strong>\n            Maximus Tecidos</strong>!</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">O que é tecido tule?</h2>\n    <p class=\"text-sm font-normal leading-6\">O tule é um tecido de malha leve, caracterizado por sua <strong>estrutura aberta e translúcida</strong>. Ele é\n        feito de várias fibras, incluindo algodão, poliéster, nylon e seda.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Conhecido por sua versatilidade, é muito utilizado na moda, especialmente em vestidos de noiva, saias de balé e\n        véus.</p>\n    <p class=\"text-sm font-normal leading-6\">Por trazer um efeito translúcido, o tule também é um tecido popular em decorações de eventos e festas. Desde\n        decorações de casamento até festas de aniversário, ele é uma opção sempre presente em cortinas, enfeites de mesa\n        e laços decorativos.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Tipos de tules</h2>\n    <p class=\"text-sm font-normal leading-6\">O mais bacana é que existem diversas variações de <a\n            href=\"https://www.maximustecidos.com.br/tecidos\"><strong>tecidos</strong></a> de tule e cada uma delas\n        possui detalhes e características únicas. Olha só!</p>\n    <ul>\n        <li aria-level=\"1\"><strong>Tules de algodão: </strong>Reconhecidos por sua suavidade e conforto, os tules de\n            algodão são ideais para roupas casuais e acessórios leves;</li>\n        <li aria-level=\"1\"><strong>Tules de poliéster: </strong>Duráveis e de fácil manutenção, os tules de poliéster\n            são geralmente escolhidos para decorações de festas e roupas de dança;</li>\n        <li aria-level=\"1\"><strong>Tules de nylon: </strong>Leves e resistentes, os tules de nylon são perfeitos para\n            criar roupas esvoaçantes e véus;</li>\n        <li aria-level=\"1\"><strong>Tules de seda:</strong> Oferecendo um brilho natural e uma sensação luxuosa, os tules\n            de seda são a escolha perfeita para vestidos de noiva e peças de alta costura;</li>\n        <li aria-level=\"1\"><strong>Tules de jacquard:</strong> Os tules de jacquard são conhecidos por seus padrões\n            intrincados e textura luxuosa. Normalmente, esses tules apresentam desenhos mais elaborados, muitas vezes em\n            relevo;</li>\n        <li aria-level=\"1\"><strong>Tules de bordado:</strong> Os tules de bordado trazem desenhos detalhados que são\n            feitos à mão ou à máquina. Esses bordados podem variar de flores delicadas a padrões geométricos, criando um\n            visual único e artesanal. Fica um charme!</li>\n        <li aria-level=\"1\"><strong>Tules de estamparia: </strong>Os tules de estamparia apresentam padrões impressos em\n            sua superfície, oferecendo uma ampla variedade de opções de design.</li>\n    </ul>\n    <p class=\"text-sm font-normal leading-6\">Seja para confeccionar roupas leves e arejadas ou criar acessórios únicos, o tule oferece versatilidade e beleza\n        que podem elevar seus projetos a um novo patamar de elegância. Fica a dica, hein?</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Maximus Tecidos indica</h2>\n    <p class=\"text-sm font-normal leading-6\">Com o tule liso, você pode criar peças deslumbrantes, com aquele toque de charme que trazem um estilo único. Seja\n        qual for o seu projeto, o tule tem tudo para ser o destaque dele.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Aqui na <strong>Maximus Tecidos</strong>, temos opções de <strong>tule com bordado e pedraria, glitter, tule para\n            armação, com poás, rendas</strong> e muito mais.</p>\n    <p class=\"text-sm font-normal leading-6\">Aproveite para explorar nossas opções de tecidos de tule e surpreenda em seus projetos e peças!</p>"
+        },
+        {
+          "url": "/tecidos/veludo",
+          "text": "\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Veludo: o tecido sofisticado e elegante</h2>\n    <p class=\"text-sm font-normal leading-6\">Considerado um dos materiais mais antigos do mundo e também mais requisitados, podemos considerar o\n        <strong>veludo</strong> como um tecido atemporal.</p>\n    <p class=\"text-sm font-normal leading-6\">Basta pensar em elegância e sofisticação, que peças como vestidos e até itens decorativos de veludo já vêm à\n        cabeça.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Aproveite para conhecer mais sobre o <strong>tecido de veludo</strong> e encante com peças charmosas e cheias de\n        personalidade produzidas com as opções da <strong>Maximus Tecidos</strong>!&nbsp;</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">O que é o tecido Veludo?</h2>\n    <p class=\"text-sm font-normal leading-6\">Considerado um dos <a href=\"https://www.maximustecidos.com.br/tecidos\"><strong>tecidos</strong></a> mais\n        tradicionais, o veludo é caracterizado por sua <strong>superfície felpuda e suave ao toque</strong>. Saiba mais\n        sobre ele a seguir:</p>\n    <h3>Definição do tecido</h3>\n    <p class=\"text-sm font-normal leading-6\">A textura única desse material é o resultado do processo de tecelagem que cria pequenos loops na superfície do\n        tecido, proporcionando uma aparência marcante: basta um simples toque para já notarmos!</p>\n    <h3>Composição do tecido</h3>\n    <p class=\"text-sm font-normal leading-6\">O veludo pode ser feito de diversas fibras, incluindo <strong>algodão, seda, viscose e poliéster</strong>. Cada\n        tipo de fibra traz características únicas ao tecido, como brilho, durabilidade e textura.</p>\n    <h3>Tipos de tecido de veludo</h3>\n    <p class=\"text-sm font-normal leading-6\">Existem várias variações de veludo disponíveis e que são usados em diversas aplicações. Os tipos mais comuns\n        incluem o veludo liso, o veludo cotelê, o veludo alemão e o veludo devorê.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Características do tecido veludo</h2>\n    <p class=\"text-sm font-normal leading-6\">Como citamos acima, o veludo é um material muito marcante e único. E isso se deve a características únicas, como:\n    </p>\n    <h3>Textura felpuda</h3>\n    <p class=\"text-sm font-normal leading-6\">A textura felpuda do veludo é sua característica mais conhecida. Essa <strong>suavidade ao toque</strong> cria\n        uma sensação de luxo e conforto quando usado em roupas e decoração.</p>\n    <h3>Brilho acetinado</h3>\n    <p class=\"text-sm font-normal leading-6\">O veludo frequentemente possui um brilho acetinado que varia dependendo das fibras utilizadas em sua fabricação.\n        O brilho suave contribui para a elegância do tecido, que o torna uma escolha bem comum para roupas de festa e\n        ocasiões especiais.</p>\n    <h3>Estrutura encorpada</h3>\n    <p class=\"text-sm font-normal leading-6\">Apesar de sua textura suave, o veludo tem uma estrutura mais encorpada que permite uma variedade de aplicações.\n        Ele mantém sua forma e é ideal para peças estruturadas e detalhes complexos.</p>\n    <h3>Durabilidade</h3>\n    <p class=\"text-sm font-normal leading-6\">O veludo é conhecido por sua durabilidade, o que o torna um tecido para peças de uso frequente. Além disso, com\n        os devidos cuidados, as peças de veludo podem durar muitos anos, mantendo sua beleza e elegância.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Aplicações do tecido veludo</h2>\n    <h3>Moda feminina</h3>\n    <p class=\"text-sm font-normal leading-6\">O veludo é muito utilizado na moda feminina, criando peças de destaque, como vestidos de festa, saias, blazers e\n        acessórios. Isso acontece porque sua textura felpuda e brilho acetinado dão um toque de glamour a qualquer look.\n    </p>\n    <h3>Moda masculina</h3>\n    <p class=\"text-sm font-normal leading-6\">Os homens também podem desfrutar da <strong>elegância do veludo</strong> na moda masculina.</p>\n    <p class=\"text-sm font-normal leading-6\">Blazers de veludo, calças e gravatas são escolhas perfeitas para ocasiões formais.</p>\n    <h3>Moda infantil</h3>\n    <p class=\"text-sm font-normal leading-6\">O veludo também é uma ótima escolha para roupas infantis, proporcionando conforto e estilo aos pequenos. Vestidos\n        de veludo e ternos, por exemplo, tem tudo para fazerem sucesso!</p>\n    <h3>Decoração</h3>\n    <p class=\"text-sm font-normal leading-6\">Além da moda, o veludo também é usado na <strong>decoração</strong>. Sofás, poltronas, cortinas e almofadas de\n        veludo dão um toque de requinte a mais para qualquer ambiente.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Tipos de tecido de veludo</h2>\n    <h3>Veludo cotelê</h3>\n    <p class=\"text-sm font-normal leading-6\">O <a href=\"https://www.maximustecidos.com.br/tecidos/veludo/veludo-cotele\"><strong>veludo cotelê</strong></a> é\n        reconhecido por suas nervuras diagonais, criando uma textura única. É frequentemente usado em calças, blazers e\n        casacos.</p>\n    <h3>Veludo alemão</h3>\n    <p class=\"text-sm font-normal leading-6\">O <a href=\"https://www.maximustecidos.com.br/tecidos/veludo/veludo-alemao\"><strong>veludo alemão</strong></a> é\n        conhecido por sua durabilidade e brilho intenso. É uma escolha ótima para roupas de festa e decorações mais\n        sofisticadas.</p>\n    <h3>Veludo devorê</h3>\n    <p class=\"text-sm font-normal leading-6\">Já o veludo devorê apresenta áreas transparentes que proporcionam um efeito texturizado. É bastante usado em\n        roupas de noite e acessórios.</p>\n    <p class=\"text-sm font-normal leading-6\">Então, gostou de conhecer um pouco mais sobre o tecido de veludo? Este é um material clássico e cheio de estilo\n        que tem tudo para ser um sucesso em suas produções.</p>\n    <p class=\"text-sm font-normal leading-6\">Aproveite para conhecer as opções de tecidos de veludo aqui na <strong>Maximus Tecidos</strong> e explore todo o\n        charme deste material!</p>\n"
+        },
+        {
+          "url": "/tecidos/chiffon",
+          "text": "<h2>Tecido viscose</h2>\n<p>Quando se trata de <strong>tecidos vers&aacute;teis e elegantes</strong>, a <strong>viscose</strong> &eacute; sempre uma escolha e tanto!</p>\n<p>Esse tecido se destaca por ser uma op&ccedil;&atilde;o bem popular para roupas que combinam conforto e estilo para diferentes modelos e tipos de pe&ccedil;as.&nbsp;</p>\n<p>Quer saber mais sobre o <strong>tecido de viscose</strong> e como usar essa mat&eacute;ria-prima em suas cria&ccedil;&otilde;es? Ent&atilde;o n&atilde;o deixe de explorar as viscoses da Maximus!</p>\n<h2>O que &eacute; 100% viscose?</h2>\n<p>A viscose &eacute; uma fibra artificial <strong>criada a partir de celulose vegetal</strong>, muitas vezes derivada de polpa de madeira ou bambu (tamb&eacute;m conhecida como <strong>viscose de bambu</strong>).&nbsp;</p>\n<p>O processo de fabrica&ccedil;&atilde;o envolve a convers&atilde;o dessa celulose em um fio suave e macio, que &eacute; ent&atilde;o fabricado para criar o tecido de viscose. A <strong>100% viscose</strong> &eacute; feita inteiramente dessa fibra, garantindo a maciez e a respirabilidade que a tornaram um dos <a href=\"https://www.maximustecidos.com.br/tecidos\"><strong>tecidos</strong></a> mais apreciados na ind&uacute;stria da moda.</p>\n<h2>Quais as vantagens da viscose?</h2>\n<p>A viscose &eacute; amada por muitos motivos (e com raz&atilde;o)! Basta provar uma pe&ccedil;a com esse tecido para sentir que ele vale muito a pena, sim.</p>\n<p>Uma das caracter&iacute;sticas mais comuns da viscose &eacute; a sua <strong>suavidade ao toque</strong>, que &eacute; compar&aacute;vel &agrave; seda, tornando-a extremamente confort&aacute;vel de usar. Al&eacute;m disso, a viscose &eacute; <strong>altamente respir&aacute;vel</strong>, o que a torna uma escolha excelente para climas quentes, permitindo que a pele respire e mantenha-se fresca.</p>\n<p>Outra grande vantagem da viscose &eacute; a sua capacidade de absor&ccedil;&atilde;o de umidade. Ela pode absorver uma quantidade consider&aacute;vel de umidade sem se sentir &uacute;mida, mantendo voc&ecirc; confort&aacute;vel durante todo o dia. Isso faz da viscose uma<strong> escolha ideal para roupas de ver&atilde;o</strong>, como vestidos, blusas e saias.</p>\n<p>A viscose tamb&eacute;m &eacute; altamente vers&aacute;til em termos de estilos e designs. Ela aceita corantes muito bem, resultando em cores vibrantes e duradouras.&nbsp;</p>\n<p>Al&eacute;m disso, <strong>pode ser facilmente estampada, bordada ou tingida </strong>(tamb&eacute;m conhecida como <strong>viscose de tingimento</strong>), permitindo uma variedade infinita de op&ccedil;&otilde;es criativas. E por &uacute;ltimo, ela &eacute; frequentemente usada em roupas casuais, mas tamb&eacute;m pode ser incorporada em pe&ccedil;as de moda mais sofisticadas sem erro.</p>\n<h2>Diferen&ccedil;a entre viscose e poli&eacute;ster</h2>\n<p>Uma pergunta muito comum antes de comprar esse tecido &eacute;: <strong>qual &eacute; a diferen&ccedil;a entre a viscose e o poli&eacute;ster?&nbsp;</strong></p>\n<p>E a resposta &eacute; a seguinte: a <strong>composi&ccedil;&atilde;o das fibras</strong>. Enquanto a viscose &eacute; uma fibra artificial feita de celulose vegetal, o poli&eacute;ster &eacute; uma fibra de <a href=\"https://www.maximustecidos.com.br/tecidos/tecido-sintetico\"><strong>tecido sint&eacute;tico</strong></a> derivada do petr&oacute;leo. Ou seja, o resultado final s&atilde;o pe&ccedil;as com caracter&iacute;sticas bem diferentes.</p>\n<p>Al&eacute;m disso, a viscose &eacute; conhecida por sua respirabilidade e conforto, como citamos acima, tornando-a uma excelente escolha para roupas de ver&atilde;o e pe&ccedil;as leves. Por outro lado, o poli&eacute;ster pode n&atilde;o ser t&atilde;o respir&aacute;vel, o que o torna uma op&ccedil;&atilde;o melhor para os dias mais frios.</p>\n<h2>Escolha a viscose para suas pe&ccedil;as aqui na Maximus!</h2>\n<p>Ent&atilde;o, gostou de conhecer mais sobre a viscose, esse <strong>tecido super vers&aacute;til e confort&aacute;vel</strong>? Com a viscose, voc&ecirc; pode explorar diferentes cria&ccedil;&otilde;es, abusando da criatividade nas cores, texturas e muito mais.</p>\n<p>Conhe&ccedil;a nossas op&ccedil;&otilde;es de viscose aqui na <strong>Maximus Tecidos</strong> e aproveite!</p>\n"
+        },
+        {
+          "url": "/tecidos/zibeline",
+          "text": "\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Zibeline: O tecido perfeito para looks sofisticados</h2>\n    <p class=\"text-sm font-normal leading-6\">O mundo da moda é vasto, diversificado, e nos oferece muitas opções de tecidos para diferentes produções e\n        ocasiões.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">E quando se trata de criar looks sofisticados e elegantes, o<strong> tecido Zibeline</strong> é uma das opções\n        mais lembradas.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Abuse da criatividade com o Zibeline e saiba mais sobre esse tecido incrível disponível aqui na <strong>Maximus\n            Tecidos</strong>!</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">O que é o tecido Zibeline?</h2>\n    <p class=\"text-sm font-normal leading-6\">O Zibeline, também conhecido como <strong>Zibeline de seda</strong>, é um tecido luxuoso e encorpado que combina\n        a suavidade da seda com a durabilidade de fibras sintéticas. Veja mais detalhes sobre ele a seguir:</p>\n    <h3>Definição do tecido</h3>\n    <p class=\"text-sm font-normal leading-6\">A origem do tecido Zibeline vem do Oriente Médio, onde era usado para criar roupas requintadas. Ao longo dos\n        anos, o Zibeline conquistou o mundo da moda devido à sua beleza única e capacidade de criar peças diferenciadas.\n    </p>\n    <h3>Composição do tecido</h3>\n    <p class=\"text-sm font-normal leading-6\">Esse tecido é composto principalmente por seda, embora versões modernas possam incluir fibras sintéticas, como\n        poliéster, para melhorar a durabilidade e reduzir custos.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">A seda dá ao Zibeline um brilho acetinado único e uma textura suave ao toque sem igual.</p>\n    <h3>Tipos de tecido Zibeline</h3>\n    <p class=\"text-sm font-normal leading-6\">Existem diferentes variações do Zibeline e cada um deles traz detalhes que valem a pena prestar atenção.&nbsp;\n    </p>\n    <p class=\"text-sm font-normal leading-6\">Além do Zibeline de seda tradicional, há também o <strong>Zibeline de poliéster</strong>, que mantém muitas das\n        qualidades do original, inclusive.&nbsp;</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Características do tecido Zibeline</h2>\n    <p class=\"text-sm font-normal leading-6\">Se você ama detalhes, vale a pena notar as características deste material. Olha só!</p>\n    <h3>Brilho acetinado</h3>\n    <p class=\"text-sm font-normal leading-6\">Uma das características mais marcantes do Zibeline é o seu <strong>brilho acetinado</strong>. Ele reflete a luz\n        de maneira deslumbrante, conferindo às roupas um aspecto luxuoso e sofisticado.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">É praticamente uma escolha certa para eventos noturnos e ocasiões especiais.</p>\n    <h3>Estrutura encorpada</h3>\n    <p class=\"text-sm font-normal leading-6\">O Zibeline possui uma estrutura encorpada que <strong>contribui para a sua durabilidade</strong> e capacidade de\n        manter sua forma. Isso o torna adequado para peças de moda que exigem cortes estruturados e detalhes mais\n        complexos.</p>\n    <h3>Caimento perfeito</h3>\n    <p class=\"text-sm font-normal leading-6\">É também um dos <a href=\"https://www.maximustecidos.com.br/tecidos\"><strong>tecidos</strong></a> com caimento\n        mais suave e elegante. Ou seja, ele se adapta ao corpo de forma natural, criando silhuetas que valorizam o\n        corpo.</p>\n    <h3>Durabilidade</h3>\n    <p class=\"text-sm font-normal leading-6\">Devido à combinação de seda e fibras sintéticas, o Zibeline também é altamente durável.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Suas peças de moda podem resistir ao desgaste diário e manter sua aparência sofisticada por muito mais tempo.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Aplicações do tecido Zibeline</h2>\n    <p class=\"text-sm font-normal leading-6\">E em quais tipos de produções é mais utilizado o Zibeline? Confira a seguir as principais aplicações desse\n        tecido:</p>\n    <h3>Moda festa</h3>\n    <p class=\"text-sm font-normal leading-6\">Se você quer saber <strong>qual o melhor tecido para fazer vestido de festa</strong>, não deixe de apostar no\n        Zibeline.</p>\n    <p class=\"text-sm font-normal leading-6\">Ele é amplamente utilizado em <a\n            href=\"https://www.maximustecidos.com.br/livros-moldes-e-reguas/desenho-de-moda\"><strong>desenhos de\n                moda</strong></a> para festa, onde brilho e elegância são essenciais. Vestidos de gala, saias longas e\n        conjuntos de festa são confeccionados com esse tecido, proporcionando às mulheres um visual deslumbrante para\n        eventos especiais.</p>\n    <h3>Moda noiva</h3>\n    <p class=\"text-sm font-normal leading-6\">Noivas que desejam um vestido de casamento que transborde sofisticação muitas vezes optam pelo Zibeline. Isso\n        porque ele traz um<strong> brilho sutil</strong> e estrutura que garantem que a noiva brilhe ainda mais em seu\n        dia especial.</p>\n    <h3>Moda alfaiataria</h3>\n    <p class=\"text-sm font-normal leading-6\">A versatilidade do Zibeline também se estende aos <a\n            href=\"https://www.maximustecidos.com.br/livros-moldes-e-reguas/moldes-de-roupas\"><strong>moldes de\n                roupa</strong></a> da moda alfaiataria.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Blazers, calças e saias de corte impecável são frequentemente confeccionados com esse tecido, proporcionando um\n        visual profissional e elegante.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\">Cuidados com o tecido Zibeline</h2>\n    <p class=\"text-sm font-normal leading-6\">E, claro, é importante tomar certas medidas para que as peças com Zibeline estejam sempre em bom estado de\n        conservação. Para isso, é importante seguir estes cuidados:</p>\n    <h3>Lavagem</h3>\n    <p class=\"text-sm font-normal leading-6\">Para preservar a beleza do Zibeline, é essencial <strong>seguir as instruções de lavagem do fabricante</strong>.\n        Na maioria dos casos, a lavagem a seco é a opção mais segura, garantindo que o tecido mantenha seu brilho e\n        estrutura.</p>\n    <h3>Passar</h3>\n    <p class=\"text-sm font-normal leading-6\">Ao passar peças de Zibeline, use a temperatura mais baixa recomendada no ferro de passar. Evite o contato direto\n        com o tecido, optando por colocar um pano leve entre o ferro e a roupa.</p>\n    <h3>Armazenagem</h3>\n    <p class=\"text-sm font-normal leading-6\">Guarde suas peças de Zibeline em um local fresco e seco, evitando a exposição à luz solar direta. Use cabides\n        almofadados para evitar marcas e vincos indesejados.</p>\n    <p class=\"text-sm font-normal leading-6\">Viu só? O Zibeline é um tecido perfeito para você <strong>criar looks deslumbrantes</strong> em ocasiões\n        especiais.&nbsp;</p>\n    <p class=\"text-sm font-normal leading-6\">Aproveite e conheça nossas opções aqui na Maximus Tecidos e surpreenda em suas produções com o Zibeline!</p>\n"
+        },
+        {
+          "url": "/tecidos/viscose",
+          "text": "\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\"><strong>Malhas por Quilo: Qualidade e Economia em Cada Fio</strong></h2>\n    <p class=\"text-sm font-normal leading-6\">Bem-vindo à nossa seção exclusiva de \"Malhas por Quilo\", onde a qualidade encontra a acessibilidade! Aqui, você\n        descobrirá uma variedade incrível de tecidos de malha vendidos de uma maneira única e econômica - por peso. Esta\n        abordagem inovadora oferece a você a oportunidade de adquirir malhas de alta qualidade a preços muito mais\n        acessíveis do que o convencional.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\"><strong>Variedade para Todas as Necessidades</strong></h2>\n    <p class=\"text-sm font-normal leading-6\">Nossa coleção de malhas por kilo abrange uma gama extensa de cores, padrões e texturas. Seja você um estilista em\n        busca de tecidos únicos para suas criações, um artesão procurando materiais de qualidade para seus projetos de\n        costura, ou simplesmente alguém que aprecia a arte da moda e do faça-você-mesmo, temos algo especial para você.\n    </p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\"><strong>Economia e Sustentabilidade</strong></h2>\n    <p class=\"text-sm font-normal leading-6\">Além de ser economicamente vantajoso, comprar malhas por kilo é uma escolha sustentável. Ao optar por tecidos\n        vendidos desta forma, você contribui para a redução do desperdício têxtil e apoia práticas de consumo mais\n        conscientes. Muitas vezes, estas malhas são excedentes de produção ou finais de coleção, o que significa que\n        você estará adquirindo produtos de qualidade.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\"><strong>Economize Mais, Crie Mais com Malhas por Quilo</strong></h2>\n    <p class=\"text-sm font-normal leading-6\">Na Maximus Tecidos, entendemos que cada projeto de costura é único e, muitas vezes, o custo do material pode ser\n        um limitador para a criatividade. É por isso que nossas \"Malhas por Kilo\" são a solução perfeita para\n        costureiros, artesãos e designers que buscam qualidade sem comprometer o orçamento.</p>\n    <h3><strong>1. Economia Incomparável</strong></h3>\n    <p class=\"text-sm font-normal leading-6\">Ao comprar malhas por quilo, você paga pelo peso, não pela extensão. Isso significa que você pode obter mais\n        tecido por menos, especialmente comparado à compra por metro. Esta abordagem é ideal para quem procura maximizar\n        recursos, permitindo investir em uma variedade maior de tecidos sem exceder o orçamento.</p>\n    <h3><strong>2. Perfeito para Grandes Projetos</strong></h3>\n    <p class=\"text-sm font-normal leading-6\">Se você está trabalhando em um projeto grande, como uma coleção de moda, decoração de interiores ou peças\n        personalizadas, comprar malhas por kilo representa uma economia significativa. Com este método, o custo por peça\n        diminui, tornando seus projetos grandes mais viáveis financeiramente.</p>\n    <h3><strong>3. Ideal para Protótipos e Pequenas Séries</strong></h3>\n    <p class=\"text-sm font-normal leading-6\">Para designers e artesãos que frequentemente criam protótipos ou peças em pequenas séries, a flexibilidade de\n        comprar apenas a quantidade necessária de tecido sem desperdício é uma grande vantagem. Além disso, a\n        diversidade de tecidos disponíveis oferece um campo fértil para experimentação e inovação.</p>\n    <h3><strong>4. Sustentabilidade e Redução de Desperdício</strong></h3>\n    <p class=\"text-sm font-normal leading-6\">Além de ser econômico, comprar malhas por quilo é uma escolha sustentável. Ao aproveitar tecidos que poderiam ser\n        descartados, você está contribuindo para um ciclo de moda mais sustentável, reduzindo o desperdício e promovendo\n        um consumo consciente.</p>\n    <h3><strong>5. Qualidade Garantida</strong></h3>\n    <p class=\"text-sm font-normal leading-6\">Na Maximus Tecidos, garantimos que mesmo vendendo por kilo, a qualidade dos nossos tecidos permanece excepcional.\n        Cada seleção é cuidadosamente escolhida para garantir que você receba apenas o melhor, independentemente do\n        preço por kilo.</p>\n    <h2 class=\"text-2xl font-semibold leading-[29px] text-shadow\"><strong>Maximus Tecidos: O Seu Parceiro Ideal em Malhas por Quilo</strong></h2>\n    <p class=\"text-sm font-normal leading-6\">Compreender as necessidades dos nossos clientes e oferecer soluções que combinem economia, qualidade e\n        sustentabilidade é o nosso compromisso na Maximus Tecidos. Explore nossa seleção de malhas por kilo e descubra\n        como podemos ajudá-lo a transformar suas ideias em realidade, economizando mais em cada compra.</p>\n"
+        }
+      ],
+      "__resolveType": "site/sections/Category/CategoryTextFooter.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Integrations/YourviewsReviewStore.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Integrations/YourviewsIntegrations.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Content/BannerSchool.tsx"
+    },
+    {
+      "__resolveType": "Footer - 05"
+    },
+    {
+      "__resolveType": "Shortcuts - 01"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

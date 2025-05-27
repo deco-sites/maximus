@@ -1,1 +1,1 @@
-export { default } from "deco-sites/maximus/components/ui/YourViewsIntegration.tsx";
+export { default } from "site/components/ui/YourViewsIntegration.tsx";

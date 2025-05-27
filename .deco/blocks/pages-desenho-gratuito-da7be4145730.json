@@ -1,0 +1,28 @@
+{
+  "name": "desenho-gratuito",
+  "path": "/desenho-gratuito",
+  "sections": [
+    {
+      "__resolveType": "Fashion theme"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "title": "Desenho gratuito",
+      "__resolveType": "site/sections/Content/InstitucionalDesenho.tsx"
+    },
+    {
+      "type": "website",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b08ce9a4-1d7b-4117-8620-918a87129ef9",
+      "title": "Desenho Gratuito",
+      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/e815fb0f-cd7b-4bd6-9b0e-34d73c0c8dc8",
+      "__resolveType": "website/sections/Seo/Seo.tsx",
+      "descriptionTemplate": "%s"
+    },
+    {
+      "__resolveType": "Footer - 05"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
