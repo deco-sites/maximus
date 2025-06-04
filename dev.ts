@@ -1,4 +1,5 @@
 import "https://deno.land/x/dotenv@v3.2.2/load.ts";
+import "deco-sites/std/plugins/tailwind/bundler.ts";
 
 import dev from "$fresh/dev.ts";
 import config from "./fresh.config.ts";
