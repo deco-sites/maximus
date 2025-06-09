@@ -7,9 +7,66 @@
 import { Color } from "https://deno.land/x/color@v0.3.0/mod.ts";
 import { useId } from "$store/sdk/useId.ts";
 import { Head } from "$fresh/runtime.ts";
-import googleFontsLoader, {
-  Props as GoogleFontsLoaderProps,
-} from "deco-sites/std/packs/font/loaders/googleFonts.ts";
+import googleFontsLoader from "apps/website/loaders/fonts/googleFonts.ts";
+
+type FirstArg<T> = T extends (...args: [infer A, ...any[]]) => any ? A : never;
+
+type GoogleAppsFont = FirstArg<typeof googleFontsLoader>
+
+type GoogleFontsProps = {
+  fonts: Font[];
+}
+
+export interface Font {
+  /**
+   * @title Font family
+   */
+  fontFamily?:
+    | "None"
+    | "Alegreya"
+    | "Alegreya Sans"
+    | "Archivo Narrow"
+    | "BioRhyme"
+    | "Cardo"
+    | "Chivo"
+    | "Cormorant"
+    | "DM Sans"
+    | "Eczar"
+    | "Fira Sans"
+    | "Inconsolata"
+    | "Inknut Antiqua"
+    | "Inter"
+    | "IBM Plex Sans"
+    | "Karla"
+    | "Lato"
+    | "Libre Baskerville"
+    | "Libre Franklin"
+    | "Lora"
+    | "Manrope"
+    | "Merriweather"
+    | "Montserrat"
+    | "Neuton"
+    | "Open Sans"
+    | "Poppins"
+    | "Playfair Display"
+    | "Proza Libre"
+    | "PT Sans"
+    | "PT Serif"
+    | "Raleway"
+    | "Roboto"
+    | "Roboto Slab"
+    | "Rubik"
+    | "Space Grotesk"
+    | "Space Mono"
+    | "Spectral"
+    | "Source Sans Pro"
+    | "Source Serif Pro"
+    | "Syne"
+    | "Work Sans";
+  /** @title Other (not used) */
+  other?: string;
+}
+
 
 export interface MainColors {
   /**
@@ -239,7 +296,7 @@ export interface CustomFont {
   styleInnerHtml?: string;
 }
 
-export interface Props extends GoogleFontsLoaderProps {
+export interface Props extends GoogleFontsProps {
   mainColors?: MainColors;
   /** These colors are automatically generated with darker tons of their originals */
   complementaryColors?: ComplementaryColors;
@@ -354,7 +411,7 @@ const defaultTheme = {
   "--tab-radius": "0.5rem", // border radius of tabs
 };
 
-type SectionProps = Props & { fontsSheet?: FontSheet[] };
+type SectionProps = Props & { family?: string, styleSheet?: string };
 
 /**
  * This section merges the DESIGN_SYTEM variable with incoming props into a css sheet with variables, i.e.
@@ -371,10 +428,11 @@ function Section({
   buttonStyle,
   fonts,
   customFont,
-  fontsSheet,
+  family,
+  styleSheet
 }: SectionProps) {
   const id = useId();
-  const fontsFamilies = fonts?.map((font) => font.other || font.fontFamily)
+  const fontsFamilies = fonts?.map((font) => font.other || family)
     .join(
       ", ",
     );
@@ -402,18 +460,15 @@ function Section({
   ]
     .map(([cssVar, value]) => `${cssVar}: ${value}`)
     .join(";");
-
   return (
     <Head>
       <meta name="theme-color" content={theme["primary"]} />
       <meta name="msapplication-TileColor" content={theme["primary"]} />
       <meta name="author" content="MAXIMUS TECIDOS" />
-      {fontsSheet?.map((fontSheet) => (
-        <style
-          type="text/css"
-          dangerouslySetInnerHTML={{ __html: fontSheet }}
-        />
-      ))}
+      {styleSheet && (<style
+        type="text/css"
+        dangerouslySetInnerHTML={{ __html: styleSheet }}
+      />)}
       {customFont?.fontFamily && customFont?.styleInnerHtml && (
         <style
           type="text/css"
@@ -625,8 +680,11 @@ export const loader = async (
   props: Props,
   req: Request,
 ): Promise<SectionProps> => {
-  const fontProps = await googleFontsLoader(props, req);
-
+  const googleProps = { fonts: props.fonts?.map((font) => ({
+    family: font.fontFamily,
+    variations: [],
+  })) || [] } as GoogleAppsFont;
+  const fontProps = await googleFontsLoader(googleProps, req);
   return { ...props, ...fontProps };
 };
 

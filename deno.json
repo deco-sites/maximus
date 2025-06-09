@@ -5,13 +5,14 @@
     "gen": "deno run -A dev.ts --gen-only",
     "component": "deno eval 'import \"deco/scripts/component.ts\"'",
     "release": "deno eval 'import \"deco/scripts/release.ts\"'",
-    "update": "deno eval 'import \"deco/scripts/update.ts\"'",
+    "update": "deno run -Ar https://deco.cx/update",
     "check": "deno fmt && deno lint && deno check dev.ts main.ts",
     "install": "deno eval 'import \"deco/scripts/apps/install.ts\"'",
     "uninstall": "deno eval 'import \"deco/scripts/apps/uninstall.ts\"'",
     "bundle": "deno run -A jsr:@deco/deco/scripts/bundle site",
     "build": "deno run -A dev.ts build",
-    "preview": "deno run -A main.ts"
+    "preview": "deno run -A main.ts",
+    "reload": "deno cache -r https://deco.cx/run"
   },
   "githooks": {
     "pre-commit": "check"
@@ -30,14 +31,14 @@
   },
   "imports": {
     "$fresh/": "https://deno.land/x/fresh@1.7.3/",
-    "$live/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.116.2/",
+    "$live/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.117.0/",
     "$store/": "./",
     "@cliffy/prompt": "jsr:@cliffy/prompt@^1.0.0-rc.5",
     "@core/asyncutil": "jsr:@core/asyncutil@^1.0.2",
     "@deco/codemod-toolkit": "jsr:@deco/codemod-toolkit@0.3.4",
-    "@deco/deco": "jsr:@deco/deco@1.115.7",
+    "@deco/deco": "jsr:@deco/deco@1.117.0",
     "@deco/deno-ast-wasm": "jsr:@deco/deno-ast-wasm@^0.5.5",
-    "@deco/dev": "jsr:@deco/dev@1.115.7",
+    "@deco/dev": "jsr:@deco/dev@1.117.0",
     "@deco/durable": "jsr:@deco/durable@0.5.3",
     "@deco/warp": "jsr:@deco/warp@0.3.8",
     "@hono/hono": "jsr:@hono/hono@^4.5.4",
@@ -61,19 +62,18 @@
     "@std/streams": "jsr:@std/streams@^1.0.0",
     "@std/testing": "jsr:@std/testing@^1.0.0",
     "@zaubrik/djwt": "jsr:@zaubrik/djwt@^3.0.2",
-    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.87.0/",
+    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.102.0/",
     "daisyui": "npm:daisyui@3.5.0",
     "deco-sites/fashion/": "./",
     "deco-sites/maximus/": "./",
     "deco-sites/staging/": "./",
     "deco-sites/std/": "https://cdn.jsdelivr.net/gh/deco-sites/std@1.26.8/",
-    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.116.2/",
+    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.117.0/",
     "fast-json-patch": "npm:fast-json-patch@^3.1.1",
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
     "partytown/": "https://cdn.jsdelivr.net/gh/deco-cx/partytown@0.4.8/",
-    "preact": "https://esm.sh/preact@10.19.2",
-    "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.2.0",
-    "preact/": "https://esm.sh/preact@10.19.2/",
+    "preact": "npm:preact@10.23.1",
+    "preact-render-to-string": "npm:preact-render-to-string@6.4.2",
     "simple-git": "npm:simple-git@^3.25.0",
     "site/": "./",
     "std/": "https://deno.land/std@0.190.0/"
@@ -85,5 +85,6 @@
         "recommended"
       ]
     }
-  }
+  },
+  "lock": false
 }

@@ -1,1 +1,11 @@
-{"type":"website","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b664871a-b0f5-4eb7-8679-66712c37f275","title":"Confira toda a coleção da Loja de Tecidos Maximus ","favicon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a9e91e5f-df85-4b45-bae6-f61c3a5a5c4e","canonical":"https://www.maximustecidos.com.br","description":"Encontre tecidos de qualidade na Maximus Tecidos. Nós oferecemos uma ampla variedade de opções a preços baixos. Compre online com facilidade e segurança.","__resolveType":"deco-sites/std/sections/SEO.tsx","titleTemplate":"%s | Maximus Tecidos","descriptionTemplate":"%s"}
+{
+  "type": "website",
+  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b664871a-b0f5-4eb7-8679-66712c37f275",
+  "title": "Confira toda a coleção da Loja de Tecidos Maximus ",
+  "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a9e91e5f-df85-4b45-bae6-f61c3a5a5c4e",
+  "canonical": "https://www.maximustecidos.com.br",
+  "description": "Encontre tecidos de qualidade na Maximus Tecidos. Nós oferecemos uma ampla variedade de opções a preços baixos. Compre online com facilidade e segurança.",
+  "__resolveType": "website/sections/Seo/SeoV2.tsx",
+  "titleTemplate": "%s | Maximus Tecidos",
+  "descriptionTemplate": "%s"
+}
