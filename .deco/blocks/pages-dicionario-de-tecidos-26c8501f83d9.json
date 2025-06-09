@@ -1,0 +1,168 @@
+{
+  "name": "dicionario-de-tecidos",
+  "path": "/dicionario-de-tecidos",
+  "sections": [
+    {
+      "__resolveType": "Fashion theme"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "items": [
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/alfaiataria",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b73b166e-74aa-4d16-aa07-b11684ef00ff",
+          "title": "ALFAIATARIA",
+          "content": "  Os tecidos de alfaiataria nunca saem de moda, pois são elegantes\n                e vestem bem todos os estilos. São mais estruturados, perfeitos\n                para confecção de peças clássicas como ternos e blazers, tanto\n                masculinos quanto femininos. Os tecidos sintéticos amassam menos\n                e possuem excelente custo benefício.\n                <br />\n                <br />\n                <strong>\n                  Sugestões de modelos com tecidos de alfaiataria:\n                </strong>\n                <br />\n                <br />\n\n                - Moda festa: clássicos da alfaiataria como blazer, tubinhos,\n                macacão, além de vestidos e saias;\n\n                - Moda casual: vestidos e saias mais justas ou com volume e\n                blazers."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/algodao",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/e999a78f-f591-4871-ae54-540e35480371",
+          "title": "ALGODÃO",
+          "content": "O tecido 100% algodão é um tecido levíssimo, com o charme e frescor do algodão. Ideal para peças de verão, é perfeito para confecção de camisas, blusas, vestidos e saias. Por ser de fibra natural e muito confortável, também é bastante utilizado na confecção de roupas para bebês.\n<br/>\n<br/>\n<strong>Sugestões de modelos com tecidos de algodão:</strong>\n<br/>\n<br/>\n- Vestidos com mangas ou sem mangas, com bolsos, pregas e recortes, nada muito justo ao corpo;\n<br/>\n<br/>\n- Saias godês, evasês, com bolsos, franzidos, preguinhas, mais soltas ao corpo;\n<br/>\n<br/>\n- Camisas femininas e masculinas;\n<br/>\n<br/>\n- Bermudas, shorts e calças. Podem conter bolsos, pregas e recortes, nada muito justo ao corpo;\n<br/>\n<br/>\n- Macacão e macaquinhos com ou sem mangas."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/cetim",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b67ce930-2d67-4a43-93c5-3494362b1219",
+          "title": "CETIM",
+          "content": "O cetim é um tecido clássico do mundo da moda, conhecido principalmente pelo toque sedoso e brilho acetinado. Ele tem a textura lisa, e tem direito e avesso, onde o avesso é sempre o lado opaco e o direito o lado acetinado. Por ser um tecido com um brilho bem acetinado, ele remete muito aos vestidos de festa. No entanto, qualquer tipo de cetim, pode ser usado em várias peças da moda casual também.\n<br><br>\n<strong>Sugestões de modelos com tecido cetim:</strong>\n<br><br>\n- Blazers, vestidos, saias, calças, blusinhas de cetim são puro charme."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/dicionario-de-tecidos#",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/cc308e1d-72a3-4848-9519-0fb72752dd34",
+          "title": "CHIFFO",
+          "content": "O chiffon é um tecido muito fino, leve e de tato macio. Possui uma superfície ligeiramente irregular e se adapta muito bem a plissados e drapeados. Não chega dar volume às peças, mas proporciona bom caimento. É utilizado, especialmente, em saias bem amplas, esvoaçantes e godês.\n<br><br>\n<strong>Sugestões de modelos com tecido chiffon:</strong>\n<br><br>\n- Moda Festa: saias godês, franzidas, em camadas ou plissadas; vestidos amplos ou mais ajustados ao corpo, que requeiram fluidez;\n<br><br>\n- Moda Casual: blusas, camisas, alguns detalhes em mangas, camisas e até saídas de praia."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/crepe",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c84f2d70-ec3c-4f24-83a1-72434e38ead0",
+          "title": "CREPE",
+          "content": "O crepe é um tecido obtido a partir do ligamento crepe, que utiliza no urdume fios com pouca torção, e na trama fios sobre torcidos dispostos alternadamente em 2s e 2z. O nome \"crepe\" vem do francês \"crespo\", que é por causa do seu toque granuladinho. No geral, ele tem um toque mais seco e até um pouquinho áspero, justamente por causa da superfície granulada. No entanto, hoje temos muitas outras variações do crepe, desde os mais \"crespinhos\" até os mais sedosos.\n<br><br>\n<strong>Sugestões de modelos com tecido crepe:</strong>\n<br><br>\n- É um tecido indicado para a confecção de saias, vestidos e blusas, tanto na moda festa, quanto na moda casual."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/forros",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/386fde65-0d46-4507-bd5f-92b0baac128b",
+          "title": "FORRO",
+          "content": "Os tecidos de forro são utilizados por baixo do tecido principal. O forro influencia diretamente no acabamento, caimento e estrutura das roupas. Uma boa modelagem com o tecido certo para a base e para o forro, e bem acabado deixa uma peça única, sofisticada e elegante. É por isso que não podemos dizer que ele é algo \"a parte\", mas sim que ele é parte da peça.\n<br><br>\n<strong>Sugestões de modelos com tecido para forro:</strong>\n<br><br>\n- É utilizado forro em roupas confeccionadas com tecidos transparentes, como gazar, musseline, chiffon e crepe leve. Também pode ser usado para fazer peças mais simples da moda casual, como vestidos e blusinhas."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/gazar",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/cdacbb16-8ccb-4748-bb51-3d585e2e78a0",
+          "title": "GAZAR",
+          "content": "O gazar é um tecido leve, transparente e muito fluido. Ele se movimenta na mesma medida do vento. A sua textura é lisa, leve, uniforme. É um tecido clássico dos vestidos de festa e vestidos de noiva. Ele compõe peças leves, românticas, com fluidez.\n<br><br>\n<strong>Sugestões de modelos com tecido gazar:</strong>\n<br><br>\n- Linha Wedding (Noivas): vestidos que requeiram fluidez, com saias godês, franzidas ou em camadas;\n<br><br>\n- Moda festa: vestidos para madrinhas e daminhas que requeiram maior fluidez;\n<br><br>\n- Moda casual: camisas, blusinhas, vestidos e saias godês, franzidas e pregueadas que requeiram caimento e fluidez;\n<br><br>\n- Moda praia: saída de praia."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/jacquard-brocados",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b4b0c9b7-6539-434e-a42d-94be00d2c553",
+          "title": "JACQUARD",
+          "content": "O tecido jacquard é muito versátil e que nunca sai de moda, garantindo um toque de requinte e sofisticação às peças. Já o jacquard tradicional, em tecido plano, é um tecido muito nobre, fino e elegante! Usado pelas principais marcas de luxo no mundo todo, rouba a atenção sempre que aparece na passarela, porque além de tudo, é um tecido imponente\n<br><br>\n<strong>Sugestões de modelos com tecido jacquard:</strong>\n<br><br>\n- Linha Alfaiataria: blazers, coletes e camisas femininas; ternos masculinos;\n<br><br>\n- Moda Casual: macaquinho, blusinhas, calças e shorts;\n<br><br>\n- Moda Festa: vestidos para madrinhas e formandas com saias confeccionadas no corte evasê, godê, drapeadas ou com pregas; vestidos e saias justas ao corpo."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/las-puras-e-mistas/la-batida",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b8fe8fe4-94dd-4353-b67c-591758249de8",
+          "title": "LÃ BATIDA",
+          "content": "O tecido Lã Batida é um daqueles clássicos da antiguidade que permanece muito atual. O seu nome é devido ao processo de feitura do tecido. Uma ripa de madeira longa prensa a trama dos fios, de forma que ela fique bem apertada. É um tecido clássico e atemporal, que nunca sai de moda e deixa qualquer look mais elegante!\n<br><br>\n<strong>Sugestões de modelos com tecido lã batida:</strong>\n<br><br>\n- Moda Casual: confecção de casacos, sobretudos, saias e vestidos de inverno."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/lame-e-lurex--brilho-",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/4e9fe723-9209-40bf-94e9-f938598c86f1",
+          "title": "LUREX",
+          "content": "Os tecidos lurex são bem brilhantes, com bastante textura e o caimento varia muito da base do tecido. Para falar do tecido lurex, precisamos entender que o que é chamado de lurex, na verdade é o fio. É o \"fio de lurex\". É por isso que existem tantos tecidos que levam o nome lurex, por exemplo: tricô lurex, malha lurex, crepe lurex e assim por diante.\n<br><br>\n<strong>Sugestões de modelos com tecido lurex:</strong>\n<br><br>\n- Moda Festa: vestidos longos e curtos;\n<br><br>\n- Moda Casual: blusinhas, vestidos e casaquinhos."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/malhas",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/9005090a-77f8-4688-8844-6bf978f97f6e",
+          "title": "MALHAS",
+          "content": "Os tecidos de malha são bem maleáveis, com excelente elasticidade e flexibilidade que se adaptam aos movimentos do corpo. Sua porosidade proporciona uma sensação térmica agradável e confortável. Por ser bem versátil, é um material que pode ser utilizado para confecção de várias peças, especialmente na moda casual.\n<br><br>\n<strong>Sugestões de modelos com tecido de malha:</strong>\n<br><br>\n- Moda Festa: vestidos longos e curtos que fiquem mais justos no corpo;\n<br><br>\n- Moda Casual: blusinhas, saias e vestidos mais justinhos."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/musseline",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/efd63792-b704-46c2-9bfd-8105cc75bd4c",
+          "title": "MUSSELINE",
+          "content": "Antigamente, a musseline era chamada de \"tecido de seda e ouro\". Existem vários tipos de musseline e a característica principal de todas é a textura pigmentada e o caimento fluido. É um tecido mais nobre de textura suave e leve, que a torna muito confortável no corpo. Ela é macia e não enruga, deixando a roupa sempre bem aparente. É ideal para a confecção de trajes que requeiram maior fluidez, pois dá um caimento esvoaçante e charmoso.\n<br><br>\n<strong>Sugestões de modelos com tecido musseline:</strong>\n<br><br>\n- Linha Wedding: vestidos fluidos, com saias esvoaçantes e de caimento delicado; saias godê e evasê; sobreposições, camadas e drapeados;\n<br><br>\n- Moda Festa: vestidos e saias de festa para formatura ou madrinhas e daminhas de casamento, que requeiram maior leveza e fluidez; xales e echarpes;\n<br><br>\n- Moda Casual: saias ventiladas e esvoaçantes em corte godê ou evasê, drapeadas ou franzidas; camisas femininas e blusinhas de alça soltas ao corpo;\n<br><br>\n- Moda íntima: linha de pijamas e lingeries, como baby dolls e robbies."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/organza",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/2a2d8b95-cbe4-4c4e-9e62-51c965bc4a3c",
+          "title": "ORGANZA",
+          "content": "A Organza é um tecido transparente, fino e de trama simples. Ao mesmo tempo em que é leve, também é firme, encorpado e bastante armado. Por isso é muito utilizado na confecção de peças que necessitam de volume. Possui um brilho ligeiramente acetinado e é conhecido por sua variedade de cores. A organza está entre os tecidos mais usados na confecção de saias de vestidos para debutantes, daminhas e festas infantis.\n<br><br>\n<strong>Sugestões de modelos com Organza:</strong>\n<br><br>\n- Moda festa: saias e vestidos para debutantes, daminhas e festas infantis;\n<br><br>\n- Moda casual: casacos como bomber jackets, além de detalhes em roupas como bolsos, mangas, pregas, saiotes, flores e sobreposições.\n<br><br>\n- Decoração: cortinas, embalagens, fitas e fantasias."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/paetes",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/9eb0668f-1e6f-4579-8c6f-a3f87a46a4d8",
+          "title": "PAETÊS",
+          "content": "Brilhoso, chique e marcante. Estas são algumas das qualidades do Paetê, um tecido coberto com lantejoulas. A definição do tecido vem da tradução do termo francês \"pailleté\". A lantejoula é um ornamento que pode ser fabricado de várias cores e formas geométricas, mas normalmente é caracterizada por ser brilhosa e conter um furo no meio para possibilitar a costura nos tecidos. Somente quando as lantejoulas são costuradas no tecido é que passamos a chamá-lo de paetê.\n<br><br>\n<strong>Sugestões de modelos com tecidos de paetê:</strong>\n<br><br>\n- Moda Festa: saias, corpinhos de vestidos, além de modelos de vestidos longos e curtos.\n<br><br>\n- Moda Casual: blusinhas, saias, shorts, calças, casacos e até sapatos."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/rendas-e-tules",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c01aed43-3d5a-4f1a-9c40-7a885ffc5fc1",
+          "title": "RENDAS",
+          "content": "O tecido de renda é todo aquele que forma um desenho com entrelaçamento de fios. Existem vários tipos de rendas. Elas variam de acordo com a forma que são feitas, com o fundo que mantém o desenho unido e com o acabamento delas no tecido. As rendas mais usadas na moda noiva e moda festa são: renda chantilly, renda cordonê, renda guipir e renda tule bordado.\n<br><br>\n<strong>Sugestões de modelos com tecidos de renda:</strong>\n<br><br>\n- Linha Wedding: as rendas brancas ou off-white podem ser usadas em vestidos inteiros ou apenas em algumas partes, ajustados ao corpo ou mais soltinhos e mais rodados; detalhes no véu da noiva;\n<br><br>\n- Moda Festa: vestidos luxuosos para madrinhas, formandas, daminhas e convidadas (longo ou curto)."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/dicionario-de-tecidos#",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b7d34b8b-dbbe-401a-8ece-26bb7b8812a1",
+          "title": "SEDA",
+          "content": "É a fibra natural obtida a partir do bicho-da-seda. Este inseto produz um filamento contínuo de proteína que dá origem a um tecido resistente e muito macio. É uma das matérias-primas mais caras do mundo. Possui um excelente caimento e costuma ser utilizado em peças mais soltinhas e que não ficam muito justas ao corpo.\n<br><br>\n<strong>Sugestões de modelos com tecidos de seda:</strong>\n<br><br>\n- É utilizado na moda festa, mas por ser uma fibra natural, as peças em seda 100% não costumam ser usadas repetidas vezes."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/tafeta",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/71c79467-bbc4-4d90-b2f6-b4b92e58f907",
+          "title": "TAFETÁ",
+          "content": "O tafetá é um dos tecidos mais antigos do mundo e surgiu na Pérsia, há pelo menos, mais de mil anos e como grande parte dos tecidos daquela época, ele era feito a partir da seda. É um tecido mais sequinho, que arma um pouco, mas ainda assim possui um bom caimento. Pode ser mais leve ou mais volumoso, dependendo da composição.\n<br><br>\n<strong>Sugestões de modelos com tecido tafetá:</strong>\n<br><br>\n- Linha wedding (noivas): vestidos estruturados, com saias em volume, sereia ou evasê, drapeados, franzidos, godês;\n<br><br>\n- Moda festa: vestidos para madrinhas, daminhas e formandas."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/algodao/tricoline-estampado",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/ce1e171f-755e-4699-a32d-8b21a301ba56",
+          "title": "TRICOLINE",
+          "content": "O tecido tricoline é conhecido por ser o tecido base da camisaria do mundo todo, atendendo a um mercado cada vez mais exigente e sofisticado no que diz respeito a tecidos leves. Possui um caimento mais estruturado e levemente encorpado. A matéria prima da tricoline é o algodão. Ela pode ser pura ou ter algum outro componente, como o elastano.\n<br><br>\n<strong>Sugestões de modelos com tecido tricoline:</strong>\n<br><br>\n- Moda social: Linha de camisaria (feminina, masculina e infantil);\n<br><br>\n- Moda casual: Blusas com manguinhas, zíper, botões, pences ou preguinhas; vestidos e saias franzidas, godês, com preguinhas (nada muito justo ao corpo)."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/rendas-e-tules/tule-bordado-paete",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/798c9f01-dcb4-4331-b7e7-89ec6009ac08",
+          "title": "TULES E TELAS BORDADAS",
+          "content": "Os tecidos de tules e telas bordados são compostos por desenhos bordados com fios normalmente de poliéster ou poliamida, sobre uma base de tela ou de tule. O caimento depende da composição do tecido base. Se for base de poliamida, o caimento será mais macio e cederá melhor no corpo. Já as de poliéster são mais sequinhos e igualmente confortáveis.\n<br><br>\n<strong>Sugestões de modelos com tecido de tule e tela bordada:</strong>\n<br><br>\n- Linha Wedding: os tules e telas bordadas na cor brancas ou off-white podem ser usadas em vestidos inteiros ou apenas em algumas partes, ajustados ao corpo ou mais soltinhos e mais rodados; detalhes no véu da noiva;\n<br><br>\n- Moda Festa: vestidos luxuosos para madrinhas, formandas, daminhas e convidadas (longo ou curto)."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/veludo",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/46c37411-01ae-415c-a0b1-b0cf3c4ef52c",
+          "title": "VELUDO",
+          "content": "O veludo é um dos tecidos mais antigos do mundo. Surgiu na Índia e em meados do século XV passou a ser fabricado na Itália para uso exclusivo das classes mais nobres. Por isso até hoje é um tecido considerado sinônimo de riqueza e sofisticação. É um tecido democrático que pode ser facilmente utilizado tanto na confecção de vestidos de festa luxuosos quanto em roupas casuais do dia-a-dia.\n<br><br>\n<strong>Sugestões de modelos com Tecido Veludo:</strong>\n<br><br>\n- Moda Festa: vestidos longos e curtos para madrinhas de casamento e formandas.\n<br><br>\n- Moda Casual: blusinhas, saias e vestidos."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/viscose",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/581c9e71-bb90-48f8-bcce-fd646312f746",
+          "title": "VISCOSE",
+          "content": "O tecido viscose é ideal para peças confortáveis e fresquinhas. Por isso, é considerado um dos principais tecidos de verão. Possui um caimento mais leve, soltinho, além de toque suave e às vezes até geladinho. É um tecido gostoso de se vestir, uma vez que proporciona todo o conforto e frescor que as roupas de moda casual necessitam.\n<br><br>\n<strong>Sugestões de modelos com Viscose:</strong>\n<br><br>\n- Moda Casual: blusinhas de alça ou manguinha, vestidos curtos ou longos, mais rodados ou retos e saias com caimento bem leve; camisas e camisetes mais fluidas; calças e pantacourt soltinhas, além de saídas de praia."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/shantung",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/854e575f-42b0-4f86-a83e-d159d444d8cf",
+          "title": "SHANTUNG",
+          "content": "O Shantung é um tecido leve e maleável, de aspecto macio, mesmo sendo mais encorpado. Apresenta pequenas saliências ou \"arranhões\" e possui um dos lados brilhante e outro opaco. É ligeiramente armado e muito confortável. Ideal para confecção de peças estruturadas.\n<br><br>\n<strong>Sugestões de modelos com Shantung:</strong>\n<br><br>\n- Linhas wedding (noivas): é ideal para vestidos estruturados, com saias justas e modelos sereia;\n<br><br>\n- Moda Festa: vestidos de festa para madrinhas de casamento, daminhas e formandas;\n<br><br>\n- Moda Casual: Blusas, saias e vestidos para ocasiões formais ou informais; Calças, shorts e bermudas;\n<br><br>\n- Moda social: Colete, blazer e sobretudo; Terno, paletó, blazer e gravata;\n<br><br>\n- Decoração: utilizado também em almofadas, forros de cadeira, poltronas, sofás e cortinas."
+        },
+        {
+          "link": "https://www.maximustecidos.com.br/tecidos/zibeline",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/295b60ff-325b-44d2-9c1a-04c873fbb9c6",
+          "title": "ZIBELINE",
+          "content": "O nome Zibeline tem origem francesa, apesar de não se ter notícia de sua real origem. O Zibeline de um modo geral é um tecido mais pesado e armado, que possui aspecto nobre. Com um brilho acetinado, bem encorpado, perfeito para os modelos evasês, saias no godê, rodadas e com volumes. Além de servir também para vestidos mais ajustados ao corpo. O zibeline de poliéster tem vários benefícios. O principal deles é a durabilidade. Esse tecido é muito resistente à lavagem, uma vez que não marca e não \"quebra\" como o zibeline de seda pura.\n<br><br>\n<strong>Sugestões de modelos com Zibeline:</strong>\n<br><br>\n- Linha wedding (noivas e daminhas): vestidos estruturados, saias com volume, recortes, godês, sereia ou evasês;\n<br><br>\n- Moda festa: madrinhas e formandas, além de tailleur, calça, corpete, saia com pregas e bolsos, vestidos lisos e estruturados.\n<br><br>\n- Moda social: confecção de ternos femininos e masculinos, conjuntos e calças com corte evidenciado e bastante estrutura."
+        }
+      ],
+      "title": "Dicionário de Tecidos",
+      "__resolveType": "site/sections/Content/InstitucionalDicionario.tsx"
+    },
+    {
+      "__resolveType": "Footer - 05"
+    },
+    {
+      "type": "website",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/0cb2f4e3-98db-4d5a-b0fc-9b274bc2bccc",
+      "title": "Dicionário de Tecidos",
+      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/459bdf96-1fb4-47ac-ac0d-157ccb2b7bce",
+      "__resolveType": "website/sections/Seo/Seo.tsx",
+      "descriptionTemplate": "%sa"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

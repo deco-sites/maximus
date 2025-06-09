@@ -1,0 +1,56 @@
+{
+  "name": "Onde estamos",
+  "path": "/onde-estamos",
+  "sections": [
+    {
+      "__resolveType": "Fashion theme"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "text": "As lojas físicas estão situadas apenas no Paraná e apresentam produtos e atendimento similar à nossa loja online. Estas lojas nos ajudam a aprender ainda mais sobre as necessidades dos clientes, que buscamos atender em todo Brasil através da loja online.",
+      "lojas": [
+        {
+          "call": "Segunda a sexta-feira das 09h às 18h00 Sábados das 09h às 13h",
+          "name": "Toledo - PR",
+          "email": "contato@maximustecidos.com.br",
+          "phone": "(45) 3020-1345",
+          "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.7887215059804!2d-53.74120758438543!3d-24.734132711828167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3958050b52019:0xf0dd8011b58f5e7d!2sAv. MaripÃ¡, 4846 - Jardim Europa, Toledo - PR, 85901-000!5e0!3m2!1spt-BR!2sbr!4v1662312646997!5m2!1spt-BR!2sbr",
+          "address": "Avenida Maripá, 4846 — Centro CEP: 85901-000 ( Toledo - PR )",
+          "whatsapp": "(45) 99906 - 0660",
+          "phoneFormated": "+5545999060660",
+          "whatsappFormated": "+5545999060660",
+          "whatsappSecondary": "(45) 99862 - 0521",
+          "whatsappSecondaryFormated": "+5545998620521"
+        },
+        {
+          "call": "Segunda a sexta-feira das 09h às 18h30 Sábados das 09h às 13h",
+          "name": "Cascavel - PR",
+          "email": "contato@maximustecidos.com.br",
+          "phone": "(045) 3227-9218",
+          "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.387447042985!2d-53.45538736974019!3d-24.952929269175254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d46dc38e834b:0x51b348bfa9a39ed2!2sAv. Brasil, 5472 - Pacaembu, Cascavel - PR, 85812-001!5e0!3m2!1spt-BR!2sbr!4v1662313249977!5m2!1spt-BR!2sbr",
+          "address": "Avenida Brasil, 5472 - Sala 2 — Centro CEP: 85801-000 ( Cascavel - PR )",
+          "whatsapp": "(045) 99906-0707",
+          "phoneFormated": "+554532279218",
+          "whatsappFormated": "+5545999060707"
+        }
+      ],
+      "title": "Onde estamos",
+      "breadcrumb": "Onde estamos",
+      "__resolveType": "site/sections/Content/InstitucionalLojas.tsx"
+    },
+    {
+      "type": "website",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/26662b14-9321-42f4-941e-7ecf9dda48fc",
+      "title": "Onde estamos",
+      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/08b8bb2e-d026-44ff-8b69-6c72b88fabdc",
+      "__resolveType": "website/sections/Seo/Seo.tsx",
+      "descriptionTemplate": "%s"
+    },
+    {
+      "__resolveType": "Footer - 05"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

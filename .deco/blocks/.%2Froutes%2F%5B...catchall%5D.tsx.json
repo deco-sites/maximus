@@ -1,0 +1,18 @@
+{
+  "audiences": [
+    {
+      "__resolveType": "everyone"
+    },
+    {
+      "__resolveType": "everyone"
+    },
+    {
+      "__resolveType": "deco-sites/std/loaders/vtex/proxy.ts",
+      "extraPathsToProxy": []
+    },
+    {
+      "__resolveType": "my-redirects"
+    }
+  ],
+  "__resolveType": "website/handlers/router.ts"
+}

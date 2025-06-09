@@ -16,7 +16,7 @@ import { useId } from "$store/sdk/useId.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import { mapProductToAnalyticsItem } from "$store/utils/productToAnalyticsItem.ts";
 import type { ProductDetailsPage } from "apps/commerce/types.ts";
-import Image from "deco-sites/std/components/Image.tsx";
+import Image from "apps/website/components/Image.tsx";
 import ProductSelector from "./ProductVariantSelector.tsx";
 
 import ColorsSimilars from "$store/islands/ColorsSimilars.tsx";

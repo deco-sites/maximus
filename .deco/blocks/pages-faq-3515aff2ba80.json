@@ -1,0 +1,74 @@
+{
+  "name": "faq",
+  "path": "/Institucional/faq",
+  "sections": [
+    {
+      "__resolveType": "Fashion theme"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "items": [
+        {
+          "answer": "Efetue o seu cadastro antecipado <a href='/login'>clicando aqui</a>",
+          "question": "Primeira compra"
+        },
+        {
+          "answer": "Você pode parcelar em até 6 vezes. Em até 3 vezes não cobramos juros. Compras acima de 3 parcelas, cobramos juros de 1,99% ao mês. O valor mínimo da parcela é de R$ 25,00. Sendo que a primeira parcela será lançada na sua próxima fatura.",
+          "question": "Pagamento com cartões"
+        },
+        {
+          "answer": "O pagamento deve ser realizado até a data de vencimento informada no boleto bancário. Lembramos que não é necessário aguardar o vencimento. A confirmação de pagamento do boleto é feita automaticamente pelo banco, podendo levar até 2 (dois) dias úteis. Caso o boleto não seja pago até a data de vencimento, o pedido será cancelado automaticamente.",
+          "question": "Pagamento em boleto"
+        },
+        {
+          "answer": "Calculando o frete: Conforme for a região do endereço do cliente e o tipo de produto será sua opção de envio, IMPRESSO, PAC, SEDEX ou TRANSPORTADORAS. Serviço disponível para todo o país, com envio de encomenda via terrestre. O prazo de entrega começa a contar a partir da data de postagem do pedido. A confirmação do pagamento pode demorar até 48h, já o corte e a embalagem podem levar até 2 dias úteis. Você receberá seu código de rastreamento pelo e-mail para monitorar a chegada dos produtos.",
+          "question": "Formas de entrega"
+        },
+        {
+          "answer": "Conheça as condições para <a href=\"/Institucional/trocas-e-devolucoes\">Troca e Devolução</a>.",
+          "question": "Troca e devolução de mercadorias"
+        },
+        {
+          "answer": "Em nosso site, a unidade de medida padrão é CENTÍMETROS. Portanto, se você deseja comprar 1 (m), deverá digitar 100 (cm) no box “quantidade”. A metragem mínima para compra é de 40cm. Se estiver com dúvidas sobre a metragem necessária para confeccionar o seu modelo, confira nossas sugestões de quantidade de tecido para os mais diversos tipos de trajes e tamanhos em nossa <a href=\"/Institucional/tabela-de-medidas\">Tabela de Medidas</a>.",
+          "question": "Quantos metros preciso comprar?"
+        },
+        {
+          "answer": "<a href=\"https://www.ecommercebrasil.com.br/artigos/lei-e-commerce-legislacao-para-abrir-uma-loja-virtual/\" target=\"_blank\">Lei do e-commerce</a> | <a href=\"http://www.planalto.gov.br/ccivil_03/leis/l8078.htm\" target=\"_blank\">Código de Defesa do Consumidor</a> | <a href=\"http://www.procon.al.gov.br/legislacao/cartilhadoconsumidor.pdf\" target=\"_blank\">PDF da Cartilha do Consumidor</a> (download) ",
+          "question": "Conheça seus direitos"
+        },
+        {
+          "answer": "Maximus Comércio de Tecidos Eireli | CNPJ: 02.449.665/0001-02 | Inscrição: 90159275-66 AV. Maripá, 4846 - Centro | Toledo - PR | 85901-000",
+          "question": "Dados Maximus Tecidos Finos"
+        },
+        {
+          "answer": "Nossa Central de Atendimento funciona de segunda a sexta-feira das 09h às 18h00 e aos sábados das 09h às 13h. Fone: <a href=\"https://api.whatsapp.com/send?phone=5545999060660\" target=\"_blank\">(45) 3020-1345 | (045) 99906 - 0660</a> | <a href=\"https://api.whatsapp.com/send?phone=5545998620521\" target=\"_blank\">(45) 99862-0521 (WhatsApp)</a>",
+          "question": "Horário de atendimento"
+        },
+        {
+          "answer": "Como estamos sempre em busca de novidades e acompanhando as últimas tendências da moda casual e moda festa, não trabalhamos com catálogos impressos. Os tecidos são facilmente encontrados em nosso site. Todos com fotos profissionais, que representam com fidelidade as características do produto. Também contamos com descrições ricas e completas, feitas para proporcionar a sensação de sentir o tecido como se ele estivesse em suas mãos; além de informações como preço e metragem disponível.",
+          "question": "A Maximus possui catálogo impresso dos produtos?"
+        },
+        {
+          "answer": "Comprar em nosso site, que atualmente é considerado a maior loja online de tecidos finos do Brasil, é uma experiência cômoda, garantida e confiável, mas também temos duas lojas físicas no estado do Paraná.\n        Confira os endereços <a href=\"/Institucional/onde-estamos\">clicando aqui</a>. ",
+          "question": "A Maximus possui lojas físicas?"
+        }
+      ],
+      "title": "FAQ",
+      "__resolveType": "site/sections/Content/InstitucionalFaq.tsx"
+    },
+    {
+      "__resolveType": "Footer - 05"
+    },
+    {
+      "type": "website",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/1e721630-1d6b-4f3b-affc-d05a7e476366",
+      "title": "Faq",
+      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5a135590-2151-4586-8818-b387d097eaab",
+      "__resolveType": "website/sections/Seo/Seo.tsx",
+      "descriptionTemplate": "%s"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
