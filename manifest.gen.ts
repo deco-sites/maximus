@@ -66,10 +66,8 @@ const manifest = {
     "site/sections/Category/CategoryBannerHeader.tsx": $$$$$$2,
     "site/sections/Category/CategoryBannersSlider.tsx": $$$$$$3,
     "site/sections/Category/CategoryList.tsx": $$$$$$4,
-    "site/sections/Category/CategoryText/CategoryText.tsx":
-      $$$$$$5,
-    "site/sections/Category/CategoryText/CategoryTextFooter.tsx":
-      $$$$$$6,
+    "site/sections/Category/CategoryText/CategoryText.tsx": $$$$$$5,
+    "site/sections/Category/CategoryText/CategoryTextFooter.tsx": $$$$$$6,
     "site/sections/Category/CategoryTextFooter.tsx": $$$$$$7,
     "site/sections/Category/CategoryTextHeader.tsx": $$$$$$8,
     "site/sections/Content/BannerSchool.tsx": $$$$$$9,
@@ -101,10 +99,8 @@ const manifest = {
     "site/sections/Images/Carousel.tsx": $$$$$$35,
     "site/sections/Images/ImageGallery.tsx": $$$$$$36,
     "site/sections/Images/ShoppableBanner.tsx": $$$$$$37,
-    "site/sections/Integrations/YourviewsIntegrations.tsx":
-      $$$$$$38,
-    "site/sections/Integrations/YourviewsReviewStore.tsx":
-      $$$$$$39,
+    "site/sections/Integrations/YourviewsIntegrations.tsx": $$$$$$38,
+    "site/sections/Integrations/YourviewsReviewStore.tsx": $$$$$$39,
     "site/sections/Links/LinkTree.tsx": $$$$$$40,
     "site/sections/Links/Shortcuts.tsx": $$$$$$41,
     "site/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$42,
