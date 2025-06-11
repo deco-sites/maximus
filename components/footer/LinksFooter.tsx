@@ -98,24 +98,7 @@ export default function LinksFooter(
                   WhatsApp <span class="mx-[5px]">-</span>
 
                   <a href="https://api.whatsapp.com/send?phone=5545999060660">
-                     (45) 99906 - 0660
-                  </a>
-                </li>
-
-                <li class="flex items-start py-2">
-                  <img
-                    src="https://tfcszo.vteximg.com.br/arquivos/whtasicon.png"
-                    width={14}
-                    height={14}
-                    alt="icone whatsapp"
-                    title="icone whatsapp"
-                    loading="lazy"
-                    class="block mr-3"
-                  />
-                  WhatsApp <span class="mx-[5px]">-</span>
-
-                  <a href="https://api.whatsapp.com/send?phone=5545998620521">
-                     (45) 99862-0521
+                     (45) 99906-0660
                   </a>
                 </li>
               </ul>

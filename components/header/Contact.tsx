@@ -32,12 +32,6 @@ function Contact({
       >
         {whatsApp} 
       </a> 
-      
-      <span class="mx-2">/</span>
-
-        <a class="hover:text-[#23527c] hover:underline transition-[0.2s] z-10" href={`https://api.whatsapp.com/send?phone=5545998620521`} target="_blank">
-          (45) 99862-0521
-        </a>
       </div>
     </div>
   );
