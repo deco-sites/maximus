@@ -9,7 +9,10 @@
         "page": {
           "__resolveType": "deco-sites/std/functions/vtexProductDetailsPage.ts"
         },
-        "titleTemplate": "%s"
+        "titleTemplate": "%s",
+        "structuredData": {
+          "useDataFromSEO": true
+        }
       }
     },
     {
