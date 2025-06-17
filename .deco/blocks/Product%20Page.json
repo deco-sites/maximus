@@ -6,7 +6,10 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/SEOPDPMaximus.tsx",
-        "page": null
+        "page": {
+          "__resolveType": "deco-sites/std/functions/vtexProductDetailsPage.ts"
+        },
+        "titleTemplate": "%s"
       }
     },
     {
