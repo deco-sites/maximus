@@ -9,3 +9,9 @@ Allow: /
 
 User-agent: Googlebot
 Allow: /
+
+User-agent: Googlebot
+Disallow: /*?*sort=
+Disallow: /*&*sort=
+Disallow: /*?*filter.
+Disallow: /*&*filter.
