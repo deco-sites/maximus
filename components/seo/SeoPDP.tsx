@@ -35,7 +35,6 @@ const SeoPDP = (props: Props) => {
 
     const product = props.page?.product;
 
-    // For "Calçados>Masculino>Chinelos & Sandálias", only returns "Chinelos & Sandálias"
     const lastCategory = product.category?.split(DEFAULT_CATEGORY_SEPARATOR)
       .reverse()[0];
 
@@ -46,7 +45,7 @@ const SeoPDP = (props: Props) => {
         category: lastCategory,
         ...(props.structuredData?.useDataFromSEO && {
           name: removeHTMLTags(props.page?.seo?.title),
-          description: removeHTMLTags(props.page?.seo?.description),
+          description: props.page?.seo?.description,
         }),
       },
     } as ProductDetailsPage;
