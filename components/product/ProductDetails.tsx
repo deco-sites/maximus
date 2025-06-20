@@ -519,10 +519,21 @@ function Details({
     item.name === "category"
   );
 
-  const queryCategory = listCategory.reduce((acc, obj) => {
+  const filteredCategories = listCategory?.filter((categoryItem) => {
+    if (!product?.category) {
+      return false;
+    }
+
+    const productCategories = product.category.split('>');
+    
+    return productCategories.includes(categoryItem.value);
+  }) || [];
+
+  const queryCategory = filteredCategories.reduce((acc, obj) => {
     acc += `/${obj.propertyID}`;
     return acc;
   }, "C:");
+  
   const queryUrl = product?.category.toLowerCase().normalize("NFD").replace(
     /[\u0300-\u036f]/g,
     "",
