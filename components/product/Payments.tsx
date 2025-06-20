@@ -19,8 +19,6 @@ function Payments({ price, offers, maxParcels, isFabric }: Props) {
     const parcels = Array(minParcels).fill(minParcels);
     setNumberParcels(parcels);
 
-    console.log({ parcels, maxParcels })
-
   }, [quantityPdp.value]);
 
   return (
