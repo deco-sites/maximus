@@ -204,21 +204,21 @@
               {
                 "alt": "banner",
                 "action": {
-                  "href": "/s?q=tecido+xadrez",
-                  "label": "Tecido Xadrez",
-                  "target": "_self"
+                  "href": "/s?q=sarjadas?q=sarjada",
+                  "target": "_self",
+                  "label": "Tecido Alfaiatria Sarjada:"
                 },
-                "mobile": "https://assets.decocache.com/maximus/a3530e74-1354-481a-9e0a-fa7f9b43a2c1/VITRINE-2-MOBILE-3.webp",
-                "desktop": "https://assets.decocache.com/maximus/996e172c-01bb-4999-8061-f54ea8d2ad89/VITRINE-2-DESKTOP-3.webp"
+                "mobile": "https://assets.decocache.com/maximus/8ae68071-efbd-4598-b334-1a1605c63164/Mobile_Celular-copiar.jpg",
+                "desktop": "https://assets.decocache.com/maximus/8cd0fb0a-76ea-4f13-b994-3c678e48b4e8/Desktop_computador-copiar.jpg"
               }
             ],
             "preload": false,
             "__resolveType": "site/sections/Images/Carousel.tsx"
           },
           {
-            "link": "/s?q=tecido+xadrez",
-            "text": "Confeccione roupas quentinhas sem sair do tema.",
-            "title": "Tecido Xadrez: Vista-se à caráter com estilo!",
+            "link": "/s?q=sarjada",
+            "text": "O aconchego da elegância e sofisticação em cada confecção.",
+            "title": "Tecido Alfaiataria Sarjada: Calor com estilo!",
             "__resolveType": "site/sections/Content/TitleShelf.tsx"
           },
           {
