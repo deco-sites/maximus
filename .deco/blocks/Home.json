@@ -25,16 +25,16 @@
           {
             "images": [
               {
-                "alt": "Arraiá de Ofertas",
+                "alt": "Inverno Maximus",
                 "action": {
                   "href": "/tecidos",
-                  "label": "Arraiá de Ofertas",
                   "title": "Demo Store",
                   "target": "_self",
-                  "subTitle": "Visit our site and start building now:"
+                  "subTitle": "Visit our site and start building now:",
+                  "label": "Inverno Maximus"
                 },
-                "mobile": "https://assets.decocache.com/maximus/0fe40b15-c07e-4d93-85a2-ddfcaf2554b3/MOBILE.jpg",
-                "desktop": "https://assets.decocache.com/maximus/36263791-b0bf-462b-8d59-b4ac3c8a37bb/BANNER.jpg"
+                "mobile": "https://assets.decocache.com/maximus/3ec34567-3fed-49e4-9fe1-0d8afcf37723/19_1.webp",
+                "desktop": "https://assets.decocache.com/maximus/0ef95e75-f921-4b9d-9fee-7343d7e75b25/BANNER_.webp"
               }
             ],
             "preload": true,
