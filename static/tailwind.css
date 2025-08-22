@@ -4123,6 +4123,9 @@ details.collapse summary::-webkit-details-marker {
 .max-h-\[38px\] {
   max-height: 38px;
 }
+.max-h-\[432px\] {
+  max-height: 432px;
+}
 .max-h-\[55px\] {
   max-height: 55px;
 }
@@ -4341,6 +4344,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[42\%\] {
   width: 42%;
+}
+.w-\[454px\] {
+  width: 454px;
 }
 .w-\[48\%\] {
   width: 48%;
@@ -5395,6 +5401,10 @@ details.collapse summary::-webkit-details-marker {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -5550,6 +5560,9 @@ details.collapse summary::-webkit-details-marker {
 .pb-0 {
   padding-bottom: 0px;
 }
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -5700,6 +5713,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .text-\[13px\] {
   font-size: 13px;
+}
+.text-\[14px\] {
+  font-size: 14px;
 }
 .text-\[15px\] {
   font-size: 15px;
