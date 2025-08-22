@@ -16,6 +16,8 @@ function ColorsSimilars({ query, url, isMeter }: any) {
       props: { fq: [query], count: 50 },
     });
 
+    console.log("### invoke #### ", { query, data })
+
     if (!data?.length) return;
 
     const newProducts = data?.map((item: any) => (
@@ -34,8 +36,14 @@ function ColorsSimilars({ query, url, isMeter }: any) {
       <p class="text-[13px] font-medium leading-[19px] tracking-[0] text-[#171413] mb-3">
         <strong>Outras {isMeter ? "cores" : "opções"} disponíveis</strong>
       </p>
-      <div
+      {/* <div
         class={`flex flex-wrap w-full md:min-w-[770px] max-w-full ${
+          seeMore ? "max-h-[1000px]" : "max-h-[142px]"
+        } mt-[15px] mb-5 mx-0 overflow-hidden transition-[0.4s] `}
+      > */}
+
+      <div
+        class={`flex flex-wrap w-full max-w-full ${
           seeMore ? "max-h-[1000px]" : "max-h-[142px]"
         } mt-[15px] mb-5 mx-0 overflow-hidden transition-[0.4s] `}
       >
@@ -55,9 +63,11 @@ function ColorsSimilars({ query, url, isMeter }: any) {
             </div>
           ))}
       </div>
+
       {seeMore
         ? (
-          <div class="w-full md:min-w-[770px] max-w-full mb-4 flex items-center justify-center">
+          // <div class="w-full md:min-w-[770px] max-w-full mb-4 flex items-center justify-center">
+          <div class="w-full max-w-full mb-4 flex items-center justify-center">
             <a
               class="w-[100%] md:w-[220px] h-[40px] max-md:mt-3 bg-[#171413] flex items-center justify-center text-base text-white"
               href={`/${url}`}
