@@ -25,16 +25,16 @@
           {
             "images": [
               {
-                "alt": "Inverno Maximus",
+                "alt": "Liquida Inverno Maximus",
                 "action": {
                   "href": "/tecidos",
                   "title": "Demo Store",
                   "target": "_self",
                   "subTitle": "Visit our site and start building now:",
-                  "label": "Inverno Maximus"
+                  "label": "Liquida Inverno Maximus"
                 },
-                "mobile": "https://assets.decocache.com/maximus/8554d390-4082-483f-af8a-8e29f3f79509/APPCEL-_1_.webp",
-                "desktop": "https://assets.decocache.com/maximus/15cc3ccf-26db-45f4-9c4c-cafbcd6411ff/BANNER_-_1_.webp"
+                "mobile": "https://assets.decocache.com/maximus/ed3269e2-a1fe-4f29-8c54-68168fa1ef44/02-BANNER-MOBILE.webp",
+                "desktop": "https://assets.decocache.com/maximus/47eb7e83-318e-4856-a338-43f73b26f36b/02-BANNER.webp"
               }
             ],
             "preload": true,
