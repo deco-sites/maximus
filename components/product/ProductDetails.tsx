@@ -485,6 +485,8 @@ function Details({
       ? true
       : false;
 
+  console.log(product?.additionalProperty);
+
   const descriptionCurt = product.isVariantOf &&
     product.isVariantOf.additionalProperty?.find((item: any) =>
       item.name === "Descrição Curta"
@@ -707,7 +709,7 @@ function Details({
               {images.map((img, index) => (
                 <li class="min-w-[64px] min-h-[64px]">
                   <Slider.Dot index={index}>
-                    <Image
+                    <img
                       style={{ aspectRatio: ASPECT_RATIO }}
                       class="group-disabled:border-base-300 border "
                       width={64}
