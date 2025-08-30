@@ -667,7 +667,7 @@ function Details({
                     index={index}
                     class="carousel-item w-full"
                   >
-                    <Image
+                    <img
                       class="w-full"
                       sizes="(max-width: 408px) 100vw, 40vw"
                       style={{ aspectRatio: ASPECT_RATIO }}
