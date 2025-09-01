@@ -25,16 +25,16 @@
           {
             "images": [
               {
-                "alt": "Liquida Inverno Maximus",
+                "alt": "Primavera Verão Maximus",
                 "action": {
                   "href": "/tecidos",
                   "title": "Demo Store",
                   "target": "_self",
                   "subTitle": "Visit our site and start building now:",
-                  "label": "Liquida Inverno Maximus"
+                  "label": "Primavera Verão Maximus"
                 },
-                "mobile": "https://assets.decocache.com/maximus/ed3269e2-a1fe-4f29-8c54-68168fa1ef44/02-BANNER-MOBILE.webp",
-                "desktop": "https://assets.decocache.com/maximus/47eb7e83-318e-4856-a338-43f73b26f36b/02-BANNER.webp"
+                "mobile": "https://assets.decocache.com/maximus/8ed1487b-000c-4248-863e-f358d20562dd/02-MOBILE.webp",
+                "desktop": "https://assets.decocache.com/maximus/f791bb76-104a-4918-a580-7147620c7757/02-BANNER.webp"
               }
             ],
             "preload": true,
