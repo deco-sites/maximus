@@ -16,8 +16,8 @@ export interface Banner {
   mobile: LiveImage;
   /** @description Altura para Desktop */
   alturaDesktop?: number;
-   /** @description Altura para Mobile */
-   alturaMobile?: number;
+  /** @description Altura para Mobile */
+  alturaMobile?: number;
   /** @description Image's alt text */
   alt: string;
   action?: {
@@ -73,7 +73,7 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
           src={desktop}
           height={alturaDesktop ?? 454}
           width={1246}
-        /> 
+        />
 
         <Image
           class="w-full 2b"
@@ -85,7 +85,7 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
           loading={lcp ? "eager" : "lazy"}
           target={action?.target ?? "_self"}
         />
-      </Picture>      
+      </Picture>
     </a>
   );
 }
@@ -151,6 +151,7 @@ function Buttons() {
 
 function BannerCarousel({ images, preload, interval }: Props) {
   const id = useId();
+  console.log(id);
 
   return (
     <div
