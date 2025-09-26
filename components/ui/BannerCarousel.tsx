@@ -151,7 +151,6 @@ function Buttons() {
 
 function BannerCarousel({ images, preload, interval }: Props) {
   const id = useId();
-  console.log(id);
 
   return (
     <div
