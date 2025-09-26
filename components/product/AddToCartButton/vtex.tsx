@@ -35,10 +35,6 @@ function AddToCartButton(props: Props) {
     setQuantity(stock);
   }
 
-  console.log("stock", { stock }, quantityPdp.value)
-
-  console.log("#### empty")
-
   const { addItems } = useCart();
 
   const onAddItem = () =>
@@ -110,8 +106,6 @@ function AddToCartButton(props: Props) {
   
       const cource = product?.['COURSE_URL']?.[0] || false;
   
-      console.log("#########", { product }, product?.['COURSE_URL']?.[0])
-
       SET_PRRODUCT_IS_COURCE(cource);
     } catch (error) {
       console.error("Error fetching product data:", error);
