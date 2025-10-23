@@ -25,16 +25,16 @@
           {
             "images": [
               {
-                "alt": "Primavera Verão Maximus",
+                "alt": "Moda Festa ",
                 "action": {
                   "href": "/tecidos",
                   "title": "Demo Store",
                   "target": "_self",
                   "subTitle": "Visit our site and start building now:",
-                  "label": "Primavera Verão Maximus"
+                  "label": "Moda Festa"
                 },
-                "mobile": "https://assets.decocache.com/maximus/4badb4fc-96ae-47e1-a300-40e5285bbe1f/02-MOBILE-outrubro-w.webp",
-                "desktop": "https://assets.decocache.com/maximus/51a66d6d-b02a-4556-98ac-31cae194f78a/02-BANNER-desk-outubro.webp"
+                "mobile": "https://assets.decocache.com/maximus/db686062-f352-4894-bd74-4fc086d1acb0/Banner-_MOBILE_-Site-Promo-Moda-Festa.webp",
+                "desktop": "https://assets.decocache.com/maximus/5ff3a50b-833e-45de-9422-6ac75ed47df5/Banner-_DESKTOP_-Site-Promo-Moda-Festa.webp"
               }
             ],
             "preload": true,
