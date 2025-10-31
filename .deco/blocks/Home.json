@@ -25,16 +25,16 @@
           {
             "images": [
               {
-                "alt": "Moda Festa ",
+                "alt": "Black Maximus",
                 "action": {
                   "href": "/tecidos",
                   "title": "Demo Store",
                   "target": "_self",
                   "subTitle": "Visit our site and start building now:",
-                  "label": "Moda Festa"
+                  "label": "Black Maximus"
                 },
-                "mobile": "https://assets.decocache.com/maximus/db686062-f352-4894-bd74-4fc086d1acb0/Banner-_MOBILE_-Site-Promo-Moda-Festa.webp",
-                "desktop": "https://assets.decocache.com/maximus/865495e0-1ad7-439c-80bb-98584dcfb707/Banner-_1229x448_-Site-Promo-Moda-Festa.webp"
+                "mobile": "https://assets.decocache.com/maximus/cc077458-0b8a-471a-aa9f-6daef9e606a7/Banner-_APP-MOBILE_-Black-Maximus.webp",
+                "desktop": "https://assets.decocache.com/maximus/ced1bdd6-96c8-45b7-8409-7cfbb58533ad/Banner-_DESKTOP_-Black-Maximus.webp"
               }
             ],
             "preload": true,
@@ -90,7 +90,7 @@
           },
           {
             "link": "/novidades",
-            "text": "Só Tecidos de Qualidade",
+            "text": "Tecidos de Qualidade!",
             "title": "Novidades em Tecidos para Confecção de Roupas",
             "__resolveType": "site/sections/Content/TitleShelf.tsx"
           },
@@ -120,14 +120,14 @@
           {
             "images": [
               {
-                "alt": "Confira nossos Tecidos Mais Vendidos",
+                "alt": "Encante nas festas com criações únicas!",
                 "action": {
-                  "href": "/tecidos",
-                  "label": "Tecido",
+                  "href": "/s?q=natalino",
+                  "label": "Natal",
                   "target": "_self"
                 },
-                "mobile": "https://assets.decocache.com/maximus/5157edc4-2cf7-4c57-a4c1-1b4ec3f78db5/VITRINE-1-MOBILE-(1).webp",
-                "desktop": "https://assets.decocache.com/maximus/efbe3fe1-739b-437c-9ece-ccaac212457f/VITRINE-1-DESKTOP-(1).webp"
+                "mobile": "https://assets.decocache.com/maximus/040ddaba-918e-46bc-94e2-1968f63b7e4a/Mobile_Celular-copiar-(1).webp",
+                "desktop": "https://assets.decocache.com/maximus/0eeb3f8e-d332-4985-b9f1-e85224625cd3/Desktop_computador-copiar-(2).webp"
               }
             ],
             "preload": false,
@@ -136,7 +136,7 @@
           {
             "link": "/tecidos",
             "text": "Os Tecidos mais Elegantes da Internet",
-            "title": "Confira nossos Tecidos Mais Vendidos",
+            "title": "Encante nas festas com criações únicas!",
             "__resolveType": "site/sections/Content/TitleShelf.tsx"
           },
           {
@@ -204,22 +204,22 @@
               {
                 "alt": "banner",
                 "action": {
-                  "href": "/s?q=sarjadas?q=sarjada",
+                  "href": "/s?q=viscose",
                   "target": "_self",
-                  "label": "Tecido Alfaiataria Sarjada:"
+                  "label": "Viscose: o charme do movimento!"
                 },
-                "mobile": "https://assets.decocache.com/maximus/8ae68071-efbd-4598-b334-1a1605c63164/Mobile_Celular-copiar.jpg",
-                "desktop": "https://assets.decocache.com/maximus/8cd0fb0a-76ea-4f13-b994-3c678e48b4e8/Desktop_computador-copiar.jpg"
+                "mobile": "https://assets.decocache.com/maximus/27f85a64-a702-4f31-beb6-810c37c0420a/Mobile_amarelo.webp",
+                "desktop": "https://assets.decocache.com/maximus/3d4c1e50-3d20-4926-92d1-625856a71b3f/Desktop-amarelo.webp"
               }
             ],
             "preload": false,
             "__resolveType": "site/sections/Images/Carousel.tsx"
           },
           {
-            "link": "/s?q=sarjada",
-            "text": "O aconchego da elegância e sofisticação em cada confecção.",
-            "title": "Tecido Alfaiataria Sarjada: Calor com estilo!",
-            "__resolveType": "site/sections/Content/TitleShelf.tsx"
+            "link": "/s?q=viscose",
+            "text": "Um toque de frescor e suavidade para o seu dia a dia.",
+            "__resolveType": "site/sections/Content/TitleShelf.tsx",
+            "title": "Viscose, o charme do movimento!"
           },
           {
             "products": {
