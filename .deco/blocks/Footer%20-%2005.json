@@ -675,7 +675,6 @@
     "text": "Voltar ao topo"
   },
   "bannerSchool": {
-    "text": "A Maximus Tecidos acredita no poder da costura e do artesanato como um movimento capaz de transformar vidas. Nossa Escola de Moda Online já conta com 18 Programas de Formação, todos Reconhecidos pelo MEC através da Faculdade de Experts Digitais. Escolha um curso e redescubra a arte de fazer a moda com as próprias mãos.",
     "title": "Maximus Escola de Moda",
     "itemsSchool": [
       {
@@ -804,7 +803,8 @@
         "link": "https://materiais.maximustecidos.com.br/curso-online-costura-para-iniciantes-viviane-alves",
         "text": "Aprenda a Costurar do Zero com Segurança e Crie Peças Incríveis para Você, sua Família ou para Vender e Garantir uma Renda Extra com a Costura!"
       }
-    ]
+    ],
+    "text": "A Maximus Tecidos acredita no poder da costura e do artesanato como um movimento capaz de transformar vidas. Nossa Escola de Moda Online já conta com 22 Programas de Formação, todos com Certificado Profissional. Escolha um curso e redescubra a arte de fazer a moda com as próprias mãos."
   },
   "__resolveType": "site/sections/Footer/Footer.tsx",
   "regionOptions": {
