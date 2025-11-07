@@ -1,0 +1,8 @@
+{
+    "sort": "release:desc",
+    "count": 24,
+    "fuzzy": "enabled",
+    "similars": false,
+    "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+    "selectedFacets": []
+  }

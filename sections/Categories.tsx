@@ -32,6 +32,7 @@ export default function Categories(
 ) {
   const id = useId();
 
+  if (!page) return;
   const { breadcrumb } = page;
   const { itemListElement, numberOfItems } = breadcrumb;
   const nameCurrent = itemListElement[numberOfItems - 1]?.name;

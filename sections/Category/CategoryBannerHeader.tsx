@@ -15,6 +15,7 @@ export interface Props {
 export default function CategoryBannerHeader(
   { page, banners }: Props,
 ) {
+  if(!page) return;
   const { breadcrumb } = page;
   const { itemListElement, numberOfItems } = breadcrumb;
 
