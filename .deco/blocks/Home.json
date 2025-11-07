@@ -222,28 +222,31 @@
             "title": "Viscose, o charme do movimento!"
           },
           {
-            "products": {
-              "fq": [],
-              "ids": [],
-              "sort": "OrderByPriceDESC",
-              "props": {
-                "sort": "",
-                "term": "viscolinho",
-                "count": 20,
-                "collection": "159"
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "products": {
+                "fq": [],
+                "ids": [],
+                "sort": "OrderByPriceDESC",
+                "props": {
+                  "sort": "",
+                  "term": "viscolinho",
+                  "count": 20,
+                  "collection": "159"
+                },
+                "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
               },
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-            },
-            "cardLayout": {
-              "hide": {
-                "cta": false
+              "cardLayout": {
+                "hide": {
+                  "cta": false
+                },
+                "onMouseOver": {
+                  "image": "Change image",
+                  "showFavoriteIcon": true
+                }
               },
-              "onMouseOver": {
-                "image": "Change image",
-                "showFavoriteIcon": true
-              }
-            },
-            "__resolveType": "site/sections/Product/ProductShelf.tsx"
+              "__resolveType": "site/sections/Product/ProductShelf.tsx"
+            }
           },
           {
             "images": [
@@ -268,26 +271,29 @@
             "__resolveType": "site/sections/Content/TitleShelf.tsx"
           },
           {
-            "products": {
-              "fq": [],
-              "ids": [],
-              "sort": "OrderByPriceDESC",
-              "props": {
-                "sort": "",
-                "count": 20,
-                "collection": "161"
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "products": {
+                "fq": [],
+                "ids": [],
+                "sort": "OrderByPriceDESC",
+                "props": {
+                  "sort": "",
+                  "count": 20,
+                  "collection": "161"
+                },
+                "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
               },
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-            },
-            "cardLayout": {
-              "hide": {
-                "cta": false
+              "cardLayout": {
+                "hide": {
+                  "cta": false
+                },
+                "onMouseOver": {
+                  "showFavoriteIcon": true
+                }
               },
-              "onMouseOver": {
-                "showFavoriteIcon": true
-              }
-            },
-            "__resolveType": "site/sections/Product/ProductShelf.tsx"
+              "__resolveType": "site/sections/Product/ProductShelf.tsx"
+            }
           },
           {
             "images": [
@@ -312,26 +318,29 @@
             "__resolveType": "site/sections/Content/TitleShelf.tsx"
           },
           {
-            "products": {
-              "fq": [],
-              "ids": [],
-              "sort": "OrderByPriceDESC",
-              "props": {
-                "sort": "",
-                "count": 20,
-                "collection": "163"
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "products": {
+                "fq": [],
+                "ids": [],
+                "sort": "OrderByPriceDESC",
+                "props": {
+                  "sort": "",
+                  "count": 20,
+                  "collection": "163"
+                },
+                "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
               },
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-            },
-            "cardLayout": {
-              "hide": {
-                "cta": false
+              "cardLayout": {
+                "hide": {
+                  "cta": false
+                },
+                "onMouseOver": {
+                  "showFavoriteIcon": true
+                }
               },
-              "onMouseOver": {
-                "showFavoriteIcon": true
-              }
-            },
-            "__resolveType": "site/sections/Product/ProductShelf.tsx"
+              "__resolveType": "site/sections/Product/ProductShelf.tsx"
+            }
           },
           {
             "images": [
@@ -356,26 +365,29 @@
             "__resolveType": "site/sections/Content/TitleShelf.tsx"
           },
           {
-            "products": {
-              "fq": [],
-              "ids": [],
-              "sort": "OrderByPriceDESC",
-              "props": {
-                "sort": "",
-                "count": 20,
-                "collection": "172"
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "products": {
+                "fq": [],
+                "ids": [],
+                "sort": "OrderByPriceDESC",
+                "props": {
+                  "sort": "",
+                  "count": 20,
+                  "collection": "172"
+                },
+                "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
               },
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-            },
-            "cardLayout": {
-              "hide": {
-                "cta": false
+              "cardLayout": {
+                "hide": {
+                  "cta": false
+                },
+                "onMouseOver": {
+                  "showFavoriteIcon": true
+                }
               },
-              "onMouseOver": {
-                "showFavoriteIcon": true
-              }
-            },
-            "__resolveType": "site/sections/Product/ProductShelf.tsx"
+              "__resolveType": "site/sections/Product/ProductShelf.tsx"
+            }
           },
           {
             "images": [
