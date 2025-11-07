@@ -15,6 +15,8 @@ export interface Props {
 export default function CategoryTextFooter(
   { page, texts }: Props,
 ) {
+
+  if (!page) return;
   const { breadcrumb } = page;
   const { itemListElement, numberOfItems } = breadcrumb;
 
