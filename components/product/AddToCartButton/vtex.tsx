@@ -96,29 +96,29 @@ function AddToCartButton(props: Props) {
   });
 
 
-  const fetchProductLavagemInfo = async () => {
-    try {
-      const response = await fetch(
-        `/api/catalog_system/pub/products/search?fq=skuId:${props.productID}`
-      );
-  
-      if (!response.ok) {
-        throw new Error(`Failed to fetch: ${response.status} ${response.statusText}`);
+  useEffect(() => {
+    const controller = new AbortController();
+    const fetchProductLavagemInfo = async () => {
+      try {
+        const response = await fetch(
+          `/api/catalog_system/pub/products/search?fq=skuId:${props.productID}`,
+          { signal: controller.signal }
+        );
+        if (!response.ok) {
+          throw new Error(`Failed to fetch: ${response.status} ${response.statusText}`);
+        }
+        const [product] = await response.json();
+        const cource = product?.["COURSE_URL"]?.[0] || false;
+        SET_PRRODUCT_IS_COURCE(cource);
+      } catch (error: unknown) {
+        if ((error as any)?.name !== "AbortError") {
+          console.error("Error fetching product data:", error);
+        }
       }
-  
-      const [ product ] = await response.json();
-  
-      const cource = product?.['COURSE_URL']?.[0] || false;
-  
-      console.log("#########", { product }, product?.['COURSE_URL']?.[0])
-
-      SET_PRRODUCT_IS_COURCE(cource);
-    } catch (error) {
-      console.error("Error fetching product data:", error);
-    }
-  };
-
-  fetchProductLavagemInfo();
+    };
+    fetchProductLavagemInfo();
+    return () => controller.abort();
+  }, [props.productID]);
 
   return (
     <>

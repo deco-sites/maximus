@@ -1408,31 +1408,34 @@
           "text": "Contamos com mais de <strong>3 mil tecidos finos</strong> exclusivos e de qualidade para vestidos de <strong>festa</strong>, vestidos de <strong>noiva</strong> e <strong>roupas casuais</strong>. Confira opções de tecidos na Maior Loja de Tecidos Finos Online."
         }
       ],
-      "layout": {
-        "columns": { "mobile": 2, "desktop": 3 },
-        "variant": "aside"
-      },
-      "banners": [
-        {
-          "url": "/aviamentos-e-bordado",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/db318509-03bb-41c9-a533-b65bf9c3e084"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "layout": {
+          "columns": { "mobile": 2, "desktop": 3 },
+          "variant": "aside"
         },
-        {
-          "url": "/tecidos",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/15412e96-9b42-4243-8fd7-35a05ad8a97f"
+        "banners": [
+          {
+            "url": "/aviamentos-e-bordado",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/db318509-03bb-41c9-a533-b65bf9c3e084"
+          },
+          {
+            "url": "/tecidos",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/15412e96-9b42-4243-8fd7-35a05ad8a97f"
+          },
+          {
+            "url": "/livros-moldes-e-reguas",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c9bf3d96-9d40-4066-bdfe-3a078087c051"
+          }
+        ],
+        "columns": {},
+        "variant": "aside",
+        "cardLayout": {
+          "onMouseOver": { "showCta": false, "showFavoriteIcon": true },
+          "elementsPositions": { "favoriteIcon": "Top right" }
         },
-        {
-          "url": "/livros-moldes-e-reguas",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c9bf3d96-9d40-4066-bdfe-3a078087c051"
-        }
-      ],
-      "columns": {},
-      "variant": "aside",
-      "cardLayout": {
-        "onMouseOver": { "showCta": false, "showFavoriteIcon": true },
-        "elementsPositions": { "favoriteIcon": "Top right" }
-      },
-      "__resolveType": "site/sections/Product/SearchResult.tsx"
+        "__resolveType": "site/sections/Product/SearchResult.tsx"
+      }
     },
     {
       "page": {

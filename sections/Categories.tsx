@@ -5,6 +5,10 @@ import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 
+// Simple in-memory cache for category tree to reduce repeated origin fetches per instance
+let cachedCategoryTree: { data: any; cachedAt: number } | null = null;
+const CATEGORY_TREE_TTL_MS = 6 * 60 * 60 * 1000; // 6h
+
 // Props type that will be configured in deco.cx's Admin
 export interface Props {
   page: ProductListingPage | null;
@@ -14,15 +18,28 @@ export async function loader(
   { page }: Props,
   _req: Request,
 ) {
+  const now = Date.now();
+  if (
+    cachedCategoryTree &&
+    now - cachedCategoryTree.cachedAt < CATEGORY_TREE_TTL_MS
+  ) {
+    return { page, data: cachedCategoryTree.data };
+  }
+
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 8000);
+
   const data: any = await fetch(
     "https://tfcszo.myvtex.com/api/catalog_system/pub/category/tree/3",
-  ).then(
-    (r) => {
-      if (r.ok) {
-        return r.clone().json();
-      }
-    },
-  );
+    { signal: controller.signal },
+  ).then((r) => {
+    if (r.ok) {
+      return r.clone().json();
+    }
+    return [];
+  }).catch(() => []).finally(() => clearTimeout(timeoutId));
+
+  cachedCategoryTree = { data, cachedAt: now };
 
   return { page, data };
 }

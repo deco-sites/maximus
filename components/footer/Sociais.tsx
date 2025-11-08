@@ -36,6 +36,7 @@ export default function Sociais({ content }: {
                           alt="social"
                           title="social"
                           width={item?.size}
+                          height={item?.size}
                           loading="lazy"
                         />
                       </a>

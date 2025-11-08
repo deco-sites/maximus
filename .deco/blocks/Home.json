@@ -95,27 +95,30 @@
             "__resolveType": "site/sections/Content/TitleShelf.tsx"
           },
           {
-            "products": {
-              "fq": [],
-              "sort": "OrderByPriceDESC",
-              "props": {
-                "sort": "",
-                "term": "tecido ",
-                "count": 20,
-                "similars": false,
-                "collection": "158"
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "products": {
+                "fq": [],
+                "sort": "OrderByPriceDESC",
+                "props": {
+                  "sort": "",
+                  "term": "tecido ",
+                  "count": 20,
+                  "similars": false,
+                  "collection": "158"
+                },
+                "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
               },
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-            },
-            "cardLayout": {
-              "hide": {
-                "cta": false
+              "cardLayout": {
+                "hide": {
+                  "cta": false
+                },
+                "onMouseOver": {
+                  "showFavoriteIcon": true
+                }
               },
-              "onMouseOver": {
-                "showFavoriteIcon": true
-              }
-            },
-            "__resolveType": "site/sections/Product/ProductShelf.tsx"
+              "__resolveType": "site/sections/Product/ProductShelf.tsx"
+            }
           },
           {
             "images": [

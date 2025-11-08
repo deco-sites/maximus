@@ -3,6 +3,8 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_app from "./routes/_app.tsx";
+import * as $favicon_ico from "./routes/favicon.ico.ts";
+import * as $livez from "./routes/livez.ts";
 import * as $AddCombinador from "./islands/AddCombinador.tsx";
 import * as $AddToCartButton_vnda from "./islands/AddToCartButton/vnda.tsx";
 import * as $AddToCartButton_vtex from "./islands/AddToCartButton/vtex.tsx";
@@ -41,6 +43,8 @@ import type { Manifest } from "$fresh/server.ts";
 const manifest = {
   routes: {
     "./routes/_app.tsx": $_app,
+    "./routes/favicon.ico.ts": $favicon_ico,
+    "./routes/livez.ts": $livez,
   },
   islands: {
     "./islands/AddCombinador.tsx": $AddCombinador,
