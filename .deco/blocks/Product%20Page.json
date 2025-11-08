@@ -11,42 +11,48 @@
     },
     { "__resolveType": "Header - 01" },
     {
-      "page": {
-        "__resolveType": "PDP Loader"
-      },
-      "variant": "slider",
-      "LinksPDF": [
-        {
-          "link": "maquina-de-costura-ultraloque-14HD854.pdf",
-          "skuId": "9632"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "page": {
+          "__resolveType": "PDP Loader"
         },
-        { "link": "maquina-de-costura-eletronica-CE677.pdf", "skuId": "9623" },
-        { "link": "Singer_Manual_S0105.pdf", "skuId": "9585" },
-        {
-          "link": "maquina-de-costura-singer-23-pontos-m3205.pdf",
-          "skuId": "9597"
-        },
-        { "link": "maquina-de-costura-singer-m1605.pdf", "skuId": "9622" },
-        { "link": "maquina-de-costura-eletronica-C7255.pdf", "skuId": "9628" },
-        {
-          "link": "maquina-de-costura-singer-23-pontos-m3205.pdf",
-          "skuId": "9597"
-        },
-        {
-          "link": "\tmaquina-de-costura-mecanica-manual-M2405 (1).pdf",
-          "skuId": "9348"
-        }
-      ],
-      "__resolveType": "site/sections/Product/ProductDetails.tsx"
+        "variant": "slider",
+        "LinksPDF": [
+          {
+            "link": "maquina-de-costura-ultraloque-14HD854.pdf",
+            "skuId": "9632"
+          },
+          { "link": "maquina-de-costura-eletronica-CE677.pdf", "skuId": "9623" },
+          { "link": "Singer_Manual_S0105.pdf", "skuId": "9585" },
+          {
+            "link": "maquina-de-costura-singer-23-pontos-m3205.pdf",
+            "skuId": "9597"
+          },
+          { "link": "maquina-de-costura-singer-m1605.pdf", "skuId": "9622" },
+          { "link": "maquina-de-costura-eletronica-C7255.pdf", "skuId": "9628" },
+          {
+            "link": "maquina-de-costura-singer-23-pontos-m3205.pdf",
+            "skuId": "9597"
+          },
+          {
+            "link": "\tmaquina-de-costura-mecanica-manual-M2405 (1).pdf",
+            "skuId": "9348"
+          }
+        ],
+        "__resolveType": "site/sections/Product/ProductDetails.tsx"
+      }
     },
     { "__resolveType": "analytics" },
     {
-      "title": "Quem comprou, também comprou",
-      "products": {
-        "crossSelling": "whosawalsosaw",
-        "__resolveType": "deco-sites/std/functions/vtexLegacyRelatedProductsLoader.ts"
-      },
-      "__resolveType": "site/sections/Product/ProductShelfPdp.tsx"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "title": "Quem comprou, também comprou",
+        "products": {
+          "crossSelling": "whosawalsosaw",
+          "__resolveType": "deco-sites/std/functions/vtexLegacyRelatedProductsLoader.ts"
+        },
+        "__resolveType": "site/sections/Product/ProductShelfPdp.tsx"
+      }
     },
     { "__resolveType": "Footer - 05" },
     {

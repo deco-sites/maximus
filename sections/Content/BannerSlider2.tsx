@@ -61,3 +61,13 @@ export default function BannerSlider2(
     </div>
   );
 }
+
+export const LoadingFallback = () => (
+	<div class="w-full my-9 px-3 flex md:hidden justify-start gap-3 overflow-auto no-scrollbar">
+		{[0, 1, 2, 3, 4].map((i) => (
+			<div class="min-w-[150px]">
+				<div class="animate-pulse bg-[#e5e7eb] w-[150px] h-[80px] rounded" key={i}></div>
+			</div>
+		))}
+	</div>
+);

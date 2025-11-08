@@ -6,17 +6,20 @@
     { "__resolveType": "Fashion theme" },
     { "__resolveType": "Header - 01" },
     {
-      "page": {
-        "__resolveType": "SearchLoader"
-      },
-      "layout": {
-        "columns": { "mobile": 2, "desktop": 4 },
-        "variant": "aside"
-      },
-      "columns": {},
-      "variant": "aside",
-      "cardLayout": { "onMouseOver": { "showFavoriteIcon": true } },
-      "__resolveType": "site/sections/Product/SearchResult.tsx"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "page": {
+          "__resolveType": "SearchLoader"
+        },
+        "layout": {
+          "columns": { "mobile": 2, "desktop": 4 },
+          "variant": "aside"
+        },
+        "columns": {},
+        "variant": "aside",
+        "cardLayout": { "onMouseOver": { "showFavoriteIcon": true } },
+        "__resolveType": "site/sections/Product/SearchResult.tsx"
+      }
     },
     { "__resolveType": "Footer - 05" },
     { "__resolveType": "Shortcuts - 01" },

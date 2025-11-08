@@ -1,4 +1,5 @@
 import { useSignal } from "@preact/signals";
+import { useEffect } from "preact/hooks";
 
 export interface Props {
     productId: string;
@@ -8,20 +9,30 @@ function FilePdf({ productId }: Props) {
     const idItem = useSignal('');
     const fileItem = useSignal('');
 
-   const fetchFile = async () => {
- try {
-    await fetch("https://secure.maximustecidos.com.br/api/dataentities/FM/search?productId="+productId+"&_fields=id,productId,file").then(response => response.json()).then(response => {
-        if(response){             
-            idItem.value = response[0]?.id;
-            fileItem.value = response[0]?.file;
-        }       
-    })
- } catch (err) {
-    console.log(err)
- }
-    }
-
-    fetchFile();
+    useEffect(() => {
+        const controller = new AbortController();
+        const fetchFile = async () => {
+            try {
+                const res = await fetch(
+                    "https://secure.maximustecidos.com.br/api/dataentities/FM/search?productId=" +
+                        productId +
+                        "&_fields=id,productId,file",
+                    { signal: controller.signal },
+                );
+                const response = await res.json();
+                if (response) {
+                    idItem.value = response[0]?.id;
+                    fileItem.value = response[0]?.file;
+                }
+            } catch (err: unknown) {
+                if ((err as any)?.name !== "AbortError") {
+                    console.log(err);
+                }
+            }
+        };
+        fetchFile();
+        return () => controller.abort();
+    }, [productId]);
     
 
   return (

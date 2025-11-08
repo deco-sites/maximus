@@ -28,6 +28,13 @@ export interface Props {
   layout?: layout;
 }
 
+// In-memory cache by token to reduce Graph API hits within instance lifetime
+const instagramCache = new Map<
+  string,
+  { data: Data[]; cachedAt: number }
+>();
+const INSTAGRAM_TTL_MS = 10 * 60 * 1000; // 10 minutes
+
 export async function loader(
   {
     title,
@@ -37,17 +44,35 @@ export async function loader(
   }: Props,
   _req: Request,
 ) {
+  const now = Date.now();
+  const cached = instagramCache.get(facebookToken);
+  if (cached && now - cached.cachedAt < INSTAGRAM_TTL_MS) {
+    return {
+      data: cached.data.slice(0, layout?.numberOfPosts ?? 12),
+      title,
+      description,
+      layout,
+    };
+  }
+
   const fields = ["media_url", "media_type", "permalink"];
   const joinFields = fields.join(",");
   const url =
     `https://graph.instagram.com/me/media?access_token=${facebookToken}&fields=${joinFields}`;
 
-  const { data } = (await fetch(url).then((r) => r.json()).catch((err) => {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 8000);
+
+  const { data } = (await fetch(url, { signal: controller.signal }).then((r) =>
+    r.json()
+  ).catch((err) => {
     console.error("error fetching posts from instagram", err);
     return { data: [] };
-  })) as {
+  }).finally(() => clearTimeout(timeoutId))) as {
     data: Data[];
   };
+
+  instagramCache.set(facebookToken, { data, cachedAt: now });
 
   return {
     data: data.slice(0, layout?.numberOfPosts ?? 12),
