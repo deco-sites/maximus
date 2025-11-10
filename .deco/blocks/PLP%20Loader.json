@@ -1,7 +1,1 @@
-{
-    "sort": "",
-    "count": 24,
-    "fuzzy": "automatic",
-    "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
-    "selectedFacets": []
-  }
+{"sort":"","count":24,"fuzzy":"automatic","__resolveType":"vtex/loaders/intelligentSearch/productListingPage.ts","selectedFacets":[]}
