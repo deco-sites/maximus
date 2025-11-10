@@ -81,3 +81,7 @@ _fresh/
 _docker_deps.ts
 .metadata/*
 .deco/metadata/*
+# Deco files
+_docker_deps.ts
+.metadata/*
+.deco/metadata/*

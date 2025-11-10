@@ -1,7 +1,1 @@
-{
-  "slug": {
-    "param": "slug",
-    "__resolveType": "deco-sites/std/functions/requestToParam.ts"
-  },
-  "__resolveType": "vtex/loaders/legacy/productDetailsPage.ts"
-}
+{"slug":{"param":"slug","__resolveType":"deco-sites/std/functions/requestToParam.ts"},"__resolveType":"vtex/loaders/legacy/productDetailsPage.ts"}
