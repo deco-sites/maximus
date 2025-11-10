@@ -204,22 +204,22 @@
               {
                 "alt": "banner",
                 "action": {
-                  "href": "/s?q=viscose",
+                  "href": "/tecidos/zibeline",
                   "target": "_self",
-                  "label": "Viscose: o charme do movimento!"
+                  "label": "Zibeline, o tecido ideal para moda festa"
                 },
-                "mobile": "https://assets.decocache.com/maximus/27f85a64-a702-4f31-beb6-810c37c0420a/Mobile_amarelo.webp",
-                "desktop": "https://assets.decocache.com/maximus/3d4c1e50-3d20-4926-92d1-625856a71b3f/Desktop-amarelo.webp"
+                "mobile": "https://assets.decocache.com/maximus/1f7471bd-1594-402b-a6d6-cb9fe6d77dc9/VITRINE-2-MOBILE.webp",
+                "desktop": "https://assets.decocache.com/maximus/a53d3943-8d69-47b2-80c1-5fb92e598a18/VITRINE-2-DESKTOP.webp"
               }
             ],
             "preload": false,
             "__resolveType": "site/sections/Images/Carousel.tsx"
           },
           {
-            "link": "/s?q=viscose",
-            "text": "Um toque de frescor e suavidade para o seu dia a dia.",
+            "link": "/tecidos/zibeline",
             "__resolveType": "site/sections/Content/TitleShelf.tsx",
-            "title": "Viscose, o charme do movimento!"
+            "title": "Zibeline, o tecido ideal para a moda festa",
+            "text": "Confeccione peças sofisticadas com um toque de brilho encantador"
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
