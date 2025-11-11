@@ -462,6 +462,10 @@
           "label": "Neoprene"
         },
         {
+          "href": "/tecidos/noivas",
+          "label": "Noivas"
+        },
+        {
           "href": "/tecidos/organza",
           "label": "Organza"
         },
@@ -514,8 +518,8 @@
           "label": "Viscose"
         },
         {
-          "href": "/tecidos/zibeline",
-          "label": "Zibeline"
+          "label": "Zibeline",
+          "href": "/tecidos/zibeline"
         }
       ]
     },
