@@ -676,8 +676,6 @@ function Details({
                       title={img.alternateName}
                       width={WIDTH}
                       height={HEIGHT}
-                      // Preload LCP image for better web vitals
-                      preload={index === 0}
                       loading={index === 0 ? "eager" : "lazy"}
                     />
                   </Slider.Item>
@@ -762,7 +760,7 @@ function Details({
       <ul class="carousel carousel-center gap-6">
         {[images[0], images[1] ?? images[0]].map((img, index) => (
           <li class="carousel-item min-w-[100vw] sm:min-w-[24vw]">
-            <Image
+            <img
               sizes="(max-width: 640px) 100vw, 24vw"
               style={{ aspectRatio: ASPECT_RATIO }}
               src={img.url!}
@@ -770,8 +768,6 @@ function Details({
               title={img.alternateName}
               width={WIDTH}
               height={HEIGHT}
-              // Preload LCP image for better web vitals
-              preload={index === 0}
               loading={index === 0 ? "eager" : "lazy"}
             />
           </li>
