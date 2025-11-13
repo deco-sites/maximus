@@ -141,6 +141,11 @@
           "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5cefb17b-8780-4813-899f-d9f08f81d49f"
         },
         {
+          "url": "/tecidos/noivas",
+          "image": "https://assets.decocache.com/maximus/1608433e-b88f-46b5-8d27-8af72430d97e/1-TECIDOS-NOIVAS-DESKTOP.webp",
+          "imageMobile": "https://assets.decocache.com/maximus/a0ab01ae-2fa4-4ef7-94ef-71e47de4daf8/1-TECIDOS-NOIVAS-MOBILE.webp"
+        },
+        {
           "url": "/tecidos/organza",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/1b9ba506-f516-4ff7-8ae6-0c322ca884af",
           "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5f9e95bb-2916-4ae7-aea1-38684597e9d5"
@@ -850,11 +855,6 @@
           "url": "/livros-moldes-e-reguas/moldes-de-roupas/moldes-idineia-merci",
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/cbab0790-9dc9-4bc6-ab66-a72e617d95d3/Prancheta-3.jpg",
           "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/231a5814-acc5-4fa5-bb1b-ced5f551e016/Prancheta-4.jpg"
-        },
-        {
-          "url": "/tecidos/noivas",
-          "image": "https://assets.decocache.com/maximus/1608433e-b88f-46b5-8d27-8af72430d97e/1-TECIDOS-NOIVAS-DESKTOP.webp",
-          "imageMobile": "https://assets.decocache.com/maximus/a0ab01ae-2fa4-4ef7-94ef-71e47de4daf8/1-TECIDOS-NOIVAS-MOBILE.webp"
         }
       ],
       "urlCurrent": "t",
