@@ -246,7 +246,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
           aria-label="hidden view product"
           class="grid grid-cols-1 grid-rows-1 w-full"
         >
-          <Image
+          <img
             src={front.url!}
             alt={name}
             title={name}
@@ -258,13 +258,12 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
                 : ""
             }`}
             sizes="(max-width: 640px) 50vw, 20vw"
-            preload={preload}
             loading={preload ? "eager" : "lazy"}
             decoding="async"
           />
           {(!l?.onMouseOver?.image ||
             l?.onMouseOver?.image == "Change image") && (
-            <Image
+            <img
               src={back?.url ?? front.url!}
               alt={name}
               title={name}
