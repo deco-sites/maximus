@@ -2,7 +2,9 @@
   "name": "Categories",
   "path": "/*",
   "sections": [
-    { "__resolveType": "Fashion theme" },
+    {
+      "__resolveType": "Fashion theme"
+    },
     {
       "type": "website",
       "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/2bc8b7af-83c8-4a1f-b1eb-207fbf11a0c8",
@@ -13,7 +15,9 @@
       "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/e16fbe5c-67df-41ed-a4b3-4772a6ea4f72",
       "__resolveType": "site/sections/Content/SeoPlp2.tsx"
     },
-    { "__resolveType": "Header - 01" },
+    {
+      "__resolveType": "Header - 01"
+    },
     {
       "page": {
         "__resolveType": "PLP Loader"
@@ -846,12 +850,19 @@
           "url": "/livros-moldes-e-reguas/moldes-de-roupas/moldes-idineia-merci",
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/cbab0790-9dc9-4bc6-ab66-a72e617d95d3/Prancheta-3.jpg",
           "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/231a5814-acc5-4fa5-bb1b-ced5f551e016/Prancheta-4.jpg"
+        },
+        {
+          "url": "/tecidos/noivas",
+          "image": "https://assets.decocache.com/maximus/1608433e-b88f-46b5-8d27-8af72430d97e/1-TECIDOS-NOIVAS-DESKTOP.webp",
+          "imageMobile": "https://assets.decocache.com/maximus/a0ab01ae-2fa4-4ef7-94ef-71e47de4daf8/1-TECIDOS-NOIVAS-MOBILE.webp"
         }
       ],
       "urlCurrent": "t",
       "__resolveType": "site/sections/Category/CategoryBannerHeader.tsx"
     },
-    { "__resolveType": "Category Banner - 01" },
+    {
+      "__resolveType": "Category Banner - 01"
+    },
     {
       "page": {
         "__resolveType": "PLP Loader"
@@ -965,7 +976,10 @@
           "url": "/tecidos/tecido-sintetico",
           "text": "Estes tecidos sintéticos nunca saem de moda. São tendência em todo inverno, por serem tecidos estilosos e quentinhos. São politicamente corretos sem perder a sofisticação. A Maximus Tecidos pensando na responsabilidade com o meio ambiente e com os animais, trabalha com tecidos puramente sintéticos, sem perder a sofisticação. Confira as opções de Tecido Sintético e outros tecidos de inverno na Maior Loja de Tecidos Finos Online:"
         },
-        { "url": "/tecidos/tecidos-para-decoracao", "text": " " },
+        {
+          "url": "/tecidos/tecidos-para-decoracao",
+          "text": " "
+        },
         {
           "url": "/tecidos/tules-lisos",
           "text": "Os Tules lisos muito usados em sobreposições nas saias de moda festa, além de aparecer em babados e detalhes das roupas da moda casual. O tecido tule ganhou este nome pela sua cidade de origem, Tulle na França em meados de 1700. Anos mais tarde se tornou conhecido por ser encorporado nos figurinos de ballet. Na Maior Loja de Tecidos Finos Online você encontra várias opções de tule: Tule Ilusione, Tule Filó, Tule Francês, Tule Mince e mais!"
@@ -994,7 +1008,10 @@
           "url": "/livros-moldes-e-reguas/livros-e-apostilas",
           "text": "Nossa editora própria, chamada Clube da Costureira, conta com mais de 10 títulos publicados. São livros de grandes nomes da costura e modelagem, com destaque para a professora, autora e modelista Marlene Mukai. Além de outros materiais exclusivos que reúnem Desenho de Moda, Crônicas de Costura e Agenda da Costureira, que vão te apoiar na sua jornada com a moda sob medida como materiais de estudo, organização, ou apenas como uma bela leitura!"
         },
-        { "url": "/livros-moldes-e-reguas/manequins", "text": " " },
+        {
+          "url": "/livros-moldes-e-reguas/manequins",
+          "text": " "
+        },
         {
           "url": "/livros-moldes-e-reguas/moldes-de-roupas",
           "text": "Trabalhar com moldes prontos pode ser uma grande vantagem para a costureira que prefere ir direto para a máquina, ou que ainda não se sente segura em desenvolver suas próprias modelagens. Na Maximus Tecidos contamos com um catálogo de mais de 160 moldes de roupas em amplas grades de tamanho, que vão do básico à moda festa, femininos, masculinos, infantis e da moda pet, desenvolvidos e assinados por modelistas que são referências em costura modelagem no Brasil."
@@ -1409,7 +1426,10 @@
         }
       ],
       "layout": {
-        "columns": { "mobile": 2, "desktop": 3 },
+        "columns": {
+          "mobile": 2,
+          "desktop": 3
+        },
         "variant": "aside"
       },
       "banners": [
@@ -1429,8 +1449,13 @@
       "columns": {},
       "variant": "aside",
       "cardLayout": {
-        "onMouseOver": { "showCta": false, "showFavoriteIcon": true },
-        "elementsPositions": { "favoriteIcon": "Top right" }
+        "onMouseOver": {
+          "showCta": false,
+          "showFavoriteIcon": true
+        },
+        "elementsPositions": {
+          "favoriteIcon": "Top right"
+        }
       },
       "__resolveType": "site/sections/Product/SearchResult.tsx"
     },
@@ -1730,10 +1755,18 @@
       ],
       "__resolveType": "site/sections/Category/CategoryTextFooter.tsx"
     },
-    { "__resolveType": "site/sections/Integrations/YourviewsReviewStore.tsx" },
-    { "__resolveType": "site/sections/Integrations/YourviewsIntegrations.tsx" },
-    { "__resolveType": "Shortcuts - 01" },
-    { "__resolveType": "Footer - 05" }
+    {
+      "__resolveType": "site/sections/Integrations/YourviewsReviewStore.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Integrations/YourviewsIntegrations.tsx"
+    },
+    {
+      "__resolveType": "Shortcuts - 01"
+    },
+    {
+      "__resolveType": "Footer - 05"
+    }
   ],
   "__resolveType": "$live/pages/LivePage.tsx"
 }
