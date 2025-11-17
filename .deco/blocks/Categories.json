@@ -855,6 +855,31 @@
           "url": "/livros-moldes-e-reguas/moldes-de-roupas/moldes-idineia-merci",
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/cbab0790-9dc9-4bc6-ab66-a72e617d95d3/Prancheta-3.jpg",
           "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maximus/231a5814-acc5-4fa5-bb1b-ced5f551e016/Prancheta-4.jpg"
+        },
+        {
+          "url": "/tecidos/noivas/rendas-e-tules-bordados",
+          "image": "https://assets.decocache.com/maximus/c97478e7-96dd-491d-810d-d81d1a48ad52/1-BANNER-TECIDO-RENDAS-E-TULES-BORDADOS-DESKTOP.webp",
+          "imageMobile": "https://assets.decocache.com/maximus/67994224-45c9-4d0d-9223-8362e51b8fcb/1-BANNER-TECIDO-RENDAS-E-TULES-BORDADOS-MOBILE.webp"
+        },
+        {
+          "url": "/tecidos/noivas/tecidos-leves-e-fluidos",
+          "image": "https://assets.decocache.com/maximus/a1430398-ac0e-4f66-8e82-e7e6ddbdbca6/1-BANNER-TECIDOS-LEVES-E-FLUIDOS-DESKTOP.webp",
+          "imageMobile": "https://assets.decocache.com/maximus/70c7b81e-5a3d-4703-823c-90914f716cfe/1-BANNER-TECIDOS-LEVES-E-FLUIDOS-MOBILE.webp"
+        },
+        {
+          "url": "/tecidos/noivas/tule-com-glitter",
+          "image": "https://assets.decocache.com/maximus/24b11ab9-a07c-42fc-83f7-934dbaee1fb9/1-BANNER-TECIDO-TULE-COM-GLITTER-DESKTOP.webp",
+          "imageMobile": "https://assets.decocache.com/maximus/a72dfaa6-ac67-4df5-b220-d6aa6edfe6d4/1-BANNER-TECIDO-TULE-COM-GLITTER-MOBIL.webp"
+        },
+        {
+          "url": "/tecidos/noivas/tules-lisos",
+          "image": "https://assets.decocache.com/maximus/b4ae41ea-8457-4d12-904e-5124965f6b83/1-BANNER-TECIDO-TULES-LISOS-DESKTOP.webp",
+          "imageMobile": "https://assets.decocache.com/maximus/6d5b457b-b837-4d1d-a695-6dad6dce007f/1-BANNER-TECIDO-TULES-LISOS-MOBILE.webp"
+        },
+        {
+          "url": "/tecidos/noivas/zibeline",
+          "image": "https://assets.decocache.com/maximus/3f31ffbd-9954-4580-9c30-eb5a079a672d/1-BANNER-TECIDO-ZIBELINE-DESKTOP.webp",
+          "imageMobile": "https://assets.decocache.com/maximus/29081473-97b0-4714-b99d-d04a2d17913f/1-BANNER-TECIDO-ZIBELINE-MOBILE.webp"
         }
       ],
       "urlCurrent": "t",
