@@ -204,22 +204,22 @@
               {
                 "alt": "banner",
                 "action": {
-                  "href": "/tecidos/zibeline",
+                  "href": "/s?q=tule+bordado+3d",
                   "target": "_self",
-                  "label": "Zibeline, o tecido ideal para moda festa"
+                  "label": "Tule bordado 3d"
                 },
-                "mobile": "https://assets.decocache.com/maximus/1f7471bd-1594-402b-a6d6-cb9fe6d77dc9/VITRINE-2-MOBILE.webp",
-                "desktop": "https://assets.decocache.com/maximus/a53d3943-8d69-47b2-80c1-5fb92e598a18/VITRINE-2-DESKTOP.webp"
+                "mobile": "https://assets.decocache.com/maximus/3fce3134-fe57-457e-a379-db22fd421b84/VITRINE-2-MOBILE-(5).webp",
+                "desktop": "https://assets.decocache.com/maximus/11581b44-10fe-4a92-8bb3-7788bc818a35/VITRINE-2-DESKTOP-(5).webp"
               }
             ],
             "preload": false,
             "__resolveType": "site/sections/Images/Carousel.tsx"
           },
           {
-            "link": "/tecidos/zibeline",
+            "link": "/s?q=tule+bordado+3d",
             "__resolveType": "site/sections/Content/TitleShelf.tsx",
-            "title": "Zibeline, o tecido ideal para a moda festa",
-            "text": "Confeccione peças sofisticadas com um toque de brilho encantador"
+            "title": "Tule Bordado Flor 3D, efeito sofisticado que floresce em cada detalhe",
+            "text": "Tecido ideal para quem busca delicadeza, luxo e brilho deslumbrante"
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
