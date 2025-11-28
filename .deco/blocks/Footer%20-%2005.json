@@ -434,6 +434,14 @@
           "label": "Gazar"
         },
         {
+          "href": "/tecidos/infantil",
+          "label": "Infantil"
+        },
+        {
+          "href": "/tecidos/italianos",
+          "label": "Italianos"
+        },
+        {
           "href": "/tecidos/jacquard",
           "label": "Jacquard"
         },
@@ -456,6 +464,10 @@
         {
           "href": "/tecidos/musseline",
           "label": "Musseline"
+        },
+        {
+          "href": "/tecidos/natalinos",
+          "label": "Natalinos"
         },
         {
           "href": "/tecidos/neoprene",
@@ -490,6 +502,10 @@
           "label": "Sarja"
         },
         {
+          "href": "/tecidos/seda",
+          "label": "Seda"
+        },
+        {
           "href": "/tecidos/shantung",
           "label": "Shantung"
         },
@@ -502,20 +518,20 @@
           "label": "Tecido sintético"
         },
         {
-          "href": "/tecidos/tecidos-para-decoracao",
-          "label": "Tecidos Decoração"
+          "label": "Tecidos Decoração",
+          "href": "/tecidos/tecidos-para-decoracao"
         },
         {
-          "href": "/tecidos/tules-lisos",
-          "label": "Tules Lisos"
+          "label": "Tules Lisos",
+          "href": "/tecidos/tules-lisos"
         },
         {
-          "href": "/tecidos/veludo",
-          "label": "Veludo"
+          "label": "Veludo",
+          "href": "/tecidos/veludo"
         },
         {
-          "href": "/tecidos/viscose",
-          "label": "Viscose"
+          "label": "Viscose",
+          "href": "/tecidos/viscose"
         },
         {
           "label": "Zibeline",
