@@ -3333,9 +3333,6 @@ details.collapse summary::-webkit-details-marker {
   right: calc(var(--tooltip-tail-offset) + 0.0625rem);
   bottom: auto;
 }
-.visible {
-  visibility: visible;
-}
 .invisible {
   visibility: hidden;
 }
