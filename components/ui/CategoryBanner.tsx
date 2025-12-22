@@ -1,4 +1,4 @@
-import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { SectionProps } from "$live/types.ts";
 import type { ImageWidget as LiveImage } from "apps/admin/widgets.ts";
 

@@ -56,7 +56,7 @@
     "partytown/": "https://denopkg.com/deco-cx/partytown@0.4.8/",
     "daisyui": "npm:daisyui@3.5.0",
     "deco/": "https://denopkg.com/deco-cx/deco@1.132.6/",
-    "apps/": "https://denopkg.com/deco-cx/apps@0.133.21/",
+    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.133.21/",
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
     "@deco/deco": "jsr:@deco/deco@1.132.6",
     "@deco/durable": "jsr:@deco/durable@0.5.3",
