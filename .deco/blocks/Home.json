@@ -35,6 +35,16 @@
                 },
                 "mobile": "https://assets.decocache.com/maximus/bc377001-54de-4e44-84a7-efbf54ecd86d/BANNER-PRINCIPAL-1-MOBILE-(5).webp",
                 "desktop": "https://assets.decocache.com/maximus/048d6261-6044-476f-801e-d032a840d0ea/BANNER-PRINCIPAL-1-DESKTOP-(5).webp"
+              },
+              {
+                "action": {
+                  "target": "_self",
+                  "label": "Agenda da Costureira 2026",
+                  "href": "/agenda-caderno-de-medidas-e-desenho-para-costureira-2026-5195/p"
+                },
+                "alt": "Agenda da costureira 2026",
+                "desktop": "https://assets.decocache.com/maximus/20efa811-f883-483c-9227-bcd791cb224a/BANNER-AGENDA-VITRINE-DESKTOP.webp",
+                "mobile": "https://assets.decocache.com/maximus/522c3061-fde8-4855-93e0-04d3d5d89cdf/BANNER-AGENDA-VITRINE-MOBILE.webp"
               }
             ],
             "preload": true,
