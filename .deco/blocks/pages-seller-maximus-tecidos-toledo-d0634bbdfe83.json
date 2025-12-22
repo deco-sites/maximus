@@ -12,7 +12,7 @@
         },
         "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/3d7f1080-07ed-4e84-b10a-a5176d52afd6",
         "description": "Conheça a Maximus Tecidos e compre com segurança na maior loja online de tecidos finos do Brasil. Tecidos de qualidade pelo preço justo. Atendimento com assessoria de estilistas. Enviamos para todo o Brasil.",
-        "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+        "__resolveType": "commerce/sections/Seo/SeoPLPV2.tsx"
       }
     },
     {
@@ -39,23 +39,6 @@
         "page": {
           "__resolveType": "Maximus Toledo"
         },
-        "__resolveType": "site/sections/Category/CategoryBannerHeader.tsx",
-        "text": "<p>Contamos com mais de&nbsp;<strong>3 mil tecidos finos</strong>&nbsp;exclusivos e de qualidade para vestidos de&nbsp;<strong>festa</strong>, vestidos de&nbsp;<strong>noiva</strong>&nbsp;e&nbsp;<strong>roupas casuais</strong>. Confira opções de tecidos na Maior Loja de Tecidos Finos Online.</p>",
-        "banners": [
-          {
-            "url": "/MAXIMUS-TECIDOS-TOLEDO---PR",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5a6c69e1-15db-40e8-8bd8-685f79420508",
-            "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/3cbdb5f5-9f92-49d8-884d-a102f9c2bef6"
-          }
-        ]
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "page": {
-          "__resolveType": "Maximus Toledo"
-        },
         "__resolveType": "site/sections/Category/CategoryTextHeader.tsx",
         "texts": [
           {
@@ -70,12 +53,13 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "page": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
           "sort": "release:desc",
           "count": 24,
           "fuzzy": "automatic",
-          "query": "MAXIMUS TECIDOS TOLEDO",
-          "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
+          "query": "MAXIMUS TECIDOS TOLEDO"
         },
+        "__resolveType": "site/sections/Product/SearchResult.tsx",
         "layout": {
           "columns": {
             "mobile": 1
@@ -88,8 +72,7 @@
           "onMouseOver": {
             "showFavoriteIcon": true
           }
-        },
-        "__resolveType": "site/sections/Product/SearchResult.tsx"
+        }
       }
     },
     {

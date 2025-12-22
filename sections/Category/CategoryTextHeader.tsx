@@ -12,15 +12,27 @@ export interface Props {
   texts?: IText[];
 }
 
+export function LoadingFallback() {
+  return (
+    <div class="w-full max-w-[1236px] mx-auto my-4 max-md:px-3">
+      <div class="flex flex-col gap-3">
+        <div class="skeleton h-4 w-full"></div>
+        <div class="skeleton h-4 w-full"></div>
+        <div class="skeleton h-4 w-3/4"></div>
+      </div>
+    </div>
+  );
+}
+
 export default function CategoryTextHeader(
   { page, texts }: Props,
 ) {
-  if(!page) return;
+  if(!page) return null;
   const { breadcrumb } = page;
   const { itemListElement, numberOfItems } = breadcrumb;
 
-  const format = (str: string) => {
-    if (!str) return;
+  const format = (str: string | undefined) => {
+    if (!str) return "";
 
     return str.toLowerCase().toLowerCase()
       .normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/,/g, "")
