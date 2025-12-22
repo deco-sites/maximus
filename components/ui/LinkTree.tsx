@@ -1,5 +1,5 @@
 import { ImageWidget as LiveImage } from "apps/admin/widgets.ts";
-import Image from "deco-sites/std/components/Image.tsx";
+import Image from "apps/website/components/Image.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 
 export interface Link {
