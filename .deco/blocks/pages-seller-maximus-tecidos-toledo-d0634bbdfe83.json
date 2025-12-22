@@ -53,11 +53,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "page": {
-          "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
-          "sort": "release:desc",
-          "count": 24,
-          "fuzzy": "automatic",
-          "query": "MAXIMUS TECIDOS TOLEDO"
+          "__resolveType": "Maximus Toledo"
         },
         "__resolveType": "site/sections/Product/SearchResult.tsx",
         "layout": {
