@@ -1,0 +1,9 @@
+{
+  "__resolveType": "site/apps/deco/records.ts",
+  "url": "libsql://maximus-decocx.turso.io",
+  "authToken": {
+    "__resolveType": "website/loaders/secret.ts",
+    "name": "DATABASE_AUTH_TOKEN",
+    "encrypted": "958e92bd19c016ff719ed1e79dfe9473a05420788834a98fad8af0435d97361b11dfa3a67dfd87aae77fab8a93c86b6819e5155a9d8c964b341b6ee4845654092d5e9a31e9e1d151a0644f58ad398a1afc9ec6496fdc77766f6c6d3a8c1b671ee4172364bdd8fba550e0ad7002c9a4dd6ed2c3b898452a0029a490e4d9ed65d58b11b0cf6e05b56fc28094530a3aabd5737910e1155568572f3a5faff235dfc76067a7f0020dc7ab474e018a77d577232f55514700eb2dba74b85e0daa36193d35aaed83d849e2b985890df3a86f8917ea94b38e5d5a033cf391b8381a1c91d3"
+  }
+}

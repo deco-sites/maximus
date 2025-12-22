@@ -35,6 +35,11 @@
                 },
                 "mobile": "https://assets.decocache.com/maximus/d3566e76-044d-4c3e-85e2-02f3be1737f3/BANNER-PRINCIPAL-1-MOBILE-(4).webp",
                 "desktop": "https://assets.decocache.com/maximus/348467dd-62c7-4e7d-b6db-f657c97eb4d2/BANNER-PRINCIPAL-1-DESKTOP-(4).webp"
+              },
+              {
+                "desktop": "https://assets.decocache.com/maximus/b211f2d2-f657-45a6-9702-91f4c66fc817/BANNER-PRINCIPAL-1-DESKTOP-(5).webp",
+                "mobile": "https://assets.decocache.com/maximus/35db238d-19d0-48c7-976d-c3e4035f32f5/BANNER-PRINCIPAL-1-MOBILE-(5).webp",
+                "alt": "Natal Maximus"
               }
             ],
             "preload": true,
