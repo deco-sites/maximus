@@ -1,0 +1,7 @@
+{
+  "sort": "orders:desc",
+  "count": 24,
+  "fuzzy": "automatic",
+  "query": "CLUBE DA COSTUREIRA",
+  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
+}

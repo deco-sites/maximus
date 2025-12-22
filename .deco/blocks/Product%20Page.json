@@ -6,7 +6,7 @@
     { "__resolveType": "Fashion theme" },
     {
       "trackingIds": ["GTM-PJP2V2"],
-      "__resolveType": "analytics/sections/Analytics.tsx",
+      "__resolveType": "website/sections/Analytics/Analytics.tsx",
       "googleAnalyticsIds": ["G-HGM4SXF2FQ"]
     },
     { "__resolveType": "Header - 01" },

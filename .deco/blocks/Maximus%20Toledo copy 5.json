@@ -1,0 +1,12 @@
+{
+    "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+    "sort": "release:desc",
+    "fuzzy": "automatic",
+    "selectedFacets": [],
+    "advancedConfigs": {
+      "includeOriginalAttributes": []
+    },
+    "simulationBehavior": "default",
+    "count": 24,
+    "query": "MAXIMUS TECIDOS TOLEDO"
+  }

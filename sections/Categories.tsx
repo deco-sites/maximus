@@ -10,6 +10,28 @@ export interface Props {
   page: ProductListingPage | null;
 }
 
+export function LoadingFallback() {
+  return (
+    <div class="w-full max-md:px-3 py-8">
+      <div class="w-full max-w-[950px] mx-auto">
+        <div class="flex justify-start md:justify-center items-center gap-4">
+          {Array(3).fill(0).map((_, index) => (
+            <div
+              key={index}
+              class="flex flex-col gap-4 w-[33.3%] md:w-[12.5%]"
+            >
+              <div class="min-h-[145px] flex items-center justify-start flex-col">
+                <div class="skeleton w-[84px] h-[84px] rounded-full"></div>
+                <div class="skeleton h-4 w-20 mt-2.5"></div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export async function loader(
   { page }: Props,
   _req: Request,
