@@ -1,5 +1,5 @@
 import { useId } from "$store/sdk/useId.ts";
-import { HTML } from "deco-sites/std/components/types.ts";
+import { HTMLWidget as HTML } from "apps/admin/widgets.ts";
 
 export interface Props {
   /**

@@ -1,5 +1,5 @@
 import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import type { ImageWidget as LiveImage } from "apps/admin/widgets.ts";
 
 /**
  * @titleBy alt

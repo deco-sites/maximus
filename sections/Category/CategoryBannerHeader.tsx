@@ -1,5 +1,5 @@
 import type { ProductListingPage } from "apps/commerce/types.ts";
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import type { ImageWidget as LiveImage } from "apps/admin/widgets.ts";
 
 export interface IBanner {
   url?: string;

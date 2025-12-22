@@ -12,7 +12,7 @@ import Copyrigth from "./Copyrigth.tsx";
 //import Combination from "$store/islands/Combination.tsx";
 // import Whatsapp from "./Whatsapp.tsx";
 
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import type { ImageWidget as LiveImage } from "apps/admin/widgets.ts";
 
 export interface bannerSchoolItem {
   image: LiveImage;
