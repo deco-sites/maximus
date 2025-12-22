@@ -11459,6 +11459,11 @@ details.collapse summary::-webkit-details-marker {
     padding-bottom: 20rem;
   }
 
+  .sm\:py-96 {
+    padding-top: 24rem;
+    padding-bottom: 24rem;
+  }
+
   .sm\:pl-6 {
     padding-left: 1.5rem;
   }
