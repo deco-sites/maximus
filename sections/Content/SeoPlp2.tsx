@@ -25,4 +25,8 @@ function Section({ jsonLD, ...props }: Props) {
   );
 }
 
+export function LoadingFallback(props: Partial<Props>) {
+  return <Seo {...props} />;
+}
+
 export default Section;

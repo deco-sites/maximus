@@ -16,7 +16,7 @@ import { useId } from "$store/sdk/useId.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import { mapProductToAnalyticsItem } from "$store/utils/productToAnalyticsItem.ts";
 import type { ProductDetailsPage } from "apps/commerce/types.ts";
-import Image from "deco-sites/std/components/Image.tsx";
+import Image from "apps/website/components/Image.tsx";
 import ProductSelector from "./ProductVariantSelector.tsx";
 
 import ColorsSimilars from "$store/islands/ColorsSimilars.tsx";
@@ -667,7 +667,7 @@ function Details({
                     index={index}
                     class="carousel-item w-full"
                   >
-                    <img
+                    <Image
                       class="w-full"
                       sizes="(max-width: 408px) 100vw, 40vw"
                       style={{ aspectRatio: ASPECT_RATIO }}
@@ -707,7 +707,7 @@ function Details({
               {images.map((img, index) => (
                 <li class="min-w-[64px] min-h-[64px]">
                   <Slider.Dot index={index}>
-                    <img
+                    <Image
                       style={{ aspectRatio: ASPECT_RATIO }}
                       class="group-disabled:border-base-300 border "
                       width={64}
@@ -728,8 +728,8 @@ function Details({
               target="_blank"
               v-if="isMobile"
             >
-              <img
-                src="//service.yourviews.com.br/image/ae97f62a-00ed-4eb7-8fbf-024f90f5ff8a/400_79/stamplarge.jpg"
+              <Image
+                src="https://service.yourviews.com.br/image/ae97f62a-00ed-4eb7-8fbf-024f90f5ff8a/400_79/stamplarge.jpg"
                 width={400}
                 height={79}
                 title="Loja Confiável"
@@ -760,7 +760,8 @@ function Details({
       <ul class="carousel carousel-center gap-6">
         {[images[0], images[1] ?? images[0]].map((img, index) => (
           <li class="carousel-item min-w-[100vw] sm:min-w-[24vw]">
-            <img
+            {/** TODO: Add image */}
+            <Image
               sizes="(max-width: 640px) 100vw, 24vw"
               style={{ aspectRatio: ASPECT_RATIO }}
               src={img.url!}

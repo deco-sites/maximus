@@ -3,7 +3,7 @@ import Cart from "$store/components/minicart/Cart.tsx";
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Drawer from "$store/components/ui/Drawer.tsx";
-import Image from "deco-sites/std/components/Image.tsx";
+import Image from "apps/website/components/Image.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import type { ComponentChildren } from "preact";

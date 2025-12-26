@@ -1,0 +1,7 @@
+{
+  "sort": "release:desc",
+  "count": 24,
+  "fuzzy": "automatic",
+  "query": "LEVOLPE",
+  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
+}

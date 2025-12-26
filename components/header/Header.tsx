@@ -1,7 +1,7 @@
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 import Drawers from "$store/islands/Header/Drawers.tsx";
 import type { Product, Suggestion } from "apps/commerce/types.ts";
-import type { Image } from "deco-sites/std/components/types.ts";
+import type { ImageWidget as Image } from "apps/admin/widgets.ts";
 import Alert from "$store/islands/Header/Alert.tsx";
 import Contact from "./Contact.tsx";
 import Navbar from "$store/islands/Navbar.tsx";

@@ -5,7 +5,7 @@ import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "$store/sdk/useId.ts";
 import { useSignal } from "@preact/signals";
 import type { ImageObject } from "apps/commerce/types.ts";
-import Image from "deco-sites/std/components/Image.tsx";
+import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
   images: ImageObject[];
@@ -45,7 +45,7 @@ function ProductImageZoom({ images, width, height }: Props) {
                 index={index}
                 class="carousel-item w-full h-full justify-center items-center"
               >
-                <img
+                <Image
                   style={{ aspectRatio: `${width} / ${height}` }}
                   src={image.url!}
                   alt={image.alternateName}

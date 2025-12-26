@@ -12,6 +12,14 @@ export interface Props {
   texts?: IText[];
 }
 
+export function LoadingFallback() {
+  return (
+    <div class="w-full flex justify-center items-center py-40 sm:py-80">
+      <span class="loading loading-spinner loading-lg"></span>
+    </div>
+  );
+}
+
 export default function CategoryTextFooter(
   { page, texts }: Props,
 ) {
@@ -20,8 +28,8 @@ export default function CategoryTextFooter(
   const { breadcrumb } = page;
   const { itemListElement, numberOfItems } = breadcrumb;
 
-  const format = (str: string) => {
-    if (!str) return;
+  const format = (str: string | undefined) => {
+    if (!str) return "";
 
     return str.toLowerCase().toLowerCase()
       .normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/,/g, "")

@@ -6,7 +6,7 @@ import { MenuButton } from "$store/islands/Header/Buttons.tsx";
 import CartButtonVTEX from "$store/islands/Header/Cart/vtex.tsx";
 //import Searchbar from "$store/islands/Header/Searchbar.tsx";
 import { PLATFORM } from "$store/platform.ts";
-import Image from "deco-sites/std/components/Image.tsx";
+import Image from "apps/website/components/Image.tsx";
 import type { INavItem } from "./NavItem.tsx";
 import NavItem from "./NavItem.tsx";
 import Login from "./Login.tsx";
