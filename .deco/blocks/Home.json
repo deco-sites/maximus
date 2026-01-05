@@ -25,16 +25,16 @@
           {
             "images": [
               {
-                "alt": " Natal Maximus",
+                "alt": "Aniversário Maximus",
                 "action": {
                   "href": "/tecidos",
                   "title": "Demo Store",
                   "target": "_self",
                   "subTitle": "Visit our site and start building now:",
-                  "label": "Natal Maximus"
+                  "label": "Aniversário Maximus"
                 },
                 "mobile": "https://assets.decocache.com/maximus/bc377001-54de-4e44-84a7-efbf54ecd86d/BANNER-PRINCIPAL-1-MOBILE-(5).webp",
-                "desktop": "https://assets.decocache.com/maximus/048d6261-6044-476f-801e-d032a840d0ea/BANNER-PRINCIPAL-1-DESKTOP-(5).webp"
+                "desktop": "https://assets.decocache.com/maximus/51db870b-d817-4b8d-8acd-91e4b008aaf6/BANNER-PRINCIPAL-1-DESKTOP-(6).webp"
               },
               {
                 "action": {
