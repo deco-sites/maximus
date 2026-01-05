@@ -25,16 +25,26 @@
           {
             "images": [
               {
-                "alt": " Natal Maximus",
+                "alt": "Aniversário Maximus",
                 "action": {
                   "href": "/tecidos",
                   "title": "Demo Store",
                   "target": "_self",
                   "subTitle": "Visit our site and start building now:",
-                  "label": "Natal Maximus"
+                  "label": "Aniversário Maximus"
                 },
-                "mobile": "https://assets.decocache.com/maximus/bc377001-54de-4e44-84a7-efbf54ecd86d/BANNER-PRINCIPAL-1-MOBILE-(5).webp",
-                "desktop": "https://assets.decocache.com/maximus/048d6261-6044-476f-801e-d032a840d0ea/BANNER-PRINCIPAL-1-DESKTOP-(5).webp"
+                "mobile": "https://assets.decocache.com/maximus/39a97cb2-a03f-49a9-b184-36266e7ca031/BANNER-PRINCIPAL-1-MOBILE-(6).webp",
+                "desktop": "https://assets.decocache.com/maximus/51db870b-d817-4b8d-8acd-91e4b008aaf6/BANNER-PRINCIPAL-1-DESKTOP-(6).webp"
+              },
+              {
+                "action": {
+                  "target": "_self",
+                  "label": "Agenda da Costureira 2026",
+                  "href": "/agenda-caderno-de-medidas-e-desenho-para-costureira-2026-5195/p"
+                },
+                "alt": "Agenda da costureira 2026",
+                "desktop": "https://assets.decocache.com/maximus/17763f35-88cc-439a-b189-1dfc8e8fae97/BANNER-AGENDA-VITRINE-DESKTOP-(2).webp",
+                "mobile": "https://assets.decocache.com/maximus/741e04a5-607b-43d3-982c-234a695c3baf/BANNER-AGENDA-VITRINE-MOBILE-(2).webp"
               }
             ],
             "preload": true,
@@ -204,22 +214,22 @@
               {
                 "alt": "banner",
                 "action": {
-                  "href": "/s?q=tule+bordado+3d",
+                  "href": "/tecidos",
                   "target": "_self",
-                  "label": "Tule bordado 3d"
+                  "label": "Tecidos de ano novo"
                 },
-                "mobile": "https://assets.decocache.com/maximus/3fce3134-fe57-457e-a379-db22fd421b84/VITRINE-2-MOBILE-(5).webp",
-                "desktop": "https://assets.decocache.com/maximus/11581b44-10fe-4a92-8bb3-7788bc818a35/VITRINE-2-DESKTOP-(5).webp"
+                "mobile": "https://assets.decocache.com/maximus/113f10a6-739f-496f-a2be-86d9b422f653/VITRINE-2-MOBILE-(6).webp",
+                "desktop": "https://assets.decocache.com/maximus/0dd82ba4-fd2a-4f16-b106-f6cb1eafd6e6/VITRINE-2-DESKTOP-(6).webp"
               }
             ],
             "preload": false,
             "__resolveType": "site/sections/Images/Carousel.tsx"
           },
           {
-            "link": "/s?q=tule+bordado+3d",
+            "link": "/tecidos",
             "__resolveType": "site/sections/Content/TitleShelf.tsx",
-            "title": "Tule Bordado Flor 3D, efeito sofisticado que floresce em cada detalhe",
-            "text": "Tecido ideal para quem busca delicadeza, luxo e brilho deslumbrante"
+            "title": "A base para os seus melhores momentos começa com o tecido certo. ",
+            "text": "Comece um novo ano com peças confeccionadas sob medida para você. Feliz 2026!"
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
