@@ -1,4 +1,4 @@
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import type { ImageWidget as LiveImage } from "apps/admin/widgets.ts";
 import { useId } from "$store/sdk/useId.ts";
 import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";

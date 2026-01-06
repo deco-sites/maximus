@@ -2,7 +2,7 @@ import Button from "$store/components/ui/Button.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { AnalyticsItem } from "apps/commerce/types.ts";
-import Image from "deco-sites/std/components/Image.tsx";
+import Image from "apps/website/components/Image.tsx";
 import { useCallback, useState } from "preact/hooks";
 
 export interface Item {

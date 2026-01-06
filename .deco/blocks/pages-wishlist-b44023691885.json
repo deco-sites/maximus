@@ -1,1 +1,87 @@
-{"name":"Wishlist","path":"/wishlist","sections":[{"__resolveType":"Fashion theme"},{"__resolveType":"Header - 01"},{"__resolveType":"Category Banner - 01"},{"page":{"sort":"OrderByReleaseDateDESC","count":24,"filters":"dynamic","__resolveType":"deco-sites/std/loaders/vtex/legacy/productListingPage.ts"},"text":"<p>Contamos com mais de&nbsp;<strong>3 mil tecidos finos</strong>&nbsp;exclusivos e de qualidade para vestidos de&nbsp;<strong>festa</strong>, vestidos de&nbsp;<strong>noiva</strong>&nbsp;e&nbsp;<strong>roupas casuais</strong>. Confira opções de tecidos na Maior Loja de Tecidos Finos Online.</p>","__resolveType":"site/sections/Category/CategoryBannerHeader.tsx"},{"page":{"sort":"OrderByReleaseDateDESC","count":24,"filters":"dynamic","__resolveType":"deco-sites/std/loaders/vtex/legacy/productListingPage.ts"},"__resolveType":"site/sections/Category/CategoryTextHeader.tsx"},{"page":{"count":24,"offset":0,"__resolveType":"vtex/loaders/product/wishlist.ts"},"layout":{"columns":{"mobile":1},"variant":"aside"},"columns":{},"variant":"aside","__resolveType":"site/sections/Product/SearchResult.tsx"},{"__resolveType":"Footer - 05"},{"__resolveType":"Shortcuts - 01"},{"page":{"sort":"OrderByPriceDESC","count":24,"filters":"dynamic","__resolveType":"deco-sites/std/loaders/vtex/legacy/productListingPage.ts"},"jsonLD":{"sort":"OrderByPriceDESC","count":24,"filters":"dynamic","__resolveType":"deco-sites/std/loaders/vtex/legacy/productListingPage.ts"},"__resolveType":"deco-sites/std/sections/SEOPLP.tsx","titleTemplate":"%s | Deco.cx"},{"type":"website","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a8e308d3-8537-4455-bf62-3d84ec458da6","title":"Novidades – Maximus Tecido","jsonLD":{"sort":"OrderByReleaseDateDESC","count":24,"filters":"dynamic","__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"favicon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/3d7f1080-07ed-4e84-b10a-a5176d52afd6","description":"Conheça a Maximus Tecidos e compre com segurança na maior loja online de tecidos finos do Brasil. Tecidos de qualidade pelo preço justo. Atendimento com assessoria de estilistas. Enviamos para todo o Brasil.","__resolveType":"commerce/sections/Seo/SeoPLP.tsx"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+    "name": "Wishlist",
+    "path": "/wishlist",
+    "sections": [
+        {
+            "__resolveType": "Fashion theme"
+        },
+        {
+            "__resolveType": "Header - 01"
+        },
+        {
+            "__resolveType": "Category Banner - 01"
+        },
+        {
+            "page": {
+                "sort": "OrderByReleaseDateDESC",
+                "count": 24,
+                "filters": "dynamic",
+                "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+            },
+            "text": "<p>Contamos com mais de&nbsp;<strong>3 mil tecidos finos</strong>&nbsp;exclusivos e de qualidade para vestidos de&nbsp;<strong>festa</strong>, vestidos de&nbsp;<strong>noiva</strong>&nbsp;e&nbsp;<strong>roupas casuais</strong>. Confira opções de tecidos na Maior Loja de Tecidos Finos Online.</p>",
+            "__resolveType": "site/sections/Category/CategoryBannerHeader.tsx"
+        },
+        {
+            "page": {
+                "sort": "OrderByReleaseDateDESC",
+                "count": 24,
+                "filters": "dynamic",
+                "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+            },
+            "__resolveType": "site/sections/Category/CategoryTextHeader.tsx"
+        },
+        {
+            "page": {
+                "count": 24,
+                "offset": 0,
+                "__resolveType": "vtex/loaders/product/wishlist.ts"
+            },
+            "layout": {
+                "columns": {
+                    "mobile": 1
+                },
+                "variant": "aside"
+            },
+            "columns": {},
+            "variant": "aside",
+            "__resolveType": "site/sections/Product/SearchResult.tsx"
+        },
+        {
+            "__resolveType": "Footer - 05"
+        },
+        {
+            "__resolveType": "Shortcuts - 01"
+        },
+        {
+            "page": {
+                "sort": "OrderByPriceDESC",
+                "count": 24,
+                "filters": "dynamic",
+                "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+            },
+            "jsonLD": {
+                "sort": "OrderByPriceDESC",
+                "count": 24,
+                "filters": "dynamic",
+                "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+            },
+            "__resolveType": "commerce/sections/Seo/SeoPLPV2.tsx",
+            "titleTemplate": "%s | Deco.cx"
+        },
+        {
+            "type": "website",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a8e308d3-8537-4455-bf62-3d84ec458da6",
+            "title": "Novidades – Maximus Tecido",
+            "jsonLD": {
+                "sort": "OrderByReleaseDateDESC",
+                "count": 24,
+                "filters": "dynamic",
+                "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+            },
+            "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/3d7f1080-07ed-4e84-b10a-a5176d52afd6",
+            "description": "Conheça a Maximus Tecidos e compre com segurança na maior loja online de tecidos finos do Brasil. Tecidos de qualidade pelo preço justo. Atendimento com assessoria de estilistas. Enviamos para todo o Brasil.",
+            "__resolveType": "commerce/sections/Seo/SeoPLPV2.tsx"
+        }
+    ],
+    "__resolveType": "$live/pages/LivePage.tsx"
+}

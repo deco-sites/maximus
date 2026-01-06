@@ -1,1 +1,525 @@
-{"name":"mais-vendidos","path":"/mais-vendidos","sections":[{"__resolveType":"Fashion theme"},{"__resolveType":"Header - 01"},{"page":{"sort":"OrderByPriceDESC","count":24,"filters":"dynamic","__resolveType":"deco-sites/std/loaders/vtex/legacy/productListingPage.ts"},"title":"t","banners":[{"url":"/livros-moldes-e-reguas","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/fe39b27a-860c-4850-8e05-f8f0aaab4ffe","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/2c4c9880-13e5-434d-847a-873e8a3027a8"},{"url":"/aviamentos-e-bordado","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/91e1ab00-59b8-4a57-a697-4c44d8c020d4","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c6c17773-d91f-40ee-a8cb-53148a8022f4"},{"url":"/tecidos","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c64b81f3-96de-4282-a39a-7d54ac837886","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/f19bdf8f-4683-4224-9b45-c99d5f2c948e"},{"url":"/novidades","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/2baa8103-6ed8-4219-9708-2607d2c9e30b","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/33329e44-0157-4890-90d0-77bc41e2178b"},{"url":"/ofertas","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/aee5e853-dcc9-4685-8c0f-e5f9a2c58b26","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/20fc1c8b-bdf2-4fbf-b011-c327320c1234"},{},{"url":"/tecidos/crepe","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/2653c677-3da0-4da2-bed0-d384351d1b20","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/70db2793-85f9-4e1a-b588-1ca6cb1f37bb"},{"url":"/tecidos/alfaiataria","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/ada755d1-8c1d-4c30-840f-790db30b7d98","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5c366196-21c0-4878-b7dd-efcaa7436fb3"},{"url":"/tecidos/algodao","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/9ecd05a5-c719-494a-96eb-a9eb3463206a","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/d9fd703e-0ec7-46f4-9c82-2f3132a7beee"},{"url":"/tecidos/camurca","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c3972ba4-3893-43f7-a12b-8421f1ea11a5","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b136d8d0-6ad1-4500-8505-c699ac5f5cab"},{"url":"/tecidos/cetim","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/2c819111-6f34-4a80-82d4-b545e6f532a1","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c4894ebb-5f0a-4622-9e67-90cfb66462c8"},{"url":"/tecidos/chiffon","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/054fb3cc-9322-4ca4-8762-685b2f7fb83e"},{"url":"/tecidos/crepe","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/fb50b0ea-588d-4b66-be69-f811cbc0d717","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5e944c2d-7c44-4b8e-96c3-c8844ab81df3"},{"url":"/tecidos/flanela","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/f52808a4-ae80-419d-807c-bf74b2df952a","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/bf7348bc-7168-4244-9cdd-72ab10735f14"},{"url":"/tecidos/forros","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c745f072-429e-4cc8-81cb-ecb31930f089","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/e837370c-6508-46fb-b155-ed97fd6c1711"},{"url":"/tecidos/gazar","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/663c1136-eebc-4876-b054-a7f58fa46d0c","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/3f47c655-1ca2-4caf-b04e-2011dcaa3655"},{"url":"/jacquard-brocados","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/f6031f87-7c3c-4a7b-994f-ca0356b04a80","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/3399b55c-18f1-4f66-b55d-6ed11128771b"},{"url":"/lame-e-lurex--brilho-","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/29cbc6a2-7dcb-4325-b0f1-f7caa2ec7271","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/7f5172d5-0c15-4e6a-8396-e8de56f06219"},{"url":"/tecidos/linho","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/91374f13-1865-41ce-bc6e-6bc12154921e","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b3eb82d1-7e4f-4c2e-aaf9-e79216f5c277"},{"url":"/tecidos/las-puras-e-mistas","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/caf46387-60bb-4f81-8383-177c840f6333","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/24081fd5-172f-431a-91ce-17879169c38f"},{"url":"/tecidos/malhas","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/4ff04645-721e-4f5b-9cc1-72fdd115275d","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/df849146-3725-4c9e-b438-3f96b45c8311"},{"url":"/tecidos/musseline","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/7d46901d-165f-403b-82da-22fe4828671c","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/3d4c2239-69cd-421f-a629-cfe81e80afd8"},{"url":"/tecidos/neoprene","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/1822136d-98ac-4aa4-8b71-dbb4b016533a","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c1f8ad91-60a6-4d1c-b20c-da545d36905c"},{"url":"/tecidos/organza","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a00f4587-0d9c-4c96-a7e7-9f3f9d2178c2","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/011892ff-ad83-4a62-9b41-1850e5534b90"},{"url":"/tecidos/paetes","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/14bb01c5-d674-47e1-9612-97737df72316","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5303034a-80dc-417c-b328-cab7eb16b036"},{"url":"/tecidos/peles-artificiais","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/fd4eea22-430f-45de-a4ae-689a260cbc2e","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/61304c72-0bf5-415c-a930-9cdb4a863159"},{"url":"/tecidos/piquet","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/255570b1-5456-4219-8ec9-a91e3b8f80c4","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/d01c33f6-4635-4aa1-a278-9a6032af684c"},{"url":"/tecidos/rendas-e-tules","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b39b8cec-6a9c-4ebf-8c96-034cfe9af301","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/2ae2e729-5f28-4ccc-99cc-3ddebc3ebf14"},{"url":"/tecidos/sarja","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5aefc789-498a-4bfe-9244-ff9c590bb448","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/70808c47-3ade-4d66-85df-9030705ddfc2"},{"url":"/tecidos/shantung","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/cef3afae-dd3a-45af-a969-64e5aad9a44e","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a9f36def-cdba-4cc0-9307-0d5a8d35c359"},{"url":"/tecidos/tafeta","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/6172c682-9e38-491c-af69-2eb9cede2319","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c8f59142-5d67-4133-a2dc-4f9f547fa9d9"},{"url":"/tecidos/tecido-sintetico","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b0971603-3a06-4bbc-a0c6-5d522538daa1","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/8c37795f-8954-418b-b060-fcbadb607025"},{"url":"/tecidos/tecidos-para-decoracao","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b4733041-3bae-4f0b-a3da-a771e16bdb10","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/9d698479-6bf6-433d-9335-5a17ea72c178"},{"url":"/tecidos/tules-lisos","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/bd04b68e-cb9f-455b-b6c7-eab79560af1f","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/f96c1240-055e-4dd2-89d9-366e9b643a7e"},{"url":"/tecidos/veludo","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/e03a638c-4aaa-4d98-9244-e01cc2494d29","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b2e7323f-600d-467a-ba4f-62060852c871"},{"url":"/tecidos/viscose","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/ae075081-a007-430a-b581-0381a7d72e2b","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/4c8f36a3-1d3a-4cee-b2ab-14422b7fbb11"},{"url":"/tecidos/zibeline","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/af6e7816-4b1a-4f70-af76-14771f29a93a","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b27b6f5b-f6e9-44f6-8344-e0891ae4a8ac"},{"url":"/livros-moldes-e-reguas/coloracao-e-combinacao","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/9e292f31-fc62-41aa-abc5-8f908045cd70","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c6771a75-0eb5-4e67-8837-40dfb99e94b6"},{"url":"/livros-moldes-e-reguas/desenho-de-moda","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a4231962-707f-4305-9c1b-9e4986897d29","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/7f6ea229-692e-4703-a196-77f91ed8ceb3"},{"url":"/livros-moldes-e-reguas/livros-e-apostilas","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/8d65b2df-5030-407e-bff7-aabf39c9c3fb","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/3133d303-060e-4296-8867-197d55ecd992"},{"url":"/livros-moldes-e-reguas/manequins","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/8eb28815-2a8e-47a8-831a-73bf67ca404a","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/92140b7e-f4cf-43aa-b09f-2bc6e1f44de1"},{"url":"/livros-moldes-e-reguas/moldes-de-roupas","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/02fe73de-3430-4344-8a04-e93f2f33938d","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a83d8d77-a017-4526-9b88-c0e45833b106"},{"url":"/livros-moldes-e-reguas/reguas","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/18b71881-e60b-478a-bb40-319aa8524cda","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b0c3bf6f-5726-477e-9b5a-a7f14873a407"},{"url":"/aviamentos-e-bordado/armarinhos-e-aviamentos","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/975191bb-be0d-4d4c-a4cf-d895784ed4d6","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/7182678b-29c5-41c6-9264-7974a4743919"},{"url":"/aviamentos-e-bordado/bordado-e-pedrarias","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/7569efb5-009b-4769-8be9-d87a21daa50c","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a1e4227f-da6f-4531-a3a5-de5a5babf9f1"},{"url":"/ofertas/armarinhos-aviamentos-e-bordados","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a4dcc425-0c32-4a05-9cc8-0c4ff5c35b53","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/733155dd-6291-44a1-9a21-948c91071720"},{"url":"/ofertas/livros-moldes-e-reguas","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/526dd93c-8e5c-4724-b345-30c663ed487c","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/bc14559b-46e0-4d0e-8b37-9a6c7a6aa637"},{"url":"/ofertas/tecidos-promocionais","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/99a9b098-52aa-4d74-8c7a-84e2fb26d736","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/6734e43b-ea9f-49d6-a98b-228dc0e81454"},{"url":"/ofertas/tecidos-fim-de-peca","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/bd3572a8-2257-4217-a2d2-07c176d216e5","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/4c8a6dc4-2277-49a9-b92b-18694a509eb7"}],"urlCurrent":"t","__resolveType":"site/sections/Category/CategoryBannerHeader.tsx"},{"__resolveType":"Category Banner - 01"},{"page":{"sort":"OrderByPriceDESC","count":24,"filters":"dynamic","__resolveType":"deco-sites/std/loaders/vtex/legacy/productListingPage.ts"},"texts":[{"url":"/livros-moldes-e-reguas","text":"Nossos Livros, Moldes e Réguas são materiais indispensáveis para quem costura. Nossa editora, Clube da Costureira, conta com mais de <strong>10 títulos de livros</strong> de grandes nomes da moda, como a modelista <strong>Marlene Mukai</strong>, além de outros autores e materiais exclusivos, como réguas de modelagem básicas e personalizadas. Para a costureira que prefere moldes prontos em tamanho real, contamos com mais de <strong>160 opções de modelos</strong> que vão da festa ao casual, em grades de tamanho que vão do 36 ao 54."},{"url":"/tecidos","text":"Contamos com mais de <strong>3 mil tecidos finos</strong> exclusivos e de qualidade para vestidos de <strong>festa</strong>, vestidos de <strong>noiva</strong> e <strong>roupas casuais</strong>. Confira opções de tecidos na Maior Loja de Tecidos Finos Online."},{"url":"/tecidos/alfaiataria","text":"Os tecidos de alfaiataria são elegantes, possuem uma sofisticação única e nunca saem de moda. São peças curingas que vestem bem todos os estilos e podem transitar do dia à noite sem problema algum. São clássicos e excelentes para confecção de blazers, calças, coletes e ternos, tanto femininos quanto masculinos. Confira todas as opções de Tecidos de Alfaiataria na Maior Loja de Tecidos Finos Online:"},{"url":"/tecidos/algodao","text":"Os tecidos de algodão são de fibra natural macia e por isso são conhecidos pelo seu conforto, durabilidade e capacidade de se adaptar para todos os tipos de clima. Confira todas as opções de Tecidos de Algodão na Maior Loja de Tecidos Finos Online:"},{"url":"/tecidos/camurca","text":"A camurça é um tecido que confere um ar setentinha muito versátil, tanto aos looks de inverno, como nos de verão. É um tecido sintético que imita o material feito da pele do animal. Seu toque suave e macio é muito gostoso e confortável! Confira todas as opções de Tecidos Camurça e outros tecidos de inverno na Maior Loja de Tecidos Finos Online:"},{"url":"/tecidos/cetim","text":"O Cetim é um tecido de aspecto brilhoso e elegante, por isso possui uma vocação para confeccionar vestidos de festa. Seu toque liso e agradável combinado com seu caimento mais fluído oferece muito conforto para quem veste. Algumas variedades de Cetim são mais indicadas para forro enquanto outras são utilizadas como tecido de base. Confira todas as opções de Cetim na Maior Loja Online de Tecidos Finos:"},{"url":"/tecidos/chiffon","text":"O chiffon é um tecido leve, fino, mas que tem um certo peso. Não chega a dar volume para as peças, mas proporciona um bom caimento. Confira todas as nossas opções:"},{"url":"/tecidos/crepe","text":"O Crepe é um tecido maleável muito usado na confecção de vestidos para moda festa e também roupas de moda casual. O seu caimento é perfeito e varia conforme o tipo de crepe escolhido. O Crepe apresenta uma variedade imensa de espessuras. Alguns são mais finos, outros médios, pesados, com elastano ou sem elastano. Confira essas e todas as outras opções de Crepe na Maior Loja de Tecidos Finos Online:"},{"url":"/tecidos/flanela","text":"A Flanela é um clássico tecido de inverno e ao mesmo tempo moderno. Sejam para confeccionar as típicas camisas no melhor estilo lenhador ou pijamas quentinhos para o inverno, a Flanela nunca sai de moda e é o xodó dos dias mais frios. Os tecidos de inverno como a flanela possuem uma superfície felpuda, de textura macia e toque muito gostoso e aconchegante. Confira todas as opções de Flanela e outros tecidos de inverno na Maior Loja de Tecidos Finos Online:"},{"url":"/tecidos/forros","text":"É notável a qualidade superior na roupa quando há um forro colocado corretamente. O forro não só valoriza mais a sua roupa, mas também garante maior conforto e durabilidade. Os nossos tecidos para forros são fáceis de higienizar e não amarrotam com facilidade. Na Maximus Tecidos você pode comprar tecidos para forros de várias cores e estampas. Confira as opções de forro na Maior Loja de Tecidos Finos Online:"},{"url":"/tecidos/gazar","text":"O Gazar é um tecido fluido, que fica armado com mais facilidade, mas que tem movimento. É muito usado na moda noiva e moda festa. Confira as opções de Gazar na Maior Loja de Tecidos Finos Online:"},{"url":"/tecidos/jacquard-brocados","text":"O Jacquard é um tecido muito sofisticado e estiloso que pode ser utilizado na moda festa e também na moda casual. É muito versátil e nunca sai de moda, garantindo um toque de requinte e sofisticação a peça. Sua superfície é toda trabalhada numa textura em alto relevo, muito delicada. Confira as opções de Jacquard e Brocados na Maior Loja Online de Tecidos Finos:"},{"url":"/lame-e-lurex--brilho-","text":"O Lamê e o Lurex são tecidos com bom caimento, semelhante às malharias. Possuem um brilho metalizado ou de glitter muito sofisticado e moderno. Confira as opções de Lamê e Lurex na Maior Loja Online de Tecidos Finos."},{"url":"/tecidos/linho","text":"O Linho é um tecido de aspecto rústico que está super na moda. É um tecido versátil que ao mesmo tempo em que é sofisticado, também pode ser usado para peças casuais e despojadas. O linho é caracterizado como um tecido que simboliza conforto e elegância. Confira as opções de Tecidos de Linho na Maior Loja Online de Tecidos Finos."},{"url":"/tecidos/las-puras-e-mistas","text":"Temos as lãs puras (naturais) e as lãs mistas. Os tecidos de inverno como a lã são excelentes para confecção de casacos e sobretudos porque deixam qualquer look mais elegante. Quando as temperaturas caem, ninguém resiste ao conforto da textura quentinha e macia da lã. Confira as opções de Lãs Puras e Mistas e outros tecidos de inverno na Maior Loja Online de Tecidos Finos."},{"url":"/tecidos/malhas","text":"A Malha como o nome já diz, é um tecido bem maleável, que estica bastante e não amassa. Com excelente elasticidade e flexibilidade, adapta aos movimentos do corpo. Os tecidos de malha estão entre os mais antigos do mundo. Sua porosidade proporciona uma sensação térmica agradável e confortável. Confira as opções de Tecidos de Malha na Maior Loja Online de Tecidos Finos."},{"url":"/tecidos/musseline","text":"A Musseline ou Musselina, como é conhecida por alguns, é um tecido muito leve, transparente, com toque macio e delicado, muito usado na moda festa e moda casual. Existem vários tipos de Musseline, em cores lisas, estampadas, a Musseline toque de seda e a Musseline pesada, mas a característica principal de todas é a textura pigmentada e o caimento fluido e ventilado. Confira todas as opções de Musseline na Maior Loja Online de Tecidos Finos:"},{"url":"/tecidos/neoprene","text":"Os tecidos de Neoprene são famosos por apresentarem excelente custo-benefício. São tecidos térmicos que mantêm a temperatura do corpo e podem ser usados em qualquer estação. No calor se tornam refrescantes e no frio são quentinhos. Confira todas as opções de Tecidos Neoprene na Maior Loja de Tecidos Finos Online:"},{"url":"/tecidos/organza","text":"A Organza é um tecido leve, porém muito armado. É usada para confecção de peças que necessitam de volume, como vestidos de daminhas e debutantes. Além disso, pode ser combinado com outros materiais e tecidos para peças casuais ou mais elegantes. E ainda pode aparecer incrementando a decoração de ambientes porque possui um valor bem acessível. Confira as opções de Organza na Maior Loja Online de Tecidos Finos."},{"url":"/tecidos/paetes","text":"Os tecidos de paetê são brilhosos e elegantes, por isso são muito usados na moda festa. A maioria das lantejoulas utilizadas para confecção de paetês são feitas de vinil e costuradas em uma base de tule ou malha, que são tecidos maleáveis. As peças com aplicações mais espaçada costumam ter um caimento mais leve. Já aquelas com maior quantidade de lantejoulas e sem muito ou nenhum espaço entre elas, têm um resultado mais encorpado. Confira as opções de Paetês na Maior Loja de Tecidos Finos Online."},{"url":"/tecidos/peles-artificiais","text":"A pele artificial é um clássico tecido do inverno porque aquece qualquer look com muito charme e glamour. Além de quentinho, seu toque é tão macio quanto abraçar um ursinho de pelúcia. A Maximus Tecidos pensando na responsabilidade com o meio ambiente e com os animais, trabalha com tecidos puramente sintéticos, sem perder a sofisticação. Confira as opções de Peles Artificiais e outros tecidos de inverno na Maior Loja de Tecidos Finos Online."},{"url":"/tecidos/piquet","text":"O piquet é um tecido charmoso, caracterizado por sua superfície com desenhos em alto relevo no formato de losango ou casa de abelha. O processo de matelassê aumenta o efeito do relevo. Por conta do seu toque confortável, é ideal para confecção de peças de meia estação que podem ser usadas tanto em dias quentes, quanto em dias frios. Confira as opções de Piquet na Maior Loja de Tecidos Finos Online:"},{"url":"/tecidos/rendas-e-tules","text":"A renda é a principal escolha para a moda festa e a moda noiva, apesar de ser muito utilizada também na moda casual. Pode ser aplicada em vários tecidos. As rendas são conhecidas por serem clássicas e atemporais, além de muito versáteis. Podemos considerá-las curingas do guarda-roupa feminino. Confira as opções de Rendas Finas e Tules Bordados na Maior Loja de Tecidos Finos Online:"},{"url":"/tecidos/sarja","text":"A Sarja é um tecido plano, muito confortável que proporciona movimento e não absorve muito calor. Possui um toque mais lustroso e macio. O ligamento sarja é frequentemente mais firme do que o Tecido com ligamento em tela, este desenho é utilizado em tecidos de algodão, como o brim. A sarja algodão é mais refinada que o brim, pois possui toque mais lustroso e macio. Confira as opções de Sarja na Maior Loja de Tecidos Finos Online."},{"url":"/tecidos/shantung","text":"O shantung é um tecido leve e maleável, de aspecto macio, mesmo sendo mais encorpado. É muito utilizado na moda festa para confeccionar saias e vestidos. O shantung é um Tecido que apresenta toda a leveza e elegância chinesa. Foi criado há muitas décadas na província de Chan-Tung, na China, por meio da junção de fios de seda. Confira as opções de Shantung na Maior Loja de Tecidos Finos Online:"},{"url":"/tecidos/tafeta","text":"O Tafetá é um dos tecidos mais antigos do mundo. Seja para confecção de vestidos de festa ou para cortinas e decoração, o Tafetá é sinônimo de luxo e sofisticação. É um tecido mais sequinho, que arma um pouco e possui ótimo caimento. Pode ser mais leve ou mais volumoso, mais liso ou um pouco amarrotado, dependendo da composição. Confira todas as opções de Tafetá na Maior Loja de Tecidos Finos Online:"},{"url":"/tecidos/tecido-sintetico","text":"Estes tecidos sintéticos nunca saem de moda. São tendência em todo inverno, por serem tecidos estilosos e quentinhos. São politicamente corretos sem perder a sofisticação. A Maximus Tecidos pensando na responsabilidade com o meio ambiente e com os animais, trabalha com tecidos puramente sintéticos, sem perder a sofisticação. Confira as opções de Tecido Sintético e outros tecidos de inverno na Maior Loja de Tecidos Finos Online:"},{"url":"/tecidos/tecidos-para-decoracao"},{"url":"/tecidos/tules-lisos","text":"Os Tules lisos muito usados em sobreposições nas saias de moda festa, além de aparecer em babados e detalhes das roupas da moda casual. O tecido tule ganhou este nome pela sua cidade de origem, Tulle na França em meados de 1700. Anos mais tarde se tornou conhecido por ser encorporado nos figurinos de ballet. Na Maior Loja de Tecidos Finos Online você encontra várias opções de tule: Tule Ilusione, Tule Filó, Tule Francês, Tule Mince e mais!"},{"url":"/tecidos/veludo","text":"O veludo é um tecido de inverno democrático que pode ser facilmente utilizado, tanto na confecção de vestidos de festa luxuosos quanto em roupas casuais. É considerado um dos tecidos mais antigos do mundo e foi muito usado para roupas exclusivas de classes nobres. Até hoje o veludo é sinônimo de riqueza e sofisticação e está entre as principais apostas das últimas temporadas de moda. Confira as opções de Veludo e outros tecidos de inverno na Maior Loja de Tecidos Finos Online."},{"url":"/tecidos/viscose","text":"A Viscose é o tecido mais usado no verão para a confecção de roupas casuais por ser leve, fresquinha e com um bom caimento. Não se trata de um tecido transparente, porém por ser fino, necessita de forro. As estampas são sempre tendência e deixam as peças mais charmosas. Confira as opções de Viscose na Maior Loja de Tecidos Finos Online."},{"url":"/tecidos/zibeline","text":"O Zibeline é um tecido luxuoso queridinho das costureiras e estilistas. Tem um brilho acetinado e é bem encorpado, perfeito para fazer modelos de vestidos de festa e vestidos de noiva com volume nos cortes evasê e sereia. Confira as opções de Zibeline na Maior Loja de Tecidos Finos Online."},{"url":"/livros-moldes-e-reguas/coloracao-e-combinacao","text":"As cores trazem alegria à vida e vida à moda! Para saber usar as cores a seu favor, seja na hora de criar uma roupa, fazer combinações de tecidos e estampas ou orientar seu cliente sobre as cores que a favorecem, o Círculo Cromático e os Cards de Coloração Pessoal são ferramentas fundamentais. Assinados pela consultora de imagem Roberta Pasqualatto, referência dessa área no Brasil, nossos materiais de combinação e coloração são essenciais para quem trabalha com moda."},{"url":"/livros-moldes-e-reguas/desenho-de-moda","text":"O Desenho de Moda personaliza e agrega valor ao trabalho do estilista e da costureira. A Maximus Tecidos conta com diversos materiais que facilitam e agilizam o processo de passar a ideia para o papel, como Réguas de Desenho e o Caderno de Croquis com mais de 70 poses diferentes para você usar como base de suas criações."},{"url":"/livros-moldes-e-reguas/livros-e-apostilas","text":"Nossa editora própria, chamada Clube da Costureira, conta com mais de 10 títulos publicados. São livros de grandes nomes da costura e modelagem, com destaque para a professora, autora e modelista Marlene Mukai. Além de outros materiais exclusivos que reúnem Desenho de Moda, Crônicas de Costura e Agenda da Costureira, que vão te apoiar na sua jornada com a moda sob medida como materiais de estudo, organização, ou apenas como uma bela leitura!"},{"url":"/livros-moldes-e-reguas/manequins"},{"url":"/livros-moldes-e-reguas/moldes-de-roupas","text":"Trabalhar com moldes prontos pode ser uma grande vantagem para a costureira que prefere ir direto para a máquina, ou que ainda não se sente segura em desenvolver suas próprias modelagens. Na Maximus Tecidos contamos com um catálogo de mais de 160 moldes de roupas em amplas grades de tamanho, que vão do básico à moda festa, femininos, masculinos, infantis e da moda pet, desenvolvidos e assinados por modelistas que são referências em costura modelagem no Brasil."},{"url":"/livros-moldes-e-reguas/reguas","text":"Na Maximus Tecidos, trabalhamos com réguas de costura e modelagem das mais básicas e essenciais, como curvas e esquadros, até réguas exclusivas e personalizadas, assinadas por profissionais que são referências na moda sob medida, como régua de saia, régua em L, diversos tipos de curvas, régua para moda pet e guia para margem de costura."}],"urlCurrent":"/","__resolveType":"site/sections/Category/CategoryTextHeader.tsx"},{"page":{"sort":"OrderByPriceDESC","count":24,"filters":"dynamic","__resolveType":"deco-sites/std/loaders/vtex/legacy/productListingPage.ts"},"__resolveType":"site/sections/Categories.tsx"},{"page":{"sort":"price:asc","count":24,"fuzzy":"automatic","query":"tecido","__resolveType":"vtex/loaders/intelligentSearch/productListingPage.ts","selectedFacets":[]},"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/4fa45ab6-5b94-48a8-a976-9512beb0c96b","texts":[{"url":"/livros-moldes-e-reguas","text":"Nossos Livros, Moldes e Réguas são materiais indispensáveis para quem costura. Nossa editora, Clube da Costureira, conta com mais de <strong>10 títulos de livros</strong> de grandes nomes da moda, como a modelista <strong>Marlene Mukai</strong>, além de outros autores e materiais exclusivos, como réguas de modelagem básicas e personalizadas. Para a costureira que prefere moldes prontos em tamanho real, contamos com mais de <strong>160 opções de modelos</strong> que vão da festa ao casual, em grades de tamanho que vão do 36 ao 54."},{"url":"/tecidos","text":"Contamos com mais de <strong>3 mil tecidos finos</strong> exclusivos e de qualidade para vestidos de <strong>festa</strong>, vestidos de <strong>noiva</strong> e <strong>roupas casuais</strong>. Confira opções de tecidos na Maior Loja de Tecidos Finos Online."}],"layout":{"columns":{"mobile":2,"desktop":3},"variant":"aside"},"banners":[{"url":"/aviamentos-e-bordado","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/db318509-03bb-41c9-a533-b65bf9c3e084"},{"url":"/tecidos","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/15412e96-9b42-4243-8fd7-35a05ad8a97f"},{"url":"/livros-moldes-e-reguas","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c9bf3d96-9d40-4066-bdfe-3a078087c051"}],"columns":{},"variant":"aside","cardLayout":{"onMouseOver":{"showCta":false,"showFavoriteIcon":true},"elementsPositions":{"favoriteIcon":"Top right"}},"__resolveType":"site/sections/Product/SearchResult.tsx"},{"__resolveType":"site/sections/Integrations/YourviewsReviewStore.tsx"},{"__resolveType":"site/sections/Integrations/YourviewsIntegrations.tsx"},{"__resolveType":"site/sections/Content/BannerSchool.tsx"},{"__resolveType":"Footer - 05"},{"__resolveType":"Shortcuts - 01"},{"page":{"sort":"OrderByPriceDESC","count":24,"filters":"dynamic","__resolveType":"deco-sites/std/loaders/vtex/legacy/productListingPage.ts"},"jsonLD":{"sort":"OrderByPriceDESC","count":24,"filters":"dynamic","__resolveType":"vtex/loaders/legacy/productListingPage.ts"},"__resolveType":"deco-sites/std/sections/SEOPLP.tsx","titleTemplate":"%s | Deco.cx"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+    "name": "mais-vendidos",
+    "path": "/mais-vendidos",
+    "sections": [
+        {
+            "__resolveType": "Fashion theme"
+        },
+        {
+            "__resolveType": "Header - 01"
+        },
+        {
+            "page": {
+                "sort": "OrderByPriceDESC",
+                "count": 24,
+                "filters": "dynamic",
+                "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+            },
+            "title": "t",
+            "banners": [
+                {
+                    "url": "/livros-moldes-e-reguas",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/fe39b27a-860c-4850-8e05-f8f0aaab4ffe",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/2c4c9880-13e5-434d-847a-873e8a3027a8"
+                },
+                {
+                    "url": "/aviamentos-e-bordado",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/91e1ab00-59b8-4a57-a697-4c44d8c020d4",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c6c17773-d91f-40ee-a8cb-53148a8022f4"
+                },
+                {
+                    "url": "/tecidos",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c64b81f3-96de-4282-a39a-7d54ac837886",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/f19bdf8f-4683-4224-9b45-c99d5f2c948e"
+                },
+                {
+                    "url": "/novidades",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/2baa8103-6ed8-4219-9708-2607d2c9e30b",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/33329e44-0157-4890-90d0-77bc41e2178b"
+                },
+                {
+                    "url": "/ofertas",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/aee5e853-dcc9-4685-8c0f-e5f9a2c58b26",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/20fc1c8b-bdf2-4fbf-b011-c327320c1234"
+                },
+                {},
+                {
+                    "url": "/tecidos/crepe",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/2653c677-3da0-4da2-bed0-d384351d1b20",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/70db2793-85f9-4e1a-b588-1ca6cb1f37bb"
+                },
+                {
+                    "url": "/tecidos/alfaiataria",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/ada755d1-8c1d-4c30-840f-790db30b7d98",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5c366196-21c0-4878-b7dd-efcaa7436fb3"
+                },
+                {
+                    "url": "/tecidos/algodao",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/9ecd05a5-c719-494a-96eb-a9eb3463206a",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/d9fd703e-0ec7-46f4-9c82-2f3132a7beee"
+                },
+                {
+                    "url": "/tecidos/camurca",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c3972ba4-3893-43f7-a12b-8421f1ea11a5",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b136d8d0-6ad1-4500-8505-c699ac5f5cab"
+                },
+                {
+                    "url": "/tecidos/cetim",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/2c819111-6f34-4a80-82d4-b545e6f532a1",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c4894ebb-5f0a-4622-9e67-90cfb66462c8"
+                },
+                {
+                    "url": "/tecidos/chiffon",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/054fb3cc-9322-4ca4-8762-685b2f7fb83e"
+                },
+                {
+                    "url": "/tecidos/crepe",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/fb50b0ea-588d-4b66-be69-f811cbc0d717",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5e944c2d-7c44-4b8e-96c3-c8844ab81df3"
+                },
+                {
+                    "url": "/tecidos/flanela",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/f52808a4-ae80-419d-807c-bf74b2df952a",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/bf7348bc-7168-4244-9cdd-72ab10735f14"
+                },
+                {
+                    "url": "/tecidos/forros",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c745f072-429e-4cc8-81cb-ecb31930f089",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/e837370c-6508-46fb-b155-ed97fd6c1711"
+                },
+                {
+                    "url": "/tecidos/gazar",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/663c1136-eebc-4876-b054-a7f58fa46d0c",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/3f47c655-1ca2-4caf-b04e-2011dcaa3655"
+                },
+                {
+                    "url": "/jacquard-brocados",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/f6031f87-7c3c-4a7b-994f-ca0356b04a80",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/3399b55c-18f1-4f66-b55d-6ed11128771b"
+                },
+                {
+                    "url": "/lame-e-lurex--brilho-",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/29cbc6a2-7dcb-4325-b0f1-f7caa2ec7271",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/7f5172d5-0c15-4e6a-8396-e8de56f06219"
+                },
+                {
+                    "url": "/tecidos/linho",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/91374f13-1865-41ce-bc6e-6bc12154921e",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b3eb82d1-7e4f-4c2e-aaf9-e79216f5c277"
+                },
+                {
+                    "url": "/tecidos/las-puras-e-mistas",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/caf46387-60bb-4f81-8383-177c840f6333",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/24081fd5-172f-431a-91ce-17879169c38f"
+                },
+                {
+                    "url": "/tecidos/malhas",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/4ff04645-721e-4f5b-9cc1-72fdd115275d",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/df849146-3725-4c9e-b438-3f96b45c8311"
+                },
+                {
+                    "url": "/tecidos/musseline",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/7d46901d-165f-403b-82da-22fe4828671c",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/3d4c2239-69cd-421f-a629-cfe81e80afd8"
+                },
+                {
+                    "url": "/tecidos/neoprene",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/1822136d-98ac-4aa4-8b71-dbb4b016533a",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c1f8ad91-60a6-4d1c-b20c-da545d36905c"
+                },
+                {
+                    "url": "/tecidos/organza",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a00f4587-0d9c-4c96-a7e7-9f3f9d2178c2",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/011892ff-ad83-4a62-9b41-1850e5534b90"
+                },
+                {
+                    "url": "/tecidos/paetes",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/14bb01c5-d674-47e1-9612-97737df72316",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5303034a-80dc-417c-b328-cab7eb16b036"
+                },
+                {
+                    "url": "/tecidos/peles-artificiais",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/fd4eea22-430f-45de-a4ae-689a260cbc2e",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/61304c72-0bf5-415c-a930-9cdb4a863159"
+                },
+                {
+                    "url": "/tecidos/piquet",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/255570b1-5456-4219-8ec9-a91e3b8f80c4",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/d01c33f6-4635-4aa1-a278-9a6032af684c"
+                },
+                {
+                    "url": "/tecidos/rendas-e-tules",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b39b8cec-6a9c-4ebf-8c96-034cfe9af301",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/2ae2e729-5f28-4ccc-99cc-3ddebc3ebf14"
+                },
+                {
+                    "url": "/tecidos/sarja",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/5aefc789-498a-4bfe-9244-ff9c590bb448",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/70808c47-3ade-4d66-85df-9030705ddfc2"
+                },
+                {
+                    "url": "/tecidos/shantung",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/cef3afae-dd3a-45af-a969-64e5aad9a44e",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a9f36def-cdba-4cc0-9307-0d5a8d35c359"
+                },
+                {
+                    "url": "/tecidos/tafeta",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/6172c682-9e38-491c-af69-2eb9cede2319",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c8f59142-5d67-4133-a2dc-4f9f547fa9d9"
+                },
+                {
+                    "url": "/tecidos/tecido-sintetico",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b0971603-3a06-4bbc-a0c6-5d522538daa1",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/8c37795f-8954-418b-b060-fcbadb607025"
+                },
+                {
+                    "url": "/tecidos/tecidos-para-decoracao",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b4733041-3bae-4f0b-a3da-a771e16bdb10",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/9d698479-6bf6-433d-9335-5a17ea72c178"
+                },
+                {
+                    "url": "/tecidos/tules-lisos",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/bd04b68e-cb9f-455b-b6c7-eab79560af1f",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/f96c1240-055e-4dd2-89d9-366e9b643a7e"
+                },
+                {
+                    "url": "/tecidos/veludo",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/e03a638c-4aaa-4d98-9244-e01cc2494d29",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b2e7323f-600d-467a-ba4f-62060852c871"
+                },
+                {
+                    "url": "/tecidos/viscose",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/ae075081-a007-430a-b581-0381a7d72e2b",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/4c8f36a3-1d3a-4cee-b2ab-14422b7fbb11"
+                },
+                {
+                    "url": "/tecidos/zibeline",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/af6e7816-4b1a-4f70-af76-14771f29a93a",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b27b6f5b-f6e9-44f6-8344-e0891ae4a8ac"
+                },
+                {
+                    "url": "/livros-moldes-e-reguas/coloracao-e-combinacao",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/9e292f31-fc62-41aa-abc5-8f908045cd70",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c6771a75-0eb5-4e67-8837-40dfb99e94b6"
+                },
+                {
+                    "url": "/livros-moldes-e-reguas/desenho-de-moda",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a4231962-707f-4305-9c1b-9e4986897d29",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/7f6ea229-692e-4703-a196-77f91ed8ceb3"
+                },
+                {
+                    "url": "/livros-moldes-e-reguas/livros-e-apostilas",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/8d65b2df-5030-407e-bff7-aabf39c9c3fb",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/3133d303-060e-4296-8867-197d55ecd992"
+                },
+                {
+                    "url": "/livros-moldes-e-reguas/manequins",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/8eb28815-2a8e-47a8-831a-73bf67ca404a",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/92140b7e-f4cf-43aa-b09f-2bc6e1f44de1"
+                },
+                {
+                    "url": "/livros-moldes-e-reguas/moldes-de-roupas",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/02fe73de-3430-4344-8a04-e93f2f33938d",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a83d8d77-a017-4526-9b88-c0e45833b106"
+                },
+                {
+                    "url": "/livros-moldes-e-reguas/reguas",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/18b71881-e60b-478a-bb40-319aa8524cda",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/b0c3bf6f-5726-477e-9b5a-a7f14873a407"
+                },
+                {
+                    "url": "/aviamentos-e-bordado/armarinhos-e-aviamentos",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/975191bb-be0d-4d4c-a4cf-d895784ed4d6",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/7182678b-29c5-41c6-9264-7974a4743919"
+                },
+                {
+                    "url": "/aviamentos-e-bordado/bordado-e-pedrarias",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/7569efb5-009b-4769-8be9-d87a21daa50c",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a1e4227f-da6f-4531-a3a5-de5a5babf9f1"
+                },
+                {
+                    "url": "/ofertas/armarinhos-aviamentos-e-bordados",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/a4dcc425-0c32-4a05-9cc8-0c4ff5c35b53",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/733155dd-6291-44a1-9a21-948c91071720"
+                },
+                {
+                    "url": "/ofertas/livros-moldes-e-reguas",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/526dd93c-8e5c-4724-b345-30c663ed487c",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/bc14559b-46e0-4d0e-8b37-9a6c7a6aa637"
+                },
+                {
+                    "url": "/ofertas/tecidos-promocionais",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/99a9b098-52aa-4d74-8c7a-84e2fb26d736",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/6734e43b-ea9f-49d6-a98b-228dc0e81454"
+                },
+                {
+                    "url": "/ofertas/tecidos-fim-de-peca",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/bd3572a8-2257-4217-a2d2-07c176d216e5",
+                    "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/4c8a6dc4-2277-49a9-b92b-18694a509eb7"
+                }
+            ],
+            "urlCurrent": "t",
+            "__resolveType": "site/sections/Category/CategoryBannerHeader.tsx"
+        },
+        {
+            "__resolveType": "Category Banner - 01"
+        },
+        {
+            "page": {
+                "sort": "OrderByPriceDESC",
+                "count": 24,
+                "filters": "dynamic",
+                "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+            },
+            "texts": [
+                {
+                    "url": "/livros-moldes-e-reguas",
+                    "text": "Nossos Livros, Moldes e Réguas são materiais indispensáveis para quem costura. Nossa editora, Clube da Costureira, conta com mais de <strong>10 títulos de livros</strong> de grandes nomes da moda, como a modelista <strong>Marlene Mukai</strong>, além de outros autores e materiais exclusivos, como réguas de modelagem básicas e personalizadas. Para a costureira que prefere moldes prontos em tamanho real, contamos com mais de <strong>160 opções de modelos</strong> que vão da festa ao casual, em grades de tamanho que vão do 36 ao 54."
+                },
+                {
+                    "url": "/tecidos",
+                    "text": "Contamos com mais de <strong>3 mil tecidos finos</strong> exclusivos e de qualidade para vestidos de <strong>festa</strong>, vestidos de <strong>noiva</strong> e <strong>roupas casuais</strong>. Confira opções de tecidos na Maior Loja de Tecidos Finos Online."
+                },
+                {
+                    "url": "/tecidos/alfaiataria",
+                    "text": "Os tecidos de alfaiataria são elegantes, possuem uma sofisticação única e nunca saem de moda. São peças curingas que vestem bem todos os estilos e podem transitar do dia à noite sem problema algum. São clássicos e excelentes para confecção de blazers, calças, coletes e ternos, tanto femininos quanto masculinos. Confira todas as opções de Tecidos de Alfaiataria na Maior Loja de Tecidos Finos Online:"
+                },
+                {
+                    "url": "/tecidos/algodao",
+                    "text": "Os tecidos de algodão são de fibra natural macia e por isso são conhecidos pelo seu conforto, durabilidade e capacidade de se adaptar para todos os tipos de clima. Confira todas as opções de Tecidos de Algodão na Maior Loja de Tecidos Finos Online:"
+                },
+                {
+                    "url": "/tecidos/camurca",
+                    "text": "A camurça é um tecido que confere um ar setentinha muito versátil, tanto aos looks de inverno, como nos de verão. É um tecido sintético que imita o material feito da pele do animal. Seu toque suave e macio é muito gostoso e confortável! Confira todas as opções de Tecidos Camurça e outros tecidos de inverno na Maior Loja de Tecidos Finos Online:"
+                },
+                {
+                    "url": "/tecidos/cetim",
+                    "text": "O Cetim é um tecido de aspecto brilhoso e elegante, por isso possui uma vocação para confeccionar vestidos de festa. Seu toque liso e agradável combinado com seu caimento mais fluído oferece muito conforto para quem veste. Algumas variedades de Cetim são mais indicadas para forro enquanto outras são utilizadas como tecido de base. Confira todas as opções de Cetim na Maior Loja Online de Tecidos Finos:"
+                },
+                {
+                    "url": "/tecidos/chiffon",
+                    "text": "O chiffon é um tecido leve, fino, mas que tem um certo peso. Não chega a dar volume para as peças, mas proporciona um bom caimento. Confira todas as nossas opções:"
+                },
+                {
+                    "url": "/tecidos/crepe",
+                    "text": "O Crepe é um tecido maleável muito usado na confecção de vestidos para moda festa e também roupas de moda casual. O seu caimento é perfeito e varia conforme o tipo de crepe escolhido. O Crepe apresenta uma variedade imensa de espessuras. Alguns são mais finos, outros médios, pesados, com elastano ou sem elastano. Confira essas e todas as outras opções de Crepe na Maior Loja de Tecidos Finos Online:"
+                },
+                {
+                    "url": "/tecidos/flanela",
+                    "text": "A Flanela é um clássico tecido de inverno e ao mesmo tempo moderno. Sejam para confeccionar as típicas camisas no melhor estilo lenhador ou pijamas quentinhos para o inverno, a Flanela nunca sai de moda e é o xodó dos dias mais frios. Os tecidos de inverno como a flanela possuem uma superfície felpuda, de textura macia e toque muito gostoso e aconchegante. Confira todas as opções de Flanela e outros tecidos de inverno na Maior Loja de Tecidos Finos Online:"
+                },
+                {
+                    "url": "/tecidos/forros",
+                    "text": "É notável a qualidade superior na roupa quando há um forro colocado corretamente. O forro não só valoriza mais a sua roupa, mas também garante maior conforto e durabilidade. Os nossos tecidos para forros são fáceis de higienizar e não amarrotam com facilidade. Na Maximus Tecidos você pode comprar tecidos para forros de várias cores e estampas. Confira as opções de forro na Maior Loja de Tecidos Finos Online:"
+                },
+                {
+                    "url": "/tecidos/gazar",
+                    "text": "O Gazar é um tecido fluido, que fica armado com mais facilidade, mas que tem movimento. É muito usado na moda noiva e moda festa. Confira as opções de Gazar na Maior Loja de Tecidos Finos Online:"
+                },
+                {
+                    "url": "/tecidos/jacquard-brocados",
+                    "text": "O Jacquard é um tecido muito sofisticado e estiloso que pode ser utilizado na moda festa e também na moda casual. É muito versátil e nunca sai de moda, garantindo um toque de requinte e sofisticação a peça. Sua superfície é toda trabalhada numa textura em alto relevo, muito delicada. Confira as opções de Jacquard e Brocados na Maior Loja Online de Tecidos Finos:"
+                },
+                {
+                    "url": "/lame-e-lurex--brilho-",
+                    "text": "O Lamê e o Lurex são tecidos com bom caimento, semelhante às malharias. Possuem um brilho metalizado ou de glitter muito sofisticado e moderno. Confira as opções de Lamê e Lurex na Maior Loja Online de Tecidos Finos."
+                },
+                {
+                    "url": "/tecidos/linho",
+                    "text": "O Linho é um tecido de aspecto rústico que está super na moda. É um tecido versátil que ao mesmo tempo em que é sofisticado, também pode ser usado para peças casuais e despojadas. O linho é caracterizado como um tecido que simboliza conforto e elegância. Confira as opções de Tecidos de Linho na Maior Loja Online de Tecidos Finos."
+                },
+                {
+                    "url": "/tecidos/las-puras-e-mistas",
+                    "text": "Temos as lãs puras (naturais) e as lãs mistas. Os tecidos de inverno como a lã são excelentes para confecção de casacos e sobretudos porque deixam qualquer look mais elegante. Quando as temperaturas caem, ninguém resiste ao conforto da textura quentinha e macia da lã. Confira as opções de Lãs Puras e Mistas e outros tecidos de inverno na Maior Loja Online de Tecidos Finos."
+                },
+                {
+                    "url": "/tecidos/malhas",
+                    "text": "A Malha como o nome já diz, é um tecido bem maleável, que estica bastante e não amassa. Com excelente elasticidade e flexibilidade, adapta aos movimentos do corpo. Os tecidos de malha estão entre os mais antigos do mundo. Sua porosidade proporciona uma sensação térmica agradável e confortável. Confira as opções de Tecidos de Malha na Maior Loja Online de Tecidos Finos."
+                },
+                {
+                    "url": "/tecidos/musseline",
+                    "text": "A Musseline ou Musselina, como é conhecida por alguns, é um tecido muito leve, transparente, com toque macio e delicado, muito usado na moda festa e moda casual. Existem vários tipos de Musseline, em cores lisas, estampadas, a Musseline toque de seda e a Musseline pesada, mas a característica principal de todas é a textura pigmentada e o caimento fluido e ventilado. Confira todas as opções de Musseline na Maior Loja Online de Tecidos Finos:"
+                },
+                {
+                    "url": "/tecidos/neoprene",
+                    "text": "Os tecidos de Neoprene são famosos por apresentarem excelente custo-benefício. São tecidos térmicos que mantêm a temperatura do corpo e podem ser usados em qualquer estação. No calor se tornam refrescantes e no frio são quentinhos. Confira todas as opções de Tecidos Neoprene na Maior Loja de Tecidos Finos Online:"
+                },
+                {
+                    "url": "/tecidos/organza",
+                    "text": "A Organza é um tecido leve, porém muito armado. É usada para confecção de peças que necessitam de volume, como vestidos de daminhas e debutantes. Além disso, pode ser combinado com outros materiais e tecidos para peças casuais ou mais elegantes. E ainda pode aparecer incrementando a decoração de ambientes porque possui um valor bem acessível. Confira as opções de Organza na Maior Loja Online de Tecidos Finos."
+                },
+                {
+                    "url": "/tecidos/paetes",
+                    "text": "Os tecidos de paetê são brilhosos e elegantes, por isso são muito usados na moda festa. A maioria das lantejoulas utilizadas para confecção de paetês são feitas de vinil e costuradas em uma base de tule ou malha, que são tecidos maleáveis. As peças com aplicações mais espaçada costumam ter um caimento mais leve. Já aquelas com maior quantidade de lantejoulas e sem muito ou nenhum espaço entre elas, têm um resultado mais encorpado. Confira as opções de Paetês na Maior Loja de Tecidos Finos Online."
+                },
+                {
+                    "url": "/tecidos/peles-artificiais",
+                    "text": "A pele artificial é um clássico tecido do inverno porque aquece qualquer look com muito charme e glamour. Além de quentinho, seu toque é tão macio quanto abraçar um ursinho de pelúcia. A Maximus Tecidos pensando na responsabilidade com o meio ambiente e com os animais, trabalha com tecidos puramente sintéticos, sem perder a sofisticação. Confira as opções de Peles Artificiais e outros tecidos de inverno na Maior Loja de Tecidos Finos Online."
+                },
+                {
+                    "url": "/tecidos/piquet",
+                    "text": "O piquet é um tecido charmoso, caracterizado por sua superfície com desenhos em alto relevo no formato de losango ou casa de abelha. O processo de matelassê aumenta o efeito do relevo. Por conta do seu toque confortável, é ideal para confecção de peças de meia estação que podem ser usadas tanto em dias quentes, quanto em dias frios. Confira as opções de Piquet na Maior Loja de Tecidos Finos Online:"
+                },
+                {
+                    "url": "/tecidos/rendas-e-tules",
+                    "text": "A renda é a principal escolha para a moda festa e a moda noiva, apesar de ser muito utilizada também na moda casual. Pode ser aplicada em vários tecidos. As rendas são conhecidas por serem clássicas e atemporais, além de muito versáteis. Podemos considerá-las curingas do guarda-roupa feminino. Confira as opções de Rendas Finas e Tules Bordados na Maior Loja de Tecidos Finos Online:"
+                },
+                {
+                    "url": "/tecidos/sarja",
+                    "text": "A Sarja é um tecido plano, muito confortável que proporciona movimento e não absorve muito calor. Possui um toque mais lustroso e macio. O ligamento sarja é frequentemente mais firme do que o Tecido com ligamento em tela, este desenho é utilizado em tecidos de algodão, como o brim. A sarja algodão é mais refinada que o brim, pois possui toque mais lustroso e macio. Confira as opções de Sarja na Maior Loja de Tecidos Finos Online."
+                },
+                {
+                    "url": "/tecidos/shantung",
+                    "text": "O shantung é um tecido leve e maleável, de aspecto macio, mesmo sendo mais encorpado. É muito utilizado na moda festa para confeccionar saias e vestidos. O shantung é um Tecido que apresenta toda a leveza e elegância chinesa. Foi criado há muitas décadas na província de Chan-Tung, na China, por meio da junção de fios de seda. Confira as opções de Shantung na Maior Loja de Tecidos Finos Online:"
+                },
+                {
+                    "url": "/tecidos/tafeta",
+                    "text": "O Tafetá é um dos tecidos mais antigos do mundo. Seja para confecção de vestidos de festa ou para cortinas e decoração, o Tafetá é sinônimo de luxo e sofisticação. É um tecido mais sequinho, que arma um pouco e possui ótimo caimento. Pode ser mais leve ou mais volumoso, mais liso ou um pouco amarrotado, dependendo da composição. Confira todas as opções de Tafetá na Maior Loja de Tecidos Finos Online:"
+                },
+                {
+                    "url": "/tecidos/tecido-sintetico",
+                    "text": "Estes tecidos sintéticos nunca saem de moda. São tendência em todo inverno, por serem tecidos estilosos e quentinhos. São politicamente corretos sem perder a sofisticação. A Maximus Tecidos pensando na responsabilidade com o meio ambiente e com os animais, trabalha com tecidos puramente sintéticos, sem perder a sofisticação. Confira as opções de Tecido Sintético e outros tecidos de inverno na Maior Loja de Tecidos Finos Online:"
+                },
+                {
+                    "url": "/tecidos/tecidos-para-decoracao"
+                },
+                {
+                    "url": "/tecidos/tules-lisos",
+                    "text": "Os Tules lisos muito usados em sobreposições nas saias de moda festa, além de aparecer em babados e detalhes das roupas da moda casual. O tecido tule ganhou este nome pela sua cidade de origem, Tulle na França em meados de 1700. Anos mais tarde se tornou conhecido por ser encorporado nos figurinos de ballet. Na Maior Loja de Tecidos Finos Online você encontra várias opções de tule: Tule Ilusione, Tule Filó, Tule Francês, Tule Mince e mais!"
+                },
+                {
+                    "url": "/tecidos/veludo",
+                    "text": "O veludo é um tecido de inverno democrático que pode ser facilmente utilizado, tanto na confecção de vestidos de festa luxuosos quanto em roupas casuais. É considerado um dos tecidos mais antigos do mundo e foi muito usado para roupas exclusivas de classes nobres. Até hoje o veludo é sinônimo de riqueza e sofisticação e está entre as principais apostas das últimas temporadas de moda. Confira as opções de Veludo e outros tecidos de inverno na Maior Loja de Tecidos Finos Online."
+                },
+                {
+                    "url": "/tecidos/viscose",
+                    "text": "A Viscose é o tecido mais usado no verão para a confecção de roupas casuais por ser leve, fresquinha e com um bom caimento. Não se trata de um tecido transparente, porém por ser fino, necessita de forro. As estampas são sempre tendência e deixam as peças mais charmosas. Confira as opções de Viscose na Maior Loja de Tecidos Finos Online."
+                },
+                {
+                    "url": "/tecidos/zibeline",
+                    "text": "O Zibeline é um tecido luxuoso queridinho das costureiras e estilistas. Tem um brilho acetinado e é bem encorpado, perfeito para fazer modelos de vestidos de festa e vestidos de noiva com volume nos cortes evasê e sereia. Confira as opções de Zibeline na Maior Loja de Tecidos Finos Online."
+                },
+                {
+                    "url": "/livros-moldes-e-reguas/coloracao-e-combinacao",
+                    "text": "As cores trazem alegria à vida e vida à moda! Para saber usar as cores a seu favor, seja na hora de criar uma roupa, fazer combinações de tecidos e estampas ou orientar seu cliente sobre as cores que a favorecem, o Círculo Cromático e os Cards de Coloração Pessoal são ferramentas fundamentais. Assinados pela consultora de imagem Roberta Pasqualatto, referência dessa área no Brasil, nossos materiais de combinação e coloração são essenciais para quem trabalha com moda."
+                },
+                {
+                    "url": "/livros-moldes-e-reguas/desenho-de-moda",
+                    "text": "O Desenho de Moda personaliza e agrega valor ao trabalho do estilista e da costureira. A Maximus Tecidos conta com diversos materiais que facilitam e agilizam o processo de passar a ideia para o papel, como Réguas de Desenho e o Caderno de Croquis com mais de 70 poses diferentes para você usar como base de suas criações."
+                },
+                {
+                    "url": "/livros-moldes-e-reguas/livros-e-apostilas",
+                    "text": "Nossa editora própria, chamada Clube da Costureira, conta com mais de 10 títulos publicados. São livros de grandes nomes da costura e modelagem, com destaque para a professora, autora e modelista Marlene Mukai. Além de outros materiais exclusivos que reúnem Desenho de Moda, Crônicas de Costura e Agenda da Costureira, que vão te apoiar na sua jornada com a moda sob medida como materiais de estudo, organização, ou apenas como uma bela leitura!"
+                },
+                {
+                    "url": "/livros-moldes-e-reguas/manequins"
+                },
+                {
+                    "url": "/livros-moldes-e-reguas/moldes-de-roupas",
+                    "text": "Trabalhar com moldes prontos pode ser uma grande vantagem para a costureira que prefere ir direto para a máquina, ou que ainda não se sente segura em desenvolver suas próprias modelagens. Na Maximus Tecidos contamos com um catálogo de mais de 160 moldes de roupas em amplas grades de tamanho, que vão do básico à moda festa, femininos, masculinos, infantis e da moda pet, desenvolvidos e assinados por modelistas que são referências em costura modelagem no Brasil."
+                },
+                {
+                    "url": "/livros-moldes-e-reguas/reguas",
+                    "text": "Na Maximus Tecidos, trabalhamos com réguas de costura e modelagem das mais básicas e essenciais, como curvas e esquadros, até réguas exclusivas e personalizadas, assinadas por profissionais que são referências na moda sob medida, como régua de saia, régua em L, diversos tipos de curvas, régua para moda pet e guia para margem de costura."
+                }
+            ],
+            "urlCurrent": "/",
+            "__resolveType": "site/sections/Category/CategoryTextHeader.tsx"
+        },
+        {
+            "page": {
+                "sort": "OrderByPriceDESC",
+                "count": 24,
+                "filters": "dynamic",
+                "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+            },
+            "__resolveType": "site/sections/Categories.tsx"
+        },
+        {
+            "page": {
+                "sort": "price:asc",
+                "count": 24,
+                "fuzzy": "automatic",
+                "query": "tecido",
+                "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                "selectedFacets": []
+            },
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/4fa45ab6-5b94-48a8-a976-9512beb0c96b",
+            "texts": [
+                {
+                    "url": "/livros-moldes-e-reguas",
+                    "text": "Nossos Livros, Moldes e Réguas são materiais indispensáveis para quem costura. Nossa editora, Clube da Costureira, conta com mais de <strong>10 títulos de livros</strong> de grandes nomes da moda, como a modelista <strong>Marlene Mukai</strong>, além de outros autores e materiais exclusivos, como réguas de modelagem básicas e personalizadas. Para a costureira que prefere moldes prontos em tamanho real, contamos com mais de <strong>160 opções de modelos</strong> que vão da festa ao casual, em grades de tamanho que vão do 36 ao 54."
+                },
+                {
+                    "url": "/tecidos",
+                    "text": "Contamos com mais de <strong>3 mil tecidos finos</strong> exclusivos e de qualidade para vestidos de <strong>festa</strong>, vestidos de <strong>noiva</strong> e <strong>roupas casuais</strong>. Confira opções de tecidos na Maior Loja de Tecidos Finos Online."
+                }
+            ],
+            "layout": {
+                "columns": {
+                    "mobile": 2,
+                    "desktop": 3
+                },
+                "variant": "aside"
+            },
+            "banners": [
+                {
+                    "url": "/aviamentos-e-bordado",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/db318509-03bb-41c9-a533-b65bf9c3e084"
+                },
+                {
+                    "url": "/tecidos",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/15412e96-9b42-4243-8fd7-35a05ad8a97f"
+                },
+                {
+                    "url": "/livros-moldes-e-reguas",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2244/c9bf3d96-9d40-4066-bdfe-3a078087c051"
+                }
+            ],
+            "columns": {},
+            "variant": "aside",
+            "cardLayout": {
+                "onMouseOver": {
+                    "showCta": false,
+                    "showFavoriteIcon": true
+                },
+                "elementsPositions": {
+                    "favoriteIcon": "Top right"
+                }
+            },
+            "__resolveType": "site/sections/Product/SearchResult.tsx"
+        },
+        {
+            "__resolveType": "site/sections/Integrations/YourviewsReviewStore.tsx"
+        },
+        {
+            "__resolveType": "site/sections/Integrations/YourviewsIntegrations.tsx"
+        },
+        {
+            "__resolveType": "site/sections/Content/BannerSchool.tsx"
+        },
+        {
+            "__resolveType": "Footer - 05"
+        },
+        {
+            "__resolveType": "Shortcuts - 01"
+        },
+        {
+            "page": {
+                "sort": "OrderByPriceDESC",
+                "count": 24,
+                "filters": "dynamic",
+                "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+            },
+            "jsonLD": {
+                "sort": "OrderByPriceDESC",
+                "count": 24,
+                "filters": "dynamic",
+                "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+            },
+            "__resolveType": "commerce/sections/Seo/SeoPLPV2.tsx",
+            "titleTemplate": "%s | Deco.cx"
+        }
+    ],
+    "__resolveType": "$live/pages/LivePage.tsx"
+}

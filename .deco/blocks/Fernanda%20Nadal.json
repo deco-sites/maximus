@@ -1,0 +1,7 @@
+{
+  "sort": "release:desc",
+  "count": 24,
+  "fuzzy": "automatic",
+  "query": "Fernanda Nadal Bordados",
+  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
+}

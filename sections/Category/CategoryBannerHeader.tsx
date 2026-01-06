@@ -1,5 +1,5 @@
 import type { ProductListingPage } from "apps/commerce/types.ts";
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import type { ImageWidget as LiveImage } from "apps/admin/widgets.ts";
 
 export interface IBanner {
   url?: string;
@@ -12,18 +12,29 @@ export interface Props {
   banners?: IBanner[];
 }
 
+export function LoadingFallback() {
+  return (
+    <div class="w-full max-w-[1236px] mx-auto min-h-[200px] bg-[#171413] mb-6 mt-9 relative flex items-center justify-center max-md:mt-[128px]">
+      <div class="flex flex-col items-center gap-4">
+        <div class="skeleton h-7 w-48 max-md:w-32"></div>
+        <div class="skeleton h-4 w-12"></div>
+      </div>
+    </div>
+  );
+}
+
 export default function CategoryBannerHeader(
   { page, banners }: Props,
 ) {
-  if(!page) return;
+  if(!page) return null;
   const { breadcrumb } = page;
   const { itemListElement, numberOfItems } = breadcrumb;
 
   /* title */
   const title = itemListElement[numberOfItems - 1]?.name;
 
-  const format = (str: string) => {
-    if (!str) return;
+  const format = (str: string | undefined) => {
+    if (!str) return "";
 
     return str.toLowerCase().toLowerCase()
       .normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/,/g, "")
@@ -43,7 +54,7 @@ export default function CategoryBannerHeader(
     item.url === urlCurrent
   );
 
-  if (!title) return;
+  if (!title) return null;
 
   return (
     <div class="w-full max-w-[1236px] mx-auto min-h-[200px] bg-[#171413] mb-6 mt-9 relative flex items-center justify-center max-md:mt-[128px]">

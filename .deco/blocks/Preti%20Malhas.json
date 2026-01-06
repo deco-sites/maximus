@@ -1,0 +1,7 @@
+{
+  "sort": "OrderByReleaseDateDESC",
+  "term": "Preti Malhas",
+  "count": 24,
+  "filters": "dynamic",
+  "__resolveType": "vtex/loaders/legacy/productListingPage.ts"
+}
