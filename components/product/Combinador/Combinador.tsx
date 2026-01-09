@@ -23,7 +23,7 @@ export default function Combinador() {
     }
 
     const data = await Runtime.invoke({
-      key: "deco-sites/std/loaders/vtex/legacy/productList.ts",
+      key: "vtex/loaders/legacy/productList.ts",
       props: { fq: listFq, count: listFq.length },
     });
 

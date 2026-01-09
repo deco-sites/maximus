@@ -88,7 +88,7 @@
         "title": "Quem comprou, também comprou",
         "products": {
           "crossSelling": "whosawalsosaw",
-          "__resolveType": "deco-sites/std/functions/vtexLegacyRelatedProductsLoader.ts"
+          "__resolveType": "vtex/loaders/legacy/relatedProductsLoader.ts"
         },
         "__resolveType": "site/sections/Product/ProductShelfPdp.tsx"
       }

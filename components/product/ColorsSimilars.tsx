@@ -12,7 +12,7 @@ function ColorsSimilars({ query, url, isMeter }: any) {
 
   const get = async () => {
     const data = await Runtime.invoke({
-      key: "deco-sites/std/loaders/vtex/legacy/productList.ts",
+      key: "vtex/loaders/legacy/productList.ts",
       props: { fq: [query], count: 50 },
     });
 
