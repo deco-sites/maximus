@@ -10,6 +10,8 @@ export interface Props {
   };
 }
 
+export const VTEX_PAGE_LIMIT = 50;
+
 export default function PaginationCustom(
   { pageInfo }: Props,
 ) {
@@ -19,19 +21,27 @@ export default function PaginationCustom(
     ? pageInfo.nextPage.split("page=")[0]
     : "?";
 
-  const links = [];
-  const totalPages = Math.ceil(pageInfo.records / pageInfo.recordPerPage);
+  let links = [];
+  const totalPages = Math.min(
+    Math.ceil(pageInfo.records / pageInfo.recordPerPage),
+    VTEX_PAGE_LIMIT,
+  );
 
   for (let i = 1; i <= totalPages; i++) {
-    links.push({
-      "label": i,
-      "href": `${pageFormated}page=${i}`,
-      "show": i < 5 && pageInfo.currentPage < 4
-        ? true
-        : i > pageInfo.currentPage - 3 && i < pageInfo.currentPage + 2
-        ? true
-        : false,
-    });
+    if (
+      (i < 5 && pageInfo.currentPage < 4) ||
+      (i > pageInfo.currentPage - 3 && i < pageInfo.currentPage + 2)
+    ) {
+      links.push({
+        "label": i,
+        "href": `${pageFormated}page=${i}`,
+      });
+    }
+  }
+
+  if (pageInfo.currentPage === VTEX_PAGE_LIMIT) {
+    const page = pageInfo.currentPage - 3;
+    links = [{ label: page, href: `${pageFormated}page=${page}` }, ...links];
   }
 
   return (
@@ -54,23 +64,25 @@ export default function PaginationCustom(
                 pageInfo.currentPage === item.label
                   ? "bg-black text-white border-black"
                   : "bg-white text-neutral-800 border-[#EAEAEA] hover:border-black"
-              } ${
-                item.show ? "flex" : "hidden"
-              } w-8 h-8 border justify-center items-center mx-[5px] my-0 rounded-[5px] border-solid text-sm font-normal leading-6`}
+              } flex w-8 h-8 border justify-center items-center mx-[5px] my-0 rounded-[5px] border-solid text-sm font-normal leading-6`}
               href={item.href}
             >
               {item.label}
             </a>
           ))}
         </div>
-        <a
-          aria-label="next page link"
-          rel="next"
-          href={pageInfo.nextPage ?? "#"}
-          class="ml-1 flex items-center justify-center text-neutral-800 w-8 h-8 hover:bg-white rounded-[5px] border border-solid border-[#EAEAEA] hover:border-black"
-        >
-          <Icon id="ChevronRight" size={20} strokeWidth={1} />
-        </a>
+        {pageInfo.nextPage && pageInfo.currentPage !== VTEX_PAGE_LIMIT
+          ? (
+            <a
+              aria-label="next page link"
+              rel="next"
+              href={pageInfo.nextPage}
+              class="ml-1 flex items-center justify-center text-neutral-800 w-8 h-8 hover:bg-white rounded-[5px] border border-solid border-[#EAEAEA] hover:border-black"
+            >
+              <Icon id="ChevronRight" size={20} strokeWidth={1} />
+            </a>
+          )
+          : null}
       </div>
     </div>
   );
